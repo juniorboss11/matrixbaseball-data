@@ -1,0 +1,36 @@
+name: Refresh MatrixBaseball slates
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-slates
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Run refresh script
+        run: node refresh-statcast.mjs
+      - name: Commit updated slates.json
+        run: |
+          git config user.name "matrixbaseball-bot"
+          git config user.email "matrixbaseball-bot@users.noreply.github.com"
+          git add slates.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "refresh slates.json"
+            git push
+          fi
