@@ -1,0 +1,41 @@
+name: Refresh lineups (every 10 min)
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lineups-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run lineups refresh
+        run: node refresh-lineups.mjs
+
+      - name: Commit + push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add lineups.json
+          if git diff --cached --quiet; then
+            echo "no changes — skipping commit"
+          else
+            git commit -m "lineups refresh $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+            git push
+          fi
