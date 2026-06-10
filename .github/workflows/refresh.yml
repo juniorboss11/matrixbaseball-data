@@ -32,7 +32,15 @@ jobs:
           git add slates.json
           if git diff --cached --quiet; then
             echo "No changes to commit"
-          else
-            git commit -m "refresh slates.json"
-            git push
+            exit 0
           fi
+          git commit -m "refresh slates.json"
+          # Retry with rebase to handle concurrent commits from the lineups workflow.
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0 || {
+              echo "push attempt $i failed, retrying in 5s..."
+              sleep 5
+            }
+          done
+          echo "all push attempts failed"
+          exit 1
