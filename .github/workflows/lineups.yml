@@ -1,8 +1,9 @@
 name: Refresh lineups (every 10 min)
 
 on:
+  # Off-peak minutes (3,13,23,33,43,53 past) — top-of-hour cron is unreliable on GHA.
   schedule:
-    - cron: "*/10 * * * *"
+    - cron: "3,13,23,33,43,53 * * * *"
   workflow_dispatch: {}
 
 permissions:
