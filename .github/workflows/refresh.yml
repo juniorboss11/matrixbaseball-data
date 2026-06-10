@@ -1,8 +1,10 @@
 name: Refresh MatrixBaseball slates
 
 on:
+  # 17 past every hour. Off-peak minute = much more reliable than `0 * * * *`
+  # (GitHub drops scheduled jobs at top of the hour under load).
   schedule:
-    - cron: "0 * * * *"
+    - cron: "17 * * * *"
   workflow_dispatch:
 
 permissions:
