@@ -1,10 +1,12 @@
 name: Refresh MatrixBaseball slates
 
 on:
-  # 17 past every hour. Off-peak minute = much more reliable than `0 * * * *`
-  # (GitHub drops scheduled jobs at top of the hour under load).
+  # Every 3 hours during MLB activity hours (10 AM - 1 AM ET = 14-05 UTC).
+  # Multiple minute slots per cron line because GitHub Actions drops a lot of
+  # scheduled runs on the free tier; firing at several offsets gives the
+  # scheduler more chances to actually run.
   schedule:
-    - cron: "17 * * * *"
+    - cron: "13,43 14,17,20,23,2,5 * * *"
   workflow_dispatch:
 
 permissions:
@@ -35,7 +37,6 @@ jobs:
             exit 0
           fi
           git commit -m "refresh slates.json"
-          # Retry with rebase to handle concurrent commits from the lineups workflow.
           for i in 1 2 3 4 5; do
             git pull --rebase origin main && git push && exit 0 || {
               echo "push attempt $i failed, retrying in 5s..."
