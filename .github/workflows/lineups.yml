@@ -36,15 +36,40 @@ jobs:
           git add lineups.json
           if git diff --cached --quiet; then
             echo "no changes — skipping commit"
-            exit 0
+          else
+            git commit -m "lineups refresh $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+            # Retry with rebase to handle concurrent commits from the slates refresh.
+            for i in 1 2 3 4 5; do
+              git pull --rebase origin main && git push && break || {
+                echo "push attempt $i failed, retrying in 5s..."
+                sleep 5
+              }
+            done
           fi
-          git commit -m "lineups refresh $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
-          # Retry with rebase to handle concurrent commits from the slates refresh.
+
+      - name: Update version.json with latest commit SHA
+        run: |
           for i in 1 2 3 4 5; do
-            git pull --rebase origin main && git push && exit 0 || {
-              echo "push attempt $i failed, retrying in 5s..."
+            git pull --rebase origin main
+            SHA=$(git rev-parse HEAD)
+            NOW=$(date -u +'%Y-%m-%dT%H:%M:%SZ')
+            cat > version.json <<EOF
+          {
+            "latestSha": "${SHA}",
+            "updatedAt": "${NOW}",
+            "updatedBy": "refresh-lineups"
+          }
+          EOF
+            git add version.json
+            if git diff --cached --quiet; then
+              echo "version.json already current"
+              exit 0
+            fi
+            git commit -m "version.json: pin ${SHA:0:7}"
+            git push && exit 0 || {
+              echo "version push attempt $i failed, retrying in 5s..."
               sleep 5
             }
           done
-          echo "all push attempts failed"
+          echo "all version.json push attempts failed"
           exit 1
