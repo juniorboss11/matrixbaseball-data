@@ -118,6 +118,132 @@ async function fetchSavantHitters(season) {
   return out;
 }
 
+// Pitch-arsenal leaderboard: per-pitch stats for pitchers OR batters.
+// For pitchers: usage% + BA/SLG/wOBA/Whiff%/xwOBA allowed per pitch type.
+// For batters: each hitter's BA/SLG/wOBA/Whiff% vs each pitch type they've seen.
+// Returns Map<playerId, Array<{pitchType, pitchName, usage, pa, ba, slg, woba, whiffPct, kPct, xba, xslg, xwoba, hardHitPct}>>
+async function fetchPitchArsenal(season, type /* "pitcher" | "batter" */) {
+  const out = new Map();
+  const url = `https://baseballsavant.mlb.com/leaderboard/pitch-arsenal-stats?type=${type}&pitchType=&year=${season}&team=&min=10&csv=true`;
+  const txt = await fetchText(url, `savant ${type} arsenal`);
+  if (!txt) return out;
+  const { rows } = parseCsv(txt);
+  for (const r of rows) {
+    const id = parseInt(r.player_id, 10);
+    if (!id) continue;
+    const entry = {
+      pitchType: r.pitch_type || null,
+      pitchName: r.pitch_name || null,
+      usage: parseFloat(r.pitch_usage) || 0,
+      pa: parseInt(r.pa, 10) || 0,
+      ba: parseFloat(r.ba) || 0,
+      slg: parseFloat(r.slg) || 0,
+      woba: parseFloat(r.woba) || 0,
+      whiffPct: parseFloat(r.whiff_percent) || 0,
+      kPct: parseFloat(r.k_percent) || 0,
+      xba: parseFloat(r.est_ba) || 0,
+      xslg: parseFloat(r.est_slg) || 0,
+      xwoba: parseFloat(r.est_woba) || 0,
+      hardHitPct: parseFloat(r.hard_hit_percent) || 0,
+    };
+    if (!out.has(id)) out.set(id, []);
+    out.get(id).push(entry);
+  }
+  // Sort each player's pitch list by usage (desc) so the #1 pitch is first.
+  for (const arr of out.values()) arr.sort((a, b) => b.usage - a.usage);
+  return out;
+}
+
+// Pitcher game log -> windowed splits (L10, L5, L3, Last).
+// Pulls last 15 starts and aggregates AVG/OBP/SLG/OPS allowed for each window.
+async function fetchPitcherWindowedSplits(mlbId) {
+  const url = `https://statsapi.mlb.com/api/v1/people/${mlbId}/stats?stats=gameLog&group=pitching&season=${SEASON}`;
+  const data = await fetchJSON(url, `pitcher-gamelog ${mlbId}`);
+  const games = data?.stats?.[0]?.splits ?? [];
+  if (!games.length) return null;
+  // game log is oldest -> newest in StatsAPI; reverse to newest first.
+  const recent = [...games].reverse().slice(0, 15);
+  const aggregate = (arr) => {
+    if (!arr.length) return null;
+    let ab = 0, h = 0, bb = 0, hbp = 0, sf = 0, tb = 0, bf = 0;
+    for (const g of arr) {
+      const s = g.stat || {};
+      ab += parseInt(s.atBats, 10) || 0;
+      h  += parseInt(s.hits, 10) || 0;
+      bb += parseInt(s.baseOnBalls, 10) || 0;
+      hbp+= parseInt(s.hitByPitch, 10) || 0;
+      sf += parseInt(s.sacFlies, 10) || 0;
+      // total bases = singles + 2*doubles + 3*triples + 4*HR; derived from h and extra-base hits
+      const dbl = parseInt(s.doubles, 10) || 0;
+      const tpl = parseInt(s.triples, 10) || 0;
+      const hr  = parseInt(s.homeRuns, 10) || 0;
+      const singles = (parseInt(s.hits, 10) || 0) - dbl - tpl - hr;
+      tb += singles + 2*dbl + 3*tpl + 4*hr;
+      bf += parseInt(s.battersFaced, 10) || 0;
+    }
+    const avg = ab > 0 ? h / ab : 0;
+    const pa = ab + bb + hbp + sf;
+    const obp = pa > 0 ? (h + bb + hbp) / pa : 0;
+    const slg = ab > 0 ? tb / ab : 0;
+    return {
+      gp: arr.length,
+      pa, ab, h, bb, bf,
+      avg: +avg.toFixed(3),
+      obp: +obp.toFixed(3),
+      slg: +slg.toFixed(3),
+      ops: +(obp + slg).toFixed(3),
+    };
+  };
+  return {
+    l10: aggregate(recent.slice(0, 10)),
+    l5:  aggregate(recent.slice(0, 5)),
+    l3:  aggregate(recent.slice(0, 3)),
+    last: aggregate(recent.slice(0, 1)),
+    lastDate: recent[0]?.date ?? null,
+  };
+}
+
+// Per-PA exit velocity history for hitters. We fetch a game's play-by-play
+// feed once and extract every batter's hit-data (EV / LA / pitch type / result).
+// Returns Map<batterId, Array<PA>>.
+async function fetchGamePerPaEv(gamePk) {
+  const url = `https://statsapi.mlb.com/api/v1.1/game/${gamePk}/feed/live`;
+  const data = await fetchJSON(url, `feed-live ${gamePk}`);
+  const plays = data?.liveData?.plays?.allPlays ?? [];
+  const gameDate = data?.gameData?.datetime?.officialDate ?? null;
+  const out = new Map(); // batterId -> [{date, ev, la, dist, pitchType, velo, result}]
+  for (const p of plays) {
+    const m = p.matchup || {};
+    const r = p.result || {};
+    const batterId = m.batter?.id;
+    if (!batterId) continue;
+    const events = p.playEvents || [];
+    // Find the LAST event of the PA with hitData (the contact event).
+    const contactEvt = [...events].reverse().find((e) => e.hitData);
+    const lastEvt = events[events.length - 1] || {};
+    const hitData = contactEvt?.hitData;
+    const pitchData = contactEvt?.pitchData || lastEvt?.pitchData || {};
+    const details = contactEvt?.details || lastEvt?.details || {};
+    const entry = {
+      date: gameDate,
+      gamePk,
+      result: r.event || null,
+      eventType: r.eventType || null,
+      ev: hitData?.launchSpeed ?? null,
+      la: hitData?.launchAngle ?? null,
+      dist: hitData?.totalDistance ?? null,
+      pitchType: details?.type?.code ?? null,
+      pitchName: details?.type?.description ?? null,
+      velo: pitchData?.startSpeed ?? null,
+      isHit: !!r.event && ["Single","Double","Triple","Home Run"].includes(r.event),
+      isHr: r.event === "Home Run",
+    };
+    if (!out.has(batterId)) out.set(batterId, []);
+    out.get(batterId).push(entry);
+  }
+  return out;
+}
+
 async function fetchSavantPitchers(season) {
   const out = new Map();
   const expUrl = `https://baseballsavant.mlb.com/leaderboard/expected_statistics?type=pitcher&year=${season}&min=1&csv=true`;
@@ -238,6 +364,7 @@ async function fetchHitterGameLog(mlbId, lastN = 7) {
     const st = s.stat ?? {};
     return {
       date: s.date ?? null,
+      gamePk: s.game?.gamePk ?? null,
       ab: st.atBats ?? 0,
       h: st.hits ?? 0,
       hr: st.homeRuns ?? 0,
@@ -426,11 +553,14 @@ async function main() {
   const pitcherMlbIds = [...playerCollector.pitchers];
 
   log(`fetching Baseball Savant leaderboards`);
-  const [savantHitters, savantPitchers] = await Promise.all([
+  const [savantHitters, savantPitchers, batterArsenal, pitcherArsenal] = await Promise.all([
     fetchSavantHitters(SEASON),
     fetchSavantPitchers(SEASON),
+    fetchPitchArsenal(SEASON, "batter"),
+    fetchPitchArsenal(SEASON, "pitcher"),
   ]);
   log(`  Savant hitters: ${savantHitters.size} · Savant pitchers: ${savantPitchers.size}`);
+  log(`  Batter arsenal: ${batterArsenal.size} · Pitcher arsenal: ${pitcherArsenal.size}`);
 
   const hitterStats = {};
   let hCount = 0;
@@ -450,7 +580,8 @@ async function main() {
       if (l30 && sv.barrelPct != null) l30.barrelPct = sv.barrelPct;
       if (l30 && sv.hardHitPct != null)l30.hardHitPct = sv.hardHitPct;
     }
-    hitterStats[id] = { season, l7, l15, l30, ...meta, splits, recent7, savant: sv ?? null };
+    const arsenal = batterArsenal.get(id) ?? null;
+    hitterStats[id] = { season, l7, l15, l30, ...meta, splits, recent7, savant: sv ?? null, pitchArsenal: arsenal };
     hCount++;
     if (hCount % 20 === 0) log(`  hitters: ${hCount}/${hitterMlbIds.length}`);
   }
@@ -459,17 +590,73 @@ async function main() {
   const pitcherStats = {};
   let pCount = 0;
   for (const id of pitcherMlbIds) {
-    const [season, meta, splits] = await Promise.all([
+    const [season, meta, splits, windowed] = await Promise.all([
       fetchPitcherSeason(id),
       getPlayerMeta(id),
       fetchPlatoonSplits(id, "pitching"),
+      fetchPitcherWindowedSplits(id),
     ]);
     const sv = savantPitchers.get(id);
-    pitcherStats[id] = { season, ...meta, splits, savant: sv ?? null };
+    const arsenal = pitcherArsenal.get(id) ?? null;
+    pitcherStats[id] = { season, ...meta, splits, savant: sv ?? null, pitchArsenal: arsenal, windowed };
     pCount++;
     if (pCount % 10 === 0) log(`  pitchers: ${pCount}/${pitcherMlbIds.length}`);
   }
   log(`pitchers complete: ${pCount}/${pitcherMlbIds.length}`);
+
+  // Per-PA exit velocity history. Fetch each game once and bucket by batter.
+  // We pull the last ~5 days of completed games for every hitter in upcoming slates.
+  log(`fetching per-PA exit velocity history...`);
+  const perPaEv = {}; // batterId -> [PA entries, newest first]
+  // Build set of recent gamePks to fetch: walk each hitter's recent7 (now 15) game log.
+  const gamePksToFetch = new Set();
+  const hitterRecentGames = new Map(); // batterId -> Set<gamePk>
+  for (const [bId, h] of Object.entries(hitterStats)) {
+    const games = h?.recent7 || [];
+    const recent5 = games.slice(0, 5);
+    const set = new Set();
+    for (const g of recent5) {
+      const gp = g?.gamePk;
+      if (gp) {
+        gamePksToFetch.add(gp);
+        set.add(gp);
+      }
+    }
+    hitterRecentGames.set(parseInt(bId, 10), set);
+  }
+  log(`  ${gamePksToFetch.size} unique game feeds to fetch for EV history`);
+  let gpCount = 0;
+  const gamePkList = [...gamePksToFetch];
+  // Fetch in batches of 8 in parallel to keep StatsAPI happy.
+  for (let i = 0; i < gamePkList.length; i += 8) {
+    const batch = gamePkList.slice(i, i + 8);
+    const results = await Promise.all(batch.map((gp) => fetchGamePerPaEv(gp).catch(() => new Map())));
+    for (const gameMap of results) {
+      for (const [bId, arr] of gameMap.entries()) {
+        if (!perPaEv[bId]) perPaEv[bId] = [];
+        perPaEv[bId].push(...arr);
+      }
+    }
+    gpCount += batch.length;
+    if (gpCount % 16 === 0 || gpCount === gamePkList.length) {
+      log(`  EV feeds: ${gpCount}/${gamePkList.length}`);
+    }
+  }
+  // Sort each batter's PA list newest-first by date+gamePk.
+  for (const arr of Object.values(perPaEv)) {
+    arr.sort((a, b) => {
+      const dc = (b.date || "").localeCompare(a.date || "");
+      if (dc !== 0) return dc;
+      return (b.gamePk || 0) - (a.gamePk || 0);
+    });
+  }
+  // Attach to hitterStats and trim to last 30 PA per batter to keep payload sane.
+  for (const [bIdStr, h] of Object.entries(hitterStats)) {
+    const bId = parseInt(bIdStr, 10);
+    const list = perPaEv[bId] || [];
+    h.perPaEv = list.slice(0, 30);
+  }
+  log(`per-PA EV complete: ${Object.keys(perPaEv).length} batters with history`);
 
   log(`fetching BVP history for slate pairings...`);
   const bvpMap = {};
