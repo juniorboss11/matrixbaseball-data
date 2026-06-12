@@ -650,11 +650,21 @@ async function main() {
       return (b.gamePk || 0) - (a.gamePk || 0);
     });
   }
-  // Attach to hitterStats and trim to last 30 PA per batter to keep payload sane.
+  // Attach to hitterStats and trim to last 15 PA per batter (enough for a chart).
+  // Use short field names to keep payload small on mobile.
   for (const [bIdStr, h] of Object.entries(hitterStats)) {
     const bId = parseInt(bIdStr, 10);
     const list = perPaEv[bId] || [];
-    h.perPaEv = list.slice(0, 30);
+    h.perPaEv = list.slice(0, 15).map((e) => ({
+      d: e.date,
+      r: e.result,
+      ev: e.ev,
+      la: e.la,
+      pt: e.pitchType,
+      v: e.velo,
+      hr: e.isHr ? 1 : 0,
+      hit: e.isHit ? 1 : 0,
+    }));
   }
   log(`per-PA EV complete: ${Object.keys(perPaEv).length} batters with history`);
 
@@ -703,7 +713,8 @@ async function main() {
     bvp: bvpMap,
   };
 
-  const slatesJson = JSON.stringify(slatesPayload, null, 2);
+  // Minified output (no indent) — saves ~40% on file size for mobile data costs.
+  const slatesJson = JSON.stringify(slatesPayload);
   await fs.writeFile(SLATES_OUT, slatesJson);
   log(`wrote ${SLATES_OUT} (${(slatesJson.length / 1024).toFixed(0)} KB)`);
   log(`refresh complete · ${dates.length} slate days · today=${today}`);
