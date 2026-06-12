@@ -442,7 +442,7 @@ async function main() {
       fetchHitterRecent(id, 30),
       getPlayerMeta(id),
       fetchPlatoonSplits(id, "hitting"),
-      fetchHitterGameLog(id, 7),
+      fetchHitterGameLog(id, 15),
     ]);
     const sv = savantHitters.get(id);
     if (sv) {
