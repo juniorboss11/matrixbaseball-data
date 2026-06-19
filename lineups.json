@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-06-19T11:55:58.021Z",
+  "refreshedAt": "2026-06-19T18:20:57.420Z",
   "today": "2026-06-19",
   "dates": [
     "2026-06-18",
@@ -1255,7 +1255,7 @@
       {
         "id": "g824663",
         "gamePk": 824663,
-        "status": "Scheduled",
+        "status": "In Progress",
         "awayTeam": "TOR",
         "homeTeam": "CHC",
         "awayTeamId": 141,
@@ -1274,7 +1274,7 @@
           "id": 676962,
           "name": "Ben Brown"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 543807,
@@ -1301,10 +1301,10 @@
             "position": "LF"
           },
           {
-            "id": 676391,
-            "name": "Ernie Clement",
+            "id": 672386,
+            "name": "Alejandro Kirk",
             "order": 5,
-            "position": "2B"
+            "position": "C"
           },
           {
             "id": 664770,
@@ -1319,10 +1319,10 @@
             "position": "3B"
           },
           {
-            "id": 678218,
-            "name": "Brandon Valenzuela",
+            "id": 676914,
+            "name": "Davis Schneider",
             "order": 8,
-            "position": "C"
+            "position": "2B"
           },
           {
             "id": 665926,
@@ -1339,40 +1339,40 @@
             "position": "CF"
           },
           {
-            "id": 663538,
-            "name": "Nico Hoerner",
+            "id": 608324,
+            "name": "Alex Bregman",
             "order": 2,
-            "position": "2B"
-          },
-          {
-            "id": 673548,
-            "name": "Seiya Suzuki",
-            "order": 3,
-            "position": "DH"
+            "position": "3B"
           },
           {
             "id": 683737,
             "name": "Michael Busch",
-            "order": 4,
+            "order": 3,
             "position": "1B"
           },
           {
-            "id": 608324,
-            "name": "Alex Bregman",
-            "order": 5,
-            "position": "3B"
+            "id": 673548,
+            "name": "Seiya Suzuki",
+            "order": 4,
+            "position": "DH"
           },
           {
             "id": 664023,
             "name": "Ian Happ",
-            "order": 6,
+            "order": 5,
             "position": "LF"
           },
           {
             "id": 807713,
             "name": "Matt Shaw",
-            "order": 7,
+            "order": 6,
             "position": "RF"
+          },
+          {
+            "id": 663538,
+            "name": "Nico Hoerner",
+            "order": 7,
+            "position": "2B"
           },
           {
             "id": 608348,
@@ -1387,8 +1387,8 @@
             "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-06-18)",
-        "homeLineupSource": "projected (last 2026-06-18)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g824264",
@@ -1822,7 +1822,10 @@
           "id": 694738,
           "name": "Landen Roupp"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 669199,
+          "name": "Lake Bachar"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -3505,10 +3508,10 @@
             "position": "LF"
           },
           {
-            "id": 676391,
-            "name": "Ernie Clement",
+            "id": 672386,
+            "name": "Alejandro Kirk",
             "order": 5,
-            "position": "2B"
+            "position": "C"
           },
           {
             "id": 664770,
@@ -3523,10 +3526,10 @@
             "position": "3B"
           },
           {
-            "id": 678218,
-            "name": "Brandon Valenzuela",
+            "id": 676914,
+            "name": "Davis Schneider",
             "order": 8,
-            "position": "C"
+            "position": "2B"
           },
           {
             "id": 665926,
@@ -3543,40 +3546,40 @@
             "position": "CF"
           },
           {
-            "id": 663538,
-            "name": "Nico Hoerner",
+            "id": 608324,
+            "name": "Alex Bregman",
             "order": 2,
-            "position": "2B"
-          },
-          {
-            "id": 673548,
-            "name": "Seiya Suzuki",
-            "order": 3,
-            "position": "DH"
+            "position": "3B"
           },
           {
             "id": 683737,
             "name": "Michael Busch",
-            "order": 4,
+            "order": 3,
             "position": "1B"
           },
           {
-            "id": 608324,
-            "name": "Alex Bregman",
-            "order": 5,
-            "position": "3B"
+            "id": 673548,
+            "name": "Seiya Suzuki",
+            "order": 4,
+            "position": "DH"
           },
           {
             "id": 664023,
             "name": "Ian Happ",
-            "order": 6,
+            "order": 5,
             "position": "LF"
           },
           {
             "id": 807713,
             "name": "Matt Shaw",
-            "order": 7,
+            "order": 6,
             "position": "RF"
+          },
+          {
+            "id": 663538,
+            "name": "Nico Hoerner",
+            "order": 7,
+            "position": "2B"
           },
           {
             "id": 608348,
@@ -3591,8 +3594,8 @@
             "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-06-18)",
-        "homeLineupSource": "projected (last 2026-06-18)"
+        "awayLineupSource": "projected (last 2026-06-19)",
+        "homeLineupSource": "projected (last 2026-06-19)"
       },
       {
         "id": "g822885",
