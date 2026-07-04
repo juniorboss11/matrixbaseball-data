@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-04T00:16:36.303Z",
+  "refreshedAt": "2026-07-04T09:10:47.450Z",
   "today": "2026-07-04",
   "dates": [
     "2026-07-03",
@@ -149,7 +149,7 @@
       {
         "id": "g822714",
         "gamePk": 822714,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "PIT",
         "homeTeam": "WSH",
         "awayTeamId": 134,
@@ -287,7 +287,7 @@
       {
         "id": "g823527",
         "gamePk": 823527,
-        "status": "Delayed",
+        "status": "Final",
         "awayTeam": "MIN",
         "homeTeam": "NYY",
         "awayTeamId": 142,
@@ -425,7 +425,7 @@
       {
         "id": "g824498",
         "gamePk": 824498,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "BAL",
         "homeTeam": "CIN",
         "awayTeamId": 110,
@@ -563,7 +563,7 @@
       {
         "id": "g824417",
         "gamePk": 824417,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "CWS",
         "homeTeam": "CLE",
         "awayTeamId": 145,
@@ -701,7 +701,7 @@
       {
         "id": "g824904",
         "gamePk": 824904,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "NYM",
         "homeTeam": "ATL",
         "awayTeamId": 121,
@@ -839,7 +839,7 @@
       {
         "id": "g824336",
         "gamePk": 824336,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "SF",
         "homeTeam": "COL",
         "awayTeamId": 137,
@@ -977,7 +977,7 @@
       {
         "id": "g824173",
         "gamePk": 824173,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "TB",
         "homeTeam": "HOU",
         "awayTeamId": 139,
@@ -1115,7 +1115,7 @@
       {
         "id": "g824013",
         "gamePk": 824013,
-        "status": "Pre-Game",
+        "status": "Final",
         "awayTeam": "BOS",
         "homeTeam": "LAA",
         "awayTeamId": 111,
@@ -1253,7 +1253,7 @@
       {
         "id": "g824982",
         "gamePk": 824982,
-        "status": "Pre-Game",
+        "status": "Final",
         "awayTeam": "MIA",
         "homeTeam": "ATH",
         "awayTeamId": 146,
@@ -1391,7 +1391,7 @@
       {
         "id": "g825062",
         "gamePk": 825062,
-        "status": "Pre-Game",
+        "status": "Final",
         "awayTeam": "MIL",
         "homeTeam": "AZ",
         "awayTeamId": 158,
@@ -1529,7 +1529,7 @@
       {
         "id": "g823933",
         "gamePk": 823933,
-        "status": "Pre-Game",
+        "status": "Final",
         "awayTeam": "SD",
         "homeTeam": "LAD",
         "awayTeamId": 135,
@@ -1667,7 +1667,7 @@
       {
         "id": "g823120",
         "gamePk": 823120,
-        "status": "Pre-Game",
+        "status": "Final",
         "awayTeam": "TOR",
         "homeTeam": "SEA",
         "awayTeamId": 141,
@@ -1960,7 +1960,10 @@
           "id": 805673,
           "name": "Zebby Matthews"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 694341,
+          "name": "Brendan Beck"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -3057,7 +3060,10 @@
         "parkHrFactor": 117,
         "startUtc": "2026-07-05T00:10:00Z",
         "startET": "8:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 592662,
+          "name": "Robbie Ray"
+        },
         "homePitcher": {
           "id": 608372,
           "name": "Tomoyuki Sugano"
