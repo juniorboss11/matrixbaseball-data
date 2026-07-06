@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-06T12:32:02.326Z",
+  "refreshedAt": "2026-07-06T19:18:36.008Z",
   "today": "2026-07-06",
   "dates": [
     "2026-07-05",
@@ -2083,7 +2083,7 @@
       {
         "id": "g824089",
         "gamePk": 824089,
-        "status": "Scheduled",
+        "status": "In Progress",
         "awayTeam": "PHI",
         "homeTeam": "KC",
         "awayTeamId": 143,
@@ -2102,7 +2102,7 @@
           "id": 702070,
           "name": "Noah Cameron"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 607208,
@@ -2123,105 +2123,105 @@
             "position": "1B"
           },
           {
-            "id": 669016,
-            "name": "Brandon Marsh",
-            "order": 4,
-            "position": "LF"
-          },
-          {
             "id": 664761,
             "name": "Alec Bohm",
-            "order": 5,
+            "order": 4,
             "position": "3B"
+          },
+          {
+            "id": 669016,
+            "name": "Brandon Marsh",
+            "order": 5,
+            "position": "RF"
+          },
+          {
+            "id": 624641,
+            "name": "Edmundo Sosa",
+            "order": 6,
+            "position": "LF"
           },
           {
             "id": 681082,
             "name": "Bryson Stott",
-            "order": 6,
+            "order": 7,
             "position": "2B"
           },
           {
-            "id": 687282,
-            "name": "Gabriel Rincones Jr.",
-            "order": 7,
-            "position": "RF"
-          },
-          {
-            "id": 702222,
-            "name": "Justin Crawford",
+            "id": 592663,
+            "name": "J.T. Realmuto",
             "order": 8,
-            "position": "CF"
+            "position": "C"
           },
           {
-            "id": 596117,
-            "name": "Garrett Stubbs",
+            "id": 656537,
+            "name": "Derek Hill",
             "order": 9,
-            "position": "C"
+            "position": "CF"
           }
         ],
         "homeLineup": [
           {
-            "id": 695600,
-            "name": "Carter Jensen",
+            "id": 657041,
+            "name": "Lane Thomas",
             "order": 1,
-            "position": "C"
+            "position": "CF"
           },
           {
             "id": 677951,
             "name": "Bobby Witt Jr.",
             "order": 2,
-            "position": "SS"
-          },
-          {
-            "id": 695506,
-            "name": "Jac Caglianone",
-            "order": 3,
-            "position": "1B"
-          },
-          {
-            "id": 657041,
-            "name": "Lane Thomas",
-            "order": 4,
-            "position": "CF"
-          },
-          {
-            "id": 686681,
-            "name": "Michael Massey",
-            "order": 5,
-            "position": "2B"
+            "position": "DH"
           },
           {
             "id": 521692,
             "name": "Salvador Perez",
+            "order": 3,
+            "position": "1B"
+          },
+          {
+            "id": 695506,
+            "name": "Jac Caglianone",
+            "order": 4,
+            "position": "RF"
+          },
+          {
+            "id": 679845,
+            "name": "Nick Loftin",
+            "order": 5,
+            "position": "2B"
+          },
+          {
+            "id": 516782,
+            "name": "Starling Marte",
             "order": 6,
-            "position": "DH"
+            "position": "LF"
+          },
+          {
+            "id": 686475,
+            "name": "Tyler Tolbert",
+            "order": 7,
+            "position": "SS"
+          },
+          {
+            "id": 571912,
+            "name": "Luke Maile",
+            "order": 8,
+            "position": "C"
           },
           {
             "id": 668942,
             "name": "Josh Rojas",
-            "order": 7,
-            "position": "3B"
-          },
-          {
-            "id": 670224,
-            "name": "Kameron Misner",
-            "order": 8,
-            "position": "RF"
-          },
-          {
-            "id": 686555,
-            "name": "Isaac Collins",
             "order": 9,
-            "position": "LF"
+            "position": "3B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-05)",
-        "homeLineupSource": "projected (last 2026-07-05)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g822958",
         "gamePk": 822958,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "NYY",
         "homeTeam": "TB",
         "awayTeamId": 147,
@@ -2323,22 +2323,22 @@
             "position": "CF"
           },
           {
+            "id": 676356,
+            "name": "Jonny DeLuca",
+            "order": 5,
+            "position": "RF"
+          },
+          {
             "id": 802415,
             "name": "Chandler Simpson",
-            "order": 5,
+            "order": 6,
             "position": "LF"
           },
           {
-            "id": 810938,
-            "name": "Ben Williamson",
-            "order": 6,
-            "position": "SS"
-          },
-          {
-            "id": 683748,
-            "name": "Victor Mesa Jr.",
+            "id": 663743,
+            "name": "Nick Fortes",
             "order": 7,
-            "position": "RF"
+            "position": "C"
           },
           {
             "id": 680700,
@@ -2347,14 +2347,14 @@
             "position": "2B"
           },
           {
-            "id": 676439,
-            "name": "Hunter Feduccia",
+            "id": 670764,
+            "name": "Taylor Walls",
             "order": 9,
-            "position": "C"
+            "position": "SS"
           }
         ],
         "awayLineupSource": "projected (last 2026-07-05)",
-        "homeLineupSource": "projected (last 2026-07-05)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g822712",
@@ -4101,22 +4101,22 @@
             "position": "CF"
           },
           {
+            "id": 676356,
+            "name": "Jonny DeLuca",
+            "order": 5,
+            "position": "RF"
+          },
+          {
             "id": 802415,
             "name": "Chandler Simpson",
-            "order": 5,
+            "order": 6,
             "position": "LF"
           },
           {
-            "id": 810938,
-            "name": "Ben Williamson",
-            "order": 6,
-            "position": "SS"
-          },
-          {
-            "id": 683748,
-            "name": "Victor Mesa Jr.",
+            "id": 663743,
+            "name": "Nick Fortes",
             "order": 7,
-            "position": "RF"
+            "position": "C"
           },
           {
             "id": 680700,
@@ -4125,14 +4125,14 @@
             "position": "2B"
           },
           {
-            "id": 676439,
-            "name": "Hunter Feduccia",
+            "id": 670764,
+            "name": "Taylor Walls",
             "order": 9,
-            "position": "C"
+            "position": "SS"
           }
         ],
         "awayLineupSource": "projected (last 2026-07-05)",
-        "homeLineupSource": "projected (last 2026-07-05)"
+        "homeLineupSource": "projected (last 2026-07-06)"
       },
       {
         "id": "g822713",
@@ -4286,63 +4286,66 @@
         "parkHrFactor": 103,
         "startUtc": "2026-07-07T23:10:00Z",
         "startET": "7:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 607625,
+          "name": "Seth Lugo"
+        },
         "homePitcher": null,
         "lineupsConfirmed": false,
         "awayLineup": [
           {
-            "id": 695600,
-            "name": "Carter Jensen",
+            "id": 657041,
+            "name": "Lane Thomas",
             "order": 1,
-            "position": "C"
+            "position": "CF"
           },
           {
             "id": 677951,
             "name": "Bobby Witt Jr.",
             "order": 2,
-            "position": "SS"
-          },
-          {
-            "id": 695506,
-            "name": "Jac Caglianone",
-            "order": 3,
-            "position": "1B"
-          },
-          {
-            "id": 657041,
-            "name": "Lane Thomas",
-            "order": 4,
-            "position": "CF"
-          },
-          {
-            "id": 686681,
-            "name": "Michael Massey",
-            "order": 5,
-            "position": "2B"
+            "position": "DH"
           },
           {
             "id": 521692,
             "name": "Salvador Perez",
+            "order": 3,
+            "position": "1B"
+          },
+          {
+            "id": 695506,
+            "name": "Jac Caglianone",
+            "order": 4,
+            "position": "RF"
+          },
+          {
+            "id": 679845,
+            "name": "Nick Loftin",
+            "order": 5,
+            "position": "2B"
+          },
+          {
+            "id": 516782,
+            "name": "Starling Marte",
             "order": 6,
-            "position": "DH"
+            "position": "LF"
+          },
+          {
+            "id": 686475,
+            "name": "Tyler Tolbert",
+            "order": 7,
+            "position": "SS"
+          },
+          {
+            "id": 571912,
+            "name": "Luke Maile",
+            "order": 8,
+            "position": "C"
           },
           {
             "id": 668942,
             "name": "Josh Rojas",
-            "order": 7,
-            "position": "3B"
-          },
-          {
-            "id": 670224,
-            "name": "Kameron Misner",
-            "order": 8,
-            "position": "RF"
-          },
-          {
-            "id": 686555,
-            "name": "Isaac Collins",
             "order": 9,
-            "position": "LF"
+            "position": "3B"
           }
         ],
         "homeLineup": [
@@ -4401,7 +4404,7 @@
             "position": "2B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-05)",
+        "awayLineupSource": "projected (last 2026-07-06)",
         "homeLineupSource": "projected (last 2026-07-05)"
       },
       {
@@ -4444,40 +4447,40 @@
             "position": "1B"
           },
           {
-            "id": 669016,
-            "name": "Brandon Marsh",
-            "order": 4,
-            "position": "LF"
-          },
-          {
             "id": 664761,
             "name": "Alec Bohm",
-            "order": 5,
+            "order": 4,
             "position": "3B"
+          },
+          {
+            "id": 669016,
+            "name": "Brandon Marsh",
+            "order": 5,
+            "position": "RF"
+          },
+          {
+            "id": 624641,
+            "name": "Edmundo Sosa",
+            "order": 6,
+            "position": "LF"
           },
           {
             "id": 681082,
             "name": "Bryson Stott",
-            "order": 6,
+            "order": 7,
             "position": "2B"
           },
           {
-            "id": 687282,
-            "name": "Gabriel Rincones Jr.",
-            "order": 7,
-            "position": "RF"
-          },
-          {
-            "id": 702222,
-            "name": "Justin Crawford",
+            "id": 592663,
+            "name": "J.T. Realmuto",
             "order": 8,
-            "position": "CF"
+            "position": "C"
           },
           {
-            "id": 596117,
-            "name": "Garrett Stubbs",
+            "id": 656537,
+            "name": "Derek Hill",
             "order": 9,
-            "position": "C"
+            "position": "CF"
           }
         ],
         "homeLineup": [
@@ -4536,7 +4539,7 @@
             "position": "2B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-05)",
+        "awayLineupSource": "projected (last 2026-07-06)",
         "homeLineupSource": "projected (last 2026-07-05)"
       },
       {
