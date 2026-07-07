@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-07T10:40:28.489Z",
+  "refreshedAt": "2026-07-07T18:25:24.646Z",
   "today": "2026-07-07",
   "dates": [
     "2026-07-06",
@@ -1117,7 +1117,7 @@
       {
         "id": "g823062",
         "gamePk": 823062,
-        "status": "Scheduled",
+        "status": "In Progress",
         "awayTeam": "MIL",
         "homeTeam": "STL",
         "awayTeamId": 158,
@@ -1132,8 +1132,11 @@
           "id": 694819,
           "name": "Jacob Misiorowski"
         },
-        "homePitcher": null,
-        "lineupsConfirmed": false,
+        "homePitcher": {
+          "id": 694335,
+          "name": "Matt Svanson"
+        },
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 592885,
@@ -1184,8 +1187,8 @@
             "position": "SS"
           },
           {
-            "id": 666152,
-            "name": "David Hamilton",
+            "id": 687401,
+            "name": "Joey Ortiz",
             "order": 9,
             "position": "3B"
           }
@@ -1195,7 +1198,7 @@
             "id": 802139,
             "name": "JJ Wetherholt",
             "order": 1,
-            "position": "2B"
+            "position": "SS"
           },
           {
             "id": 671056,
@@ -1204,28 +1207,28 @@
             "position": "DH"
           },
           {
+            "id": 676475,
+            "name": "Alec Burleson",
+            "order": 3,
+            "position": "1B"
+          },
+          {
             "id": 691023,
             "name": "Jordan Walker",
-            "order": 3,
+            "order": 4,
             "position": "RF"
           },
           {
-            "id": 676369,
-            "name": "Nelson Velázquez",
-            "order": 4,
+            "id": 663457,
+            "name": "Lars Nootbaar",
+            "order": 5,
             "position": "LF"
           },
           {
-            "id": 665877,
-            "name": "José Fermín",
-            "order": 5,
-            "position": "3B"
-          },
-          {
-            "id": 691026,
-            "name": "Masyn Winn",
+            "id": 663494,
+            "name": "Bryan Torres",
             "order": 6,
-            "position": "SS"
+            "position": "2B"
           },
           {
             "id": 701675,
@@ -1234,20 +1237,20 @@
             "position": "CF"
           },
           {
-            "id": 691458,
-            "name": "Blaze Jordan",
+            "id": 665877,
+            "name": "José Fermín",
             "order": 8,
-            "position": "1B"
+            "position": "3B"
           },
           {
-            "id": 686780,
-            "name": "Pedro Pagés",
+            "id": 699625,
+            "name": "Jimmy Crooks",
             "order": 9,
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-06)",
-        "homeLineupSource": "projected (last 2026-07-06)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g823035",
@@ -1263,8 +1266,14 @@
         "parkHrFactor": 100,
         "startUtc": "2026-07-07T23:45:00Z",
         "startET": "7:45 PM",
-        "awayPitcher": null,
-        "homePitcher": null,
+        "awayPitcher": {
+          "id": 688107,
+          "name": "Robert Gasser"
+        },
+        "homePitcher": {
+          "id": 690928,
+          "name": "Hunter Dobbins"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -1316,8 +1325,8 @@
             "position": "SS"
           },
           {
-            "id": 666152,
-            "name": "David Hamilton",
+            "id": 687401,
+            "name": "Joey Ortiz",
             "order": 9,
             "position": "3B"
           }
@@ -1327,7 +1336,7 @@
             "id": 802139,
             "name": "JJ Wetherholt",
             "order": 1,
-            "position": "2B"
+            "position": "SS"
           },
           {
             "id": 671056,
@@ -1336,28 +1345,28 @@
             "position": "DH"
           },
           {
+            "id": 676475,
+            "name": "Alec Burleson",
+            "order": 3,
+            "position": "1B"
+          },
+          {
             "id": 691023,
             "name": "Jordan Walker",
-            "order": 3,
+            "order": 4,
             "position": "RF"
           },
           {
-            "id": 676369,
-            "name": "Nelson Velázquez",
-            "order": 4,
+            "id": 663457,
+            "name": "Lars Nootbaar",
+            "order": 5,
             "position": "LF"
           },
           {
-            "id": 665877,
-            "name": "José Fermín",
-            "order": 5,
-            "position": "3B"
-          },
-          {
-            "id": 691026,
-            "name": "Masyn Winn",
+            "id": 663494,
+            "name": "Bryan Torres",
             "order": 6,
-            "position": "SS"
+            "position": "2B"
           },
           {
             "id": 701675,
@@ -1366,20 +1375,20 @@
             "position": "CF"
           },
           {
-            "id": 691458,
-            "name": "Blaze Jordan",
+            "id": 665877,
+            "name": "José Fermín",
             "order": 8,
-            "position": "1B"
+            "position": "3B"
           },
           {
-            "id": 686780,
-            "name": "Pedro Pagés",
+            "id": 699625,
+            "name": "Jimmy Crooks",
             "order": 9,
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-06)",
-        "homeLineupSource": "projected (last 2026-07-06)"
+        "awayLineupSource": "projected (last 2026-07-07)",
+        "homeLineupSource": "projected (last 2026-07-07)"
       },
       {
         "id": "g824820",
@@ -2355,7 +2364,10 @@
         "parkHrFactor": 113,
         "startUtc": "2026-07-07T23:10:00Z",
         "startET": "7:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 554430,
+          "name": "Zack Wheeler"
+        },
         "homePitcher": {
           "id": 671096,
           "name": "Andrew Abbott"
@@ -3042,7 +3054,10 @@
         "parkHrFactor": 88,
         "startUtc": "2026-07-08T01:45:00Z",
         "startET": "9:45 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 693686,
+          "name": "Spencer Miles"
+        },
         "homePitcher": {
           "id": 686790,
           "name": "Trevor McDonald"
@@ -4827,7 +4842,10 @@
           "id": 690986,
           "name": "Kyle Harrison"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 700241,
+          "name": "Michael McGreevy"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -4879,8 +4897,8 @@
             "position": "SS"
           },
           {
-            "id": 666152,
-            "name": "David Hamilton",
+            "id": 687401,
+            "name": "Joey Ortiz",
             "order": 9,
             "position": "3B"
           }
@@ -4890,7 +4908,7 @@
             "id": 802139,
             "name": "JJ Wetherholt",
             "order": 1,
-            "position": "2B"
+            "position": "SS"
           },
           {
             "id": 671056,
@@ -4899,28 +4917,28 @@
             "position": "DH"
           },
           {
+            "id": 676475,
+            "name": "Alec Burleson",
+            "order": 3,
+            "position": "1B"
+          },
+          {
             "id": 691023,
             "name": "Jordan Walker",
-            "order": 3,
+            "order": 4,
             "position": "RF"
           },
           {
-            "id": 676369,
-            "name": "Nelson Velázquez",
-            "order": 4,
+            "id": 663457,
+            "name": "Lars Nootbaar",
+            "order": 5,
             "position": "LF"
           },
           {
-            "id": 665877,
-            "name": "José Fermín",
-            "order": 5,
-            "position": "3B"
-          },
-          {
-            "id": 691026,
-            "name": "Masyn Winn",
+            "id": 663494,
+            "name": "Bryan Torres",
             "order": 6,
-            "position": "SS"
+            "position": "2B"
           },
           {
             "id": 701675,
@@ -4929,20 +4947,20 @@
             "position": "CF"
           },
           {
-            "id": 691458,
-            "name": "Blaze Jordan",
+            "id": 665877,
+            "name": "José Fermín",
             "order": 8,
-            "position": "1B"
+            "position": "3B"
           },
           {
-            "id": 686780,
-            "name": "Pedro Pagés",
+            "id": 699625,
+            "name": "Jimmy Crooks",
             "order": 9,
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-06)",
-        "homeLineupSource": "projected (last 2026-07-06)"
+        "awayLineupSource": "projected (last 2026-07-07)",
+        "homeLineupSource": "projected (last 2026-07-07)"
       },
       {
         "id": "g822880",
