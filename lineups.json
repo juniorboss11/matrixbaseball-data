@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-08T13:17:10.381Z",
+  "refreshedAt": "2026-07-08T18:09:46.045Z",
   "today": "2026-07-08",
   "dates": [
     "2026-07-07",
@@ -2221,7 +2221,7 @@
       {
         "id": "g823202",
         "gamePk": 823202,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "TOR",
         "homeTeam": "SF",
         "awayTeamId": 141,
@@ -2240,7 +2240,7 @@
           "id": 657277,
           "name": "Logan Webb"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 676391,
@@ -2261,28 +2261,28 @@
             "position": "1B"
           },
           {
-            "id": 672960,
-            "name": "Kazuma Okamoto",
+            "id": 543807,
+            "name": "George Springer",
             "order": 4,
-            "position": "3B"
-          },
-          {
-            "id": 678218,
-            "name": "Brandon Valenzuela",
-            "order": 5,
-            "position": "C"
+            "position": "DH"
           },
           {
             "id": 662139,
             "name": "Daulton Varsho",
-            "order": 6,
+            "order": 5,
             "position": "CF"
           },
           {
-            "id": 815873,
-            "name": "Sean Keys",
+            "id": 672960,
+            "name": "Kazuma Okamoto",
+            "order": 6,
+            "position": "3B"
+          },
+          {
+            "id": 672386,
+            "name": "Alejandro Kirk",
             "order": 7,
-            "position": "DH"
+            "position": "C"
           },
           {
             "id": 682729,
@@ -2302,7 +2302,7 @@
             "id": 671218,
             "name": "Heliot Ramos",
             "order": 1,
-            "position": "RF"
+            "position": "LF"
           },
           {
             "id": 650333,
@@ -2320,13 +2320,13 @@
             "id": 646240,
             "name": "Rafael Devers",
             "order": 4,
-            "position": "DH"
+            "position": "1B"
           },
           {
             "id": 808982,
             "name": "Jung Hoo Lee",
             "order": 5,
-            "position": "CF"
+            "position": "RF"
           },
           {
             "id": 642715,
@@ -2338,23 +2338,23 @@
             "id": 805811,
             "name": "Bryce Eldridge",
             "order": 7,
-            "position": "1B"
+            "position": "DH"
           },
           {
-            "id": 682674,
-            "name": "Victor Bericoto",
+            "id": 687551,
+            "name": "Drew Gilbert",
             "order": 8,
-            "position": "LF"
+            "position": "CF"
           },
           {
-            "id": 701852,
-            "name": "Drew Cavanaugh",
+            "id": 606992,
+            "name": "Eric Haase",
             "order": 9,
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-08)",
-        "homeLineupSource": "projected (last 2026-07-08)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g824815",
@@ -5537,7 +5537,10 @@
         "parkHrFactor": 100,
         "startUtc": "2026-07-09T23:45:00Z",
         "startET": "7:45 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 701656,
+          "name": "Logan Henderson"
+        },
         "homePitcher": {
           "id": 669467,
           "name": "Andre Pallante"
@@ -6015,7 +6018,7 @@
             "id": 671218,
             "name": "Heliot Ramos",
             "order": 1,
-            "position": "RF"
+            "position": "LF"
           },
           {
             "id": 650333,
@@ -6033,13 +6036,13 @@
             "id": 646240,
             "name": "Rafael Devers",
             "order": 4,
-            "position": "DH"
+            "position": "1B"
           },
           {
             "id": 808982,
             "name": "Jung Hoo Lee",
             "order": 5,
-            "position": "CF"
+            "position": "RF"
           },
           {
             "id": 642715,
@@ -6051,17 +6054,17 @@
             "id": 805811,
             "name": "Bryce Eldridge",
             "order": 7,
-            "position": "1B"
+            "position": "DH"
           },
           {
-            "id": 682674,
-            "name": "Victor Bericoto",
+            "id": 687551,
+            "name": "Drew Gilbert",
             "order": 8,
-            "position": "LF"
+            "position": "CF"
           },
           {
-            "id": 701852,
-            "name": "Drew Cavanaugh",
+            "id": 606992,
+            "name": "Eric Haase",
             "order": 9,
             "position": "C"
           }
