@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-10T22:28:13.630Z",
+  "refreshedAt": "2026-07-10T23:31:09.334Z",
   "today": "2026-07-10",
   "dates": [
     "2026-07-09",
@@ -178,7 +178,7 @@
           },
           {
             "id": 677951,
-            "name": "Bobby Witt Jr.",
+            "name": "Bobby Witt",
             "order": 2,
             "position": "SS"
           },
@@ -1807,7 +1807,7 @@
       {
         "id": "g824252",
         "gamePk": 824252,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "PHI",
         "homeTeam": "DET",
         "awayTeamId": 143,
@@ -2221,7 +2221,7 @@
       {
         "id": "g824817",
         "gamePk": 824817,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "KC",
         "homeTeam": "BAL",
         "awayTeamId": 118,
@@ -2359,7 +2359,7 @@
       {
         "id": "g824493",
         "gamePk": 824493,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "CHC",
         "homeTeam": "CIN",
         "awayTeamId": 112,
@@ -2497,7 +2497,7 @@
       {
         "id": "g822955",
         "gamePk": 822955,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "SEA",
         "homeTeam": "TB",
         "awayTeamId": 136,
@@ -2635,7 +2635,7 @@
       {
         "id": "g823845",
         "gamePk": 823845,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "CLE",
         "homeTeam": "MIA",
         "awayTeamId": 114,
@@ -2773,7 +2773,7 @@
       {
         "id": "g823604",
         "gamePk": 823604,
-        "status": "Delayed Start",
+        "status": "Warmup",
         "awayTeam": "BOS",
         "homeTeam": "NYM",
         "awayTeamId": 111,
@@ -2911,7 +2911,7 @@
       {
         "id": "g824575",
         "gamePk": 824575,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "ATH",
         "homeTeam": "CWS",
         "awayTeamId": 133,
@@ -3482,25 +3482,25 @@
           "id": 676664,
           "name": "JP Sears"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 676391,
             "name": "Ernie Clement",
             "order": 1,
-            "position": "2B"
-          },
-          {
-            "id": 664770,
-            "name": "Nathan Lukes",
-            "order": 2,
-            "position": "RF"
+            "position": "SS"
           },
           {
             "id": 665489,
             "name": "Vladimir Guerrero Jr.",
-            "order": 3,
+            "order": 2,
             "position": "1B"
+          },
+          {
+            "id": 672960,
+            "name": "Kazuma Okamoto",
+            "order": 3,
+            "position": "3B"
           },
           {
             "id": 543807,
@@ -3509,34 +3509,34 @@
             "position": "DH"
           },
           {
+            "id": 672386,
+            "name": "Alejandro Kirk",
+            "order": 5,
+            "position": "C"
+          },
+          {
             "id": 662139,
             "name": "Daulton Varsho",
-            "order": 5,
+            "order": 6,
             "position": "CF"
           },
           {
-            "id": 672960,
-            "name": "Kazuma Okamoto",
-            "order": 6,
-            "position": "3B"
+            "id": 649966,
+            "name": "Luis Urías",
+            "order": 7,
+            "position": "2B"
           },
           {
-            "id": 672386,
-            "name": "Alejandro Kirk",
-            "order": 7,
-            "position": "C"
+            "id": 664702,
+            "name": "Myles Straw",
+            "order": 8,
+            "position": "RF"
           },
           {
             "id": 682729,
             "name": "Jonatan Clase",
-            "order": 8,
-            "position": "LF"
-          },
-          {
-            "id": 665926,
-            "name": "Andrés Giménez",
             "order": 9,
-            "position": "SS"
+            "position": "LF"
           }
         ],
         "homeLineup": [
@@ -3595,7 +3595,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-08)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       },
       {
@@ -3890,7 +3890,10 @@
         "parkHrFactor": 101,
         "startUtc": "2026-07-11T18:10:00Z",
         "startET": "2:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 696270,
+          "name": "Ryan Johnson"
+        },
         "homePitcher": {
           "id": 657746,
           "name": "Joe Ryan"
@@ -5692,19 +5695,19 @@
             "id": 676391,
             "name": "Ernie Clement",
             "order": 1,
-            "position": "2B"
-          },
-          {
-            "id": 664770,
-            "name": "Nathan Lukes",
-            "order": 2,
-            "position": "RF"
+            "position": "SS"
           },
           {
             "id": 665489,
             "name": "Vladimir Guerrero Jr.",
-            "order": 3,
+            "order": 2,
             "position": "1B"
+          },
+          {
+            "id": 672960,
+            "name": "Kazuma Okamoto",
+            "order": 3,
+            "position": "3B"
           },
           {
             "id": 543807,
@@ -5713,34 +5716,34 @@
             "position": "DH"
           },
           {
+            "id": 672386,
+            "name": "Alejandro Kirk",
+            "order": 5,
+            "position": "C"
+          },
+          {
             "id": 662139,
             "name": "Daulton Varsho",
-            "order": 5,
+            "order": 6,
             "position": "CF"
           },
           {
-            "id": 672960,
-            "name": "Kazuma Okamoto",
-            "order": 6,
-            "position": "3B"
+            "id": 649966,
+            "name": "Luis Urías",
+            "order": 7,
+            "position": "2B"
           },
           {
-            "id": 672386,
-            "name": "Alejandro Kirk",
-            "order": 7,
-            "position": "C"
+            "id": 664702,
+            "name": "Myles Straw",
+            "order": 8,
+            "position": "RF"
           },
           {
             "id": 682729,
             "name": "Jonatan Clase",
-            "order": 8,
-            "position": "LF"
-          },
-          {
-            "id": 665926,
-            "name": "Andrés Giménez",
             "order": 9,
-            "position": "SS"
+            "position": "LF"
           }
         ],
         "homeLineup": [
@@ -5799,7 +5802,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-08)",
+        "awayLineupSource": "projected (last 2026-07-11)",
         "homeLineupSource": "projected (last 2026-07-11)"
       },
       {
