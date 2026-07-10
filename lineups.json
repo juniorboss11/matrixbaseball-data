@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-10T03:39:37.537Z",
+  "refreshedAt": "2026-07-10T07:03:17.230Z",
   "today": "2026-07-10",
   "dates": [
     "2026-07-09",
@@ -1529,7 +1529,7 @@
       {
         "id": "g823277",
         "gamePk": 823277,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "AZ",
         "homeTeam": "SD",
         "awayTeamId": 109,
@@ -1667,7 +1667,7 @@
       {
         "id": "g823201",
         "gamePk": 823201,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "COL",
         "homeTeam": "SF",
         "awayTeamId": 115,
@@ -3198,7 +3198,10 @@
         "parkHrFactor": 101,
         "startUtc": "2026-07-11T00:10:00Z",
         "startET": "8:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 680570,
+          "name": "Grayson Rodriguez"
+        },
         "homePitcher": {
           "id": 805673,
           "name": "Zebby Matthews"
