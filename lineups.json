@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-11T12:02:40.930Z",
+  "refreshedAt": "2026-07-11T13:46:50.479Z",
   "today": "2026-07-11",
   "dates": [
     "2026-07-10",
@@ -2083,7 +2083,7 @@
       {
         "id": "g823357",
         "gamePk": 823357,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "MIL",
         "homeTeam": "PIT",
         "awayTeamId": 158,
@@ -2094,21 +2094,27 @@
         "parkHrFactor": 96,
         "startUtc": "2026-07-11T16:05:00Z",
         "startET": "12:05 PM",
-        "awayPitcher": null,
-        "homePitcher": null,
-        "lineupsConfirmed": false,
+        "awayPitcher": {
+          "id": 687075,
+          "name": "Brandon Sproat"
+        },
+        "homePitcher": {
+          "id": 677952,
+          "name": "Braxton Ashcraft"
+        },
+        "lineupsConfirmed": true,
         "awayLineup": [
+          {
+            "id": 592885,
+            "name": "Christian Yelich",
+            "order": 1,
+            "position": "DH"
+          },
           {
             "id": 669003,
             "name": "Garrett Mitchell",
-            "order": 1,
-            "position": "CF"
-          },
-          {
-            "id": 694192,
-            "name": "Jackson Chourio",
             "order": 2,
-            "position": "LF"
+            "position": "CF"
           },
           {
             "id": 668930,
@@ -2126,25 +2132,25 @@
             "id": 641343,
             "name": "Jake Bauers",
             "order": 5,
-            "position": "DH"
-          },
-          {
-            "id": 683734,
-            "name": "Andrew Vaughn",
-            "order": 6,
             "position": "1B"
           },
           {
-            "id": 686217,
-            "name": "Sal Frelick",
-            "order": 7,
-            "position": "RF"
+            "id": 800325,
+            "name": "Luis Lara",
+            "order": 6,
+            "position": "LF"
           },
           {
             "id": 806198,
             "name": "Cooper Pratt",
-            "order": 8,
+            "order": 7,
             "position": "SS"
+          },
+          {
+            "id": 686217,
+            "name": "Sal Frelick",
+            "order": 8,
+            "position": "RF"
           },
           {
             "id": 687401,
@@ -2170,7 +2176,7 @@
             "id": 668804,
             "name": "Bryan Reynolds",
             "order": 3,
-            "position": "LF"
+            "position": "DH"
           },
           {
             "id": 699013,
@@ -2182,7 +2188,7 @@
             "id": 656811,
             "name": "Ryan O'Hearn",
             "order": 5,
-            "position": "DH"
+            "position": "1B"
           },
           {
             "id": 693304,
@@ -2194,23 +2200,23 @@
             "id": 682997,
             "name": "Tyler Callihan",
             "order": 7,
-            "position": "1B"
-          },
-          {
-            "id": 804668,
-            "name": "Rafael Flores Jr.",
-            "order": 8,
-            "position": "C"
+            "position": "LF"
           },
           {
             "id": 669707,
             "name": "Jared Triolo",
-            "order": 9,
+            "order": 8,
             "position": "SS"
+          },
+          {
+            "id": 680779,
+            "name": "Henry Davis",
+            "order": 9,
+            "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-09)",
-        "homeLineupSource": "projected (last 2026-07-09)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g823356",
@@ -2237,16 +2243,16 @@
         "lineupsConfirmed": false,
         "awayLineup": [
           {
-            "id": 669003,
-            "name": "Garrett Mitchell",
+            "id": 592885,
+            "name": "Christian Yelich",
             "order": 1,
-            "position": "CF"
+            "position": "DH"
           },
           {
-            "id": 694192,
-            "name": "Jackson Chourio",
+            "id": 669003,
+            "name": "Garrett Mitchell",
             "order": 2,
-            "position": "LF"
+            "position": "CF"
           },
           {
             "id": 668930,
@@ -2264,25 +2270,25 @@
             "id": 641343,
             "name": "Jake Bauers",
             "order": 5,
-            "position": "DH"
-          },
-          {
-            "id": 683734,
-            "name": "Andrew Vaughn",
-            "order": 6,
             "position": "1B"
           },
           {
-            "id": 686217,
-            "name": "Sal Frelick",
-            "order": 7,
-            "position": "RF"
+            "id": 800325,
+            "name": "Luis Lara",
+            "order": 6,
+            "position": "LF"
           },
           {
             "id": 806198,
             "name": "Cooper Pratt",
-            "order": 8,
+            "order": 7,
             "position": "SS"
+          },
+          {
+            "id": 686217,
+            "name": "Sal Frelick",
+            "order": 8,
+            "position": "RF"
           },
           {
             "id": 687401,
@@ -2308,7 +2314,7 @@
             "id": 668804,
             "name": "Bryan Reynolds",
             "order": 3,
-            "position": "LF"
+            "position": "DH"
           },
           {
             "id": 699013,
@@ -2320,7 +2326,7 @@
             "id": 656811,
             "name": "Ryan O'Hearn",
             "order": 5,
-            "position": "DH"
+            "position": "1B"
           },
           {
             "id": 693304,
@@ -2332,23 +2338,23 @@
             "id": 682997,
             "name": "Tyler Callihan",
             "order": 7,
-            "position": "1B"
-          },
-          {
-            "id": 804668,
-            "name": "Rafael Flores Jr.",
-            "order": 8,
-            "position": "C"
+            "position": "LF"
           },
           {
             "id": 669707,
             "name": "Jared Triolo",
-            "order": 9,
+            "order": 8,
             "position": "SS"
+          },
+          {
+            "id": 680779,
+            "name": "Henry Davis",
+            "order": 9,
+            "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-09)",
-        "homeLineupSource": "projected (last 2026-07-09)"
+        "awayLineupSource": "projected (last 2026-07-11)",
+        "homeLineupSource": "projected (last 2026-07-11)"
       },
       {
         "id": "g823682",
@@ -4306,16 +4312,16 @@
         "lineupsConfirmed": false,
         "awayLineup": [
           {
-            "id": 669003,
-            "name": "Garrett Mitchell",
+            "id": 592885,
+            "name": "Christian Yelich",
             "order": 1,
-            "position": "CF"
+            "position": "DH"
           },
           {
-            "id": 694192,
-            "name": "Jackson Chourio",
+            "id": 669003,
+            "name": "Garrett Mitchell",
             "order": 2,
-            "position": "LF"
+            "position": "CF"
           },
           {
             "id": 668930,
@@ -4333,25 +4339,25 @@
             "id": 641343,
             "name": "Jake Bauers",
             "order": 5,
-            "position": "DH"
-          },
-          {
-            "id": 683734,
-            "name": "Andrew Vaughn",
-            "order": 6,
             "position": "1B"
           },
           {
-            "id": 686217,
-            "name": "Sal Frelick",
-            "order": 7,
-            "position": "RF"
+            "id": 800325,
+            "name": "Luis Lara",
+            "order": 6,
+            "position": "LF"
           },
           {
             "id": 806198,
             "name": "Cooper Pratt",
-            "order": 8,
+            "order": 7,
             "position": "SS"
+          },
+          {
+            "id": 686217,
+            "name": "Sal Frelick",
+            "order": 8,
+            "position": "RF"
           },
           {
             "id": 687401,
@@ -4377,7 +4383,7 @@
             "id": 668804,
             "name": "Bryan Reynolds",
             "order": 3,
-            "position": "LF"
+            "position": "DH"
           },
           {
             "id": 699013,
@@ -4389,7 +4395,7 @@
             "id": 656811,
             "name": "Ryan O'Hearn",
             "order": 5,
-            "position": "DH"
+            "position": "1B"
           },
           {
             "id": 693304,
@@ -4401,23 +4407,23 @@
             "id": 682997,
             "name": "Tyler Callihan",
             "order": 7,
-            "position": "1B"
-          },
-          {
-            "id": 804668,
-            "name": "Rafael Flores Jr.",
-            "order": 8,
-            "position": "C"
+            "position": "LF"
           },
           {
             "id": 669707,
             "name": "Jared Triolo",
-            "order": 9,
+            "order": 8,
             "position": "SS"
+          },
+          {
+            "id": 680779,
+            "name": "Henry Davis",
+            "order": 9,
+            "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-09)",
-        "homeLineupSource": "projected (last 2026-07-09)"
+        "awayLineupSource": "projected (last 2026-07-11)",
+        "homeLineupSource": "projected (last 2026-07-11)"
       },
       {
         "id": "g824814",
