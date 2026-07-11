@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-11T21:30:42.206Z",
+  "refreshedAt": "2026-07-11T22:26:22.129Z",
   "today": "2026-07-11",
   "dates": [
     "2026-07-10",
@@ -2635,7 +2635,7 @@
       {
         "id": "g823198",
         "gamePk": 823198,
-        "status": "In Progress",
+        "status": "Game Over",
         "awayTeam": "COL",
         "homeTeam": "SF",
         "awayTeamId": 115,
@@ -3325,7 +3325,7 @@
       {
         "id": "g824249",
         "gamePk": 824249,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "PHI",
         "homeTeam": "DET",
         "awayTeamId": 143,
@@ -4034,25 +4034,25 @@
           "id": 621111,
           "name": "Walker Buehler"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 676391,
             "name": "Ernie Clement",
             "order": 1,
-            "position": "SS"
+            "position": "2B"
+          },
+          {
+            "id": 664770,
+            "name": "Nathan Lukes",
+            "order": 2,
+            "position": "RF"
           },
           {
             "id": 665489,
             "name": "Vladimir Guerrero Jr.",
-            "order": 2,
-            "position": "1B"
-          },
-          {
-            "id": 672960,
-            "name": "Kazuma Okamoto",
             "order": 3,
-            "position": "3B"
+            "position": "1B"
           },
           {
             "id": 543807,
@@ -4061,10 +4061,10 @@
             "position": "DH"
           },
           {
-            "id": 672386,
-            "name": "Alejandro Kirk",
+            "id": 672960,
+            "name": "Kazuma Okamoto",
             "order": 5,
-            "position": "C"
+            "position": "3B"
           },
           {
             "id": 662139,
@@ -4073,16 +4073,16 @@
             "position": "CF"
           },
           {
-            "id": 649966,
-            "name": "Luis Urías",
+            "id": 672386,
+            "name": "Alejandro Kirk",
             "order": 7,
-            "position": "2B"
+            "position": "C"
           },
           {
-            "id": 664702,
-            "name": "Myles Straw",
+            "id": 665926,
+            "name": "Andrés Giménez",
             "order": 8,
-            "position": "RF"
+            "position": "SS"
           },
           {
             "id": 682729,
@@ -4147,7 +4147,7 @@
             "position": "3B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-11)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       },
       {
@@ -6235,19 +6235,19 @@
             "id": 676391,
             "name": "Ernie Clement",
             "order": 1,
-            "position": "SS"
+            "position": "2B"
+          },
+          {
+            "id": 664770,
+            "name": "Nathan Lukes",
+            "order": 2,
+            "position": "RF"
           },
           {
             "id": 665489,
             "name": "Vladimir Guerrero Jr.",
-            "order": 2,
-            "position": "1B"
-          },
-          {
-            "id": 672960,
-            "name": "Kazuma Okamoto",
             "order": 3,
-            "position": "3B"
+            "position": "1B"
           },
           {
             "id": 543807,
@@ -6256,10 +6256,10 @@
             "position": "DH"
           },
           {
-            "id": 672386,
-            "name": "Alejandro Kirk",
+            "id": 672960,
+            "name": "Kazuma Okamoto",
             "order": 5,
-            "position": "C"
+            "position": "3B"
           },
           {
             "id": 662139,
@@ -6268,16 +6268,16 @@
             "position": "CF"
           },
           {
-            "id": 649966,
-            "name": "Luis Urías",
+            "id": 672386,
+            "name": "Alejandro Kirk",
             "order": 7,
-            "position": "2B"
+            "position": "C"
           },
           {
-            "id": 664702,
-            "name": "Myles Straw",
+            "id": 665926,
+            "name": "Andrés Giménez",
             "order": 8,
-            "position": "RF"
+            "position": "SS"
           },
           {
             "id": 682729,
@@ -6342,7 +6342,7 @@
             "position": "3B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-11)",
+        "awayLineupSource": "projected (last 2026-07-12)",
         "homeLineupSource": "projected (last 2026-07-12)"
       }
     ]
