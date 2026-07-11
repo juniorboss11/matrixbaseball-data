@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-11T15:37:00.467Z",
+  "refreshedAt": "2026-07-11T16:31:57.700Z",
   "today": "2026-07-11",
   "dates": [
     "2026-07-10",
@@ -2083,7 +2083,7 @@
       {
         "id": "g823357",
         "gamePk": 823357,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "MIL",
         "homeTeam": "PIT",
         "awayTeamId": 158,
@@ -2922,7 +2922,10 @@
         "parkHrFactor": 103,
         "startUtc": "2026-07-11T20:10:00Z",
         "startET": "4:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 700842,
+          "name": "Eduardo Rivera"
+        },
         "homePitcher": {
           "id": 642547,
           "name": "Freddy Peralta"
@@ -3046,7 +3049,7 @@
       {
         "id": "g822953",
         "gamePk": 822953,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "SEA",
         "homeTeam": "TB",
         "awayTeamId": 136,
@@ -3071,7 +3074,7 @@
             "id": 641487,
             "name": "J.P. Crawford",
             "order": 1,
-            "position": "SS"
+            "position": "3B"
           },
           {
             "id": 668227,
@@ -3101,7 +3104,7 @@
             "id": 670042,
             "name": "Luke Raley",
             "order": 6,
-            "position": "CF"
+            "position": "RF"
           },
           {
             "id": 702284,
@@ -3110,16 +3113,16 @@
             "position": "2B"
           },
           {
-            "id": 670156,
-            "name": "Miles Mastrobuoni",
+            "id": 645302,
+            "name": "Victor Robles",
             "order": 8,
-            "position": "RF"
+            "position": "CF"
           },
           {
-            "id": 671083,
-            "name": "Buddy Kennedy",
+            "id": 806068,
+            "name": "Colt Emerson",
             "order": 9,
-            "position": "3B"
+            "position": "SS"
           }
         ],
         "homeLineup": [
@@ -3178,7 +3181,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-10)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "projected (last 2026-07-10)"
       },
       {
@@ -4999,7 +5002,7 @@
             "id": 641487,
             "name": "J.P. Crawford",
             "order": 1,
-            "position": "SS"
+            "position": "3B"
           },
           {
             "id": 668227,
@@ -5029,7 +5032,7 @@
             "id": 670042,
             "name": "Luke Raley",
             "order": 6,
-            "position": "CF"
+            "position": "RF"
           },
           {
             "id": 702284,
@@ -5038,16 +5041,16 @@
             "position": "2B"
           },
           {
-            "id": 670156,
-            "name": "Miles Mastrobuoni",
+            "id": 645302,
+            "name": "Victor Robles",
             "order": 8,
-            "position": "RF"
+            "position": "CF"
           },
           {
-            "id": 671083,
-            "name": "Buddy Kennedy",
+            "id": 806068,
+            "name": "Colt Emerson",
             "order": 9,
-            "position": "3B"
+            "position": "SS"
           }
         ],
         "homeLineup": [
@@ -5106,7 +5109,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-10)",
+        "awayLineupSource": "projected (last 2026-07-11)",
         "homeLineupSource": "projected (last 2026-07-10)"
       },
       {
