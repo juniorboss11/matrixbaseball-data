@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-12T01:05:55.275Z",
+  "refreshedAt": "2026-07-12T04:35:43.680Z",
   "today": "2026-07-12",
   "dates": [
     "2026-07-11",
@@ -1391,7 +1391,7 @@
       {
         "id": "g824813",
         "gamePk": 824813,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "KC",
         "homeTeam": "BAL",
         "awayTeamId": 118,
@@ -1529,7 +1529,7 @@
       {
         "id": "g822875",
         "gamePk": 822875,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "HOU",
         "homeTeam": "TEX",
         "awayTeamId": 117,
@@ -1667,7 +1667,7 @@
       {
         "id": "g824492",
         "gamePk": 824492,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "CHC",
         "homeTeam": "CIN",
         "awayTeamId": 112,
@@ -1805,7 +1805,7 @@
       {
         "id": "g823030",
         "gamePk": 823030,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "ATL",
         "homeTeam": "STL",
         "awayTeamId": 144,
@@ -1943,7 +1943,7 @@
       {
         "id": "g823276",
         "gamePk": 823276,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "TOR",
         "homeTeam": "SD",
         "awayTeamId": 141,
@@ -2081,7 +2081,7 @@
       {
         "id": "g823926",
         "gamePk": 823926,
-        "status": "Warmup",
+        "status": "Final",
         "awayTeam": "AZ",
         "homeTeam": "LAD",
         "awayTeamId": 109,
@@ -3750,8 +3750,14 @@
         "parkHrFactor": 106,
         "startUtc": "2026-07-12T18:35:00Z",
         "startET": "2:35 PM",
-        "awayPitcher": null,
-        "homePitcher": null,
+        "awayPitcher": {
+          "id": 664299,
+          "name": "Cristian Javier"
+        },
+        "homePitcher": {
+          "id": 669022,
+          "name": "MacKenzie Gore"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
