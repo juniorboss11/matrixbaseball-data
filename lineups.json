@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-13T18:04:33.122Z",
+  "refreshedAt": "2026-07-13T19:45:29.165Z",
   "today": "2026-07-13",
   "dates": [
     "2026-07-12",
@@ -2084,7 +2084,7 @@
       {
         "id": "g823443",
         "gamePk": 823443,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "???",
         "homeTeam": "???",
         "awayTeamId": 159,
@@ -2103,11 +2103,121 @@
           "id": 650911,
           "name": "Cristopher Sánchez"
         },
-        "lineupsConfirmed": false,
-        "awayLineup": [],
-        "homeLineup": [],
-        "awayLineupSource": "unavailable",
-        "homeLineupSource": "unavailable"
+        "lineupsConfirmed": true,
+        "awayLineup": [
+          {
+            "id": 545361,
+            "name": "Mike Trout",
+            "order": 1,
+            "position": "CF"
+          },
+          {
+            "id": 670541,
+            "name": "Yordan Alvarez",
+            "order": 2,
+            "position": "DH"
+          },
+          {
+            "id": 669127,
+            "name": "Shea Langeliers",
+            "order": 3,
+            "position": "C"
+          },
+          {
+            "id": 691406,
+            "name": "Junior Caminero",
+            "order": 4,
+            "position": "3B"
+          },
+          {
+            "id": 677951,
+            "name": "Bobby Witt Jr.",
+            "order": 5,
+            "position": "SS"
+          },
+          {
+            "id": 641355,
+            "name": "Cody Bellinger",
+            "order": 6,
+            "position": "RF"
+          },
+          {
+            "id": 700250,
+            "name": "Ben Rice",
+            "order": 7,
+            "position": "1B"
+          },
+          {
+            "id": 682985,
+            "name": "Riley Greene",
+            "order": 8,
+            "position": "LF"
+          },
+          {
+            "id": 676391,
+            "name": "Ernie Clement",
+            "order": 9,
+            "position": "2B"
+          }
+        ],
+        "homeLineup": [
+          {
+            "id": 656941,
+            "name": "Kyle Schwarber",
+            "order": 1,
+            "position": "DH"
+          },
+          {
+            "id": 665742,
+            "name": "Juan Soto",
+            "order": 2,
+            "position": "RF"
+          },
+          {
+            "id": 518692,
+            "name": "Freddie Freeman",
+            "order": 3,
+            "position": "1B"
+          },
+          {
+            "id": 682928,
+            "name": "CJ Abrams",
+            "order": 4,
+            "position": "SS"
+          },
+          {
+            "id": 571970,
+            "name": "Max Muncy",
+            "order": 5,
+            "position": "3B"
+          },
+          {
+            "id": 645277,
+            "name": "Ozzie Albies",
+            "order": 6,
+            "position": "2B"
+          },
+          {
+            "id": 669016,
+            "name": "Brandon Marsh",
+            "order": 7,
+            "position": "LF"
+          },
+          {
+            "id": 681624,
+            "name": "Andy Pages",
+            "order": 8,
+            "position": "CF"
+          },
+          {
+            "id": 686948,
+            "name": "Drake Baldwin",
+            "order": 9,
+            "position": "C"
+          }
+        ],
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       }
     ]
   }
