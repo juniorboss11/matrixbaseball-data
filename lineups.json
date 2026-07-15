@@ -1,18 +1,17 @@
 {
-  "refreshedAt": "2026-07-14T23:10:10.435Z",
-  "today": "2026-07-14",
+  "refreshedAt": "2026-07-15T00:04:04.615Z",
+  "today": "2026-07-15",
   "dates": [
-    "2026-07-13",
     "2026-07-14",
-    "2026-07-15"
+    "2026-07-15",
+    "2026-07-16"
   ],
   "slates": {
-    "2026-07-13": [],
     "2026-07-14": [
       {
         "id": "g823443",
         "gamePk": 823443,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "???",
         "homeTeam": "???",
         "awayTeamId": 159,
@@ -148,6 +147,143 @@
         "homeLineupSource": "confirmed"
       }
     ],
-    "2026-07-15": []
+    "2026-07-15": [],
+    "2026-07-16": [
+      {
+        "id": "g823440",
+        "gamePk": 823440,
+        "status": "Scheduled",
+        "awayTeam": "NYM",
+        "homeTeam": "PHI",
+        "awayTeamId": 121,
+        "homeTeamId": 143,
+        "awayTeamName": "New York Mets",
+        "homeTeamName": "Philadelphia Phillies",
+        "park": "Citizens Bank Park",
+        "parkHrFactor": 109,
+        "startUtc": "2026-07-16T23:10:00Z",
+        "startET": "7:10 PM",
+        "awayPitcher": {
+          "id": 681035,
+          "name": "Christian Scott"
+        },
+        "homePitcher": null,
+        "lineupsConfirmed": false,
+        "awayLineup": [
+          {
+            "id": 805999,
+            "name": "A.J. Ewing",
+            "order": 1,
+            "position": "CF"
+          },
+          {
+            "id": 665742,
+            "name": "Juan Soto",
+            "order": 2,
+            "position": "DH"
+          },
+          {
+            "id": 596019,
+            "name": "Francisco Lindor",
+            "order": 3,
+            "position": "SS"
+          },
+          {
+            "id": 676572,
+            "name": "Eric Wagaman",
+            "order": 4,
+            "position": "1B"
+          },
+          {
+            "id": 701807,
+            "name": "Carson Benge",
+            "order": 5,
+            "position": "RF"
+          },
+          {
+            "id": 621438,
+            "name": "Tyrone Taylor",
+            "order": 6,
+            "position": "LF"
+          },
+          {
+            "id": 620443,
+            "name": "Luis Torrens",
+            "order": 7,
+            "position": "C"
+          },
+          {
+            "id": 683146,
+            "name": "Brett Baty",
+            "order": 8,
+            "position": "3B"
+          },
+          {
+            "id": 670097,
+            "name": "Zack Short",
+            "order": 9,
+            "position": "2B"
+          }
+        ],
+        "homeLineup": [
+          {
+            "id": 607208,
+            "name": "Trea Turner",
+            "order": 1,
+            "position": "SS"
+          },
+          {
+            "id": 656941,
+            "name": "Kyle Schwarber",
+            "order": 2,
+            "position": "DH"
+          },
+          {
+            "id": 547180,
+            "name": "Bryce Harper",
+            "order": 3,
+            "position": "1B"
+          },
+          {
+            "id": 664761,
+            "name": "Alec Bohm",
+            "order": 4,
+            "position": "3B"
+          },
+          {
+            "id": 624641,
+            "name": "Edmundo Sosa",
+            "order": 5,
+            "position": "LF"
+          },
+          {
+            "id": 669016,
+            "name": "Brandon Marsh",
+            "order": 6,
+            "position": "RF"
+          },
+          {
+            "id": 656537,
+            "name": "Derek Hill",
+            "order": 7,
+            "position": "CF"
+          },
+          {
+            "id": 592663,
+            "name": "J.T. Realmuto",
+            "order": 8,
+            "position": "C"
+          },
+          {
+            "id": 681082,
+            "name": "Bryson Stott",
+            "order": 9,
+            "position": "2B"
+          }
+        ],
+        "awayLineupSource": "projected (last 2026-07-12)",
+        "homeLineupSource": "projected (last 2026-07-12)"
+      }
+    ]
   }
 }
