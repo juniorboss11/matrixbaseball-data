@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-16T21:35:35.891Z",
+  "refreshedAt": "2026-07-16T22:35:50.320Z",
   "today": "2026-07-16",
   "dates": [
     "2026-07-15",
@@ -12,7 +12,7 @@
       {
         "id": "g823440",
         "gamePk": 823440,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "NYM",
         "homeTeam": "PHI",
         "awayTeamId": 121,
@@ -1262,7 +1262,10 @@
         "startUtc": "2026-07-18T00:10:00Z",
         "startET": "8:10 PM",
         "awayPitcher": null,
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 663567,
+          "name": "Peter Lambert"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -1673,7 +1676,10 @@
           "id": 675512,
           "name": "Troy Melton"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 672282,
+          "name": "Reid Detmers"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
