@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-16T18:08:22.237Z",
+  "refreshedAt": "2026-07-16T19:32:51.491Z",
   "today": "2026-07-16",
   "dates": [
     "2026-07-15",
@@ -12,7 +12,7 @@
       {
         "id": "g823440",
         "gamePk": 823440,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "NYM",
         "homeTeam": "PHI",
         "awayTeamId": 121,
@@ -31,7 +31,7 @@
           "id": 605400,
           "name": "Aaron Nola"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 805999,
@@ -43,19 +43,19 @@
             "id": 665742,
             "name": "Juan Soto",
             "order": 2,
-            "position": "DH"
+            "position": "LF"
+          },
+          {
+            "id": 666182,
+            "name": "Bo Bichette",
+            "order": 3,
+            "position": "3B"
           },
           {
             "id": 596019,
             "name": "Francisco Lindor",
-            "order": 3,
-            "position": "SS"
-          },
-          {
-            "id": 676572,
-            "name": "Eric Wagaman",
             "order": 4,
-            "position": "1B"
+            "position": "SS"
           },
           {
             "id": 701807,
@@ -64,28 +64,28 @@
             "position": "RF"
           },
           {
-            "id": 621438,
-            "name": "Tyrone Taylor",
+            "id": 593871,
+            "name": "Jorge Polanco",
             "order": 6,
-            "position": "LF"
+            "position": "DH"
           },
           {
-            "id": 620443,
-            "name": "Luis Torrens",
+            "id": 676724,
+            "name": "Jared Young",
             "order": 7,
-            "position": "C"
+            "position": "1B"
           },
           {
             "id": 683146,
             "name": "Brett Baty",
             "order": 8,
-            "position": "3B"
+            "position": "2B"
           },
           {
-            "id": 670097,
-            "name": "Zack Short",
+            "id": 682626,
+            "name": "Francisco Alvarez",
             "order": 9,
-            "position": "2B"
+            "position": "C"
           }
         ],
         "homeLineup": [
@@ -108,44 +108,44 @@
             "position": "1B"
           },
           {
-            "id": 664761,
-            "name": "Alec Bohm",
+            "id": 669016,
+            "name": "Brandon Marsh",
             "order": 4,
-            "position": "3B"
-          },
-          {
-            "id": 624641,
-            "name": "Edmundo Sosa",
-            "order": 5,
             "position": "LF"
           },
           {
-            "id": 669016,
-            "name": "Brandon Marsh",
-            "order": 6,
-            "position": "RF"
-          },
-          {
-            "id": 656537,
-            "name": "Derek Hill",
-            "order": 7,
-            "position": "CF"
-          },
-          {
-            "id": 592663,
-            "name": "J.T. Realmuto",
-            "order": 8,
-            "position": "C"
+            "id": 664761,
+            "name": "Alec Bohm",
+            "order": 5,
+            "position": "3B"
           },
           {
             "id": 681082,
             "name": "Bryson Stott",
-            "order": 9,
+            "order": 6,
             "position": "2B"
+          },
+          {
+            "id": 592663,
+            "name": "J.T. Realmuto",
+            "order": 7,
+            "position": "C"
+          },
+          {
+            "id": 687282,
+            "name": "Gabriel Rincones Jr.",
+            "order": 8,
+            "position": "RF"
+          },
+          {
+            "id": 702222,
+            "name": "Justin Crawford",
+            "order": 9,
+            "position": "CF"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-12)",
-        "homeLineupSource": "projected (last 2026-07-12)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       }
     ],
     "2026-07-17": [
@@ -1117,7 +1117,10 @@
         "parkHrFactor": 107,
         "startUtc": "2026-07-18T00:05:00Z",
         "startET": "8:05 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 641927,
+          "name": "Bailey Ober"
+        },
         "homePitcher": {
           "id": 607067,
           "name": "Colin Rea"
@@ -1795,7 +1798,10 @@
         "parkHrFactor": 105,
         "startUtc": "2026-07-18T01:40:00Z",
         "startET": "9:40 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 676917,
+          "name": "Cade Cavalli"
+        },
         "homePitcher": null,
         "lineupsConfirmed": false,
         "awayLineup": [
@@ -2063,7 +2069,10 @@
           "id": 694738,
           "name": "Landen Roupp"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 682243,
+          "name": "Bryce Miller"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
