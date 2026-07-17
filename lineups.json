@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-17T22:28:51.041Z",
+  "refreshedAt": "2026-07-17T23:26:47.421Z",
   "today": "2026-07-17",
   "dates": [
     "2026-07-16",
@@ -289,7 +289,7 @@
       {
         "id": "g824737",
         "gamePk": 824737,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "TB",
         "homeTeam": "BOS",
         "awayTeamId": 139,
@@ -427,7 +427,7 @@
       {
         "id": "g823524",
         "gamePk": 823524,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "LAD",
         "homeTeam": "NYY",
         "awayTeamId": 119,
@@ -565,7 +565,7 @@
       {
         "id": "g824901",
         "gamePk": 824901,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "TEX",
         "homeTeam": "ATL",
         "awayTeamId": 140,
@@ -703,7 +703,7 @@
       {
         "id": "g822789",
         "gamePk": 822789,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "CWS",
         "homeTeam": "TOR",
         "awayTeamId": 145,
@@ -841,7 +841,7 @@
       {
         "id": "g823766",
         "gamePk": 823766,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "MIA",
         "homeTeam": "MIL",
         "awayTeamId": 146,
@@ -1550,61 +1550,61 @@
           "id": 672282,
           "name": "Reid Detmers"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
+          {
+            "id": 663837,
+            "name": "Matt Vierling",
+            "order": 1,
+            "position": "CF"
+          },
           {
             "id": 805808,
             "name": "Kevin McGonigle",
-            "order": 1,
-            "position": "SS"
+            "order": 2,
+            "position": "3B"
           },
           {
             "id": 693307,
             "name": "Dillon Dingler",
-            "order": 2,
-            "position": "C"
-          },
-          {
-            "id": 690993,
-            "name": "Colt Keith",
             "order": 3,
-            "position": "3B"
-          },
-          {
-            "id": 682985,
-            "name": "Riley Greene",
-            "order": 4,
-            "position": "LF"
+            "position": "C"
           },
           {
             "id": 679529,
             "name": "Spencer Torkelson",
-            "order": 5,
+            "order": 4,
             "position": "1B"
           },
           {
-            "id": 681481,
-            "name": "Kerry Carpenter",
+            "id": 682985,
+            "name": "Riley Greene",
+            "order": 5,
+            "position": "LF"
+          },
+          {
+            "id": 680664,
+            "name": "Eduardo Valencia",
             "order": 6,
             "position": "DH"
           },
           {
-            "id": 656716,
-            "name": "Zach McKinstry",
+            "id": 701678,
+            "name": "Hao-Yu Lee",
             "order": 7,
             "position": "2B"
           },
           {
-            "id": 663837,
-            "name": "Matt Vierling",
+            "id": 701162,
+            "name": "Ben Malgeri",
             "order": 8,
             "position": "RF"
           },
           {
-            "id": 681546,
-            "name": "James Outman",
+            "id": 656716,
+            "name": "Zach McKinstry",
             "order": 9,
-            "position": "CF"
+            "position": "SS"
           }
         ],
         "homeLineup": [
@@ -1663,7 +1663,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-12)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       },
       {
@@ -4306,58 +4306,58 @@
         "lineupsConfirmed": false,
         "awayLineup": [
           {
+            "id": 663837,
+            "name": "Matt Vierling",
+            "order": 1,
+            "position": "CF"
+          },
+          {
             "id": 805808,
             "name": "Kevin McGonigle",
-            "order": 1,
-            "position": "SS"
+            "order": 2,
+            "position": "3B"
           },
           {
             "id": 693307,
             "name": "Dillon Dingler",
-            "order": 2,
-            "position": "C"
-          },
-          {
-            "id": 690993,
-            "name": "Colt Keith",
             "order": 3,
-            "position": "3B"
-          },
-          {
-            "id": 682985,
-            "name": "Riley Greene",
-            "order": 4,
-            "position": "LF"
+            "position": "C"
           },
           {
             "id": 679529,
             "name": "Spencer Torkelson",
-            "order": 5,
+            "order": 4,
             "position": "1B"
           },
           {
-            "id": 681481,
-            "name": "Kerry Carpenter",
+            "id": 682985,
+            "name": "Riley Greene",
+            "order": 5,
+            "position": "LF"
+          },
+          {
+            "id": 680664,
+            "name": "Eduardo Valencia",
             "order": 6,
             "position": "DH"
           },
           {
-            "id": 656716,
-            "name": "Zach McKinstry",
+            "id": 701678,
+            "name": "Hao-Yu Lee",
             "order": 7,
             "position": "2B"
           },
           {
-            "id": 663837,
-            "name": "Matt Vierling",
+            "id": 701162,
+            "name": "Ben Malgeri",
             "order": 8,
             "position": "RF"
           },
           {
-            "id": 681546,
-            "name": "James Outman",
+            "id": 656716,
+            "name": "Zach McKinstry",
             "order": 9,
-            "position": "CF"
+            "position": "SS"
           }
         ],
         "homeLineup": [
@@ -4416,7 +4416,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-12)",
+        "awayLineupSource": "projected (last 2026-07-18)",
         "homeLineupSource": "projected (last 2026-07-18)"
       }
     ]
