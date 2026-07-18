@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-18T20:22:57.785Z",
+  "refreshedAt": "2026-07-18T21:10:50.831Z",
   "today": "2026-07-18",
   "dates": [
     "2026-07-17",
@@ -2221,7 +2221,7 @@
       {
         "id": "g824412",
         "gamePk": 824412,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "PIT",
         "homeTeam": "CLE",
         "awayTeamId": 134,
@@ -2232,7 +2232,10 @@
         "parkHrFactor": 97,
         "startUtc": "2026-07-18T23:10:00Z",
         "startET": "7:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 682254,
+          "name": "Mason Montgomery"
+        },
         "homePitcher": {
           "id": 671106,
           "name": "Logan Allen"
@@ -2311,35 +2314,35 @@
             "id": 800050,
             "name": "Chase DeLauter",
             "order": 3,
-            "position": "RF"
-          },
-          {
-            "id": 700932,
-            "name": "Kyle Manzardo",
-            "order": 4,
-            "position": "1B"
+            "position": "DH"
           },
           {
             "id": 656555,
             "name": "Rhys Hoskins",
+            "order": 4,
+            "position": "1B"
+          },
+          {
+            "id": 682177,
+            "name": "Daniel Schneemann",
             "order": 5,
-            "position": "DH"
-          },
-          {
-            "id": 696135,
-            "name": "Kahlil Watson",
-            "order": 6,
-            "position": "CF"
-          },
-          {
-            "id": 672356,
-            "name": "Gabriel Arias",
-            "order": 7,
             "position": "3B"
           },
           {
-            "id": 672275,
-            "name": "Patrick Bailey",
+            "id": 681807,
+            "name": "David Fry",
+            "order": 6,
+            "position": "RF"
+          },
+          {
+            "id": 690984,
+            "name": "Petey Halpin",
+            "order": 7,
+            "position": "CF"
+          },
+          {
+            "id": 595978,
+            "name": "Austin Hedges",
             "order": 8,
             "position": "C"
           },
@@ -2351,12 +2354,12 @@
           }
         ],
         "awayLineupSource": "projected (last 2026-07-18)",
-        "homeLineupSource": "projected (last 2026-07-18)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g824657",
         "gamePk": 824657,
-        "status": "In Progress",
+        "status": "Game Over",
         "awayTeam": "MIN",
         "homeTeam": "CHC",
         "awayTeamId": 142,
@@ -3322,7 +3325,7 @@
       {
         "id": "g824738",
         "gamePk": 824738,
-        "status": "Delayed Start",
+        "status": "Warmup",
         "awayTeam": "TB",
         "homeTeam": "BOS",
         "awayTeamId": 139,
@@ -3755,7 +3758,7 @@
           "id": 693433,
           "name": "Bryan Woo"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 650333,
@@ -3806,8 +3809,8 @@
             "position": "CF"
           },
           {
-            "id": 701852,
-            "name": "Drew Cavanaugh",
+            "id": 691740,
+            "name": "Daniel Susac",
             "order": 9,
             "position": "C"
           }
@@ -3868,145 +3871,7 @@
             "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-18)",
-        "homeLineupSource": "confirmed"
-      },
-      {
-        "id": "g823523",
-        "gamePk": 823523,
-        "status": "Pre-Game",
-        "awayTeam": "LAD",
-        "homeTeam": "NYY",
-        "awayTeamId": 119,
-        "homeTeamId": 147,
-        "awayTeamName": "Los Angeles Dodgers",
-        "homeTeamName": "New York Yankees",
-        "park": "Yankee Stadium",
-        "parkHrFactor": 112,
-        "startUtc": "2026-07-19T00:08:00Z",
-        "startET": "8:08 PM",
-        "awayPitcher": {
-          "id": 686218,
-          "name": "Emmet Sheehan"
-        },
-        "homePitcher": {
-          "id": 677960,
-          "name": "Ryan Weathers"
-        },
-        "lineupsConfirmed": false,
-        "awayLineup": [
-          {
-            "id": 660271,
-            "name": "Shohei Ohtani",
-            "order": 1,
-            "position": "DH"
-          },
-          {
-            "id": 681624,
-            "name": "Andy Pages",
-            "order": 2,
-            "position": "CF"
-          },
-          {
-            "id": 518692,
-            "name": "Freddie Freeman",
-            "order": 3,
-            "position": "1B"
-          },
-          {
-            "id": 605141,
-            "name": "Mookie Betts",
-            "order": 4,
-            "position": "SS"
-          },
-          {
-            "id": 571970,
-            "name": "Max Muncy",
-            "order": 5,
-            "position": "3B"
-          },
-          {
-            "id": 663656,
-            "name": "Kyle Tucker",
-            "order": 6,
-            "position": "RF"
-          },
-          {
-            "id": 606192,
-            "name": "Teoscar Hernández",
-            "order": 7,
-            "position": "LF"
-          },
-          {
-            "id": 687221,
-            "name": "Dalton Rushing",
-            "order": 8,
-            "position": "C"
-          },
-          {
-            "id": 669242,
-            "name": "Tommy Edman",
-            "order": 9,
-            "position": "2B"
-          }
-        ],
-        "homeLineup": [
-          {
-            "id": 663757,
-            "name": "Trent Grisham",
-            "order": 1,
-            "position": "CF"
-          },
-          {
-            "id": 700250,
-            "name": "Ben Rice",
-            "order": 2,
-            "position": "1B"
-          },
-          {
-            "id": 691176,
-            "name": "Jasson Domínguez",
-            "order": 3,
-            "position": "DH"
-          },
-          {
-            "id": 641355,
-            "name": "Cody Bellinger",
-            "order": 4,
-            "position": "LF"
-          },
-          {
-            "id": 665862,
-            "name": "Jazz Chisholm Jr.",
-            "order": 5,
-            "position": "2B"
-          },
-          {
-            "id": 680474,
-            "name": "Max Schuemann",
-            "order": 6,
-            "position": "RF"
-          },
-          {
-            "id": 641857,
-            "name": "Ryan McMahon",
-            "order": 7,
-            "position": "3B"
-          },
-          {
-            "id": 669224,
-            "name": "Austin Wells",
-            "order": 8,
-            "position": "C"
-          },
-          {
-            "id": 676609,
-            "name": "José Caballero",
-            "order": 9,
-            "position": "SS"
-          }
-        ],
-        "awayLineupSource": "projected (last 2026-07-17)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       },
       {
@@ -4284,6 +4149,144 @@
         ],
         "awayLineupSource": "projected (last 2026-07-18)",
         "homeLineupSource": "projected (last 2026-07-18)"
+      },
+      {
+        "id": "g823523",
+        "gamePk": 823523,
+        "status": "Postponed",
+        "awayTeam": "LAD",
+        "homeTeam": "NYY",
+        "awayTeamId": 119,
+        "homeTeamId": 147,
+        "awayTeamName": "Los Angeles Dodgers",
+        "homeTeamName": "New York Yankees",
+        "park": "Yankee Stadium",
+        "parkHrFactor": 112,
+        "startUtc": "2026-07-19T00:08:00Z",
+        "startET": "8:08 PM",
+        "awayPitcher": {
+          "id": 686218,
+          "name": "Emmet Sheehan"
+        },
+        "homePitcher": {
+          "id": 677960,
+          "name": "Ryan Weathers"
+        },
+        "lineupsConfirmed": false,
+        "awayLineup": [
+          {
+            "id": 660271,
+            "name": "Shohei Ohtani",
+            "order": 1,
+            "position": "DH"
+          },
+          {
+            "id": 681624,
+            "name": "Andy Pages",
+            "order": 2,
+            "position": "CF"
+          },
+          {
+            "id": 518692,
+            "name": "Freddie Freeman",
+            "order": 3,
+            "position": "1B"
+          },
+          {
+            "id": 605141,
+            "name": "Mookie Betts",
+            "order": 4,
+            "position": "SS"
+          },
+          {
+            "id": 571970,
+            "name": "Max Muncy",
+            "order": 5,
+            "position": "3B"
+          },
+          {
+            "id": 663656,
+            "name": "Kyle Tucker",
+            "order": 6,
+            "position": "RF"
+          },
+          {
+            "id": 606192,
+            "name": "Teoscar Hernández",
+            "order": 7,
+            "position": "LF"
+          },
+          {
+            "id": 687221,
+            "name": "Dalton Rushing",
+            "order": 8,
+            "position": "C"
+          },
+          {
+            "id": 669242,
+            "name": "Tommy Edman",
+            "order": 9,
+            "position": "2B"
+          }
+        ],
+        "homeLineup": [
+          {
+            "id": 663757,
+            "name": "Trent Grisham",
+            "order": 1,
+            "position": "CF"
+          },
+          {
+            "id": 700250,
+            "name": "Ben Rice",
+            "order": 2,
+            "position": "DH"
+          },
+          {
+            "id": 502671,
+            "name": "Paul Goldschmidt",
+            "order": 3,
+            "position": "1B"
+          },
+          {
+            "id": 641355,
+            "name": "Cody Bellinger",
+            "order": 4,
+            "position": "LF"
+          },
+          {
+            "id": 691176,
+            "name": "Jasson Domínguez",
+            "order": 5,
+            "position": "RF"
+          },
+          {
+            "id": 665862,
+            "name": "Jazz Chisholm Jr.",
+            "order": 6,
+            "position": "2B"
+          },
+          {
+            "id": 676609,
+            "name": "José Caballero",
+            "order": 7,
+            "position": "SS"
+          },
+          {
+            "id": 641857,
+            "name": "Ryan McMahon",
+            "order": 8,
+            "position": "3B"
+          },
+          {
+            "id": 669224,
+            "name": "Austin Wells",
+            "order": 9,
+            "position": "C"
+          }
+        ],
+        "awayLineupSource": "projected (last 2026-07-17)",
+        "homeLineupSource": "projected (last 2026-07-17)"
       }
     ],
     "2026-07-19": [
@@ -4424,6 +4427,276 @@
         ],
         "awayLineupSource": "projected (last 2026-07-18)",
         "homeLineupSource": "projected (last 2026-07-18)"
+      },
+      {
+        "id": "g823523",
+        "gamePk": 823523,
+        "status": "Scheduled",
+        "awayTeam": "LAD",
+        "homeTeam": "NYY",
+        "awayTeamId": 119,
+        "homeTeamId": 147,
+        "awayTeamName": "Los Angeles Dodgers",
+        "homeTeamName": "New York Yankees",
+        "park": "Yankee Stadium",
+        "parkHrFactor": 112,
+        "startUtc": "2026-07-19T16:35:00Z",
+        "startET": "12:35 PM",
+        "awayPitcher": null,
+        "homePitcher": null,
+        "lineupsConfirmed": false,
+        "awayLineup": [
+          {
+            "id": 660271,
+            "name": "Shohei Ohtani",
+            "order": 1,
+            "position": "DH"
+          },
+          {
+            "id": 681624,
+            "name": "Andy Pages",
+            "order": 2,
+            "position": "CF"
+          },
+          {
+            "id": 518692,
+            "name": "Freddie Freeman",
+            "order": 3,
+            "position": "1B"
+          },
+          {
+            "id": 605141,
+            "name": "Mookie Betts",
+            "order": 4,
+            "position": "SS"
+          },
+          {
+            "id": 571970,
+            "name": "Max Muncy",
+            "order": 5,
+            "position": "3B"
+          },
+          {
+            "id": 663656,
+            "name": "Kyle Tucker",
+            "order": 6,
+            "position": "RF"
+          },
+          {
+            "id": 606192,
+            "name": "Teoscar Hernández",
+            "order": 7,
+            "position": "LF"
+          },
+          {
+            "id": 687221,
+            "name": "Dalton Rushing",
+            "order": 8,
+            "position": "C"
+          },
+          {
+            "id": 669242,
+            "name": "Tommy Edman",
+            "order": 9,
+            "position": "2B"
+          }
+        ],
+        "homeLineup": [
+          {
+            "id": 663757,
+            "name": "Trent Grisham",
+            "order": 1,
+            "position": "CF"
+          },
+          {
+            "id": 700250,
+            "name": "Ben Rice",
+            "order": 2,
+            "position": "DH"
+          },
+          {
+            "id": 502671,
+            "name": "Paul Goldschmidt",
+            "order": 3,
+            "position": "1B"
+          },
+          {
+            "id": 641355,
+            "name": "Cody Bellinger",
+            "order": 4,
+            "position": "LF"
+          },
+          {
+            "id": 691176,
+            "name": "Jasson Domínguez",
+            "order": 5,
+            "position": "RF"
+          },
+          {
+            "id": 665862,
+            "name": "Jazz Chisholm Jr.",
+            "order": 6,
+            "position": "2B"
+          },
+          {
+            "id": 676609,
+            "name": "José Caballero",
+            "order": 7,
+            "position": "SS"
+          },
+          {
+            "id": 641857,
+            "name": "Ryan McMahon",
+            "order": 8,
+            "position": "3B"
+          },
+          {
+            "id": 669224,
+            "name": "Austin Wells",
+            "order": 9,
+            "position": "C"
+          }
+        ],
+        "awayLineupSource": "projected (last 2026-07-17)",
+        "homeLineupSource": "projected (last 2026-07-17)"
+      },
+      {
+        "id": "g823521",
+        "gamePk": 823521,
+        "status": "Scheduled",
+        "awayTeam": "LAD",
+        "homeTeam": "NYY",
+        "awayTeamId": 119,
+        "homeTeamId": 147,
+        "awayTeamName": "Los Angeles Dodgers",
+        "homeTeamName": "New York Yankees",
+        "park": "Yankee Stadium",
+        "parkHrFactor": 112,
+        "startUtc": "2026-07-19T23:20:00Z",
+        "startET": "7:20 PM",
+        "awayPitcher": {
+          "id": 808967,
+          "name": "Yoshinobu Yamamoto"
+        },
+        "homePitcher": {
+          "id": 693645,
+          "name": "Cam Schlittler"
+        },
+        "lineupsConfirmed": false,
+        "awayLineup": [
+          {
+            "id": 660271,
+            "name": "Shohei Ohtani",
+            "order": 1,
+            "position": "DH"
+          },
+          {
+            "id": 681624,
+            "name": "Andy Pages",
+            "order": 2,
+            "position": "CF"
+          },
+          {
+            "id": 518692,
+            "name": "Freddie Freeman",
+            "order": 3,
+            "position": "1B"
+          },
+          {
+            "id": 605141,
+            "name": "Mookie Betts",
+            "order": 4,
+            "position": "SS"
+          },
+          {
+            "id": 571970,
+            "name": "Max Muncy",
+            "order": 5,
+            "position": "3B"
+          },
+          {
+            "id": 663656,
+            "name": "Kyle Tucker",
+            "order": 6,
+            "position": "RF"
+          },
+          {
+            "id": 606192,
+            "name": "Teoscar Hernández",
+            "order": 7,
+            "position": "LF"
+          },
+          {
+            "id": 687221,
+            "name": "Dalton Rushing",
+            "order": 8,
+            "position": "C"
+          },
+          {
+            "id": 669242,
+            "name": "Tommy Edman",
+            "order": 9,
+            "position": "2B"
+          }
+        ],
+        "homeLineup": [
+          {
+            "id": 663757,
+            "name": "Trent Grisham",
+            "order": 1,
+            "position": "CF"
+          },
+          {
+            "id": 700250,
+            "name": "Ben Rice",
+            "order": 2,
+            "position": "DH"
+          },
+          {
+            "id": 502671,
+            "name": "Paul Goldschmidt",
+            "order": 3,
+            "position": "1B"
+          },
+          {
+            "id": 641355,
+            "name": "Cody Bellinger",
+            "order": 4,
+            "position": "LF"
+          },
+          {
+            "id": 691176,
+            "name": "Jasson Domínguez",
+            "order": 5,
+            "position": "RF"
+          },
+          {
+            "id": 665862,
+            "name": "Jazz Chisholm Jr.",
+            "order": 6,
+            "position": "2B"
+          },
+          {
+            "id": 676609,
+            "name": "José Caballero",
+            "order": 7,
+            "position": "SS"
+          },
+          {
+            "id": 641857,
+            "name": "Ryan McMahon",
+            "order": 8,
+            "position": "3B"
+          },
+          {
+            "id": 669224,
+            "name": "Austin Wells",
+            "order": 9,
+            "position": "C"
+          }
+        ],
+        "awayLineupSource": "projected (last 2026-07-17)",
+        "homeLineupSource": "projected (last 2026-07-17)"
       },
       {
         "id": "g824739",
@@ -4932,35 +5205,35 @@
             "id": 800050,
             "name": "Chase DeLauter",
             "order": 3,
-            "position": "RF"
-          },
-          {
-            "id": 700932,
-            "name": "Kyle Manzardo",
-            "order": 4,
-            "position": "1B"
+            "position": "DH"
           },
           {
             "id": 656555,
             "name": "Rhys Hoskins",
+            "order": 4,
+            "position": "1B"
+          },
+          {
+            "id": 682177,
+            "name": "Daniel Schneemann",
             "order": 5,
-            "position": "DH"
-          },
-          {
-            "id": 696135,
-            "name": "Kahlil Watson",
-            "order": 6,
-            "position": "CF"
-          },
-          {
-            "id": 672356,
-            "name": "Gabriel Arias",
-            "order": 7,
             "position": "3B"
           },
           {
-            "id": 672275,
-            "name": "Patrick Bailey",
+            "id": 681807,
+            "name": "David Fry",
+            "order": 6,
+            "position": "RF"
+          },
+          {
+            "id": 690984,
+            "name": "Petey Halpin",
+            "order": 7,
+            "position": "CF"
+          },
+          {
+            "id": 595978,
+            "name": "Austin Hedges",
             "order": 8,
             "position": "C"
           },
@@ -6013,8 +6286,8 @@
             "position": "CF"
           },
           {
-            "id": 701852,
-            "name": "Drew Cavanaugh",
+            "id": 691740,
+            "name": "Daniel Susac",
             "order": 9,
             "position": "C"
           }
@@ -6075,7 +6348,7 @@
             "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-18)",
+        "awayLineupSource": "projected (last 2026-07-19)",
         "homeLineupSource": "projected (last 2026-07-19)"
       },
       {
@@ -6215,144 +6488,6 @@
         ],
         "awayLineupSource": "projected (last 2026-07-18)",
         "homeLineupSource": "projected (last 2026-07-18)"
-      },
-      {
-        "id": "g823521",
-        "gamePk": 823521,
-        "status": "Scheduled",
-        "awayTeam": "LAD",
-        "homeTeam": "NYY",
-        "awayTeamId": 119,
-        "homeTeamId": 147,
-        "awayTeamName": "Los Angeles Dodgers",
-        "homeTeamName": "New York Yankees",
-        "park": "Yankee Stadium",
-        "parkHrFactor": 112,
-        "startUtc": "2026-07-19T23:20:00Z",
-        "startET": "7:20 PM",
-        "awayPitcher": {
-          "id": 808967,
-          "name": "Yoshinobu Yamamoto"
-        },
-        "homePitcher": {
-          "id": 693645,
-          "name": "Cam Schlittler"
-        },
-        "lineupsConfirmed": false,
-        "awayLineup": [
-          {
-            "id": 660271,
-            "name": "Shohei Ohtani",
-            "order": 1,
-            "position": "DH"
-          },
-          {
-            "id": 681624,
-            "name": "Andy Pages",
-            "order": 2,
-            "position": "CF"
-          },
-          {
-            "id": 518692,
-            "name": "Freddie Freeman",
-            "order": 3,
-            "position": "1B"
-          },
-          {
-            "id": 605141,
-            "name": "Mookie Betts",
-            "order": 4,
-            "position": "SS"
-          },
-          {
-            "id": 571970,
-            "name": "Max Muncy",
-            "order": 5,
-            "position": "3B"
-          },
-          {
-            "id": 663656,
-            "name": "Kyle Tucker",
-            "order": 6,
-            "position": "RF"
-          },
-          {
-            "id": 606192,
-            "name": "Teoscar Hernández",
-            "order": 7,
-            "position": "LF"
-          },
-          {
-            "id": 687221,
-            "name": "Dalton Rushing",
-            "order": 8,
-            "position": "C"
-          },
-          {
-            "id": 669242,
-            "name": "Tommy Edman",
-            "order": 9,
-            "position": "2B"
-          }
-        ],
-        "homeLineup": [
-          {
-            "id": 663757,
-            "name": "Trent Grisham",
-            "order": 1,
-            "position": "CF"
-          },
-          {
-            "id": 700250,
-            "name": "Ben Rice",
-            "order": 2,
-            "position": "1B"
-          },
-          {
-            "id": 691176,
-            "name": "Jasson Domínguez",
-            "order": 3,
-            "position": "DH"
-          },
-          {
-            "id": 641355,
-            "name": "Cody Bellinger",
-            "order": 4,
-            "position": "LF"
-          },
-          {
-            "id": 665862,
-            "name": "Jazz Chisholm Jr.",
-            "order": 5,
-            "position": "2B"
-          },
-          {
-            "id": 680474,
-            "name": "Max Schuemann",
-            "order": 6,
-            "position": "RF"
-          },
-          {
-            "id": 641857,
-            "name": "Ryan McMahon",
-            "order": 7,
-            "position": "3B"
-          },
-          {
-            "id": 669224,
-            "name": "Austin Wells",
-            "order": 8,
-            "position": "C"
-          },
-          {
-            "id": 676609,
-            "name": "José Caballero",
-            "order": 9,
-            "position": "SS"
-          }
-        ],
-        "awayLineupSource": "projected (last 2026-07-17)",
-        "homeLineupSource": "projected (last 2026-07-19)"
       }
     ]
   }
