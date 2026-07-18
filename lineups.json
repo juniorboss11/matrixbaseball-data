@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-18T18:11:26.668Z",
+  "refreshedAt": "2026-07-18T19:31:57.645Z",
   "today": "2026-07-18",
   "dates": [
     "2026-07-17",
@@ -2356,7 +2356,7 @@
       {
         "id": "g824657",
         "gamePk": 824657,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "MIN",
         "homeTeam": "CHC",
         "awayTeamId": 142,
@@ -2494,7 +2494,7 @@
       {
         "id": "g823441",
         "gamePk": 823441,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "NYM",
         "homeTeam": "PHI",
         "awayTeamId": 121,
@@ -2632,7 +2632,7 @@
       {
         "id": "g822790",
         "gamePk": 822790,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "CWS",
         "homeTeam": "TOR",
         "awayTeamId": 145,
@@ -2770,7 +2770,7 @@
       {
         "id": "g824331",
         "gamePk": 824331,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "CIN",
         "homeTeam": "COL",
         "awayTeamId": 113,
@@ -2927,19 +2927,19 @@
           "id": 681293,
           "name": "Spencer Arrighetti"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
-          {
-            "id": 683002,
-            "name": "Gunnar Henderson",
-            "order": 1,
-            "position": "SS"
-          },
           {
             "id": 668939,
             "name": "Adley Rutschman",
+            "order": 1,
+            "position": "DH"
+          },
+          {
+            "id": 683002,
+            "name": "Gunnar Henderson",
             "order": 2,
-            "position": "C"
+            "position": "SS"
           },
           {
             "id": 621493,
@@ -2957,7 +2957,7 @@
             "id": 694212,
             "name": "Samuel Basallo",
             "order": 5,
-            "position": "DH"
+            "position": "C"
           },
           {
             "id": 687637,
@@ -2972,8 +2972,8 @@
             "position": "CF"
           },
           {
-            "id": 691723,
-            "name": "Coby Mayo",
+            "id": 687952,
+            "name": "Christian Encarnacion-Strand",
             "order": 8,
             "position": "3B"
           },
@@ -3040,7 +3040,7 @@
             "position": "CF"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-18)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       },
       {
@@ -3688,10 +3688,10 @@
             "position": "LF"
           },
           {
-            "id": 668930,
-            "name": "Brice Turang",
+            "id": 641343,
+            "name": "Jake Bauers",
             "order": 3,
-            "position": "2B"
+            "position": "1B"
           },
           {
             "id": 661388,
@@ -3700,28 +3700,28 @@
             "position": "C"
           },
           {
-            "id": 641343,
-            "name": "Jake Bauers",
-            "order": 5,
-            "position": "1B"
-          },
-          {
             "id": 669003,
             "name": "Garrett Mitchell",
-            "order": 6,
+            "order": 5,
             "position": "CF"
           },
           {
             "id": 800325,
             "name": "Luis Lara",
-            "order": 7,
+            "order": 6,
             "position": "RF"
           },
           {
             "id": 806198,
             "name": "Cooper Pratt",
-            "order": 8,
+            "order": 7,
             "position": "SS"
+          },
+          {
+            "id": 669699,
+            "name": "Braden Shewmake",
+            "order": 8,
+            "position": "2B"
           },
           {
             "id": 687401,
@@ -4999,16 +4999,16 @@
         "lineupsConfirmed": false,
         "awayLineup": [
           {
-            "id": 683002,
-            "name": "Gunnar Henderson",
-            "order": 1,
-            "position": "SS"
-          },
-          {
             "id": 668939,
             "name": "Adley Rutschman",
+            "order": 1,
+            "position": "DH"
+          },
+          {
+            "id": 683002,
+            "name": "Gunnar Henderson",
             "order": 2,
-            "position": "C"
+            "position": "SS"
           },
           {
             "id": 621493,
@@ -5026,7 +5026,7 @@
             "id": 694212,
             "name": "Samuel Basallo",
             "order": 5,
-            "position": "DH"
+            "position": "C"
           },
           {
             "id": 687637,
@@ -5041,8 +5041,8 @@
             "position": "CF"
           },
           {
-            "id": 691723,
-            "name": "Coby Mayo",
+            "id": 687952,
+            "name": "Christian Encarnacion-Strand",
             "order": 8,
             "position": "3B"
           },
@@ -5343,10 +5343,10 @@
             "position": "LF"
           },
           {
-            "id": 668930,
-            "name": "Brice Turang",
+            "id": 641343,
+            "name": "Jake Bauers",
             "order": 3,
-            "position": "2B"
+            "position": "1B"
           },
           {
             "id": 661388,
@@ -5355,28 +5355,28 @@
             "position": "C"
           },
           {
-            "id": 641343,
-            "name": "Jake Bauers",
-            "order": 5,
-            "position": "1B"
-          },
-          {
             "id": 669003,
             "name": "Garrett Mitchell",
-            "order": 6,
+            "order": 5,
             "position": "CF"
           },
           {
             "id": 800325,
             "name": "Luis Lara",
-            "order": 7,
+            "order": 6,
             "position": "RF"
           },
           {
             "id": 806198,
             "name": "Cooper Pratt",
-            "order": 8,
+            "order": 7,
             "position": "SS"
+          },
+          {
+            "id": 669699,
+            "name": "Braden Shewmake",
+            "order": 8,
+            "position": "2B"
           },
           {
             "id": 687401,
