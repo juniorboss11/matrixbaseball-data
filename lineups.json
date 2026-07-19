@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-19T18:28:22.626Z",
+  "refreshedAt": "2026-07-19T19:42:00.528Z",
   "today": "2026-07-19",
   "dates": [
     "2026-07-18",
@@ -1312,7 +1312,7 @@
           },
           {
             "id": 683748,
-            "name": "Victor Mesa",
+            "name": "Victor Mesa Jr.",
             "order": 7,
             "position": "RF"
           },
@@ -1834,7 +1834,7 @@
           },
           {
             "id": 671277,
-            "name": "Luis García",
+            "name": "Luis García Jr.",
             "order": 2,
             "position": "1B"
           },
@@ -2221,7 +2221,7 @@
       {
         "id": "g822786",
         "gamePk": 822786,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "CWS",
         "homeTeam": "TOR",
         "awayTeamId": 145,
@@ -2359,7 +2359,7 @@
       {
         "id": "g823523",
         "gamePk": 823523,
-        "status": "In Progress",
+        "status": "Game Over",
         "awayTeam": "LAD",
         "homeTeam": "NYY",
         "awayTeamId": 119,
@@ -2629,7 +2629,7 @@
       {
         "id": "g824739",
         "gamePk": 824739,
-        "status": "Player challenge",
+        "status": "In Progress",
         "awayTeam": "TB",
         "homeTeam": "BOS",
         "awayTeamId": 139,
@@ -3733,7 +3733,7 @@
       {
         "id": "g824330",
         "gamePk": 824330,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "CIN",
         "homeTeam": "COL",
         "awayTeamId": 113,
@@ -3890,25 +3890,25 @@
           "id": 682052,
           "name": "Jacob Lopez"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 695578,
             "name": "James Wood",
             "order": 1,
-            "position": "RF"
-          },
-          {
-            "id": 671277,
-            "name": "Luis García",
-            "order": 2,
-            "position": "1B"
-          },
-          {
-            "id": 677588,
-            "name": "José Tena",
-            "order": 3,
             "position": "DH"
+          },
+          {
+            "id": 678554,
+            "name": "Curtis Mead",
+            "order": 2,
+            "position": "3B"
+          },
+          {
+            "id": 665953,
+            "name": "Andrés Chaparro",
+            "order": 3,
+            "position": "1B"
           },
           {
             "id": 682928,
@@ -3917,34 +3917,34 @@
             "position": "SS"
           },
           {
-            "id": 660688,
-            "name": "Keibert Ruiz",
+            "id": 686611,
+            "name": "Dylan Crews",
             "order": 5,
+            "position": "RF"
+          },
+          {
+            "id": 695670,
+            "name": "Harry Ford",
+            "order": 6,
             "position": "C"
           },
           {
             "id": 695734,
             "name": "Daylen Lile",
-            "order": 6,
+            "order": 7,
             "position": "LF"
+          },
+          {
+            "id": 696285,
+            "name": "Jacob Young",
+            "order": 8,
+            "position": "CF"
           },
           {
             "id": 683083,
             "name": "Nasim Nuñez",
-            "order": 7,
-            "position": "2B"
-          },
-          {
-            "id": 678391,
-            "name": "Jorbit Vivas",
-            "order": 8,
-            "position": "3B"
-          },
-          {
-            "id": 686611,
-            "name": "Dylan Crews",
             "order": 9,
-            "position": "CF"
+            "position": "2B"
           }
         ],
         "homeLineup": [
@@ -4003,7 +4003,7 @@
             "position": "2B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-19)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       },
       {
@@ -5264,7 +5264,10 @@
         "parkHrFactor": 94,
         "startUtc": "2026-07-20T23:40:00Z",
         "startET": "7:40 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 686790,
+          "name": "Trevor McDonald"
+        },
         "homePitcher": {
           "id": 608379,
           "name": "Michael Wacha"
@@ -5537,7 +5540,10 @@
         "parkHrFactor": 107,
         "startUtc": "2026-07-21T00:05:00Z",
         "startET": "8:05 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 656427,
+          "name": "Jack Flaherty"
+        },
         "homePitcher": {
           "id": 592791,
           "name": "Jameson Taillon"
@@ -5949,26 +5955,29 @@
         "startUtc": "2026-07-21T00:40:00Z",
         "startET": "8:40 PM",
         "awayPitcher": null,
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 607536,
+          "name": "Kyle Freeland"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
             "id": 695578,
             "name": "James Wood",
             "order": 1,
-            "position": "RF"
-          },
-          {
-            "id": 671277,
-            "name": "Luis García",
-            "order": 2,
-            "position": "1B"
-          },
-          {
-            "id": 677588,
-            "name": "José Tena",
-            "order": 3,
             "position": "DH"
+          },
+          {
+            "id": 678554,
+            "name": "Curtis Mead",
+            "order": 2,
+            "position": "3B"
+          },
+          {
+            "id": 665953,
+            "name": "Andrés Chaparro",
+            "order": 3,
+            "position": "1B"
           },
           {
             "id": 682928,
@@ -5977,34 +5986,34 @@
             "position": "SS"
           },
           {
-            "id": 660688,
-            "name": "Keibert Ruiz",
+            "id": 686611,
+            "name": "Dylan Crews",
             "order": 5,
+            "position": "RF"
+          },
+          {
+            "id": 695670,
+            "name": "Harry Ford",
+            "order": 6,
             "position": "C"
           },
           {
             "id": 695734,
             "name": "Daylen Lile",
-            "order": 6,
+            "order": 7,
             "position": "LF"
+          },
+          {
+            "id": 696285,
+            "name": "Jacob Young",
+            "order": 8,
+            "position": "CF"
           },
           {
             "id": 683083,
             "name": "Nasim Nuñez",
-            "order": 7,
-            "position": "2B"
-          },
-          {
-            "id": 678391,
-            "name": "Jorbit Vivas",
-            "order": 8,
-            "position": "3B"
-          },
-          {
-            "id": 686611,
-            "name": "Dylan Crews",
             "order": 9,
-            "position": "CF"
+            "position": "2B"
           }
         ],
         "homeLineup": [
@@ -6084,7 +6093,10 @@
           "id": 605488,
           "name": "Jeffrey Springs"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 683352,
+          "name": "Mitch Bratt"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
