@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-19T20:28:44.571Z",
+  "refreshedAt": "2026-07-19T21:26:20.112Z",
   "today": "2026-07-19",
   "dates": [
     "2026-07-18",
@@ -2497,7 +2497,7 @@
       {
         "id": "g823521",
         "gamePk": 823521,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "LAD",
         "homeTeam": "NYY",
         "awayTeamId": 119,
@@ -2512,8 +2512,11 @@
           "id": 694361,
           "name": "Will Klein"
         },
-        "homePitcher": null,
-        "lineupsConfirmed": false,
+        "homePitcher": {
+          "id": 642232,
+          "name": "Ryan Yarbrough"
+        },
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 660271,
@@ -2540,16 +2543,16 @@
             "position": "SS"
           },
           {
-            "id": 571970,
-            "name": "Max Muncy",
-            "order": 5,
-            "position": "3B"
-          },
-          {
             "id": 663656,
             "name": "Kyle Tucker",
-            "order": 6,
+            "order": 5,
             "position": "RF"
+          },
+          {
+            "id": 500743,
+            "name": "Miguel Rojas",
+            "order": 6,
+            "position": "2B"
           },
           {
             "id": 606192,
@@ -2558,16 +2561,16 @@
             "position": "LF"
           },
           {
-            "id": 687221,
-            "name": "Dalton Rushing",
+            "id": 571970,
+            "name": "Max Muncy",
             "order": 8,
-            "position": "C"
+            "position": "3B"
           },
           {
-            "id": 669242,
-            "name": "Tommy Edman",
+            "id": 672613,
+            "name": "Eliezer Alfonzo",
             "order": 9,
-            "position": "2B"
+            "position": "C"
           }
         ],
         "homeLineup": [
@@ -2581,13 +2584,13 @@
             "id": 700250,
             "name": "Ben Rice",
             "order": 2,
-            "position": "1B"
+            "position": "DH"
           },
           {
-            "id": 691176,
-            "name": "Jasson Domínguez",
+            "id": 502671,
+            "name": "Paul Goldschmidt",
             "order": 3,
-            "position": "DH"
+            "position": "1B"
           },
           {
             "id": 641355,
@@ -2596,8 +2599,8 @@
             "position": "LF"
           },
           {
-            "id": 680474,
-            "name": "Max Schuemann",
+            "id": 691176,
+            "name": "Jasson Domínguez",
             "order": 5,
             "position": "RF"
           },
@@ -2614,20 +2617,20 @@
             "position": "SS"
           },
           {
-            "id": 641857,
-            "name": "Ryan McMahon",
+            "id": 669224,
+            "name": "Austin Wells",
             "order": 8,
-            "position": "3B"
+            "position": "C"
           },
           {
-            "id": 645305,
-            "name": "Ali Sánchez",
+            "id": 676609,
+            "name": "José Caballero",
             "order": 9,
-            "position": "C"
+            "position": "3B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-19)",
-        "homeLineupSource": "projected (last 2026-07-19)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g824739",
@@ -2770,7 +2773,7 @@
       {
         "id": "g823439",
         "gamePk": 823439,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "NYM",
         "homeTeam": "PHI",
         "awayTeamId": 121,
@@ -2908,7 +2911,7 @@
       {
         "id": "g824897",
         "gamePk": 824897,
-        "status": "Game Over",
+        "status": "Final",
         "awayTeam": "TEX",
         "homeTeam": "ATL",
         "awayTeamId": 140,
@@ -3184,7 +3187,7 @@
       {
         "id": "g824168",
         "gamePk": 824168,
-        "status": "In Progress",
+        "status": "Game Over",
         "awayTeam": "BAL",
         "homeTeam": "HOU",
         "awayTeamId": 110,
@@ -3322,7 +3325,7 @@
       {
         "id": "g824086",
         "gamePk": 824086,
-        "status": "In Progress",
+        "status": "Game Over",
         "awayTeam": "SD",
         "homeTeam": "KC",
         "awayTeamId": 135,
@@ -3460,7 +3463,7 @@
       {
         "id": "g823764",
         "gamePk": 823764,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "MIA",
         "homeTeam": "MIL",
         "awayTeamId": 146,
@@ -3598,7 +3601,7 @@
       {
         "id": "g824653",
         "gamePk": 824653,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "MIN",
         "homeTeam": "CHC",
         "awayTeamId": 142,
@@ -3736,7 +3739,7 @@
       {
         "id": "g824330",
         "gamePk": 824330,
-        "status": "In Progress",
+        "status": "Player challenge",
         "awayTeam": "CIN",
         "homeTeam": "COL",
         "awayTeamId": 113,
@@ -4653,13 +4656,13 @@
             "id": 700250,
             "name": "Ben Rice",
             "order": 2,
-            "position": "1B"
+            "position": "DH"
           },
           {
-            "id": 691176,
-            "name": "Jasson Domínguez",
+            "id": 502671,
+            "name": "Paul Goldschmidt",
             "order": 3,
-            "position": "DH"
+            "position": "1B"
           },
           {
             "id": 641355,
@@ -4668,8 +4671,8 @@
             "position": "LF"
           },
           {
-            "id": 680474,
-            "name": "Max Schuemann",
+            "id": 691176,
+            "name": "Jasson Domínguez",
             "order": 5,
             "position": "RF"
           },
@@ -4686,16 +4689,16 @@
             "position": "SS"
           },
           {
-            "id": 641857,
-            "name": "Ryan McMahon",
+            "id": 669224,
+            "name": "Austin Wells",
             "order": 8,
-            "position": "3B"
+            "position": "C"
           },
           {
-            "id": 645305,
-            "name": "Ali Sánchez",
+            "id": 676609,
+            "name": "José Caballero",
             "order": 9,
-            "position": "C"
+            "position": "3B"
           }
         ],
         "awayLineupSource": "projected (last 2026-07-19)",
@@ -5026,16 +5029,16 @@
             "position": "SS"
           },
           {
-            "id": 571970,
-            "name": "Max Muncy",
-            "order": 5,
-            "position": "3B"
-          },
-          {
             "id": 663656,
             "name": "Kyle Tucker",
-            "order": 6,
+            "order": 5,
             "position": "RF"
+          },
+          {
+            "id": 500743,
+            "name": "Miguel Rojas",
+            "order": 6,
+            "position": "2B"
           },
           {
             "id": 606192,
@@ -5044,16 +5047,16 @@
             "position": "LF"
           },
           {
-            "id": 687221,
-            "name": "Dalton Rushing",
+            "id": 571970,
+            "name": "Max Muncy",
             "order": 8,
-            "position": "C"
+            "position": "3B"
           },
           {
-            "id": 669242,
-            "name": "Tommy Edman",
+            "id": 672613,
+            "name": "Eliezer Alfonzo",
             "order": 9,
-            "position": "2B"
+            "position": "C"
           }
         ],
         "homeLineup": [
