@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-19T19:42:00.528Z",
+  "refreshedAt": "2026-07-19T20:28:44.571Z",
   "today": "2026-07-19",
   "dates": [
     "2026-07-18",
@@ -2359,7 +2359,7 @@
       {
         "id": "g823523",
         "gamePk": 823523,
-        "status": "Game Over",
+        "status": "Final",
         "awayTeam": "LAD",
         "homeTeam": "NYY",
         "awayTeamId": 119,
@@ -2508,7 +2508,10 @@
         "parkHrFactor": 112,
         "startUtc": "2026-07-19T23:20:00Z",
         "startET": "7:20 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 694361,
+          "name": "Will Klein"
+        },
         "homePitcher": null,
         "lineupsConfirmed": false,
         "awayLineup": [
@@ -2629,7 +2632,7 @@
       {
         "id": "g824739",
         "gamePk": 824739,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "TB",
         "homeTeam": "BOS",
         "awayTeamId": 139,
@@ -2905,7 +2908,7 @@
       {
         "id": "g824897",
         "gamePk": 824897,
-        "status": "In Progress",
+        "status": "Game Over",
         "awayTeam": "TEX",
         "homeTeam": "ATL",
         "awayTeamId": 140,
@@ -3043,7 +3046,7 @@
       {
         "id": "g824411",
         "gamePk": 824411,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "PIT",
         "homeTeam": "CLE",
         "awayTeamId": 134,
@@ -3871,7 +3874,7 @@
       {
         "id": "g824978",
         "gamePk": 824978,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "WSH",
         "homeTeam": "ATH",
         "awayTeamId": 120,
@@ -4009,7 +4012,7 @@
       {
         "id": "g824007",
         "gamePk": 824007,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "DET",
         "homeTeam": "LAA",
         "awayTeamId": 116,
@@ -4147,7 +4150,7 @@
       {
         "id": "g823113",
         "gamePk": 823113,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "SF",
         "homeTeam": "SEA",
         "awayTeamId": 137,
@@ -4285,7 +4288,7 @@
       {
         "id": "g825057",
         "gamePk": 825057,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "STL",
         "homeTeam": "AZ",
         "awayTeamId": 138,
@@ -5954,7 +5957,10 @@
         "parkHrFactor": 117,
         "startUtc": "2026-07-21T00:40:00Z",
         "startET": "8:40 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 674841,
+          "name": "Andrew Alvarez"
+        },
         "homePitcher": {
           "id": 607536,
           "name": "Kyle Freeland"
