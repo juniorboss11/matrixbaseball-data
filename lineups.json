@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-20T01:06:58.827Z",
+  "refreshedAt": "2026-07-20T04:49:27.544Z",
   "today": "2026-07-20",
   "dates": [
     "2026-07-19",
@@ -287,7 +287,7 @@
       {
         "id": "g823521",
         "gamePk": 823521,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "LAD",
         "homeTeam": "NYY",
         "awayTeamId": 119,
@@ -4439,7 +4439,10 @@
         "parkHrFactor": 109,
         "startUtc": "2026-07-21T22:40:00Z",
         "startET": "6:40 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 641778,
+          "name": "Eric Lauer"
+        },
         "homePitcher": {
           "id": 554430,
           "name": "Zack Wheeler"
