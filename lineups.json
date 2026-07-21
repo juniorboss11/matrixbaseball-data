@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-21T22:39:48.399Z",
+  "refreshedAt": "2026-07-21T23:39:55.995Z",
   "today": "2026-07-21",
   "dates": [
     "2026-07-20",
@@ -2083,7 +2083,7 @@
       {
         "id": "g824409",
         "gamePk": 824409,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "MIN",
         "homeTeam": "CLE",
         "awayTeamId": 142,
@@ -2221,7 +2221,7 @@
       {
         "id": "g823437",
         "gamePk": 823437,
-        "status": "Delayed Start",
+        "status": "Warmup",
         "awayTeam": "LAD",
         "homeTeam": "PHI",
         "awayTeamId": 119,
@@ -2359,7 +2359,7 @@
       {
         "id": "g822787",
         "gamePk": 822787,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "TB",
         "homeTeam": "TOR",
         "awayTeamId": 139,
@@ -2485,8 +2485,8 @@
             "position": "SS"
           },
           {
-            "id": 682729,
-            "name": "Jonatan Clase",
+            "id": 664702,
+            "name": "Myles Straw",
             "order": 9,
             "position": "LF"
           }
@@ -2497,7 +2497,7 @@
       {
         "id": "g824895",
         "gamePk": 824895,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "SD",
         "homeTeam": "ATL",
         "awayTeamId": 135,
@@ -2635,7 +2635,7 @@
       {
         "id": "g824085",
         "gamePk": 824085,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "SF",
         "homeTeam": "KC",
         "awayTeamId": 137,
@@ -2773,7 +2773,7 @@
       {
         "id": "g823760",
         "gamePk": 823760,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "NYM",
         "homeTeam": "MIL",
         "awayTeamId": 121,
@@ -2911,7 +2911,7 @@
       {
         "id": "g824652",
         "gamePk": 824652,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "DET",
         "homeTeam": "CHC",
         "awayTeamId": 116,
@@ -4304,8 +4304,14 @@
         "parkHrFactor": 112,
         "startUtc": "2026-07-22T23:05:00Z",
         "startET": "7:05 PM",
-        "awayPitcher": null,
-        "homePitcher": null,
+        "awayPitcher": {
+          "id": 696149,
+          "name": "Bubba Chandler"
+        },
+        "homePitcher": {
+          "id": 608331,
+          "name": "Max Fried"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -5925,8 +5931,8 @@
             "position": "SS"
           },
           {
-            "id": 682729,
-            "name": "Jonatan Clase",
+            "id": 664702,
+            "name": "Myles Straw",
             "order": 9,
             "position": "LF"
           }
