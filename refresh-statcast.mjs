@@ -11,7 +11,9 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = process.env.GITHUB_WORKSPACE ? process.env.GITHUB_WORKSPACE : path.resolve(__dirname, "..");
 const SLATES_OUT = path.resolve(REPO_ROOT, "slates.json");
 const SEASON = 2026;
-const SCHEDULE_DAYS_BACK = 1;
+// Ship 3 completed days of slates so EdgeLookback and PostgameLab can trend
+// intelligence over the last 3 game days instead of just yesterday.
+const SCHEDULE_DAYS_BACK = 3;
 const SCHEDULE_DAYS_FWD = 1;
 
 const log = (...a) => console.log("[statcast]", ...a);
