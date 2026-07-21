@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-21T01:05:12.917Z",
+  "refreshedAt": "2026-07-21T04:28:32.502Z",
   "today": "2026-07-21",
   "dates": [
     "2026-07-20",
@@ -11,7 +11,7 @@
       {
         "id": "g824410",
         "gamePk": 824410,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "MIN",
         "homeTeam": "CLE",
         "awayTeamId": 142,
@@ -149,7 +149,7 @@
       {
         "id": "g823522",
         "gamePk": 823522,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "PIT",
         "homeTeam": "NYY",
         "awayTeamId": 134,
@@ -287,7 +287,7 @@
       {
         "id": "g822788",
         "gamePk": 822788,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "TB",
         "homeTeam": "TOR",
         "awayTeamId": 139,
@@ -425,7 +425,7 @@
       {
         "id": "g824736",
         "gamePk": 824736,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "BAL",
         "homeTeam": "BOS",
         "awayTeamId": 110,
@@ -563,7 +563,7 @@
       {
         "id": "g823436",
         "gamePk": 823436,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "LAD",
         "homeTeam": "PHI",
         "awayTeamId": 119,
@@ -701,7 +701,7 @@
       {
         "id": "g824898",
         "gamePk": 824898,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "SD",
         "homeTeam": "ATL",
         "awayTeamId": 135,
@@ -839,7 +839,7 @@
       {
         "id": "g824087",
         "gamePk": 824087,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "SF",
         "homeTeam": "KC",
         "awayTeamId": 137,
@@ -977,7 +977,7 @@
       {
         "id": "g823762",
         "gamePk": 823762,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "NYM",
         "homeTeam": "MIL",
         "awayTeamId": 121,
@@ -1115,7 +1115,7 @@
       {
         "id": "g824654",
         "gamePk": 824654,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "DET",
         "homeTeam": "CHC",
         "awayTeamId": 116,
@@ -1253,7 +1253,7 @@
       {
         "id": "g822874",
         "gamePk": 822874,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "CWS",
         "homeTeam": "TEX",
         "awayTeamId": 145,
@@ -1391,7 +1391,7 @@
       {
         "id": "g824167",
         "gamePk": 824167,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "MIA",
         "homeTeam": "HOU",
         "awayTeamId": 146,
@@ -1529,7 +1529,7 @@
       {
         "id": "g824328",
         "gamePk": 824328,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "WSH",
         "homeTeam": "COL",
         "awayTeamId": 120,
@@ -1667,7 +1667,7 @@
       {
         "id": "g825058",
         "gamePk": 825058,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "ATH",
         "homeTeam": "AZ",
         "awayTeamId": 133,
@@ -1805,7 +1805,7 @@
       {
         "id": "g823112",
         "gamePk": 823112,
-        "status": "Pre-Game",
+        "status": "Final",
         "awayTeam": "CIN",
         "homeTeam": "SEA",
         "awayTeamId": 113,
@@ -1943,7 +1943,7 @@
       {
         "id": "g824006",
         "gamePk": 824006,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "STL",
         "homeTeam": "LAA",
         "awayTeamId": 138,
@@ -2094,7 +2094,10 @@
         "parkHrFactor": 97,
         "startUtc": "2026-07-21T22:40:00Z",
         "startET": "6:40 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 696070,
+          "name": "Kendry Rojas"
+        },
         "homePitcher": {
           "id": 800048,
           "name": "Parker Messick"
@@ -2647,7 +2650,10 @@
           "id": 680694,
           "name": "Kyle Bradish"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 624133,
+          "name": "Ranger Suarez"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -3334,7 +3340,10 @@
           "id": 702273,
           "name": "Noah Schultz"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 677958,
+          "name": "Kumar Rocker"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
