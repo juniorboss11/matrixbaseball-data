@@ -615,9 +615,11 @@ async function main() {
   const hitterRecentGames = new Map(); // batterId -> Set<gamePk>
   for (const [bId, h] of Object.entries(hitterStats)) {
     const games = h?.recent7 || [];
-    const recent5 = games.slice(0, 5);
+    // Widened to last 10 games so per-PA history has enough depth to compute
+    // per-pitch-type BA/SLG/hr/avgEv on a L10-PA sample (matches PropFinder’s core workflow).
+    const recent10 = games.slice(0, 10);
     const set = new Set();
-    for (const g of recent5) {
+    for (const g of recent10) {
       const gp = g?.gamePk;
       if (gp) {
         gamePksToFetch.add(gp);
@@ -657,7 +659,9 @@ async function main() {
   for (const [bIdStr, h] of Object.entries(hitterStats)) {
     const bId = parseInt(bIdStr, 10);
     const list = perPaEv[bId] || [];
-    h.perPaEv = list.slice(0, 15).map((e) => ({
+    // Keep the last 40 PA — enough per-pitch depth (10-15 PA on primary pitch,
+    // 3-8 on secondaries) to power the pitch-mix L10 table in PlayerDetail.
+    h.perPaEv = list.slice(0, 40).map((e) => ({
       d: e.date,
       r: e.result,
       ev: e.ev,
