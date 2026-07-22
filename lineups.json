@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-22T21:42:50.198Z",
+  "refreshedAt": "2026-07-22T22:41:33.170Z",
   "today": "2026-07-22",
   "dates": [
     "2026-07-21",
@@ -2221,7 +2221,7 @@
       {
         "id": "g823519",
         "gamePk": 823519,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "PIT",
         "homeTeam": "NYY",
         "awayTeamId": 134,
@@ -2240,19 +2240,19 @@
           "id": 608331,
           "name": "Max Fried"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
-          {
-            "id": 663968,
-            "name": "Jake Mangum",
-            "order": 1,
-            "position": "CF"
-          },
           {
             "id": 693304,
             "name": "Nick Gonzales",
-            "order": 2,
+            "order": 1,
             "position": "3B"
+          },
+          {
+            "id": 669707,
+            "name": "Jared Triolo",
+            "order": 2,
+            "position": "SS"
           },
           {
             "id": 668804,
@@ -2291,10 +2291,10 @@
             "position": "C"
           },
           {
-            "id": 669707,
-            "name": "Jared Triolo",
+            "id": 695257,
+            "name": "Billy Cook",
             "order": 9,
-            "position": "SS"
+            "position": "CF"
           }
         ],
         "homeLineup": [
@@ -2308,13 +2308,13 @@
             "id": 700250,
             "name": "Ben Rice",
             "order": 2,
-            "position": "1B"
+            "position": "DH"
           },
           {
-            "id": 682987,
-            "name": "Spencer Jones",
+            "id": 502671,
+            "name": "Paul Goldschmidt",
             "order": 3,
-            "position": "DH"
+            "position": "1B"
           },
           {
             "id": 641355,
@@ -2323,20 +2323,20 @@
             "position": "LF"
           },
           {
-            "id": 691176,
-            "name": "Jasson Domínguez",
-            "order": 5,
-            "position": "RF"
-          },
-          {
             "id": 665862,
             "name": "Jazz Chisholm Jr.",
-            "order": 6,
+            "order": 5,
             "position": "2B"
           },
           {
-            "id": 676609,
-            "name": "José Caballero",
+            "id": 691176,
+            "name": "Jasson Domínguez",
+            "order": 6,
+            "position": "RF"
+          },
+          {
+            "id": 683011,
+            "name": "Anthony Volpe",
             "order": 7,
             "position": "SS"
           },
@@ -2347,14 +2347,14 @@
             "position": "3B"
           },
           {
-            "id": 669224,
-            "name": "Austin Wells",
+            "id": 645305,
+            "name": "Ali Sánchez",
             "order": 9,
             "position": "C"
           }
         ],
         "awayLineupSource": "confirmed",
-        "homeLineupSource": "projected (last 2026-07-22)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g824735",
@@ -2516,7 +2516,7 @@
           "id": 700842,
           "name": "Eduardo Rivera"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 621493,
@@ -2575,10 +2575,10 @@
         ],
         "homeLineup": [
           {
-            "id": 807799,
-            "name": "Masataka Yoshida",
+            "id": 678011,
+            "name": "Anthony Seigler",
             "order": 1,
-            "position": "DH"
+            "position": "2B"
           },
           {
             "id": 678882,
@@ -2599,16 +2599,16 @@
             "position": "1B"
           },
           {
-            "id": 702332,
-            "name": "Caleb Durbin",
+            "id": 807799,
+            "name": "Masataka Yoshida",
             "order": 5,
-            "position": "3B"
+            "position": "DH"
           },
           {
-            "id": 663853,
-            "name": "Romy Gonzalez",
+            "id": 702332,
+            "name": "Caleb Durbin",
             "order": 6,
-            "position": "2B"
+            "position": "3B"
           },
           {
             "id": 680776,
@@ -2617,20 +2617,20 @@
             "position": "LF"
           },
           {
-            "id": 657136,
-            "name": "Connor Wong",
+            "id": 655316,
+            "name": "Andruw Monasterio",
             "order": 8,
-            "position": "C"
+            "position": "SS"
           },
           {
-            "id": 691907,
-            "name": "Tsung-Che Cheng",
+            "id": 665966,
+            "name": "Carlos Narváez",
             "order": 9,
-            "position": "SS"
+            "position": "C"
           }
         ],
         "awayLineupSource": "confirmed",
-        "homeLineupSource": "projected (last 2026-07-22)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g824083",
@@ -2911,7 +2911,7 @@
       {
         "id": "g824327",
         "gamePk": 824327,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "WSH",
         "homeTeam": "COL",
         "awayTeamId": 120,
@@ -3187,7 +3187,7 @@
       {
         "id": "g823110",
         "gamePk": 823110,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "CIN",
         "homeTeam": "SEA",
         "awayTeamId": 113,
@@ -3325,7 +3325,7 @@
       {
         "id": "g824004",
         "gamePk": 824004,
-        "status": "In Progress",
+        "status": "Game Over",
         "awayTeam": "STL",
         "homeTeam": "LAA",
         "awayTeamId": 138,
@@ -3463,7 +3463,7 @@
       {
         "id": "g824408",
         "gamePk": 824408,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "MIN",
         "homeTeam": "CLE",
         "awayTeamId": 142,
@@ -3601,7 +3601,7 @@
       {
         "id": "g823438",
         "gamePk": 823438,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "LAD",
         "homeTeam": "PHI",
         "awayTeamId": 119,
