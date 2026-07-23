@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-23T19:42:55.384Z",
+  "refreshedAt": "2026-07-23T20:43:00.263Z",
   "today": "2026-07-23",
   "dates": [
     "2026-07-22",
@@ -2497,7 +2497,7 @@
       {
         "id": "g824406",
         "gamePk": 824406,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "MIN",
         "homeTeam": "CLE",
         "awayTeamId": 142,
@@ -2795,52 +2795,52 @@
         "lineupsConfirmed": true,
         "awayLineup": [
           {
-            "id": 606466,
-            "name": "Ketel Marte",
-            "order": 1,
-            "position": "2B"
-          },
-          {
             "id": 682998,
             "name": "Corbin Carroll",
-            "order": 2,
+            "order": 1,
             "position": "RF"
           },
           {
             "id": 672695,
             "name": "Geraldo Perdomo",
-            "order": 3,
+            "order": 2,
             "position": "SS"
           },
           {
             "id": 672515,
             "name": "Gabriel Moreno",
-            "order": 4,
+            "order": 3,
             "position": "C"
           },
           {
             "id": 596146,
             "name": "Max Kepler",
-            "order": 5,
+            "order": 4,
             "position": "LF"
+          },
+          {
+            "id": 680728,
+            "name": "Adrian Del Castillo",
+            "order": 5,
+            "position": "DH"
           },
           {
             "id": 694374,
             "name": "Tim Tawa",
             "order": 6,
-            "position": "1B"
-          },
-          {
-            "id": 680728,
-            "name": "Adrian Del Castillo",
-            "order": 7,
-            "position": "DH"
+            "position": "3B"
           },
           {
             "id": 545121,
             "name": "Ildemaro Vargas",
+            "order": 7,
+            "position": "2B"
+          },
+          {
+            "id": 682988,
+            "name": "Tyler Locklear",
             "order": 8,
-            "position": "3B"
+            "position": "1B"
           },
           {
             "id": 814439,
@@ -3473,7 +3473,10 @@
         "parkHrFactor": 99,
         "startUtc": "2026-07-24T22:45:00Z",
         "startET": "6:45 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 593958,
+          "name": "Eduardo Rodriguez"
+        },
         "homePitcher": {
           "id": 641793,
           "name": "Zack Littell"
@@ -3481,52 +3484,52 @@
         "lineupsConfirmed": false,
         "awayLineup": [
           {
-            "id": 606466,
-            "name": "Ketel Marte",
-            "order": 1,
-            "position": "2B"
-          },
-          {
             "id": 682998,
             "name": "Corbin Carroll",
-            "order": 2,
+            "order": 1,
             "position": "RF"
           },
           {
             "id": 672695,
             "name": "Geraldo Perdomo",
-            "order": 3,
+            "order": 2,
             "position": "SS"
           },
           {
             "id": 672515,
             "name": "Gabriel Moreno",
-            "order": 4,
+            "order": 3,
             "position": "C"
           },
           {
             "id": 596146,
             "name": "Max Kepler",
-            "order": 5,
+            "order": 4,
             "position": "LF"
+          },
+          {
+            "id": 680728,
+            "name": "Adrian Del Castillo",
+            "order": 5,
+            "position": "DH"
           },
           {
             "id": 694374,
             "name": "Tim Tawa",
             "order": 6,
-            "position": "1B"
-          },
-          {
-            "id": 680728,
-            "name": "Adrian Del Castillo",
-            "order": 7,
-            "position": "DH"
+            "position": "3B"
           },
           {
             "id": 545121,
             "name": "Ildemaro Vargas",
+            "order": 7,
+            "position": "2B"
+          },
+          {
+            "id": 682988,
+            "name": "Tyler Locklear",
             "order": 8,
-            "position": "3B"
+            "position": "1B"
           },
           {
             "id": 814439,
@@ -4296,7 +4299,10 @@
           "id": 702056,
           "name": "Trey Yesavage"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 663776,
+          "name": "Patrick Sandoval"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
