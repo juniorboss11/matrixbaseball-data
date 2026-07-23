@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-23T18:05:14.886Z",
+  "refreshedAt": "2026-07-23T19:42:55.384Z",
   "today": "2026-07-23",
   "dates": [
     "2026-07-22",
@@ -2359,7 +2359,7 @@
       {
         "id": "g824893",
         "gamePk": 824893,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "SD",
         "homeTeam": "ATL",
         "awayTeamId": 135,
@@ -2635,7 +2635,7 @@
       {
         "id": "g822785",
         "gamePk": 822785,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "TB",
         "homeTeam": "TOR",
         "awayTeamId": 139,
@@ -2911,7 +2911,7 @@
       {
         "id": "g824247",
         "gamePk": 824247,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "KC",
         "homeTeam": "DET",
         "awayTeamId": 118,
@@ -2930,7 +2930,7 @@
           "id": 675512,
           "name": "Troy Melton"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 695600,
@@ -2969,16 +2969,16 @@
             "position": "LF"
           },
           {
-            "id": 516782,
-            "name": "Starling Marte",
-            "order": 7,
-            "position": "RF"
-          },
-          {
             "id": 668942,
             "name": "Josh Rojas",
-            "order": 8,
+            "order": 7,
             "position": "3B"
+          },
+          {
+            "id": 679845,
+            "name": "Nick Loftin",
+            "order": 8,
+            "position": "RF"
           },
           {
             "id": 623205,
@@ -2995,10 +2995,10 @@
             "position": "SS"
           },
           {
-            "id": 693307,
-            "name": "Dillon Dingler",
+            "id": 650402,
+            "name": "Gleyber Torres",
             "order": 2,
-            "position": "C"
+            "position": "2B"
           },
           {
             "id": 690993,
@@ -3010,31 +3010,31 @@
             "id": 682985,
             "name": "Riley Greene",
             "order": 4,
-            "position": "LF"
+            "position": "DH"
           },
           {
-            "id": 679529,
-            "name": "Spencer Torkelson",
+            "id": 693307,
+            "name": "Dillon Dingler",
             "order": 5,
-            "position": "1B"
+            "position": "C"
           },
           {
             "id": 681481,
             "name": "Kerry Carpenter",
             "order": 6,
-            "position": "DH"
+            "position": "RF"
+          },
+          {
+            "id": 679529,
+            "name": "Spencer Torkelson",
+            "order": 7,
+            "position": "1B"
           },
           {
             "id": 656716,
             "name": "Zach McKinstry",
-            "order": 7,
-            "position": "RF"
-          },
-          {
-            "id": 701678,
-            "name": "Hao-Yu Lee",
             "order": 8,
-            "position": "2B"
+            "position": "LF"
           },
           {
             "id": 681546,
@@ -3043,8 +3043,8 @@
             "position": "CF"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-22)",
-        "homeLineupSource": "projected (last 2026-07-23)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       }
     ],
     "2026-07-24": [
@@ -3244,16 +3244,16 @@
             "position": "LF"
           },
           {
-            "id": 516782,
-            "name": "Starling Marte",
-            "order": 7,
-            "position": "RF"
-          },
-          {
             "id": 668942,
             "name": "Josh Rojas",
-            "order": 8,
+            "order": 7,
             "position": "3B"
+          },
+          {
+            "id": 679845,
+            "name": "Nick Loftin",
+            "order": 8,
+            "position": "RF"
           },
           {
             "id": 623205,
@@ -3270,10 +3270,10 @@
             "position": "SS"
           },
           {
-            "id": 693307,
-            "name": "Dillon Dingler",
+            "id": 650402,
+            "name": "Gleyber Torres",
             "order": 2,
-            "position": "C"
+            "position": "2B"
           },
           {
             "id": 690993,
@@ -3285,31 +3285,31 @@
             "id": 682985,
             "name": "Riley Greene",
             "order": 4,
-            "position": "LF"
+            "position": "DH"
           },
           {
-            "id": 679529,
-            "name": "Spencer Torkelson",
+            "id": 693307,
+            "name": "Dillon Dingler",
             "order": 5,
-            "position": "1B"
+            "position": "C"
           },
           {
             "id": 681481,
             "name": "Kerry Carpenter",
             "order": 6,
-            "position": "DH"
+            "position": "RF"
+          },
+          {
+            "id": 679529,
+            "name": "Spencer Torkelson",
+            "order": 7,
+            "position": "1B"
           },
           {
             "id": 656716,
             "name": "Zach McKinstry",
-            "order": 7,
-            "position": "RF"
-          },
-          {
-            "id": 701678,
-            "name": "Hao-Yu Lee",
             "order": 8,
-            "position": "2B"
+            "position": "LF"
           },
           {
             "id": 681546,
@@ -3318,7 +3318,7 @@
             "position": "CF"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-22)",
+        "awayLineupSource": "projected (last 2026-07-23)",
         "homeLineupSource": "projected (last 2026-07-23)"
       },
       {
