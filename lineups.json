@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-24T01:06:26.170Z",
+  "refreshedAt": "2026-07-24T04:29:02.696Z",
   "today": "2026-07-24",
   "dates": [
     "2026-07-23",
@@ -563,7 +563,7 @@
       {
         "id": "g824247",
         "gamePk": 824247,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "KC",
         "homeTeam": "DET",
         "awayTeamId": 118,
@@ -852,7 +852,10 @@
         "parkHrFactor": 90,
         "startUtc": "2026-07-24T22:40:00Z",
         "startET": "6:40 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 694360,
+          "name": "Beck Way"
+        },
         "homePitcher": {
           "id": 669373,
           "name": "Tarik Skubal"
