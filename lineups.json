@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-24T21:44:06.339Z",
+  "refreshedAt": "2026-07-24T22:45:28.028Z",
   "today": "2026-07-24",
   "dates": [
     "2026-07-23",
@@ -841,7 +841,7 @@
       {
         "id": "g824248",
         "gamePk": 824248,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "KC",
         "homeTeam": "DET",
         "awayTeamId": 118,
@@ -979,7 +979,7 @@
       {
         "id": "g823352",
         "gamePk": 823352,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "CHC",
         "homeTeam": "PIT",
         "awayTeamId": 112,
@@ -1117,7 +1117,7 @@
       {
         "id": "g822707",
         "gamePk": 822707,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "AZ",
         "homeTeam": "WSH",
         "awayTeamId": 109,
@@ -1255,7 +1255,7 @@
       {
         "id": "g823434",
         "gamePk": 823434,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "NYY",
         "homeTeam": "PHI",
         "awayTeamId": 147,
@@ -1393,7 +1393,7 @@
       {
         "id": "g824812",
         "gamePk": 824812,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "ATL",
         "homeTeam": "BAL",
         "awayTeamId": 144,
@@ -1531,7 +1531,7 @@
       {
         "id": "g823601",
         "gamePk": 823601,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "LAD",
         "homeTeam": "NYM",
         "awayTeamId": 119,
@@ -1669,7 +1669,7 @@
       {
         "id": "g822952",
         "gamePk": 822952,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "CLE",
         "homeTeam": "TB",
         "awayTeamId": 114,
@@ -2635,7 +2635,7 @@
       {
         "id": "g823196",
         "gamePk": 823196,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "LAA",
         "homeTeam": "SF",
         "awayTeamId": 108,
@@ -2654,7 +2654,7 @@
           "id": 657277,
           "name": "Logan Webb"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 687263,
@@ -2675,16 +2675,16 @@
             "position": "1B"
           },
           {
-            "id": 687093,
-            "name": "Vaughn Grissom",
+            "id": 624585,
+            "name": "Jorge Soler",
             "order": 4,
-            "position": "3B"
+            "position": "DH"
           },
           {
-            "id": 666176,
-            "name": "Jo Adell",
+            "id": 687093,
+            "name": "Vaughn Grissom",
             "order": 5,
-            "position": "DH"
+            "position": "2B"
           },
           {
             "id": 685133,
@@ -2693,16 +2693,16 @@
             "position": "LF"
           },
           {
-            "id": 672724,
-            "name": "Oswald Peraza",
+            "id": 666176,
+            "name": "Jo Adell",
             "order": 7,
-            "position": "2B"
+            "position": "RF"
           },
           {
-            "id": 666139,
-            "name": "Josh Lowe",
+            "id": 694203,
+            "name": "Denzer Guzman",
             "order": 8,
-            "position": "RF"
+            "position": "3B"
           },
           {
             "id": 623168,
@@ -2719,16 +2719,16 @@
             "position": "2B"
           },
           {
-            "id": 805811,
-            "name": "Bryce Eldridge",
-            "order": 2,
-            "position": "DH"
-          },
-          {
             "id": 671218,
             "name": "Heliot Ramos",
-            "order": 3,
+            "order": 2,
             "position": "LF"
+          },
+          {
+            "id": 805811,
+            "name": "Bryce Eldridge",
+            "order": 3,
+            "position": "DH"
           },
           {
             "id": 646240,
@@ -2767,8 +2767,8 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-22)",
-        "homeLineupSource": "projected (last 2026-07-22)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       }
     ],
     "2026-07-25": [
@@ -3091,16 +3091,16 @@
             "position": "1B"
           },
           {
-            "id": 687093,
-            "name": "Vaughn Grissom",
+            "id": 624585,
+            "name": "Jorge Soler",
             "order": 4,
-            "position": "3B"
+            "position": "DH"
           },
           {
-            "id": 666176,
-            "name": "Jo Adell",
+            "id": 687093,
+            "name": "Vaughn Grissom",
             "order": 5,
-            "position": "DH"
+            "position": "2B"
           },
           {
             "id": 685133,
@@ -3109,16 +3109,16 @@
             "position": "LF"
           },
           {
-            "id": 672724,
-            "name": "Oswald Peraza",
+            "id": 666176,
+            "name": "Jo Adell",
             "order": 7,
-            "position": "2B"
+            "position": "RF"
           },
           {
-            "id": 666139,
-            "name": "Josh Lowe",
+            "id": 694203,
+            "name": "Denzer Guzman",
             "order": 8,
-            "position": "RF"
+            "position": "3B"
           },
           {
             "id": 623168,
@@ -3135,16 +3135,16 @@
             "position": "2B"
           },
           {
-            "id": 805811,
-            "name": "Bryce Eldridge",
-            "order": 2,
-            "position": "DH"
-          },
-          {
             "id": 671218,
             "name": "Heliot Ramos",
-            "order": 3,
+            "order": 2,
             "position": "LF"
+          },
+          {
+            "id": 805811,
+            "name": "Bryce Eldridge",
+            "order": 3,
+            "position": "DH"
           },
           {
             "id": 646240,
@@ -3183,8 +3183,8 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-22)",
-        "homeLineupSource": "projected (last 2026-07-22)"
+        "awayLineupSource": "projected (last 2026-07-25)",
+        "homeLineupSource": "projected (last 2026-07-25)"
       },
       {
         "id": "g824734",
