@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-25T01:15:01.147Z",
+  "refreshedAt": "2026-07-25T04:32:38.397Z",
   "today": "2026-07-25",
   "dates": [
     "2026-07-24",
@@ -287,7 +287,7 @@
       {
         "id": "g823352",
         "gamePk": 823352,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "CHC",
         "homeTeam": "PIT",
         "awayTeamId": 112,
@@ -425,7 +425,7 @@
       {
         "id": "g822707",
         "gamePk": 822707,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "AZ",
         "homeTeam": "WSH",
         "awayTeamId": 109,
@@ -563,7 +563,7 @@
       {
         "id": "g823434",
         "gamePk": 823434,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "NYY",
         "homeTeam": "PHI",
         "awayTeamId": 147,
@@ -701,7 +701,7 @@
       {
         "id": "g824812",
         "gamePk": 824812,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "ATL",
         "homeTeam": "BAL",
         "awayTeamId": 144,
@@ -839,7 +839,7 @@
       {
         "id": "g823601",
         "gamePk": 823601,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "LAD",
         "homeTeam": "NYM",
         "awayTeamId": 119,
@@ -977,7 +977,7 @@
       {
         "id": "g822952",
         "gamePk": 822952,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "CLE",
         "homeTeam": "TB",
         "awayTeamId": 114,
@@ -1115,7 +1115,7 @@
       {
         "id": "g823843",
         "gamePk": 823843,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "SD",
         "homeTeam": "MIA",
         "awayTeamId": 135,
@@ -1253,7 +1253,7 @@
       {
         "id": "g824733",
         "gamePk": 824733,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "TOR",
         "homeTeam": "BOS",
         "awayTeamId": 141,
@@ -1391,7 +1391,7 @@
       {
         "id": "g824573",
         "gamePk": 824573,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "HOU",
         "homeTeam": "CWS",
         "awayTeamId": 117,
@@ -1529,7 +1529,7 @@
       {
         "id": "g822872",
         "gamePk": 822872,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "SEA",
         "homeTeam": "TEX",
         "awayTeamId": 136,
@@ -1667,7 +1667,7 @@
       {
         "id": "g823680",
         "gamePk": 823680,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "ATH",
         "homeTeam": "MIN",
         "awayTeamId": 133,
@@ -1805,7 +1805,7 @@
       {
         "id": "g823031",
         "gamePk": 823031,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "CIN",
         "homeTeam": "STL",
         "awayTeamId": 113,
@@ -1943,7 +1943,7 @@
       {
         "id": "g823196",
         "gamePk": 823196,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "LAA",
         "homeTeam": "SF",
         "awayTeamId": 108,
@@ -3333,7 +3333,10 @@
         "parkHrFactor": 101,
         "startUtc": "2026-07-25T23:10:00Z",
         "startET": "7:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 686930,
+          "name": "Mason Barnett"
+        },
         "homePitcher": null,
         "lineupsConfirmed": false,
         "awayLineup": [
