@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-25T12:48:02.948Z",
+  "refreshedAt": "2026-07-25T14:21:45.024Z",
   "today": "2026-07-25",
   "dates": [
     "2026-07-24",
@@ -2083,7 +2083,7 @@
       {
         "id": "g824244",
         "gamePk": 824244,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "KC",
         "homeTeam": "DET",
         "awayTeamId": 118,
@@ -2102,13 +2102,13 @@
           "id": 663554,
           "name": "Casey Mize"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 695600,
             "name": "Carter Jensen",
             "order": 1,
-            "position": "DH"
+            "position": "C"
           },
           {
             "id": 657041,
@@ -2117,16 +2117,16 @@
             "position": "CF"
           },
           {
-            "id": 521692,
-            "name": "Salvador Perez",
+            "id": 695506,
+            "name": "Jac Caglianone",
             "order": 3,
-            "position": "C"
+            "position": "RF"
           },
           {
-            "id": 516782,
-            "name": "Starling Marte",
+            "id": 521692,
+            "name": "Salvador Perez",
             "order": 4,
-            "position": "RF"
+            "position": "DH"
           },
           {
             "id": 686469,
@@ -2141,20 +2141,20 @@
             "position": "3B"
           },
           {
-            "id": 686555,
-            "name": "Isaac Collins",
-            "order": 7,
-            "position": "LF"
-          },
-          {
             "id": 686681,
             "name": "Michael Massey",
-            "order": 8,
+            "order": 7,
             "position": "2B"
           },
           {
-            "id": 686475,
-            "name": "Tyler Tolbert",
+            "id": 686555,
+            "name": "Isaac Collins",
+            "order": 8,
+            "position": "LF"
+          },
+          {
+            "id": 623205,
+            "name": "Andrew Velazquez",
             "order": 9,
             "position": "SS"
           }
@@ -2164,43 +2164,43 @@
             "id": 690993,
             "name": "Colt Keith",
             "order": 1,
-            "position": "3B"
+            "position": "1B"
+          },
+          {
+            "id": 805808,
+            "name": "Kevin McGonigle",
+            "order": 2,
+            "position": "SS"
           },
           {
             "id": 650402,
             "name": "Gleyber Torres",
-            "order": 2,
-            "position": "DH"
+            "order": 3,
+            "position": "2B"
           },
           {
-            "id": 693307,
-            "name": "Dillon Dingler",
-            "order": 3,
-            "position": "C"
+            "id": 681481,
+            "name": "Kerry Carpenter",
+            "order": 4,
+            "position": "DH"
           },
           {
             "id": 682985,
             "name": "Riley Greene",
-            "order": 4,
-            "position": "LF"
-          },
-          {
-            "id": 679529,
-            "name": "Spencer Torkelson",
             "order": 5,
-            "position": "1B"
+            "position": "LF"
           },
           {
             "id": 701678,
             "name": "Hao-Yu Lee",
             "order": 6,
-            "position": "2B"
+            "position": "3B"
           },
           {
             "id": 656716,
             "name": "Zach McKinstry",
             "order": 7,
-            "position": "SS"
+            "position": "RF"
           },
           {
             "id": 663837,
@@ -2209,14 +2209,14 @@
             "position": "CF"
           },
           {
-            "id": 701162,
-            "name": "Ben Malgeri",
+            "id": 668670,
+            "name": "Jake Rogers",
             "order": 9,
-            "position": "RF"
+            "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-24)",
-        "homeLineupSource": "projected (last 2026-07-24)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g822704",
@@ -4858,7 +4858,7 @@
             "id": 695600,
             "name": "Carter Jensen",
             "order": 1,
-            "position": "DH"
+            "position": "C"
           },
           {
             "id": 657041,
@@ -4867,16 +4867,16 @@
             "position": "CF"
           },
           {
-            "id": 521692,
-            "name": "Salvador Perez",
+            "id": 695506,
+            "name": "Jac Caglianone",
             "order": 3,
-            "position": "C"
+            "position": "RF"
           },
           {
-            "id": 516782,
-            "name": "Starling Marte",
+            "id": 521692,
+            "name": "Salvador Perez",
             "order": 4,
-            "position": "RF"
+            "position": "DH"
           },
           {
             "id": 686469,
@@ -4891,20 +4891,20 @@
             "position": "3B"
           },
           {
-            "id": 686555,
-            "name": "Isaac Collins",
-            "order": 7,
-            "position": "LF"
-          },
-          {
             "id": 686681,
             "name": "Michael Massey",
-            "order": 8,
+            "order": 7,
             "position": "2B"
           },
           {
-            "id": 686475,
-            "name": "Tyler Tolbert",
+            "id": 686555,
+            "name": "Isaac Collins",
+            "order": 8,
+            "position": "LF"
+          },
+          {
+            "id": 623205,
+            "name": "Andrew Velazquez",
             "order": 9,
             "position": "SS"
           }
@@ -4914,43 +4914,43 @@
             "id": 690993,
             "name": "Colt Keith",
             "order": 1,
-            "position": "3B"
+            "position": "1B"
+          },
+          {
+            "id": 805808,
+            "name": "Kevin McGonigle",
+            "order": 2,
+            "position": "SS"
           },
           {
             "id": 650402,
             "name": "Gleyber Torres",
-            "order": 2,
-            "position": "DH"
+            "order": 3,
+            "position": "2B"
           },
           {
-            "id": 693307,
-            "name": "Dillon Dingler",
-            "order": 3,
-            "position": "C"
+            "id": 681481,
+            "name": "Kerry Carpenter",
+            "order": 4,
+            "position": "DH"
           },
           {
             "id": 682985,
             "name": "Riley Greene",
-            "order": 4,
-            "position": "LF"
-          },
-          {
-            "id": 679529,
-            "name": "Spencer Torkelson",
             "order": 5,
-            "position": "1B"
+            "position": "LF"
           },
           {
             "id": 701678,
             "name": "Hao-Yu Lee",
             "order": 6,
-            "position": "2B"
+            "position": "3B"
           },
           {
             "id": 656716,
             "name": "Zach McKinstry",
             "order": 7,
-            "position": "SS"
+            "position": "RF"
           },
           {
             "id": 663837,
@@ -4959,14 +4959,14 @@
             "position": "CF"
           },
           {
-            "id": 701162,
-            "name": "Ben Malgeri",
+            "id": 668670,
+            "name": "Jake Rogers",
             "order": 9,
-            "position": "RF"
+            "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-24)",
-        "homeLineupSource": "projected (last 2026-07-24)"
+        "awayLineupSource": "projected (last 2026-07-25)",
+        "homeLineupSource": "projected (last 2026-07-25)"
       },
       {
         "id": "g823599",
