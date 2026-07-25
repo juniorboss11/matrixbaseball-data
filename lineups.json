@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-25T21:34:13.782Z",
+  "refreshedAt": "2026-07-25T22:34:24.793Z",
   "today": "2026-07-25",
   "dates": [
     "2026-07-24",
@@ -2773,7 +2773,7 @@
       {
         "id": "g823435",
         "gamePk": 823435,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "NYY",
         "homeTeam": "PHI",
         "awayTeamId": 147,
@@ -2911,7 +2911,7 @@
       {
         "id": "g822948",
         "gamePk": 822948,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "CLE",
         "homeTeam": "TB",
         "awayTeamId": 114,
@@ -3049,7 +3049,7 @@
       {
         "id": "g823355",
         "gamePk": 823355,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "CHC",
         "homeTeam": "PIT",
         "awayTeamId": 112,
@@ -4856,7 +4856,10 @@
         "parkHrFactor": 90,
         "startUtc": "2026-07-26T17:40:00Z",
         "startET": "1:40 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 679883,
+          "name": "Luinder Avila"
+        },
         "homePitcher": {
           "id": 664285,
           "name": "Framber Valdez"
