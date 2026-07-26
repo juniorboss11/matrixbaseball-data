@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-26T17:28:20.869Z",
+  "refreshedAt": "2026-07-26T18:33:30.503Z",
   "today": "2026-07-26",
   "dates": [
     "2026-07-25",
@@ -2083,7 +2083,7 @@
       {
         "id": "g822950",
         "gamePk": 822950,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "CLE",
         "homeTeam": "TB",
         "awayTeamId": 114,
@@ -2221,7 +2221,7 @@
       {
         "id": "g822706",
         "gamePk": 822706,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "AZ",
         "homeTeam": "WSH",
         "awayTeamId": 109,
@@ -2359,7 +2359,7 @@
       {
         "id": "g823354",
         "gamePk": 823354,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "CHC",
         "homeTeam": "PIT",
         "awayTeamId": 112,
@@ -2497,7 +2497,7 @@
       {
         "id": "g824730",
         "gamePk": 824730,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "TOR",
         "homeTeam": "BOS",
         "awayTeamId": 141,
@@ -2635,7 +2635,7 @@
       {
         "id": "g824810",
         "gamePk": 824810,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "ATL",
         "homeTeam": "BAL",
         "awayTeamId": 144,
@@ -2773,7 +2773,7 @@
       {
         "id": "g824246",
         "gamePk": 824246,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "KC",
         "homeTeam": "DET",
         "awayTeamId": 118,
@@ -2911,7 +2911,7 @@
       {
         "id": "g823599",
         "gamePk": 823599,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "LAD",
         "homeTeam": "NYM",
         "awayTeamId": 119,
@@ -3049,7 +3049,7 @@
       {
         "id": "g823840",
         "gamePk": 823840,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "SD",
         "homeTeam": "MIA",
         "awayTeamId": 135,
@@ -3187,7 +3187,7 @@
       {
         "id": "g823678",
         "gamePk": 823678,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "ATH",
         "homeTeam": "MIN",
         "awayTeamId": 133,
@@ -3325,7 +3325,7 @@
       {
         "id": "g824572",
         "gamePk": 824572,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "HOU",
         "homeTeam": "CWS",
         "awayTeamId": 117,
@@ -3463,7 +3463,7 @@
       {
         "id": "g823755",
         "gamePk": 823755,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "COL",
         "homeTeam": "MIL",
         "awayTeamId": 115,
@@ -3601,7 +3601,7 @@
       {
         "id": "g823028",
         "gamePk": 823028,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "CIN",
         "homeTeam": "STL",
         "awayTeamId": 113,
@@ -3739,7 +3739,7 @@
       {
         "id": "g822870",
         "gamePk": 822870,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "SEA",
         "homeTeam": "TEX",
         "awayTeamId": 136,
@@ -3896,7 +3896,7 @@
           "id": 687931,
           "name": "Carson Whisenhunt"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 687263,
@@ -4009,7 +4009,7 @@
             "position": "RF"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-25)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       },
       {
@@ -5403,7 +5403,10 @@
           "id": 837227,
           "name": "Tatsuya Imai"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 700712,
+          "name": "Walbert Ureña"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -5518,7 +5521,7 @@
           }
         ],
         "awayLineupSource": "projected (last 2026-07-26)",
-        "homeLineupSource": "projected (last 2026-07-25)"
+        "homeLineupSource": "projected (last 2026-07-26)"
       },
       {
         "id": "g824977",
