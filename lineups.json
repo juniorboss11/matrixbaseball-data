@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-26T19:50:48.375Z",
+  "refreshedAt": "2026-07-26T20:41:57.691Z",
   "today": "2026-07-26",
   "dates": [
     "2026-07-25",
@@ -2221,7 +2221,7 @@
       {
         "id": "g822706",
         "gamePk": 822706,
-        "status": "In Progress",
+        "status": "Game Over",
         "awayTeam": "AZ",
         "homeTeam": "WSH",
         "awayTeamId": 109,
@@ -2359,7 +2359,7 @@
       {
         "id": "g823354",
         "gamePk": 823354,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "CHC",
         "homeTeam": "PIT",
         "awayTeamId": 112,
@@ -2497,7 +2497,7 @@
       {
         "id": "g824730",
         "gamePk": 824730,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "TOR",
         "homeTeam": "BOS",
         "awayTeamId": 141,
@@ -3049,7 +3049,7 @@
       {
         "id": "g823840",
         "gamePk": 823840,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "SD",
         "homeTeam": "MIA",
         "awayTeamId": 135,
@@ -3877,7 +3877,7 @@
       {
         "id": "g823194",
         "gamePk": 823194,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "LAA",
         "homeTeam": "SF",
         "awayTeamId": 108,
@@ -4034,13 +4034,13 @@
           "id": 650911,
           "name": "Cristopher Sánchez"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
-            "id": 642708,
-            "name": "Amed Rosario",
+            "id": 502671,
+            "name": "Paul Goldschmidt",
             "order": 1,
-            "position": "3B"
+            "position": "1B"
           },
           {
             "id": 700250,
@@ -4049,44 +4049,44 @@
             "position": "DH"
           },
           {
-            "id": 502671,
-            "name": "Paul Goldschmidt",
+            "id": 642708,
+            "name": "Amed Rosario",
             "order": 3,
-            "position": "1B"
-          },
-          {
-            "id": 641355,
-            "name": "Cody Bellinger",
-            "order": 4,
-            "position": "LF"
-          },
-          {
-            "id": 663757,
-            "name": "Trent Grisham",
-            "order": 5,
-            "position": "CF"
+            "position": "3B"
           },
           {
             "id": 691176,
             "name": "Jasson Domínguez",
-            "order": 6,
+            "order": 4,
             "position": "RF"
           },
           {
-            "id": 665862,
-            "name": "Jazz Chisholm Jr.",
+            "id": 683011,
+            "name": "Anthony Volpe",
+            "order": 5,
+            "position": "SS"
+          },
+          {
+            "id": 663757,
+            "name": "Trent Grisham",
+            "order": 6,
+            "position": "CF"
+          },
+          {
+            "id": 680474,
+            "name": "Max Schuemann",
             "order": 7,
-            "position": "2B"
+            "position": "LF"
           },
           {
             "id": 676609,
             "name": "José Caballero",
             "order": 8,
-            "position": "SS"
+            "position": "2B"
           },
           {
-            "id": 669224,
-            "name": "Austin Wells",
+            "id": 645305,
+            "name": "Ali Sánchez",
             "order": 9,
             "position": "C"
           }
@@ -4147,7 +4147,7 @@
             "position": "CF"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-25)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       }
     ],
@@ -4718,7 +4718,10 @@
         "parkHrFactor": 99,
         "startUtc": "2026-07-27T22:45:00Z",
         "startET": "6:45 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 453286,
+          "name": "Max Scherzer"
+        },
         "homePitcher": {
           "id": 674841,
           "name": "Andrew Alvarez"
@@ -5140,10 +5143,10 @@
         "lineupsConfirmed": false,
         "awayLineup": [
           {
-            "id": 642708,
-            "name": "Amed Rosario",
+            "id": 502671,
+            "name": "Paul Goldschmidt",
             "order": 1,
-            "position": "3B"
+            "position": "1B"
           },
           {
             "id": 700250,
@@ -5152,44 +5155,44 @@
             "position": "DH"
           },
           {
-            "id": 502671,
-            "name": "Paul Goldschmidt",
+            "id": 642708,
+            "name": "Amed Rosario",
             "order": 3,
-            "position": "1B"
-          },
-          {
-            "id": 641355,
-            "name": "Cody Bellinger",
-            "order": 4,
-            "position": "LF"
-          },
-          {
-            "id": 663757,
-            "name": "Trent Grisham",
-            "order": 5,
-            "position": "CF"
+            "position": "3B"
           },
           {
             "id": 691176,
             "name": "Jasson Domínguez",
-            "order": 6,
+            "order": 4,
             "position": "RF"
           },
           {
-            "id": 665862,
-            "name": "Jazz Chisholm Jr.",
+            "id": 683011,
+            "name": "Anthony Volpe",
+            "order": 5,
+            "position": "SS"
+          },
+          {
+            "id": 663757,
+            "name": "Trent Grisham",
+            "order": 6,
+            "position": "CF"
+          },
+          {
+            "id": 680474,
+            "name": "Max Schuemann",
             "order": 7,
-            "position": "2B"
+            "position": "LF"
           },
           {
             "id": 676609,
             "name": "José Caballero",
             "order": 8,
-            "position": "SS"
+            "position": "2B"
           },
           {
-            "id": 669224,
-            "name": "Austin Wells",
+            "id": 645305,
+            "name": "Ali Sánchez",
             "order": 9,
             "position": "C"
           }
@@ -5250,7 +5253,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-25)",
+        "awayLineupSource": "projected (last 2026-07-26)",
         "homeLineupSource": "projected (last 2026-07-26)"
       },
       {
