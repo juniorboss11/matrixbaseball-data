@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-26T16:17:07.976Z",
+  "refreshedAt": "2026-07-26T17:28:20.869Z",
   "today": "2026-07-26",
   "dates": [
     "2026-07-25",
@@ -2221,7 +2221,7 @@
       {
         "id": "g822706",
         "gamePk": 822706,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "AZ",
         "homeTeam": "WSH",
         "awayTeamId": 109,
@@ -2359,7 +2359,7 @@
       {
         "id": "g823354",
         "gamePk": 823354,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "CHC",
         "homeTeam": "PIT",
         "awayTeamId": 112,
@@ -2497,7 +2497,7 @@
       {
         "id": "g824730",
         "gamePk": 824730,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "TOR",
         "homeTeam": "BOS",
         "awayTeamId": 141,
@@ -2635,7 +2635,7 @@
       {
         "id": "g824810",
         "gamePk": 824810,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "ATL",
         "homeTeam": "BAL",
         "awayTeamId": 144,
@@ -2773,7 +2773,7 @@
       {
         "id": "g824246",
         "gamePk": 824246,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "KC",
         "homeTeam": "DET",
         "awayTeamId": 118,
@@ -2911,7 +2911,7 @@
       {
         "id": "g823599",
         "gamePk": 823599,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "LAD",
         "homeTeam": "NYM",
         "awayTeamId": 119,
@@ -3049,7 +3049,7 @@
       {
         "id": "g823840",
         "gamePk": 823840,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "SD",
         "homeTeam": "MIA",
         "awayTeamId": 135,
@@ -3685,16 +3685,16 @@
             "position": "2B"
           },
           {
-            "id": 671056,
-            "name": "Iván Herrera",
-            "order": 2,
-            "position": "DH"
-          },
-          {
             "id": 691023,
             "name": "Jordan Walker",
-            "order": 3,
+            "order": 2,
             "position": "RF"
+          },
+          {
+            "id": 671056,
+            "name": "Iván Herrera",
+            "order": 3,
+            "position": "DH"
           },
           {
             "id": 676475,
@@ -3877,7 +3877,7 @@
       {
         "id": "g823194",
         "gamePk": 823194,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "LAA",
         "homeTeam": "SF",
         "awayTeamId": 108,
@@ -3985,10 +3985,10 @@
             "position": "3B"
           },
           {
-            "id": 808982,
-            "name": "Jung Hoo Lee",
+            "id": 687551,
+            "name": "Drew Gilbert",
             "order": 6,
-            "position": "RF"
+            "position": "CF"
           },
           {
             "id": 642715,
@@ -3997,20 +3997,20 @@
             "position": "SS"
           },
           {
-            "id": 687551,
-            "name": "Drew Gilbert",
+            "id": 701852,
+            "name": "Drew Cavanaugh",
             "order": 8,
-            "position": "CF"
+            "position": "C"
           },
           {
-            "id": 691740,
-            "name": "Daniel Susac",
+            "id": 687529,
+            "name": "Grant McCray",
             "order": 9,
-            "position": "C"
+            "position": "RF"
           }
         ],
         "awayLineupSource": "projected (last 2026-07-25)",
-        "homeLineupSource": "projected (last 2026-07-25)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g823433",
@@ -4988,7 +4988,10 @@
         "parkHrFactor": 103,
         "startUtc": "2026-07-27T23:10:00Z",
         "startET": "7:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 527048,
+          "name": "Martín Pérez"
+        },
         "homePitcher": {
           "id": 804267,
           "name": "Zac Thornton"
@@ -5123,7 +5126,10 @@
         "parkHrFactor": 100,
         "startUtc": "2026-07-27T23:40:00Z",
         "startET": "7:40 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 608331,
+          "name": "Max Fried"
+        },
         "homePitcher": {
           "id": 702273,
           "name": "Noah Schultz"
@@ -5328,16 +5334,16 @@
             "position": "2B"
           },
           {
-            "id": 671056,
-            "name": "Iván Herrera",
-            "order": 2,
-            "position": "DH"
-          },
-          {
             "id": 691023,
             "name": "Jordan Walker",
-            "order": 3,
+            "order": 2,
             "position": "RF"
+          },
+          {
+            "id": 671056,
+            "name": "Iván Herrera",
+            "order": 3,
+            "position": "DH"
           },
           {
             "id": 676475,
@@ -5670,7 +5676,10 @@
           "id": 687075,
           "name": "Brandon Sproat"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 641816,
+          "name": "Tyler Mahle"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -5760,10 +5769,10 @@
             "position": "3B"
           },
           {
-            "id": 808982,
-            "name": "Jung Hoo Lee",
+            "id": 687551,
+            "name": "Drew Gilbert",
             "order": 6,
-            "position": "RF"
+            "position": "CF"
           },
           {
             "id": 642715,
@@ -5772,20 +5781,20 @@
             "position": "SS"
           },
           {
-            "id": 687551,
-            "name": "Drew Gilbert",
+            "id": 701852,
+            "name": "Drew Cavanaugh",
             "order": 8,
-            "position": "CF"
+            "position": "C"
           },
           {
-            "id": 691740,
-            "name": "Daniel Susac",
+            "id": 687529,
+            "name": "Grant McCray",
             "order": 9,
-            "position": "C"
+            "position": "RF"
           }
         ],
         "awayLineupSource": "projected (last 2026-07-26)",
-        "homeLineupSource": "projected (last 2026-07-25)"
+        "homeLineupSource": "projected (last 2026-07-26)"
       }
     ]
   }
