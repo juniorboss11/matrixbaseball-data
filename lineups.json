@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-27T14:43:14.575Z",
+  "refreshedAt": "2026-07-27T16:49:05.927Z",
   "today": "2026-07-27",
   "dates": [
     "2026-07-26",
@@ -2083,7 +2083,7 @@
       {
         "id": "g822868",
         "gamePk": 822868,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "SEA",
         "homeTeam": "TEX",
         "awayTeamId": 136,
@@ -2102,7 +2102,7 @@
           "id": 677958,
           "name": "Kumar Rocker"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 702284,
@@ -2114,13 +2114,13 @@
             "id": 677594,
             "name": "Julio Rodríguez",
             "order": 2,
-            "position": "CF"
+            "position": "DH"
           },
           {
             "id": 686527,
             "name": "Dominic Canzone",
             "order": 3,
-            "position": "DH"
+            "position": "RF"
           },
           {
             "id": 668227,
@@ -2135,16 +2135,16 @@
             "position": "1B"
           },
           {
-            "id": 663728,
-            "name": "Cal Raleigh",
-            "order": 6,
-            "position": "C"
-          },
-          {
             "id": 670042,
             "name": "Luke Raley",
+            "order": 6,
+            "position": "CF"
+          },
+          {
+            "id": 641598,
+            "name": "Mitch Garver",
             "order": 7,
-            "position": "RF"
+            "position": "C"
           },
           {
             "id": 641487,
@@ -2185,16 +2185,16 @@
             "position": "RF"
           },
           {
-            "id": 669394,
-            "name": "Jake Burger",
-            "order": 5,
-            "position": "1B"
-          },
-          {
             "id": 694497,
             "name": "Evan Carter",
-            "order": 6,
+            "order": 5,
             "position": "CF"
+          },
+          {
+            "id": 669394,
+            "name": "Jake Burger",
+            "order": 6,
+            "position": "1B"
           },
           {
             "id": 670032,
@@ -2215,8 +2215,8 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-26)",
-        "homeLineupSource": "projected (last 2026-07-26)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g824245",
@@ -2651,8 +2651,8 @@
           "name": "Max Scherzer"
         },
         "homePitcher": {
-          "id": 674841,
-          "name": "Andrew Alvarez"
+          "id": 678868,
+          "name": "Eddy Yean"
         },
         "lineupsConfirmed": false,
         "awayLineup": [
@@ -4057,16 +4057,16 @@
             "position": "RF"
           },
           {
-            "id": 669394,
-            "name": "Jake Burger",
-            "order": 5,
-            "position": "1B"
-          },
-          {
             "id": 694497,
             "name": "Evan Carter",
-            "order": 6,
+            "order": 5,
             "position": "CF"
+          },
+          {
+            "id": 669394,
+            "name": "Jake Burger",
+            "order": 6,
+            "position": "1B"
           },
           {
             "id": 670032,
@@ -4143,7 +4143,7 @@
             "position": "2B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-26)",
+        "awayLineupSource": "projected (last 2026-07-27)",
         "homeLineupSource": "projected (last 2026-07-26)"
       },
       {
@@ -5689,13 +5689,13 @@
             "id": 677594,
             "name": "Julio Rodríguez",
             "order": 2,
-            "position": "CF"
+            "position": "DH"
           },
           {
             "id": 686527,
             "name": "Dominic Canzone",
             "order": 3,
-            "position": "DH"
+            "position": "RF"
           },
           {
             "id": 668227,
@@ -5710,16 +5710,16 @@
             "position": "1B"
           },
           {
-            "id": 663728,
-            "name": "Cal Raleigh",
-            "order": 6,
-            "position": "C"
-          },
-          {
             "id": 670042,
             "name": "Luke Raley",
+            "order": 6,
+            "position": "CF"
+          },
+          {
+            "id": 641598,
+            "name": "Mitch Garver",
             "order": 7,
-            "position": "RF"
+            "position": "C"
           },
           {
             "id": 641487,
@@ -5790,7 +5790,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-26)",
+        "awayLineupSource": "projected (last 2026-07-27)",
         "homeLineupSource": "projected (last 2026-07-26)"
       }
     ]
