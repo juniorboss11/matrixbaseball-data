@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-27T22:29:39.968Z",
+  "refreshedAt": "2026-07-27T23:36:50.009Z",
   "today": "2026-07-27",
   "dates": [
     "2026-07-26",
@@ -1300,7 +1300,7 @@
           },
           {
             "id": 664774,
-            "name": "LaMonte Wade",
+            "name": "LaMonte Wade Jr.",
             "order": 5,
             "position": "1B"
           },
@@ -2221,7 +2221,7 @@
       {
         "id": "g824245",
         "gamePk": 824245,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "BAL",
         "homeTeam": "DET",
         "awayTeamId": 110,
@@ -2359,7 +2359,7 @@
       {
         "id": "g823353",
         "gamePk": 823353,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "AZ",
         "homeTeam": "PIT",
         "awayTeamId": 109,
@@ -2497,7 +2497,7 @@
       {
         "id": "g823839",
         "gamePk": 823839,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "PHI",
         "homeTeam": "MIA",
         "awayTeamId": 143,
@@ -2635,7 +2635,7 @@
       {
         "id": "g822705",
         "gamePk": 822705,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "TOR",
         "homeTeam": "WSH",
         "awayTeamId": 141,
@@ -2911,7 +2911,7 @@
       {
         "id": "g823597",
         "gamePk": 823597,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "ATL",
         "homeTeam": "NYM",
         "awayTeamId": 144,
@@ -3049,7 +3049,7 @@
       {
         "id": "g824570",
         "gamePk": 824570,
-        "status": "Pre-Game",
+        "status": "Delayed Start",
         "awayTeam": "NYY",
         "homeTeam": "CWS",
         "awayTeamId": 147,
@@ -3187,7 +3187,7 @@
       {
         "id": "g823025",
         "gamePk": 823025,
-        "status": "Pre-Game",
+        "status": "Delayed Start",
         "awayTeam": "CHC",
         "homeTeam": "STL",
         "awayTeamId": 112,
@@ -3344,7 +3344,7 @@
           "id": 700712,
           "name": "Walbert Ureña"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 665161,
@@ -3365,40 +3365,40 @@
             "position": "3B"
           },
           {
+            "id": 664774,
+            "name": "LaMonte Wade Jr.",
+            "order": 4,
+            "position": "RF"
+          },
+          {
             "id": 514888,
             "name": "Jose Altuve",
-            "order": 4,
-            "position": "2B"
-          },
-          {
-            "id": 664774,
-            "name": "LaMonte Wade",
             "order": 5,
-            "position": "1B"
-          },
-          {
-            "id": 673237,
-            "name": "Yainer Diaz",
-            "order": 6,
-            "position": "C"
+            "position": "2B"
           },
           {
             "id": 666211,
             "name": "Taylor Trammell",
+            "order": 6,
+            "position": "LF"
+          },
+          {
+            "id": 572233,
+            "name": "Christian Walker",
             "order": 7,
+            "position": "1B"
+          },
+          {
+            "id": 828599,
+            "name": "Lucas Spence",
+            "order": 8,
             "position": "CF"
           },
           {
-            "id": 701358,
-            "name": "Cam Smith",
-            "order": 8,
-            "position": "RF"
-          },
-          {
-            "id": 701305,
-            "name": "Zach Dezenzo",
+            "id": 543877,
+            "name": "Christian Vázquez",
             "order": 9,
-            "position": "LF"
+            "position": "C"
           }
         ],
         "homeLineup": [
@@ -3457,7 +3457,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-26)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       },
       {
@@ -5155,40 +5155,40 @@
             "position": "3B"
           },
           {
+            "id": 664774,
+            "name": "LaMonte Wade Jr.",
+            "order": 4,
+            "position": "RF"
+          },
+          {
             "id": 514888,
             "name": "Jose Altuve",
-            "order": 4,
-            "position": "2B"
-          },
-          {
-            "id": 664774,
-            "name": "LaMonte Wade",
             "order": 5,
-            "position": "1B"
-          },
-          {
-            "id": 673237,
-            "name": "Yainer Diaz",
-            "order": 6,
-            "position": "C"
+            "position": "2B"
           },
           {
             "id": 666211,
             "name": "Taylor Trammell",
+            "order": 6,
+            "position": "LF"
+          },
+          {
+            "id": 572233,
+            "name": "Christian Walker",
             "order": 7,
+            "position": "1B"
+          },
+          {
+            "id": 828599,
+            "name": "Lucas Spence",
+            "order": 8,
             "position": "CF"
           },
           {
-            "id": 701358,
-            "name": "Cam Smith",
-            "order": 8,
-            "position": "RF"
-          },
-          {
-            "id": 701305,
-            "name": "Zach Dezenzo",
+            "id": 543877,
+            "name": "Christian Vázquez",
             "order": 9,
-            "position": "LF"
+            "position": "C"
           }
         ],
         "homeLineup": [
@@ -5247,7 +5247,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-26)",
+        "awayLineupSource": "projected (last 2026-07-28)",
         "homeLineupSource": "projected (last 2026-07-28)"
       },
       {
