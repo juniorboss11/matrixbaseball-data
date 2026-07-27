@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-27T16:49:05.927Z",
+  "refreshedAt": "2026-07-27T18:15:19.008Z",
   "today": "2026-07-27",
   "dates": [
     "2026-07-26",
@@ -2083,7 +2083,7 @@
       {
         "id": "g822868",
         "gamePk": 822868,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "SEA",
         "homeTeam": "TEX",
         "awayTeamId": 136,
@@ -5675,7 +5675,10 @@
         "parkHrFactor": 100,
         "startUtc": "2026-07-29T02:10:00Z",
         "startET": "10:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 622491,
+          "name": "Luis Castillo"
+        },
         "homePitcher": null,
         "lineupsConfirmed": false,
         "awayLineup": [
