@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-29T21:33:34.708Z",
+  "refreshedAt": "2026-07-29T22:36:48.429Z",
   "today": "2026-07-29",
   "dates": [
     "2026-07-28",
@@ -3325,7 +3325,7 @@
       {
         "id": "g822947",
         "gamePk": 822947,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "TEX",
         "homeTeam": "TB",
         "awayTeamId": 140,
@@ -3371,28 +3371,28 @@
             "position": "1B"
           },
           {
-            "id": 679822,
-            "name": "Justin Foscue",
-            "order": 5,
-            "position": "2B"
-          },
-          {
             "id": 670032,
             "name": "Nicky Lopez",
-            "order": 6,
+            "order": 5,
             "position": "SS"
           },
           {
             "id": 695508,
             "name": "Cam Cauley",
-            "order": 7,
+            "order": 6,
             "position": "CF"
           },
           {
             "id": 696030,
             "name": "Alejandro Osuna",
-            "order": 8,
+            "order": 7,
             "position": "LF"
+          },
+          {
+            "id": 679822,
+            "name": "Justin Foscue",
+            "order": 8,
+            "position": "2B"
           },
           {
             "id": 553869,
@@ -4153,7 +4153,7 @@
       {
         "id": "g824973",
         "gamePk": 824973,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "BOS",
         "homeTeam": "ATH",
         "awayTeamId": 111,
@@ -4172,61 +4172,61 @@
           "id": 682052,
           "name": "Jacob Lopez"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 663330,
             "name": "Jahmai Jones",
             "order": 1,
-            "position": "DH"
-          },
-          {
-            "id": 663853,
-            "name": "Romy Gonzalez",
-            "order": 2,
-            "position": "2B"
-          },
-          {
-            "id": 575929,
-            "name": "Willson Contreras",
-            "order": 3,
-            "position": "1B"
-          },
-          {
-            "id": 677800,
-            "name": "Wilyer Abreu",
-            "order": 4,
-            "position": "RF"
+            "position": "LF"
           },
           {
             "id": 678882,
             "name": "Ceddanne Rafaela",
-            "order": 5,
+            "order": 2,
             "position": "CF"
+          },
+          {
+            "id": 677800,
+            "name": "Wilyer Abreu",
+            "order": 3,
+            "position": "RF"
+          },
+          {
+            "id": 575929,
+            "name": "Willson Contreras",
+            "order": 4,
+            "position": "1B"
           },
           {
             "id": 702332,
             "name": "Caleb Durbin",
-            "order": 6,
+            "order": 5,
             "position": "3B"
           },
           {
-            "id": 680776,
-            "name": "Jarren Duran",
-            "order": 7,
-            "position": "LF"
+            "id": 663853,
+            "name": "Romy Gonzalez",
+            "order": 6,
+            "position": "DH"
           },
           {
             "id": 655316,
             "name": "Andruw Monasterio",
-            "order": 8,
+            "order": 7,
             "position": "SS"
           },
           {
-            "id": 665966,
-            "name": "Carlos Narváez",
-            "order": 9,
+            "id": 657136,
+            "name": "Connor Wong",
+            "order": 8,
             "position": "C"
+          },
+          {
+            "id": 663776,
+            "name": "Patrick Sandoval",
+            "order": 9,
+            "position": "P"
           }
         ],
         "homeLineup": [
@@ -4243,10 +4243,10 @@
             "position": "1B"
           },
           {
-            "id": 641680,
-            "name": "Jonah Heim",
+            "id": 695720,
+            "name": "Tommy White",
             "order": 3,
-            "position": "DH"
+            "position": "3B"
           },
           {
             "id": 691016,
@@ -4255,16 +4255,16 @@
             "position": "LF"
           },
           {
-            "id": 695720,
-            "name": "Tommy White",
+            "id": 641680,
+            "name": "Jonah Heim",
             "order": 5,
-            "position": "3B"
+            "position": "C"
           },
           {
             "id": 687515,
             "name": "Colby Thomas",
             "order": 6,
-            "position": "RF"
+            "position": "DH"
           },
           {
             "id": 703607,
@@ -4273,25 +4273,25 @@
             "position": "CF"
           },
           {
-            "id": 675961,
-            "name": "Alika Williams",
+            "id": 671732,
+            "name": "Lawrence Butler",
             "order": 8,
-            "position": "2B"
+            "position": "RF"
           },
           {
-            "id": 661531,
-            "name": "Brian Serven",
+            "id": 675961,
+            "name": "Alika Williams",
             "order": 9,
-            "position": "C"
+            "position": "2B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-29)",
-        "homeLineupSource": "projected (last 2026-07-29)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g823924",
         "gamePk": 823924,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "SEA",
         "homeTeam": "LAD",
         "awayTeamId": 136,
@@ -4310,7 +4310,7 @@
           "id": 641778,
           "name": "Eric Lauer"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 702284,
@@ -4361,8 +4361,8 @@
             "position": "3B"
           },
           {
-            "id": 641487,
-            "name": "J.P. Crawford",
+            "id": 806068,
+            "name": "Colt Emerson",
             "order": 9,
             "position": "SS"
           }
@@ -4393,16 +4393,16 @@
             "position": "3B"
           },
           {
-            "id": 605141,
-            "name": "Mookie Betts",
-            "order": 5,
-            "position": "SS"
-          },
-          {
             "id": 669242,
             "name": "Tommy Edman",
-            "order": 6,
+            "order": 5,
             "position": "2B"
+          },
+          {
+            "id": 605141,
+            "name": "Mookie Betts",
+            "order": 6,
+            "position": "SS"
           },
           {
             "id": 663656,
@@ -4423,8 +4423,8 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-29)",
-        "homeLineupSource": "projected (last 2026-07-29)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       }
     ],
     "2026-07-30": [
@@ -4474,28 +4474,28 @@
             "position": "1B"
           },
           {
-            "id": 679822,
-            "name": "Justin Foscue",
-            "order": 5,
-            "position": "2B"
-          },
-          {
             "id": 670032,
             "name": "Nicky Lopez",
-            "order": 6,
+            "order": 5,
             "position": "SS"
           },
           {
             "id": 695508,
             "name": "Cam Cauley",
-            "order": 7,
+            "order": 6,
             "position": "CF"
           },
           {
             "id": 696030,
             "name": "Alejandro Osuna",
-            "order": 8,
+            "order": 7,
             "position": "LF"
+          },
+          {
+            "id": 679822,
+            "name": "Justin Foscue",
+            "order": 8,
+            "position": "2B"
           },
           {
             "id": 553869,
@@ -5413,55 +5413,55 @@
             "id": 663330,
             "name": "Jahmai Jones",
             "order": 1,
-            "position": "DH"
-          },
-          {
-            "id": 663853,
-            "name": "Romy Gonzalez",
-            "order": 2,
-            "position": "2B"
-          },
-          {
-            "id": 575929,
-            "name": "Willson Contreras",
-            "order": 3,
-            "position": "1B"
-          },
-          {
-            "id": 677800,
-            "name": "Wilyer Abreu",
-            "order": 4,
-            "position": "RF"
+            "position": "LF"
           },
           {
             "id": 678882,
             "name": "Ceddanne Rafaela",
-            "order": 5,
+            "order": 2,
             "position": "CF"
+          },
+          {
+            "id": 677800,
+            "name": "Wilyer Abreu",
+            "order": 3,
+            "position": "RF"
+          },
+          {
+            "id": 575929,
+            "name": "Willson Contreras",
+            "order": 4,
+            "position": "1B"
           },
           {
             "id": 702332,
             "name": "Caleb Durbin",
-            "order": 6,
+            "order": 5,
             "position": "3B"
           },
           {
-            "id": 680776,
-            "name": "Jarren Duran",
-            "order": 7,
-            "position": "LF"
+            "id": 663853,
+            "name": "Romy Gonzalez",
+            "order": 6,
+            "position": "DH"
           },
           {
             "id": 655316,
             "name": "Andruw Monasterio",
-            "order": 8,
+            "order": 7,
             "position": "SS"
           },
           {
-            "id": 665966,
-            "name": "Carlos Narváez",
-            "order": 9,
+            "id": 657136,
+            "name": "Connor Wong",
+            "order": 8,
             "position": "C"
+          },
+          {
+            "id": 663776,
+            "name": "Patrick Sandoval",
+            "order": 9,
+            "position": "P"
           }
         ],
         "homeLineup": [
@@ -5478,10 +5478,10 @@
             "position": "1B"
           },
           {
-            "id": 641680,
-            "name": "Jonah Heim",
+            "id": 695720,
+            "name": "Tommy White",
             "order": 3,
-            "position": "DH"
+            "position": "3B"
           },
           {
             "id": 691016,
@@ -5490,16 +5490,16 @@
             "position": "LF"
           },
           {
-            "id": 695720,
-            "name": "Tommy White",
+            "id": 641680,
+            "name": "Jonah Heim",
             "order": 5,
-            "position": "3B"
+            "position": "C"
           },
           {
             "id": 687515,
             "name": "Colby Thomas",
             "order": 6,
-            "position": "RF"
+            "position": "DH"
           },
           {
             "id": 703607,
@@ -5508,20 +5508,20 @@
             "position": "CF"
           },
           {
-            "id": 675961,
-            "name": "Alika Williams",
+            "id": 671732,
+            "name": "Lawrence Butler",
             "order": 8,
-            "position": "2B"
+            "position": "RF"
           },
           {
-            "id": 661531,
-            "name": "Brian Serven",
+            "id": 675961,
+            "name": "Alika Williams",
             "order": 9,
-            "position": "C"
+            "position": "2B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-29)",
-        "homeLineupSource": "projected (last 2026-07-29)"
+        "awayLineupSource": "projected (last 2026-07-30)",
+        "homeLineupSource": "projected (last 2026-07-30)"
       },
       {
         "id": "g823271",
@@ -5728,8 +5728,8 @@
             "position": "3B"
           },
           {
-            "id": 641487,
-            "name": "J.P. Crawford",
+            "id": 806068,
+            "name": "Colt Emerson",
             "order": 9,
             "position": "SS"
           }
@@ -5760,16 +5760,16 @@
             "position": "3B"
           },
           {
-            "id": 605141,
-            "name": "Mookie Betts",
-            "order": 5,
-            "position": "SS"
-          },
-          {
             "id": 669242,
             "name": "Tommy Edman",
-            "order": 6,
+            "order": 5,
             "position": "2B"
+          },
+          {
+            "id": 605141,
+            "name": "Mookie Betts",
+            "order": 6,
+            "position": "SS"
           },
           {
             "id": 663656,
@@ -5790,8 +5790,8 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-29)",
-        "homeLineupSource": "projected (last 2026-07-29)"
+        "awayLineupSource": "projected (last 2026-07-30)",
+        "homeLineupSource": "projected (last 2026-07-30)"
       }
     ]
   }
