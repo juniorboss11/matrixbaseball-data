@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-29T22:36:48.429Z",
+  "refreshedAt": "2026-07-29T23:39:31.866Z",
   "today": "2026-07-29",
   "dates": [
     "2026-07-28",
@@ -2911,7 +2911,7 @@
       {
         "id": "g823598",
         "gamePk": 823598,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "ATL",
         "homeTeam": "NYM",
         "awayTeamId": 144,
@@ -3049,7 +3049,7 @@
       {
         "id": "g823192",
         "gamePk": 823192,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "MIL",
         "homeTeam": "SF",
         "awayTeamId": 158,
@@ -3187,7 +3187,7 @@
       {
         "id": "g823273",
         "gamePk": 823273,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "COL",
         "homeTeam": "SD",
         "awayTeamId": 115,
@@ -3325,7 +3325,7 @@
       {
         "id": "g822947",
         "gamePk": 822947,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "TEX",
         "homeTeam": "TB",
         "awayTeamId": 140,
@@ -3463,7 +3463,7 @@
       {
         "id": "g824487",
         "gamePk": 824487,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "CLE",
         "homeTeam": "CIN",
         "awayTeamId": 114,
@@ -3601,7 +3601,7 @@
       {
         "id": "g823677",
         "gamePk": 823677,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "KC",
         "homeTeam": "MIN",
         "awayTeamId": 118,
@@ -3739,7 +3739,7 @@
       {
         "id": "g824567",
         "gamePk": 824567,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "NYY",
         "homeTeam": "CWS",
         "awayTeamId": 147,
@@ -3877,7 +3877,7 @@
       {
         "id": "g823022",
         "gamePk": 823022,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "CHC",
         "homeTeam": "STL",
         "awayTeamId": 112,
@@ -4034,7 +4034,7 @@
           "id": 680570,
           "name": "Grayson Rodriguez"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 665161,
@@ -4067,28 +4067,28 @@
             "position": "2B"
           },
           {
-            "id": 701358,
-            "name": "Cam Smith",
-            "order": 6,
-            "position": "RF"
-          },
-          {
             "id": 666211,
             "name": "Taylor Trammell",
-            "order": 7,
-            "position": "CF"
-          },
-          {
-            "id": 701305,
-            "name": "Zach Dezenzo",
-            "order": 8,
+            "order": 6,
             "position": "LF"
           },
           {
-            "id": 543877,
-            "name": "Christian Vázquez",
-            "order": 9,
+            "id": 673237,
+            "name": "Yainer Diaz",
+            "order": 7,
             "position": "C"
+          },
+          {
+            "id": 701358,
+            "name": "Cam Smith",
+            "order": 8,
+            "position": "RF"
+          },
+          {
+            "id": 828599,
+            "name": "Lucas Spence",
+            "order": 9,
+            "position": "CF"
           }
         ],
         "homeLineup": [
@@ -4147,7 +4147,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-29)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       },
       {
@@ -4217,16 +4217,16 @@
             "position": "SS"
           },
           {
-            "id": 657136,
-            "name": "Connor Wong",
+            "id": 686765,
+            "name": "Nick Sogard",
             "order": 8,
-            "position": "C"
+            "position": "2B"
           },
           {
-            "id": 663776,
-            "name": "Patrick Sandoval",
+            "id": 657136,
+            "name": "Connor Wong",
             "order": 9,
-            "position": "P"
+            "position": "C"
           }
         ],
         "homeLineup": [
@@ -5452,16 +5452,16 @@
             "position": "SS"
           },
           {
-            "id": 657136,
-            "name": "Connor Wong",
+            "id": 686765,
+            "name": "Nick Sogard",
             "order": 8,
-            "position": "C"
+            "position": "2B"
           },
           {
-            "id": 663776,
-            "name": "Patrick Sandoval",
+            "id": 657136,
+            "name": "Connor Wong",
             "order": 9,
-            "position": "P"
+            "position": "C"
           }
         ],
         "homeLineup": [
@@ -5538,7 +5538,10 @@
         "startUtc": "2026-07-31T01:40:00Z",
         "startET": "9:40 PM",
         "awayPitcher": null,
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 676664,
+          "name": "JP Sears"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
