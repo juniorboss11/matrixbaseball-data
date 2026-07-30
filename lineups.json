@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-30T16:55:28.190Z",
+  "refreshedAt": "2026-07-30T18:18:47.110Z",
   "today": "2026-07-30",
   "dates": [
     "2026-07-29",
@@ -2359,7 +2359,7 @@
       {
         "id": "g823674",
         "gamePk": 823674,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "KC",
         "homeTeam": "MIN",
         "awayTeamId": 118,
@@ -2497,7 +2497,7 @@
       {
         "id": "g824568",
         "gamePk": 824568,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "NYY",
         "homeTeam": "CWS",
         "awayTeamId": 147,
@@ -2635,7 +2635,7 @@
       {
         "id": "g823023",
         "gamePk": 823023,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "CHC",
         "homeTeam": "STL",
         "awayTeamId": 112,
@@ -3611,7 +3611,10 @@
         "parkHrFactor": 107,
         "startUtc": "2026-07-31T18:20:00Z",
         "startET": "2:20 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 701542,
+          "name": "Will Warren"
+        },
         "homePitcher": {
           "id": 684007,
           "name": "Shota Imanaga"
@@ -4295,7 +4298,10 @@
         "parkHrFactor": 95,
         "startUtc": "2026-07-31T23:10:00Z",
         "startET": "7:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 607200,
+          "name": "Erick Fedde"
+        },
         "homePitcher": {
           "id": 607259,
           "name": "Nick Martinez"
@@ -4844,7 +4850,10 @@
         "parkHrFactor": 117,
         "startUtc": "2026-08-01T00:40:00Z",
         "startET": "8:40 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 608379,
+          "name": "Michael Wacha"
+        },
         "homePitcher": {
           "id": 608372,
           "name": "Tomoyuki Sugano"
@@ -5516,7 +5525,10 @@
         "parkHrFactor": 92,
         "startUtc": "2026-08-01T02:10:00Z",
         "startET": "10:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 805673,
+          "name": "Zebby Matthews"
+        },
         "homePitcher": {
           "id": 682243,
           "name": "Bryce Miller"
