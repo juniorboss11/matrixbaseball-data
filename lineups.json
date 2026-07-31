@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-31T04:38:53.066Z",
+  "refreshedAt": "2026-07-31T07:32:29.271Z",
   "today": "2026-07-31",
   "dates": [
     "2026-07-30",
@@ -1115,7 +1115,7 @@
       {
         "id": "g823271",
         "gamePk": 823271,
-        "status": "Game Over",
+        "status": "Final",
         "awayTeam": "SF",
         "homeTeam": "SD",
         "awayTeamId": 137,
@@ -1253,7 +1253,7 @@
       {
         "id": "g823921",
         "gamePk": 823921,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "SEA",
         "homeTeam": "LAD",
         "awayTeamId": 136,
@@ -3057,8 +3057,14 @@
         "parkHrFactor": 95,
         "startUtc": "2026-08-01T01:45:00Z",
         "startET": "9:45 PM",
-        "awayPitcher": null,
-        "homePitcher": null,
+        "awayPitcher": {
+          "id": 687931,
+          "name": "Carson Whisenhunt"
+        },
+        "homePitcher": {
+          "id": 699134,
+          "name": "Bradgley Rodriguez"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -3193,7 +3199,10 @@
           "id": 624133,
           "name": "Ranger Suarez"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 683618,
+          "name": "Edgardo Henriquez"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
