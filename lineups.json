@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-31T14:40:58.995Z",
+  "refreshedAt": "2026-07-31T16:23:35.079Z",
   "today": "2026-07-31",
   "dates": [
     "2026-07-30",
@@ -1393,7 +1393,7 @@
       {
         "id": "g824651",
         "gamePk": 824651,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "NYY",
         "homeTeam": "CHC",
         "awayTeamId": 147,
@@ -1412,61 +1412,61 @@
           "id": 684007,
           "name": "Shota Imanaga"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
-            "id": 663757,
-            "name": "Trent Grisham",
+            "id": 502671,
+            "name": "Paul Goldschmidt",
             "order": 1,
-            "position": "CF"
+            "position": "1B"
           },
           {
             "id": 700250,
             "name": "Ben Rice",
             "order": 2,
-            "position": "1B"
+            "position": "DH"
+          },
+          {
+            "id": 642708,
+            "name": "Amed Rosario",
+            "order": 3,
+            "position": "3B"
           },
           {
             "id": 691176,
             "name": "Jasson Domínguez",
-            "order": 3,
+            "order": 4,
             "position": "RF"
           },
           {
-            "id": 502671,
-            "name": "Paul Goldschmidt",
-            "order": 4,
-            "position": "DH"
-          },
-          {
-            "id": 682987,
-            "name": "Spencer Jones",
+            "id": 663757,
+            "name": "Trent Grisham",
             "order": 5,
-            "position": "LF"
-          },
-          {
-            "id": 665862,
-            "name": "Jazz Chisholm Jr.",
-            "order": 6,
-            "position": "2B"
+            "position": "CF"
           },
           {
             "id": 683011,
             "name": "Anthony Volpe",
-            "order": 7,
+            "order": 6,
             "position": "SS"
           },
           {
-            "id": 641857,
-            "name": "Ryan McMahon",
-            "order": 8,
-            "position": "3B"
+            "id": 682987,
+            "name": "Spencer Jones",
+            "order": 7,
+            "position": "LF"
           },
           {
-            "id": 669224,
-            "name": "Austin Wells",
-            "order": 9,
+            "id": 645305,
+            "name": "Ali Sánchez",
+            "order": 8,
             "position": "C"
+          },
+          {
+            "id": 676609,
+            "name": "José Caballero",
+            "order": 9,
+            "position": "2B"
           }
         ],
         "homeLineup": [
@@ -1477,10 +1477,10 @@
             "position": "CF"
           },
           {
-            "id": 673548,
-            "name": "Seiya Suzuki",
+            "id": 699393,
+            "name": "Pedro Ramírez",
             "order": 2,
-            "position": "DH"
+            "position": "3B"
           },
           {
             "id": 683737,
@@ -1492,7 +1492,7 @@
             "id": 608324,
             "name": "Alex Bregman",
             "order": 4,
-            "position": "3B"
+            "position": "DH"
           },
           {
             "id": 664023,
@@ -1513,20 +1513,20 @@
             "position": "RF"
           },
           {
-            "id": 608348,
-            "name": "Carson Kelly",
-            "order": 8,
-            "position": "C"
-          },
-          {
             "id": 621020,
             "name": "Dansby Swanson",
-            "order": 9,
+            "order": 8,
             "position": "SS"
+          },
+          {
+            "id": 665804,
+            "name": "Miguel Amaya",
+            "order": 9,
+            "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-30)",
-        "homeLineupSource": "projected (last 2026-07-30)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g824486",
@@ -2919,10 +2919,7 @@
         "parkHrFactor": 105,
         "startUtc": "2026-08-01T01:40:00Z",
         "startET": "9:40 PM",
-        "awayPitcher": {
-          "id": 663554,
-          "name": "Casey Mize"
-        },
+        "awayPitcher": null,
         "homePitcher": {
           "id": 605488,
           "name": "Jeffrey Springs"
@@ -4726,58 +4723,58 @@
         "lineupsConfirmed": false,
         "awayLineup": [
           {
-            "id": 663757,
-            "name": "Trent Grisham",
+            "id": 502671,
+            "name": "Paul Goldschmidt",
             "order": 1,
-            "position": "CF"
+            "position": "1B"
           },
           {
             "id": 700250,
             "name": "Ben Rice",
             "order": 2,
-            "position": "1B"
+            "position": "DH"
+          },
+          {
+            "id": 642708,
+            "name": "Amed Rosario",
+            "order": 3,
+            "position": "3B"
           },
           {
             "id": 691176,
             "name": "Jasson Domínguez",
-            "order": 3,
+            "order": 4,
             "position": "RF"
           },
           {
-            "id": 502671,
-            "name": "Paul Goldschmidt",
-            "order": 4,
-            "position": "DH"
-          },
-          {
-            "id": 682987,
-            "name": "Spencer Jones",
+            "id": 663757,
+            "name": "Trent Grisham",
             "order": 5,
-            "position": "LF"
-          },
-          {
-            "id": 665862,
-            "name": "Jazz Chisholm Jr.",
-            "order": 6,
-            "position": "2B"
+            "position": "CF"
           },
           {
             "id": 683011,
             "name": "Anthony Volpe",
-            "order": 7,
+            "order": 6,
             "position": "SS"
           },
           {
-            "id": 641857,
-            "name": "Ryan McMahon",
-            "order": 8,
-            "position": "3B"
+            "id": 682987,
+            "name": "Spencer Jones",
+            "order": 7,
+            "position": "LF"
           },
           {
-            "id": 669224,
-            "name": "Austin Wells",
-            "order": 9,
+            "id": 645305,
+            "name": "Ali Sánchez",
+            "order": 8,
             "position": "C"
+          },
+          {
+            "id": 676609,
+            "name": "José Caballero",
+            "order": 9,
+            "position": "2B"
           }
         ],
         "homeLineup": [
@@ -4788,10 +4785,10 @@
             "position": "CF"
           },
           {
-            "id": 673548,
-            "name": "Seiya Suzuki",
+            "id": 699393,
+            "name": "Pedro Ramírez",
             "order": 2,
-            "position": "DH"
+            "position": "3B"
           },
           {
             "id": 683737,
@@ -4803,7 +4800,7 @@
             "id": 608324,
             "name": "Alex Bregman",
             "order": 4,
-            "position": "3B"
+            "position": "DH"
           },
           {
             "id": 664023,
@@ -4824,20 +4821,20 @@
             "position": "RF"
           },
           {
-            "id": 608348,
-            "name": "Carson Kelly",
-            "order": 8,
-            "position": "C"
-          },
-          {
             "id": 621020,
             "name": "Dansby Swanson",
-            "order": 9,
+            "order": 8,
             "position": "SS"
+          },
+          {
+            "id": 665804,
+            "name": "Miguel Amaya",
+            "order": 9,
+            "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-30)",
-        "homeLineupSource": "projected (last 2026-07-30)"
+        "awayLineupSource": "projected (last 2026-07-31)",
+        "homeLineupSource": "projected (last 2026-07-31)"
       },
       {
         "id": "g824326",
