@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-31T01:11:05.696Z",
+  "refreshedAt": "2026-07-31T04:38:53.066Z",
   "today": "2026-07-31",
   "dates": [
     "2026-07-30",
@@ -563,7 +563,7 @@
       {
         "id": "g824488",
         "gamePk": 824488,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "PIT",
         "homeTeam": "CIN",
         "awayTeamId": 134,
@@ -701,7 +701,7 @@
       {
         "id": "g823595",
         "gamePk": 823595,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "MIA",
         "homeTeam": "NYM",
         "awayTeamId": 146,
@@ -839,7 +839,7 @@
       {
         "id": "g824894",
         "gamePk": 824894,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "WSH",
         "homeTeam": "ATL",
         "awayTeamId": 120,
@@ -977,7 +977,7 @@
       {
         "id": "g824974",
         "gamePk": 824974,
-        "status": "Pre-Game",
+        "status": "Final",
         "awayTeam": "BOS",
         "homeTeam": "ATH",
         "awayTeamId": 111,
@@ -1115,7 +1115,7 @@
       {
         "id": "g823271",
         "gamePk": 823271,
-        "status": "Pre-Game",
+        "status": "Game Over",
         "awayTeam": "SF",
         "homeTeam": "SD",
         "awayTeamId": 137,
@@ -1253,7 +1253,7 @@
       {
         "id": "g823921",
         "gamePk": 823921,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "SEA",
         "homeTeam": "LAD",
         "awayTeamId": 136,
@@ -3606,7 +3606,10 @@
           "id": 687570,
           "name": "Connor Prielipp"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 669302,
+          "name": "Logan Gilbert"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
