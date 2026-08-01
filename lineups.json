@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-01T18:41:06.551Z",
+  "refreshedAt": "2026-08-01T19:54:13.709Z",
   "today": "2026-08-01",
   "dates": [
     "2026-07-31",
@@ -2083,7 +2083,7 @@
       {
         "id": "g822781",
         "gamePk": 822781,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "STL",
         "homeTeam": "TOR",
         "awayTeamId": 138,
@@ -2221,7 +2221,7 @@
       {
         "id": "g823109",
         "gamePk": 823109,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "MIN",
         "homeTeam": "SEA",
         "awayTeamId": 142,
@@ -2359,7 +2359,7 @@
       {
         "id": "g822944",
         "gamePk": 822944,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "CWS",
         "homeTeam": "TB",
         "awayTeamId": 145,
@@ -2635,7 +2635,7 @@
       {
         "id": "g824485",
         "gamePk": 824485,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "PIT",
         "homeTeam": "CIN",
         "awayTeamId": 134,
@@ -2722,7 +2722,7 @@
             "id": 701398,
             "name": "Sal Stewart",
             "order": 2,
-            "position": "1B"
+            "position": "DH"
           },
           {
             "id": 668709,
@@ -2731,16 +2731,16 @@
             "position": "LF"
           },
           {
-            "id": 663886,
-            "name": "Tyler Stephenson",
-            "order": 4,
-            "position": "C"
-          },
-          {
             "id": 663993,
             "name": "Nathaniel Lowe",
+            "order": 4,
+            "position": "1B"
+          },
+          {
+            "id": 682622,
+            "name": "Noelvi Marte",
             "order": 5,
-            "position": "DH"
+            "position": "RF"
           },
           {
             "id": 553993,
@@ -2749,16 +2749,16 @@
             "position": "3B"
           },
           {
-            "id": 667472,
-            "name": "Dane Myers",
+            "id": 624431,
+            "name": "Jose Trevino",
             "order": 7,
-            "position": "CF"
+            "position": "C"
           },
           {
-            "id": 682622,
-            "name": "Noelvi Marte",
+            "id": 670770,
+            "name": "TJ Friedl",
             "order": 8,
-            "position": "RF"
+            "position": "CF"
           },
           {
             "id": 680574,
@@ -2768,7 +2768,7 @@
           }
         ],
         "awayLineupSource": "projected (last 2026-07-31)",
-        "homeLineupSource": "projected (last 2026-07-31)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g824808",
@@ -2792,7 +2792,7 @@
           "id": 669358,
           "name": "Shane Baz"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 607208,
@@ -2837,16 +2837,16 @@
             "position": "2B"
           },
           {
-            "id": 687282,
-            "name": "Gabriel Rincones Jr.",
-            "order": 8,
-            "position": "RF"
-          },
-          {
             "id": 702222,
             "name": "Justin Crawford",
-            "order": 9,
+            "order": 8,
             "position": "CF"
+          },
+          {
+            "id": 650559,
+            "name": "Bryan De La Cruz",
+            "order": 9,
+            "position": "RF"
           }
         ],
         "homeLineup": [
@@ -2905,13 +2905,13 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-31)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       },
       {
         "id": "g824162",
         "gamePk": 824162,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "TEX",
         "homeTeam": "HOU",
         "awayTeamId": 140,
@@ -2930,13 +2930,13 @@
           "id": 669854,
           "name": "Ronel Blanco"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 592626,
             "name": "Joc Pederson",
             "order": 1,
-            "position": "DH"
+            "position": "1B"
           },
           {
             "id": 694671,
@@ -2954,37 +2954,37 @@
             "id": 607043,
             "name": "Brandon Nimmo",
             "order": 4,
-            "position": "RF"
-          },
-          {
-            "id": 677649,
-            "name": "Ezequiel Duran",
-            "order": 5,
-            "position": "3B"
+            "position": "DH"
           },
           {
             "id": 694497,
             "name": "Evan Carter",
-            "order": 6,
+            "order": 5,
             "position": "CF"
           },
           {
-            "id": 669394,
-            "name": "Jake Burger",
+            "id": 677649,
+            "name": "Ezequiel Duran",
+            "order": 6,
+            "position": "3B"
+          },
+          {
+            "id": 696030,
+            "name": "Alejandro Osuna",
             "order": 7,
-            "position": "1B"
+            "position": "RF"
+          },
+          {
+            "id": 553869,
+            "name": "Elias Díaz",
+            "order": 8,
+            "position": "C"
           },
           {
             "id": 670032,
             "name": "Nicky Lopez",
-            "order": 8,
-            "position": "2B"
-          },
-          {
-            "id": 642851,
-            "name": "Austin Wynns",
             "order": 9,
-            "position": "C"
+            "position": "2B"
           }
         ],
         "homeLineup": [
@@ -3013,38 +3013,38 @@
             "position": "1B"
           },
           {
+            "id": 673237,
+            "name": "Yainer Diaz",
+            "order": 5,
+            "position": "C"
+          },
+          {
             "id": 514888,
             "name": "Jose Altuve",
-            "order": 5,
+            "order": 6,
             "position": "2B"
           },
           {
             "id": 666211,
             "name": "Taylor Trammell",
-            "order": 6,
-            "position": "CF"
-          },
-          {
-            "id": 673237,
-            "name": "Yainer Diaz",
             "order": 7,
-            "position": "C"
-          },
-          {
-            "id": 664774,
-            "name": "LaMonte Wade Jr.",
-            "order": 8,
-            "position": "LF"
+            "position": "CF"
           },
           {
             "id": 701358,
             "name": "Cam Smith",
-            "order": 9,
+            "order": 8,
             "position": "RF"
+          },
+          {
+            "id": 664774,
+            "name": "LaMonte Wade Jr.",
+            "order": 9,
+            "position": "LF"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-01)",
-        "homeLineupSource": "projected (last 2026-08-01)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g824405",
@@ -3068,7 +3068,7 @@
           "id": 800048,
           "name": "Parker Messick"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 682998,
@@ -3127,10 +3127,10 @@
         ],
         "homeLineup": [
           {
-            "id": 682657,
-            "name": "Angel Martínez",
+            "id": 680757,
+            "name": "Steven Kwan",
             "order": 1,
-            "position": "RF"
+            "position": "CF"
           },
           {
             "id": 608070,
@@ -3151,10 +3151,10 @@
             "position": "1B"
           },
           {
-            "id": 677587,
-            "name": "Brayan Rocchio",
+            "id": 682657,
+            "name": "Angel Martínez",
             "order": 5,
-            "position": "SS"
+            "position": "RF"
           },
           {
             "id": 681807,
@@ -3175,19 +3175,19 @@
             "position": "C"
           },
           {
-            "id": 680757,
-            "name": "Steven Kwan",
+            "id": 677587,
+            "name": "Brayan Rocchio",
             "order": 9,
-            "position": "CF"
+            "position": "SS"
           }
         ],
         "awayLineupSource": "confirmed",
-        "homeLineupSource": "projected (last 2026-07-31)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g824890",
         "gamePk": 824890,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "WSH",
         "homeTeam": "ATL",
         "awayTeamId": 120,
@@ -3265,16 +3265,16 @@
         ],
         "homeLineup": [
           {
-            "id": 660670,
-            "name": "Ronald Acuña Jr.",
-            "order": 1,
-            "position": "RF"
-          },
-          {
             "id": 686948,
             "name": "Drake Baldwin",
+            "order": 1,
+            "position": "C"
+          },
+          {
+            "id": 660670,
+            "name": "Ronald Acuña Jr.",
             "order": 2,
-            "position": "DH"
+            "position": "RF"
           },
           {
             "id": 621566,
@@ -3283,22 +3283,22 @@
             "position": "1B"
           },
           {
-            "id": 645277,
-            "name": "Ozzie Albies",
-            "order": 4,
-            "position": "2B"
-          },
-          {
             "id": 671739,
             "name": "Michael Harris II",
-            "order": 5,
+            "order": 4,
             "position": "CF"
           },
           {
-            "id": 643289,
-            "name": "Mauricio Dubón",
+            "id": 645277,
+            "name": "Ozzie Albies",
+            "order": 5,
+            "position": "2B"
+          },
+          {
+            "id": 642086,
+            "name": "Dominic Smith",
             "order": 6,
-            "position": "LF"
+            "position": "DH"
           },
           {
             "id": 663586,
@@ -3307,10 +3307,10 @@
             "position": "3B"
           },
           {
-            "id": 663698,
-            "name": "Joey Bart",
+            "id": 573262,
+            "name": "Mike Yastrzemski",
             "order": 8,
-            "position": "C"
+            "position": "LF"
           },
           {
             "id": 805347,
@@ -3320,7 +3320,7 @@
           }
         ],
         "awayLineupSource": "projected (last 2026-07-31)",
-        "homeLineupSource": "projected (last 2026-07-31)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g824649",
@@ -3463,7 +3463,7 @@
       {
         "id": "g824326",
         "gamePk": 824326,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "KC",
         "homeTeam": "COL",
         "awayTeamId": 118,
@@ -3547,56 +3547,56 @@
             "position": "LF"
           },
           {
-            "id": 666160,
-            "name": "Mickey Moniak",
+            "id": 691720,
+            "name": "Kyle Karros",
             "order": 2,
-            "position": "DH"
-          },
-          {
-            "id": 696100,
-            "name": "Hunter Goodman",
-            "order": 3,
-            "position": "C"
+            "position": "3B"
           },
           {
             "id": 681198,
             "name": "TJ Rumfield",
-            "order": 4,
+            "order": 3,
             "position": "1B"
           },
           {
-            "id": 691720,
-            "name": "Kyle Karros",
+            "id": 696100,
+            "name": "Hunter Goodman",
+            "order": 4,
+            "position": "C"
+          },
+          {
+            "id": 666160,
+            "name": "Mickey Moniak",
             "order": 5,
-            "position": "3B"
+            "position": "DH"
+          },
+          {
+            "id": 694249,
+            "name": "Cole Carrigg",
+            "order": 6,
+            "position": "SS"
+          },
+          {
+            "id": 650489,
+            "name": "Willi Castro",
+            "order": 7,
+            "position": "2B"
           },
           {
             "id": 671289,
             "name": "Tyler Freeman",
-            "order": 6,
-            "position": "2B"
-          },
-          {
-            "id": 687859,
-            "name": "Troy Johnston",
-            "order": 7,
+            "order": 8,
             "position": "RF"
           },
           {
             "id": 686668,
             "name": "Brenton Doyle",
-            "order": 8,
-            "position": "CF"
-          },
-          {
-            "id": 678662,
-            "name": "Ezequiel Tovar",
             "order": 9,
-            "position": "SS"
+            "position": "CF"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-01)",
-        "homeLineupSource": "projected (last 2026-08-01)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g823269",
@@ -3893,8 +3893,8 @@
           "name": "Robert Gasser"
         },
         "homePitcher": {
-          "id": 667755,
-          "name": "José Soriano"
+          "id": 608718,
+          "name": "Brent Suter"
         },
         "lineupsConfirmed": false,
         "awayLineup": [
@@ -4219,16 +4219,16 @@
             "position": "2B"
           },
           {
-            "id": 687282,
-            "name": "Gabriel Rincones Jr.",
-            "order": 8,
-            "position": "RF"
-          },
-          {
             "id": 702222,
             "name": "Justin Crawford",
-            "order": 9,
+            "order": 8,
             "position": "CF"
+          },
+          {
+            "id": 650559,
+            "name": "Bryan De La Cruz",
+            "order": 9,
+            "position": "RF"
           }
         ],
         "homeLineup": [
@@ -4287,7 +4287,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-07-31)",
+        "awayLineupSource": "projected (last 2026-08-01)",
         "homeLineupSource": "projected (last 2026-08-01)"
       },
       {
@@ -4371,16 +4371,16 @@
         ],
         "homeLineup": [
           {
-            "id": 660670,
-            "name": "Ronald Acuña Jr.",
-            "order": 1,
-            "position": "RF"
-          },
-          {
             "id": 686948,
             "name": "Drake Baldwin",
+            "order": 1,
+            "position": "C"
+          },
+          {
+            "id": 660670,
+            "name": "Ronald Acuña Jr.",
             "order": 2,
-            "position": "DH"
+            "position": "RF"
           },
           {
             "id": 621566,
@@ -4389,22 +4389,22 @@
             "position": "1B"
           },
           {
-            "id": 645277,
-            "name": "Ozzie Albies",
-            "order": 4,
-            "position": "2B"
-          },
-          {
             "id": 671739,
             "name": "Michael Harris II",
-            "order": 5,
+            "order": 4,
             "position": "CF"
           },
           {
-            "id": 643289,
-            "name": "Mauricio Dubón",
+            "id": 645277,
+            "name": "Ozzie Albies",
+            "order": 5,
+            "position": "2B"
+          },
+          {
+            "id": 642086,
+            "name": "Dominic Smith",
             "order": 6,
-            "position": "LF"
+            "position": "DH"
           },
           {
             "id": 663586,
@@ -4413,10 +4413,10 @@
             "position": "3B"
           },
           {
-            "id": 663698,
-            "name": "Joey Bart",
+            "id": 573262,
+            "name": "Mike Yastrzemski",
             "order": 8,
-            "position": "C"
+            "position": "LF"
           },
           {
             "id": 805347,
@@ -4426,7 +4426,7 @@
           }
         ],
         "awayLineupSource": "projected (last 2026-07-31)",
-        "homeLineupSource": "projected (last 2026-07-31)"
+        "homeLineupSource": "projected (last 2026-08-01)"
       },
       {
         "id": "g822783",
@@ -4647,10 +4647,10 @@
         ],
         "homeLineup": [
           {
-            "id": 682657,
-            "name": "Angel Martínez",
+            "id": 680757,
+            "name": "Steven Kwan",
             "order": 1,
-            "position": "RF"
+            "position": "CF"
           },
           {
             "id": 608070,
@@ -4671,10 +4671,10 @@
             "position": "1B"
           },
           {
-            "id": 677587,
-            "name": "Brayan Rocchio",
+            "id": 682657,
+            "name": "Angel Martínez",
             "order": 5,
-            "position": "SS"
+            "position": "RF"
           },
           {
             "id": 681807,
@@ -4695,14 +4695,14 @@
             "position": "C"
           },
           {
-            "id": 680757,
-            "name": "Steven Kwan",
+            "id": 677587,
+            "name": "Brayan Rocchio",
             "order": 9,
-            "position": "CF"
+            "position": "SS"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-01)",
-        "homeLineupSource": "projected (last 2026-07-31)"
+        "homeLineupSource": "projected (last 2026-08-01)"
       },
       {
         "id": "g824483",
@@ -4794,7 +4794,7 @@
             "id": 701398,
             "name": "Sal Stewart",
             "order": 2,
-            "position": "1B"
+            "position": "DH"
           },
           {
             "id": 668709,
@@ -4803,16 +4803,16 @@
             "position": "LF"
           },
           {
-            "id": 663886,
-            "name": "Tyler Stephenson",
-            "order": 4,
-            "position": "C"
-          },
-          {
             "id": 663993,
             "name": "Nathaniel Lowe",
+            "order": 4,
+            "position": "1B"
+          },
+          {
+            "id": 682622,
+            "name": "Noelvi Marte",
             "order": 5,
-            "position": "DH"
+            "position": "RF"
           },
           {
             "id": 553993,
@@ -4821,16 +4821,16 @@
             "position": "3B"
           },
           {
-            "id": 667472,
-            "name": "Dane Myers",
+            "id": 624431,
+            "name": "Jose Trevino",
             "order": 7,
-            "position": "CF"
+            "position": "C"
           },
           {
-            "id": 682622,
-            "name": "Noelvi Marte",
+            "id": 670770,
+            "name": "TJ Friedl",
             "order": 8,
-            "position": "RF"
+            "position": "CF"
           },
           {
             "id": 680574,
@@ -4840,7 +4840,7 @@
           }
         ],
         "awayLineupSource": "projected (last 2026-07-31)",
-        "homeLineupSource": "projected (last 2026-07-31)"
+        "homeLineupSource": "projected (last 2026-08-01)"
       },
       {
         "id": "g822943",
@@ -5140,7 +5140,7 @@
             "id": 592626,
             "name": "Joc Pederson",
             "order": 1,
-            "position": "DH"
+            "position": "1B"
           },
           {
             "id": 694671,
@@ -5158,37 +5158,37 @@
             "id": 607043,
             "name": "Brandon Nimmo",
             "order": 4,
-            "position": "RF"
-          },
-          {
-            "id": 677649,
-            "name": "Ezequiel Duran",
-            "order": 5,
-            "position": "3B"
+            "position": "DH"
           },
           {
             "id": 694497,
             "name": "Evan Carter",
-            "order": 6,
+            "order": 5,
             "position": "CF"
           },
           {
-            "id": 669394,
-            "name": "Jake Burger",
+            "id": 677649,
+            "name": "Ezequiel Duran",
+            "order": 6,
+            "position": "3B"
+          },
+          {
+            "id": 696030,
+            "name": "Alejandro Osuna",
             "order": 7,
-            "position": "1B"
+            "position": "RF"
+          },
+          {
+            "id": 553869,
+            "name": "Elias Díaz",
+            "order": 8,
+            "position": "C"
           },
           {
             "id": 670032,
             "name": "Nicky Lopez",
-            "order": 8,
-            "position": "2B"
-          },
-          {
-            "id": 642851,
-            "name": "Austin Wynns",
             "order": 9,
-            "position": "C"
+            "position": "2B"
           }
         ],
         "homeLineup": [
@@ -5217,34 +5217,34 @@
             "position": "1B"
           },
           {
+            "id": 673237,
+            "name": "Yainer Diaz",
+            "order": 5,
+            "position": "C"
+          },
+          {
             "id": 514888,
             "name": "Jose Altuve",
-            "order": 5,
+            "order": 6,
             "position": "2B"
           },
           {
             "id": 666211,
             "name": "Taylor Trammell",
-            "order": 6,
-            "position": "CF"
-          },
-          {
-            "id": 673237,
-            "name": "Yainer Diaz",
             "order": 7,
-            "position": "C"
-          },
-          {
-            "id": 664774,
-            "name": "LaMonte Wade Jr.",
-            "order": 8,
-            "position": "LF"
+            "position": "CF"
           },
           {
             "id": 701358,
             "name": "Cam Smith",
-            "order": 9,
+            "order": 8,
             "position": "RF"
+          },
+          {
+            "id": 664774,
+            "name": "LaMonte Wade Jr.",
+            "order": 9,
+            "position": "LF"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-01)",
@@ -5475,56 +5475,56 @@
             "position": "LF"
           },
           {
-            "id": 666160,
-            "name": "Mickey Moniak",
+            "id": 691720,
+            "name": "Kyle Karros",
             "order": 2,
-            "position": "DH"
-          },
-          {
-            "id": 696100,
-            "name": "Hunter Goodman",
-            "order": 3,
-            "position": "C"
+            "position": "3B"
           },
           {
             "id": 681198,
             "name": "TJ Rumfield",
-            "order": 4,
+            "order": 3,
             "position": "1B"
           },
           {
-            "id": 691720,
-            "name": "Kyle Karros",
+            "id": 696100,
+            "name": "Hunter Goodman",
+            "order": 4,
+            "position": "C"
+          },
+          {
+            "id": 666160,
+            "name": "Mickey Moniak",
             "order": 5,
-            "position": "3B"
+            "position": "DH"
+          },
+          {
+            "id": 694249,
+            "name": "Cole Carrigg",
+            "order": 6,
+            "position": "SS"
+          },
+          {
+            "id": 650489,
+            "name": "Willi Castro",
+            "order": 7,
+            "position": "2B"
           },
           {
             "id": 671289,
             "name": "Tyler Freeman",
-            "order": 6,
-            "position": "2B"
-          },
-          {
-            "id": 687859,
-            "name": "Troy Johnston",
-            "order": 7,
+            "order": 8,
             "position": "RF"
           },
           {
             "id": 686668,
             "name": "Brenton Doyle",
-            "order": 8,
-            "position": "CF"
-          },
-          {
-            "id": 678662,
-            "name": "Ezequiel Tovar",
             "order": 9,
-            "position": "SS"
+            "position": "CF"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-01)",
-        "homeLineupSource": "projected (last 2026-08-01)"
+        "homeLineupSource": "projected (last 2026-08-02)"
       },
       {
         "id": "g823996",
