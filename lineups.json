@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-02T00:02:08.090Z",
+  "refreshedAt": "2026-08-02T03:41:44.992Z",
   "today": "2026-08-02",
   "dates": [
     "2026-08-01",
@@ -563,7 +563,7 @@
       {
         "id": "g824485",
         "gamePk": 824485,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "PIT",
         "homeTeam": "CIN",
         "awayTeamId": 134,
@@ -701,7 +701,7 @@
       {
         "id": "g824808",
         "gamePk": 824808,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "PHI",
         "homeTeam": "BAL",
         "awayTeamId": 143,
@@ -839,7 +839,7 @@
       {
         "id": "g824162",
         "gamePk": 824162,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "TEX",
         "homeTeam": "HOU",
         "awayTeamId": 140,
@@ -977,7 +977,7 @@
       {
         "id": "g824405",
         "gamePk": 824405,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "AZ",
         "homeTeam": "CLE",
         "awayTeamId": 109,
@@ -1115,7 +1115,7 @@
       {
         "id": "g824890",
         "gamePk": 824890,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "WSH",
         "homeTeam": "ATL",
         "awayTeamId": 120,
@@ -1253,7 +1253,7 @@
       {
         "id": "g824649",
         "gamePk": 824649,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "NYY",
         "homeTeam": "CHC",
         "awayTeamId": 147,
@@ -1391,7 +1391,7 @@
       {
         "id": "g824326",
         "gamePk": 824326,
-        "status": "Warmup",
+        "status": "Final",
         "awayTeam": "KC",
         "homeTeam": "COL",
         "awayTeamId": 118,
@@ -1529,7 +1529,7 @@
       {
         "id": "g823269",
         "gamePk": 823269,
-        "status": "Pre-Game",
+        "status": "Final",
         "awayTeam": "SF",
         "homeTeam": "SD",
         "awayTeamId": 137,
@@ -1551,16 +1551,16 @@
         "lineupsConfirmed": true,
         "awayLineup": [
           {
-            "id": 650333,
-            "name": "Luis Arraez",
-            "order": 1,
-            "position": "2B"
-          },
-          {
             "id": 805811,
             "name": "Bryce Eldridge",
-            "order": 2,
+            "order": 1,
             "position": "DH"
+          },
+          {
+            "id": 808982,
+            "name": "Jung Hoo Lee",
+            "order": 2,
+            "position": "RF"
           },
           {
             "id": 671218,
@@ -1575,34 +1575,34 @@
             "position": "1B"
           },
           {
-            "id": 808982,
-            "name": "Jung Hoo Lee",
-            "order": 5,
-            "position": "RF"
-          },
-          {
             "id": 642715,
             "name": "Willy Adames",
-            "order": 6,
+            "order": 5,
             "position": "SS"
           },
           {
             "id": 691740,
             "name": "Daniel Susac",
-            "order": 7,
+            "order": 6,
             "position": "C"
           },
           {
             "id": 687551,
             "name": "Drew Gilbert",
-            "order": 8,
+            "order": 7,
             "position": "CF"
           },
           {
             "id": 683766,
             "name": "Christian Koss",
-            "order": 9,
+            "order": 8,
             "position": "3B"
+          },
+          {
+            "id": 678545,
+            "name": "Osleivis Basabe",
+            "order": 9,
+            "position": "2B"
           }
         ],
         "homeLineup": [
@@ -1667,7 +1667,7 @@
       {
         "id": "g823920",
         "gamePk": 823920,
-        "status": "Pre-Game",
+        "status": "Final",
         "awayTeam": "BOS",
         "homeTeam": "LAD",
         "awayTeamId": 111,
@@ -1805,7 +1805,7 @@
       {
         "id": "g824000",
         "gamePk": 824000,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "MIL",
         "homeTeam": "LAA",
         "awayTeamId": 158,
@@ -1943,7 +1943,7 @@
       {
         "id": "g824972",
         "gamePk": 824972,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "DET",
         "homeTeam": "ATH",
         "awayTeamId": 116,
@@ -2923,7 +2923,10 @@
           "id": 645261,
           "name": "Sandy Alcantara"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 476594,
+          "name": "Robert Stock"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -3755,16 +3758,16 @@
         "lineupsConfirmed": false,
         "awayLineup": [
           {
-            "id": 650333,
-            "name": "Luis Arraez",
-            "order": 1,
-            "position": "2B"
-          },
-          {
             "id": 805811,
             "name": "Bryce Eldridge",
-            "order": 2,
+            "order": 1,
             "position": "DH"
+          },
+          {
+            "id": 808982,
+            "name": "Jung Hoo Lee",
+            "order": 2,
+            "position": "RF"
           },
           {
             "id": 671218,
@@ -3779,34 +3782,34 @@
             "position": "1B"
           },
           {
-            "id": 808982,
-            "name": "Jung Hoo Lee",
-            "order": 5,
-            "position": "RF"
-          },
-          {
             "id": 642715,
             "name": "Willy Adames",
-            "order": 6,
+            "order": 5,
             "position": "SS"
           },
           {
             "id": 691740,
             "name": "Daniel Susac",
-            "order": 7,
+            "order": 6,
             "position": "C"
           },
           {
             "id": 687551,
             "name": "Drew Gilbert",
-            "order": 8,
+            "order": 7,
             "position": "CF"
           },
           {
             "id": 683766,
             "name": "Christian Koss",
-            "order": 9,
+            "order": 8,
             "position": "3B"
+          },
+          {
+            "id": 678545,
+            "name": "Osleivis Basabe",
+            "order": 9,
+            "position": "2B"
           }
         ],
         "homeLineup": [
@@ -4425,7 +4428,10 @@
         "startUtc": "2026-08-03T23:40:00Z",
         "startET": "7:40 PM",
         "awayPitcher": null,
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 687075,
+          "name": "Brandon Sproat"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -4693,16 +4699,16 @@
         "lineupsConfirmed": false,
         "awayLineup": [
           {
-            "id": 650333,
-            "name": "Luis Arraez",
-            "order": 1,
-            "position": "2B"
-          },
-          {
             "id": 805811,
             "name": "Bryce Eldridge",
-            "order": 2,
+            "order": 1,
             "position": "DH"
+          },
+          {
+            "id": 808982,
+            "name": "Jung Hoo Lee",
+            "order": 2,
+            "position": "RF"
           },
           {
             "id": 671218,
@@ -4717,34 +4723,34 @@
             "position": "1B"
           },
           {
-            "id": 808982,
-            "name": "Jung Hoo Lee",
-            "order": 5,
-            "position": "RF"
-          },
-          {
             "id": 642715,
             "name": "Willy Adames",
-            "order": 6,
+            "order": 5,
             "position": "SS"
           },
           {
             "id": 691740,
             "name": "Daniel Susac",
-            "order": 7,
+            "order": 6,
             "position": "C"
           },
           {
             "id": 687551,
             "name": "Drew Gilbert",
-            "order": 8,
+            "order": 7,
             "position": "CF"
           },
           {
             "id": 683766,
             "name": "Christian Koss",
-            "order": 9,
+            "order": 8,
             "position": "3B"
+          },
+          {
+            "id": 678545,
+            "name": "Osleivis Basabe",
+            "order": 9,
+            "position": "2B"
           }
         ],
         "homeLineup": [
