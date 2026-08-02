@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-02T17:35:09.950Z",
+  "refreshedAt": "2026-08-02T18:37:43.925Z",
   "today": "2026-08-02",
   "dates": [
     "2026-08-01",
@@ -2083,7 +2083,7 @@
       {
         "id": "g824807",
         "gamePk": 824807,
-        "status": "Warmup",
+        "status": "Delayed",
         "awayTeam": "PHI",
         "homeTeam": "BAL",
         "awayTeamId": 143,
@@ -2359,7 +2359,7 @@
       {
         "id": "g822783",
         "gamePk": 822783,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "STL",
         "homeTeam": "TOR",
         "awayTeamId": 138,
@@ -2497,7 +2497,7 @@
       {
         "id": "g824404",
         "gamePk": 824404,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "AZ",
         "homeTeam": "CLE",
         "awayTeamId": 109,
@@ -2635,7 +2635,7 @@
       {
         "id": "g824483",
         "gamePk": 824483,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "PIT",
         "homeTeam": "CIN",
         "awayTeamId": 134,
@@ -2773,7 +2773,7 @@
       {
         "id": "g822943",
         "gamePk": 822943,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "CWS",
         "homeTeam": "TB",
         "awayTeamId": 145,
@@ -2911,7 +2911,7 @@
       {
         "id": "g823592",
         "gamePk": 823592,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "MIA",
         "homeTeam": "NYM",
         "awayTeamId": 146,
@@ -3049,7 +3049,7 @@
       {
         "id": "g824163",
         "gamePk": 824163,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "TEX",
         "homeTeam": "HOU",
         "awayTeamId": 140,
@@ -3187,7 +3187,7 @@
       {
         "id": "g824648",
         "gamePk": 824648,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "NYY",
         "homeTeam": "CHC",
         "awayTeamId": 147,
@@ -4578,7 +4578,10 @@
         "startUtc": "2026-08-04T00:05:00Z",
         "startET": "8:05 PM",
         "awayPitcher": null,
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 571510,
+          "name": "Matthew Boyd"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -4709,7 +4712,10 @@
         "parkHrFactor": 106,
         "startUtc": "2026-08-04T00:05:00Z",
         "startET": "8:05 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 657277,
+          "name": "Logan Webb"
+        },
         "homePitcher": null,
         "lineupsConfirmed": false,
         "awayLineup": [
@@ -5114,7 +5120,10 @@
         "parkHrFactor": 105,
         "startUtc": "2026-08-04T01:40:00Z",
         "startET": "9:40 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 650633,
+          "name": "Michael King"
+        },
         "homePitcher": {
           "id": 694297,
           "name": "Brandon Pfaadt"
