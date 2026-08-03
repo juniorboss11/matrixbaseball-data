@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-03T20:12:38.822Z",
+  "refreshedAt": "2026-08-03T21:30:13.988Z",
   "today": "2026-08-03",
   "dates": [
     "2026-08-02",
@@ -2359,7 +2359,7 @@
       {
         "id": "g823757",
         "gamePk": 823757,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "PIT",
         "homeTeam": "MIL",
         "awayTeamId": 134,
@@ -2449,10 +2449,10 @@
             "position": "LF"
           },
           {
-            "id": 669003,
-            "name": "Garrett Mitchell",
+            "id": 592885,
+            "name": "Christian Yelich",
             "order": 3,
-            "position": "CF"
+            "position": "DH"
           },
           {
             "id": 661388,
@@ -2464,7 +2464,7 @@
             "id": 641343,
             "name": "Jake Bauers",
             "order": 5,
-            "position": "DH"
+            "position": "RF"
           },
           {
             "id": 683734,
@@ -2473,26 +2473,26 @@
             "position": "1B"
           },
           {
-            "id": 800325,
-            "name": "Luis Lara",
+            "id": 669003,
+            "name": "Garrett Mitchell",
             "order": 7,
-            "position": "RF"
-          },
-          {
-            "id": 806198,
-            "name": "Cooper Pratt",
-            "order": 8,
-            "position": "SS"
+            "position": "CF"
           },
           {
             "id": 666152,
             "name": "David Hamilton",
-            "order": 9,
+            "order": 8,
             "position": "3B"
+          },
+          {
+            "id": 687401,
+            "name": "Joey Ortiz",
+            "order": 9,
+            "position": "SS"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-02)",
-        "homeLineupSource": "projected (last 2026-08-02)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g824647",
@@ -2508,7 +2508,10 @@
         "parkHrFactor": 107,
         "startUtc": "2026-08-04T00:05:00Z",
         "startET": "8:05 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 680736,
+          "name": "Justin Wrobleski"
+        },
         "homePitcher": {
           "id": 571510,
           "name": "Matthew Boyd"
@@ -4365,10 +4368,10 @@
             "position": "LF"
           },
           {
-            "id": 669003,
-            "name": "Garrett Mitchell",
+            "id": 592885,
+            "name": "Christian Yelich",
             "order": 3,
-            "position": "CF"
+            "position": "DH"
           },
           {
             "id": 661388,
@@ -4380,7 +4383,7 @@
             "id": 641343,
             "name": "Jake Bauers",
             "order": 5,
-            "position": "DH"
+            "position": "RF"
           },
           {
             "id": 683734,
@@ -4389,26 +4392,26 @@
             "position": "1B"
           },
           {
-            "id": 800325,
-            "name": "Luis Lara",
+            "id": 669003,
+            "name": "Garrett Mitchell",
             "order": 7,
-            "position": "RF"
-          },
-          {
-            "id": 806198,
-            "name": "Cooper Pratt",
-            "order": 8,
-            "position": "SS"
+            "position": "CF"
           },
           {
             "id": 666152,
             "name": "David Hamilton",
-            "order": 9,
+            "order": 8,
             "position": "3B"
+          },
+          {
+            "id": 687401,
+            "name": "Joey Ortiz",
+            "order": 9,
+            "position": "SS"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-02)",
-        "homeLineupSource": "projected (last 2026-08-02)"
+        "homeLineupSource": "projected (last 2026-08-03)"
       },
       {
         "id": "g824645",
