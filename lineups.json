@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-04T01:09:57.777Z",
+  "refreshedAt": "2026-08-04T04:29:08.196Z",
   "today": "2026-08-04",
   "dates": [
     "2026-08-03",
@@ -11,7 +11,7 @@
       {
         "id": "g823431",
         "gamePk": 823431,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "WSH",
         "homeTeam": "PHI",
         "awayTeamId": 120,
@@ -149,7 +149,7 @@
       {
         "id": "g823520",
         "gamePk": 823520,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "STL",
         "homeTeam": "NYY",
         "awayTeamId": 138,
@@ -287,7 +287,7 @@
       {
         "id": "g823757",
         "gamePk": 823757,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "PIT",
         "homeTeam": "MIL",
         "awayTeamId": 134,
@@ -425,7 +425,7 @@
       {
         "id": "g824647",
         "gamePk": 824647,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "LAD",
         "homeTeam": "CHC",
         "awayTeamId": 119,
@@ -563,7 +563,7 @@
       {
         "id": "g822867",
         "gamePk": 822867,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "SF",
         "homeTeam": "TEX",
         "awayTeamId": 137,
@@ -701,7 +701,7 @@
       {
         "id": "g824160",
         "gamePk": 824160,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "TOR",
         "homeTeam": "HOU",
         "awayTeamId": 141,
@@ -839,7 +839,7 @@
       {
         "id": "g824324",
         "gamePk": 824324,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "TB",
         "homeTeam": "COL",
         "awayTeamId": 139,
@@ -977,7 +977,7 @@
       {
         "id": "g825095",
         "gamePk": 825095,
-        "status": "Pre-Game",
+        "status": "Final",
         "awayTeam": "SD",
         "homeTeam": "AZ",
         "awayTeamId": 135,
@@ -1128,7 +1128,10 @@
         "parkHrFactor": 102,
         "startUtc": "2026-08-04T22:35:00Z",
         "startET": "6:35 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 680570,
+          "name": "Grayson Rodriguez"
+        },
         "homePitcher": null,
         "lineupsConfirmed": false,
         "awayLineup": [
@@ -1674,7 +1677,10 @@
         "parkHrFactor": 112,
         "startUtc": "2026-08-04T23:05:00Z",
         "startET": "7:05 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 690928,
+          "name": "Hunter Dobbins"
+        },
         "homePitcher": {
           "id": 677960,
           "name": "Ryan Weathers"
@@ -1944,7 +1950,10 @@
         "parkHrFactor": 101,
         "startUtc": "2026-08-04T23:15:00Z",
         "startET": "7:15 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 687473,
+          "name": "Ryan Gusto"
+        },
         "homePitcher": {
           "id": 656550,
           "name": "Grant Holmes"
@@ -3725,8 +3734,14 @@
         "parkHrFactor": 102,
         "startUtc": "2026-08-05T22:35:00Z",
         "startET": "6:35 PM",
-        "awayPitcher": null,
-        "homePitcher": null,
+        "awayPitcher": {
+          "id": 672282,
+          "name": "Reid Detmers"
+        },
+        "homePitcher": {
+          "id": 669432,
+          "name": "Trevor Rogers"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
