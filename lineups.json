@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-05T22:41:07.725Z",
+  "refreshedAt": "2026-08-05T23:37:46.579Z",
   "today": "2026-08-05",
   "dates": [
     "2026-08-04",
@@ -3049,7 +3049,7 @@
       {
         "id": "g823429",
         "gamePk": 823429,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "WSH",
         "homeTeam": "PHI",
         "awayTeamId": 120,
@@ -3187,7 +3187,7 @@
       {
         "id": "g823516",
         "gamePk": 823516,
-        "status": "Pre-Game",
+        "status": "Delayed Start",
         "awayTeam": "STL",
         "homeTeam": "NYY",
         "awayTeamId": 138,
@@ -3325,7 +3325,7 @@
       {
         "id": "g824728",
         "gamePk": 824728,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "CWS",
         "homeTeam": "BOS",
         "awayTeamId": 145,
@@ -3463,7 +3463,7 @@
       {
         "id": "g824889",
         "gamePk": 824889,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "MIA",
         "homeTeam": "ATL",
         "awayTeamId": 146,
@@ -3601,7 +3601,7 @@
       {
         "id": "g824082",
         "gamePk": 824082,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "MIN",
         "homeTeam": "KC",
         "awayTeamId": 142,
@@ -3739,7 +3739,7 @@
       {
         "id": "g823753",
         "gamePk": 823753,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "PIT",
         "homeTeam": "MIL",
         "awayTeamId": 134,
@@ -3896,7 +3896,7 @@
           "id": 683352,
           "name": "Mitch Bratt"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 665487,
@@ -3955,52 +3955,52 @@
         ],
         "homeLineup": [
           {
+            "id": 663457,
+            "name": "Lars Nootbaar",
+            "order": 1,
+            "position": "LF"
+          },
+          {
             "id": 682998,
             "name": "Corbin Carroll",
-            "order": 1,
+            "order": 2,
             "position": "RF"
           },
           {
             "id": 672695,
             "name": "Geraldo Perdomo",
-            "order": 2,
+            "order": 3,
             "position": "SS"
           },
           {
-            "id": 596146,
-            "name": "Max Kepler",
-            "order": 3,
-            "position": "LF"
-          },
-          {
-            "id": 606466,
-            "name": "Ketel Marte",
+            "id": 672515,
+            "name": "Gabriel Moreno",
             "order": 4,
-            "position": "2B"
-          },
-          {
-            "id": 571448,
-            "name": "Nolan Arenado",
-            "order": 5,
-            "position": "3B"
-          },
-          {
-            "id": 663457,
-            "name": "Lars Nootbaar",
-            "order": 6,
             "position": "DH"
           },
           {
             "id": 694374,
             "name": "Tim Tawa",
-            "order": 7,
-            "position": "1B"
+            "order": 5,
+            "position": "3B"
+          },
+          {
+            "id": 545121,
+            "name": "Ildemaro Vargas",
+            "order": 6,
+            "position": "2B"
           },
           {
             "id": 543510,
             "name": "James McCann",
-            "order": 8,
+            "order": 7,
             "position": "C"
+          },
+          {
+            "id": 682988,
+            "name": "Tyler Locklear",
+            "order": 8,
+            "position": "1B"
           },
           {
             "id": 814439,
@@ -4010,7 +4010,7 @@
           }
         ],
         "awayLineupSource": "confirmed",
-        "homeLineupSource": "projected (last 2026-08-05)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g823106",
@@ -5610,52 +5610,52 @@
         ],
         "homeLineup": [
           {
+            "id": 663457,
+            "name": "Lars Nootbaar",
+            "order": 1,
+            "position": "LF"
+          },
+          {
             "id": 682998,
             "name": "Corbin Carroll",
-            "order": 1,
+            "order": 2,
             "position": "RF"
           },
           {
             "id": 672695,
             "name": "Geraldo Perdomo",
-            "order": 2,
+            "order": 3,
             "position": "SS"
           },
           {
-            "id": 596146,
-            "name": "Max Kepler",
-            "order": 3,
-            "position": "LF"
-          },
-          {
-            "id": 606466,
-            "name": "Ketel Marte",
+            "id": 672515,
+            "name": "Gabriel Moreno",
             "order": 4,
-            "position": "2B"
-          },
-          {
-            "id": 571448,
-            "name": "Nolan Arenado",
-            "order": 5,
-            "position": "3B"
-          },
-          {
-            "id": 663457,
-            "name": "Lars Nootbaar",
-            "order": 6,
             "position": "DH"
           },
           {
             "id": 694374,
             "name": "Tim Tawa",
-            "order": 7,
-            "position": "1B"
+            "order": 5,
+            "position": "3B"
+          },
+          {
+            "id": 545121,
+            "name": "Ildemaro Vargas",
+            "order": 6,
+            "position": "2B"
           },
           {
             "id": 543510,
             "name": "James McCann",
-            "order": 8,
+            "order": 7,
             "position": "C"
+          },
+          {
+            "id": 682988,
+            "name": "Tyler Locklear",
+            "order": 8,
+            "position": "1B"
           },
           {
             "id": 814439,
@@ -5665,7 +5665,7 @@
           }
         ],
         "awayLineupSource": "projected (last 2026-08-06)",
-        "homeLineupSource": "projected (last 2026-08-05)"
+        "homeLineupSource": "projected (last 2026-08-06)"
       }
     ]
   }
