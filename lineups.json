@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-06T01:02:15.435Z",
+  "refreshedAt": "2026-08-06T04:22:08.230Z",
   "today": "2026-08-06",
   "dates": [
     "2026-08-05",
@@ -126,7 +126,7 @@
           },
           {
             "id": 664774,
-            "name": "LaMonte Wade Jr.",
+            "name": "LaMonte Wade",
             "order": 7,
             "position": "LF"
           },
@@ -448,7 +448,7 @@
         "awayLineup": [
           {
             "id": 683748,
-            "name": "Victor Mesa Jr.",
+            "name": "Victor Mesa",
             "order": 1,
             "position": "RF"
           },
@@ -563,7 +563,7 @@
       {
         "id": "g824806",
         "gamePk": 824806,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "LAA",
         "homeTeam": "BAL",
         "awayTeamId": 108,
@@ -701,7 +701,7 @@
       {
         "id": "g824402",
         "gamePk": 824402,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "NYM",
         "homeTeam": "CLE",
         "awayTeamId": 121,
@@ -839,7 +839,7 @@
       {
         "id": "g824482",
         "gamePk": 824482,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "ATH",
         "homeTeam": "CIN",
         "awayTeamId": 133,
@@ -977,7 +977,7 @@
       {
         "id": "g823429",
         "gamePk": 823429,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "WSH",
         "homeTeam": "PHI",
         "awayTeamId": 120,
@@ -1115,7 +1115,7 @@
       {
         "id": "g823516",
         "gamePk": 823516,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "STL",
         "homeTeam": "NYY",
         "awayTeamId": 138,
@@ -1253,7 +1253,7 @@
       {
         "id": "g824728",
         "gamePk": 824728,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "CWS",
         "homeTeam": "BOS",
         "awayTeamId": 145,
@@ -1391,7 +1391,7 @@
       {
         "id": "g824889",
         "gamePk": 824889,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "MIA",
         "homeTeam": "ATL",
         "awayTeamId": 146,
@@ -1529,7 +1529,7 @@
       {
         "id": "g824082",
         "gamePk": 824082,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "MIN",
         "homeTeam": "KC",
         "awayTeamId": 142,
@@ -1667,7 +1667,7 @@
       {
         "id": "g823753",
         "gamePk": 823753,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "PIT",
         "homeTeam": "MIL",
         "awayTeamId": 134,
@@ -1805,7 +1805,7 @@
       {
         "id": "g825052",
         "gamePk": 825052,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "SD",
         "homeTeam": "AZ",
         "awayTeamId": 135,
@@ -1943,7 +1943,7 @@
       {
         "id": "g823106",
         "gamePk": 823106,
-        "status": "Pre-Game",
+        "status": "Final",
         "awayTeam": "DET",
         "homeTeam": "SEA",
         "awayTeamId": 116,
@@ -2236,7 +2236,10 @@
           "id": 686930,
           "name": "Mason Barnett"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 671096,
+          "name": "Andrew Abbott"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -3878,10 +3881,7 @@
         "parkHrFactor": 99,
         "startUtc": "2026-08-07T22:45:00Z",
         "startET": "6:45 PM",
-        "awayPitcher": {
-          "id": 671096,
-          "name": "Andrew Abbott"
-        },
+        "awayPitcher": null,
         "homePitcher": null,
         "lineupsConfirmed": false,
         "awayLineup": [
@@ -5270,7 +5270,7 @@
           },
           {
             "id": 664774,
-            "name": "LaMonte Wade Jr.",
+            "name": "LaMonte Wade",
             "order": 7,
             "position": "LF"
           },
@@ -5369,7 +5369,7 @@
         "awayLineup": [
           {
             "id": 683748,
-            "name": "Victor Mesa Jr.",
+            "name": "Victor Mesa",
             "order": 1,
             "position": "RF"
           },
