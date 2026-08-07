@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-07T18:22:17.977Z",
+  "refreshedAt": "2026-08-07T19:25:36.712Z",
   "today": "2026-08-07",
   "dates": [
     "2026-08-06",
@@ -1669,7 +1669,7 @@
       {
         "id": "g823428",
         "gamePk": 823428,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "TOR",
         "homeTeam": "PHI",
         "awayTeamId": 141,
@@ -1802,7 +1802,7 @@
           }
         ],
         "awayLineupSource": "projected (last 2026-08-06)",
-        "homeLineupSource": "projected (last 2026-08-06)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g822699",
@@ -1945,7 +1945,7 @@
       {
         "id": "g823515",
         "gamePk": 823515,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "ATL",
         "homeTeam": "NYY",
         "awayTeamId": 144,
@@ -2035,40 +2035,40 @@
             "position": "DH"
           },
           {
-            "id": 671277,
-            "name": "Luis García Jr.",
-            "order": 3,
-            "position": "1B"
-          },
-          {
             "id": 671218,
             "name": "Heliot Ramos",
-            "order": 4,
+            "order": 3,
             "position": "LF"
           },
           {
-            "id": 682987,
-            "name": "Spencer Jones",
-            "order": 5,
-            "position": "RF"
+            "id": 671277,
+            "name": "Luis García Jr.",
+            "order": 4,
+            "position": "1B"
           },
           {
             "id": 665862,
             "name": "Jazz Chisholm Jr.",
-            "order": 6,
+            "order": 5,
             "position": "2B"
           },
           {
-            "id": 641857,
-            "name": "Ryan McMahon",
-            "order": 7,
-            "position": "3B"
+            "id": 682987,
+            "name": "Spencer Jones",
+            "order": 6,
+            "position": "RF"
           },
           {
             "id": 806146,
             "name": "George Lombard Jr.",
-            "order": 8,
+            "order": 7,
             "position": "SS"
+          },
+          {
+            "id": 641857,
+            "name": "Ryan McMahon",
+            "order": 8,
+            "position": "3B"
           },
           {
             "id": 669224,
@@ -2078,7 +2078,7 @@
           }
         ],
         "awayLineupSource": "projected (last 2026-08-06)",
-        "homeLineupSource": "projected (last 2026-08-05)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g824727",
@@ -2770,7 +2770,7 @@
       {
         "id": "g823024",
         "gamePk": 823024,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "COL",
         "homeTeam": "STL",
         "awayTeamId": 115,
@@ -2795,7 +2795,7 @@
             "id": 664983,
             "name": "Jake McCarthy",
             "order": 1,
-            "position": "LF"
+            "position": "DH"
           },
           {
             "id": 694249,
@@ -2807,13 +2807,13 @@
             "id": 666160,
             "name": "Mickey Moniak",
             "order": 3,
-            "position": "DH"
+            "position": "LF"
           },
           {
-            "id": 691720,
-            "name": "Kyle Karros",
+            "id": 696100,
+            "name": "Hunter Goodman",
             "order": 4,
-            "position": "3B"
+            "position": "C"
           },
           {
             "id": 681198,
@@ -2822,28 +2822,28 @@
             "position": "1B"
           },
           {
-            "id": 687597,
-            "name": "Jordan Beck",
+            "id": 650489,
+            "name": "Willi Castro",
             "order": 6,
+            "position": "3B"
+          },
+          {
+            "id": 678662,
+            "name": "Ezequiel Tovar",
+            "order": 7,
+            "position": "SS"
+          },
+          {
+            "id": 687859,
+            "name": "Troy Johnston",
+            "order": 8,
             "position": "RF"
           },
           {
             "id": 666397,
             "name": "Edouard Julien",
-            "order": 7,
-            "position": "2B"
-          },
-          {
-            "id": 678662,
-            "name": "Ezequiel Tovar",
-            "order": 8,
-            "position": "SS"
-          },
-          {
-            "id": 664954,
-            "name": "Brett Sullivan",
             "order": 9,
-            "position": "C"
+            "position": "2B"
           }
         ],
         "homeLineup": [
@@ -2902,7 +2902,7 @@
             "position": "2B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-05)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "projected (last 2026-08-05)"
       },
       {
@@ -3690,40 +3690,40 @@
             "position": "DH"
           },
           {
-            "id": 671277,
-            "name": "Luis García Jr.",
-            "order": 3,
-            "position": "1B"
-          },
-          {
             "id": 671218,
             "name": "Heliot Ramos",
-            "order": 4,
+            "order": 3,
             "position": "LF"
           },
           {
-            "id": 682987,
-            "name": "Spencer Jones",
-            "order": 5,
-            "position": "RF"
+            "id": 671277,
+            "name": "Luis García Jr.",
+            "order": 4,
+            "position": "1B"
           },
           {
             "id": 665862,
             "name": "Jazz Chisholm Jr.",
-            "order": 6,
+            "order": 5,
             "position": "2B"
           },
           {
-            "id": 641857,
-            "name": "Ryan McMahon",
-            "order": 7,
-            "position": "3B"
+            "id": 682987,
+            "name": "Spencer Jones",
+            "order": 6,
+            "position": "RF"
           },
           {
             "id": 806146,
             "name": "George Lombard Jr.",
-            "order": 8,
+            "order": 7,
             "position": "SS"
+          },
+          {
+            "id": 641857,
+            "name": "Ryan McMahon",
+            "order": 8,
+            "position": "3B"
           },
           {
             "id": 669224,
@@ -3733,7 +3733,7 @@
           }
         ],
         "awayLineupSource": "projected (last 2026-08-06)",
-        "homeLineupSource": "projected (last 2026-08-05)"
+        "homeLineupSource": "projected (last 2026-08-07)"
       },
       {
         "id": "g824726",
@@ -4147,7 +4147,7 @@
           }
         ],
         "awayLineupSource": "projected (last 2026-08-06)",
-        "homeLineupSource": "projected (last 2026-08-06)"
+        "homeLineupSource": "projected (last 2026-08-07)"
       },
       {
         "id": "g823348",
@@ -5002,7 +5002,7 @@
             "id": 664983,
             "name": "Jake McCarthy",
             "order": 1,
-            "position": "LF"
+            "position": "DH"
           },
           {
             "id": 694249,
@@ -5014,13 +5014,13 @@
             "id": 666160,
             "name": "Mickey Moniak",
             "order": 3,
-            "position": "DH"
+            "position": "LF"
           },
           {
-            "id": 691720,
-            "name": "Kyle Karros",
+            "id": 696100,
+            "name": "Hunter Goodman",
             "order": 4,
-            "position": "3B"
+            "position": "C"
           },
           {
             "id": 681198,
@@ -5029,28 +5029,28 @@
             "position": "1B"
           },
           {
-            "id": 687597,
-            "name": "Jordan Beck",
+            "id": 650489,
+            "name": "Willi Castro",
             "order": 6,
+            "position": "3B"
+          },
+          {
+            "id": 678662,
+            "name": "Ezequiel Tovar",
+            "order": 7,
+            "position": "SS"
+          },
+          {
+            "id": 687859,
+            "name": "Troy Johnston",
+            "order": 8,
             "position": "RF"
           },
           {
             "id": 666397,
             "name": "Edouard Julien",
-            "order": 7,
-            "position": "2B"
-          },
-          {
-            "id": 678662,
-            "name": "Ezequiel Tovar",
-            "order": 8,
-            "position": "SS"
-          },
-          {
-            "id": 664954,
-            "name": "Brett Sullivan",
             "order": 9,
-            "position": "C"
+            "position": "2B"
           }
         ],
         "homeLineup": [
@@ -5109,7 +5109,7 @@
             "position": "2B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-05)",
+        "awayLineupSource": "projected (last 2026-08-08)",
         "homeLineupSource": "projected (last 2026-08-05)"
       },
       {
