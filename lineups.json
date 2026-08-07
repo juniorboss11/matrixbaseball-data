@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-07T22:58:21.565Z",
+  "refreshedAt": "2026-08-07T23:36:29.236Z",
   "today": "2026-08-07",
   "dates": [
     "2026-08-06",
@@ -1531,7 +1531,7 @@
       {
         "id": "g823349",
         "gamePk": 823349,
-        "status": "In Progress",
+        "status": "Delayed",
         "awayTeam": "NYM",
         "homeTeam": "PIT",
         "awayTeamId": 121,
@@ -1807,7 +1807,7 @@
       {
         "id": "g822699",
         "gamePk": 822699,
-        "status": "Delayed Start",
+        "status": "Warmup",
         "awayTeam": "CIN",
         "homeTeam": "WSH",
         "awayTeamId": 113,
@@ -2083,7 +2083,7 @@
       {
         "id": "g824727",
         "gamePk": 824727,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "ATH",
         "homeTeam": "BOS",
         "awayTeamId": 133,
@@ -2221,7 +2221,7 @@
       {
         "id": "g823836",
         "gamePk": 823836,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "LAA",
         "homeTeam": "MIA",
         "awayTeamId": 108,
@@ -2359,7 +2359,7 @@
       {
         "id": "g824566",
         "gamePk": 824566,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "CLE",
         "homeTeam": "CWS",
         "awayTeamId": 114,
@@ -2497,7 +2497,7 @@
       {
         "id": "g823750",
         "gamePk": 823750,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "MIN",
         "homeTeam": "MIL",
         "awayTeamId": 142,
@@ -3482,7 +3482,7 @@
           "id": 664141,
           "name": "JT Brubaker"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 805808,
@@ -3595,7 +3595,7 @@
             "position": "3B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-06)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       }
     ],
@@ -4442,7 +4442,10 @@
         "parkHrFactor": 94,
         "startUtc": "2026-08-08T23:10:00Z",
         "startET": "7:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 605280,
+          "name": "Clay Holmes"
+        },
         "homePitcher": {
           "id": 607625,
           "name": "Seth Lugo"
@@ -4974,7 +4977,7 @@
             "position": "3B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-06)",
+        "awayLineupSource": "projected (last 2026-08-08)",
         "homeLineupSource": "projected (last 2026-08-08)"
       },
       {
