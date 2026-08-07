@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-07T01:36:47.662Z",
+  "refreshedAt": "2026-08-07T04:14:01.919Z",
   "today": "2026-08-07",
   "dates": [
     "2026-08-06",
@@ -977,7 +977,7 @@
       {
         "id": "g824729",
         "gamePk": 824729,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "CWS",
         "homeTeam": "BOS",
         "awayTeamId": 145,
@@ -1115,7 +1115,7 @@
       {
         "id": "g824885",
         "gamePk": 824885,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "MIA",
         "homeTeam": "ATL",
         "awayTeamId": 146,
@@ -1253,7 +1253,7 @@
       {
         "id": "g824080",
         "gamePk": 824080,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "MIN",
         "homeTeam": "KC",
         "awayTeamId": 142,
@@ -1391,7 +1391,7 @@
       {
         "id": "g825053",
         "gamePk": 825053,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "SD",
         "homeTeam": "AZ",
         "awayTeamId": 135,
@@ -2505,7 +2505,10 @@
         "parkHrFactor": 104,
         "startUtc": "2026-08-07T23:40:00Z",
         "startET": "7:40 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 805673,
+          "name": "Zebby Matthews"
+        },
         "homePitcher": {
           "id": 675660,
           "name": "Shane Drohan"
@@ -2641,7 +2644,10 @@
         "startUtc": "2026-08-08T00:10:00Z",
         "startET": "8:10 PM",
         "awayPitcher": null,
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 663738,
+          "name": "Daniel Lynch IV"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -3234,7 +3240,7 @@
           },
           {
             "id": 664774,
-            "name": "LaMonte Wade Jr.",
+            "name": "LaMonte Wade",
             "order": 7,
             "position": "LF"
           },
@@ -3336,7 +3342,7 @@
         "awayLineup": [
           {
             "id": 683748,
-            "name": "Victor Mesa Jr.",
+            "name": "Victor Mesa",
             "order": 1,
             "position": "RF"
           },
@@ -4748,7 +4754,7 @@
           },
           {
             "id": 664774,
-            "name": "LaMonte Wade Jr.",
+            "name": "LaMonte Wade",
             "order": 7,
             "position": "LF"
           },
@@ -5540,7 +5546,7 @@
         "awayLineup": [
           {
             "id": 683748,
-            "name": "Victor Mesa Jr.",
+            "name": "Victor Mesa",
             "order": 1,
             "position": "RF"
           },
