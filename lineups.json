@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-08T22:47:05.352Z",
+  "refreshedAt": "2026-08-08T23:12:36.017Z",
   "today": "2026-08-08",
   "dates": [
     "2026-08-07",
@@ -2221,7 +2221,7 @@
       {
         "id": "g824726",
         "gamePk": 824726,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "ATH",
         "homeTeam": "BOS",
         "awayTeamId": 133,
@@ -2359,7 +2359,7 @@
       {
         "id": "g823834",
         "gamePk": 823834,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "LAA",
         "homeTeam": "MIA",
         "awayTeamId": 108,
@@ -2911,7 +2911,7 @@
       {
         "id": "g824079",
         "gamePk": 824079,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "CHC",
         "homeTeam": "KC",
         "awayTeamId": 112,
@@ -3049,7 +3049,7 @@
       {
         "id": "g823752",
         "gamePk": 823752,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "MIN",
         "homeTeam": "MIL",
         "awayTeamId": 142,
@@ -3325,7 +3325,7 @@
       {
         "id": "g823188",
         "gamePk": 823188,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "DET",
         "homeTeam": "SF",
         "awayTeamId": 116,
@@ -3463,7 +3463,7 @@
       {
         "id": "g823021",
         "gamePk": 823021,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "COL",
         "homeTeam": "STL",
         "awayTeamId": 115,
@@ -3601,7 +3601,7 @@
       {
         "id": "g822864",
         "gamePk": 822864,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "BAL",
         "homeTeam": "TEX",
         "awayTeamId": 110,
@@ -3739,7 +3739,7 @@
       {
         "id": "g824565",
         "gamePk": 824565,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "CLE",
         "homeTeam": "CWS",
         "awayTeamId": 114,
@@ -6089,7 +6089,10 @@
         "parkHrFactor": 95,
         "startUtc": "2026-08-10T00:20:00Z",
         "startET": "8:20 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 664299,
+          "name": "Cristian Javier"
+        },
         "homePitcher": null,
         "lineupsConfirmed": false,
         "awayLineup": [
