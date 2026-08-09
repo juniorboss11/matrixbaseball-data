@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-09T16:59:09.320Z",
+  "refreshedAt": "2026-08-09T17:36:13.621Z",
   "today": "2026-08-09",
   "dates": [
     "2026-08-08",
@@ -2221,7 +2221,7 @@
       {
         "id": "g824724",
         "gamePk": 824724,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "ATH",
         "homeTeam": "BOS",
         "awayTeamId": 133,
@@ -2359,7 +2359,7 @@
       {
         "id": "g823345",
         "gamePk": 823345,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "NYM",
         "homeTeam": "PIT",
         "awayTeamId": 121,
@@ -2497,7 +2497,7 @@
       {
         "id": "g823425",
         "gamePk": 823425,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "TOR",
         "homeTeam": "PHI",
         "awayTeamId": 141,
@@ -2635,7 +2635,7 @@
       {
         "id": "g823513",
         "gamePk": 823513,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "ATL",
         "homeTeam": "NYY",
         "awayTeamId": 144,
@@ -2773,7 +2773,7 @@
       {
         "id": "g823835",
         "gamePk": 823835,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "LAA",
         "homeTeam": "MIA",
         "awayTeamId": 108,
@@ -3620,13 +3620,13 @@
           "id": 657277,
           "name": "Logan Webb"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 805808,
             "name": "Kevin McGonigle",
             "order": 1,
-            "position": "3B"
+            "position": "SS"
           },
           {
             "id": 650402,
@@ -3638,7 +3638,7 @@
             "id": 693307,
             "name": "Dillon Dingler",
             "order": 3,
-            "position": "C"
+            "position": "DH"
           },
           {
             "id": 682985,
@@ -3650,7 +3650,7 @@
             "id": 690993,
             "name": "Colt Keith",
             "order": 5,
-            "position": "DH"
+            "position": "3B"
           },
           {
             "id": 679529,
@@ -3665,10 +3665,10 @@
             "position": "CF"
           },
           {
-            "id": 595879,
-            "name": "Javier Báez",
+            "id": 680664,
+            "name": "Eduardo Valencia",
             "order": 8,
-            "position": "SS"
+            "position": "C"
           },
           {
             "id": 656716,
@@ -3733,13 +3733,13 @@
             "position": "3B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-08)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       },
       {
         "id": "g825050",
         "gamePk": 825050,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "LAD",
         "homeTeam": "AZ",
         "awayTeamId": 119,
@@ -3779,10 +3779,10 @@
             "position": "1B"
           },
           {
-            "id": 571970,
-            "name": "Max Muncy",
+            "id": 669242,
+            "name": "Tommy Edman",
             "order": 4,
-            "position": "3B"
+            "position": "2B"
           },
           {
             "id": 605141,
@@ -3797,20 +3797,20 @@
             "position": "RF"
           },
           {
-            "id": 669242,
-            "name": "Tommy Edman",
-            "order": 7,
-            "position": "2B"
-          },
-          {
             "id": 606192,
             "name": "Teoscar Hernández",
-            "order": 8,
+            "order": 7,
             "position": "LF"
           },
           {
-            "id": 676439,
-            "name": "Hunter Feduccia",
+            "id": 571771,
+            "name": "Enrique Hernández",
+            "order": 8,
+            "position": "3B"
+          },
+          {
+            "id": 666163,
+            "name": "Ben Rortvedt",
             "order": 9,
             "position": "C"
           }
@@ -3871,13 +3871,13 @@
             "position": "CF"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-09)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "projected (last 2026-08-09)"
       },
       {
         "id": "g823104",
         "gamePk": 823104,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "TB",
         "homeTeam": "SEA",
         "awayTeamId": 139,
@@ -3991,16 +3991,16 @@
             "position": "1B"
           },
           {
-            "id": 680977,
-            "name": "Brendan Donovan",
-            "order": 7,
-            "position": "3B"
-          },
-          {
             "id": 663728,
             "name": "Cal Raleigh",
-            "order": 8,
+            "order": 7,
             "position": "C"
+          },
+          {
+            "id": 642215,
+            "name": "Weston Wilson",
+            "order": 8,
+            "position": "3B"
           },
           {
             "id": 806068,
@@ -4010,7 +4010,7 @@
           }
         ],
         "awayLineupSource": "projected (last 2026-08-09)",
-        "homeLineupSource": "projected (last 2026-08-09)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g823268",
@@ -4437,7 +4437,10 @@
         "startUtc": "2026-08-10T23:40:00Z",
         "startET": "7:40 PM",
         "awayPitcher": null,
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 665152,
+          "name": "Dean Kremer"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -5108,7 +5111,10 @@
         "parkHrFactor": 95,
         "startUtc": "2026-08-11T01:40:00Z",
         "startET": "9:40 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 701656,
+          "name": "Logan Henderson"
+        },
         "homePitcher": null,
         "lineupsConfirmed": false,
         "awayLineup": [
@@ -5372,7 +5378,10 @@
         "parkHrFactor": 100,
         "startUtc": "2026-08-11T02:10:00Z",
         "startET": "10:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 702070,
+          "name": "Noah Cameron"
+        },
         "homePitcher": {
           "id": 669373,
           "name": "Tarik Skubal"
@@ -5454,10 +5463,10 @@
             "position": "1B"
           },
           {
-            "id": 571970,
-            "name": "Max Muncy",
+            "id": 669242,
+            "name": "Tommy Edman",
             "order": 4,
-            "position": "3B"
+            "position": "2B"
           },
           {
             "id": 605141,
@@ -5472,20 +5481,20 @@
             "position": "RF"
           },
           {
-            "id": 669242,
-            "name": "Tommy Edman",
-            "order": 7,
-            "position": "2B"
-          },
-          {
             "id": 606192,
             "name": "Teoscar Hernández",
-            "order": 8,
+            "order": 7,
             "position": "LF"
           },
           {
-            "id": 676439,
-            "name": "Hunter Feduccia",
+            "id": 571771,
+            "name": "Enrique Hernández",
+            "order": 8,
+            "position": "3B"
+          },
+          {
+            "id": 666163,
+            "name": "Ben Rortvedt",
             "order": 9,
             "position": "C"
           }
