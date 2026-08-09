@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-09T22:16:14.490Z",
+  "refreshedAt": "2026-08-09T22:53:35.472Z",
   "today": "2026-08-09",
   "dates": [
     "2026-08-08",
@@ -3601,7 +3601,7 @@
       {
         "id": "g823190",
         "gamePk": 823190,
-        "status": "In Progress",
+        "status": "Game Over",
         "awayTeam": "DET",
         "homeTeam": "SF",
         "awayTeamId": 116,
@@ -3739,7 +3739,7 @@
       {
         "id": "g825050",
         "gamePk": 825050,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "LAD",
         "homeTeam": "AZ",
         "awayTeamId": 119,
@@ -5133,7 +5133,10 @@
           "id": 701656,
           "name": "Logan Henderson"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 663554,
+          "name": "Casey Mize"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
