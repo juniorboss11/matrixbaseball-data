@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-09T19:35:41.026Z",
+  "refreshedAt": "2026-08-09T20:02:20.242Z",
   "today": "2026-08-09",
   "dates": [
     "2026-08-08",
@@ -40,7 +40,7 @@
           },
           {
             "id": 660670,
-            "name": "Ronald Acuña Jr.",
+            "name": "Ronald Acuña",
             "order": 2,
             "position": "DH"
           },
@@ -52,7 +52,7 @@
           },
           {
             "id": 671739,
-            "name": "Michael Harris II",
+            "name": "Michael Harris",
             "order": 4,
             "position": "CF"
           },
@@ -120,7 +120,7 @@
           },
           {
             "id": 806146,
-            "name": "George Lombard Jr.",
+            "name": "George Lombard",
             "order": 6,
             "position": "SS"
           },
@@ -396,7 +396,7 @@
           },
           {
             "id": 681715,
-            "name": "Heriberto Hernández",
+            "name": "Heriberto Hernandez",
             "order": 6,
             "position": "LF"
           },
@@ -460,7 +460,7 @@
           },
           {
             "id": 665489,
-            "name": "Vladimir Guerrero Jr.",
+            "name": "Vladimir Guerrero",
             "order": 3,
             "position": "1B"
           },
@@ -610,7 +610,7 @@
           },
           {
             "id": 673357,
-            "name": "Luis Robert Jr.",
+            "name": "Luis Robert",
             "order": 5,
             "position": "CF"
           },
@@ -924,7 +924,7 @@
           },
           {
             "id": 677951,
-            "name": "Bobby Witt Jr.",
+            "name": "Bobby Witt",
             "order": 2,
             "position": "SS"
           },
@@ -1194,7 +1194,7 @@
         "homeLineup": [
           {
             "id": 665487,
-            "name": "Fernando Tatis Jr.",
+            "name": "Fernando Tatis",
             "order": 1,
             "position": "RF"
           },
@@ -1984,7 +1984,7 @@
           },
           {
             "id": 683748,
-            "name": "Victor Mesa Jr.",
+            "name": "Victor Mesa",
             "order": 4,
             "position": "RF"
           },
@@ -3601,7 +3601,7 @@
       {
         "id": "g823190",
         "gamePk": 823190,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "DET",
         "homeTeam": "SF",
         "awayTeamId": 116,
@@ -3739,7 +3739,7 @@
       {
         "id": "g825050",
         "gamePk": 825050,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "LAD",
         "homeTeam": "AZ",
         "awayTeamId": 119,
@@ -3877,7 +3877,7 @@
       {
         "id": "g823104",
         "gamePk": 823104,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "TB",
         "homeTeam": "SEA",
         "awayTeamId": 139,
@@ -4015,7 +4015,7 @@
       {
         "id": "g823268",
         "gamePk": 823268,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "HOU",
         "homeTeam": "SD",
         "awayTeamId": 117,
@@ -4030,7 +4030,10 @@
           "id": 664299,
           "name": "Cristian Javier"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 681190,
+          "name": "Randy Vásquez"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -4120,10 +4123,10 @@
             "position": "CF"
           },
           {
-            "id": 669134,
-            "name": "Luis Campusano",
+            "id": 650859,
+            "name": "Luis Rengifo",
             "order": 6,
-            "position": "C"
+            "position": "LF"
           },
           {
             "id": 657757,
@@ -4138,14 +4141,14 @@
             "position": "SS"
           },
           {
-            "id": 650859,
-            "name": "Luis Rengifo",
+            "id": 666023,
+            "name": "Freddy Fermin",
             "order": 9,
-            "position": "LF"
+            "position": "C"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-08)",
-        "homeLineupSource": "projected (last 2026-08-08)"
+        "homeLineupSource": "confirmed"
       }
     ],
     "2026-08-10": [
@@ -4988,7 +4991,10 @@
         "parkHrFactor": 105,
         "startUtc": "2026-08-11T01:40:00Z",
         "startET": "9:40 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 642547,
+          "name": "Freddy Peralta"
+        },
         "homePitcher": {
           "id": 682052,
           "name": "Jacob Lopez"
@@ -5217,10 +5223,10 @@
             "position": "CF"
           },
           {
-            "id": 669134,
-            "name": "Luis Campusano",
+            "id": 650859,
+            "name": "Luis Rengifo",
             "order": 6,
-            "position": "C"
+            "position": "LF"
           },
           {
             "id": 657757,
@@ -5235,14 +5241,14 @@
             "position": "SS"
           },
           {
-            "id": 650859,
-            "name": "Luis Rengifo",
+            "id": 666023,
+            "name": "Freddy Fermin",
             "order": 9,
-            "position": "LF"
+            "position": "C"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-09)",
-        "homeLineupSource": "projected (last 2026-08-08)"
+        "homeLineupSource": "projected (last 2026-08-10)"
       },
       {
         "id": "g823189",
@@ -5258,7 +5264,10 @@
         "parkHrFactor": 88,
         "startUtc": "2026-08-11T01:45:00Z",
         "startET": "9:45 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 669713,
+          "name": "Hayden Wesneski"
+        },
         "homePitcher": {
           "id": 694918,
           "name": "Blade Tidwell"
