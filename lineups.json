@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-09T22:53:35.472Z",
+  "refreshedAt": "2026-08-09T23:34:31.117Z",
   "today": "2026-08-09",
   "dates": [
     "2026-08-08",
@@ -3049,7 +3049,7 @@
       {
         "id": "g824564",
         "gamePk": 824564,
-        "status": "In Progress",
+        "status": "Game Over",
         "awayTeam": "CLE",
         "homeTeam": "CWS",
         "awayTeamId": 114,
@@ -3601,7 +3601,7 @@
       {
         "id": "g823190",
         "gamePk": 823190,
-        "status": "Game Over",
+        "status": "Final",
         "awayTeam": "DET",
         "homeTeam": "SF",
         "awayTeamId": 116,
@@ -3877,7 +3877,7 @@
       {
         "id": "g823104",
         "gamePk": 823104,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "TB",
         "homeTeam": "SEA",
         "awayTeamId": 139,
@@ -4860,7 +4860,10 @@
           "id": 687312,
           "name": "Gabriel Hughes"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 647336,
+          "name": "Michael Soroka"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
