@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-12T14:46:13.124Z",
+  "refreshedAt": "2026-08-12T15:43:04.061Z",
   "today": "2026-08-12",
   "dates": [
     "2026-08-11",
@@ -2102,7 +2102,7 @@
           "id": 805673,
           "name": "Zebby Matthews"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 683002,
@@ -2126,35 +2126,35 @@
             "id": 641933,
             "name": "Tyler O'Neill",
             "order": 4,
-            "position": "RF"
+            "position": "DH"
+          },
+          {
+            "id": 687637,
+            "name": "Dylan Beavers",
+            "order": 5,
+            "position": "LF"
           },
           {
             "id": 687952,
             "name": "Christian Encarnacion-Strand",
-            "order": 5,
+            "order": 6,
             "position": "3B"
           },
           {
-            "id": 691723,
-            "name": "Coby Mayo",
-            "order": 6,
-            "position": "DH"
+            "id": 665750,
+            "name": "Leody Taveras",
+            "order": 7,
+            "position": "RF"
           },
           {
             "id": 681047,
             "name": "Christian Franklin",
-            "order": 7,
+            "order": 8,
             "position": "CF"
           },
           {
-            "id": 669236,
-            "name": "Jeremiah Jackson",
-            "order": 8,
-            "position": "LF"
-          },
-          {
-            "id": 650968,
-            "name": "Yohel Pozo",
+            "id": 665966,
+            "name": "Carlos Narváez",
             "order": 9,
             "position": "C"
           }
@@ -2215,13 +2215,13 @@
             "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-11)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       },
       {
         "id": "g823017",
         "gamePk": 823017,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "PHI",
         "homeTeam": "STL",
         "awayTeamId": 143,
@@ -2240,7 +2240,7 @@
           "id": 681517,
           "name": "Kyle Leahy"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 656941,
@@ -2267,22 +2267,22 @@
             "position": "2B"
           },
           {
-            "id": 592663,
-            "name": "J.T. Realmuto",
-            "order": 5,
-            "position": "C"
-          },
-          {
             "id": 681082,
             "name": "Bryson Stott",
-            "order": 6,
+            "order": 5,
             "position": "3B"
           },
           {
             "id": 669016,
             "name": "Brandon Marsh",
-            "order": 7,
+            "order": 6,
             "position": "LF"
+          },
+          {
+            "id": 592663,
+            "name": "J.T. Realmuto",
+            "order": 7,
+            "position": "C"
           },
           {
             "id": 664761,
@@ -2311,22 +2311,22 @@
             "position": "DH"
           },
           {
-            "id": 691023,
-            "name": "Jordan Walker",
-            "order": 3,
-            "position": "RF"
-          },
-          {
             "id": 676475,
             "name": "Alec Burleson",
-            "order": 4,
+            "order": 3,
             "position": "1B"
           },
           {
-            "id": 665877,
-            "name": "José Fermín",
+            "id": 691023,
+            "name": "Jordan Walker",
+            "order": 4,
+            "position": "RF"
+          },
+          {
+            "id": 701675,
+            "name": "Nathan Church",
             "order": 5,
-            "position": "LF"
+            "position": "CF"
           },
           {
             "id": 691026,
@@ -2335,26 +2335,26 @@
             "position": "SS"
           },
           {
-            "id": 691458,
-            "name": "Blaze Jordan",
+            "id": 693409,
+            "name": "César Prieto",
             "order": 7,
             "position": "3B"
           },
           {
-            "id": 677592,
-            "name": "Everson Pereira",
+            "id": 665877,
+            "name": "José Fermín",
             "order": 8,
-            "position": "CF"
+            "position": "LF"
           },
           {
-            "id": 686780,
-            "name": "Pedro Pagés",
+            "id": 699625,
+            "name": "Jimmy Crooks",
             "order": 9,
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-11)",
-        "homeLineupSource": "projected (last 2026-08-11)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g824967",
@@ -2650,7 +2650,10 @@
           "id": 687911,
           "name": "Bryan King"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 605288,
+          "name": "Adrian Houser"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -5023,22 +5026,22 @@
             "position": "2B"
           },
           {
-            "id": 592663,
-            "name": "J.T. Realmuto",
-            "order": 5,
-            "position": "C"
-          },
-          {
             "id": 681082,
             "name": "Bryson Stott",
-            "order": 6,
+            "order": 5,
             "position": "3B"
           },
           {
             "id": 669016,
             "name": "Brandon Marsh",
-            "order": 7,
+            "order": 6,
             "position": "LF"
+          },
+          {
+            "id": 592663,
+            "name": "J.T. Realmuto",
+            "order": 7,
+            "position": "C"
           },
           {
             "id": 664761,
@@ -5109,7 +5112,7 @@
             "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-11)",
+        "awayLineupSource": "projected (last 2026-08-12)",
         "homeLineupSource": "projected (last 2026-08-12)"
       },
       {
@@ -5261,7 +5264,10 @@
         "parkHrFactor": 100,
         "startUtc": "2026-08-14T02:10:00Z",
         "startET": "10:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 675660,
+          "name": "Shane Drohan"
+        },
         "homePitcher": null,
         "lineupsConfirmed": false,
         "awayLineup": [
