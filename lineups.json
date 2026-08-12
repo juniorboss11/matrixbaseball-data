@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-12T15:43:04.061Z",
+  "refreshedAt": "2026-08-12T16:37:01.467Z",
   "today": "2026-08-12",
   "dates": [
     "2026-08-11",
@@ -2635,7 +2635,7 @@
       {
         "id": "g823187",
         "gamePk": 823187,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "HOU",
         "homeTeam": "SF",
         "awayTeamId": 117,
@@ -2768,7 +2768,7 @@
           }
         ],
         "awayLineupSource": "projected (last 2026-08-12)",
-        "homeLineupSource": "projected (last 2026-08-12)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g823263",
@@ -4998,7 +4998,10 @@
           "id": 605400,
           "name": "Aaron Nola"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 671737,
+          "name": "Taj Bradley"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
