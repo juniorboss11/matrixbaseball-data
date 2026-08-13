@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-13T22:52:38.454Z",
+  "refreshedAt": "2026-08-13T23:29:32.393Z",
   "today": "2026-08-13",
   "dates": [
     "2026-08-12",
@@ -2911,7 +2911,7 @@
       {
         "id": "g823669",
         "gamePk": 823669,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "PHI",
         "homeTeam": "MIN",
         "awayTeamId": 143,
@@ -3049,7 +3049,7 @@
       {
         "id": "g823995",
         "gamePk": 823995,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "TEX",
         "homeTeam": "LAA",
         "awayTeamId": 140,
@@ -3130,7 +3130,7 @@
             "id": 685133,
             "name": "Wade Meckler",
             "order": 1,
-            "position": "LF"
+            "position": "DH"
           },
           {
             "id": 545361,
@@ -3145,10 +3145,10 @@
             "position": "1B"
           },
           {
-            "id": 687263,
-            "name": "Zach Neto",
+            "id": 687093,
+            "name": "Vaughn Grissom",
             "order": 4,
-            "position": "DH"
+            "position": "3B"
           },
           {
             "id": 694208,
@@ -3157,10 +3157,10 @@
             "position": "C"
           },
           {
-            "id": 687093,
-            "name": "Vaughn Grissom",
+            "id": 694203,
+            "name": "Denzer Guzman",
             "order": 6,
-            "position": "2B"
+            "position": "SS"
           },
           {
             "id": 666139,
@@ -3169,20 +3169,20 @@
             "position": "RF"
           },
           {
-            "id": 672724,
-            "name": "Oswald Peraza",
+            "id": 642350,
+            "name": "Jose Siri",
             "order": 8,
-            "position": "SS"
+            "position": "LF"
           },
           {
-            "id": 694203,
-            "name": "Denzer Guzman",
+            "id": 624428,
+            "name": "Adam Frazier",
             "order": 9,
-            "position": "3B"
+            "position": "2B"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-13)",
-        "homeLineupSource": "projected (last 2026-08-13)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g823915",
@@ -3206,7 +3206,7 @@
           "id": 808963,
           "name": "Roki Sasaki"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 694192,
@@ -3215,14 +3215,14 @@
             "position": "LF"
           },
           {
-            "id": 668930,
-            "name": "Brice Turang",
+            "id": 669003,
+            "name": "Garrett Mitchell",
             "order": 2,
-            "position": "2B"
+            "position": "CF"
           },
           {
-            "id": 683734,
-            "name": "Andrew Vaughn",
+            "id": 596142,
+            "name": "Gary Sánchez",
             "order": 3,
             "position": "1B"
           },
@@ -3233,34 +3233,34 @@
             "position": "RF"
           },
           {
-            "id": 661388,
-            "name": "William Contreras",
+            "id": 683734,
+            "name": "Andrew Vaughn",
             "order": 5,
+            "position": "3B"
+          },
+          {
+            "id": 592885,
+            "name": "Christian Yelich",
+            "order": 6,
             "position": "DH"
           },
           {
-            "id": 596142,
-            "name": "Gary Sánchez",
-            "order": 6,
-            "position": "C"
-          },
-          {
-            "id": 663604,
-            "name": "Brandon Lockridge",
+            "id": 661388,
+            "name": "William Contreras",
             "order": 7,
-            "position": "CF"
-          },
-          {
-            "id": 666152,
-            "name": "David Hamilton",
-            "order": 8,
-            "position": "SS"
+            "position": "C"
           },
           {
             "id": 687401,
             "name": "Joey Ortiz",
+            "order": 8,
+            "position": "SS"
+          },
+          {
+            "id": 666152,
+            "name": "David Hamilton",
             "order": 9,
-            "position": "3B"
+            "position": "2B"
           }
         ],
         "homeLineup": [
@@ -3319,7 +3319,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-12)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       }
     ],
@@ -4776,7 +4776,7 @@
             "id": 685133,
             "name": "Wade Meckler",
             "order": 1,
-            "position": "LF"
+            "position": "DH"
           },
           {
             "id": 545361,
@@ -4791,10 +4791,10 @@
             "position": "1B"
           },
           {
-            "id": 687263,
-            "name": "Zach Neto",
+            "id": 687093,
+            "name": "Vaughn Grissom",
             "order": 4,
-            "position": "DH"
+            "position": "3B"
           },
           {
             "id": 694208,
@@ -4803,10 +4803,10 @@
             "position": "C"
           },
           {
-            "id": 687093,
-            "name": "Vaughn Grissom",
+            "id": 694203,
+            "name": "Denzer Guzman",
             "order": 6,
-            "position": "2B"
+            "position": "SS"
           },
           {
             "id": 666139,
@@ -4815,20 +4815,20 @@
             "position": "RF"
           },
           {
-            "id": 672724,
-            "name": "Oswald Peraza",
+            "id": 642350,
+            "name": "Jose Siri",
             "order": 8,
-            "position": "SS"
+            "position": "LF"
           },
           {
-            "id": 694203,
-            "name": "Denzer Guzman",
+            "id": 624428,
+            "name": "Adam Frazier",
             "order": 9,
-            "position": "3B"
+            "position": "2B"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-13)",
-        "homeLineupSource": "projected (last 2026-08-13)"
+        "homeLineupSource": "projected (last 2026-08-14)"
       },
       {
         "id": "g824968",
@@ -4844,7 +4844,10 @@
         "parkHrFactor": 105,
         "startUtc": "2026-08-15T01:40:00Z",
         "startET": "9:40 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 677958,
+          "name": "Kumar Rocker"
+        },
         "homePitcher": null,
         "lineupsConfirmed": false,
         "awayLineup": [
@@ -4993,14 +4996,14 @@
             "position": "LF"
           },
           {
-            "id": 668930,
-            "name": "Brice Turang",
+            "id": 669003,
+            "name": "Garrett Mitchell",
             "order": 2,
-            "position": "2B"
+            "position": "CF"
           },
           {
-            "id": 683734,
-            "name": "Andrew Vaughn",
+            "id": 596142,
+            "name": "Gary Sánchez",
             "order": 3,
             "position": "1B"
           },
@@ -5011,34 +5014,34 @@
             "position": "RF"
           },
           {
-            "id": 661388,
-            "name": "William Contreras",
+            "id": 683734,
+            "name": "Andrew Vaughn",
             "order": 5,
+            "position": "3B"
+          },
+          {
+            "id": 592885,
+            "name": "Christian Yelich",
+            "order": 6,
             "position": "DH"
           },
           {
-            "id": 596142,
-            "name": "Gary Sánchez",
-            "order": 6,
-            "position": "C"
-          },
-          {
-            "id": 663604,
-            "name": "Brandon Lockridge",
+            "id": 661388,
+            "name": "William Contreras",
             "order": 7,
-            "position": "CF"
-          },
-          {
-            "id": 666152,
-            "name": "David Hamilton",
-            "order": 8,
-            "position": "SS"
+            "position": "C"
           },
           {
             "id": 687401,
             "name": "Joey Ortiz",
+            "order": 8,
+            "position": "SS"
+          },
+          {
+            "id": 666152,
+            "name": "David Hamilton",
             "order": 9,
-            "position": "3B"
+            "position": "2B"
           }
         ],
         "homeLineup": [
@@ -5097,7 +5100,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-12)",
+        "awayLineupSource": "projected (last 2026-08-14)",
         "homeLineupSource": "projected (last 2026-08-14)"
       },
       {
