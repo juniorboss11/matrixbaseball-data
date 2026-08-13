@@ -666,6 +666,7 @@ async function main() {
       r: e.result,
       ev: e.ev,
       la: e.la,
+      dist: e.dist,
       pt: e.pitchType,
       v: e.velo,
       hr: e.isHr ? 1 : 0,
