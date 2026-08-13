@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-13T15:36:08.204Z",
+  "refreshedAt": "2026-08-13T16:32:17.622Z",
   "today": "2026-08-13",
   "dates": [
     "2026-08-12",
@@ -1074,7 +1074,7 @@
           },
           {
             "id": 681715,
-            "name": "Heriberto Hernández",
+            "name": "Heriberto Hernandez",
             "order": 4,
             "position": "LF"
           },
@@ -1098,7 +1098,7 @@
           },
           {
             "id": 677870,
-            "name": "Leo Jiménez",
+            "name": "Leo Jimenez",
             "order": 8,
             "position": "3B"
           },
@@ -2654,13 +2654,13 @@
           "id": 453286,
           "name": "Max Scherzer"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
-            "id": 807799,
-            "name": "Masataka Yoshida",
+            "id": 686765,
+            "name": "Nick Sogard",
             "order": 1,
-            "position": "DH"
+            "position": "2B"
           },
           {
             "id": 678882,
@@ -2669,10 +2669,10 @@
             "position": "CF"
           },
           {
-            "id": 668939,
-            "name": "Adley Rutschman",
+            "id": 677800,
+            "name": "Wilyer Abreu",
             "order": 3,
-            "position": "C"
+            "position": "RF"
           },
           {
             "id": 575929,
@@ -2681,10 +2681,10 @@
             "position": "1B"
           },
           {
-            "id": 677800,
-            "name": "Wilyer Abreu",
+            "id": 807799,
+            "name": "Masataka Yoshida",
             "order": 5,
-            "position": "RF"
+            "position": "DH"
           },
           {
             "id": 702332,
@@ -2705,10 +2705,10 @@
             "position": "SS"
           },
           {
-            "id": 686765,
-            "name": "Nick Sogard",
+            "id": 657136,
+            "name": "Connor Wong",
             "order": 9,
-            "position": "2B"
+            "position": "C"
           }
         ],
         "homeLineup": [
@@ -2767,7 +2767,7 @@
             "position": "RF"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-12)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       },
       {
@@ -3473,7 +3473,10 @@
         "parkHrFactor": 113,
         "startUtc": "2026-08-14T22:10:00Z",
         "startET": "6:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 645261,
+          "name": "Sandy Alcantara"
+        },
         "homePitcher": {
           "id": 695505,
           "name": "Chase Burns"
@@ -3609,14 +3612,17 @@
         "startUtc": "2026-08-14T22:40:00Z",
         "startET": "6:40 PM",
         "awayPitcher": null,
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 696149,
+          "name": "Bubba Chandler"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
-            "id": 807799,
-            "name": "Masataka Yoshida",
+            "id": 686765,
+            "name": "Nick Sogard",
             "order": 1,
-            "position": "DH"
+            "position": "2B"
           },
           {
             "id": 678882,
@@ -3625,10 +3631,10 @@
             "position": "CF"
           },
           {
-            "id": 668939,
-            "name": "Adley Rutschman",
+            "id": 677800,
+            "name": "Wilyer Abreu",
             "order": 3,
-            "position": "C"
+            "position": "RF"
           },
           {
             "id": 575929,
@@ -3637,10 +3643,10 @@
             "position": "1B"
           },
           {
-            "id": 677800,
-            "name": "Wilyer Abreu",
+            "id": 807799,
+            "name": "Masataka Yoshida",
             "order": 5,
-            "position": "RF"
+            "position": "DH"
           },
           {
             "id": 702332,
@@ -3661,10 +3667,10 @@
             "position": "SS"
           },
           {
-            "id": 686765,
-            "name": "Nick Sogard",
+            "id": 657136,
+            "name": "Connor Wong",
             "order": 9,
-            "position": "2B"
+            "position": "C"
           }
         ],
         "homeLineup": [
@@ -3723,7 +3729,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-12)",
+        "awayLineupSource": "projected (last 2026-08-13)",
         "homeLineupSource": "projected (last 2026-08-13)"
       },
       {
@@ -3741,7 +3747,10 @@
         "startUtc": "2026-08-14T22:40:00Z",
         "startET": "6:40 PM",
         "awayPitcher": null,
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 695549,
+          "name": "Jackson Jobe"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -4412,7 +4421,10 @@
         "parkHrFactor": 103,
         "startUtc": "2026-08-14T23:15:00Z",
         "startET": "7:15 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 543037,
+          "name": "Gerrit Cole"
+        },
         "homePitcher": null,
         "lineupsConfirmed": false,
         "awayLineup": [
@@ -4544,7 +4556,10 @@
         "parkHrFactor": 100,
         "startUtc": "2026-08-15T00:10:00Z",
         "startET": "8:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 669923,
+          "name": "George Kirby"
+        },
         "homePitcher": {
           "id": 663567,
           "name": "Peter Lambert"
