@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-13T18:34:26.177Z",
+  "refreshedAt": "2026-08-13T19:42:11.451Z",
   "today": "2026-08-13",
   "dates": [
     "2026-08-12",
@@ -2083,7 +2083,7 @@
       {
         "id": "g824238",
         "gamePk": 824238,
-        "status": "In Progress",
+        "status": "Game Over",
         "awayTeam": "CLE",
         "homeTeam": "DET",
         "awayTeamId": 114,
@@ -2359,7 +2359,7 @@
       {
         "id": "g823829",
         "gamePk": 823829,
-        "status": "In Progress",
+        "status": "Game Over",
         "awayTeam": "PIT",
         "homeTeam": "MIA",
         "awayTeamId": 134,
@@ -2635,7 +2635,7 @@
       {
         "id": "g822776",
         "gamePk": 822776,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "BOS",
         "homeTeam": "TOR",
         "awayTeamId": 111,
@@ -2792,7 +2792,7 @@
           "id": 676917,
           "name": "Cade Cavalli"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 691718,
@@ -2851,62 +2851,62 @@
         ],
         "homeLineup": [
           {
-            "id": 686611,
-            "name": "Dylan Crews",
+            "id": 682928,
+            "name": "CJ Abrams",
             "order": 1,
-            "position": "RF"
+            "position": "SS"
           },
           {
-            "id": 665953,
-            "name": "Andrés Chaparro",
+            "id": 694673,
+            "name": "Abimelec Ortiz",
             "order": 2,
             "position": "1B"
           },
           {
+            "id": 686611,
+            "name": "Dylan Crews",
+            "order": 3,
+            "position": "RF"
+          },
+          {
+            "id": 695734,
+            "name": "Daylen Lile",
+            "order": 4,
+            "position": "LF"
+          },
+          {
             "id": 691781,
             "name": "Brady House",
-            "order": 3,
+            "order": 5,
             "position": "3B"
           },
           {
-            "id": 682928,
-            "name": "CJ Abrams",
-            "order": 4,
-            "position": "SS"
+            "id": 678391,
+            "name": "Jorbit Vivas",
+            "order": 6,
+            "position": "2B"
           },
           {
-            "id": 695670,
-            "name": "Harry Ford",
-            "order": 5,
+            "id": 665953,
+            "name": "Andrés Chaparro",
+            "order": 7,
+            "position": "DH"
+          },
+          {
+            "id": 660688,
+            "name": "Keibert Ruiz",
+            "order": 8,
             "position": "C"
           },
           {
             "id": 687605,
             "name": "Andrew Pinckney",
-            "order": 6,
-            "position": "LF"
-          },
-          {
-            "id": 696285,
-            "name": "Jacob Young",
-            "order": 7,
-            "position": "CF"
-          },
-          {
-            "id": 695734,
-            "name": "Daylen Lile",
-            "order": 8,
-            "position": "DH"
-          },
-          {
-            "id": 683083,
-            "name": "Nasim Nuñez",
             "order": 9,
-            "position": "2B"
+            "position": "CF"
           }
         ],
         "awayLineupSource": "confirmed",
-        "homeLineupSource": "projected (last 2026-08-12)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g823669",
@@ -3342,7 +3342,10 @@
           "id": 669461,
           "name": "Matthew Liberatore"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 605280,
+          "name": "Clay Holmes"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -3884,7 +3887,10 @@
         "parkHrFactor": 103,
         "startUtc": "2026-08-14T23:10:00Z",
         "startET": "7:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 674841,
+          "name": "Andrew Alvarez"
+        },
         "homePitcher": {
           "id": 476594,
           "name": "Robert Stock"
@@ -3892,58 +3898,58 @@
         "lineupsConfirmed": false,
         "awayLineup": [
           {
-            "id": 686611,
-            "name": "Dylan Crews",
+            "id": 682928,
+            "name": "CJ Abrams",
             "order": 1,
-            "position": "RF"
+            "position": "SS"
           },
           {
-            "id": 665953,
-            "name": "Andrés Chaparro",
+            "id": 694673,
+            "name": "Abimelec Ortiz",
             "order": 2,
             "position": "1B"
           },
           {
+            "id": 686611,
+            "name": "Dylan Crews",
+            "order": 3,
+            "position": "RF"
+          },
+          {
+            "id": 695734,
+            "name": "Daylen Lile",
+            "order": 4,
+            "position": "LF"
+          },
+          {
             "id": 691781,
             "name": "Brady House",
-            "order": 3,
+            "order": 5,
             "position": "3B"
           },
           {
-            "id": 682928,
-            "name": "CJ Abrams",
-            "order": 4,
-            "position": "SS"
+            "id": 678391,
+            "name": "Jorbit Vivas",
+            "order": 6,
+            "position": "2B"
           },
           {
-            "id": 695670,
-            "name": "Harry Ford",
-            "order": 5,
+            "id": 665953,
+            "name": "Andrés Chaparro",
+            "order": 7,
+            "position": "DH"
+          },
+          {
+            "id": 660688,
+            "name": "Keibert Ruiz",
+            "order": 8,
             "position": "C"
           },
           {
             "id": 687605,
             "name": "Andrew Pinckney",
-            "order": 6,
-            "position": "LF"
-          },
-          {
-            "id": 696285,
-            "name": "Jacob Young",
-            "order": 7,
-            "position": "CF"
-          },
-          {
-            "id": 695734,
-            "name": "Daylen Lile",
-            "order": 8,
-            "position": "DH"
-          },
-          {
-            "id": 683083,
-            "name": "Nasim Nuñez",
             "order": 9,
-            "position": "2B"
+            "position": "CF"
           }
         ],
         "homeLineup": [
@@ -4002,7 +4008,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-12)",
+        "awayLineupSource": "projected (last 2026-08-13)",
         "homeLineupSource": "projected (last 2026-08-12)"
       },
       {
@@ -4158,7 +4164,10 @@
         "startUtc": "2026-08-14T23:10:00Z",
         "startET": "7:10 PM",
         "awayPitcher": null,
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 571927,
+          "name": "Steven Matz"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
