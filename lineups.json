@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-14T22:50:48.144Z",
+  "refreshedAt": "2026-08-14T23:08:13.649Z",
   "today": "2026-08-14",
   "dates": [
     "2026-08-13",
@@ -522,19 +522,19 @@
           },
           {
             "id": 671277,
-            "name": "Luis García Jr.",
+            "name": "Luis García",
             "order": 4,
             "position": "1B"
           },
           {
             "id": 806146,
-            "name": "George Lombard Jr.",
+            "name": "George Lombard",
             "order": 5,
             "position": "SS"
           },
           {
             "id": 665862,
-            "name": "Jazz Chisholm Jr.",
+            "name": "Jazz Chisholm",
             "order": 6,
             "position": "2B"
           },
@@ -2083,7 +2083,7 @@
       {
         "id": "g822942",
         "gamePk": 822942,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "BAL",
         "homeTeam": "TB",
         "awayTeamId": 110,
@@ -2221,7 +2221,7 @@
       {
         "id": "g824882",
         "gamePk": 824882,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "AZ",
         "homeTeam": "ATL",
         "awayTeamId": 109,
@@ -2359,7 +2359,7 @@
       {
         "id": "g822777",
         "gamePk": 822777,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "NYY",
         "homeTeam": "TOR",
         "awayTeamId": 147,
@@ -2927,61 +2927,61 @@
           "id": 808967,
           "name": "Yoshinobu Yamamoto"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
-          {
-            "id": 694192,
-            "name": "Jackson Chourio",
-            "order": 1,
-            "position": "LF"
-          },
           {
             "id": 669003,
             "name": "Garrett Mitchell",
-            "order": 2,
+            "order": 1,
             "position": "CF"
           },
           {
-            "id": 596142,
-            "name": "Gary Sánchez",
-            "order": 3,
-            "position": "1B"
+            "id": 694192,
+            "name": "Jackson Chourio",
+            "order": 2,
+            "position": "LF"
           },
           {
             "id": 641343,
             "name": "Jake Bauers",
-            "order": 4,
-            "position": "RF"
+            "order": 3,
+            "position": "1B"
           },
           {
             "id": 683734,
             "name": "Andrew Vaughn",
-            "order": 5,
+            "order": 4,
             "position": "3B"
           },
           {
             "id": 592885,
             "name": "Christian Yelich",
-            "order": 6,
+            "order": 5,
             "position": "DH"
           },
           {
             "id": 661388,
             "name": "William Contreras",
-            "order": 7,
+            "order": 6,
             "position": "C"
           },
           {
-            "id": 687401,
-            "name": "Joey Ortiz",
-            "order": 8,
-            "position": "SS"
+            "id": 800325,
+            "name": "Luis Lara",
+            "order": 7,
+            "position": "RF"
           },
           {
             "id": 666152,
             "name": "David Hamilton",
-            "order": 9,
+            "order": 8,
             "position": "2B"
+          },
+          {
+            "id": 687401,
+            "name": "Joey Ortiz",
+            "order": 9,
+            "position": "SS"
           }
         ],
         "homeLineup": [
@@ -3040,7 +3040,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-14)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       },
       {
@@ -4855,58 +4855,58 @@
         "lineupsConfirmed": false,
         "awayLineup": [
           {
-            "id": 694192,
-            "name": "Jackson Chourio",
-            "order": 1,
-            "position": "LF"
-          },
-          {
             "id": 669003,
             "name": "Garrett Mitchell",
-            "order": 2,
+            "order": 1,
             "position": "CF"
           },
           {
-            "id": 596142,
-            "name": "Gary Sánchez",
-            "order": 3,
-            "position": "1B"
+            "id": 694192,
+            "name": "Jackson Chourio",
+            "order": 2,
+            "position": "LF"
           },
           {
             "id": 641343,
             "name": "Jake Bauers",
-            "order": 4,
-            "position": "RF"
+            "order": 3,
+            "position": "1B"
           },
           {
             "id": 683734,
             "name": "Andrew Vaughn",
-            "order": 5,
+            "order": 4,
             "position": "3B"
           },
           {
             "id": 592885,
             "name": "Christian Yelich",
-            "order": 6,
+            "order": 5,
             "position": "DH"
           },
           {
             "id": 661388,
             "name": "William Contreras",
-            "order": 7,
+            "order": 6,
             "position": "C"
           },
           {
-            "id": 687401,
-            "name": "Joey Ortiz",
-            "order": 8,
-            "position": "SS"
+            "id": 800325,
+            "name": "Luis Lara",
+            "order": 7,
+            "position": "RF"
           },
           {
             "id": 666152,
             "name": "David Hamilton",
-            "order": 9,
+            "order": 8,
             "position": "2B"
+          },
+          {
+            "id": 687401,
+            "name": "Joey Ortiz",
+            "order": 9,
+            "position": "SS"
           }
         ],
         "homeLineup": [
@@ -4965,7 +4965,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-14)",
+        "awayLineupSource": "projected (last 2026-08-15)",
         "homeLineupSource": "projected (last 2026-08-15)"
       },
       {
