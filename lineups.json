@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-14T16:57:11.790Z",
+  "refreshedAt": "2026-08-14T17:54:35.242Z",
   "today": "2026-08-14",
   "dates": [
     "2026-08-13",
@@ -1393,7 +1393,7 @@
       {
         "id": "g824479",
         "gamePk": 824479,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "MIA",
         "homeTeam": "CIN",
         "awayTeamId": 146,
@@ -1480,7 +1480,7 @@
             "id": 701398,
             "name": "Sal Stewart",
             "order": 2,
-            "position": "1B"
+            "position": "3B"
           },
           {
             "id": 668709,
@@ -1501,32 +1501,32 @@
             "position": "DH"
           },
           {
+            "id": 669911,
+            "name": "Michael Toglia",
+            "order": 6,
+            "position": "1B"
+          },
+          {
             "id": 667472,
             "name": "Dane Myers",
-            "order": 6,
+            "order": 7,
             "position": "CF"
           },
           {
-            "id": 699302,
-            "name": "Héctor Rodríguez",
-            "order": 7,
+            "id": 682622,
+            "name": "Noelvi Marte",
+            "order": 8,
             "position": "RF"
           },
           {
             "id": 680574,
             "name": "Matt McLain",
-            "order": 8,
-            "position": "2B"
-          },
-          {
-            "id": 663647,
-            "name": "Ke'Bryan Hayes",
             "order": 9,
-            "position": "3B"
+            "position": "2B"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-13)",
-        "homeLineupSource": "projected (last 2026-08-13)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g823346",
@@ -2094,7 +2094,10 @@
         "parkHrFactor": 95,
         "startUtc": "2026-08-14T23:10:00Z",
         "startET": "7:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 605135,
+          "name": "Chris Bassitt"
+        },
         "homePitcher": {
           "id": 571927,
           "name": "Steven Matz"
@@ -3198,7 +3201,10 @@
           "id": 641743,
           "name": "Anthony Kay"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 675512,
+          "name": "Troy Melton"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -4086,7 +4092,7 @@
             "id": 701398,
             "name": "Sal Stewart",
             "order": 2,
-            "position": "1B"
+            "position": "3B"
           },
           {
             "id": 668709,
@@ -4107,32 +4113,32 @@
             "position": "DH"
           },
           {
+            "id": 669911,
+            "name": "Michael Toglia",
+            "order": 6,
+            "position": "1B"
+          },
+          {
             "id": 667472,
             "name": "Dane Myers",
-            "order": 6,
+            "order": 7,
             "position": "CF"
           },
           {
-            "id": 699302,
-            "name": "Héctor Rodríguez",
-            "order": 7,
+            "id": 682622,
+            "name": "Noelvi Marte",
+            "order": 8,
             "position": "RF"
           },
           {
             "id": 680574,
             "name": "Matt McLain",
-            "order": 8,
-            "position": "2B"
-          },
-          {
-            "id": 663647,
-            "name": "Ke'Bryan Hayes",
             "order": 9,
-            "position": "3B"
+            "position": "2B"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-13)",
-        "homeLineupSource": "projected (last 2026-08-13)"
+        "homeLineupSource": "projected (last 2026-08-14)"
       },
       {
         "id": "g824400",
