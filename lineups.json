@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-14T17:54:35.242Z",
+  "refreshedAt": "2026-08-14T18:58:32.284Z",
   "today": "2026-08-14",
   "dates": [
     "2026-08-13",
@@ -1255,7 +1255,7 @@
       {
         "id": "g824643",
         "gamePk": 824643,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "STL",
         "homeTeam": "CHC",
         "awayTeamId": 138,
@@ -1531,7 +1531,7 @@
       {
         "id": "g823346",
         "gamePk": 823346,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "BOS",
         "homeTeam": "PIT",
         "awayTeamId": 111,
@@ -1559,16 +1559,16 @@
             "position": "2B"
           },
           {
-            "id": 678882,
-            "name": "Ceddanne Rafaela",
+            "id": 807799,
+            "name": "Masataka Yoshida",
             "order": 2,
-            "position": "CF"
+            "position": "DH"
           },
           {
-            "id": 677800,
-            "name": "Wilyer Abreu",
+            "id": 668939,
+            "name": "Adley Rutschman",
             "order": 3,
-            "position": "RF"
+            "position": "C"
           },
           {
             "id": 575929,
@@ -1577,10 +1577,10 @@
             "position": "1B"
           },
           {
-            "id": 807799,
-            "name": "Masataka Yoshida",
+            "id": 677800,
+            "name": "Wilyer Abreu",
             "order": 5,
-            "position": "DH"
+            "position": "RF"
           },
           {
             "id": 702332,
@@ -1601,10 +1601,10 @@
             "position": "SS"
           },
           {
-            "id": 657136,
-            "name": "Connor Wong",
+            "id": 642201,
+            "name": "Eli White",
             "order": 9,
-            "position": "C"
+            "position": "CF"
           }
         ],
         "homeLineup": [
@@ -1663,13 +1663,13 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-13)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "projected (last 2026-08-13)"
       },
       {
         "id": "g824237",
         "gamePk": 824237,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "CWS",
         "homeTeam": "DET",
         "awayTeamId": 145,
@@ -1771,38 +1771,38 @@
             "position": "DH"
           },
           {
-            "id": 679529,
-            "name": "Spencer Torkelson",
+            "id": 690993,
+            "name": "Colt Keith",
             "order": 5,
-            "position": "1B"
-          },
-          {
-            "id": 701678,
-            "name": "Hao-Yu Lee",
-            "order": 6,
             "position": "3B"
           },
           {
-            "id": 703601,
-            "name": "Max Clark",
-            "order": 7,
-            "position": "CF"
+            "id": 679529,
+            "name": "Spencer Torkelson",
+            "order": 6,
+            "position": "1B"
           },
           {
-            "id": 595879,
-            "name": "Javier Báez",
-            "order": 8,
-            "position": "LF"
+            "id": 656716,
+            "name": "Zach McKinstry",
+            "order": 7,
+            "position": "RF"
           },
           {
             "id": 701162,
             "name": "Ben Malgeri",
+            "order": 8,
+            "position": "LF"
+          },
+          {
+            "id": 703601,
+            "name": "Max Clark",
             "order": 9,
-            "position": "RF"
+            "position": "CF"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-13)",
-        "homeLineupSource": "projected (last 2026-08-13)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g823591",
@@ -3288,38 +3288,38 @@
             "position": "DH"
           },
           {
-            "id": 679529,
-            "name": "Spencer Torkelson",
+            "id": 690993,
+            "name": "Colt Keith",
             "order": 5,
-            "position": "1B"
-          },
-          {
-            "id": 701678,
-            "name": "Hao-Yu Lee",
-            "order": 6,
             "position": "3B"
           },
           {
-            "id": 703601,
-            "name": "Max Clark",
-            "order": 7,
-            "position": "CF"
+            "id": 679529,
+            "name": "Spencer Torkelson",
+            "order": 6,
+            "position": "1B"
           },
           {
-            "id": 595879,
-            "name": "Javier Báez",
-            "order": 8,
-            "position": "LF"
+            "id": 656716,
+            "name": "Zach McKinstry",
+            "order": 7,
+            "position": "RF"
           },
           {
             "id": 701162,
             "name": "Ben Malgeri",
+            "order": 8,
+            "position": "LF"
+          },
+          {
+            "id": 703601,
+            "name": "Max Clark",
             "order": 9,
-            "position": "RF"
+            "position": "CF"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-13)",
-        "homeLineupSource": "projected (last 2026-08-13)"
+        "homeLineupSource": "projected (last 2026-08-14)"
       },
       {
         "id": "g824644",
@@ -3881,7 +3881,10 @@
         "parkHrFactor": 95,
         "startUtc": "2026-08-15T22:10:00Z",
         "startET": "6:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 680694,
+          "name": "Kyle Bradish"
+        },
         "homePitcher": {
           "id": 693855,
           "name": "Ian Seymour"
@@ -4582,16 +4585,16 @@
             "position": "2B"
           },
           {
-            "id": 678882,
-            "name": "Ceddanne Rafaela",
+            "id": 807799,
+            "name": "Masataka Yoshida",
             "order": 2,
-            "position": "CF"
+            "position": "DH"
           },
           {
-            "id": 677800,
-            "name": "Wilyer Abreu",
+            "id": 668939,
+            "name": "Adley Rutschman",
             "order": 3,
-            "position": "RF"
+            "position": "C"
           },
           {
             "id": 575929,
@@ -4600,10 +4603,10 @@
             "position": "1B"
           },
           {
-            "id": 807799,
-            "name": "Masataka Yoshida",
+            "id": 677800,
+            "name": "Wilyer Abreu",
             "order": 5,
-            "position": "DH"
+            "position": "RF"
           },
           {
             "id": 702332,
@@ -4624,10 +4627,10 @@
             "position": "SS"
           },
           {
-            "id": 657136,
-            "name": "Connor Wong",
+            "id": 642201,
+            "name": "Eli White",
             "order": 9,
-            "position": "C"
+            "position": "CF"
           }
         ],
         "homeLineup": [
@@ -4686,7 +4689,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-13)",
+        "awayLineupSource": "projected (last 2026-08-14)",
         "homeLineupSource": "projected (last 2026-08-13)"
       },
       {
