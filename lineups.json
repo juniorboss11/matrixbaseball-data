@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-14T23:08:13.649Z",
+  "refreshedAt": "2026-08-14T23:33:44.864Z",
   "today": "2026-08-14",
   "dates": [
     "2026-08-13",
@@ -1807,7 +1807,7 @@
       {
         "id": "g823591",
         "gamePk": 823591,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "WSH",
         "homeTeam": "NYM",
         "awayTeamId": 120,
@@ -1945,7 +1945,7 @@
       {
         "id": "g824399",
         "gamePk": 824399,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "SD",
         "homeTeam": "CLE",
         "awayTeamId": 135,
@@ -2083,7 +2083,7 @@
       {
         "id": "g822942",
         "gamePk": 822942,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "BAL",
         "homeTeam": "TB",
         "awayTeamId": 110,
@@ -2221,7 +2221,7 @@
       {
         "id": "g824882",
         "gamePk": 824882,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "AZ",
         "homeTeam": "ATL",
         "awayTeamId": 109,
@@ -2359,7 +2359,7 @@
       {
         "id": "g822777",
         "gamePk": 822777,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "NYY",
         "homeTeam": "TOR",
         "awayTeamId": 147,
@@ -2788,62 +2788,65 @@
           "id": 677958,
           "name": "Kumar Rocker"
         },
-        "homePitcher": null,
-        "lineupsConfirmed": false,
+        "homePitcher": {
+          "id": 695611,
+          "name": "Gage Jump"
+        },
+        "lineupsConfirmed": true,
         "awayLineup": [
-          {
-            "id": 592626,
-            "name": "Joc Pederson",
-            "order": 1,
-            "position": "1B"
-          },
           {
             "id": 694671,
             "name": "Wyatt Langford",
-            "order": 2,
+            "order": 1,
             "position": "LF"
+          },
+          {
+            "id": 607043,
+            "name": "Brandon Nimmo",
+            "order": 2,
+            "position": "RF"
           },
           {
             "id": 608369,
             "name": "Corey Seager",
             "order": 3,
-            "position": "DH"
-          },
-          {
-            "id": 607043,
-            "name": "Brandon Nimmo",
-            "order": 4,
-            "position": "RF"
+            "position": "SS"
           },
           {
             "id": 677649,
             "name": "Ezequiel Duran",
-            "order": 5,
+            "order": 4,
             "position": "3B"
           },
           {
-            "id": 694497,
-            "name": "Evan Carter",
-            "order": 6,
-            "position": "CF"
-          },
-          {
-            "id": 670032,
-            "name": "Nicky Lopez",
-            "order": 7,
-            "position": "SS"
-          },
-          {
-            "id": 642851,
-            "name": "Austin Wynns",
-            "order": 8,
-            "position": "C"
+            "id": 669394,
+            "name": "Jake Burger",
+            "order": 5,
+            "position": "1B"
           },
           {
             "id": 679822,
             "name": "Justin Foscue",
-            "order": 9,
+            "order": 6,
+            "position": "DH"
+          },
+          {
+            "id": 683227,
+            "name": "Cody Freeman",
+            "order": 7,
             "position": "2B"
+          },
+          {
+            "id": 553869,
+            "name": "Elias Díaz",
+            "order": 8,
+            "position": "C"
+          },
+          {
+            "id": 694497,
+            "name": "Evan Carter",
+            "order": 9,
+            "position": "CF"
           }
         ],
         "homeLineup": [
@@ -2902,7 +2905,7 @@
             "position": "CF"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-14)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       },
       {
@@ -5124,62 +5127,65 @@
           "id": 669022,
           "name": "MacKenzie Gore"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 669372,
+          "name": "J.T. Ginn"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
-            "id": 592626,
-            "name": "Joc Pederson",
-            "order": 1,
-            "position": "1B"
-          },
-          {
             "id": 694671,
             "name": "Wyatt Langford",
-            "order": 2,
+            "order": 1,
             "position": "LF"
+          },
+          {
+            "id": 607043,
+            "name": "Brandon Nimmo",
+            "order": 2,
+            "position": "RF"
           },
           {
             "id": 608369,
             "name": "Corey Seager",
             "order": 3,
-            "position": "DH"
-          },
-          {
-            "id": 607043,
-            "name": "Brandon Nimmo",
-            "order": 4,
-            "position": "RF"
+            "position": "SS"
           },
           {
             "id": 677649,
             "name": "Ezequiel Duran",
-            "order": 5,
+            "order": 4,
             "position": "3B"
           },
           {
-            "id": 694497,
-            "name": "Evan Carter",
-            "order": 6,
-            "position": "CF"
-          },
-          {
-            "id": 670032,
-            "name": "Nicky Lopez",
-            "order": 7,
-            "position": "SS"
-          },
-          {
-            "id": 642851,
-            "name": "Austin Wynns",
-            "order": 8,
-            "position": "C"
+            "id": 669394,
+            "name": "Jake Burger",
+            "order": 5,
+            "position": "1B"
           },
           {
             "id": 679822,
             "name": "Justin Foscue",
-            "order": 9,
+            "order": 6,
+            "position": "DH"
+          },
+          {
+            "id": 683227,
+            "name": "Cody Freeman",
+            "order": 7,
             "position": "2B"
+          },
+          {
+            "id": 553869,
+            "name": "Elias Díaz",
+            "order": 8,
+            "position": "C"
+          },
+          {
+            "id": 694497,
+            "name": "Evan Carter",
+            "order": 9,
+            "position": "CF"
           }
         ],
         "homeLineup": [
@@ -5238,7 +5244,7 @@
             "position": "CF"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-14)",
+        "awayLineupSource": "projected (last 2026-08-15)",
         "homeLineupSource": "projected (last 2026-08-15)"
       }
     ]
