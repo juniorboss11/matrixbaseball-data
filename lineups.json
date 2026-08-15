@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-15T18:45:18.349Z",
+  "refreshedAt": "2026-08-15T19:09:40.730Z",
   "today": "2026-08-15",
   "dates": [
     "2026-08-14",
@@ -2221,7 +2221,7 @@
       {
         "id": "g822775",
         "gamePk": 822775,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "NYY",
         "homeTeam": "TOR",
         "awayTeamId": 147,
@@ -2911,7 +2911,7 @@
       {
         "id": "g824400",
         "gamePk": 824400,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "SD",
         "homeTeam": "CLE",
         "awayTeamId": 135,
@@ -2922,7 +2922,10 @@
         "parkHrFactor": 97,
         "startUtc": "2026-08-15T23:10:00Z",
         "startET": "7:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 593974,
+          "name": "Wandy Peralta"
+        },
         "homePitcher": {
           "id": 676282,
           "name": "Joey Cantillo"
@@ -2989,43 +2992,43 @@
             "id": 680757,
             "name": "Steven Kwan",
             "order": 1,
-            "position": "DH"
+            "position": "LF"
           },
           {
             "id": 800050,
             "name": "Chase DeLauter",
             "order": 2,
-            "position": "RF"
+            "position": "DH"
           },
           {
-            "id": 682657,
-            "name": "Angel Martínez",
+            "id": 608070,
+            "name": "José Ramírez",
             "order": 3,
-            "position": "LF"
+            "position": "3B"
+          },
+          {
+            "id": 666176,
+            "name": "Jo Adell",
+            "order": 4,
+            "position": "RF"
           },
           {
             "id": 663993,
             "name": "Nathaniel Lowe",
-            "order": 4,
-            "position": "1B"
-          },
-          {
-            "id": 683953,
-            "name": "Travis Bazzana",
             "order": 5,
-            "position": "2B"
+            "position": "1B"
           },
           {
             "id": 694197,
             "name": "Angel Genao",
             "order": 6,
-            "position": "3B"
+            "position": "SS"
           },
           {
-            "id": 690984,
-            "name": "Petey Halpin",
+            "id": 683953,
+            "name": "Travis Bazzana",
             "order": 7,
-            "position": "CF"
+            "position": "2B"
           },
           {
             "id": 672275,
@@ -3034,14 +3037,14 @@
             "position": "C"
           },
           {
-            "id": 677587,
-            "name": "Brayan Rocchio",
+            "id": 690984,
+            "name": "Petey Halpin",
             "order": 9,
-            "position": "SS"
+            "position": "CF"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-14)",
-        "homeLineupSource": "projected (last 2026-08-14)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g824157",
@@ -4785,43 +4788,43 @@
             "id": 680757,
             "name": "Steven Kwan",
             "order": 1,
-            "position": "DH"
+            "position": "LF"
           },
           {
             "id": 800050,
             "name": "Chase DeLauter",
             "order": 2,
-            "position": "RF"
+            "position": "DH"
           },
           {
-            "id": 682657,
-            "name": "Angel Martínez",
+            "id": 608070,
+            "name": "José Ramírez",
             "order": 3,
-            "position": "LF"
+            "position": "3B"
+          },
+          {
+            "id": 666176,
+            "name": "Jo Adell",
+            "order": 4,
+            "position": "RF"
           },
           {
             "id": 663993,
             "name": "Nathaniel Lowe",
-            "order": 4,
-            "position": "1B"
-          },
-          {
-            "id": 683953,
-            "name": "Travis Bazzana",
             "order": 5,
-            "position": "2B"
+            "position": "1B"
           },
           {
             "id": 694197,
             "name": "Angel Genao",
             "order": 6,
-            "position": "3B"
+            "position": "SS"
           },
           {
-            "id": 690984,
-            "name": "Petey Halpin",
+            "id": 683953,
+            "name": "Travis Bazzana",
             "order": 7,
-            "position": "CF"
+            "position": "2B"
           },
           {
             "id": 672275,
@@ -4830,14 +4833,14 @@
             "position": "C"
           },
           {
-            "id": 677587,
-            "name": "Brayan Rocchio",
+            "id": 690984,
+            "name": "Petey Halpin",
             "order": 9,
-            "position": "SS"
+            "position": "CF"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-14)",
-        "homeLineupSource": "projected (last 2026-08-14)"
+        "homeLineupSource": "projected (last 2026-08-15)"
       },
       {
         "id": "g824236",
