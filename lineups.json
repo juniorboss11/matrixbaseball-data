@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-15T19:09:40.730Z",
+  "refreshedAt": "2026-08-15T19:32:14.993Z",
   "today": "2026-08-15",
   "dates": [
     "2026-08-14",
@@ -3049,7 +3049,7 @@
       {
         "id": "g824157",
         "gamePk": 824157,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "SEA",
         "homeTeam": "HOU",
         "awayTeamId": 136,
@@ -3068,13 +3068,13 @@
           "id": 669713,
           "name": "Hayden Wesneski"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
-            "id": 702284,
-            "name": "Cole Young",
+            "id": 680977,
+            "name": "Brendan Donovan",
             "order": 1,
-            "position": "2B"
+            "position": "3B"
           },
           {
             "id": 668227,
@@ -3086,13 +3086,13 @@
             "id": 686527,
             "name": "Dominic Canzone",
             "order": 3,
-            "position": "RF"
+            "position": "DH"
           },
           {
             "id": 677594,
             "name": "Julio Rodríguez",
             "order": 4,
-            "position": "DH"
+            "position": "CF"
           },
           {
             "id": 647304,
@@ -3101,10 +3101,10 @@
             "position": "1B"
           },
           {
-            "id": 680977,
-            "name": "Brendan Donovan",
+            "id": 702284,
+            "name": "Cole Young",
             "order": 6,
-            "position": "3B"
+            "position": "2B"
           },
           {
             "id": 663728,
@@ -3116,7 +3116,7 @@
             "id": 645302,
             "name": "Victor Robles",
             "order": 8,
-            "position": "CF"
+            "position": "RF"
           },
           {
             "id": 801126,
@@ -3145,10 +3145,10 @@
             "position": "3B"
           },
           {
-            "id": 666211,
-            "name": "Taylor Trammell",
+            "id": 662139,
+            "name": "Daulton Varsho",
             "order": 4,
-            "position": "LF"
+            "position": "CF"
           },
           {
             "id": 514888,
@@ -3157,16 +3157,16 @@
             "position": "2B"
           },
           {
-            "id": 662139,
-            "name": "Daulton Varsho",
-            "order": 6,
-            "position": "CF"
-          },
-          {
             "id": 572233,
             "name": "Christian Walker",
-            "order": 7,
+            "order": 6,
             "position": "1B"
+          },
+          {
+            "id": 666211,
+            "name": "Taylor Trammell",
+            "order": 7,
+            "position": "LF"
           },
           {
             "id": 701358,
@@ -3181,8 +3181,8 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-15)",
-        "homeLineupSource": "projected (last 2026-08-15)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g823671",
@@ -3601,7 +3601,7 @@
       {
         "id": "g823914",
         "gamePk": 823914,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "MIL",
         "homeTeam": "LAD",
         "awayTeamId": 158,
@@ -3685,46 +3685,46 @@
             "position": "DH"
           },
           {
+            "id": 518692,
+            "name": "Freddie Freeman",
+            "order": 2,
+            "position": "1B"
+          },
+          {
             "id": 681624,
             "name": "Andy Pages",
-            "order": 2,
+            "order": 3,
             "position": "CF"
           },
           {
-            "id": 606192,
-            "name": "Teoscar Hernández",
-            "order": 3,
-            "position": "LF"
+            "id": 571970,
+            "name": "Max Muncy",
+            "order": 4,
+            "position": "3B"
           },
           {
             "id": 605141,
             "name": "Mookie Betts",
-            "order": 4,
+            "order": 5,
             "position": "SS"
           },
           {
             "id": 669242,
             "name": "Tommy Edman",
-            "order": 5,
+            "order": 6,
             "position": "2B"
           },
           {
-            "id": 663656,
-            "name": "Kyle Tucker",
-            "order": 6,
-            "position": "RF"
-          },
-          {
-            "id": 571970,
-            "name": "Max Muncy",
+            "id": 606192,
+            "name": "Teoscar Hernández",
             "order": 7,
-            "position": "3B"
+            "position": "LF"
           },
           {
-            "id": 571771,
-            "name": "Enrique Hernández",
+            "id": 669743,
+            "name": "Alex Call",
             "order": 8,
-            "position": "1B"
+            "position": "RF"
           },
           {
             "id": 676439,
@@ -3734,7 +3734,7 @@
           }
         ],
         "awayLineupSource": "projected (last 2026-08-15)",
-        "homeLineupSource": "projected (last 2026-08-15)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g823990",
@@ -5895,46 +5895,46 @@
             "position": "DH"
           },
           {
+            "id": 518692,
+            "name": "Freddie Freeman",
+            "order": 2,
+            "position": "1B"
+          },
+          {
             "id": 681624,
             "name": "Andy Pages",
-            "order": 2,
+            "order": 3,
             "position": "CF"
           },
           {
-            "id": 606192,
-            "name": "Teoscar Hernández",
-            "order": 3,
-            "position": "LF"
+            "id": 571970,
+            "name": "Max Muncy",
+            "order": 4,
+            "position": "3B"
           },
           {
             "id": 605141,
             "name": "Mookie Betts",
-            "order": 4,
+            "order": 5,
             "position": "SS"
           },
           {
             "id": 669242,
             "name": "Tommy Edman",
-            "order": 5,
+            "order": 6,
             "position": "2B"
           },
           {
-            "id": 663656,
-            "name": "Kyle Tucker",
-            "order": 6,
-            "position": "RF"
-          },
-          {
-            "id": 571970,
-            "name": "Max Muncy",
+            "id": 606192,
+            "name": "Teoscar Hernández",
             "order": 7,
-            "position": "3B"
+            "position": "LF"
           },
           {
-            "id": 571771,
-            "name": "Enrique Hernández",
+            "id": 669743,
+            "name": "Alex Call",
             "order": 8,
-            "position": "1B"
+            "position": "RF"
           },
           {
             "id": 676439,
@@ -5971,10 +5971,10 @@
         "lineupsConfirmed": false,
         "awayLineup": [
           {
-            "id": 702284,
-            "name": "Cole Young",
+            "id": 680977,
+            "name": "Brendan Donovan",
             "order": 1,
-            "position": "2B"
+            "position": "3B"
           },
           {
             "id": 668227,
@@ -5986,13 +5986,13 @@
             "id": 686527,
             "name": "Dominic Canzone",
             "order": 3,
-            "position": "RF"
+            "position": "DH"
           },
           {
             "id": 677594,
             "name": "Julio Rodríguez",
             "order": 4,
-            "position": "DH"
+            "position": "CF"
           },
           {
             "id": 647304,
@@ -6001,10 +6001,10 @@
             "position": "1B"
           },
           {
-            "id": 680977,
-            "name": "Brendan Donovan",
+            "id": 702284,
+            "name": "Cole Young",
             "order": 6,
-            "position": "3B"
+            "position": "2B"
           },
           {
             "id": 663728,
@@ -6016,7 +6016,7 @@
             "id": 645302,
             "name": "Victor Robles",
             "order": 8,
-            "position": "CF"
+            "position": "RF"
           },
           {
             "id": 801126,
@@ -6045,10 +6045,10 @@
             "position": "3B"
           },
           {
-            "id": 666211,
-            "name": "Taylor Trammell",
+            "id": 662139,
+            "name": "Daulton Varsho",
             "order": 4,
-            "position": "LF"
+            "position": "CF"
           },
           {
             "id": 514888,
@@ -6057,16 +6057,16 @@
             "position": "2B"
           },
           {
-            "id": 662139,
-            "name": "Daulton Varsho",
-            "order": 6,
-            "position": "CF"
-          },
-          {
             "id": 572233,
             "name": "Christian Walker",
-            "order": 7,
+            "order": 6,
             "position": "1B"
+          },
+          {
+            "id": 666211,
+            "name": "Taylor Trammell",
+            "order": 7,
+            "position": "LF"
           },
           {
             "id": 701358,
