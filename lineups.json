@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-15T20:00:22.712Z",
+  "refreshedAt": "2026-08-15T20:31:25.805Z",
   "today": "2026-08-15",
   "dates": [
     "2026-08-14",
@@ -1945,7 +1945,7 @@
       {
         "id": "g824239",
         "gamePk": 824239,
-        "status": "Game Over",
+        "status": "Final",
         "awayTeam": "CWS",
         "homeTeam": "DET",
         "awayTeamId": 145,
@@ -2359,7 +2359,7 @@
       {
         "id": "g823184",
         "gamePk": 823184,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "COL",
         "homeTeam": "SF",
         "awayTeamId": 115,
@@ -2497,7 +2497,7 @@
       {
         "id": "g823588",
         "gamePk": 823588,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "WSH",
         "homeTeam": "NYM",
         "awayTeamId": 120,
@@ -3206,7 +3206,7 @@
           "id": 687570,
           "name": "Connor Prielipp"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 656941,
@@ -3233,22 +3233,22 @@
             "position": "2B"
           },
           {
-            "id": 681082,
-            "name": "Bryson Stott",
-            "order": 5,
-            "position": "3B"
-          },
-          {
             "id": 664761,
             "name": "Alec Bohm",
-            "order": 6,
+            "order": 5,
             "position": "1B"
           },
           {
-            "id": 669016,
-            "name": "Brandon Marsh",
-            "order": 7,
+            "id": 624641,
+            "name": "Edmundo Sosa",
+            "order": 6,
             "position": "LF"
+          },
+          {
+            "id": 681082,
+            "name": "Bryson Stott",
+            "order": 7,
+            "position": "3B"
           },
           {
             "id": 592663,
@@ -3257,8 +3257,8 @@
             "position": "C"
           },
           {
-            "id": 702222,
-            "name": "Justin Crawford",
+            "id": 656537,
+            "name": "Derek Hill",
             "order": 9,
             "position": "CF"
           }
@@ -3319,7 +3319,7 @@
             "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-13)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       },
       {
@@ -5167,22 +5167,22 @@
             "position": "2B"
           },
           {
-            "id": 681082,
-            "name": "Bryson Stott",
-            "order": 5,
-            "position": "3B"
-          },
-          {
             "id": 664761,
             "name": "Alec Bohm",
-            "order": 6,
+            "order": 5,
             "position": "1B"
           },
           {
-            "id": 669016,
-            "name": "Brandon Marsh",
-            "order": 7,
+            "id": 624641,
+            "name": "Edmundo Sosa",
+            "order": 6,
             "position": "LF"
+          },
+          {
+            "id": 681082,
+            "name": "Bryson Stott",
+            "order": 7,
+            "position": "3B"
           },
           {
             "id": 592663,
@@ -5191,8 +5191,8 @@
             "position": "C"
           },
           {
-            "id": 702222,
-            "name": "Justin Crawford",
+            "id": 656537,
+            "name": "Derek Hill",
             "order": 9,
             "position": "CF"
           }
@@ -5253,7 +5253,7 @@
             "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-13)",
+        "awayLineupSource": "projected (last 2026-08-15)",
         "homeLineupSource": "projected (last 2026-08-15)"
       },
       {
