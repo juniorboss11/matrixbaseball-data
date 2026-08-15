@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-15T19:32:14.993Z",
+  "refreshedAt": "2026-08-15T19:49:10.536Z",
   "today": "2026-08-15",
   "dates": [
     "2026-08-14",
@@ -1945,7 +1945,7 @@
       {
         "id": "g824239",
         "gamePk": 824239,
-        "status": "In Progress",
+        "status": "Game Over",
         "awayTeam": "CWS",
         "homeTeam": "DET",
         "awayTeamId": 145,
@@ -2359,7 +2359,7 @@
       {
         "id": "g823184",
         "gamePk": 823184,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "COL",
         "homeTeam": "SF",
         "awayTeamId": 115,
@@ -2497,7 +2497,7 @@
       {
         "id": "g823588",
         "gamePk": 823588,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "WSH",
         "homeTeam": "NYM",
         "awayTeamId": 120,
@@ -3325,7 +3325,7 @@
       {
         "id": "g823347",
         "gamePk": 823347,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "BOS",
         "homeTeam": "PIT",
         "awayTeamId": 111,
@@ -3344,19 +3344,19 @@
           "id": 683003,
           "name": "Jared Jones"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
-          {
-            "id": 686765,
-            "name": "Nick Sogard",
-            "order": 1,
-            "position": "2B"
-          },
           {
             "id": 807799,
             "name": "Masataka Yoshida",
-            "order": 2,
+            "order": 1,
             "position": "DH"
+          },
+          {
+            "id": 678882,
+            "name": "Ceddanne Rafaela",
+            "order": 2,
+            "position": "CF"
           },
           {
             "id": 668939,
@@ -3395,48 +3395,48 @@
             "position": "SS"
           },
           {
-            "id": 642201,
-            "name": "Eli White",
+            "id": 686765,
+            "name": "Nick Sogard",
             "order": 9,
-            "position": "CF"
+            "position": "2B"
           }
         ],
         "homeLineup": [
           {
-            "id": 693304,
-            "name": "Nick Gonzales",
+            "id": 687462,
+            "name": "Spencer Horwitz",
             "order": 1,
-            "position": "3B"
+            "position": "1B"
           },
           {
-            "id": 682927,
-            "name": "Ronny Simon",
+            "id": 664040,
+            "name": "Brandon Lowe",
             "order": 2,
-            "position": "DH"
+            "position": "2B"
           },
           {
             "id": 668804,
             "name": "Bryan Reynolds",
             "order": 3,
-            "position": "LF"
+            "position": "DH"
           },
           {
             "id": 699013,
             "name": "Esmerlyn Valdez",
             "order": 4,
+            "position": "LF"
+          },
+          {
+            "id": 682927,
+            "name": "Ronny Simon",
+            "order": 5,
             "position": "RF"
           },
           {
-            "id": 664040,
-            "name": "Brandon Lowe",
-            "order": 5,
-            "position": "2B"
-          },
-          {
-            "id": 804668,
-            "name": "Rafael Flores Jr.",
+            "id": 694378,
+            "name": "Jacob Gonzalez",
             "order": 6,
-            "position": "1B"
+            "position": "SS"
           },
           {
             "id": 663968,
@@ -3445,20 +3445,20 @@
             "position": "CF"
           },
           {
-            "id": 669707,
-            "name": "Jared Triolo",
+            "id": 804668,
+            "name": "Rafael Flores Jr.",
             "order": 8,
-            "position": "SS"
+            "position": "C"
           },
           {
-            "id": 680779,
-            "name": "Henry Davis",
+            "id": 669707,
+            "name": "Jared Triolo",
             "order": 9,
-            "position": "C"
+            "position": "3B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-14)",
-        "homeLineupSource": "projected (last 2026-08-14)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g824884",
@@ -4177,16 +4177,16 @@
         "lineupsConfirmed": false,
         "awayLineup": [
           {
-            "id": 686765,
-            "name": "Nick Sogard",
-            "order": 1,
-            "position": "2B"
-          },
-          {
             "id": 807799,
             "name": "Masataka Yoshida",
-            "order": 2,
+            "order": 1,
             "position": "DH"
+          },
+          {
+            "id": 678882,
+            "name": "Ceddanne Rafaela",
+            "order": 2,
+            "position": "CF"
           },
           {
             "id": 668939,
@@ -4225,48 +4225,48 @@
             "position": "SS"
           },
           {
-            "id": 642201,
-            "name": "Eli White",
+            "id": 686765,
+            "name": "Nick Sogard",
             "order": 9,
-            "position": "CF"
+            "position": "2B"
           }
         ],
         "homeLineup": [
           {
-            "id": 693304,
-            "name": "Nick Gonzales",
+            "id": 687462,
+            "name": "Spencer Horwitz",
             "order": 1,
-            "position": "3B"
+            "position": "1B"
           },
           {
-            "id": 682927,
-            "name": "Ronny Simon",
+            "id": 664040,
+            "name": "Brandon Lowe",
             "order": 2,
-            "position": "DH"
+            "position": "2B"
           },
           {
             "id": 668804,
             "name": "Bryan Reynolds",
             "order": 3,
-            "position": "LF"
+            "position": "DH"
           },
           {
             "id": 699013,
             "name": "Esmerlyn Valdez",
             "order": 4,
+            "position": "LF"
+          },
+          {
+            "id": 682927,
+            "name": "Ronny Simon",
+            "order": 5,
             "position": "RF"
           },
           {
-            "id": 664040,
-            "name": "Brandon Lowe",
-            "order": 5,
-            "position": "2B"
-          },
-          {
-            "id": 804668,
-            "name": "Rafael Flores Jr.",
+            "id": 694378,
+            "name": "Jacob Gonzalez",
             "order": 6,
-            "position": "1B"
+            "position": "SS"
           },
           {
             "id": 663968,
@@ -4275,20 +4275,20 @@
             "position": "CF"
           },
           {
-            "id": 669707,
-            "name": "Jared Triolo",
+            "id": 804668,
+            "name": "Rafael Flores Jr.",
             "order": 8,
-            "position": "SS"
+            "position": "C"
           },
           {
-            "id": 680779,
-            "name": "Henry Davis",
+            "id": 669707,
+            "name": "Jared Triolo",
             "order": 9,
-            "position": "C"
+            "position": "3B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-14)",
-        "homeLineupSource": "projected (last 2026-08-14)"
+        "awayLineupSource": "projected (last 2026-08-15)",
+        "homeLineupSource": "projected (last 2026-08-15)"
       },
       {
         "id": "g824880",
