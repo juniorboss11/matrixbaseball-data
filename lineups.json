@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-15T01:23:45.963Z",
+  "refreshedAt": "2026-08-15T02:34:12.129Z",
   "today": "2026-08-15",
   "dates": [
     "2026-08-14",
@@ -287,7 +287,7 @@
       {
         "id": "g823346",
         "gamePk": 823346,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "BOS",
         "homeTeam": "PIT",
         "awayTeamId": 111,
@@ -425,7 +425,7 @@
       {
         "id": "g824237",
         "gamePk": 824237,
-        "status": "Game Over",
+        "status": "Final",
         "awayTeam": "CWS",
         "homeTeam": "DET",
         "awayTeamId": 145,
@@ -563,7 +563,7 @@
       {
         "id": "g823591",
         "gamePk": 823591,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "WSH",
         "homeTeam": "NYM",
         "awayTeamId": 120,
@@ -701,7 +701,7 @@
       {
         "id": "g824399",
         "gamePk": 824399,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "SD",
         "homeTeam": "CLE",
         "awayTeamId": 135,
@@ -839,7 +839,7 @@
       {
         "id": "g822942",
         "gamePk": 822942,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "BAL",
         "homeTeam": "TB",
         "awayTeamId": 110,
@@ -977,7 +977,7 @@
       {
         "id": "g824882",
         "gamePk": 824882,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "AZ",
         "homeTeam": "ATL",
         "awayTeamId": 109,
@@ -1115,7 +1115,7 @@
       {
         "id": "g822777",
         "gamePk": 822777,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "NYY",
         "homeTeam": "TOR",
         "awayTeamId": 147,
@@ -1391,7 +1391,7 @@
       {
         "id": "g823993",
         "gamePk": 823993,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "KC",
         "homeTeam": "LAA",
         "awayTeamId": 118,
@@ -1529,7 +1529,7 @@
       {
         "id": "g824968",
         "gamePk": 824968,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "TEX",
         "homeTeam": "ATH",
         "awayTeamId": 140,
@@ -1667,7 +1667,7 @@
       {
         "id": "g823913",
         "gamePk": 823913,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "MIL",
         "homeTeam": "LAD",
         "awayTeamId": 158,
@@ -1805,7 +1805,7 @@
       {
         "id": "g823185",
         "gamePk": 823185,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "COL",
         "homeTeam": "SF",
         "awayTeamId": 115,
@@ -2505,7 +2505,10 @@
         "parkHrFactor": 103,
         "startUtc": "2026-08-15T20:10:00Z",
         "startET": "4:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 695418,
+          "name": "Brad Lord"
+        },
         "homePitcher": {
           "id": 640455,
           "name": "Sean Manaea"
