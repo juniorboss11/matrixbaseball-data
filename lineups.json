@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-15T15:33:24.344Z",
+  "refreshedAt": "2026-08-15T15:54:24.728Z",
   "today": "2026-08-15",
   "dates": [
     "2026-08-14",
@@ -2102,7 +2102,7 @@
           "id": 571510,
           "name": "Matthew Boyd"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 802139,
@@ -2170,58 +2170,58 @@
             "id": 673548,
             "name": "Seiya Suzuki",
             "order": 2,
-            "position": "DH"
-          },
-          {
-            "id": 608324,
-            "name": "Alex Bregman",
-            "order": 3,
-            "position": "3B"
+            "position": "RF"
           },
           {
             "id": 683737,
             "name": "Michael Busch",
-            "order": 4,
+            "order": 3,
             "position": "1B"
           },
           {
-            "id": 663538,
-            "name": "Nico Hoerner",
-            "order": 5,
-            "position": "2B"
-          },
-          {
-            "id": 608348,
-            "name": "Carson Kelly",
-            "order": 6,
-            "position": "C"
+            "id": 608324,
+            "name": "Alex Bregman",
+            "order": 4,
+            "position": "3B"
           },
           {
             "id": 664023,
             "name": "Ian Happ",
-            "order": 7,
+            "order": 5,
             "position": "LF"
           },
           {
-            "id": 621438,
-            "name": "Tyrone Taylor",
-            "order": 8,
-            "position": "RF"
+            "id": 663538,
+            "name": "Nico Hoerner",
+            "order": 6,
+            "position": "SS"
           },
           {
-            "id": 621020,
-            "name": "Dansby Swanson",
+            "id": 699393,
+            "name": "Pedro Ramírez",
+            "order": 7,
+            "position": "2B"
+          },
+          {
+            "id": 624424,
+            "name": "Michael Conforto",
+            "order": 8,
+            "position": "DH"
+          },
+          {
+            "id": 665804,
+            "name": "Miguel Amaya",
             "order": 9,
-            "position": "SS"
+            "position": "C"
           }
         ],
         "awayLineupSource": "confirmed",
-        "homeLineupSource": "projected (last 2026-08-14)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g822775",
         "gamePk": 822775,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "NYY",
         "homeTeam": "TOR",
         "awayTeamId": 147,
@@ -2311,22 +2311,22 @@
             "position": "RF"
           },
           {
-            "id": 665489,
-            "name": "Vladimir Guerrero Jr.",
+            "id": 672386,
+            "name": "Alejandro Kirk",
             "order": 3,
-            "position": "1B"
-          },
-          {
-            "id": 543807,
-            "name": "George Springer",
-            "order": 4,
             "position": "DH"
           },
           {
-            "id": 672386,
-            "name": "Alejandro Kirk",
+            "id": 660821,
+            "name": "Jesús Sánchez",
+            "order": 4,
+            "position": "LF"
+          },
+          {
+            "id": 672960,
+            "name": "Kazuma Okamoto",
             "order": 5,
-            "position": "C"
+            "position": "3B"
           },
           {
             "id": 665926,
@@ -2335,26 +2335,26 @@
             "position": "SS"
           },
           {
-            "id": 672960,
-            "name": "Kazuma Okamoto",
+            "id": 678218,
+            "name": "Brandon Valenzuela",
             "order": 7,
-            "position": "3B"
+            "position": "C"
           },
           {
-            "id": 660821,
-            "name": "Jesús Sánchez",
+            "id": 669701,
+            "name": "Josh Smith",
             "order": 8,
-            "position": "LF"
+            "position": "2B"
           },
           {
-            "id": 676391,
-            "name": "Ernie Clement",
+            "id": 807727,
+            "name": "Charles McAdoo",
             "order": 9,
-            "position": "2B"
+            "position": "1B"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-14)",
-        "homeLineupSource": "projected (last 2026-08-14)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g823184",
@@ -4518,22 +4518,22 @@
             "position": "RF"
           },
           {
-            "id": 665489,
-            "name": "Vladimir Guerrero Jr.",
+            "id": 672386,
+            "name": "Alejandro Kirk",
             "order": 3,
-            "position": "1B"
-          },
-          {
-            "id": 543807,
-            "name": "George Springer",
-            "order": 4,
             "position": "DH"
           },
           {
-            "id": 672386,
-            "name": "Alejandro Kirk",
+            "id": 660821,
+            "name": "Jesús Sánchez",
+            "order": 4,
+            "position": "LF"
+          },
+          {
+            "id": 672960,
+            "name": "Kazuma Okamoto",
             "order": 5,
-            "position": "C"
+            "position": "3B"
           },
           {
             "id": 665926,
@@ -4542,26 +4542,26 @@
             "position": "SS"
           },
           {
-            "id": 672960,
-            "name": "Kazuma Okamoto",
+            "id": 678218,
+            "name": "Brandon Valenzuela",
             "order": 7,
-            "position": "3B"
+            "position": "C"
           },
           {
-            "id": 660821,
-            "name": "Jesús Sánchez",
+            "id": 669701,
+            "name": "Josh Smith",
             "order": 8,
-            "position": "LF"
+            "position": "2B"
           },
           {
-            "id": 676391,
-            "name": "Ernie Clement",
+            "id": 807727,
+            "name": "Charles McAdoo",
             "order": 9,
-            "position": "2B"
+            "position": "1B"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-14)",
-        "homeLineupSource": "projected (last 2026-08-14)"
+        "homeLineupSource": "projected (last 2026-08-15)"
       },
       {
         "id": "g823590",
@@ -5343,53 +5343,53 @@
             "id": 673548,
             "name": "Seiya Suzuki",
             "order": 2,
-            "position": "DH"
-          },
-          {
-            "id": 608324,
-            "name": "Alex Bregman",
-            "order": 3,
-            "position": "3B"
+            "position": "RF"
           },
           {
             "id": 683737,
             "name": "Michael Busch",
-            "order": 4,
+            "order": 3,
             "position": "1B"
           },
           {
-            "id": 663538,
-            "name": "Nico Hoerner",
-            "order": 5,
-            "position": "2B"
-          },
-          {
-            "id": 608348,
-            "name": "Carson Kelly",
-            "order": 6,
-            "position": "C"
+            "id": 608324,
+            "name": "Alex Bregman",
+            "order": 4,
+            "position": "3B"
           },
           {
             "id": 664023,
             "name": "Ian Happ",
-            "order": 7,
+            "order": 5,
             "position": "LF"
           },
           {
-            "id": 621438,
-            "name": "Tyrone Taylor",
-            "order": 8,
-            "position": "RF"
+            "id": 663538,
+            "name": "Nico Hoerner",
+            "order": 6,
+            "position": "SS"
           },
           {
-            "id": 621020,
-            "name": "Dansby Swanson",
+            "id": 699393,
+            "name": "Pedro Ramírez",
+            "order": 7,
+            "position": "2B"
+          },
+          {
+            "id": 624424,
+            "name": "Michael Conforto",
+            "order": 8,
+            "position": "DH"
+          },
+          {
+            "id": 665804,
+            "name": "Miguel Amaya",
             "order": 9,
-            "position": "SS"
+            "position": "C"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-15)",
-        "homeLineupSource": "projected (last 2026-08-14)"
+        "homeLineupSource": "projected (last 2026-08-15)"
       },
       {
         "id": "g823182",
