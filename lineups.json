@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-15T22:30:39.523Z",
+  "refreshedAt": "2026-08-15T22:50:43.057Z",
   "today": "2026-08-15",
   "dates": [
     "2026-08-14",
@@ -2359,7 +2359,7 @@
       {
         "id": "g823184",
         "gamePk": 823184,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "COL",
         "homeTeam": "SF",
         "awayTeamId": 115,
@@ -2635,7 +2635,7 @@
       {
         "id": "g822941",
         "gamePk": 822941,
-        "status": "Player challenge",
+        "status": "In Progress",
         "awayTeam": "BAL",
         "homeTeam": "TB",
         "awayTeamId": 110,
@@ -2773,7 +2773,7 @@
       {
         "id": "g824480",
         "gamePk": 824480,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "MIA",
         "homeTeam": "CIN",
         "awayTeamId": 146,
@@ -2911,7 +2911,7 @@
       {
         "id": "g824400",
         "gamePk": 824400,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "SD",
         "homeTeam": "CLE",
         "awayTeamId": 135,
@@ -3049,7 +3049,7 @@
       {
         "id": "g824157",
         "gamePk": 824157,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "SEA",
         "homeTeam": "HOU",
         "awayTeamId": 136,
@@ -3187,7 +3187,7 @@
       {
         "id": "g823671",
         "gamePk": 823671,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "PHI",
         "homeTeam": "MIN",
         "awayTeamId": 143,
@@ -3325,7 +3325,7 @@
       {
         "id": "g823347",
         "gamePk": 823347,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "BOS",
         "homeTeam": "PIT",
         "awayTeamId": 111,
@@ -3463,7 +3463,7 @@
       {
         "id": "g824884",
         "gamePk": 824884,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "AZ",
         "homeTeam": "ATL",
         "awayTeamId": 109,
@@ -3896,13 +3896,13 @@
           "id": 669372,
           "name": "J.T. Ginn"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
-            "id": 694671,
-            "name": "Wyatt Langford",
+            "id": 592626,
+            "name": "Joc Pederson",
             "order": 1,
-            "position": "LF"
+            "position": "DH"
           },
           {
             "id": 607043,
@@ -3917,40 +3917,40 @@
             "position": "SS"
           },
           {
+            "id": 694671,
+            "name": "Wyatt Langford",
+            "order": 4,
+            "position": "LF"
+          },
+          {
             "id": 677649,
             "name": "Ezequiel Duran",
-            "order": 4,
-            "position": "3B"
-          },
-          {
-            "id": 669394,
-            "name": "Jake Burger",
             "order": 5,
-            "position": "1B"
-          },
-          {
-            "id": 679822,
-            "name": "Justin Foscue",
-            "order": 6,
-            "position": "DH"
-          },
-          {
-            "id": 683227,
-            "name": "Cody Freeman",
-            "order": 7,
-            "position": "2B"
-          },
-          {
-            "id": 553869,
-            "name": "Elias Díaz",
-            "order": 8,
-            "position": "C"
+            "position": "3B"
           },
           {
             "id": 694497,
             "name": "Evan Carter",
-            "order": 9,
+            "order": 6,
             "position": "CF"
+          },
+          {
+            "id": 669394,
+            "name": "Jake Burger",
+            "order": 7,
+            "position": "1B"
+          },
+          {
+            "id": 642851,
+            "name": "Austin Wynns",
+            "order": 8,
+            "position": "C"
+          },
+          {
+            "id": 670032,
+            "name": "Nicky Lopez",
+            "order": 9,
+            "position": "2B"
           }
         ],
         "homeLineup": [
@@ -4009,7 +4009,7 @@
             "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-15)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       }
     ],
@@ -5557,10 +5557,10 @@
         "lineupsConfirmed": false,
         "awayLineup": [
           {
-            "id": 694671,
-            "name": "Wyatt Langford",
+            "id": 592626,
+            "name": "Joc Pederson",
             "order": 1,
-            "position": "LF"
+            "position": "DH"
           },
           {
             "id": 607043,
@@ -5575,40 +5575,40 @@
             "position": "SS"
           },
           {
+            "id": 694671,
+            "name": "Wyatt Langford",
+            "order": 4,
+            "position": "LF"
+          },
+          {
             "id": 677649,
             "name": "Ezequiel Duran",
-            "order": 4,
-            "position": "3B"
-          },
-          {
-            "id": 669394,
-            "name": "Jake Burger",
             "order": 5,
-            "position": "1B"
-          },
-          {
-            "id": 679822,
-            "name": "Justin Foscue",
-            "order": 6,
-            "position": "DH"
-          },
-          {
-            "id": 683227,
-            "name": "Cody Freeman",
-            "order": 7,
-            "position": "2B"
-          },
-          {
-            "id": 553869,
-            "name": "Elias Díaz",
-            "order": 8,
-            "position": "C"
+            "position": "3B"
           },
           {
             "id": 694497,
             "name": "Evan Carter",
-            "order": 9,
+            "order": 6,
             "position": "CF"
+          },
+          {
+            "id": 669394,
+            "name": "Jake Burger",
+            "order": 7,
+            "position": "1B"
+          },
+          {
+            "id": 642851,
+            "name": "Austin Wynns",
+            "order": 8,
+            "position": "C"
+          },
+          {
+            "id": 670032,
+            "name": "Nicky Lopez",
+            "order": 9,
+            "position": "2B"
           }
         ],
         "homeLineup": [
@@ -5667,7 +5667,7 @@
             "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-15)",
+        "awayLineupSource": "projected (last 2026-08-16)",
         "homeLineupSource": "projected (last 2026-08-16)"
       },
       {
