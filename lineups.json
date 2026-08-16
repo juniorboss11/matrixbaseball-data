@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-16T16:28:54.988Z",
+  "refreshedAt": "2026-08-16T16:52:41.111Z",
   "today": "2026-08-16",
   "dates": [
     "2026-08-15",
@@ -328,7 +328,7 @@
           },
           {
             "id": 671277,
-            "name": "Luis García Jr.",
+            "name": "Luis García",
             "order": 4,
             "position": "1B"
           },
@@ -340,13 +340,13 @@
           },
           {
             "id": 665862,
-            "name": "Jazz Chisholm Jr.",
+            "name": "Jazz Chisholm",
             "order": 6,
             "position": "2B"
           },
           {
             "id": 806146,
-            "name": "George Lombard Jr.",
+            "name": "George Lombard",
             "order": 7,
             "position": "SS"
           },
@@ -1000,7 +1000,7 @@
         "awayLineup": [
           {
             "id": 665487,
-            "name": "Fernando Tatis Jr.",
+            "name": "Fernando Tatis",
             "order": 1,
             "position": "RF"
           },
@@ -3325,7 +3325,7 @@
       {
         "id": "g824642",
         "gamePk": 824642,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "STL",
         "homeTeam": "CHC",
         "awayTeamId": 138,
@@ -3359,16 +3359,16 @@
             "position": "DH"
           },
           {
-            "id": 691023,
-            "name": "Jordan Walker",
-            "order": 3,
-            "position": "RF"
-          },
-          {
             "id": 676475,
             "name": "Alec Burleson",
-            "order": 4,
+            "order": 3,
             "position": "1B"
+          },
+          {
+            "id": 691023,
+            "name": "Jordan Walker",
+            "order": 4,
+            "position": "RF"
           },
           {
             "id": 695491,
@@ -3377,28 +3377,28 @@
             "position": "LF"
           },
           {
+            "id": 701675,
+            "name": "Nathan Church",
+            "order": 6,
+            "position": "CF"
+          },
+          {
             "id": 691026,
             "name": "Masyn Winn",
-            "order": 6,
+            "order": 7,
             "position": "SS"
+          },
+          {
+            "id": 699625,
+            "name": "Jimmy Crooks",
+            "order": 8,
+            "position": "C"
           },
           {
             "id": 691458,
             "name": "Blaze Jordan",
-            "order": 7,
-            "position": "3B"
-          },
-          {
-            "id": 677592,
-            "name": "Everson Pereira",
-            "order": 8,
-            "position": "CF"
-          },
-          {
-            "id": 686780,
-            "name": "Pedro Pagés",
             "order": 9,
-            "position": "C"
+            "position": "3B"
           }
         ],
         "homeLineup": [
@@ -3457,13 +3457,13 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-15)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "projected (last 2026-08-15)"
       },
       {
         "id": "g823182",
         "gamePk": 823182,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "COL",
         "homeTeam": "SF",
         "awayTeamId": 115,
@@ -3596,7 +3596,7 @@
           }
         ],
         "awayLineupSource": "projected (last 2026-08-15)",
-        "homeLineupSource": "projected (last 2026-08-15)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g824965",
@@ -3739,7 +3739,7 @@
       {
         "id": "g823991",
         "gamePk": 823991,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "KC",
         "homeTeam": "LAA",
         "awayTeamId": 118,
@@ -3761,10 +3761,10 @@
         "lineupsConfirmed": false,
         "awayLineup": [
           {
-            "id": 679845,
-            "name": "Nick Loftin",
+            "id": 695600,
+            "name": "Carter Jensen",
             "order": 1,
-            "position": "3B"
+            "position": "C"
           },
           {
             "id": 677951,
@@ -3785,32 +3785,32 @@
             "position": "DH"
           },
           {
-            "id": 686555,
-            "name": "Isaac Collins",
-            "order": 5,
-            "position": "LF"
-          },
-          {
             "id": 686681,
             "name": "Michael Massey",
-            "order": 6,
+            "order": 5,
             "position": "2B"
           },
           {
-            "id": 516782,
-            "name": "Starling Marte",
+            "id": 679845,
+            "name": "Nick Loftin",
+            "order": 6,
+            "position": "3B"
+          },
+          {
+            "id": 686555,
+            "name": "Isaac Collins",
             "order": 7,
+            "position": "LF"
+          },
+          {
+            "id": 670231,
+            "name": "John Rave",
+            "order": 8,
             "position": "RF"
           },
           {
-            "id": 571912,
-            "name": "Luke Maile",
-            "order": 8,
-            "position": "C"
-          },
-          {
-            "id": 686475,
-            "name": "Tyler Tolbert",
+            "id": 664728,
+            "name": "Kyle Isbel",
             "order": 9,
             "position": "CF"
           }
@@ -3871,7 +3871,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-16)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "projected (last 2026-08-16)"
       },
       {
@@ -4186,16 +4186,16 @@
             "position": "DH"
           },
           {
-            "id": 691023,
-            "name": "Jordan Walker",
-            "order": 3,
-            "position": "RF"
-          },
-          {
             "id": 676475,
             "name": "Alec Burleson",
-            "order": 4,
+            "order": 3,
             "position": "1B"
+          },
+          {
+            "id": 691023,
+            "name": "Jordan Walker",
+            "order": 4,
+            "position": "RF"
           },
           {
             "id": 695491,
@@ -4204,28 +4204,28 @@
             "position": "LF"
           },
           {
+            "id": 701675,
+            "name": "Nathan Church",
+            "order": 6,
+            "position": "CF"
+          },
+          {
             "id": 691026,
             "name": "Masyn Winn",
-            "order": 6,
+            "order": 7,
             "position": "SS"
+          },
+          {
+            "id": 699625,
+            "name": "Jimmy Crooks",
+            "order": 8,
+            "position": "C"
           },
           {
             "id": 691458,
             "name": "Blaze Jordan",
-            "order": 7,
-            "position": "3B"
-          },
-          {
-            "id": 677592,
-            "name": "Everson Pereira",
-            "order": 8,
-            "position": "CF"
-          },
-          {
-            "id": 686780,
-            "name": "Pedro Pagés",
             "order": 9,
-            "position": "C"
+            "position": "3B"
           }
         ],
         "homeLineup": [
@@ -4284,7 +4284,7 @@
             "position": "3B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-15)",
+        "awayLineupSource": "projected (last 2026-08-16)",
         "homeLineupSource": "projected (last 2026-08-16)"
       },
       {
@@ -4318,16 +4318,16 @@
             "position": "DH"
           },
           {
-            "id": 691023,
-            "name": "Jordan Walker",
-            "order": 3,
-            "position": "RF"
-          },
-          {
             "id": 676475,
             "name": "Alec Burleson",
-            "order": 4,
+            "order": 3,
             "position": "1B"
+          },
+          {
+            "id": 691023,
+            "name": "Jordan Walker",
+            "order": 4,
+            "position": "RF"
           },
           {
             "id": 695491,
@@ -4336,28 +4336,28 @@
             "position": "LF"
           },
           {
+            "id": 701675,
+            "name": "Nathan Church",
+            "order": 6,
+            "position": "CF"
+          },
+          {
             "id": 691026,
             "name": "Masyn Winn",
-            "order": 6,
+            "order": 7,
             "position": "SS"
+          },
+          {
+            "id": 699625,
+            "name": "Jimmy Crooks",
+            "order": 8,
+            "position": "C"
           },
           {
             "id": 691458,
             "name": "Blaze Jordan",
-            "order": 7,
-            "position": "3B"
-          },
-          {
-            "id": 677592,
-            "name": "Everson Pereira",
-            "order": 8,
-            "position": "CF"
-          },
-          {
-            "id": 686780,
-            "name": "Pedro Pagés",
             "order": 9,
-            "position": "C"
+            "position": "3B"
           }
         ],
         "homeLineup": [
@@ -4416,7 +4416,7 @@
             "position": "3B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-15)",
+        "awayLineupSource": "projected (last 2026-08-16)",
         "homeLineupSource": "projected (last 2026-08-16)"
       },
       {
@@ -4568,7 +4568,10 @@
         "parkHrFactor": 109,
         "startUtc": "2026-08-17T22:40:00Z",
         "startET": "6:40 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 676083,
+          "name": "Janson Junk"
+        },
         "homePitcher": null,
         "lineupsConfirmed": false,
         "awayLineup": [
@@ -4700,7 +4703,10 @@
         "parkHrFactor": 96,
         "startUtc": "2026-08-17T23:05:00Z",
         "startET": "7:05 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 664285,
+          "name": "Framber Valdez"
+        },
         "homePitcher": null,
         "lineupsConfirmed": false,
         "awayLineup": [
@@ -4967,7 +4973,10 @@
         "parkHrFactor": 103,
         "startUtc": "2026-08-17T23:10:00Z",
         "startET": "7:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 621111,
+          "name": "Walker Buehler"
+        },
         "homePitcher": {
           "id": 690997,
           "name": "Nolan McLean"
@@ -5163,10 +5172,10 @@
         ],
         "homeLineup": [
           {
-            "id": 679845,
-            "name": "Nick Loftin",
+            "id": 695600,
+            "name": "Carter Jensen",
             "order": 1,
-            "position": "3B"
+            "position": "C"
           },
           {
             "id": 677951,
@@ -5187,32 +5196,32 @@
             "position": "DH"
           },
           {
-            "id": 686555,
-            "name": "Isaac Collins",
-            "order": 5,
-            "position": "LF"
-          },
-          {
             "id": 686681,
             "name": "Michael Massey",
-            "order": 6,
+            "order": 5,
             "position": "2B"
           },
           {
-            "id": 516782,
-            "name": "Starling Marte",
+            "id": 679845,
+            "name": "Nick Loftin",
+            "order": 6,
+            "position": "3B"
+          },
+          {
+            "id": 686555,
+            "name": "Isaac Collins",
             "order": 7,
+            "position": "LF"
+          },
+          {
+            "id": 670231,
+            "name": "John Rave",
+            "order": 8,
             "position": "RF"
           },
           {
-            "id": 571912,
-            "name": "Luke Maile",
-            "order": 8,
-            "position": "C"
-          },
-          {
-            "id": 686475,
-            "name": "Tyler Tolbert",
+            "id": 664728,
+            "name": "Kyle Isbel",
             "order": 9,
             "position": "CF"
           }
@@ -5234,8 +5243,14 @@
         "parkHrFactor": 101,
         "startUtc": "2026-08-17T23:40:00Z",
         "startET": "7:40 PM",
-        "awayPitcher": null,
-        "homePitcher": null,
+        "awayPitcher": {
+          "id": 527048,
+          "name": "Martín Pérez"
+        },
+        "homePitcher": {
+          "id": 641927,
+          "name": "Bailey Ober"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
