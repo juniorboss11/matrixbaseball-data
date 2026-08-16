@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-16T15:55:01.600Z",
+  "refreshedAt": "2026-08-16T16:28:54.988Z",
   "today": "2026-08-16",
   "dates": [
     "2026-08-15",
@@ -2083,7 +2083,7 @@
       {
         "id": "g822940",
         "gamePk": 822940,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "BAL",
         "homeTeam": "TB",
         "awayTeamId": 110,
@@ -2240,7 +2240,7 @@
           "id": 669199,
           "name": "Lake Bachar"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 686765,
@@ -2299,16 +2299,16 @@
         ],
         "homeLineup": [
           {
-            "id": 687462,
-            "name": "Spencer Horwitz",
+            "id": 669707,
+            "name": "Jared Triolo",
             "order": 1,
-            "position": "1B"
+            "position": "SS"
           },
           {
-            "id": 664040,
-            "name": "Brandon Lowe",
+            "id": 699013,
+            "name": "Esmerlyn Valdez",
             "order": 2,
-            "position": "2B"
+            "position": "RF"
           },
           {
             "id": 668804,
@@ -2317,44 +2317,44 @@
             "position": "DH"
           },
           {
-            "id": 699013,
-            "name": "Esmerlyn Valdez",
+            "id": 664040,
+            "name": "Brandon Lowe",
             "order": 4,
-            "position": "LF"
-          },
-          {
-            "id": 682927,
-            "name": "Ronny Simon",
-            "order": 5,
-            "position": "RF"
-          },
-          {
-            "id": 694378,
-            "name": "Jacob Gonzalez",
-            "order": 6,
-            "position": "SS"
-          },
-          {
-            "id": 663968,
-            "name": "Jake Mangum",
-            "order": 7,
-            "position": "CF"
+            "position": "2B"
           },
           {
             "id": 804668,
             "name": "Rafael Flores Jr.",
-            "order": 8,
-            "position": "C"
+            "order": 5,
+            "position": "1B"
           },
           {
-            "id": 669707,
-            "name": "Jared Triolo",
-            "order": 9,
+            "id": 663968,
+            "name": "Jake Mangum",
+            "order": 6,
+            "position": "LF"
+          },
+          {
+            "id": 694377,
+            "name": "Nick Yorke",
+            "order": 7,
             "position": "3B"
+          },
+          {
+            "id": 695257,
+            "name": "Billy Cook",
+            "order": 8,
+            "position": "CF"
+          },
+          {
+            "id": 680779,
+            "name": "Henry Davis",
+            "order": 9,
+            "position": "C"
           }
         ],
         "awayLineupSource": "confirmed",
-        "homeLineupSource": "projected (last 2026-08-15)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g824880",
@@ -4761,16 +4761,16 @@
         ],
         "homeLineup": [
           {
-            "id": 687462,
-            "name": "Spencer Horwitz",
+            "id": 669707,
+            "name": "Jared Triolo",
             "order": 1,
-            "position": "1B"
+            "position": "SS"
           },
           {
-            "id": 664040,
-            "name": "Brandon Lowe",
+            "id": 699013,
+            "name": "Esmerlyn Valdez",
             "order": 2,
-            "position": "2B"
+            "position": "RF"
           },
           {
             "id": 668804,
@@ -4779,44 +4779,44 @@
             "position": "DH"
           },
           {
-            "id": 699013,
-            "name": "Esmerlyn Valdez",
+            "id": 664040,
+            "name": "Brandon Lowe",
             "order": 4,
-            "position": "LF"
-          },
-          {
-            "id": 682927,
-            "name": "Ronny Simon",
-            "order": 5,
-            "position": "RF"
-          },
-          {
-            "id": 694378,
-            "name": "Jacob Gonzalez",
-            "order": 6,
-            "position": "SS"
-          },
-          {
-            "id": 663968,
-            "name": "Jake Mangum",
-            "order": 7,
-            "position": "CF"
+            "position": "2B"
           },
           {
             "id": 804668,
             "name": "Rafael Flores Jr.",
-            "order": 8,
-            "position": "C"
+            "order": 5,
+            "position": "1B"
           },
           {
-            "id": 669707,
-            "name": "Jared Triolo",
-            "order": 9,
+            "id": 663968,
+            "name": "Jake Mangum",
+            "order": 6,
+            "position": "LF"
+          },
+          {
+            "id": 694377,
+            "name": "Nick Yorke",
+            "order": 7,
             "position": "3B"
+          },
+          {
+            "id": 695257,
+            "name": "Billy Cook",
+            "order": 8,
+            "position": "CF"
+          },
+          {
+            "id": 680779,
+            "name": "Henry Davis",
+            "order": 9,
+            "position": "C"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-16)",
-        "homeLineupSource": "projected (last 2026-08-15)"
+        "homeLineupSource": "projected (last 2026-08-16)"
       },
       {
         "id": "g824725",
@@ -4832,7 +4832,10 @@
         "parkHrFactor": 105,
         "startUtc": "2026-08-17T23:10:00Z",
         "startET": "7:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 683352,
+          "name": "Mitch Bratt"
+        },
         "homePitcher": null,
         "lineupsConfirmed": false,
         "awayLineup": [
@@ -5363,7 +5366,10 @@
         "parkHrFactor": 107,
         "startUtc": "2026-08-18T00:05:00Z",
         "startET": "8:05 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 622491,
+          "name": "Luis Castillo"
+        },
         "homePitcher": {
           "id": 684007,
           "name": "Shota Imanaga"
