@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-16T13:57:40.524Z",
+  "refreshedAt": "2026-08-16T14:26:23.924Z",
   "today": "2026-08-16",
   "dates": [
     "2026-08-15",
@@ -2083,7 +2083,7 @@
       {
         "id": "g822940",
         "gamePk": 822940,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "BAL",
         "homeTeam": "TB",
         "awayTeamId": 110,
@@ -2179,10 +2179,10 @@
             "position": "3B"
           },
           {
-            "id": 689414,
-            "name": "Liam Hicks",
+            "id": 668723,
+            "name": "Ryan Vilade",
             "order": 4,
-            "position": "C"
+            "position": "RF"
           },
           {
             "id": 802415,
@@ -2194,19 +2194,19 @@
             "id": 676356,
             "name": "Jonny DeLuca",
             "order": 6,
-            "position": "RF"
-          },
-          {
-            "id": 656775,
-            "name": "Cedric Mullins",
-            "order": 7,
             "position": "CF"
           },
           {
-            "id": 680700,
-            "name": "Richie Palacios",
-            "order": 8,
+            "id": 622761,
+            "name": "Jorge Mateo",
+            "order": 7,
             "position": "2B"
+          },
+          {
+            "id": 663743,
+            "name": "Nick Fortes",
+            "order": 8,
+            "position": "C"
           },
           {
             "id": 670764,
@@ -2216,12 +2216,12 @@
           }
         ],
         "awayLineupSource": "projected (last 2026-08-15)",
-        "homeLineupSource": "projected (last 2026-08-15)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g823344",
         "gamePk": 823344,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "BOS",
         "homeTeam": "PIT",
         "awayTeamId": 111,
@@ -2243,10 +2243,10 @@
         "lineupsConfirmed": false,
         "awayLineup": [
           {
-            "id": 807799,
-            "name": "Masataka Yoshida",
+            "id": 686765,
+            "name": "Nick Sogard",
             "order": 1,
-            "position": "DH"
+            "position": "1B"
           },
           {
             "id": 678882,
@@ -2255,28 +2255,28 @@
             "position": "CF"
           },
           {
-            "id": 668939,
-            "name": "Adley Rutschman",
-            "order": 3,
-            "position": "C"
-          },
-          {
-            "id": 575929,
-            "name": "Willson Contreras",
-            "order": 4,
-            "position": "1B"
-          },
-          {
             "id": 677800,
             "name": "Wilyer Abreu",
-            "order": 5,
+            "order": 3,
             "position": "RF"
+          },
+          {
+            "id": 668939,
+            "name": "Adley Rutschman",
+            "order": 4,
+            "position": "DH"
           },
           {
             "id": 702332,
             "name": "Caleb Durbin",
-            "order": 6,
+            "order": 5,
             "position": "3B"
+          },
+          {
+            "id": 655316,
+            "name": "Andruw Monasterio",
+            "order": 6,
+            "position": "SS"
           },
           {
             "id": 680776,
@@ -2285,16 +2285,16 @@
             "position": "LF"
           },
           {
-            "id": 655316,
-            "name": "Andruw Monasterio",
+            "id": 678011,
+            "name": "Anthony Seigler",
             "order": 8,
-            "position": "SS"
+            "position": "2B"
           },
           {
-            "id": 686765,
-            "name": "Nick Sogard",
+            "id": 657136,
+            "name": "Connor Wong",
             "order": 9,
-            "position": "2B"
+            "position": "C"
           }
         ],
         "homeLineup": [
@@ -2353,7 +2353,7 @@
             "position": "3B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-15)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "projected (last 2026-08-15)"
       },
       {
@@ -4893,10 +4893,10 @@
         ],
         "homeLineup": [
           {
-            "id": 807799,
-            "name": "Masataka Yoshida",
+            "id": 686765,
+            "name": "Nick Sogard",
             "order": 1,
-            "position": "DH"
+            "position": "1B"
           },
           {
             "id": 678882,
@@ -4905,28 +4905,28 @@
             "position": "CF"
           },
           {
-            "id": 668939,
-            "name": "Adley Rutschman",
-            "order": 3,
-            "position": "C"
-          },
-          {
-            "id": 575929,
-            "name": "Willson Contreras",
-            "order": 4,
-            "position": "1B"
-          },
-          {
             "id": 677800,
             "name": "Wilyer Abreu",
-            "order": 5,
+            "order": 3,
             "position": "RF"
+          },
+          {
+            "id": 668939,
+            "name": "Adley Rutschman",
+            "order": 4,
+            "position": "DH"
           },
           {
             "id": 702332,
             "name": "Caleb Durbin",
-            "order": 6,
+            "order": 5,
             "position": "3B"
+          },
+          {
+            "id": 655316,
+            "name": "Andruw Monasterio",
+            "order": 6,
+            "position": "SS"
           },
           {
             "id": 680776,
@@ -4935,20 +4935,20 @@
             "position": "LF"
           },
           {
-            "id": 655316,
-            "name": "Andruw Monasterio",
+            "id": 678011,
+            "name": "Anthony Seigler",
             "order": 8,
-            "position": "SS"
+            "position": "2B"
           },
           {
-            "id": 686765,
-            "name": "Nick Sogard",
+            "id": 657136,
+            "name": "Connor Wong",
             "order": 9,
-            "position": "2B"
+            "position": "C"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-15)",
-        "homeLineupSource": "projected (last 2026-08-15)"
+        "homeLineupSource": "projected (last 2026-08-16)"
       },
       {
         "id": "g823589",
