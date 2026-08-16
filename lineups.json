@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-16T18:01:00.344Z",
+  "refreshedAt": "2026-08-16T18:39:55.046Z",
   "today": "2026-08-16",
   "dates": [
     "2026-08-15",
@@ -3187,7 +3187,7 @@
       {
         "id": "g823670",
         "gamePk": 823670,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "PHI",
         "homeTeam": "MIN",
         "awayTeamId": 143,
@@ -5522,8 +5522,14 @@
         "parkHrFactor": 117,
         "startUtc": "2026-08-18T00:40:00Z",
         "startET": "8:40 PM",
-        "awayPitcher": null,
-        "homePitcher": null,
+        "awayPitcher": {
+          "id": 605483,
+          "name": "Blake Snell"
+        },
+        "homePitcher": {
+          "id": 608372,
+          "name": "Tomoyuki Sugano"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
