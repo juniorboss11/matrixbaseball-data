@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-16T22:29:42.397Z",
+  "refreshedAt": "2026-08-16T22:49:03.294Z",
   "today": "2026-08-16",
   "dates": [
     "2026-08-15",
@@ -2221,7 +2221,7 @@
       {
         "id": "g823344",
         "gamePk": 823344,
-        "status": "In Progress",
+        "status": "Game Over",
         "awayTeam": "BOS",
         "homeTeam": "PIT",
         "awayTeamId": 111,
@@ -3601,7 +3601,7 @@
       {
         "id": "g824965",
         "gamePk": 824965,
-        "status": "In Progress",
+        "status": "Game Over",
         "awayTeam": "TEX",
         "homeTeam": "ATH",
         "awayTeamId": 140,
@@ -3739,7 +3739,7 @@
       {
         "id": "g823991",
         "gamePk": 823991,
-        "status": "Game Over",
+        "status": "Final",
         "awayTeam": "KC",
         "homeTeam": "LAA",
         "awayTeamId": 118,
@@ -5121,7 +5121,10 @@
           "id": 686930,
           "name": "Mason Barnett"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 608379,
+          "name": "Michael Wacha"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
