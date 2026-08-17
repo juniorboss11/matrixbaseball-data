@@ -107,9 +107,19 @@ export async function fetchPerHandArsenal(season, { log = () => {} } = {}) {
     for (const row of rows) push(map, row);
     log(`  per-hand ${pt} vs${hand}: ${rows.length} pitchers`);
   }
-  // Sort each pitcher's entries by usage desc so downstream code can trust ordering
+  // Normalize usage to "percent of pitches vs THIS hand" (Savant returns
+  // percent of pitcher's total pitches, so L+R across all pitches sums to 100).
+  // For PropFinder-style weighting we want the per-hand mix to sum to 100.
   for (const map of [L, R]) {
-    for (const [, arr] of map) arr.sort((a, b) => (b.usage ?? 0) - (a.usage ?? 0));
+    for (const [, arr] of map) {
+      const total = arr.reduce((a, e) => a + (e.usage ?? 0), 0);
+      if (total > 0) {
+        for (const e of arr) {
+          e.usage = e.usage != null ? +(e.usage * 100 / total).toFixed(1) : null;
+        }
+      }
+      arr.sort((a, b) => (b.usage ?? 0) - (a.usage ?? 0));
+    }
   }
   return { L, R };
 }
