@@ -6,6 +6,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { fetchPerHandArsenal } from "./per-hand-arsenal.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = process.env.GITHUB_WORKSPACE ? process.env.GITHUB_WORKSPACE : path.resolve(__dirname, "..");
@@ -565,17 +566,18 @@ async function main() {
   const pitcherMlbIds = [...playerCollector.pitchers];
 
   log(`fetching Baseball Savant leaderboards`);
-  const [savantHitters, savantPitchers, batterArsenal, pitcherArsenal] = await Promise.all([
+  const [savantHitters, savantPitchers, batterArsenal, pitcherArsenal, perHandArsenal] = await Promise.all([
     fetchSavantHitters(SEASON),
     fetchSavantPitchers(SEASON),
     fetchPitchArsenal(SEASON, "batter"),
     fetchPitchArsenal(SEASON, "pitcher"),
-    // Note: Savant's pitch-arsenal-stats leaderboard silently ignores hand= param.
-    // Per-hand arsenal would require per-pitcher Statcast search queries (much slower).
-    // Skipping for now — SLG Board matchup mode still filters hitter PAs to same-hand pitchers.
+    // Per-hand pitcher arsenal: iterate (10 pitch types × 2 batter hands) via statcast_search.
+    // The Savant leaderboard endpoint silently ignores hand=; statcast_search respects batter_stands.
+    fetchPerHandArsenal(SEASON, { log }),
   ]);
   log(`  Savant hitters: ${savantHitters.size} · Savant pitchers: ${savantPitchers.size}`);
   log(`  Batter arsenal: ${batterArsenal.size} · Pitcher arsenal: ${pitcherArsenal.size}`);
+  log(`  Per-hand arsenal: ${perHandArsenal.L.size} pitchers vs LHB, ${perHandArsenal.R.size} vs RHB`);
 
   const hitterStats = {};
   let hCount = 0;
@@ -613,7 +615,9 @@ async function main() {
     ]);
     const sv = savantPitchers.get(id);
     const arsenal = pitcherArsenal.get(id) ?? null;
-    pitcherStats[id] = { season, ...meta, splits, savant: sv ?? null, pitchArsenal: arsenal, windowed };
+    const arsenalVsL = perHandArsenal.L.get(id) ?? null;
+    const arsenalVsR = perHandArsenal.R.get(id) ?? null;
+    pitcherStats[id] = { season, ...meta, splits, savant: sv ?? null, pitchArsenal: arsenal, pitchArsenalVsLhb: arsenalVsL, pitchArsenalVsRhb: arsenalVsR, windowed };
     pCount++;
     if (pCount % 10 === 0) log(`  pitchers: ${pCount}/${pitcherMlbIds.length}`);
   }
