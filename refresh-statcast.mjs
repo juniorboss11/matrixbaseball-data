@@ -124,10 +124,12 @@ async function fetchSavantHitters(season) {
 // For pitchers: usage% + BA/SLG/wOBA/Whiff%/xwOBA allowed per pitch type.
 // For batters: each hitter's BA/SLG/wOBA/Whiff% vs each pitch type they've seen.
 // Returns Map<playerId, Array<{pitchType, pitchName, usage, pa, ba, slg, woba, whiffPct, kPct, xba, xslg, xwoba, hardHitPct}>>
-async function fetchPitchArsenal(season, type /* "pitcher" | "batter" */) {
+async function fetchPitchArsenal(season, type /* "pitcher" | "batter" */, hand /* "L" | "R" | null */ = null) {
   const out = new Map();
-  const url = `https://baseballsavant.mlb.com/leaderboard/pitch-arsenal-stats?type=${type}&pitchType=&year=${season}&team=&min=10&csv=true`;
-  const txt = await fetchText(url, `savant ${type} arsenal`);
+  const handParam = hand ? `&hand=${hand}` : "";
+  const label = hand ? `savant ${type} arsenal vs ${hand}HB` : `savant ${type} arsenal`;
+  const url = `https://baseballsavant.mlb.com/leaderboard/pitch-arsenal-stats?type=${type}&pitchType=&year=${season}&team=&min=10${handParam}&csv=true`;
+  const txt = await fetchText(url, label);
   if (!txt) return out;
   const { rows } = parseCsv(txt);
   for (const r of rows) {
@@ -563,14 +565,19 @@ async function main() {
   const pitcherMlbIds = [...playerCollector.pitchers];
 
   log(`fetching Baseball Savant leaderboards`);
-  const [savantHitters, savantPitchers, batterArsenal, pitcherArsenal] = await Promise.all([
+  const [savantHitters, savantPitchers, batterArsenal, pitcherArsenal, pitcherArsenalVsL, pitcherArsenalVsR] = await Promise.all([
     fetchSavantHitters(SEASON),
     fetchSavantPitchers(SEASON),
     fetchPitchArsenal(SEASON, "batter"),
     fetchPitchArsenal(SEASON, "pitcher"),
+    // Per-hand pitcher arsenal: usage / BA / SLG / wOBA / whiff% split by batter hand.
+    // Enables matching PropFinder's "pitcher arsenal vs LHB" / "vs RHB" views on the SLG Board.
+    fetchPitchArsenal(SEASON, "pitcher", "L"),
+    fetchPitchArsenal(SEASON, "pitcher", "R"),
   ]);
   log(`  Savant hitters: ${savantHitters.size} · Savant pitchers: ${savantPitchers.size}`);
   log(`  Batter arsenal: ${batterArsenal.size} · Pitcher arsenal: ${pitcherArsenal.size}`);
+  log(`  Pitcher arsenal vs LHB: ${pitcherArsenalVsL.size} · vs RHB: ${pitcherArsenalVsR.size}`);
 
   const hitterStats = {};
   let hCount = 0;
@@ -608,7 +615,9 @@ async function main() {
     ]);
     const sv = savantPitchers.get(id);
     const arsenal = pitcherArsenal.get(id) ?? null;
-    pitcherStats[id] = { season, ...meta, splits, savant: sv ?? null, pitchArsenal: arsenal, windowed };
+    const arsenalVsL = pitcherArsenalVsL.get(id) ?? null;
+    const arsenalVsR = pitcherArsenalVsR.get(id) ?? null;
+    pitcherStats[id] = { season, ...meta, splits, savant: sv ?? null, pitchArsenal: arsenal, pitchArsenalVsLhb: arsenalVsL, pitchArsenalVsRhb: arsenalVsR, windowed };
     pCount++;
     if (pCount % 10 === 0) log(`  pitchers: ${pCount}/${pitcherMlbIds.length}`);
   }
