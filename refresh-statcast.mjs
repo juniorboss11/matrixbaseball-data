@@ -237,6 +237,14 @@ async function fetchGamePerPaEv(gamePk) {
       pitchType: details?.type?.code ?? null,
       pitchName: details?.type?.description ?? null,
       velo: pitchData?.startSpeed ?? null,
+      // Handedness of the pitcher who threw this PA + batter who took it.
+      // Used for handedness-aware pitch splits: a righty batter's slider stats
+      // vs LHP look totally different from vs RHP — lumping them hides real edges.
+      pHand: m.pitchHand?.code ?? null,
+      bHand: m.batSide?.code ?? null,
+      // Pitcher id enables the mirror view on the pitcher side — "how does this
+      // pitcher's slider do vs LHB vs RHB" — by keying pitcher perPaEv the same way.
+      pitcherId: m.pitcher?.id ?? null,
       isHit: !!r.event && ["Single","Double","Triple","Home Run"].includes(r.event),
       isHr: r.event === "Home Run",
     };
@@ -669,11 +677,59 @@ async function main() {
       dist: e.dist,
       pt: e.pitchType,
       v: e.velo,
+      // ph = pitcher-hand code (L/R) for this PA. Enables handedness-aware
+      // filtering on the batter side: "my slider stats vs LHP only".
+      ph: e.pHand ?? null,
       hr: e.isHr ? 1 : 0,
       hit: e.isHit ? 1 : 0,
     }));
   }
   log(`per-PA EV complete: ${Object.keys(perPaEv).length} batters with history`);
+
+  // Build pitcher-side perPaEv from the same fetched game feeds so we can show
+  // "how his slider does vs LHB / vs RHB" on the pitcher panel. We already have
+  // pitcherId on every entry — just re-bucket by pitcherId instead of batterId.
+  log(`bucketing pitcher-side per-PA history...`);
+  const pitcherPerPaEv = {}; // pitcherId -> [entries newest first]
+  for (const arr of Object.values(perPaEv)) {
+    for (const e of arr) {
+      const pid = e.pitcherId;
+      if (!pid) continue;
+      if (!pitcherPerPaEv[pid]) pitcherPerPaEv[pid] = [];
+      pitcherPerPaEv[pid].push(e);
+    }
+  }
+  for (const arr of Object.values(pitcherPerPaEv)) {
+    arr.sort((a, b) => {
+      const dc = (b.date || "").localeCompare(a.date || "");
+      if (dc !== 0) return dc;
+      return (b.gamePk || 0) - (a.gamePk || 0);
+    });
+  }
+  // Attach compacted list to each pitcher — last 80 PA (pitchers face 20-25 per
+  // start, so this covers ~3-4 starts and gives enough per-pitch × hand depth).
+  let pitcherPaBuckets = 0;
+  for (const [pIdStr, p] of Object.entries(pitcherStats)) {
+    const pId = parseInt(pIdStr, 10);
+    const list = pitcherPerPaEv[pId] || [];
+    if (list.length === 0) continue;
+    pitcherPaBuckets++;
+    p.perPaEv = list.slice(0, 80).map((e) => ({
+      d: e.date,
+      r: e.result,
+      ev: e.ev,
+      la: e.la,
+      dist: e.dist,
+      pt: e.pitchType,
+      v: e.velo,
+      // bh = batter-hand code (L/R) for this PA the pitcher threw. Enables
+      // "this pitcher's slider vs LHB / vs RHB" splits on the pitcher panel.
+      bh: e.bHand ?? null,
+      hr: e.isHr ? 1 : 0,
+      hit: e.isHit ? 1 : 0,
+    }));
+  }
+  log(`pitcher per-PA EV complete: ${pitcherPaBuckets} pitchers with history`);
 
   log(`fetching BVP history for slate pairings...`);
   const bvpMap = {};
