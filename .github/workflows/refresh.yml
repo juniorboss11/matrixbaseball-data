@@ -36,11 +36,18 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "refresh slates.json"
+            # slates.json is a full snapshot generated from live MLB data. If a
+            # concurrent run pushed a stale version, our freshly generated one
+            # must win — use rebase with -X ours so conflicts auto-resolve to
+            # the just-generated file, and abort cleanly if rebase gets stuck.
             for i in 1 2 3 4 5; do
-              git pull --rebase origin main && git push && break || {
-                echo "push attempt $i failed, retrying in 5s..."
-                sleep 5
-              }
+              if git pull --rebase -X ours origin main; then
+                if git push; then break; fi
+              else
+                git rebase --abort || true
+              fi
+              echo "push attempt $i failed, retrying in 5s..."
+              sleep 5
             done
           fi
       - name: Update version.json with latest commit SHA
