@@ -565,19 +565,17 @@ async function main() {
   const pitcherMlbIds = [...playerCollector.pitchers];
 
   log(`fetching Baseball Savant leaderboards`);
-  const [savantHitters, savantPitchers, batterArsenal, pitcherArsenal, pitcherArsenalVsL, pitcherArsenalVsR] = await Promise.all([
+  const [savantHitters, savantPitchers, batterArsenal, pitcherArsenal] = await Promise.all([
     fetchSavantHitters(SEASON),
     fetchSavantPitchers(SEASON),
     fetchPitchArsenal(SEASON, "batter"),
     fetchPitchArsenal(SEASON, "pitcher"),
-    // Per-hand pitcher arsenal: usage / BA / SLG / wOBA / whiff% split by batter hand.
-    // Enables matching PropFinder's "pitcher arsenal vs LHB" / "vs RHB" views on the SLG Board.
-    fetchPitchArsenal(SEASON, "pitcher", "L"),
-    fetchPitchArsenal(SEASON, "pitcher", "R"),
+    // Note: Savant's pitch-arsenal-stats leaderboard silently ignores hand= param.
+    // Per-hand arsenal would require per-pitcher Statcast search queries (much slower).
+    // Skipping for now — SLG Board matchup mode still filters hitter PAs to same-hand pitchers.
   ]);
   log(`  Savant hitters: ${savantHitters.size} · Savant pitchers: ${savantPitchers.size}`);
   log(`  Batter arsenal: ${batterArsenal.size} · Pitcher arsenal: ${pitcherArsenal.size}`);
-  log(`  Pitcher arsenal vs LHB: ${pitcherArsenalVsL.size} · vs RHB: ${pitcherArsenalVsR.size}`);
 
   const hitterStats = {};
   let hCount = 0;
@@ -615,9 +613,7 @@ async function main() {
     ]);
     const sv = savantPitchers.get(id);
     const arsenal = pitcherArsenal.get(id) ?? null;
-    const arsenalVsL = pitcherArsenalVsL.get(id) ?? null;
-    const arsenalVsR = pitcherArsenalVsR.get(id) ?? null;
-    pitcherStats[id] = { season, ...meta, splits, savant: sv ?? null, pitchArsenal: arsenal, pitchArsenalVsLhb: arsenalVsL, pitchArsenalVsRhb: arsenalVsR, windowed };
+    pitcherStats[id] = { season, ...meta, splits, savant: sv ?? null, pitchArsenal: arsenal, windowed };
     pCount++;
     if (pCount % 10 === 0) log(`  pitchers: ${pCount}/${pitcherMlbIds.length}`);
   }
