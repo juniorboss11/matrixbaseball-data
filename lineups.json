@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-18T02:32:17.702Z",
+  "refreshedAt": "2026-08-18T03:24:22.293Z",
   "today": "2026-08-18",
   "dates": [
     "2026-08-17",
@@ -977,7 +977,7 @@
       {
         "id": "g824077",
         "gamePk": 824077,
-        "status": "Game Over",
+        "status": "Final",
         "awayTeam": "ATH",
         "homeTeam": "KC",
         "awayTeamId": 133,
@@ -1115,7 +1115,7 @@
       {
         "id": "g823668",
         "gamePk": 823668,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "ATL",
         "homeTeam": "MIN",
         "awayTeamId": 144,
@@ -2232,7 +2232,10 @@
         "parkHrFactor": 109,
         "startUtc": "2026-08-18T22:40:00Z",
         "startET": "6:40 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 806188,
+          "name": "Cade Gibson"
+        },
         "homePitcher": {
           "id": 554430,
           "name": "Zack Wheeler"
