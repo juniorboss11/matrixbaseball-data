@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-18T21:27:16.975Z",
+  "refreshedAt": "2026-08-18T21:48:57.280Z",
   "today": "2026-08-18",
   "dates": [
     "2026-08-17",
@@ -454,7 +454,7 @@
           },
           {
             "id": 681715,
-            "name": "Heriberto Hernandez",
+            "name": "Heriberto Hernández",
             "order": 2,
             "position": "LF"
           },
@@ -484,7 +484,7 @@
           },
           {
             "id": 677870,
-            "name": "Leo Jimenez",
+            "name": "Leo Jiménez",
             "order": 7,
             "position": "1B"
           },
@@ -672,7 +672,7 @@
           },
           {
             "id": 804668,
-            "name": "Rafael Flores",
+            "name": "Rafael Flores Jr.",
             "order": 6,
             "position": "1B"
           },
@@ -862,7 +862,7 @@
         "awayLineup": [
           {
             "id": 665487,
-            "name": "Fernando Tatis",
+            "name": "Fernando Tatis Jr.",
             "order": 1,
             "position": "RF"
           },
@@ -942,7 +942,7 @@
           },
           {
             "id": 673357,
-            "name": "Luis Robert",
+            "name": "Luis Robert Jr.",
             "order": 5,
             "position": "CF"
           },
@@ -1062,7 +1062,7 @@
           },
           {
             "id": 677951,
-            "name": "Bobby Witt",
+            "name": "Bobby Witt Jr.",
             "order": 2,
             "position": "SS"
           },
@@ -1144,7 +1144,7 @@
           },
           {
             "id": 660670,
-            "name": "Ronald Acuña",
+            "name": "Ronald Acuña Jr.",
             "order": 2,
             "position": "DH"
           },
@@ -1156,7 +1156,7 @@
           },
           {
             "id": 671739,
-            "name": "Michael Harris",
+            "name": "Michael Harris II",
             "order": 4,
             "position": "CF"
           },
@@ -3482,7 +3482,7 @@
           "id": 663372,
           "name": "Ryan Feltner"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 660271,
@@ -3515,16 +3515,16 @@
             "position": "SS"
           },
           {
-            "id": 663656,
-            "name": "Kyle Tucker",
-            "order": 6,
-            "position": "RF"
-          },
-          {
             "id": 669242,
             "name": "Tommy Edman",
-            "order": 7,
+            "order": 6,
             "position": "2B"
+          },
+          {
+            "id": 663656,
+            "name": "Kyle Tucker",
+            "order": 7,
+            "position": "RF"
           },
           {
             "id": 606192,
@@ -3595,7 +3595,7 @@
             "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-18)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       }
     ],
@@ -4439,7 +4439,10 @@
         "parkHrFactor": 102,
         "startUtc": "2026-08-19T22:35:00Z",
         "startET": "6:35 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 701542,
+          "name": "Will Warren"
+        },
         "homePitcher": {
           "id": 605135,
           "name": "Chris Bassitt"
@@ -5566,16 +5569,16 @@
             "position": "SS"
           },
           {
-            "id": 663656,
-            "name": "Kyle Tucker",
-            "order": 6,
-            "position": "RF"
-          },
-          {
             "id": 669242,
             "name": "Tommy Edman",
-            "order": 7,
+            "order": 6,
             "position": "2B"
+          },
+          {
+            "id": 663656,
+            "name": "Kyle Tucker",
+            "order": 7,
+            "position": "RF"
           },
           {
             "id": 606192,
@@ -5646,7 +5649,7 @@
             "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-18)",
+        "awayLineupSource": "projected (last 2026-08-19)",
         "homeLineupSource": "projected (last 2026-08-19)"
       }
     ]
