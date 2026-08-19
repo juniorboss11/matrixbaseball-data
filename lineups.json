@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-19T17:57:08.079Z",
+  "refreshedAt": "2026-08-19T18:39:21.101Z",
   "today": "2026-08-19",
   "dates": [
     "2026-08-18",
@@ -2497,7 +2497,7 @@
       {
         "id": "g824640",
         "gamePk": 824640,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "CWS",
         "homeTeam": "CHC",
         "awayTeamId": 145,
@@ -2654,7 +2654,7 @@
           "id": 801139,
           "name": "Payton Tolle"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 545121,
@@ -2672,7 +2672,7 @@
             "id": 672515,
             "name": "Gabriel Moreno",
             "order": 3,
-            "position": "DH"
+            "position": "C"
           },
           {
             "id": 672695,
@@ -2681,22 +2681,22 @@
             "position": "SS"
           },
           {
+            "id": 571448,
+            "name": "Nolan Arenado",
+            "order": 5,
+            "position": "DH"
+          },
+          {
             "id": 694374,
             "name": "Tim Tawa",
-            "order": 5,
+            "order": 6,
             "position": "1B"
           },
           {
             "id": 691783,
             "name": "Jordan Lawlar",
-            "order": 6,
-            "position": "CF"
-          },
-          {
-            "id": 543510,
-            "name": "James McCann",
             "order": 7,
-            "position": "C"
+            "position": "CF"
           },
           {
             "id": 699912,
@@ -2767,13 +2767,13 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-18)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       },
       {
         "id": "g823424",
         "gamePk": 823424,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "MIA",
         "homeTeam": "PHI",
         "awayTeamId": 146,
@@ -2893,20 +2893,20 @@
             "position": "LF"
           },
           {
-            "id": 592663,
-            "name": "J.T. Realmuto",
-            "order": 8,
-            "position": "C"
-          },
-          {
             "id": 702222,
             "name": "Justin Crawford",
-            "order": 9,
+            "order": 8,
             "position": "CF"
+          },
+          {
+            "id": 596117,
+            "name": "Garrett Stubbs",
+            "order": 9,
+            "position": "C"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-18)",
-        "homeLineupSource": "projected (last 2026-08-18)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g824801",
@@ -3187,7 +3187,7 @@
       {
         "id": "g824476",
         "gamePk": 824476,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "STL",
         "homeTeam": "CIN",
         "awayTeamId": 138,
@@ -3277,50 +3277,50 @@
             "position": "1B"
           },
           {
-            "id": 668709,
-            "name": "JJ Bleday",
+            "id": 667472,
+            "name": "Dane Myers",
             "order": 3,
-            "position": "LF"
+            "position": "CF"
           },
           {
             "id": 553993,
             "name": "Eugenio Suárez",
             "order": 4,
-            "position": "DH"
+            "position": "3B"
           },
           {
             "id": 663886,
             "name": "Tyler Stephenson",
             "order": 5,
-            "position": "C"
+            "position": "DH"
           },
           {
-            "id": 667472,
-            "name": "Dane Myers",
+            "id": 669911,
+            "name": "Michael Toglia",
             "order": 6,
-            "position": "CF"
+            "position": "RF"
+          },
+          {
+            "id": 668709,
+            "name": "JJ Bleday",
+            "order": 7,
+            "position": "LF"
+          },
+          {
+            "id": 624431,
+            "name": "Jose Trevino",
+            "order": 8,
+            "position": "C"
           },
           {
             "id": 680574,
             "name": "Matt McLain",
-            "order": 7,
-            "position": "2B"
-          },
-          {
-            "id": 699302,
-            "name": "Héctor Rodríguez",
-            "order": 8,
-            "position": "RF"
-          },
-          {
-            "id": 663647,
-            "name": "Ke'Bryan Hayes",
             "order": 9,
-            "position": "3B"
+            "position": "2B"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-18)",
-        "homeLineupSource": "projected (last 2026-08-18)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g822937",
@@ -4239,50 +4239,50 @@
             "position": "1B"
           },
           {
-            "id": 668709,
-            "name": "JJ Bleday",
+            "id": 667472,
+            "name": "Dane Myers",
             "order": 3,
-            "position": "LF"
+            "position": "CF"
           },
           {
             "id": 553993,
             "name": "Eugenio Suárez",
             "order": 4,
-            "position": "DH"
+            "position": "3B"
           },
           {
             "id": 663886,
             "name": "Tyler Stephenson",
             "order": 5,
-            "position": "C"
+            "position": "DH"
           },
           {
-            "id": 667472,
-            "name": "Dane Myers",
+            "id": 669911,
+            "name": "Michael Toglia",
             "order": 6,
-            "position": "CF"
+            "position": "RF"
+          },
+          {
+            "id": 668709,
+            "name": "JJ Bleday",
+            "order": 7,
+            "position": "LF"
+          },
+          {
+            "id": 624431,
+            "name": "Jose Trevino",
+            "order": 8,
+            "position": "C"
           },
           {
             "id": 680574,
             "name": "Matt McLain",
-            "order": 7,
-            "position": "2B"
-          },
-          {
-            "id": 699302,
-            "name": "Héctor Rodríguez",
-            "order": 8,
-            "position": "RF"
-          },
-          {
-            "id": 663647,
-            "name": "Ke'Bryan Hayes",
             "order": 9,
-            "position": "3B"
+            "position": "2B"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-18)",
-        "homeLineupSource": "projected (last 2026-08-18)"
+        "homeLineupSource": "projected (last 2026-08-19)"
       },
       {
         "id": "g824395",
@@ -4710,7 +4710,10 @@
           "id": 656550,
           "name": "Grant Holmes"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 641743,
+          "name": "Anthony Kay"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
