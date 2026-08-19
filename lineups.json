@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-19T02:45:07.985Z",
+  "refreshedAt": "2026-08-19T03:33:07.343Z",
   "today": "2026-08-19",
   "dates": [
     "2026-08-18",
@@ -1391,7 +1391,7 @@
       {
         "id": "g823749",
         "gamePk": 823749,
-        "status": "Game Over",
+        "status": "Final",
         "awayTeam": "SEA",
         "homeTeam": "MIL",
         "awayTeamId": 136,
@@ -1529,7 +1529,7 @@
       {
         "id": "g822859",
         "gamePk": 822859,
-        "status": "Game Over",
+        "status": "Final",
         "awayTeam": "WSH",
         "homeTeam": "TEX",
         "awayTeamId": 120,
@@ -1667,7 +1667,7 @@
       {
         "id": "g824639",
         "gamePk": 824639,
-        "status": "In Progress",
+        "status": "Delayed",
         "awayTeam": "CWS",
         "homeTeam": "CHC",
         "awayTeamId": 145,
@@ -1805,7 +1805,7 @@
       {
         "id": "g824154",
         "gamePk": 824154,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "LAA",
         "homeTeam": "HOU",
         "awayTeamId": 108,
@@ -3745,7 +3745,10 @@
           "id": 676917,
           "name": "Cade Cavalli"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 677958,
+          "name": "Kumar Rocker"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
