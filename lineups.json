@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-19T19:35:37.938Z",
+  "refreshedAt": "2026-08-19T19:56:31.286Z",
   "today": "2026-08-19",
   "dates": [
     "2026-08-18",
@@ -2083,7 +2083,7 @@
       {
         "id": "g823342",
         "gamePk": 823342,
-        "status": "Game Over",
+        "status": "Final",
         "awayTeam": "DET",
         "homeTeam": "PIT",
         "awayTeamId": 116,
@@ -2635,7 +2635,7 @@
       {
         "id": "g824722",
         "gamePk": 824722,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "AZ",
         "homeTeam": "BOS",
         "awayTeamId": 109,
@@ -3344,7 +3344,7 @@
           "id": 656876,
           "name": "Drew Rasmussen"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 703520,
@@ -3362,41 +3362,41 @@
             "id": 672386,
             "name": "Alejandro Kirk",
             "order": 3,
-            "position": "C"
-          },
-          {
-            "id": 543807,
-            "name": "George Springer",
-            "order": 4,
             "position": "DH"
-          },
-          {
-            "id": 660821,
-            "name": "Jesús Sánchez",
-            "order": 5,
-            "position": "LF"
           },
           {
             "id": 672960,
             "name": "Kazuma Okamoto",
-            "order": 6,
+            "order": 4,
             "position": "1B"
           },
           {
             "id": 665926,
             "name": "Andrés Giménez",
-            "order": 7,
+            "order": 5,
             "position": "SS"
           },
           {
-            "id": 676391,
-            "name": "Ernie Clement",
-            "order": 8,
-            "position": "2B"
+            "id": 660821,
+            "name": "Jesús Sánchez",
+            "order": 6,
+            "position": "LF"
           },
           {
             "id": 669701,
             "name": "Josh Smith",
+            "order": 7,
+            "position": "2B"
+          },
+          {
+            "id": 678218,
+            "name": "Brandon Valenzuela",
+            "order": 8,
+            "position": "C"
+          },
+          {
+            "id": 807727,
+            "name": "Charles McAdoo",
             "order": 9,
             "position": "3B"
           }
@@ -3457,7 +3457,7 @@
             "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-18)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       },
       {
@@ -3474,7 +3474,10 @@
         "parkHrFactor": 94,
         "startUtc": "2026-08-19T23:40:00Z",
         "startET": "7:40 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 605488,
+          "name": "Jeffrey Springs"
+        },
         "homePitcher": {
           "id": 607625,
           "name": "Seth Lugo"
@@ -4465,41 +4468,41 @@
             "id": 672386,
             "name": "Alejandro Kirk",
             "order": 3,
-            "position": "C"
-          },
-          {
-            "id": 543807,
-            "name": "George Springer",
-            "order": 4,
             "position": "DH"
-          },
-          {
-            "id": 660821,
-            "name": "Jesús Sánchez",
-            "order": 5,
-            "position": "LF"
           },
           {
             "id": 672960,
             "name": "Kazuma Okamoto",
-            "order": 6,
+            "order": 4,
             "position": "1B"
           },
           {
             "id": 665926,
             "name": "Andrés Giménez",
-            "order": 7,
+            "order": 5,
             "position": "SS"
           },
           {
-            "id": 676391,
-            "name": "Ernie Clement",
-            "order": 8,
-            "position": "2B"
+            "id": 660821,
+            "name": "Jesús Sánchez",
+            "order": 6,
+            "position": "LF"
           },
           {
             "id": 669701,
             "name": "Josh Smith",
+            "order": 7,
+            "position": "2B"
+          },
+          {
+            "id": 678218,
+            "name": "Brandon Valenzuela",
+            "order": 8,
+            "position": "C"
+          },
+          {
+            "id": 807727,
+            "name": "Charles McAdoo",
             "order": 9,
             "position": "3B"
           }
@@ -4560,7 +4563,7 @@
             "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-18)",
+        "awayLineupSource": "projected (last 2026-08-19)",
         "homeLineupSource": "projected (last 2026-08-19)"
       },
       {
