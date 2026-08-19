@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-19T01:46:42.101Z",
+  "refreshedAt": "2026-08-19T02:45:07.985Z",
   "today": "2026-08-19",
   "dates": [
     "2026-08-18",
@@ -839,7 +839,7 @@
       {
         "id": "g824723",
         "gamePk": 824723,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "AZ",
         "homeTeam": "BOS",
         "awayTeamId": 109,
@@ -977,7 +977,7 @@
       {
         "id": "g823586",
         "gamePk": 823586,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "SD",
         "homeTeam": "NYM",
         "awayTeamId": 135,
@@ -1115,7 +1115,7 @@
       {
         "id": "g824075",
         "gamePk": 824075,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "ATH",
         "homeTeam": "KC",
         "awayTeamId": 133,
@@ -1253,7 +1253,7 @@
       {
         "id": "g823667",
         "gamePk": 823667,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "ATL",
         "homeTeam": "MIN",
         "awayTeamId": 144,
@@ -1391,7 +1391,7 @@
       {
         "id": "g823749",
         "gamePk": 823749,
-        "status": "In Progress",
+        "status": "Game Over",
         "awayTeam": "SEA",
         "homeTeam": "MIL",
         "awayTeamId": 136,
@@ -1529,7 +1529,7 @@
       {
         "id": "g822859",
         "gamePk": 822859,
-        "status": "In Progress",
+        "status": "Game Over",
         "awayTeam": "WSH",
         "homeTeam": "TEX",
         "awayTeamId": 120,
@@ -3057,7 +3057,10 @@
         "parkHrFactor": 97,
         "startUtc": "2026-08-19T22:40:00Z",
         "startET": "6:40 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 683363,
+          "name": "Matt Wilkinson"
+        },
         "homePitcher": {
           "id": 800048,
           "name": "Parker Messick"
