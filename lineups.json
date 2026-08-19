@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-19T16:01:35.370Z",
+  "refreshedAt": "2026-08-19T16:40:11.674Z",
   "today": "2026-08-19",
   "dates": [
     "2026-08-18",
@@ -2083,7 +2083,7 @@
       {
         "id": "g823342",
         "gamePk": 823342,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "DET",
         "homeTeam": "PIT",
         "awayTeamId": 116,
@@ -2516,7 +2516,7 @@
           "id": 605280,
           "name": "Clay Holmes"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 803011,
@@ -2578,13 +2578,13 @@
             "id": 691718,
             "name": "Pete Crow-Armstrong",
             "order": 1,
-            "position": "CF"
+            "position": "DH"
           },
           {
             "id": 673548,
             "name": "Seiya Suzuki",
             "order": 2,
-            "position": "DH"
+            "position": "RF"
           },
           {
             "id": 608324,
@@ -2611,31 +2611,31 @@
             "position": "2B"
           },
           {
-            "id": 664023,
-            "name": "Ian Happ",
+            "id": 608348,
+            "name": "Carson Kelly",
             "order": 7,
-            "position": "LF"
-          },
-          {
-            "id": 665804,
-            "name": "Miguel Amaya",
-            "order": 8,
             "position": "C"
           },
           {
-            "id": 624424,
-            "name": "Michael Conforto",
+            "id": 664023,
+            "name": "Ian Happ",
+            "order": 8,
+            "position": "LF"
+          },
+          {
+            "id": 621438,
+            "name": "Tyrone Taylor",
             "order": 9,
-            "position": "RF"
+            "position": "CF"
           }
         ],
         "awayLineupSource": "confirmed",
-        "homeLineupSource": "projected (last 2026-08-19)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g824722",
         "gamePk": 824722,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "AZ",
         "homeTeam": "BOS",
         "awayTeamId": 109,
@@ -2737,38 +2737,38 @@
             "position": "1B"
           },
           {
-            "id": 668939,
-            "name": "Adley Rutschman",
-            "order": 5,
-            "position": "C"
-          },
-          {
             "id": 702332,
             "name": "Caleb Durbin",
-            "order": 6,
+            "order": 5,
             "position": "3B"
-          },
-          {
-            "id": 680776,
-            "name": "Jarren Duran",
-            "order": 7,
-            "position": "LF"
-          },
-          {
-            "id": 655316,
-            "name": "Andruw Monasterio",
-            "order": 8,
-            "position": "SS"
           },
           {
             "id": 681508,
             "name": "Mickey Gasper",
-            "order": 9,
+            "order": 6,
             "position": "DH"
+          },
+          {
+            "id": 655316,
+            "name": "Andruw Monasterio",
+            "order": 7,
+            "position": "SS"
+          },
+          {
+            "id": 680776,
+            "name": "Jarren Duran",
+            "order": 8,
+            "position": "LF"
+          },
+          {
+            "id": 657136,
+            "name": "Connor Wong",
+            "order": 9,
+            "position": "C"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-18)",
-        "homeLineupSource": "projected (last 2026-08-18)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g823424",
