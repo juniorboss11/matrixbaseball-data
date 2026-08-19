@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-19T14:56:22.049Z",
+  "refreshedAt": "2026-08-19T15:34:35.091Z",
   "today": "2026-08-19",
   "dates": [
     "2026-08-18",
@@ -2359,7 +2359,7 @@
       {
         "id": "g823664",
         "gamePk": 823664,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "ATL",
         "homeTeam": "MIN",
         "awayTeamId": 144,
@@ -2381,16 +2381,16 @@
         "lineupsConfirmed": false,
         "awayLineup": [
           {
-            "id": 686948,
-            "name": "Drake Baldwin",
-            "order": 1,
-            "position": "DH"
-          },
-          {
             "id": 660670,
             "name": "Ronald Acuña Jr.",
-            "order": 2,
+            "order": 1,
             "position": "RF"
+          },
+          {
+            "id": 686948,
+            "name": "Drake Baldwin",
+            "order": 2,
+            "position": "C"
           },
           {
             "id": 621566,
@@ -2405,34 +2405,34 @@
             "position": "CF"
           },
           {
+            "id": 642086,
+            "name": "Dominic Smith",
+            "order": 5,
+            "position": "DH"
+          },
+          {
             "id": 645277,
             "name": "Ozzie Albies",
-            "order": 5,
+            "order": 6,
             "position": "2B"
           },
           {
             "id": 573262,
             "name": "Mike Yastrzemski",
-            "order": 6,
+            "order": 7,
             "position": "LF"
           },
           {
             "id": 663586,
             "name": "Austin Riley",
-            "order": 7,
+            "order": 8,
             "position": "3B"
           },
           {
-            "id": 643289,
-            "name": "Mauricio Dubón",
-            "order": 8,
-            "position": "SS"
-          },
-          {
-            "id": 669221,
-            "name": "Sean Murphy",
+            "id": 805347,
+            "name": "Jim Jarvis",
             "order": 9,
-            "position": "C"
+            "position": "SS"
           }
         ],
         "homeLineup": [
@@ -2491,7 +2491,7 @@
             "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-18)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "projected (last 2026-08-18)"
       },
       {
@@ -4714,16 +4714,16 @@
         "lineupsConfirmed": false,
         "awayLineup": [
           {
-            "id": 686948,
-            "name": "Drake Baldwin",
-            "order": 1,
-            "position": "DH"
-          },
-          {
             "id": 660670,
             "name": "Ronald Acuña Jr.",
-            "order": 2,
+            "order": 1,
             "position": "RF"
+          },
+          {
+            "id": 686948,
+            "name": "Drake Baldwin",
+            "order": 2,
+            "position": "C"
           },
           {
             "id": 621566,
@@ -4738,34 +4738,34 @@
             "position": "CF"
           },
           {
+            "id": 642086,
+            "name": "Dominic Smith",
+            "order": 5,
+            "position": "DH"
+          },
+          {
             "id": 645277,
             "name": "Ozzie Albies",
-            "order": 5,
+            "order": 6,
             "position": "2B"
           },
           {
             "id": 573262,
             "name": "Mike Yastrzemski",
-            "order": 6,
+            "order": 7,
             "position": "LF"
           },
           {
             "id": 663586,
             "name": "Austin Riley",
-            "order": 7,
+            "order": 8,
             "position": "3B"
           },
           {
-            "id": 643289,
-            "name": "Mauricio Dubón",
-            "order": 8,
-            "position": "SS"
-          },
-          {
-            "id": 669221,
-            "name": "Sean Murphy",
+            "id": 805347,
+            "name": "Jim Jarvis",
             "order": 9,
-            "position": "C"
+            "position": "SS"
           }
         ],
         "homeLineup": [
@@ -4824,7 +4824,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-18)",
+        "awayLineupSource": "projected (last 2026-08-19)",
         "homeLineupSource": "projected (last 2026-08-19)"
       },
       {
