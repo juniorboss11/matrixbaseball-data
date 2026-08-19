@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-19T14:16:09.779Z",
+  "refreshedAt": "2026-08-19T14:56:22.049Z",
   "today": "2026-08-19",
   "dates": [
     "2026-08-18",
@@ -2240,7 +2240,7 @@
           "id": 476594,
           "name": "Robert Stock"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 665487,
@@ -2299,22 +2299,22 @@
         ],
         "homeLineup": [
           {
+            "id": 805999,
+            "name": "A.J. Ewing",
+            "order": 1,
+            "position": "CF"
+          },
+          {
             "id": 596019,
             "name": "Francisco Lindor",
-            "order": 1,
+            "order": 2,
             "position": "SS"
           },
           {
             "id": 666182,
             "name": "Bo Bichette",
-            "order": 2,
-            "position": "3B"
-          },
-          {
-            "id": 673357,
-            "name": "Luis Robert Jr.",
             "order": 3,
-            "position": "CF"
+            "position": "3B"
           },
           {
             "id": 701807,
@@ -2323,28 +2323,28 @@
             "position": "RF"
           },
           {
+            "id": 676724,
+            "name": "Jared Young",
+            "order": 5,
+            "position": "1B"
+          },
+          {
             "id": 682626,
             "name": "Francisco Alvarez",
-            "order": 5,
+            "order": 6,
             "position": "DH"
           },
           {
-            "id": 666624,
-            "name": "Christopher Morel",
-            "order": 6,
-            "position": "1B"
+            "id": 683146,
+            "name": "Brett Baty",
+            "order": 7,
+            "position": "LF"
           },
           {
             "id": 543760,
             "name": "Marcus Semien",
-            "order": 7,
-            "position": "2B"
-          },
-          {
-            "id": 805999,
-            "name": "A.J. Ewing",
             "order": 8,
-            "position": "LF"
+            "position": "2B"
           },
           {
             "id": 620443,
@@ -2354,7 +2354,7 @@
           }
         ],
         "awayLineupSource": "confirmed",
-        "homeLineupSource": "projected (last 2026-08-18)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g823664",
@@ -2497,7 +2497,7 @@
       {
         "id": "g824640",
         "gamePk": 824640,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "CWS",
         "homeTeam": "CHC",
         "awayTeamId": 145,
@@ -2567,8 +2567,8 @@
             "position": "CF"
           },
           {
-            "id": 691011,
-            "name": "Drew Romo",
+            "id": 668670,
+            "name": "Jake Rogers",
             "order": 9,
             "position": "C"
           }
@@ -2629,7 +2629,7 @@
             "position": "RF"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-19)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "projected (last 2026-08-19)"
       },
       {
@@ -4818,8 +4818,8 @@
             "position": "CF"
           },
           {
-            "id": 691011,
-            "name": "Drew Romo",
+            "id": 668670,
+            "name": "Jake Rogers",
             "order": 9,
             "position": "C"
           }
