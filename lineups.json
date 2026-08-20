@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-20T21:13:05.252Z",
+  "refreshedAt": "2026-08-20T21:44:18.988Z",
   "today": "2026-08-20",
   "dates": [
     "2026-08-19",
@@ -2497,7 +2497,7 @@
       {
         "id": "g824074",
         "gamePk": 824074,
-        "status": "Game Over",
+        "status": "Final",
         "awayTeam": "ATH",
         "homeTeam": "KC",
         "awayTeamId": 133,
@@ -2773,7 +2773,7 @@
       {
         "id": "g823747",
         "gamePk": 823747,
-        "status": "Game Over",
+        "status": "Final",
         "awayTeam": "SEA",
         "homeTeam": "MIL",
         "awayTeamId": 136,
@@ -3612,7 +3612,10 @@
         "startUtc": "2026-08-21T23:05:00Z",
         "startET": "7:05 PM",
         "awayPitcher": null,
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 693645,
+          "name": "Cam Schlittler"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
