@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-20T23:39:11.468Z",
+  "refreshedAt": "2026-08-20T23:58:06.435Z",
   "today": "2026-08-20",
   "dates": [
     "2026-08-19",
@@ -3049,7 +3049,7 @@
       {
         "id": "g822861",
         "gamePk": 822861,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "WSH",
         "homeTeam": "TEX",
         "awayTeamId": 120,
@@ -3187,7 +3187,7 @@
       {
         "id": "g824153",
         "gamePk": 824153,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "LAA",
         "homeTeam": "HOU",
         "awayTeamId": 108,
@@ -3884,7 +3884,10 @@
         "parkHrFactor": 100,
         "startUtc": "2026-08-21T23:10:00Z",
         "startET": "7:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 695418,
+          "name": "Brad Lord"
+        },
         "homePitcher": {
           "id": 687473,
           "name": "Ryan Gusto"
