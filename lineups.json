@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-20T20:47:05.186Z",
+  "refreshedAt": "2026-08-20T21:13:05.252Z",
   "today": "2026-08-20",
   "dates": [
     "2026-08-19",
@@ -2497,7 +2497,7 @@
       {
         "id": "g824074",
         "gamePk": 824074,
-        "status": "In Progress",
+        "status": "Game Over",
         "awayTeam": "ATH",
         "homeTeam": "KC",
         "awayTeamId": 133,
@@ -2773,7 +2773,7 @@
       {
         "id": "g823747",
         "gamePk": 823747,
-        "status": "In Progress",
+        "status": "Game Over",
         "awayTeam": "SEA",
         "homeTeam": "MIL",
         "awayTeamId": 136,
@@ -3206,7 +3206,7 @@
           "id": 663567,
           "name": "Peter Lambert"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 685133,
@@ -3265,10 +3265,10 @@
         ],
         "homeLineup": [
           {
-            "id": 665161,
-            "name": "Jeremy Peña",
+            "id": 664774,
+            "name": "LaMonte Wade Jr.",
             "order": 1,
-            "position": "SS"
+            "position": "1B"
           },
           {
             "id": 670541,
@@ -3289,28 +3289,28 @@
             "position": "2B"
           },
           {
-            "id": 664774,
-            "name": "LaMonte Wade Jr.",
+            "id": 662139,
+            "name": "Daulton Varsho",
             "order": 5,
+            "position": "CF"
+          },
+          {
+            "id": 666211,
+            "name": "Taylor Trammell",
+            "order": 6,
             "position": "LF"
           },
           {
             "id": 701358,
             "name": "Cam Smith",
-            "order": 6,
+            "order": 7,
             "position": "RF"
           },
           {
-            "id": 572233,
-            "name": "Christian Walker",
-            "order": 7,
-            "position": "1B"
-          },
-          {
-            "id": 666211,
-            "name": "Taylor Trammell",
+            "id": 669397,
+            "name": "Nick Allen",
             "order": 8,
-            "position": "CF"
+            "position": "SS"
           },
           {
             "id": 543877,
@@ -3320,7 +3320,7 @@
           }
         ],
         "awayLineupSource": "confirmed",
-        "homeLineupSource": "projected (last 2026-08-20)"
+        "homeLineupSource": "confirmed"
       }
     ],
     "2026-08-21": [
@@ -4020,7 +4020,10 @@
           "id": 642547,
           "name": "Freddy Peralta"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 669432,
+          "name": "Trevor Rogers"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -4491,10 +4494,10 @@
         ],
         "homeLineup": [
           {
-            "id": 665161,
-            "name": "Jeremy Peña",
+            "id": 664774,
+            "name": "LaMonte Wade Jr.",
             "order": 1,
-            "position": "SS"
+            "position": "1B"
           },
           {
             "id": 670541,
@@ -4515,28 +4518,28 @@
             "position": "2B"
           },
           {
-            "id": 664774,
-            "name": "LaMonte Wade Jr.",
+            "id": 662139,
+            "name": "Daulton Varsho",
             "order": 5,
+            "position": "CF"
+          },
+          {
+            "id": 666211,
+            "name": "Taylor Trammell",
+            "order": 6,
             "position": "LF"
           },
           {
             "id": 701358,
             "name": "Cam Smith",
-            "order": 6,
+            "order": 7,
             "position": "RF"
           },
           {
-            "id": 572233,
-            "name": "Christian Walker",
-            "order": 7,
-            "position": "1B"
-          },
-          {
-            "id": 666211,
-            "name": "Taylor Trammell",
+            "id": 669397,
+            "name": "Nick Allen",
             "order": 8,
-            "position": "CF"
+            "position": "SS"
           },
           {
             "id": 543877,
@@ -4546,7 +4549,7 @@
           }
         ],
         "awayLineupSource": "projected (last 2026-08-20)",
-        "homeLineupSource": "projected (last 2026-08-20)"
+        "homeLineupSource": "projected (last 2026-08-21)"
       },
       {
         "id": "g822857",
