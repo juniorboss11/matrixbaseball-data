@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-20T22:09:50.653Z",
+  "refreshedAt": "2026-08-20T22:43:24.678Z",
   "today": "2026-08-20",
   "dates": [
     "2026-08-19",
@@ -2911,7 +2911,7 @@
       {
         "id": "g824802",
         "gamePk": 824802,
-        "status": "Delayed Start",
+        "status": "Warmup",
         "awayTeam": "NYY",
         "homeTeam": "BAL",
         "awayTeamId": 147,
@@ -4437,7 +4437,10 @@
           "id": 669372,
           "name": "J.T. Ginn"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 669713,
+          "name": "Hayden Wesneski"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -4568,8 +4571,14 @@
         "parkHrFactor": 106,
         "startUtc": "2026-08-22T00:15:00Z",
         "startET": "8:15 PM",
-        "awayPitcher": null,
-        "homePitcher": null,
+        "awayPitcher": {
+          "id": 672282,
+          "name": "Reid Detmers"
+        },
+        "homePitcher": {
+          "id": 669022,
+          "name": "MacKenzie Gore"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
