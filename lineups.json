@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-21T18:43:43.563Z",
+  "refreshedAt": "2026-08-21T19:15:32.901Z",
   "today": "2026-08-21",
   "dates": [
     "2026-08-20",
@@ -510,7 +510,7 @@
           },
           {
             "id": 677951,
-            "name": "Bobby Witt Jr.",
+            "name": "Bobby Witt",
             "order": 2,
             "position": "SS"
           },
@@ -586,7 +586,7 @@
         "awayLineup": [
           {
             "id": 660670,
-            "name": "Ronald Acuña Jr.",
+            "name": "Ronald Acuña",
             "order": 1,
             "position": "RF"
           },
@@ -616,7 +616,7 @@
           },
           {
             "id": 671739,
-            "name": "Michael Harris II",
+            "name": "Michael Harris",
             "order": 6,
             "position": "CF"
           },
@@ -880,19 +880,19 @@
           },
           {
             "id": 671277,
-            "name": "Luis García Jr.",
+            "name": "Luis García",
             "order": 4,
             "position": "1B"
           },
           {
             "id": 665862,
-            "name": "Jazz Chisholm Jr.",
+            "name": "Jazz Chisholm",
             "order": 5,
             "position": "2B"
           },
           {
             "id": 806146,
-            "name": "George Lombard Jr.",
+            "name": "George Lombard",
             "order": 6,
             "position": "SS"
           },
@@ -1393,7 +1393,7 @@
       {
         "id": "g823420",
         "gamePk": 823420,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "STL",
         "homeTeam": "PHI",
         "awayTeamId": 138,
@@ -1404,12 +1404,15 @@
         "parkHrFactor": 109,
         "startUtc": "2026-08-21T22:40:00Z",
         "startET": "6:40 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 690928,
+          "name": "Hunter Dobbins"
+        },
         "homePitcher": {
           "id": 666200,
           "name": "Jesús Luzardo"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 802139,
@@ -1424,44 +1427,44 @@
             "position": "DH"
           },
           {
-            "id": 676475,
-            "name": "Alec Burleson",
-            "order": 3,
-            "position": "1B"
-          },
-          {
             "id": 691023,
             "name": "Jordan Walker",
-            "order": 4,
+            "order": 3,
             "position": "RF"
           },
           {
             "id": 695491,
             "name": "Joshua Báez",
-            "order": 5,
+            "order": 4,
             "position": "LF"
           },
           {
-            "id": 701675,
-            "name": "Nathan Church",
+            "id": 691458,
+            "name": "Blaze Jordan",
+            "order": 5,
+            "position": "1B"
+          },
+          {
+            "id": 665877,
+            "name": "José Fermín",
             "order": 6,
+            "position": "3B"
+          },
+          {
+            "id": 677592,
+            "name": "Everson Pereira",
+            "order": 7,
             "position": "CF"
           },
           {
             "id": 663494,
             "name": "Bryan Torres",
-            "order": 7,
+            "order": 8,
             "position": "2B"
           },
           {
-            "id": 691458,
-            "name": "Blaze Jordan",
-            "order": 8,
-            "position": "3B"
-          },
-          {
-            "id": 699625,
-            "name": "Jimmy Crooks",
+            "id": 686780,
+            "name": "Pedro Pagés",
             "order": 9,
             "position": "C"
           }
@@ -1510,20 +1513,20 @@
             "position": "LF"
           },
           {
-            "id": 702222,
-            "name": "Justin Crawford",
+            "id": 592663,
+            "name": "J.T. Realmuto",
             "order": 8,
-            "position": "CF"
+            "position": "C"
           },
           {
-            "id": 596117,
-            "name": "Garrett Stubbs",
+            "id": 702222,
+            "name": "Justin Crawford",
             "order": 9,
-            "position": "C"
+            "position": "CF"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-20)",
-        "homeLineupSource": "projected (last 2026-08-19)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g823510",
@@ -1625,19 +1628,19 @@
           },
           {
             "id": 671277,
-            "name": "Luis García Jr.",
+            "name": "Luis García",
             "order": 4,
             "position": "1B"
           },
           {
             "id": 665862,
-            "name": "Jazz Chisholm Jr.",
+            "name": "Jazz Chisholm",
             "order": 5,
             "position": "2B"
           },
           {
             "id": 806146,
-            "name": "George Lombard Jr.",
+            "name": "George Lombard",
             "order": 6,
             "position": "SS"
           },
@@ -1666,7 +1669,7 @@
       {
         "id": "g824721",
         "gamePk": 824721,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "SF",
         "homeTeam": "BOS",
         "awayTeamId": 137,
@@ -1798,7 +1801,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-20)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "projected (last 2026-08-19)"
       },
       {
@@ -1907,7 +1910,7 @@
           },
           {
             "id": 681715,
-            "name": "Heriberto Hernández",
+            "name": "Heriberto Hernandez",
             "order": 5,
             "position": "LF"
           },
@@ -2303,7 +2306,7 @@
           },
           {
             "id": 677951,
-            "name": "Bobby Witt Jr.",
+            "name": "Bobby Witt",
             "order": 2,
             "position": "SS"
           },
@@ -2984,7 +2987,7 @@
         "homeLineup": [
           {
             "id": 665487,
-            "name": "Fernando Tatis Jr.",
+            "name": "Fernando Tatis",
             "order": 1,
             "position": "RF"
           },
@@ -3418,19 +3421,19 @@
           },
           {
             "id": 671277,
-            "name": "Luis García Jr.",
+            "name": "Luis García",
             "order": 4,
             "position": "1B"
           },
           {
             "id": 665862,
-            "name": "Jazz Chisholm Jr.",
+            "name": "Jazz Chisholm",
             "order": 5,
             "position": "2B"
           },
           {
             "id": 806146,
-            "name": "George Lombard Jr.",
+            "name": "George Lombard",
             "order": 6,
             "position": "SS"
           },
@@ -3697,7 +3700,7 @@
           },
           {
             "id": 681715,
-            "name": "Heriberto Hernández",
+            "name": "Heriberto Hernandez",
             "order": 5,
             "position": "LF"
           },
@@ -3763,44 +3766,44 @@
             "position": "DH"
           },
           {
-            "id": 676475,
-            "name": "Alec Burleson",
-            "order": 3,
-            "position": "1B"
-          },
-          {
             "id": 691023,
             "name": "Jordan Walker",
-            "order": 4,
+            "order": 3,
             "position": "RF"
           },
           {
             "id": 695491,
             "name": "Joshua Báez",
-            "order": 5,
+            "order": 4,
             "position": "LF"
           },
           {
-            "id": 701675,
-            "name": "Nathan Church",
+            "id": 691458,
+            "name": "Blaze Jordan",
+            "order": 5,
+            "position": "1B"
+          },
+          {
+            "id": 665877,
+            "name": "José Fermín",
             "order": 6,
+            "position": "3B"
+          },
+          {
+            "id": 677592,
+            "name": "Everson Pereira",
+            "order": 7,
             "position": "CF"
           },
           {
             "id": 663494,
             "name": "Bryan Torres",
-            "order": 7,
+            "order": 8,
             "position": "2B"
           },
           {
-            "id": 691458,
-            "name": "Blaze Jordan",
-            "order": 8,
-            "position": "3B"
-          },
-          {
-            "id": 699625,
-            "name": "Jimmy Crooks",
+            "id": 686780,
+            "name": "Pedro Pagés",
             "order": 9,
             "position": "C"
           }
@@ -3849,20 +3852,20 @@
             "position": "LF"
           },
           {
-            "id": 702222,
-            "name": "Justin Crawford",
+            "id": 592663,
+            "name": "J.T. Realmuto",
             "order": 8,
-            "position": "CF"
+            "position": "C"
           },
           {
-            "id": 596117,
-            "name": "Garrett Stubbs",
+            "id": 702222,
+            "name": "Justin Crawford",
             "order": 9,
-            "position": "C"
+            "position": "CF"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-20)",
-        "homeLineupSource": "projected (last 2026-08-19)"
+        "awayLineupSource": "projected (last 2026-08-21)",
+        "homeLineupSource": "projected (last 2026-08-21)"
       },
       {
         "id": "g824798",
@@ -4498,7 +4501,7 @@
           },
           {
             "id": 677951,
-            "name": "Bobby Witt Jr.",
+            "name": "Bobby Witt",
             "order": 2,
             "position": "SS"
           },
@@ -4959,7 +4962,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-20)",
+        "awayLineupSource": "projected (last 2026-08-21)",
         "homeLineupSource": "projected (last 2026-08-19)"
       },
       {
@@ -5317,7 +5320,7 @@
         "homeLineup": [
           {
             "id": 665487,
-            "name": "Fernando Tatis Jr.",
+            "name": "Fernando Tatis",
             "order": 1,
             "position": "RF"
           },
