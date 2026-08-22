@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-22T20:53:25.007Z",
+  "refreshedAt": "2026-08-22T21:24:36.847Z",
   "today": "2026-08-22",
   "dates": [
     "2026-08-21",
@@ -2083,7 +2083,7 @@
       {
         "id": "g823509",
         "gamePk": 823509,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "TOR",
         "homeTeam": "NYY",
         "awayTeamId": 141,
@@ -2221,7 +2221,7 @@
       {
         "id": "g823743",
         "gamePk": 823743,
-        "status": "Game Over",
+        "status": "Final",
         "awayTeam": "ATL",
         "homeTeam": "MIL",
         "awayTeamId": 144,
@@ -2792,7 +2792,7 @@
           "id": 674003,
           "name": "Cody Bradford"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 687263,
@@ -2807,46 +2807,46 @@
             "position": "CF"
           },
           {
-            "id": 694208,
-            "name": "Moisés Ballesteros",
-            "order": 3,
-            "position": "DH"
-          },
-          {
             "id": 687093,
             "name": "Vaughn Grissom",
-            "order": 4,
+            "order": 3,
             "position": "1B"
+          },
+          {
+            "id": 694208,
+            "name": "Moisés Ballesteros",
+            "order": 4,
+            "position": "C"
           },
           {
             "id": 642350,
             "name": "Jose Siri",
             "order": 5,
+            "position": "RF"
+          },
+          {
+            "id": 672569,
+            "name": "Gustavo Campero",
+            "order": 6,
             "position": "LF"
           },
           {
             "id": 694203,
             "name": "Denzer Guzman",
-            "order": 6,
+            "order": 7,
             "position": "3B"
           },
           {
-            "id": 666139,
-            "name": "Josh Lowe",
-            "order": 7,
-            "position": "RF"
+            "id": 695681,
+            "name": "Christian Moore",
+            "order": 8,
+            "position": "2B"
           },
           {
             "id": 518595,
             "name": "Travis d'Arnaud",
-            "order": 8,
-            "position": "C"
-          },
-          {
-            "id": 672724,
-            "name": "Oswald Peraza",
             "order": 9,
-            "position": "2B"
+            "position": "DH"
           }
         ],
         "homeLineup": [
@@ -2905,7 +2905,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-22)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       },
       {
@@ -3896,7 +3896,7 @@
           "id": 687312,
           "name": "Gabriel Hughes"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 680757,
@@ -3908,7 +3908,7 @@
             "id": 800050,
             "name": "Chase DeLauter",
             "order": 2,
-            "position": "RF"
+            "position": "DH"
           },
           {
             "id": 608070,
@@ -3920,7 +3920,7 @@
             "id": 666176,
             "name": "Jo Adell",
             "order": 4,
-            "position": "DH"
+            "position": "RF"
           },
           {
             "id": 663993,
@@ -4009,7 +4009,7 @@
             "position": "LF"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-22)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       },
       {
@@ -5137,46 +5137,46 @@
             "position": "CF"
           },
           {
-            "id": 694208,
-            "name": "Moisés Ballesteros",
-            "order": 3,
-            "position": "DH"
-          },
-          {
             "id": 687093,
             "name": "Vaughn Grissom",
-            "order": 4,
+            "order": 3,
             "position": "1B"
+          },
+          {
+            "id": 694208,
+            "name": "Moisés Ballesteros",
+            "order": 4,
+            "position": "C"
           },
           {
             "id": 642350,
             "name": "Jose Siri",
             "order": 5,
+            "position": "RF"
+          },
+          {
+            "id": 672569,
+            "name": "Gustavo Campero",
+            "order": 6,
             "position": "LF"
           },
           {
             "id": 694203,
             "name": "Denzer Guzman",
-            "order": 6,
+            "order": 7,
             "position": "3B"
           },
           {
-            "id": 666139,
-            "name": "Josh Lowe",
-            "order": 7,
-            "position": "RF"
+            "id": 695681,
+            "name": "Christian Moore",
+            "order": 8,
+            "position": "2B"
           },
           {
             "id": 518595,
             "name": "Travis d'Arnaud",
-            "order": 8,
-            "position": "C"
-          },
-          {
-            "id": 672724,
-            "name": "Oswald Peraza",
             "order": 9,
-            "position": "2B"
+            "position": "DH"
           }
         ],
         "homeLineup": [
@@ -5272,7 +5272,7 @@
             "id": 800050,
             "name": "Chase DeLauter",
             "order": 2,
-            "position": "RF"
+            "position": "DH"
           },
           {
             "id": 608070,
@@ -5284,7 +5284,7 @@
             "id": 666176,
             "name": "Jo Adell",
             "order": 4,
-            "position": "DH"
+            "position": "RF"
           },
           {
             "id": 663993,
@@ -5373,7 +5373,7 @@
             "position": "LF"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-22)",
+        "awayLineupSource": "projected (last 2026-08-23)",
         "homeLineupSource": "projected (last 2026-08-23)"
       },
       {
