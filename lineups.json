@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-22T21:47:31.092Z",
+  "refreshedAt": "2026-08-22T22:00:52.259Z",
   "today": "2026-08-22",
   "dates": [
     "2026-08-21",
@@ -4034,7 +4034,7 @@
           "id": 663554,
           "name": "Casey Mize"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 807712,
@@ -4099,10 +4099,10 @@
             "position": "RF"
           },
           {
-            "id": 650859,
-            "name": "Luis Rengifo",
+            "id": 630105,
+            "name": "Jake Cronenworth",
             "order": 2,
-            "position": "DH"
+            "position": "2B"
           },
           {
             "id": 592518,
@@ -4123,32 +4123,32 @@
             "position": "CF"
           },
           {
-            "id": 593428,
-            "name": "Xander Bogaerts",
+            "id": 650859,
+            "name": "Luis Rengifo",
             "order": 6,
-            "position": "SS"
+            "position": "LF"
           },
           {
-            "id": 669720,
-            "name": "Austin Hays",
+            "id": 657757,
+            "name": "Gavin Sheets",
             "order": 7,
-            "position": "LF"
+            "position": "DH"
+          },
+          {
+            "id": 593428,
+            "name": "Xander Bogaerts",
+            "order": 8,
+            "position": "SS"
           },
           {
             "id": 666023,
             "name": "Freddy Fermin",
-            "order": 8,
-            "position": "C"
-          },
-          {
-            "id": 630105,
-            "name": "Jake Cronenworth",
             "order": 9,
-            "position": "2B"
+            "position": "C"
           }
         ],
         "awayLineupSource": "confirmed",
-        "homeLineupSource": "projected (last 2026-08-22)"
+        "homeLineupSource": "confirmed"
       }
     ],
     "2026-08-23": [
@@ -4304,7 +4304,10 @@
         "parkHrFactor": 109,
         "startUtc": "2026-08-23T17:35:00Z",
         "startET": "1:35 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 681517,
+          "name": "Kyle Leahy"
+        },
         "homePitcher": {
           "id": 650911,
           "name": "Cristopher Sánchez"
@@ -5874,10 +5877,10 @@
             "position": "RF"
           },
           {
-            "id": 650859,
-            "name": "Luis Rengifo",
+            "id": 630105,
+            "name": "Jake Cronenworth",
             "order": 2,
-            "position": "DH"
+            "position": "2B"
           },
           {
             "id": 592518,
@@ -5898,32 +5901,32 @@
             "position": "CF"
           },
           {
-            "id": 593428,
-            "name": "Xander Bogaerts",
+            "id": 650859,
+            "name": "Luis Rengifo",
             "order": 6,
-            "position": "SS"
+            "position": "LF"
           },
           {
-            "id": 669720,
-            "name": "Austin Hays",
+            "id": 657757,
+            "name": "Gavin Sheets",
             "order": 7,
-            "position": "LF"
+            "position": "DH"
+          },
+          {
+            "id": 593428,
+            "name": "Xander Bogaerts",
+            "order": 8,
+            "position": "SS"
           },
           {
             "id": 666023,
             "name": "Freddy Fermin",
-            "order": 8,
-            "position": "C"
-          },
-          {
-            "id": 630105,
-            "name": "Jake Cronenworth",
             "order": 9,
-            "position": "2B"
+            "position": "C"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-23)",
-        "homeLineupSource": "projected (last 2026-08-22)"
+        "homeLineupSource": "projected (last 2026-08-23)"
       },
       {
         "id": "g825043",
