@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-22T15:06:23.877Z",
+  "refreshedAt": "2026-08-22T15:33:18.681Z",
   "today": "2026-08-22",
   "dates": [
     "2026-08-21",
@@ -2221,7 +2221,7 @@
       {
         "id": "g823743",
         "gamePk": 823743,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "ATL",
         "homeTeam": "MIL",
         "awayTeamId": 144,
@@ -2243,16 +2243,16 @@
         "lineupsConfirmed": false,
         "awayLineup": [
           {
-            "id": 660670,
-            "name": "Ronald Acuña Jr.",
-            "order": 1,
-            "position": "RF"
-          },
-          {
             "id": 686948,
             "name": "Drake Baldwin",
-            "order": 2,
+            "order": 1,
             "position": "C"
+          },
+          {
+            "id": 660670,
+            "name": "Ronald Acuña Jr.",
+            "order": 2,
+            "position": "RF"
           },
           {
             "id": 621566,
@@ -2270,19 +2270,19 @@
             "id": 645277,
             "name": "Ozzie Albies",
             "order": 5,
-            "position": "2B"
+            "position": "DH"
           },
           {
             "id": 643289,
             "name": "Mauricio Dubón",
             "order": 6,
-            "position": "SS"
+            "position": "2B"
           },
           {
-            "id": 642086,
-            "name": "Dominic Smith",
+            "id": 573262,
+            "name": "Mike Yastrzemski",
             "order": 7,
-            "position": "DH"
+            "position": "LF"
           },
           {
             "id": 663586,
@@ -2291,10 +2291,10 @@
             "position": "3B"
           },
           {
-            "id": 573262,
-            "name": "Mike Yastrzemski",
+            "id": 805347,
+            "name": "Jim Jarvis",
             "order": 9,
-            "position": "LF"
+            "position": "SS"
           }
         ],
         "homeLineup": [
@@ -2353,7 +2353,7 @@
             "position": "CF"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-21)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "projected (last 2026-08-21)"
       },
       {
@@ -6082,16 +6082,16 @@
         "lineupsConfirmed": false,
         "awayLineup": [
           {
-            "id": 660670,
-            "name": "Ronald Acuña Jr.",
-            "order": 1,
-            "position": "RF"
-          },
-          {
             "id": 686948,
             "name": "Drake Baldwin",
-            "order": 2,
+            "order": 1,
             "position": "C"
+          },
+          {
+            "id": 660670,
+            "name": "Ronald Acuña Jr.",
+            "order": 2,
+            "position": "RF"
           },
           {
             "id": 621566,
@@ -6109,19 +6109,19 @@
             "id": 645277,
             "name": "Ozzie Albies",
             "order": 5,
-            "position": "2B"
+            "position": "DH"
           },
           {
             "id": 643289,
             "name": "Mauricio Dubón",
             "order": 6,
-            "position": "SS"
+            "position": "2B"
           },
           {
-            "id": 642086,
-            "name": "Dominic Smith",
+            "id": 573262,
+            "name": "Mike Yastrzemski",
             "order": 7,
-            "position": "DH"
+            "position": "LF"
           },
           {
             "id": 663586,
@@ -6130,10 +6130,10 @@
             "position": "3B"
           },
           {
-            "id": 573262,
-            "name": "Mike Yastrzemski",
+            "id": 805347,
+            "name": "Jim Jarvis",
             "order": 9,
-            "position": "LF"
+            "position": "SS"
           }
         ],
         "homeLineup": [
@@ -6192,7 +6192,7 @@
             "position": "CF"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-21)",
+        "awayLineupSource": "projected (last 2026-08-22)",
         "homeLineupSource": "projected (last 2026-08-21)"
       }
     ]
