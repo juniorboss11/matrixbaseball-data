@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-23T19:02:24.680Z",
+  "refreshedAt": "2026-08-23T19:29:30.298Z",
   "today": "2026-08-23",
   "dates": [
     "2026-08-22",
@@ -1030,7 +1030,7 @@
           },
           {
             "id": 673357,
-            "name": "Luis Robert Jr.",
+            "name": "Luis Robert",
             "order": 6,
             "position": "LF"
           },
@@ -3187,7 +3187,7 @@
       {
         "id": "g824315",
         "gamePk": 824315,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "CLE",
         "homeTeam": "COL",
         "awayTeamId": 114,
@@ -3325,7 +3325,7 @@
       {
         "id": "g824720",
         "gamePk": 824720,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "SF",
         "homeTeam": "BOS",
         "awayTeamId": 137,
@@ -4015,7 +4015,7 @@
       {
         "id": "g823745",
         "gamePk": 823745,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "ATL",
         "homeTeam": "MIL",
         "awayTeamId": 144,
@@ -4132,23 +4132,23 @@
             "id": 687401,
             "name": "Joey Ortiz",
             "order": 7,
-            "position": "3B"
+            "position": "SS"
           },
           {
-            "id": 800325,
-            "name": "Luis Lara",
+            "id": 669003,
+            "name": "Garrett Mitchell",
             "order": 8,
             "position": "CF"
           },
           {
-            "id": 806198,
-            "name": "Cooper Pratt",
+            "id": 666152,
+            "name": "David Hamilton",
             "order": 9,
-            "position": "SS"
+            "position": "3B"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-22)",
-        "homeLineupSource": "projected (last 2026-08-22)"
+        "homeLineupSource": "confirmed"
       }
     ],
     "2026-08-24": [
@@ -4857,7 +4857,10 @@
           "id": 592332,
           "name": "Kevin Gausman"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 518876,
+          "name": "Merrill Kelly"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -4988,7 +4991,10 @@
         "parkHrFactor": 95,
         "startUtc": "2026-08-25T01:40:00Z",
         "startET": "9:40 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 677952,
+          "name": "Braxton Ashcraft"
+        },
         "homePitcher": {
           "id": 592662,
           "name": "Robbie Ray"
@@ -5265,7 +5271,10 @@
           "id": 554430,
           "name": "Zack Wheeler"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 669302,
+          "name": "Logan Gilbert"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
