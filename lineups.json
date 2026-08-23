@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-23T00:25:52.288Z",
+  "refreshedAt": "2026-08-23T02:09:45.757Z",
   "today": "2026-08-23",
   "dates": [
     "2026-08-22",
@@ -425,7 +425,7 @@
       {
         "id": "g823422",
         "gamePk": 823422,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "STL",
         "homeTeam": "PHI",
         "awayTeamId": 138,
@@ -563,7 +563,7 @@
       {
         "id": "g824798",
         "gamePk": 824798,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "TB",
         "homeTeam": "BAL",
         "awayTeamId": 139,
@@ -701,7 +701,7 @@
       {
         "id": "g822858",
         "gamePk": 822858,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "LAA",
         "homeTeam": "TEX",
         "awayTeamId": 108,
@@ -839,7 +839,7 @@
       {
         "id": "g824151",
         "gamePk": 824151,
-        "status": "In Progress",
+        "status": "Game Over",
         "awayTeam": "ATH",
         "homeTeam": "HOU",
         "awayTeamId": 133,
@@ -1115,7 +1115,7 @@
       {
         "id": "g824073",
         "gamePk": 824073,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "DET",
         "homeTeam": "KC",
         "awayTeamId": 116,
@@ -1253,7 +1253,7 @@
       {
         "id": "g823910",
         "gamePk": 823910,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "PIT",
         "homeTeam": "LAD",
         "awayTeamId": 134,
@@ -1391,7 +1391,7 @@
       {
         "id": "g823100",
         "gamePk": 823100,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "CHC",
         "homeTeam": "SEA",
         "awayTeamId": 112,
@@ -1943,7 +1943,7 @@
       {
         "id": "g823261",
         "gamePk": 823261,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "MIN",
         "homeTeam": "SD",
         "awayTeamId": 142,
@@ -3048,7 +3048,10 @@
         "parkHrFactor": 106,
         "startUtc": "2026-08-23T18:35:00Z",
         "startET": "2:35 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 579328,
+          "name": "Yusei Kikuchi"
+        },
         "homePitcher": {
           "id": 615698,
           "name": "Cal Quantrill"
