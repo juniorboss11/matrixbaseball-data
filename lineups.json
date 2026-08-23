@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-23T02:09:45.757Z",
+  "refreshedAt": "2026-08-23T03:13:55.754Z",
   "today": "2026-08-23",
   "dates": [
     "2026-08-22",
@@ -839,7 +839,7 @@
       {
         "id": "g824151",
         "gamePk": 824151,
-        "status": "Game Over",
+        "status": "Final",
         "awayTeam": "ATH",
         "homeTeam": "HOU",
         "awayTeamId": 133,
@@ -977,7 +977,7 @@
       {
         "id": "g824560",
         "gamePk": 824560,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "NYM",
         "homeTeam": "CWS",
         "awayTeamId": 121,
@@ -1529,7 +1529,7 @@
       {
         "id": "g824718",
         "gamePk": 824718,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "SF",
         "homeTeam": "BOS",
         "awayTeamId": 137,
@@ -1667,7 +1667,7 @@
       {
         "id": "g825044",
         "gamePk": 825044,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "CIN",
         "homeTeam": "AZ",
         "awayTeamId": 113,
@@ -1805,7 +1805,7 @@
       {
         "id": "g824316",
         "gamePk": 824316,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "CLE",
         "homeTeam": "COL",
         "awayTeamId": 114,
@@ -2781,8 +2781,14 @@
         "parkHrFactor": 100,
         "startUtc": "2026-08-23T18:10:00Z",
         "startET": "2:10 PM",
-        "awayPitcher": null,
-        "homePitcher": null,
+        "awayPitcher": {
+          "id": 669620,
+          "name": "Brady Basso"
+        },
+        "homePitcher": {
+          "id": 664299,
+          "name": "Cristian Javier"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -2917,7 +2923,10 @@
           "id": 690997,
           "name": "Nolan McLean"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 656794,
+          "name": "Sean Newcomb"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
