@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-23T16:01:38.785Z",
+  "refreshedAt": "2026-08-23T16:36:11.684Z",
   "today": "2026-08-23",
   "dates": [
     "2026-08-22",
@@ -1030,7 +1030,7 @@
           },
           {
             "id": 673357,
-            "name": "Luis Robert",
+            "name": "Luis Robert Jr.",
             "order": 6,
             "position": "LF"
           },
@@ -3187,7 +3187,7 @@
       {
         "id": "g824315",
         "gamePk": 824315,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "CLE",
         "homeTeam": "COL",
         "awayTeamId": 114,
@@ -3212,7 +3212,7 @@
             "id": 680757,
             "name": "Steven Kwan",
             "order": 1,
-            "position": "LF"
+            "position": "CF"
           },
           {
             "id": 800050,
@@ -3221,46 +3221,46 @@
             "position": "DH"
           },
           {
-            "id": 608070,
-            "name": "José Ramírez",
-            "order": 3,
-            "position": "3B"
-          },
-          {
             "id": 666176,
             "name": "Jo Adell",
-            "order": 4,
+            "order": 3,
             "position": "RF"
           },
           {
             "id": 663993,
             "name": "Nathaniel Lowe",
-            "order": 5,
+            "order": 4,
             "position": "1B"
           },
           {
             "id": 694197,
             "name": "Angel Genao",
-            "order": 6,
-            "position": "SS"
+            "order": 5,
+            "position": "3B"
           },
           {
             "id": 683953,
             "name": "Travis Bazzana",
-            "order": 7,
+            "order": 6,
             "position": "2B"
           },
           {
-            "id": 672275,
-            "name": "Patrick Bailey",
+            "id": 682657,
+            "name": "Angel Martínez",
+            "order": 7,
+            "position": "LF"
+          },
+          {
+            "id": 595978,
+            "name": "Austin Hedges",
             "order": 8,
             "position": "C"
           },
           {
-            "id": 690984,
-            "name": "Petey Halpin",
+            "id": 677587,
+            "name": "Brayan Rocchio",
             "order": 9,
-            "position": "CF"
+            "position": "SS"
           }
         ],
         "homeLineup": [
@@ -3319,7 +3319,7 @@
             "position": "LF"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-23)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "projected (last 2026-08-23)"
       },
       {
@@ -3344,13 +3344,13 @@
           "id": 687562,
           "name": "Jake Bennett"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
-            "id": 682674,
-            "name": "Victor Bericoto",
+            "id": 678545,
+            "name": "Osleivis Basabe",
             "order": 1,
-            "position": "LF"
+            "position": "2B"
           },
           {
             "id": 646240,
@@ -3371,10 +3371,10 @@
             "position": "1B"
           },
           {
-            "id": 678545,
-            "name": "Osleivis Basabe",
+            "id": 682674,
+            "name": "Victor Bericoto",
             "order": 5,
-            "position": "2B"
+            "position": "LF"
           },
           {
             "id": 808982,
@@ -3383,22 +3383,22 @@
             "position": "RF"
           },
           {
-            "id": 683766,
-            "name": "Christian Koss",
+            "id": 668800,
+            "name": "Andrew Knizner",
             "order": 7,
-            "position": "3B"
+            "position": "C"
           },
           {
-            "id": 687551,
-            "name": "Drew Gilbert",
+            "id": 813841,
+            "name": "Jonah Cox",
             "order": 8,
             "position": "CF"
           },
           {
-            "id": 668800,
-            "name": "Andrew Knizner",
+            "id": 683766,
+            "name": "Christian Koss",
             "order": 9,
-            "position": "C"
+            "position": "3B"
           }
         ],
         "homeLineup": [
@@ -3457,7 +3457,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-22)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       },
       {
@@ -4166,7 +4166,10 @@
         "parkHrFactor": 90,
         "startUtc": "2026-08-24T22:40:00Z",
         "startET": "6:40 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 656876,
+          "name": "Drew Rasmussen"
+        },
         "homePitcher": null,
         "lineupsConfirmed": false,
         "awayLineup": [
@@ -4705,7 +4708,7 @@
             "id": 680757,
             "name": "Steven Kwan",
             "order": 1,
-            "position": "LF"
+            "position": "CF"
           },
           {
             "id": 800050,
@@ -4714,46 +4717,46 @@
             "position": "DH"
           },
           {
-            "id": 608070,
-            "name": "José Ramírez",
-            "order": 3,
-            "position": "3B"
-          },
-          {
             "id": 666176,
             "name": "Jo Adell",
-            "order": 4,
+            "order": 3,
             "position": "RF"
           },
           {
             "id": 663993,
             "name": "Nathaniel Lowe",
-            "order": 5,
+            "order": 4,
             "position": "1B"
           },
           {
             "id": 694197,
             "name": "Angel Genao",
-            "order": 6,
-            "position": "SS"
+            "order": 5,
+            "position": "3B"
           },
           {
             "id": 683953,
             "name": "Travis Bazzana",
-            "order": 7,
+            "order": 6,
             "position": "2B"
           },
           {
-            "id": 672275,
-            "name": "Patrick Bailey",
+            "id": 682657,
+            "name": "Angel Martínez",
+            "order": 7,
+            "position": "LF"
+          },
+          {
+            "id": 595978,
+            "name": "Austin Hedges",
             "order": 8,
             "position": "C"
           },
           {
-            "id": 690984,
-            "name": "Petey Halpin",
+            "id": 677587,
+            "name": "Brayan Rocchio",
             "order": 9,
-            "position": "CF"
+            "position": "SS"
           }
         ],
         "homeLineup": [
@@ -5427,10 +5430,10 @@
         ],
         "homeLineup": [
           {
-            "id": 682674,
-            "name": "Victor Bericoto",
+            "id": 678545,
+            "name": "Osleivis Basabe",
             "order": 1,
-            "position": "LF"
+            "position": "2B"
           },
           {
             "id": 646240,
@@ -5451,10 +5454,10 @@
             "position": "1B"
           },
           {
-            "id": 678545,
-            "name": "Osleivis Basabe",
+            "id": 682674,
+            "name": "Victor Bericoto",
             "order": 5,
-            "position": "2B"
+            "position": "LF"
           },
           {
             "id": 808982,
@@ -5463,26 +5466,26 @@
             "position": "RF"
           },
           {
-            "id": 683766,
-            "name": "Christian Koss",
+            "id": 668800,
+            "name": "Andrew Knizner",
             "order": 7,
-            "position": "3B"
+            "position": "C"
           },
           {
-            "id": 687551,
-            "name": "Drew Gilbert",
+            "id": 813841,
+            "name": "Jonah Cox",
             "order": 8,
             "position": "CF"
           },
           {
-            "id": 668800,
-            "name": "Andrew Knizner",
+            "id": 683766,
+            "name": "Christian Koss",
             "order": 9,
-            "position": "C"
+            "position": "3B"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-23)",
-        "homeLineupSource": "projected (last 2026-08-22)"
+        "homeLineupSource": "projected (last 2026-08-23)"
       }
     ]
   }
