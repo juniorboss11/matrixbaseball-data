@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-23T03:13:55.754Z",
+  "refreshedAt": "2026-08-23T04:04:56.390Z",
   "today": "2026-08-23",
   "dates": [
     "2026-08-22",
@@ -1943,7 +1943,7 @@
       {
         "id": "g823261",
         "gamePk": 823261,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "MIN",
         "homeTeam": "SD",
         "awayTeamId": 142,
@@ -3471,7 +3471,10 @@
         "parkHrFactor": 100,
         "startUtc": "2026-08-23T20:10:00Z",
         "startET": "4:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 669199,
+          "name": "Lake Bachar"
+        },
         "homePitcher": {
           "id": 605483,
           "name": "Blake Snell"
