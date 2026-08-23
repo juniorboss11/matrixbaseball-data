@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-23T14:10:05.218Z",
+  "refreshedAt": "2026-08-23T14:37:19.976Z",
   "today": "2026-08-23",
   "dates": [
     "2026-08-22",
@@ -2083,7 +2083,7 @@
       {
         "id": "g824799",
         "gamePk": 824799,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "TB",
         "homeTeam": "BAL",
         "awayTeamId": 139,
@@ -2170,58 +2170,58 @@
             "id": 624413,
             "name": "Pete Alonso",
             "order": 2,
-            "position": "DH"
-          },
-          {
-            "id": 691723,
-            "name": "Coby Mayo",
-            "order": 3,
             "position": "1B"
-          },
-          {
-            "id": 641933,
-            "name": "Tyler O'Neill",
-            "order": 4,
-            "position": "RF"
           },
           {
             "id": 683002,
             "name": "Gunnar Henderson",
-            "order": 5,
+            "order": 3,
             "position": "SS"
+          },
+          {
+            "id": 694212,
+            "name": "Samuel Basallo",
+            "order": 4,
+            "position": "C"
+          },
+          {
+            "id": 691723,
+            "name": "Coby Mayo",
+            "order": 5,
+            "position": "DH"
+          },
+          {
+            "id": 687637,
+            "name": "Dylan Beavers",
+            "order": 6,
+            "position": "LF"
           },
           {
             "id": 687952,
             "name": "Christian Encarnacion-Strand",
-            "order": 6,
+            "order": 7,
             "position": "3B"
           },
           {
-            "id": 681047,
-            "name": "Christian Franklin",
-            "order": 7,
-            "position": "LF"
-          },
-          {
-            "id": 665750,
-            "name": "Leody Taveras",
+            "id": 681297,
+            "name": "Colton Cowser",
             "order": 8,
             "position": "CF"
           },
           {
-            "id": 665966,
-            "name": "Carlos Narváez",
+            "id": 665750,
+            "name": "Leody Taveras",
             "order": 9,
-            "position": "C"
+            "position": "RF"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-22)",
-        "homeLineupSource": "projected (last 2026-08-22)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g823421",
         "gamePk": 823421,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "STL",
         "homeTeam": "PHI",
         "awayTeamId": 138,
@@ -2302,7 +2302,7 @@
             "id": 656941,
             "name": "Kyle Schwarber",
             "order": 1,
-            "position": "DH"
+            "position": "1B"
           },
           {
             "id": 607208,
@@ -2314,47 +2314,47 @@
             "id": 547180,
             "name": "Bryce Harper",
             "order": 3,
-            "position": "RF"
+            "position": "DH"
           },
           {
-            "id": 650333,
-            "name": "Luis Arraez",
+            "id": 681082,
+            "name": "Bryson Stott",
             "order": 4,
             "position": "2B"
           },
           {
-            "id": 664761,
-            "name": "Alec Bohm",
+            "id": 669016,
+            "name": "Brandon Marsh",
             "order": 5,
-            "position": "1B"
-          },
-          {
-            "id": 624641,
-            "name": "Edmundo Sosa",
-            "order": 6,
-            "position": "3B"
-          },
-          {
-            "id": 650559,
-            "name": "Bryan De La Cruz",
-            "order": 7,
             "position": "LF"
           },
           {
             "id": 592663,
             "name": "J.T. Realmuto",
-            "order": 8,
+            "order": 6,
             "position": "C"
           },
           {
-            "id": 656537,
-            "name": "Derek Hill",
-            "order": 9,
+            "id": 702222,
+            "name": "Justin Crawford",
+            "order": 7,
             "position": "CF"
+          },
+          {
+            "id": 624641,
+            "name": "Edmundo Sosa",
+            "order": 8,
+            "position": "3B"
+          },
+          {
+            "id": 650559,
+            "name": "Bryan De La Cruz",
+            "order": 9,
+            "position": "RF"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-22)",
-        "homeLineupSource": "projected (last 2026-08-22)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g823507",
@@ -5233,7 +5233,7 @@
             "id": 656941,
             "name": "Kyle Schwarber",
             "order": 1,
-            "position": "DH"
+            "position": "1B"
           },
           {
             "id": 607208,
@@ -5245,43 +5245,43 @@
             "id": 547180,
             "name": "Bryce Harper",
             "order": 3,
-            "position": "RF"
+            "position": "DH"
           },
           {
-            "id": 650333,
-            "name": "Luis Arraez",
+            "id": 681082,
+            "name": "Bryson Stott",
             "order": 4,
             "position": "2B"
           },
           {
-            "id": 664761,
-            "name": "Alec Bohm",
+            "id": 669016,
+            "name": "Brandon Marsh",
             "order": 5,
-            "position": "1B"
-          },
-          {
-            "id": 624641,
-            "name": "Edmundo Sosa",
-            "order": 6,
-            "position": "3B"
-          },
-          {
-            "id": 650559,
-            "name": "Bryan De La Cruz",
-            "order": 7,
             "position": "LF"
           },
           {
             "id": 592663,
             "name": "J.T. Realmuto",
-            "order": 8,
+            "order": 6,
             "position": "C"
           },
           {
-            "id": 656537,
-            "name": "Derek Hill",
-            "order": 9,
+            "id": 702222,
+            "name": "Justin Crawford",
+            "order": 7,
             "position": "CF"
+          },
+          {
+            "id": 624641,
+            "name": "Edmundo Sosa",
+            "order": 8,
+            "position": "3B"
+          },
+          {
+            "id": 650559,
+            "name": "Bryan De La Cruz",
+            "order": 9,
+            "position": "RF"
           }
         ],
         "homeLineup": [
@@ -5340,7 +5340,7 @@
             "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-22)",
+        "awayLineupSource": "projected (last 2026-08-23)",
         "homeLineupSource": "projected (last 2026-08-22)"
       },
       {
