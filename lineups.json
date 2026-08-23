@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-23T18:00:30.038Z",
+  "refreshedAt": "2026-08-23T18:40:13.773Z",
   "today": "2026-08-23",
   "dates": [
     "2026-08-22",
@@ -1030,7 +1030,7 @@
           },
           {
             "id": 673357,
-            "name": "Luis Robert",
+            "name": "Luis Robert Jr.",
             "order": 6,
             "position": "LF"
           },
@@ -2635,7 +2635,7 @@
       {
         "id": "g824071",
         "gamePk": 824071,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "DET",
         "homeTeam": "KC",
         "awayTeamId": 116,
@@ -2773,7 +2773,7 @@
       {
         "id": "g824150",
         "gamePk": 824150,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "ATH",
         "homeTeam": "HOU",
         "awayTeamId": 133,
@@ -2911,7 +2911,7 @@
       {
         "id": "g824558",
         "gamePk": 824558,
-        "status": "Warmup",
+        "status": "Manager challenge",
         "awayTeam": "NYM",
         "homeTeam": "CWS",
         "awayTeamId": 121,
@@ -3049,7 +3049,7 @@
       {
         "id": "g822856",
         "gamePk": 822856,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "LAA",
         "homeTeam": "TEX",
         "awayTeamId": 108,
@@ -3620,7 +3620,7 @@
           "id": 682243,
           "name": "Bryce Miller"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 691718,
@@ -3688,7 +3688,7 @@
             "id": 686527,
             "name": "Dominic Canzone",
             "order": 2,
-            "position": "RF"
+            "position": "DH"
           },
           {
             "id": 677594,
@@ -3697,22 +3697,22 @@
             "position": "CF"
           },
           {
+            "id": 663728,
+            "name": "Cal Raleigh",
+            "order": 4,
+            "position": "C"
+          },
+          {
             "id": 647304,
             "name": "Josh Naylor",
-            "order": 4,
+            "order": 5,
             "position": "1B"
           },
           {
-            "id": 621493,
-            "name": "Taylor Ward",
-            "order": 5,
-            "position": "DH"
-          },
-          {
-            "id": 663728,
-            "name": "Cal Raleigh",
+            "id": 642215,
+            "name": "Weston Wilson",
             "order": 6,
-            "position": "C"
+            "position": "3B"
           },
           {
             "id": 702284,
@@ -3721,10 +3721,10 @@
             "position": "2B"
           },
           {
-            "id": 642215,
-            "name": "Weston Wilson",
+            "id": 645302,
+            "name": "Victor Robles",
             "order": 8,
-            "position": "3B"
+            "position": "RF"
           },
           {
             "id": 660844,
@@ -3734,7 +3734,7 @@
           }
         ],
         "awayLineupSource": "confirmed",
-        "homeLineupSource": "projected (last 2026-08-22)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g823258",
@@ -4442,7 +4442,10 @@
         "parkHrFactor": 99,
         "startUtc": "2026-08-24T22:45:00Z",
         "startET": "6:45 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 663372,
+          "name": "Ryan Feltner"
+        },
         "homePitcher": {
           "id": 676917,
           "name": "Cade Cavalli"
@@ -5114,7 +5117,10 @@
         "parkHrFactor": 105,
         "startUtc": "2026-08-25T01:40:00Z",
         "startET": "9:40 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 805673,
+          "name": "Zebby Matthews"
+        },
         "homePitcher": {
           "id": 605488,
           "name": "Jeffrey Springs"
@@ -5322,7 +5328,7 @@
             "id": 686527,
             "name": "Dominic Canzone",
             "order": 2,
-            "position": "RF"
+            "position": "DH"
           },
           {
             "id": 677594,
@@ -5331,22 +5337,22 @@
             "position": "CF"
           },
           {
+            "id": 663728,
+            "name": "Cal Raleigh",
+            "order": 4,
+            "position": "C"
+          },
+          {
             "id": 647304,
             "name": "Josh Naylor",
-            "order": 4,
+            "order": 5,
             "position": "1B"
           },
           {
-            "id": 621493,
-            "name": "Taylor Ward",
-            "order": 5,
-            "position": "DH"
-          },
-          {
-            "id": 663728,
-            "name": "Cal Raleigh",
+            "id": 642215,
+            "name": "Weston Wilson",
             "order": 6,
-            "position": "C"
+            "position": "3B"
           },
           {
             "id": 702284,
@@ -5355,10 +5361,10 @@
             "position": "2B"
           },
           {
-            "id": 642215,
-            "name": "Weston Wilson",
+            "id": 645302,
+            "name": "Victor Robles",
             "order": 8,
-            "position": "3B"
+            "position": "RF"
           },
           {
             "id": 660844,
@@ -5368,7 +5374,7 @@
           }
         ],
         "awayLineupSource": "projected (last 2026-08-23)",
-        "homeLineupSource": "projected (last 2026-08-22)"
+        "homeLineupSource": "projected (last 2026-08-23)"
       },
       {
         "id": "g823183",
