@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-24T19:06:44.890Z",
+  "refreshedAt": "2026-08-24T19:41:11.055Z",
   "today": "2026-08-24",
   "dates": [
     "2026-08-23",
@@ -2359,7 +2359,7 @@
       {
         "id": "g822695",
         "gamePk": 822695,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "COL",
         "homeTeam": "WSH",
         "awayTeamId": 115,
@@ -2378,19 +2378,19 @@
           "id": 676917,
           "name": "Cade Cavalli"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 664983,
             "name": "Jake McCarthy",
             "order": 1,
-            "position": "LF"
+            "position": "CF"
           },
           {
-            "id": 694249,
-            "name": "Cole Carrigg",
+            "id": 666160,
+            "name": "Mickey Moniak",
             "order": 2,
-            "position": "CF"
+            "position": "RF"
           },
           {
             "id": 650489,
@@ -2399,22 +2399,22 @@
             "position": "3B"
           },
           {
-            "id": 666160,
-            "name": "Mickey Moniak",
+            "id": 681198,
+            "name": "TJ Rumfield",
             "order": 4,
+            "position": "1B"
+          },
+          {
+            "id": 687859,
+            "name": "Troy Johnston",
+            "order": 5,
             "position": "DH"
           },
           {
             "id": 681393,
             "name": "Connor Norby",
-            "order": 5,
-            "position": "1B"
-          },
-          {
-            "id": 687597,
-            "name": "Jordan Beck",
             "order": 6,
-            "position": "RF"
+            "position": "2B"
           },
           {
             "id": 664954,
@@ -2423,10 +2423,10 @@
             "position": "C"
           },
           {
-            "id": 690022,
-            "name": "Ryan Ritter",
+            "id": 691728,
+            "name": "Zac Veen",
             "order": 8,
-            "position": "2B"
+            "position": "LF"
           },
           {
             "id": 678662,
@@ -2437,16 +2437,16 @@
         ],
         "homeLineup": [
           {
-            "id": 695734,
-            "name": "Daylen Lile",
+            "id": 682928,
+            "name": "CJ Abrams",
             "order": 1,
-            "position": "LF"
+            "position": "DH"
           },
           {
             "id": 694673,
             "name": "Abimelec Ortiz",
             "order": 2,
-            "position": "DH"
+            "position": "1B"
           },
           {
             "id": 686611,
@@ -2455,49 +2455,49 @@
             "position": "RF"
           },
           {
-            "id": 660688,
-            "name": "Keibert Ruiz",
+            "id": 695734,
+            "name": "Daylen Lile",
             "order": 4,
-            "position": "C"
+            "position": "LF"
           },
           {
-            "id": 677588,
-            "name": "José Tena",
+            "id": 691781,
+            "name": "Brady House",
             "order": 5,
-            "position": "2B"
-          },
-          {
-            "id": 678391,
-            "name": "Jorbit Vivas",
-            "order": 6,
             "position": "3B"
           },
           {
-            "id": 665953,
-            "name": "Andrés Chaparro",
-            "order": 7,
-            "position": "1B"
-          },
-          {
-            "id": 683083,
-            "name": "Nasim Nuñez",
-            "order": 8,
-            "position": "SS"
+            "id": 660688,
+            "name": "Keibert Ruiz",
+            "order": 6,
+            "position": "C"
           },
           {
             "id": 696285,
             "name": "Jacob Young",
-            "order": 9,
+            "order": 7,
             "position": "CF"
+          },
+          {
+            "id": 678391,
+            "name": "Jorbit Vivas",
+            "order": 8,
+            "position": "2B"
+          },
+          {
+            "id": 683083,
+            "name": "Nasim Nuñez",
+            "order": 9,
+            "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-23)",
-        "homeLineupSource": "projected (last 2026-08-23)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g824557",
         "gamePk": 824557,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "TEX",
         "homeTeam": "CWS",
         "awayTeamId": 140,
@@ -2623,14 +2623,14 @@
             "position": "CF"
           },
           {
-            "id": 668670,
-            "name": "Jake Rogers",
+            "id": 691011,
+            "name": "Drew Romo",
             "order": 9,
             "position": "C"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-23)",
-        "homeLineupSource": "projected (last 2026-08-23)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g823992",
@@ -3763,13 +3763,13 @@
             "id": 664983,
             "name": "Jake McCarthy",
             "order": 1,
-            "position": "LF"
+            "position": "CF"
           },
           {
-            "id": 694249,
-            "name": "Cole Carrigg",
+            "id": 666160,
+            "name": "Mickey Moniak",
             "order": 2,
-            "position": "CF"
+            "position": "RF"
           },
           {
             "id": 650489,
@@ -3778,22 +3778,22 @@
             "position": "3B"
           },
           {
-            "id": 666160,
-            "name": "Mickey Moniak",
+            "id": 681198,
+            "name": "TJ Rumfield",
             "order": 4,
+            "position": "1B"
+          },
+          {
+            "id": 687859,
+            "name": "Troy Johnston",
+            "order": 5,
             "position": "DH"
           },
           {
             "id": 681393,
             "name": "Connor Norby",
-            "order": 5,
-            "position": "1B"
-          },
-          {
-            "id": 687597,
-            "name": "Jordan Beck",
             "order": 6,
-            "position": "RF"
+            "position": "2B"
           },
           {
             "id": 664954,
@@ -3802,10 +3802,10 @@
             "position": "C"
           },
           {
-            "id": 690022,
-            "name": "Ryan Ritter",
+            "id": 691728,
+            "name": "Zac Veen",
             "order": 8,
-            "position": "2B"
+            "position": "LF"
           },
           {
             "id": 678662,
@@ -3816,16 +3816,16 @@
         ],
         "homeLineup": [
           {
-            "id": 695734,
-            "name": "Daylen Lile",
+            "id": 682928,
+            "name": "CJ Abrams",
             "order": 1,
-            "position": "LF"
+            "position": "DH"
           },
           {
             "id": 694673,
             "name": "Abimelec Ortiz",
             "order": 2,
-            "position": "DH"
+            "position": "1B"
           },
           {
             "id": 686611,
@@ -3834,44 +3834,44 @@
             "position": "RF"
           },
           {
-            "id": 660688,
-            "name": "Keibert Ruiz",
+            "id": 695734,
+            "name": "Daylen Lile",
             "order": 4,
-            "position": "C"
+            "position": "LF"
           },
           {
-            "id": 677588,
-            "name": "José Tena",
+            "id": 691781,
+            "name": "Brady House",
             "order": 5,
-            "position": "2B"
-          },
-          {
-            "id": 678391,
-            "name": "Jorbit Vivas",
-            "order": 6,
             "position": "3B"
           },
           {
-            "id": 665953,
-            "name": "Andrés Chaparro",
-            "order": 7,
-            "position": "1B"
-          },
-          {
-            "id": 683083,
-            "name": "Nasim Nuñez",
-            "order": 8,
-            "position": "SS"
+            "id": 660688,
+            "name": "Keibert Ruiz",
+            "order": 6,
+            "position": "C"
           },
           {
             "id": 696285,
             "name": "Jacob Young",
-            "order": 9,
+            "order": 7,
             "position": "CF"
+          },
+          {
+            "id": 678391,
+            "name": "Jorbit Vivas",
+            "order": 8,
+            "position": "2B"
+          },
+          {
+            "id": 683083,
+            "name": "Nasim Nuñez",
+            "order": 9,
+            "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-23)",
-        "homeLineupSource": "projected (last 2026-08-23)"
+        "awayLineupSource": "projected (last 2026-08-24)",
+        "homeLineupSource": "projected (last 2026-08-24)"
       },
       {
         "id": "g823505",
@@ -4554,14 +4554,14 @@
             "position": "CF"
           },
           {
-            "id": 668670,
-            "name": "Jake Rogers",
+            "id": 691011,
+            "name": "Drew Romo",
             "order": 9,
             "position": "C"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-23)",
-        "homeLineupSource": "projected (last 2026-08-23)"
+        "homeLineupSource": "projected (last 2026-08-24)"
       },
       {
         "id": "g823016",
