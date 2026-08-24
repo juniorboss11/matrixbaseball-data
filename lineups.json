@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-24T21:42:04.143Z",
+  "refreshedAt": "2026-08-24T22:01:13.927Z",
   "today": "2026-08-24",
   "dates": [
     "2026-08-23",
@@ -2773,7 +2773,7 @@
       {
         "id": "g825041",
         "gamePk": 825041,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "CHC",
         "homeTeam": "AZ",
         "awayTeamId": 112,
@@ -2851,10 +2851,10 @@
         ],
         "homeLineup": [
           {
-            "id": 545121,
-            "name": "Ildemaro Vargas",
+            "id": 663457,
+            "name": "Lars Nootbaar",
             "order": 1,
-            "position": "2B"
+            "position": "DH"
           },
           {
             "id": 682998,
@@ -2866,7 +2866,7 @@
             "id": 672515,
             "name": "Gabriel Moreno",
             "order": 3,
-            "position": "DH"
+            "position": "C"
           },
           {
             "id": 672695,
@@ -2875,38 +2875,38 @@
             "position": "SS"
           },
           {
+            "id": 596146,
+            "name": "Max Kepler",
+            "order": 5,
+            "position": "LF"
+          },
+          {
             "id": 571448,
             "name": "Nolan Arenado",
-            "order": 5,
+            "order": 6,
             "position": "3B"
           },
           {
             "id": 694374,
             "name": "Tim Tawa",
-            "order": 6,
+            "order": 7,
             "position": "1B"
           },
           {
-            "id": 691783,
-            "name": "Jordan Lawlar",
-            "order": 7,
-            "position": "CF"
-          },
-          {
-            "id": 543510,
-            "name": "James McCann",
+            "id": 545121,
+            "name": "Ildemaro Vargas",
             "order": 8,
-            "position": "C"
+            "position": "2B"
           },
           {
             "id": 814439,
             "name": "Ryan Waldschmidt",
             "order": 9,
-            "position": "LF"
+            "position": "CF"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-23)",
-        "homeLineupSource": "projected (last 2026-08-23)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g823260",
@@ -3068,7 +3068,7 @@
           "id": 605488,
           "name": "Jeffrey Springs"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 807712,
@@ -3133,16 +3133,16 @@
             "position": "CF"
           },
           {
-            "id": 666126,
-            "name": "Carlos Cortes",
+            "id": 643446,
+            "name": "Jeff McNeil",
             "order": 2,
-            "position": "LF"
+            "position": "1B"
           },
           {
             "id": 680869,
             "name": "Zack Gelof",
             "order": 3,
-            "position": "3B"
+            "position": "2B"
           },
           {
             "id": 671732,
@@ -3154,35 +3154,35 @@
             "id": 695720,
             "name": "Tommy White",
             "order": 5,
-            "position": "1B"
-          },
-          {
-            "id": 691777,
-            "name": "Max Muncy",
-            "order": 6,
-            "position": "DH"
+            "position": "3B"
           },
           {
             "id": 622268,
             "name": "Donovan Walton",
-            "order": 7,
-            "position": "2B"
-          },
-          {
-            "id": 687231,
-            "name": "Darell Hernaiz",
-            "order": 8,
+            "order": 6,
             "position": "SS"
           },
           {
-            "id": 661531,
-            "name": "Brian Serven",
+            "id": 691777,
+            "name": "Max Muncy",
+            "order": 7,
+            "position": "LF"
+          },
+          {
+            "id": 666126,
+            "name": "Carlos Cortes",
+            "order": 8,
+            "position": "DH"
+          },
+          {
+            "id": 641680,
+            "name": "Jonah Heim",
             "order": 9,
             "position": "C"
           }
         ],
         "awayLineupSource": "confirmed",
-        "homeLineupSource": "projected (last 2026-08-23)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g823097",
@@ -3325,7 +3325,7 @@
       {
         "id": "g823183",
         "gamePk": 823183,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "CIN",
         "homeTeam": "SF",
         "awayTeamId": 113,
@@ -3386,19 +3386,19 @@
             "id": 668709,
             "name": "JJ Bleday",
             "order": 7,
-            "position": "LF"
+            "position": "RF"
           },
           {
-            "id": 677943,
-            "name": "Will Banfield",
+            "id": 624431,
+            "name": "Jose Trevino",
             "order": 8,
             "position": "C"
           },
           {
-            "id": 699302,
-            "name": "Héctor Rodríguez",
+            "id": 671155,
+            "name": "Ivan Johnson",
             "order": 9,
-            "position": "RF"
+            "position": "LF"
           }
         ],
         "homeLineup": [
@@ -3457,7 +3457,7 @@
             "position": "3B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-23)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "projected (last 2026-08-23)"
       }
     ],
@@ -4914,10 +4914,10 @@
         ],
         "homeLineup": [
           {
-            "id": 545121,
-            "name": "Ildemaro Vargas",
+            "id": 663457,
+            "name": "Lars Nootbaar",
             "order": 1,
-            "position": "2B"
+            "position": "DH"
           },
           {
             "id": 682998,
@@ -4929,7 +4929,7 @@
             "id": 672515,
             "name": "Gabriel Moreno",
             "order": 3,
-            "position": "DH"
+            "position": "C"
           },
           {
             "id": 672695,
@@ -4938,38 +4938,38 @@
             "position": "SS"
           },
           {
+            "id": 596146,
+            "name": "Max Kepler",
+            "order": 5,
+            "position": "LF"
+          },
+          {
             "id": 571448,
             "name": "Nolan Arenado",
-            "order": 5,
+            "order": 6,
             "position": "3B"
           },
           {
             "id": 694374,
             "name": "Tim Tawa",
-            "order": 6,
+            "order": 7,
             "position": "1B"
           },
           {
-            "id": 691783,
-            "name": "Jordan Lawlar",
-            "order": 7,
-            "position": "CF"
-          },
-          {
-            "id": 543510,
-            "name": "James McCann",
+            "id": 545121,
+            "name": "Ildemaro Vargas",
             "order": 8,
-            "position": "C"
+            "position": "2B"
           },
           {
             "id": 814439,
             "name": "Ryan Waldschmidt",
             "order": 9,
-            "position": "LF"
+            "position": "CF"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-23)",
-        "homeLineupSource": "projected (last 2026-08-23)"
+        "homeLineupSource": "projected (last 2026-08-25)"
       },
       {
         "id": "g823259",
@@ -5196,16 +5196,16 @@
             "position": "CF"
           },
           {
-            "id": 666126,
-            "name": "Carlos Cortes",
+            "id": 643446,
+            "name": "Jeff McNeil",
             "order": 2,
-            "position": "LF"
+            "position": "1B"
           },
           {
             "id": 680869,
             "name": "Zack Gelof",
             "order": 3,
-            "position": "3B"
+            "position": "2B"
           },
           {
             "id": 671732,
@@ -5217,35 +5217,35 @@
             "id": 695720,
             "name": "Tommy White",
             "order": 5,
-            "position": "1B"
-          },
-          {
-            "id": 691777,
-            "name": "Max Muncy",
-            "order": 6,
-            "position": "DH"
+            "position": "3B"
           },
           {
             "id": 622268,
             "name": "Donovan Walton",
-            "order": 7,
-            "position": "2B"
-          },
-          {
-            "id": 687231,
-            "name": "Darell Hernaiz",
-            "order": 8,
+            "order": 6,
             "position": "SS"
           },
           {
-            "id": 661531,
-            "name": "Brian Serven",
+            "id": 691777,
+            "name": "Max Muncy",
+            "order": 7,
+            "position": "LF"
+          },
+          {
+            "id": 666126,
+            "name": "Carlos Cortes",
+            "order": 8,
+            "position": "DH"
+          },
+          {
+            "id": 641680,
+            "name": "Jonah Heim",
             "order": 9,
             "position": "C"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-25)",
-        "homeLineupSource": "projected (last 2026-08-23)"
+        "homeLineupSource": "projected (last 2026-08-25)"
       },
       {
         "id": "g823098",
@@ -5449,19 +5449,19 @@
             "id": 668709,
             "name": "JJ Bleday",
             "order": 7,
-            "position": "LF"
+            "position": "RF"
           },
           {
-            "id": 677943,
-            "name": "Will Banfield",
+            "id": 624431,
+            "name": "Jose Trevino",
             "order": 8,
             "position": "C"
           },
           {
-            "id": 699302,
-            "name": "Héctor Rodríguez",
+            "id": 671155,
+            "name": "Ivan Johnson",
             "order": 9,
-            "position": "RF"
+            "position": "LF"
           }
         ],
         "homeLineup": [
@@ -5520,7 +5520,7 @@
             "position": "3B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-23)",
+        "awayLineupSource": "projected (last 2026-08-25)",
         "homeLineupSource": "projected (last 2026-08-23)"
       }
     ]
