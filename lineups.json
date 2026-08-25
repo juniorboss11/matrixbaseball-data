@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-25T18:18:04.609Z",
+  "refreshedAt": "2026-08-25T19:02:58.128Z",
   "today": "2026-08-25",
   "dates": [
     "2026-08-24",
@@ -1531,7 +1531,7 @@
       {
         "id": "g823826",
         "gamePk": 823826,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "BOS",
         "homeTeam": "MIA",
         "awayTeamId": 111,
@@ -1546,7 +1546,10 @@
           "id": 801139,
           "name": "Payton Tolle"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 663969,
+          "name": "Tyler Phillips"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -1618,16 +1621,16 @@
             "position": "LF"
           },
           {
-            "id": 669065,
-            "name": "Kyle Stowers",
-            "order": 3,
-            "position": "1B"
-          },
-          {
             "id": 682663,
             "name": "Agustín Ramírez",
-            "order": 4,
+            "order": 3,
             "position": "DH"
+          },
+          {
+            "id": 691594,
+            "name": "Javier Sanoja",
+            "order": 4,
+            "position": "3B"
           },
           {
             "id": 669364,
@@ -1636,37 +1639,37 @@
             "position": "2B"
           },
           {
-            "id": 805300,
-            "name": "Jakob Marsee",
+            "id": 677870,
+            "name": "Leo Jiménez",
             "order": 6,
-            "position": "CF"
+            "position": "1B"
           },
           {
-            "id": 691594,
-            "name": "Javier Sanoja",
+            "id": 665052,
+            "name": "Griffin Conine",
             "order": 7,
-            "position": "3B"
+            "position": "RF"
           },
           {
             "id": 665923,
             "name": "Esteury Ruiz",
             "order": 8,
-            "position": "RF"
+            "position": "CF"
           },
           {
-            "id": 691788,
-            "name": "Joe Mack",
+            "id": 640459,
+            "name": "Brian Navarreto",
             "order": 9,
             "position": "C"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-24)",
-        "homeLineupSource": "projected (last 2026-08-24)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g822693",
         "gamePk": 822693,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "COL",
         "homeTeam": "WSH",
         "awayTeamId": 115,
@@ -1771,32 +1774,32 @@
             "position": "3B"
           },
           {
-            "id": 660688,
-            "name": "Keibert Ruiz",
-            "order": 6,
-            "position": "C"
-          },
-          {
-            "id": 696285,
-            "name": "Jacob Young",
-            "order": 7,
-            "position": "CF"
-          },
-          {
             "id": 678391,
             "name": "Jorbit Vivas",
-            "order": 8,
+            "order": 6,
             "position": "2B"
+          },
+          {
+            "id": 695670,
+            "name": "Harry Ford",
+            "order": 7,
+            "position": "C"
           },
           {
             "id": 683083,
             "name": "Nasim Nuñez",
-            "order": 9,
+            "order": 8,
             "position": "SS"
+          },
+          {
+            "id": 696285,
+            "name": "Jacob Young",
+            "order": 9,
+            "position": "CF"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-24)",
-        "homeLineupSource": "projected (last 2026-08-24)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g823505",
@@ -2215,7 +2218,7 @@
       {
         "id": "g824881",
         "gamePk": 824881,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "LAD",
         "homeTeam": "ATL",
         "awayTeamId": 119,
@@ -2273,8 +2276,8 @@
             "position": "RF"
           },
           {
-            "id": 606192,
-            "name": "Teoscar Hernández",
+            "id": 669743,
+            "name": "Alex Call",
             "order": 7,
             "position": "LF"
           },
@@ -2347,7 +2350,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-23)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "projected (last 2026-08-23)"
       },
       {
@@ -4371,16 +4374,16 @@
             "position": "LF"
           },
           {
-            "id": 669065,
-            "name": "Kyle Stowers",
-            "order": 3,
-            "position": "1B"
-          },
-          {
             "id": 682663,
             "name": "Agustín Ramírez",
-            "order": 4,
+            "order": 3,
             "position": "DH"
+          },
+          {
+            "id": 691594,
+            "name": "Javier Sanoja",
+            "order": 4,
+            "position": "3B"
           },
           {
             "id": 669364,
@@ -4389,32 +4392,32 @@
             "position": "2B"
           },
           {
-            "id": 805300,
-            "name": "Jakob Marsee",
+            "id": 677870,
+            "name": "Leo Jiménez",
             "order": 6,
-            "position": "CF"
+            "position": "1B"
           },
           {
-            "id": 691594,
-            "name": "Javier Sanoja",
+            "id": 665052,
+            "name": "Griffin Conine",
             "order": 7,
-            "position": "3B"
+            "position": "RF"
           },
           {
             "id": 665923,
             "name": "Esteury Ruiz",
             "order": 8,
-            "position": "RF"
+            "position": "CF"
           },
           {
-            "id": 691788,
-            "name": "Joe Mack",
+            "id": 640459,
+            "name": "Brian Navarreto",
             "order": 9,
             "position": "C"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-24)",
-        "homeLineupSource": "projected (last 2026-08-24)"
+        "homeLineupSource": "projected (last 2026-08-25)"
       },
       {
         "id": "g822692",
@@ -4524,32 +4527,32 @@
             "position": "3B"
           },
           {
-            "id": 660688,
-            "name": "Keibert Ruiz",
-            "order": 6,
-            "position": "C"
-          },
-          {
-            "id": 696285,
-            "name": "Jacob Young",
-            "order": 7,
-            "position": "CF"
-          },
-          {
             "id": 678391,
             "name": "Jorbit Vivas",
-            "order": 8,
+            "order": 6,
             "position": "2B"
+          },
+          {
+            "id": 695670,
+            "name": "Harry Ford",
+            "order": 7,
+            "position": "C"
           },
           {
             "id": 683083,
             "name": "Nasim Nuñez",
-            "order": 9,
+            "order": 8,
             "position": "SS"
+          },
+          {
+            "id": 696285,
+            "name": "Jacob Young",
+            "order": 9,
+            "position": "CF"
           }
         ],
         "awayLineupSource": "projected (last 2026-08-24)",
-        "homeLineupSource": "projected (last 2026-08-24)"
+        "homeLineupSource": "projected (last 2026-08-25)"
       },
       {
         "id": "g823506",
@@ -4704,10 +4707,7 @@
           "id": 677976,
           "name": "Randy Dobnak"
         },
-        "homePitcher": {
-          "id": 669456,
-          "name": "Shane Bieber"
-        },
+        "homePitcher": null,
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -5023,8 +5023,8 @@
             "position": "RF"
           },
           {
-            "id": 606192,
-            "name": "Teoscar Hernández",
+            "id": 669743,
+            "name": "Alex Call",
             "order": 7,
             "position": "LF"
           },
@@ -5097,7 +5097,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-08-23)",
+        "awayLineupSource": "projected (last 2026-08-25)",
         "homeLineupSource": "projected (last 2026-08-23)"
       },
       {
