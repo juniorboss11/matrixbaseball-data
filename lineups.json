@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-25T00:02:16.635Z",
+  "refreshedAt": "2026-08-25T01:46:10.306Z",
   "today": "2026-08-25",
   "dates": [
     "2026-08-24",
@@ -11,7 +11,7 @@
       {
         "id": "g824235",
         "gamePk": 824235,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "TB",
         "homeTeam": "DET",
         "awayTeamId": 139,
@@ -149,7 +149,7 @@
       {
         "id": "g823828",
         "gamePk": 823828,
-        "status": "In Progress",
+        "status": "Game Over",
         "awayTeam": "BOS",
         "homeTeam": "MIA",
         "awayTeamId": 111,
@@ -563,7 +563,7 @@
       {
         "id": "g823992",
         "gamePk": 823992,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "CLE",
         "homeTeam": "LAA",
         "awayTeamId": 114,
@@ -591,34 +591,34 @@
             "position": "LF"
           },
           {
-            "id": 800050,
-            "name": "Chase DeLauter",
-            "order": 2,
-            "position": "DH"
-          },
-          {
             "id": 608070,
             "name": "José Ramírez",
-            "order": 3,
+            "order": 2,
             "position": "3B"
           },
           {
             "id": 666176,
             "name": "Jo Adell",
-            "order": 4,
-            "position": "RF"
+            "order": 3,
+            "position": "DH"
           },
           {
             "id": 663993,
             "name": "Nathaniel Lowe",
-            "order": 5,
+            "order": 4,
             "position": "1B"
           },
           {
             "id": 694197,
             "name": "Angel Genao",
-            "order": 6,
+            "order": 5,
             "position": "2B"
+          },
+          {
+            "id": 682657,
+            "name": "Angel Martínez",
+            "order": 6,
+            "position": "RF"
           },
           {
             "id": 690984,
@@ -701,7 +701,7 @@
       {
         "id": "g825041",
         "gamePk": 825041,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "CHC",
         "homeTeam": "AZ",
         "awayTeamId": 112,
@@ -839,7 +839,7 @@
       {
         "id": "g823260",
         "gamePk": 823260,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "PIT",
         "homeTeam": "SD",
         "awayTeamId": 134,
@@ -977,7 +977,7 @@
       {
         "id": "g824964",
         "gamePk": 824964,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "MIN",
         "homeTeam": "ATH",
         "awayTeamId": 142,
@@ -1115,7 +1115,7 @@
       {
         "id": "g823097",
         "gamePk": 823097,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "PHI",
         "homeTeam": "SEA",
         "awayTeamId": 143,
@@ -1253,7 +1253,7 @@
       {
         "id": "g823183",
         "gamePk": 823183,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "CIN",
         "homeTeam": "SF",
         "awayTeamId": 113,
@@ -2654,34 +2654,34 @@
             "position": "LF"
           },
           {
-            "id": 800050,
-            "name": "Chase DeLauter",
-            "order": 2,
-            "position": "DH"
-          },
-          {
             "id": 608070,
             "name": "José Ramírez",
-            "order": 3,
+            "order": 2,
             "position": "3B"
           },
           {
             "id": 666176,
             "name": "Jo Adell",
-            "order": 4,
-            "position": "RF"
+            "order": 3,
+            "position": "DH"
           },
           {
             "id": 663993,
             "name": "Nathaniel Lowe",
-            "order": 5,
+            "order": 4,
             "position": "1B"
           },
           {
             "id": 694197,
             "name": "Angel Genao",
-            "order": 6,
+            "order": 5,
             "position": "2B"
+          },
+          {
+            "id": 682657,
+            "name": "Angel Martínez",
+            "order": 6,
+            "position": "RF"
           },
           {
             "id": 690984,
@@ -3898,34 +3898,34 @@
             "position": "LF"
           },
           {
-            "id": 800050,
-            "name": "Chase DeLauter",
-            "order": 2,
-            "position": "DH"
-          },
-          {
             "id": 608070,
             "name": "José Ramírez",
-            "order": 3,
+            "order": 2,
             "position": "3B"
           },
           {
             "id": 666176,
             "name": "Jo Adell",
-            "order": 4,
-            "position": "RF"
+            "order": 3,
+            "position": "DH"
           },
           {
             "id": 663993,
             "name": "Nathaniel Lowe",
-            "order": 5,
+            "order": 4,
             "position": "1B"
           },
           {
             "id": 694197,
             "name": "Angel Genao",
-            "order": 6,
+            "order": 5,
             "position": "2B"
+          },
+          {
+            "id": 682657,
+            "name": "Angel Martínez",
+            "order": 6,
+            "position": "RF"
           },
           {
             "id": 690984,
@@ -4158,7 +4158,10 @@
           "id": 666200,
           "name": "Jesús Luzardo"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 693433,
+          "name": "Bryan Woo"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
