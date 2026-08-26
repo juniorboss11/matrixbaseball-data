@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-26T02:09:16.060Z",
+  "refreshedAt": "2026-08-26T03:16:05.848Z",
   "today": "2026-08-26",
   "dates": [
     "2026-08-25",
@@ -149,7 +149,7 @@
       {
         "id": "g823826",
         "gamePk": 823826,
-        "status": "Game Over",
+        "status": "Final",
         "awayTeam": "BOS",
         "homeTeam": "MIA",
         "awayTeamId": 111,
@@ -425,7 +425,7 @@
       {
         "id": "g823505",
         "gamePk": 823505,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "HOU",
         "homeTeam": "NYY",
         "awayTeamId": 117,
@@ -563,7 +563,7 @@
       {
         "id": "g822773",
         "gamePk": 822773,
-        "status": "Game Over",
+        "status": "Final",
         "awayTeam": "KC",
         "homeTeam": "TOR",
         "awayTeamId": 118,
@@ -701,7 +701,7 @@
       {
         "id": "g823585",
         "gamePk": 823585,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "MIL",
         "homeTeam": "NYM",
         "awayTeamId": 158,
@@ -977,7 +977,7 @@
       {
         "id": "g824556",
         "gamePk": 824556,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "TEX",
         "homeTeam": "CWS",
         "awayTeamId": 140,
@@ -1115,7 +1115,7 @@
       {
         "id": "g823016",
         "gamePk": 823016,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "BAL",
         "homeTeam": "STL",
         "awayTeamId": 110,
@@ -3061,7 +3061,10 @@
           "id": 685299,
           "name": "Tanner Gordon"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 663362,
+          "name": "Matt Waldron"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
