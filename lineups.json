@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-30T01:18:47.979Z",
+  "refreshedAt": "2026-08-30T06:48:07.101Z",
   "today": "2026-08-30",
   "dates": [
     "2026-08-29",
@@ -149,7 +149,7 @@
       {
         "id": "g823501",
         "gamePk": 823501,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "BOS",
         "homeTeam": "NYY",
         "awayTeamId": 111,
@@ -1115,7 +1115,7 @@
       {
         "id": "g823176",
         "gamePk": 823176,
-        "status": "Pre-Game",
+        "status": "Final",
         "awayTeam": "AZ",
         "homeTeam": "SF",
         "awayTeamId": 109,
@@ -1943,7 +1943,7 @@
       {
         "id": "g823741",
         "gamePk": 823741,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "TEX",
         "homeTeam": "MIL",
         "awayTeamId": 140,
@@ -2081,7 +2081,7 @@
       {
         "id": "g824961",
         "gamePk": 824961,
-        "status": "Pre-Game",
+        "status": "Final",
         "awayTeam": "BAL",
         "homeTeam": "ATH",
         "awayTeamId": 110,
@@ -2219,7 +2219,7 @@
       {
         "id": "g823986",
         "gamePk": 823986,
-        "status": "Pre-Game",
+        "status": "Final",
         "awayTeam": "PHI",
         "homeTeam": "LAA",
         "awayTeamId": 143,
@@ -3892,7 +3892,10 @@
           "id": 605135,
           "name": "Chris Bassitt"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 605488,
+          "name": "Jeffrey Springs"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
