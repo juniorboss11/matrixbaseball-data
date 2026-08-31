@@ -402,17 +402,34 @@ async function fetchPlatoonSplits(mlbId, group) {
   const j = await fetchJSON(url, `${group[0]}${mlbId} splits`);
   const splits = j?.stats?.[0]?.splits ?? [];
   const out = { vl: null, vr: null };
+  // StatsAPI uses `plateAppearances` for hitters and `battersFaced` for pitchers.
+  const paKey = group === "pitching" ? "battersFaced" : "plateAppearances";
   for (const sp of splits) {
     const s = sp.stat ?? {};
     const code = sp.split?.code;
     if (code !== "vl" && code !== "vr") continue;
+    const pa = parseInt(s[paKey] ?? "0", 10) || 0;
+    const ip = parseFloat(s.inningsPitched ?? "0") || 0;
     out[code] = {
       avg: parseFloat(s.avg ?? "0"),
       obp: parseFloat(s.obp ?? "0"),
       slg: parseFloat(s.slg ?? "0"),
       ops: parseFloat(s.ops ?? "0"),
-      pa: s.plateAppearances ?? 0,
-      ab: s.atBats ?? 0,
+      pa,
+      ab: parseInt(s.atBats ?? "0", 10) || 0,
+      // Full-season counting stats per hand — needed so the Season row
+      // vsLHB/vsRHB shows true season HR/BB/K instead of last-80-PA counts.
+      hr: parseInt(s.homeRuns ?? "0", 10) || 0,
+      bb: parseInt(s.baseOnBalls ?? "0", 10) || 0,
+      k:  parseInt(s.strikeOuts ?? "0", 10) || 0,
+      tb: parseInt(s.totalBases ?? "0", 10) || 0,
+      hits: parseInt(s.hits ?? "0", 10) || 0,
+      // Pitcher-only: hr9 for that platoon slice (derived, since StatsAPI
+      // does not always return homeRunsPer9 on statSplits).
+      hr9: (group === "pitching" && ip > 0)
+        ? +((parseInt(s.homeRuns ?? "0", 10) || 0) * 9 / ip).toFixed(2)
+        : null,
+      ip: ip || null,
     };
   }
   return (out.vl || out.vr) ? out : null;
