@@ -365,6 +365,13 @@ async function fetchPitcherSeason(mlbId) {
     era: parseFloat(s.era ?? "0"), whip: parseFloat(s.whip ?? "0"),
     k9: parseFloat(s.strikeoutsPer9Inn ?? "0"), hr9: parseFloat(s.homeRunsPer9 ?? "0"),
     ip: parseFloat(s.inningsPitched ?? "0"), w: s.wins ?? 0, l: s.losses ?? 0,
+    // Full-season HR allowed. Distinct from perPaEv-derived HR counts (last-80 PAs).
+    hr: parseInt(s.homeRuns ?? "0", 10) || 0,
+    // Full-season PA and K% / BB% — so we can heat-band the season row without
+    // needing to reconstitute counts from the last-80 PA log.
+    pa: parseInt(s.plateAppearances ?? "0", 10) || 0,
+    k: parseInt(s.strikeOuts ?? "0", 10) || 0,
+    bb: parseInt(s.baseOnBalls ?? "0", 10) || 0,
   };
 }
 
