@@ -369,7 +369,8 @@ async function fetchPitcherSeason(mlbId) {
     hr: parseInt(s.homeRuns ?? "0", 10) || 0,
     // Full-season PA and K% / BB% — so we can heat-band the season row without
     // needing to reconstitute counts from the last-80 PA log.
-    pa: parseInt(s.plateAppearances ?? "0", 10) || 0,
+    // StatsAPI uses `battersFaced` for pitcher PA equivalent.
+    pa: parseInt(s.battersFaced ?? "0", 10) || 0,
     k: parseInt(s.strikeOuts ?? "0", 10) || 0,
     bb: parseInt(s.baseOnBalls ?? "0", 10) || 0,
   };
