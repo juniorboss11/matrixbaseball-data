@@ -689,6 +689,10 @@ async function main() {
       // ph = pitcher-hand code (L/R) for this PA. Enables handedness-aware
       // filtering on the batter side: "my slider stats vs LHP only".
       ph: e.pHand ?? null,
+      // pid = pitcher MLB id who threw this PA. Enables the BvP detail log:
+      // filter a hitter's last 40 PA to just the ones against today's opposing
+      // pitcher and show what type of result each one was.
+      pid: e.pitcherId ?? null,
       hr: e.isHr ? 1 : 0,
       hit: e.isHit ? 1 : 0,
     }));
