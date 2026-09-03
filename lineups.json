@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-03T16:43:47.776Z",
+  "refreshedAt": "2026-09-03T19:28:35.391Z",
   "today": "2026-09-03",
   "dates": [
     "2026-09-02",
@@ -2083,7 +2083,7 @@
       {
         "id": "g823337",
         "gamePk": 823337,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "SF",
         "homeTeam": "PIT",
         "awayTeamId": 137,
@@ -2221,7 +2221,7 @@
       {
         "id": "g824388",
         "gamePk": 824388,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "TOR",
         "homeTeam": "CLE",
         "awayTeamId": 141,
@@ -2359,7 +2359,7 @@
       {
         "id": "g824144",
         "gamePk": 824144,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "CWS",
         "homeTeam": "HOU",
         "awayTeamId": 145,
@@ -2486,7 +2486,7 @@
           },
           {
             "id": 664774,
-            "name": "LaMonte Wade",
+            "name": "LaMonte Wade Jr.",
             "order": 9,
             "position": "LF"
           }
@@ -3608,7 +3608,10 @@
         "parkHrFactor": 113,
         "startUtc": "2026-09-04T22:10:00Z",
         "startET": "6:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 675660,
+          "name": "Shane Drohan"
+        },
         "homePitcher": {
           "id": 695076,
           "name": "Rhett Lowder"
@@ -4295,7 +4298,10 @@
         "parkHrFactor": 100,
         "startUtc": "2026-09-04T23:10:00Z",
         "startET": "7:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 684007,
+          "name": "Shota Imanaga"
+        },
         "homePitcher": null,
         "lineupsConfirmed": false,
         "awayLineup": [
@@ -4819,7 +4825,7 @@
           },
           {
             "id": 664774,
-            "name": "LaMonte Wade",
+            "name": "LaMonte Wade Jr.",
             "order": 9,
             "position": "LF"
           }
