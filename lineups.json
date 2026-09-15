@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-15T15:05:32.168Z",
+  "refreshedAt": "2026-09-15T18:57:27.563Z",
   "today": "2026-09-15",
   "dates": [
     "2026-09-14",
@@ -1393,7 +1393,7 @@
       {
         "id": "g824466",
         "gamePk": 824466,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "LAD",
         "homeTeam": "CIN",
         "awayTeamId": 119,
@@ -1471,8 +1471,8 @@
         ],
         "homeLineup": [
           {
-            "id": 667472,
-            "name": "Dane Myers",
+            "id": 699115,
+            "name": "Carlos Jorge",
             "order": 1,
             "position": "CF"
           },
@@ -1489,10 +1489,10 @@
             "position": "1B"
           },
           {
-            "id": 663886,
-            "name": "Tyler Stephenson",
+            "id": 668709,
+            "name": "JJ Bleday",
             "order": 4,
-            "position": "C"
+            "position": "LF"
           },
           {
             "id": 553993,
@@ -1501,37 +1501,37 @@
             "position": "DH"
           },
           {
-            "id": 682877,
-            "name": "Juan Brito",
+            "id": 699302,
+            "name": "Héctor Rodríguez",
             "order": 6,
+            "position": "RF"
+          },
+          {
+            "id": 680574,
+            "name": "Matt McLain",
+            "order": 7,
             "position": "2B"
           },
           {
-            "id": 668709,
-            "name": "JJ Bleday",
-            "order": 7,
-            "position": "LF"
-          },
-          {
-            "id": 663647,
-            "name": "Ke'Bryan Hayes",
+            "id": 682877,
+            "name": "Juan Brito",
             "order": 8,
             "position": "3B"
           },
           {
-            "id": 699302,
-            "name": "Héctor Rodríguez",
+            "id": 677943,
+            "name": "Will Banfield",
             "order": 9,
-            "position": "RF"
+            "position": "C"
           }
         ],
         "awayLineupSource": "projected (last 2026-09-14)",
-        "homeLineupSource": "projected (last 2026-09-14)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g822925",
         "gamePk": 822925,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "ATH",
         "homeTeam": "TB",
         "awayTeamId": 133,
@@ -1627,22 +1627,22 @@
             "position": "3B"
           },
           {
-            "id": 683748,
-            "name": "Victor Mesa",
+            "id": 689414,
+            "name": "Liam Hicks",
             "order": 4,
+            "position": "C"
+          },
+          {
+            "id": 683748,
+            "name": "Victor Mesa Jr.",
+            "order": 5,
             "position": "RF"
           },
           {
             "id": 802415,
             "name": "Chandler Simpson",
-            "order": 5,
-            "position": "LF"
-          },
-          {
-            "id": 676356,
-            "name": "Jonny DeLuca",
             "order": 6,
-            "position": "CF"
+            "position": "LF"
           },
           {
             "id": 680700,
@@ -1651,25 +1651,25 @@
             "position": "2B"
           },
           {
-            "id": 663611,
-            "name": "Nick Madrigal",
+            "id": 622761,
+            "name": "Jorge Mateo",
             "order": 8,
             "position": "SS"
           },
           {
-            "id": 663743,
-            "name": "Nick Fortes",
+            "id": 656775,
+            "name": "Cedric Mullins",
             "order": 9,
-            "position": "C"
+            "position": "CF"
           }
         ],
         "awayLineupSource": "projected (last 2026-09-13)",
-        "homeLineupSource": "projected (last 2026-09-13)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g824384",
         "gamePk": 824384,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "CWS",
         "homeTeam": "CLE",
         "awayTeamId": 145,
@@ -1681,8 +1681,8 @@
         "startUtc": "2026-09-15T22:40:00Z",
         "startET": "6:40 PM",
         "awayPitcher": {
-          "id": 663436,
-          "name": "Davis Martin"
+          "id": 669684,
+          "name": "Chris Murphy"
         },
         "homePitcher": {
           "id": 656492,
@@ -1691,16 +1691,16 @@
         "lineupsConfirmed": false,
         "awayLineup": [
           {
-            "id": 803011,
-            "name": "Sam Antonacci",
+            "id": 805367,
+            "name": "Chase Meidroth",
             "order": 1,
-            "position": "LF"
+            "position": "2B"
           },
           {
-            "id": 691019,
-            "name": "Kyle Teel",
+            "id": 545341,
+            "name": "Randal Grichuk",
             "order": 2,
-            "position": "C"
+            "position": "DH"
           },
           {
             "id": 678246,
@@ -1715,32 +1715,32 @@
             "position": "1B"
           },
           {
-            "id": 643217,
-            "name": "Andrew Benintendi",
+            "id": 686668,
+            "name": "Brenton Doyle",
             "order": 5,
-            "position": "DH"
+            "position": "CF"
+          },
+          {
+            "id": 803011,
+            "name": "Sam Antonacci",
+            "order": 6,
+            "position": "LF"
+          },
+          {
+            "id": 668670,
+            "name": "Jake Rogers",
+            "order": 7,
+            "position": "C"
+          },
+          {
+            "id": 682668,
+            "name": "Luisangel Acuña",
+            "order": 8,
+            "position": "SS"
           },
           {
             "id": 671976,
             "name": "Tristan Peters",
-            "order": 6,
-            "position": "CF"
-          },
-          {
-            "id": 695657,
-            "name": "Colson Montgomery",
-            "order": 7,
-            "position": "SS"
-          },
-          {
-            "id": 805367,
-            "name": "Chase Meidroth",
-            "order": 8,
-            "position": "2B"
-          },
-          {
-            "id": 695731,
-            "name": "Braden Montgomery",
             "order": 9,
             "position": "RF"
           }
@@ -1801,7 +1801,7 @@
             "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-09-14)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "projected (last 2026-09-14)"
       },
       {
@@ -2788,7 +2788,10 @@
           "id": 663776,
           "name": "Patrick Sandoval"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 594798,
+          "name": "Jacob deGrom"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -3481,16 +3484,16 @@
         "lineupsConfirmed": false,
         "awayLineup": [
           {
-            "id": 803011,
-            "name": "Sam Antonacci",
+            "id": 805367,
+            "name": "Chase Meidroth",
             "order": 1,
-            "position": "LF"
+            "position": "2B"
           },
           {
-            "id": 691019,
-            "name": "Kyle Teel",
+            "id": 545341,
+            "name": "Randal Grichuk",
             "order": 2,
-            "position": "C"
+            "position": "DH"
           },
           {
             "id": 678246,
@@ -3505,32 +3508,32 @@
             "position": "1B"
           },
           {
-            "id": 643217,
-            "name": "Andrew Benintendi",
+            "id": 686668,
+            "name": "Brenton Doyle",
             "order": 5,
-            "position": "DH"
+            "position": "CF"
+          },
+          {
+            "id": 803011,
+            "name": "Sam Antonacci",
+            "order": 6,
+            "position": "LF"
+          },
+          {
+            "id": 668670,
+            "name": "Jake Rogers",
+            "order": 7,
+            "position": "C"
+          },
+          {
+            "id": 682668,
+            "name": "Luisangel Acuña",
+            "order": 8,
+            "position": "SS"
           },
           {
             "id": 671976,
             "name": "Tristan Peters",
-            "order": 6,
-            "position": "CF"
-          },
-          {
-            "id": 695657,
-            "name": "Colson Montgomery",
-            "order": 7,
-            "position": "SS"
-          },
-          {
-            "id": 805367,
-            "name": "Chase Meidroth",
-            "order": 8,
-            "position": "2B"
-          },
-          {
-            "id": 695731,
-            "name": "Braden Montgomery",
             "order": 9,
             "position": "RF"
           }
@@ -3591,7 +3594,7 @@
             "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-09-14)",
+        "awayLineupSource": "projected (last 2026-09-15)",
         "homeLineupSource": "projected (last 2026-09-14)"
       },
       {
@@ -4086,8 +4089,8 @@
         ],
         "homeLineup": [
           {
-            "id": 667472,
-            "name": "Dane Myers",
+            "id": 699115,
+            "name": "Carlos Jorge",
             "order": 1,
             "position": "CF"
           },
@@ -4104,10 +4107,10 @@
             "position": "1B"
           },
           {
-            "id": 663886,
-            "name": "Tyler Stephenson",
+            "id": 668709,
+            "name": "JJ Bleday",
             "order": 4,
-            "position": "C"
+            "position": "LF"
           },
           {
             "id": 553993,
@@ -4116,32 +4119,32 @@
             "position": "DH"
           },
           {
-            "id": 682877,
-            "name": "Juan Brito",
+            "id": 699302,
+            "name": "Héctor Rodríguez",
             "order": 6,
+            "position": "RF"
+          },
+          {
+            "id": 680574,
+            "name": "Matt McLain",
+            "order": 7,
             "position": "2B"
           },
           {
-            "id": 668709,
-            "name": "JJ Bleday",
-            "order": 7,
-            "position": "LF"
-          },
-          {
-            "id": 663647,
-            "name": "Ke'Bryan Hayes",
+            "id": 682877,
+            "name": "Juan Brito",
             "order": 8,
             "position": "3B"
           },
           {
-            "id": 699302,
-            "name": "Héctor Rodríguez",
+            "id": 677943,
+            "name": "Will Banfield",
             "order": 9,
-            "position": "RF"
+            "position": "C"
           }
         ],
         "awayLineupSource": "projected (last 2026-09-14)",
-        "homeLineupSource": "projected (last 2026-09-14)"
+        "homeLineupSource": "projected (last 2026-09-15)"
       },
       {
         "id": "g822926",
@@ -4242,22 +4245,22 @@
             "position": "3B"
           },
           {
-            "id": 683748,
-            "name": "Victor Mesa",
+            "id": 689414,
+            "name": "Liam Hicks",
             "order": 4,
+            "position": "C"
+          },
+          {
+            "id": 683748,
+            "name": "Victor Mesa Jr.",
+            "order": 5,
             "position": "RF"
           },
           {
             "id": 802415,
             "name": "Chandler Simpson",
-            "order": 5,
-            "position": "LF"
-          },
-          {
-            "id": 676356,
-            "name": "Jonny DeLuca",
             "order": 6,
-            "position": "CF"
+            "position": "LF"
           },
           {
             "id": 680700,
@@ -4266,20 +4269,20 @@
             "position": "2B"
           },
           {
-            "id": 663611,
-            "name": "Nick Madrigal",
+            "id": 622761,
+            "name": "Jorge Mateo",
             "order": 8,
             "position": "SS"
           },
           {
-            "id": 663743,
-            "name": "Nick Fortes",
+            "id": 656775,
+            "name": "Cedric Mullins",
             "order": 9,
-            "position": "C"
+            "position": "CF"
           }
         ],
         "awayLineupSource": "projected (last 2026-09-13)",
-        "homeLineupSource": "projected (last 2026-09-13)"
+        "homeLineupSource": "projected (last 2026-09-15)"
       },
       {
         "id": "g823332",
@@ -4851,7 +4854,10 @@
           "id": 687562,
           "name": "Jake Bennett"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 669022,
+          "name": "MacKenzie Gore"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
