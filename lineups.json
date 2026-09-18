@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-18T00:50:11.980Z",
+  "refreshedAt": "2026-09-18T05:18:37.294Z",
   "today": "2026-09-18",
   "dates": [
     "2026-09-17",
@@ -563,7 +563,7 @@
       {
         "id": "g824141",
         "gamePk": 824141,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "KC",
         "homeTeam": "HOU",
         "awayTeamId": 118,
@@ -701,7 +701,7 @@
       {
         "id": "g823573",
         "gamePk": 823573,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "PHI",
         "homeTeam": "NYM",
         "awayTeamId": 143,
@@ -839,7 +839,7 @@
       {
         "id": "g824548",
         "gamePk": 824548,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "DET",
         "homeTeam": "CWS",
         "awayTeamId": 116,
@@ -977,7 +977,7 @@
       {
         "id": "g822845",
         "gamePk": 822845,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "BOS",
         "homeTeam": "TEX",
         "awayTeamId": 111,
@@ -1115,7 +1115,7 @@
       {
         "id": "g823978",
         "gamePk": 823978,
-        "status": "Pre-Game",
+        "status": "Final",
         "awayTeam": "MIN",
         "homeTeam": "LAA",
         "awayTeamId": 142,
@@ -1266,7 +1266,10 @@
         "parkHrFactor": 113,
         "startUtc": "2026-09-18T22:40:00Z",
         "startET": "6:40 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 605280,
+          "name": "Clay Holmes"
+        },
         "homePitcher": {
           "id": 695505,
           "name": "Chase Burns"
@@ -2247,7 +2250,7 @@
           },
           {
             "id": 665489,
-            "name": "Vladimir Guerrero Jr.",
+            "name": "Vladimir Guerrero",
             "order": 3,
             "position": "1B"
           },
@@ -3869,7 +3872,10 @@
         "parkHrFactor": 113,
         "startUtc": "2026-09-19T22:40:00Z",
         "startET": "6:40 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 571510,
+          "name": "Matthew Boyd"
+        },
         "homePitcher": {
           "id": 666157,
           "name": "Nick Lodolo"
@@ -4166,7 +4172,7 @@
           },
           {
             "id": 665489,
-            "name": "Vladimir Guerrero Jr.",
+            "name": "Vladimir Guerrero",
             "order": 3,
             "position": "1B"
           },
