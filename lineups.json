@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-20T05:29:16.668Z",
+  "refreshedAt": "2026-09-20T10:00:45.989Z",
   "today": "2026-09-20",
   "dates": [
     "2026-09-19",
@@ -1943,7 +1943,7 @@
       {
         "id": "g823976",
         "gamePk": 823976,
-        "status": "Game Over",
+        "status": "Final",
         "awayTeam": "MIN",
         "homeTeam": "LAA",
         "awayTeamId": 142,
@@ -3195,7 +3195,10 @@
         "parkHrFactor": 106,
         "startUtc": "2026-09-20T18:35:00Z",
         "startET": "2:35 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 693686,
+          "name": "Spencer Miles"
+        },
         "homePitcher": {
           "id": 594798,
           "name": "Jacob deGrom"
