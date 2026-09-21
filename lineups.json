@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-21T19:23:24.354Z",
+  "refreshedAt": "2026-09-21T22:44:51.563Z",
   "today": "2026-09-21",
   "dates": [
     "2026-09-20",
@@ -2083,7 +2083,7 @@
       {
         "id": "g824787",
         "gamePk": 824787,
-        "status": "Pre-Game",
+        "status": "Delayed Start",
         "awayTeam": "TOR",
         "homeTeam": "BAL",
         "awayTeamId": 141,
@@ -2102,7 +2102,7 @@
           "id": 669358,
           "name": "Shane Baz"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 703520,
@@ -2111,10 +2111,10 @@
             "position": "CF"
           },
           {
-            "id": 665489,
-            "name": "Vladimir Guerrero Jr.",
+            "id": 672386,
+            "name": "Alejandro Kirk",
             "order": 2,
-            "position": "1B"
+            "position": "C"
           },
           {
             "id": 664770,
@@ -2123,34 +2123,34 @@
             "position": "RF"
           },
           {
-            "id": 672960,
-            "name": "Kazuma Okamoto",
+            "id": 543807,
+            "name": "George Springer",
             "order": 4,
-            "position": "3B"
+            "position": "DH"
           },
           {
             "id": 815873,
             "name": "Sean Keys",
             "order": 5,
-            "position": "DH"
+            "position": "1B"
+          },
+          {
+            "id": 672960,
+            "name": "Kazuma Okamoto",
+            "order": 6,
+            "position": "3B"
           },
           {
             "id": 669701,
             "name": "Josh Smith",
-            "order": 6,
+            "order": 7,
             "position": "LF"
           },
           {
             "id": 665926,
             "name": "Andrés Giménez",
-            "order": 7,
-            "position": "SS"
-          },
-          {
-            "id": 678218,
-            "name": "Brandon Valenzuela",
             "order": 8,
-            "position": "C"
+            "position": "SS"
           },
           {
             "id": 676391,
@@ -2215,13 +2215,13 @@
             "position": "2B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-09-20)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       },
       {
         "id": "g824221",
         "gamePk": 824221,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "WSH",
         "homeTeam": "DET",
         "awayTeamId": 120,
@@ -2359,7 +2359,7 @@
       {
         "id": "g823169",
         "gamePk": 823169,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "MIN",
         "homeTeam": "SF",
         "awayTeamId": 142,
@@ -2387,40 +2387,40 @@
             "position": "CF"
           },
           {
+            "id": 807712,
+            "name": "Luke Keaschall",
+            "order": 2,
+            "position": "RF"
+          },
+          {
             "id": 686797,
             "name": "Brooks Lee",
-            "order": 2,
+            "order": 3,
             "position": "3B"
           },
           {
             "id": 665019,
             "name": "Kody Clemens",
-            "order": 3,
+            "order": 4,
             "position": "2B"
           },
           {
-            "id": 605137,
-            "name": "Josh Bell",
-            "order": 4,
-            "position": "DH"
+            "id": 680777,
+            "name": "Ryan Jeffers",
+            "order": 5,
+            "position": "C"
           },
           {
             "id": 702176,
             "name": "Alan Roden",
-            "order": 5,
-            "position": "RF"
-          },
-          {
-            "id": 668904,
-            "name": "Royce Lewis",
             "order": 6,
-            "position": "1B"
+            "position": "DH"
           },
           {
-            "id": 605170,
-            "name": "Victor Caratini",
+            "id": 693306,
+            "name": "Aaron Sabato",
             "order": 7,
-            "position": "C"
+            "position": "1B"
           },
           {
             "id": 691181,
@@ -2429,8 +2429,8 @@
             "position": "LF"
           },
           {
-            "id": 805346,
-            "name": "Ben Ross",
+            "id": 668952,
+            "name": "Ryan Kreidler",
             "order": 9,
             "position": "SS"
           }
@@ -2491,7 +2491,7 @@
             "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-09-20)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "projected (last 2026-09-20)"
       }
     ],
@@ -2803,10 +2803,10 @@
             "position": "CF"
           },
           {
-            "id": 665489,
-            "name": "Vladimir Guerrero Jr.",
+            "id": 672386,
+            "name": "Alejandro Kirk",
             "order": 2,
-            "position": "1B"
+            "position": "C"
           },
           {
             "id": 664770,
@@ -2815,34 +2815,34 @@
             "position": "RF"
           },
           {
-            "id": 672960,
-            "name": "Kazuma Okamoto",
+            "id": 543807,
+            "name": "George Springer",
             "order": 4,
-            "position": "3B"
+            "position": "DH"
           },
           {
             "id": 815873,
             "name": "Sean Keys",
             "order": 5,
-            "position": "DH"
+            "position": "1B"
+          },
+          {
+            "id": 672960,
+            "name": "Kazuma Okamoto",
+            "order": 6,
+            "position": "3B"
           },
           {
             "id": 669701,
             "name": "Josh Smith",
-            "order": 6,
+            "order": 7,
             "position": "LF"
           },
           {
             "id": 665926,
             "name": "Andrés Giménez",
-            "order": 7,
-            "position": "SS"
-          },
-          {
-            "id": 678218,
-            "name": "Brandon Valenzuela",
             "order": 8,
-            "position": "C"
+            "position": "SS"
           },
           {
             "id": 676391,
@@ -2907,7 +2907,7 @@
             "position": "2B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-09-20)",
+        "awayLineupSource": "projected (last 2026-09-21)",
         "homeLineupSource": "projected (last 2026-09-21)"
       },
       {
@@ -4456,40 +4456,40 @@
             "position": "CF"
           },
           {
+            "id": 807712,
+            "name": "Luke Keaschall",
+            "order": 2,
+            "position": "RF"
+          },
+          {
             "id": 686797,
             "name": "Brooks Lee",
-            "order": 2,
+            "order": 3,
             "position": "3B"
           },
           {
             "id": 665019,
             "name": "Kody Clemens",
-            "order": 3,
+            "order": 4,
             "position": "2B"
           },
           {
-            "id": 605137,
-            "name": "Josh Bell",
-            "order": 4,
-            "position": "DH"
+            "id": 680777,
+            "name": "Ryan Jeffers",
+            "order": 5,
+            "position": "C"
           },
           {
             "id": 702176,
             "name": "Alan Roden",
-            "order": 5,
-            "position": "RF"
-          },
-          {
-            "id": 668904,
-            "name": "Royce Lewis",
             "order": 6,
-            "position": "1B"
+            "position": "DH"
           },
           {
-            "id": 605170,
-            "name": "Victor Caratini",
+            "id": 693306,
+            "name": "Aaron Sabato",
             "order": 7,
-            "position": "C"
+            "position": "1B"
           },
           {
             "id": 691181,
@@ -4498,8 +4498,8 @@
             "position": "LF"
           },
           {
-            "id": 805346,
-            "name": "Ben Ross",
+            "id": 668952,
+            "name": "Ryan Kreidler",
             "order": 9,
             "position": "SS"
           }
@@ -4560,7 +4560,7 @@
             "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-09-20)",
+        "awayLineupSource": "projected (last 2026-09-22)",
         "homeLineupSource": "projected (last 2026-09-20)"
       },
       {
