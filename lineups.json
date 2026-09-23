@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-23T09:59:11.106Z",
+  "refreshedAt": "2026-09-23T14:49:45.928Z",
   "today": "2026-09-23",
   "dates": [
     "2026-09-22",
@@ -246,7 +246,7 @@
           },
           {
             "id": 671277,
-            "name": "Luis García Jr.",
+            "name": "Luis García",
             "order": 4,
             "position": "1B"
           },
@@ -258,13 +258,13 @@
           },
           {
             "id": 665862,
-            "name": "Jazz Chisholm Jr.",
+            "name": "Jazz Chisholm",
             "order": 6,
             "position": "2B"
           },
           {
             "id": 806146,
-            "name": "George Lombard Jr.",
+            "name": "George Lombard",
             "order": 7,
             "position": "SS"
           },
@@ -528,7 +528,7 @@
           },
           {
             "id": 804668,
-            "name": "Rafael Flores Jr.",
+            "name": "Rafael Flores",
             "order": 5,
             "position": "C"
           },
@@ -918,7 +918,7 @@
         "homeLineup": [
           {
             "id": 660670,
-            "name": "Ronald Acuña Jr.",
+            "name": "Ronald Acuña",
             "order": 1,
             "position": "RF"
           },
@@ -942,7 +942,7 @@
           },
           {
             "id": 671739,
-            "name": "Michael Harris II",
+            "name": "Michael Harris",
             "order": 5,
             "position": "CF"
           },
@@ -1062,7 +1062,7 @@
           },
           {
             "id": 677951,
-            "name": "Bobby Witt Jr.",
+            "name": "Bobby Witt",
             "order": 2,
             "position": "SS"
           },
@@ -1138,7 +1138,7 @@
         "awayLineup": [
           {
             "id": 681715,
-            "name": "Heriberto Hernández",
+            "name": "Heriberto Hernandez",
             "order": 1,
             "position": "LF"
           },
@@ -1966,7 +1966,7 @@
         "awayLineup": [
           {
             "id": 665487,
-            "name": "Fernando Tatis Jr.",
+            "name": "Fernando Tatis",
             "order": 1,
             "position": "RF"
           },
@@ -2221,7 +2221,7 @@
       {
         "id": "g824223",
         "gamePk": 824223,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "WSH",
         "homeTeam": "DET",
         "awayTeamId": 120,
@@ -2299,34 +2299,34 @@
         ],
         "homeLineup": [
           {
-            "id": 650402,
-            "name": "Gleyber Torres",
+            "id": 805808,
+            "name": "Kevin McGonigle",
             "order": 1,
-            "position": "DH"
+            "position": "3B"
           },
           {
             "id": 701678,
             "name": "Hao-Yu Lee",
             "order": 2,
-            "position": "2B"
-          },
-          {
-            "id": 805808,
-            "name": "Kevin McGonigle",
-            "order": 3,
-            "position": "3B"
-          },
-          {
-            "id": 680664,
-            "name": "Eduardo Valencia",
-            "order": 4,
-            "position": "C"
+            "position": "DH"
           },
           {
             "id": 701162,
             "name": "Ben Malgeri",
-            "order": 5,
+            "order": 3,
             "position": "RF"
+          },
+          {
+            "id": 682985,
+            "name": "Riley Greene",
+            "order": 4,
+            "position": "LF"
+          },
+          {
+            "id": 693307,
+            "name": "Dillon Dingler",
+            "order": 5,
+            "position": "C"
           },
           {
             "id": 703601,
@@ -2341,25 +2341,25 @@
             "position": "1B"
           },
           {
-            "id": 595879,
-            "name": "Javier Báez",
-            "order": 8,
-            "position": "LF"
-          },
-          {
             "id": 807726,
             "name": "John Peck",
-            "order": 9,
+            "order": 8,
             "position": "SS"
+          },
+          {
+            "id": 656716,
+            "name": "Zach McKinstry",
+            "order": 9,
+            "position": "2B"
           }
         ],
         "awayLineupSource": "projected (last 2026-09-22)",
-        "homeLineupSource": "projected (last 2026-09-22)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g824785",
         "gamePk": 824785,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "TOR",
         "homeTeam": "BAL",
         "awayTeamId": 141,
@@ -2374,7 +2374,10 @@
           "id": 453286,
           "name": "Max Scherzer"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 605135,
+          "name": "Chris Bassitt"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -2464,32 +2467,32 @@
             "position": "3B"
           },
           {
-            "id": 694212,
-            "name": "Samuel Basallo",
-            "order": 6,
-            "position": "C"
-          },
-          {
-            "id": 677956,
-            "name": "Rece Hinds",
-            "order": 7,
-            "position": "RF"
-          },
-          {
             "id": 681297,
             "name": "Colton Cowser",
-            "order": 8,
+            "order": 6,
             "position": "CF"
           },
           {
-            "id": 676480,
-            "name": "José Barrero",
-            "order": 9,
+            "id": 669236,
+            "name": "Jeremiah Jackson",
+            "order": 7,
             "position": "2B"
+          },
+          {
+            "id": 665750,
+            "name": "Leody Taveras",
+            "order": 8,
+            "position": "RF"
+          },
+          {
+            "id": 665966,
+            "name": "Carlos Narváez",
+            "order": 9,
+            "position": "C"
           }
         ],
         "awayLineupSource": "projected (last 2026-09-21)",
-        "homeLineupSource": "projected (last 2026-09-21)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g824784",
@@ -2596,32 +2599,32 @@
             "position": "3B"
           },
           {
-            "id": 694212,
-            "name": "Samuel Basallo",
-            "order": 6,
-            "position": "C"
-          },
-          {
-            "id": 677956,
-            "name": "Rece Hinds",
-            "order": 7,
-            "position": "RF"
-          },
-          {
             "id": 681297,
             "name": "Colton Cowser",
-            "order": 8,
+            "order": 6,
             "position": "CF"
           },
           {
-            "id": 676480,
-            "name": "José Barrero",
-            "order": 9,
+            "id": 669236,
+            "name": "Jeremiah Jackson",
+            "order": 7,
             "position": "2B"
+          },
+          {
+            "id": 665750,
+            "name": "Leody Taveras",
+            "order": 8,
+            "position": "RF"
+          },
+          {
+            "id": 665966,
+            "name": "Carlos Narváez",
+            "order": 9,
+            "position": "C"
           }
         ],
         "awayLineupSource": "projected (last 2026-09-21)",
-        "homeLineupSource": "projected (last 2026-09-21)"
+        "homeLineupSource": "projected (last 2026-09-23)"
       },
       {
         "id": "g823168",
@@ -2867,7 +2870,7 @@
           },
           {
             "id": 804668,
-            "name": "Rafael Flores Jr.",
+            "name": "Rafael Flores",
             "order": 5,
             "position": "C"
           },
@@ -3137,7 +3140,7 @@
           },
           {
             "id": 671277,
-            "name": "Luis García Jr.",
+            "name": "Luis García",
             "order": 4,
             "position": "1B"
           },
@@ -3149,13 +3152,13 @@
           },
           {
             "id": 665862,
-            "name": "Jazz Chisholm Jr.",
+            "name": "Jazz Chisholm",
             "order": 6,
             "position": "2B"
           },
           {
             "id": 806146,
-            "name": "George Lombard Jr.",
+            "name": "George Lombard",
             "order": 7,
             "position": "SS"
           },
@@ -3395,7 +3398,7 @@
         "homeLineup": [
           {
             "id": 660670,
-            "name": "Ronald Acuña Jr.",
+            "name": "Ronald Acuña",
             "order": 1,
             "position": "RF"
           },
@@ -3419,7 +3422,7 @@
           },
           {
             "id": 671739,
-            "name": "Michael Harris II",
+            "name": "Michael Harris",
             "order": 5,
             "position": "CF"
           },
@@ -3539,7 +3542,7 @@
           },
           {
             "id": 677951,
-            "name": "Bobby Witt Jr.",
+            "name": "Bobby Witt",
             "order": 2,
             "position": "SS"
           },
@@ -3615,7 +3618,7 @@
         "awayLineup": [
           {
             "id": 681715,
-            "name": "Heriberto Hernández",
+            "name": "Heriberto Hernandez",
             "order": 1,
             "position": "LF"
           },
@@ -4164,7 +4167,7 @@
         "awayLineup": [
           {
             "id": 665487,
-            "name": "Fernando Tatis Jr.",
+            "name": "Fernando Tatis",
             "order": 1,
             "position": "RF"
           },
@@ -4522,7 +4525,7 @@
           },
           {
             "id": 804668,
-            "name": "Rafael Flores Jr.",
+            "name": "Rafael Flores",
             "order": 5,
             "position": "C"
           },
@@ -4639,7 +4642,7 @@
           },
           {
             "id": 677951,
-            "name": "Bobby Witt Jr.",
+            "name": "Bobby Witt",
             "order": 2,
             "position": "SS"
           },
@@ -4712,7 +4715,7 @@
         "awayLineup": [
           {
             "id": 681715,
-            "name": "Heriberto Hernández",
+            "name": "Heriberto Hernandez",
             "order": 1,
             "position": "LF"
           },
@@ -5461,7 +5464,7 @@
           },
           {
             "id": 671277,
-            "name": "Luis García Jr.",
+            "name": "Luis García",
             "order": 4,
             "position": "1B"
           },
@@ -5473,13 +5476,13 @@
           },
           {
             "id": 665862,
-            "name": "Jazz Chisholm Jr.",
+            "name": "Jazz Chisholm",
             "order": 6,
             "position": "2B"
           },
           {
             "id": 806146,
-            "name": "George Lombard Jr.",
+            "name": "George Lombard",
             "order": 7,
             "position": "SS"
           },
@@ -5581,7 +5584,7 @@
         "homeLineup": [
           {
             "id": 660670,
-            "name": "Ronald Acuña Jr.",
+            "name": "Ronald Acuña",
             "order": 1,
             "position": "RF"
           },
@@ -5605,7 +5608,7 @@
           },
           {
             "id": 671739,
-            "name": "Michael Harris II",
+            "name": "Michael Harris",
             "order": 5,
             "position": "CF"
           },
@@ -5927,7 +5930,7 @@
         "awayLineup": [
           {
             "id": 665487,
-            "name": "Fernando Tatis Jr.",
+            "name": "Fernando Tatis",
             "order": 1,
             "position": "RF"
           },
