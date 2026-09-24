@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-24T00:00:41.848Z",
+  "refreshedAt": "2026-09-24T04:32:26.735Z",
   "today": "2026-09-24",
   "dates": [
     "2026-09-23",
@@ -287,7 +287,7 @@
       {
         "id": "g824784",
         "gamePk": 824784,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "TOR",
         "homeTeam": "BAL",
         "awayTeamId": 141,
@@ -563,7 +563,7 @@
       {
         "id": "g823327",
         "gamePk": 823327,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "STL",
         "homeTeam": "PIT",
         "awayTeamId": 138,
@@ -701,7 +701,7 @@
       {
         "id": "g823410",
         "gamePk": 823410,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "MIL",
         "homeTeam": "PHI",
         "awayTeamId": 158,
@@ -839,7 +839,7 @@
       {
         "id": "g823492",
         "gamePk": 823492,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "TB",
         "homeTeam": "NYY",
         "awayTeamId": 139,
@@ -977,7 +977,7 @@
       {
         "id": "g824710",
         "gamePk": 824710,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "CLE",
         "homeTeam": "BOS",
         "awayTeamId": 114,
@@ -1115,7 +1115,7 @@
       {
         "id": "g824868",
         "gamePk": 824868,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "CIN",
         "homeTeam": "ATL",
         "awayTeamId": 113,
@@ -1253,7 +1253,7 @@
       {
         "id": "g824060",
         "gamePk": 824060,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "CWS",
         "homeTeam": "KC",
         "awayTeamId": 145,
@@ -1391,7 +1391,7 @@
       {
         "id": "g824625",
         "gamePk": 824625,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "MIA",
         "homeTeam": "CHC",
         "awayTeamId": 146,
@@ -1529,7 +1529,7 @@
       {
         "id": "g822841",
         "gamePk": 822841,
-        "status": "Warmup",
+        "status": "Final",
         "awayTeam": "NYM",
         "homeTeam": "TEX",
         "awayTeamId": 121,
@@ -1667,7 +1667,7 @@
       {
         "id": "g824301",
         "gamePk": 824301,
-        "status": "Pre-Game",
+        "status": "Final",
         "awayTeam": "AZ",
         "homeTeam": "COL",
         "awayTeamId": 109,
@@ -1805,7 +1805,7 @@
       {
         "id": "g824951",
         "gamePk": 824951,
-        "status": "Pre-Game",
+        "status": "Manager challenge",
         "awayTeam": "LAA",
         "homeTeam": "ATH",
         "awayTeamId": 108,
@@ -1943,7 +1943,7 @@
       {
         "id": "g823894",
         "gamePk": 823894,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "SD",
         "homeTeam": "LAD",
         "awayTeamId": 135,
@@ -2081,7 +2081,7 @@
       {
         "id": "g823086",
         "gamePk": 823086,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "HOU",
         "homeTeam": "SEA",
         "awayTeamId": 117,
@@ -2100,13 +2100,13 @@
           "id": 669923,
           "name": "George Kirby"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
-            "id": 665161,
-            "name": "Jeremy Peña",
+            "id": 514888,
+            "name": "Jose Altuve",
             "order": 1,
-            "position": "SS"
+            "position": "2B"
           },
           {
             "id": 670541,
@@ -2121,40 +2121,40 @@
             "position": "3B"
           },
           {
-            "id": 514888,
-            "name": "Jose Altuve",
-            "order": 4,
-            "position": "2B"
-          },
-          {
             "id": 673237,
             "name": "Yainer Diaz",
-            "order": 5,
+            "order": 4,
             "position": "C"
           },
           {
             "id": 572233,
             "name": "Christian Walker",
-            "order": 6,
+            "order": 5,
             "position": "1B"
           },
           {
             "id": 666211,
             "name": "Taylor Trammell",
-            "order": 7,
+            "order": 6,
             "position": "LF"
           },
           {
             "id": 701358,
             "name": "Cam Smith",
-            "order": 8,
+            "order": 7,
             "position": "RF"
           },
           {
-            "id": 694728,
-            "name": "Brice Matthews",
-            "order": 9,
+            "id": 828599,
+            "name": "Lucas Spence",
+            "order": 8,
             "position": "CF"
+          },
+          {
+            "id": 669397,
+            "name": "Nick Allen",
+            "order": 9,
+            "position": "SS"
           }
         ],
         "homeLineup": [
@@ -2213,7 +2213,7 @@
             "position": "3B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-09-23)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       }
     ],
@@ -2370,7 +2370,10 @@
         "parkHrFactor": 94,
         "startUtc": "2026-09-24T18:10:00Z",
         "startET": "2:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 689818,
+          "name": "David Sandlin"
+        },
         "homePitcher": {
           "id": 677976,
           "name": "Randy Dobnak"
@@ -2647,7 +2650,10 @@
           "id": 804267,
           "name": "Zac Thornton"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 677958,
+          "name": "Kumar Rocker"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -2916,7 +2922,10 @@
         "parkHrFactor": 109,
         "startUtc": "2026-09-24T22:05:00Z",
         "startET": "6:05 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 669060,
+          "name": "Bryse Wilson"
+        },
         "homePitcher": {
           "id": 691725,
           "name": "Andrew Painter"
@@ -3051,7 +3060,10 @@
         "parkHrFactor": 105,
         "startUtc": "2026-09-24T22:45:00Z",
         "startET": "6:45 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 682982,
+          "name": "Daniel Espino"
+        },
         "homePitcher": {
           "id": 624133,
           "name": "Ranger Suarez"
@@ -3462,15 +3474,18 @@
         "parkHrFactor": 105,
         "startUtc": "2026-09-25T01:40:00Z",
         "startET": "9:40 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 663567,
+          "name": "Peter Lambert"
+        },
         "homePitcher": null,
         "lineupsConfirmed": false,
         "awayLineup": [
           {
-            "id": 665161,
-            "name": "Jeremy Peña",
+            "id": 514888,
+            "name": "Jose Altuve",
             "order": 1,
-            "position": "SS"
+            "position": "2B"
           },
           {
             "id": 670541,
@@ -3485,40 +3500,40 @@
             "position": "3B"
           },
           {
-            "id": 514888,
-            "name": "Jose Altuve",
-            "order": 4,
-            "position": "2B"
-          },
-          {
             "id": 673237,
             "name": "Yainer Diaz",
-            "order": 5,
+            "order": 4,
             "position": "C"
           },
           {
             "id": 572233,
             "name": "Christian Walker",
-            "order": 6,
+            "order": 5,
             "position": "1B"
           },
           {
             "id": 666211,
             "name": "Taylor Trammell",
-            "order": 7,
+            "order": 6,
             "position": "LF"
           },
           {
             "id": 701358,
             "name": "Cam Smith",
-            "order": 8,
+            "order": 7,
             "position": "RF"
           },
           {
-            "id": 694728,
-            "name": "Brice Matthews",
-            "order": 9,
+            "id": 828599,
+            "name": "Lucas Spence",
+            "order": 8,
             "position": "CF"
+          },
+          {
+            "id": 669397,
+            "name": "Nick Allen",
+            "order": 9,
+            "position": "SS"
           }
         ],
         "homeLineup": [
@@ -3577,7 +3592,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-09-23)",
+        "awayLineupSource": "projected (last 2026-09-24)",
         "homeLineupSource": "projected (last 2026-09-24)"
       },
       {
@@ -3598,7 +3613,10 @@
           "id": 680570,
           "name": "Grayson Rodriguez"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 693433,
+          "name": "Bryan Woo"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -4272,7 +4290,10 @@
           "id": 642547,
           "name": "Freddy Peralta"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 650911,
+          "name": "Cristopher Sánchez"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -5482,10 +5503,10 @@
         "lineupsConfirmed": false,
         "awayLineup": [
           {
-            "id": 665161,
-            "name": "Jeremy Peña",
+            "id": 514888,
+            "name": "Jose Altuve",
             "order": 1,
-            "position": "SS"
+            "position": "2B"
           },
           {
             "id": 670541,
@@ -5500,40 +5521,40 @@
             "position": "3B"
           },
           {
-            "id": 514888,
-            "name": "Jose Altuve",
-            "order": 4,
-            "position": "2B"
-          },
-          {
             "id": 673237,
             "name": "Yainer Diaz",
-            "order": 5,
+            "order": 4,
             "position": "C"
           },
           {
             "id": 572233,
             "name": "Christian Walker",
-            "order": 6,
+            "order": 5,
             "position": "1B"
           },
           {
             "id": 666211,
             "name": "Taylor Trammell",
-            "order": 7,
+            "order": 6,
             "position": "LF"
           },
           {
             "id": 701358,
             "name": "Cam Smith",
-            "order": 8,
+            "order": 7,
             "position": "RF"
           },
           {
-            "id": 694728,
-            "name": "Brice Matthews",
-            "order": 9,
+            "id": 828599,
+            "name": "Lucas Spence",
+            "order": 8,
             "position": "CF"
+          },
+          {
+            "id": 669397,
+            "name": "Nick Allen",
+            "order": 9,
+            "position": "SS"
           }
         ],
         "homeLineup": [
@@ -5592,7 +5613,7 @@
             "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-09-23)",
+        "awayLineupSource": "projected (last 2026-09-24)",
         "homeLineupSource": "projected (last 2026-09-24)"
       },
       {
@@ -5745,7 +5766,10 @@
           "id": 672282,
           "name": "Reid Detmers"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 682243,
+          "name": "Bryce Miller"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
