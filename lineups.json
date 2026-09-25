@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-25T14:47:34.775Z",
+  "refreshedAt": "2026-09-25T18:57:18.906Z",
   "today": "2026-09-25",
   "dates": [
     "2026-09-24",
@@ -1669,7 +1669,7 @@
       {
         "id": "g824703",
         "gamePk": 824703,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "CHC",
         "homeTeam": "BOS",
         "awayTeamId": 112,
@@ -1945,7 +1945,7 @@
       {
         "id": "g823491",
         "gamePk": 823491,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "BAL",
         "homeTeam": "NYY",
         "awayTeamId": 110,
@@ -1956,6 +1956,144 @@
         "parkHrFactor": 112,
         "startUtc": "2026-09-25T20:05:00Z",
         "startET": "4:05 PM",
+        "awayPitcher": {
+          "id": 669432,
+          "name": "Trevor Rogers"
+        },
+        "homePitcher": {
+          "id": 694341,
+          "name": "Brendan Beck"
+        },
+        "lineupsConfirmed": true,
+        "awayLineup": [
+          {
+            "id": 687637,
+            "name": "Dylan Beavers",
+            "order": 1,
+            "position": "RF"
+          },
+          {
+            "id": 624413,
+            "name": "Pete Alonso",
+            "order": 2,
+            "position": "1B"
+          },
+          {
+            "id": 683002,
+            "name": "Gunnar Henderson",
+            "order": 3,
+            "position": "SS"
+          },
+          {
+            "id": 691723,
+            "name": "Coby Mayo",
+            "order": 4,
+            "position": "DH"
+          },
+          {
+            "id": 687952,
+            "name": "Christian Encarnacion-Strand",
+            "order": 5,
+            "position": "3B"
+          },
+          {
+            "id": 681297,
+            "name": "Colton Cowser",
+            "order": 6,
+            "position": "CF"
+          },
+          {
+            "id": 669236,
+            "name": "Jeremiah Jackson",
+            "order": 7,
+            "position": "2B"
+          },
+          {
+            "id": 681047,
+            "name": "Christian Franklin",
+            "order": 8,
+            "position": "LF"
+          },
+          {
+            "id": 665966,
+            "name": "Carlos Narváez",
+            "order": 9,
+            "position": "C"
+          }
+        ],
+        "homeLineup": [
+          {
+            "id": 502671,
+            "name": "Paul Goldschmidt",
+            "order": 1,
+            "position": "1B"
+          },
+          {
+            "id": 700250,
+            "name": "Ben Rice",
+            "order": 2,
+            "position": "DH"
+          },
+          {
+            "id": 671218,
+            "name": "Heliot Ramos",
+            "order": 3,
+            "position": "LF"
+          },
+          {
+            "id": 642708,
+            "name": "Amed Rosario",
+            "order": 4,
+            "position": "RF"
+          },
+          {
+            "id": 806146,
+            "name": "George Lombard Jr.",
+            "order": 5,
+            "position": "SS"
+          },
+          {
+            "id": 682987,
+            "name": "Spencer Jones",
+            "order": 6,
+            "position": "CF"
+          },
+          {
+            "id": 683011,
+            "name": "Anthony Volpe",
+            "order": 7,
+            "position": "3B"
+          },
+          {
+            "id": 645305,
+            "name": "Ali Sánchez",
+            "order": 8,
+            "position": "C"
+          },
+          {
+            "id": 676609,
+            "name": "José Caballero",
+            "order": 9,
+            "position": "2B"
+          }
+        ],
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
+      },
+      {
+        "id": "g823489",
+        "gamePk": 823489,
+        "status": "Scheduled",
+        "awayTeam": "BAL",
+        "homeTeam": "NYY",
+        "awayTeamId": 110,
+        "homeTeamId": 147,
+        "awayTeamName": "Baltimore Orioles",
+        "homeTeamName": "New York Yankees",
+        "park": "Yankee Stadium",
+        "parkHrFactor": 112,
+        "startUtc": "2026-09-25T20:10:00Z",
+        "startET": "4:10 PM",
         "awayPitcher": {
           "id": 687064,
           "name": "Brandon Young"
@@ -1985,13 +2123,13 @@
             "id": 691723,
             "name": "Coby Mayo",
             "order": 4,
-            "position": "3B"
+            "position": "DH"
           },
           {
             "id": 687952,
             "name": "Christian Encarnacion-Strand",
             "order": 5,
-            "position": "DH"
+            "position": "3B"
           },
           {
             "id": 681297,
@@ -2012,8 +2150,8 @@
             "position": "LF"
           },
           {
-            "id": 650968,
-            "name": "Yohel Pozo",
+            "id": 665966,
+            "name": "Carlos Narváez",
             "order": 9,
             "position": "C"
           }
@@ -2023,47 +2161,47 @@
             "id": 502671,
             "name": "Paul Goldschmidt",
             "order": 1,
-            "position": "DH"
+            "position": "1B"
           },
           {
-            "id": 641355,
-            "name": "Cody Bellinger",
+            "id": 700250,
+            "name": "Ben Rice",
             "order": 2,
-            "position": "LF"
+            "position": "DH"
           },
           {
             "id": 671218,
             "name": "Heliot Ramos",
             "order": 3,
-            "position": "RF"
-          },
-          {
-            "id": 700250,
-            "name": "Ben Rice",
-            "order": 4,
-            "position": "1B"
+            "position": "LF"
           },
           {
             "id": 642708,
             "name": "Amed Rosario",
-            "order": 5,
-            "position": "3B"
+            "order": 4,
+            "position": "RF"
           },
           {
             "id": 806146,
             "name": "George Lombard Jr.",
-            "order": 6,
+            "order": 5,
             "position": "SS"
+          },
+          {
+            "id": 682987,
+            "name": "Spencer Jones",
+            "order": 6,
+            "position": "CF"
           },
           {
             "id": 683011,
             "name": "Anthony Volpe",
             "order": 7,
-            "position": "2B"
+            "position": "3B"
           },
           {
-            "id": 669224,
-            "name": "Austin Wells",
+            "id": 645305,
+            "name": "Ali Sánchez",
             "order": 8,
             "position": "C"
           },
@@ -2071,154 +2209,16 @@
             "id": 676609,
             "name": "José Caballero",
             "order": 9,
-            "position": "CF"
-          }
-        ],
-        "awayLineupSource": "projected (last 2026-09-23)",
-        "homeLineupSource": "projected (last 2026-09-24)"
-      },
-      {
-        "id": "g823489",
-        "gamePk": 823489,
-        "status": "Scheduled",
-        "awayTeam": "BAL",
-        "homeTeam": "NYY",
-        "awayTeamId": 110,
-        "homeTeamId": 147,
-        "awayTeamName": "Baltimore Orioles",
-        "homeTeamName": "New York Yankees",
-        "park": "Yankee Stadium",
-        "parkHrFactor": 112,
-        "startUtc": "2026-09-25T20:10:00Z",
-        "startET": "4:10 PM",
-        "awayPitcher": {
-          "id": 669432,
-          "name": "Trevor Rogers"
-        },
-        "homePitcher": {
-          "id": 694341,
-          "name": "Brendan Beck"
-        },
-        "lineupsConfirmed": false,
-        "awayLineup": [
-          {
-            "id": 687637,
-            "name": "Dylan Beavers",
-            "order": 1,
-            "position": "RF"
-          },
-          {
-            "id": 624413,
-            "name": "Pete Alonso",
-            "order": 2,
-            "position": "1B"
-          },
-          {
-            "id": 683002,
-            "name": "Gunnar Henderson",
-            "order": 3,
-            "position": "SS"
-          },
-          {
-            "id": 691723,
-            "name": "Coby Mayo",
-            "order": 4,
-            "position": "3B"
-          },
-          {
-            "id": 687952,
-            "name": "Christian Encarnacion-Strand",
-            "order": 5,
-            "position": "DH"
-          },
-          {
-            "id": 681297,
-            "name": "Colton Cowser",
-            "order": 6,
-            "position": "CF"
-          },
-          {
-            "id": 669236,
-            "name": "Jeremiah Jackson",
-            "order": 7,
             "position": "2B"
-          },
-          {
-            "id": 681047,
-            "name": "Christian Franklin",
-            "order": 8,
-            "position": "LF"
-          },
-          {
-            "id": 650968,
-            "name": "Yohel Pozo",
-            "order": 9,
-            "position": "C"
           }
         ],
-        "homeLineup": [
-          {
-            "id": 502671,
-            "name": "Paul Goldschmidt",
-            "order": 1,
-            "position": "DH"
-          },
-          {
-            "id": 641355,
-            "name": "Cody Bellinger",
-            "order": 2,
-            "position": "LF"
-          },
-          {
-            "id": 671218,
-            "name": "Heliot Ramos",
-            "order": 3,
-            "position": "RF"
-          },
-          {
-            "id": 700250,
-            "name": "Ben Rice",
-            "order": 4,
-            "position": "1B"
-          },
-          {
-            "id": 642708,
-            "name": "Amed Rosario",
-            "order": 5,
-            "position": "3B"
-          },
-          {
-            "id": 806146,
-            "name": "George Lombard Jr.",
-            "order": 6,
-            "position": "SS"
-          },
-          {
-            "id": 683011,
-            "name": "Anthony Volpe",
-            "order": 7,
-            "position": "2B"
-          },
-          {
-            "id": 669224,
-            "name": "Austin Wells",
-            "order": 8,
-            "position": "C"
-          },
-          {
-            "id": 676609,
-            "name": "José Caballero",
-            "order": 9,
-            "position": "CF"
-          }
-        ],
-        "awayLineupSource": "projected (last 2026-09-23)",
-        "homeLineupSource": "projected (last 2026-09-24)"
+        "awayLineupSource": "projected (last 2026-09-25)",
+        "homeLineupSource": "projected (last 2026-09-25)"
       },
       {
         "id": "g824220",
         "gamePk": 824220,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "PIT",
         "homeTeam": "DET",
         "awayTeamId": 134,
@@ -2296,62 +2296,62 @@
         ],
         "homeLineup": [
           {
-            "id": 805808,
-            "name": "Kevin McGonigle",
+            "id": 703601,
+            "name": "Max Clark",
             "order": 1,
-            "position": "3B"
+            "position": "CF"
           },
           {
             "id": 701678,
             "name": "Hao-Yu Lee",
             "order": 2,
-            "position": "DH"
+            "position": "2B"
           },
           {
-            "id": 701162,
-            "name": "Ben Malgeri",
+            "id": 805808,
+            "name": "Kevin McGonigle",
             "order": 3,
-            "position": "RF"
+            "position": "3B"
+          },
+          {
+            "id": 680664,
+            "name": "Eduardo Valencia",
+            "order": 4,
+            "position": "DH"
           },
           {
             "id": 682985,
             "name": "Riley Greene",
-            "order": 4,
+            "order": 5,
             "position": "LF"
           },
           {
             "id": 693307,
             "name": "Dillon Dingler",
-            "order": 5,
+            "order": 6,
             "position": "C"
           },
           {
-            "id": 703601,
-            "name": "Max Clark",
-            "order": 6,
-            "position": "CF"
+            "id": 814430,
+            "name": "Brett Callahan",
+            "order": 7,
+            "position": "RF"
           },
           {
             "id": 679529,
             "name": "Spencer Torkelson",
-            "order": 7,
+            "order": 8,
             "position": "1B"
           },
           {
             "id": 807726,
             "name": "John Peck",
-            "order": 8,
-            "position": "SS"
-          },
-          {
-            "id": 656716,
-            "name": "Zach McKinstry",
             "order": 9,
-            "position": "2B"
+            "position": "SS"
           }
         ],
         "awayLineupSource": "projected (last 2026-09-24)",
-        "homeLineupSource": "projected (last 2026-09-23)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g823409",
@@ -2775,7 +2775,10 @@
         "parkHrFactor": 100,
         "startUtc": "2026-09-25T23:10:00Z",
         "startET": "7:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 678061,
+          "name": "Ray Kerr"
+        },
         "homePitcher": {
           "id": 691587,
           "name": "Eury Pérez"
@@ -4077,62 +4080,62 @@
         ],
         "homeLineup": [
           {
-            "id": 805808,
-            "name": "Kevin McGonigle",
+            "id": 703601,
+            "name": "Max Clark",
             "order": 1,
-            "position": "3B"
+            "position": "CF"
           },
           {
             "id": 701678,
             "name": "Hao-Yu Lee",
             "order": 2,
-            "position": "DH"
+            "position": "2B"
           },
           {
-            "id": 701162,
-            "name": "Ben Malgeri",
+            "id": 805808,
+            "name": "Kevin McGonigle",
             "order": 3,
-            "position": "RF"
+            "position": "3B"
+          },
+          {
+            "id": 680664,
+            "name": "Eduardo Valencia",
+            "order": 4,
+            "position": "DH"
           },
           {
             "id": 682985,
             "name": "Riley Greene",
-            "order": 4,
+            "order": 5,
             "position": "LF"
           },
           {
             "id": 693307,
             "name": "Dillon Dingler",
-            "order": 5,
+            "order": 6,
             "position": "C"
           },
           {
-            "id": 703601,
-            "name": "Max Clark",
-            "order": 6,
-            "position": "CF"
+            "id": 814430,
+            "name": "Brett Callahan",
+            "order": 7,
+            "position": "RF"
           },
           {
             "id": 679529,
             "name": "Spencer Torkelson",
-            "order": 7,
+            "order": 8,
             "position": "1B"
           },
           {
             "id": 807726,
             "name": "John Peck",
-            "order": 8,
-            "position": "SS"
-          },
-          {
-            "id": 656716,
-            "name": "Zach McKinstry",
             "order": 9,
-            "position": "2B"
+            "position": "SS"
           }
         ],
         "awayLineupSource": "projected (last 2026-09-24)",
-        "homeLineupSource": "projected (last 2026-09-23)"
+        "homeLineupSource": "projected (last 2026-09-25)"
       },
       {
         "id": "g822759",
