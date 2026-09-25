@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-25T04:44:02.807Z",
+  "refreshedAt": "2026-09-25T09:51:11.487Z",
   "today": "2026-09-25",
   "dates": [
     "2026-09-24",
@@ -1529,7 +1529,7 @@
       {
         "id": "g823895",
         "gamePk": 823895,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "SD",
         "homeTeam": "LAD",
         "awayTeamId": 135,
@@ -1684,7 +1684,10 @@
           "id": 605280,
           "name": "Clay Holmes"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 687941,
+          "name": "Alec Gamboa"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -1940,8 +1943,8 @@
         "homeLineupSource": "projected (last 2026-09-24)"
       },
       {
-        "id": "g823489",
-        "gamePk": 823489,
+        "id": "g823491",
+        "gamePk": 823491,
         "status": "Scheduled",
         "awayTeam": "BAL",
         "homeTeam": "NYY",
@@ -1954,13 +1957,10 @@
         "startUtc": "2026-09-25T20:05:00Z",
         "startET": "4:05 PM",
         "awayPitcher": {
-          "id": 669432,
-          "name": "Trevor Rogers"
+          "id": 687064,
+          "name": "Brandon Young"
         },
-        "homePitcher": {
-          "id": 694341,
-          "name": "Brendan Beck"
-        },
+        "homePitcher": null,
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -2078,8 +2078,8 @@
         "homeLineupSource": "projected (last 2026-09-24)"
       },
       {
-        "id": "g823491",
-        "gamePk": 823491,
+        "id": "g823489",
+        "gamePk": 823489,
         "status": "Scheduled",
         "awayTeam": "BAL",
         "homeTeam": "NYY",
@@ -2092,10 +2092,13 @@
         "startUtc": "2026-09-25T20:10:00Z",
         "startET": "4:10 PM",
         "awayPitcher": {
-          "id": 687064,
-          "name": "Brandon Young"
+          "id": 669432,
+          "name": "Trevor Rogers"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 694341,
+          "name": "Brendan Beck"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -3459,7 +3462,10 @@
         "parkHrFactor": 105,
         "startUtc": "2026-09-26T01:40:00Z",
         "startET": "9:40 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 686613,
+          "name": "Hunter Brown"
+        },
         "homePitcher": {
           "id": 682052,
           "name": "Jacob Lopez"
