@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-26T00:36:25.142Z",
+  "refreshedAt": "2026-09-26T05:27:09.287Z",
   "today": "2026-09-26",
   "dates": [
     "2026-09-25",
@@ -425,7 +425,7 @@
       {
         "id": "g823489",
         "gamePk": 823489,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "BAL",
         "homeTeam": "NYY",
         "awayTeamId": 110,
@@ -563,7 +563,7 @@
       {
         "id": "g824220",
         "gamePk": 824220,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "PIT",
         "homeTeam": "DET",
         "awayTeamId": 134,
@@ -701,7 +701,7 @@
       {
         "id": "g823409",
         "gamePk": 823409,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "TB",
         "homeTeam": "PHI",
         "awayTeamId": 139,
@@ -839,7 +839,7 @@
       {
         "id": "g822681",
         "gamePk": 822681,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "NYM",
         "homeTeam": "WSH",
         "awayTeamId": 121,
@@ -977,7 +977,7 @@
       {
         "id": "g822760",
         "gamePk": 822760,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "CIN",
         "homeTeam": "TOR",
         "awayTeamId": 113,
@@ -1115,7 +1115,7 @@
       {
         "id": "g823816",
         "gamePk": 823816,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "ATL",
         "homeTeam": "MIA",
         "awayTeamId": 144,
@@ -1253,7 +1253,7 @@
       {
         "id": "g824058",
         "gamePk": 824058,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "CLE",
         "homeTeam": "KC",
         "awayTeamId": 114,
@@ -1391,7 +1391,7 @@
       {
         "id": "g824544",
         "gamePk": 824544,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "COL",
         "homeTeam": "CWS",
         "awayTeamId": 115,
@@ -1529,7 +1529,7 @@
       {
         "id": "g823735",
         "gamePk": 823735,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "STL",
         "homeTeam": "MIL",
         "awayTeamId": 138,
@@ -1667,7 +1667,7 @@
       {
         "id": "g823652",
         "gamePk": 823652,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "TEX",
         "homeTeam": "MIN",
         "awayTeamId": 140,
@@ -1805,7 +1805,7 @@
       {
         "id": "g824947",
         "gamePk": 824947,
-        "status": "Pre-Game",
+        "status": "Final",
         "awayTeam": "HOU",
         "homeTeam": "ATH",
         "awayTeamId": 117,
@@ -1943,7 +1943,7 @@
       {
         "id": "g823248",
         "gamePk": 823248,
-        "status": "Pre-Game",
+        "status": "Final",
         "awayTeam": "AZ",
         "homeTeam": "SD",
         "awayTeamId": 109,
@@ -2081,7 +2081,7 @@
       {
         "id": "g823085",
         "gamePk": 823085,
-        "status": "Pre-Game",
+        "status": "Final",
         "awayTeam": "LAA",
         "homeTeam": "SEA",
         "awayTeamId": 108,
@@ -2219,7 +2219,7 @@
       {
         "id": "g823167",
         "gamePk": 823167,
-        "status": "Pre-Game",
+        "status": "Final",
         "awayTeam": "LAD",
         "homeTeam": "SF",
         "awayTeamId": 119,
@@ -2508,7 +2508,10 @@
         "parkHrFactor": 90,
         "startUtc": "2026-09-26T17:10:00Z",
         "startET": "1:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 489446,
+          "name": "Kirby Yates"
+        },
         "homePitcher": {
           "id": 434378,
           "name": "Justin Verlander"
@@ -2919,7 +2922,10 @@
         "parkHrFactor": 101,
         "startUtc": "2026-09-26T20:10:00Z",
         "startET": "4:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 543135,
+          "name": "Nathan Eovaldi"
+        },
         "homePitcher": {
           "id": 641927,
           "name": "Bailey Ober"
@@ -3054,8 +3060,14 @@
         "parkHrFactor": 100,
         "startUtc": "2026-09-26T20:10:00Z",
         "startET": "4:10 PM",
-        "awayPitcher": null,
-        "homePitcher": null,
+        "awayPitcher": {
+          "id": 608718,
+          "name": "Brent Suter"
+        },
+        "homePitcher": {
+          "id": 667652,
+          "name": "Jack Ralston"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -3870,7 +3882,10 @@
         "parkHrFactor": 105,
         "startUtc": "2026-09-27T01:40:00Z",
         "startET": "9:40 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 669713,
+          "name": "Hayden Wesneski"
+        },
         "homePitcher": {
           "id": 678022,
           "name": "Jack Perkins"
