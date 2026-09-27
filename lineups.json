@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-27T01:27:08.309Z",
+  "refreshedAt": "2026-09-27T06:57:18.829Z",
   "today": "2026-09-27",
   "dates": [
     "2026-09-26",
@@ -839,7 +839,7 @@
       {
         "id": "g824057",
         "gamePk": 824057,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "CLE",
         "homeTeam": "KC",
         "awayTeamId": 114,
@@ -977,7 +977,7 @@
       {
         "id": "g824543",
         "gamePk": 824543,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "COL",
         "homeTeam": "CWS",
         "awayTeamId": 115,
@@ -1115,7 +1115,7 @@
       {
         "id": "g823733",
         "gamePk": 823733,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "STL",
         "homeTeam": "MIL",
         "awayTeamId": 138,
@@ -1253,7 +1253,7 @@
       {
         "id": "g823407",
         "gamePk": 823407,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "TB",
         "homeTeam": "PHI",
         "awayTeamId": 139,
@@ -1391,7 +1391,7 @@
       {
         "id": "g823245",
         "gamePk": 823245,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "AZ",
         "homeTeam": "SD",
         "awayTeamId": 109,
@@ -1529,7 +1529,7 @@
       {
         "id": "g824949",
         "gamePk": 824949,
-        "status": "Warmup",
+        "status": "Final",
         "awayTeam": "HOU",
         "homeTeam": "ATH",
         "awayTeamId": 117,
@@ -1667,7 +1667,7 @@
       {
         "id": "g823083",
         "gamePk": 823083,
-        "status": "Warmup",
+        "status": "Final",
         "awayTeam": "LAA",
         "homeTeam": "SEA",
         "awayTeamId": 108,
@@ -2226,8 +2226,14 @@
         "parkHrFactor": 105,
         "startUtc": "2026-09-27T19:05:00Z",
         "startET": "3:05 PM",
-        "awayPitcher": null,
-        "homePitcher": null,
+        "awayPitcher": {
+          "id": 663567,
+          "name": "Peter Lambert"
+        },
+        "homePitcher": {
+          "id": 686751,
+          "name": "Seth Johnson"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -2359,7 +2365,10 @@
         "startUtc": "2026-09-27T19:05:00Z",
         "startET": "3:05 PM",
         "awayPitcher": null,
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 693313,
+          "name": "Carson Seymour"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -2766,7 +2775,10 @@
         "parkHrFactor": 94,
         "startUtc": "2026-09-27T19:10:00Z",
         "startET": "3:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 800048,
+          "name": "Parker Messick"
+        },
         "homePitcher": {
           "id": 663738,
           "name": "Daniel Lynch IV"
@@ -3043,7 +3055,10 @@
           "id": 647336,
           "name": "Michael Soroka"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 681190,
+          "name": "Randy Vásquez"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -3312,7 +3327,10 @@
         "parkHrFactor": 101,
         "startUtc": "2026-09-27T19:10:00Z",
         "startET": "3:10 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 669022,
+          "name": "MacKenzie Gore"
+        },
         "homePitcher": {
           "id": 665152,
           "name": "Dean Kremer"
