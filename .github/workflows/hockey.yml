@@ -1,0 +1,49 @@
+name: Refresh MatrixHockey
+
+on:
+  # Every 30 min, 14:00-05:59 UTC (10 AM - 2 AM ET). Off-peak minute slots.
+  schedule:
+    - cron: "7,37 14-23 * * *"
+    - cron: "7,37 0-5 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hockey-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Run hockey refresh
+        run: node refresh-hockey.mjs
+      - name: Commit + push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add hockey.json hockey-picks.json hockey-edge-cache.json
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "hockey refresh $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          for i in 1 2 3 4 5; do
+            git pull --rebase -X theirs origin main && git push && break || { echo "retry $i"; sleep 5; }
+          done
+      - name: Update version.json
+        run: |
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main
+            SHA=$(git rev-parse HEAD); NOW=$(date -u +'%Y-%m-%dT%H:%M:%SZ')
+            printf '{\n  "latestSha": "%s",\n  "updatedAt": "%s",\n  "updatedBy": "refresh-hockey"\n}\n' "$SHA" "$NOW" > version.json
+            git add version.json
+            if git diff --cached --quiet; then exit 0; fi
+            git commit -m "version.json: pin ${SHA:0:7}"
+            git push && exit 0 || sleep 5
+          done
+          exit 1
