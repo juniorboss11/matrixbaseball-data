@@ -438,6 +438,133 @@ for (const s of stackRows) {
 const stackLift = {};
 for (const [k, o] of Object.entries(stackKinds)) stackLift[k] = { n: o.n, rate: r3(o.hit / o.n), indep: r3(o.indep / o.n), lift: r3(o.hit / o.indep) };
 
+// ---------------------------------------------------------------- line vs line matchups (5v5)
+// slot of a unit key inside a game (L1..L4 / D1..D3) from that game's slot field
+const unitSlot = (g, key) => {
+  const ids = key.slice(1).split("-"); const sl = ids.map((p) => g.p[p]?.[8] ?? "");
+  return sl.every((x) => x && x === sl[0]) ? sl[0] : "";
+};
+const tiersOut = {}; // T -> unitKey -> {L1:[sec,gf,ga,sf,sa],..., D1..}
+const h2hAcc = {};   // "A|B" (A<B) -> {games:Set, pairs:{kA|kB:[sec,gfA,gfB,sfA,sfB]}}
+const recentGids = {};
+for (const t of TEAMS) recentGids[t] = new Set([...(tg[t] ?? [])].sort((a, b) => (a.d < b.d ? 1 : -1)).slice(0, 40).map((r) => r.gid));
+for (const g of games) {
+  if (!g.m) continue;
+  const H = g.h, A = g.a;
+  const [lo, hi] = A < H ? [A, H] : [H, A];
+  const hk = `${lo}|${hi}`; const hh = (h2hAcc[hk] ??= { games: new Set(), pairs: {} }); hh.games.add(g.id);
+  for (const [kH, kA, sec, hgf, agf, hsf, asf] of g.m) {
+    // tiers (only recent 40 for each team)
+    const sH = unitSlot(g, kA), sA = unitSlot(g, kH);
+    if (recentGids[H]?.has(g.id) && sH) { const o = ((tiersOut[H] ??= {})[kH] ??= {}); const v = (o[sH] ??= [0, 0, 0, 0, 0]); v[0] += sec; v[1] += hgf; v[2] += agf; v[3] += hsf; v[4] += asf; }
+    if (recentGids[A]?.has(g.id) && sA) { const o = ((tiersOut[A] ??= {})[kA] ??= {}); const v = (o[sA] ??= [0, 0, 0, 0, 0]); v[0] += sec; v[1] += agf; v[2] += hgf; v[3] += asf; v[4] += hsf; }
+    // head to head, oriented lo team first
+    const [k1, k2, g1, g2, s1, s2] = lo === H ? [kH, kA, hgf, agf, hsf, asf] : [kA, kH, agf, hgf, asf, hsf];
+    const v = (hh.pairs[`${k1}|${k2}`] ??= [0, 0, 0, 0, 0]); v[0] += sec; v[1] += g1; v[2] += g2; v[3] += s1; v[4] += s2;
+  }
+}
+const onTeam = (key, t) => key.slice(1).split("-").every((p) => roster[p]?.team === t);
+const tiers = {};
+for (const t of TEAMS) {
+  const keep = new Set([...(unitsOut[t]?.F ?? []), ...(unitsOut[t]?.D ?? [])].map((u) => u.kind + u.ids.join("-")));
+  tiers[t] = Object.fromEntries(Object.entries(tiersOut[t] ?? {}).filter(([k]) => keep.has(k)));
+}
+const h2h = {};
+for (const [k, v] of Object.entries(h2hAcc)) {
+  const [lo, hi] = k.split("|");
+  const pairs = Object.entries(v.pairs).filter(([pk, x]) => { const [a, b] = pk.split("|"); return x[0] >= 60 && onTeam(a, lo) && onTeam(b, hi); })
+    .map(([pk, x]) => [...pk.split("|"), ...x]);
+  if (pairs.length) h2h[k] = { games: v.games.size, pairs };
+}
+
+// ---------------------------------------------------------------- goalies
+const netDist = (x, y) => Math.hypot(89 - x, y);
+const zoneOf = (x, y) => {
+  if (x == null || y == null) return "unk";
+  if (x < 25) return "long";
+  const d = netDist(x, y);
+  if (d <= 15) return "inner";
+  if (d <= 35 && Math.abs(y) <= 15) return "slot";
+  if (x < 55) return "point";
+  return "wing";
+};
+const ZONES = ["inner", "slot", "wing", "point", "long"];
+const STYPES = { 1: "wrist", 2: "snap", 3: "slap", 4: "backhand", 5: "tip", 6: "deflect", 7: "wrap", 8: "other" };
+// league goal rates by (zone, flag) for expected goals
+const lgz = {};
+const zkey = (e) => `${zoneOf(e[2], e[3])}|${(e[11] ?? 0) & 3}|${e[5]}`;
+for (const g of games) for (const e of g.ev) { if (e[5] === "n") continue; const k = zkey(e); const v = (lgz[k] ??= [0, 0]); v[0]++; if (e[4]) v[1]++; }
+const xg = (e) => { const v = lgz[zkey(e)]; return v && v[0] >= 30 ? v[1] / v[0] : 0.09; };
+const blankG = () => ({ gp: 0, sa: 0, ga: 0, xga: 0, str: { e: [0, 0], p: [0, 0], s: [0, 0] }, zone: Object.fromEntries(ZONES.map((z) => [z, [0, 0]])), type: {}, reb: [0, 0], rush: [0, 0], rebAllowed: 0, saves: 0, cells: {}, starts: [] });
+const gAcc = {};
+const cellG = cell;
+for (const g of games) {
+  const starters = {};
+  for (const e of g.ev) {
+    const gid = e[9]; if (!gid || e[5] === "n") continue;
+    const o = (gAcc[gid] ??= blankG());
+    if (!starters[gid]) { starters[gid] = { d: g.d, sa: 0, ga: 0, xga: 0, opp: e[0] === 1 ? g.h : g.a }; }
+    const st = starters[gid];
+    o.sa++; st.sa++; if (e[4]) { o.ga++; st.ga++; }
+    const x = xg(e); o.xga += x; st.xga += x;
+    const sv = o.str[e[5]]; if (sv) { sv[0]++; if (e[4]) sv[1]++; }
+    const z = o.zone[zoneOf(e[2], e[3])]; if (z) { z[0]++; if (e[4]) z[1]++; }
+    const tn = STYPES[e[10]] ?? "other"; const tv = (o.type[tn] ??= [0, 0]); tv[0]++; if (e[4]) tv[1]++;
+    if (e[11] & 1) { o.reb[0]++; if (e[4]) o.reb[1]++; }
+    if (e[11] & 2) { o.rush[0]++; if (e[4]) o.rush[1]++; }
+    const c = cellG(e[2], e[3]); if (c >= 0) { const cv = (o.cells[c] ??= [0, 0]); cv[0]++; if (e[4]) cv[1]++; }
+  }
+  // rebounds allowed: a save followed by an opponent rebound shot on the same goalie
+  for (let i = 1; i < g.ev.length; i++) { const e = g.ev[i]; if ((e[11] & 1) && e[9] && gAcc[e[9]]) gAcc[e[9]].rebAllowed++; }
+  for (const [gid, st] of Object.entries(starters)) { const o = gAcc[gid]; o.gp++; o.saves += st.sa - st.ga; o.starts.push([st.d, st.opp, st.sa, st.ga, r2(st.xga)]); }
+}
+const lgG = { sa: 0, ga: 0, zone: Object.fromEntries(ZONES.map((z) => [z, [0, 0]])), reb: [0, 0], rush: [0, 0], str: { e: [0, 0], p: [0, 0], s: [0, 0] }, type: {} };
+for (const o of Object.values(gAcc)) {
+  lgG.sa += o.sa; lgG.ga += o.ga;
+  for (const z of ZONES) { lgG.zone[z][0] += o.zone[z][0]; lgG.zone[z][1] += o.zone[z][1]; }
+  for (const k of ["e", "p", "s"]) { lgG.str[k][0] += o.str[k][0]; lgG.str[k][1] += o.str[k][1]; }
+  lgG.reb[0] += o.reb[0]; lgG.reb[1] += o.reb[1]; lgG.rush[0] += o.rush[0]; lgG.rush[1] += o.rush[1];
+  for (const [k, v] of Object.entries(o.type)) { const t = (lgG.type[k] ??= [0, 0]); t[0] += v[0]; t[1] += v[1]; }
+}
+const svp = (v) => (v[0] ? r3(1 - v[1] / v[0]) : null);
+const goaliesOut = {};
+for (const [gid, o] of Object.entries(gAcc)) {
+  if (roster[gid]?.pos !== "G" || o.sa < 100) continue;
+  goaliesOut[gid] = {
+    name: roster[gid].name, team: roster[gid].team, gp: o.gp, sa: o.sa, ga: o.ga, sv: svp([o.sa, o.ga]), gsax: r2(o.xga - o.ga), gsax60: r3((o.xga - o.ga) / Math.max(1, o.gp)),
+    str: Object.fromEntries(Object.entries(o.str).map(([k, v]) => [k, [v[0], svp(v)]])),
+    zone: Object.fromEntries(ZONES.map((z) => [z, [o.zone[z][0], svp(o.zone[z])]])),
+    type: Object.fromEntries(Object.entries(o.type).filter(([, v]) => v[0] >= 15).map(([k, v]) => [k, [v[0], svp(v)]])),
+    reb: [o.reb[0], svp(o.reb)], rush: [o.rush[0], svp(o.rush)], rebRate: r3(o.rebAllowed / Math.max(1, o.saves)),
+    cells: Object.entries(o.cells).map(([c, v]) => [+c, v[0], v[1]]),
+    last10: o.starts.slice(-10).reverse(),
+  };
+}
+// team attack profile (what kind of shots each team generates) for goalie matchup
+const teamAtk = {};
+for (const t of TEAMS) {
+  const o = { sf: 0, zone: Object.fromEntries(ZONES.map((z) => [z, 0])), reb: 0, rush: 0, type: {}, gf: 0, xgf: 0 };
+  for (const gid of recentGids[t] ?? []) {
+    const g = cache.games[gid]; const sd = g.h === t ? 1 : 0;
+    for (const e of g.ev) {
+      if (e[0] !== sd || e[5] === "n") continue;
+      o.sf++; o.zone[zoneOf(e[2], e[3])] = (o.zone[zoneOf(e[2], e[3])] ?? 0) + 1; if (e[11] & 1) o.reb++; if (e[11] & 2) o.rush++;
+      const tn = STYPES[e[10]] ?? "other"; o.type[tn] = (o.type[tn] ?? 0) + 1; if (e[4]) o.gf++; o.xgf += xg(e);
+    }
+  }
+  const n = Math.max(1, o.sf);
+  teamAtk[t] = { gp: recentGids[t]?.size ?? 0, sf: o.sf, zone: Object.fromEntries(ZONES.map((z) => [z, r3(o.zone[z] / n)])), reb: r3(o.reb / n), rush: r3(o.rush / n), type: Object.fromEntries(Object.entries(o.type).map(([k, v]) => [k, r3(v / n)])), shPct: r3(o.gf / n), xgPerShot: r3(o.xgf / n) };
+}
+const lgN = Math.max(1, lgG.sa);
+const goalieLeague = {
+  sv: svp([lgG.sa, lgG.ga]), zone: Object.fromEntries(ZONES.map((z) => [z, [r3(lgG.zone[z][0] / lgN), svp(lgG.zone[z])]])),
+  str: Object.fromEntries(Object.entries(lgG.str).map(([k, v]) => [k, svp(v)])), reb: [r3(lgG.reb[0] / lgN), svp(lgG.reb)], rush: [r3(lgG.rush[0] / lgN), svp(lgG.rush)],
+  type: Object.fromEntries(Object.entries(lgG.type).map(([k, v]) => [k, [r3(v[0] / lgN), svp(v)]])),
+};
+fs.writeFileSync("hockey-matchups.json", JSON.stringify({ builtAt: new Date().toISOString(), tiers, h2h }));
+fs.writeFileSync("hockey-goalies.json", JSON.stringify({ builtAt: new Date().toISOString(), grid: { x0: X0, size: CS, nx: NX, ny: NY }, zones: ZONES, league: goalieLeague, goalies: goaliesOut, teamAtk }));
+for (const f of ["hockey-matchups.json", "hockey-goalies.json"]) console.log(f, (fs.statSync(f).size / 1024).toFixed(0), "KB");
+
 // ---------------------------------------------------------------- live context (state after all games)
 const blendsNow = Object.fromEntries(TEAMS.map((t) => [t, teamBlend(t)]));
 const lgNow = leagueOf(blendsNow);

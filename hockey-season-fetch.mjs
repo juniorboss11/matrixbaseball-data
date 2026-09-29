@@ -29,7 +29,8 @@ async function pool(items, n, fn) {
 const mmss = (s) => { if (!s) return 0; const [m, x] = s.split(":").map(Number); return m * 60 + x; };
 function readJSON(p, d) { try { return JSON.parse(fs.readFileSync(p, "utf8")); } catch { return d; } }
 
-const cache = readJSON(CACHE, { v: 1, games: {} });
+let cache = readJSON(CACHE, { v: 2, games: {} });
+if ((cache.v ?? 1) < 2) { console.log("cache v1 -> v2 rebuild"); cache = { v: 2, games: {} }; }
 const standings = await fetchJSON(`${WEB}/standings/now`);
 const TEAMS = [...new Set((standings?.standings ?? []).map((t) => t.teamAbbrev.default))];
 if (TEAMS.length < 30) throw new Error("no teams");
@@ -82,8 +83,21 @@ async function processGame(g) {
   }
   const acc = [0, 1].map(() => ({ trio: {}, dpair: {}, pp: {} }));
   const isF = (p) => pos[p] && pos[p] !== "D" && pos[p] !== "G";
+  const mu = {}; // "hKey|aKey" -> [sec, hgf, agf, hsf, asf]
+  const keysOf = (on) => {
+    const f = on.filter(isF).sort((a, b) => a - b), d = on.filter((p) => pos[p] === "D").sort((a, b) => a - b);
+    return [f.length === 3 ? "F" + f.join("-") : null, d.length === 2 ? "D" + d.join("-") : null];
+  };
+  const muPairs = (h, a) => {
+    const out = [];
+    if (h[0] && a[0]) out.push(`${h[0]}|${a[0]}`);
+    if (h[0] && a[1]) out.push(`${h[0]}|${a[1]}`);
+    if (h[1] && a[0]) out.push(`${h[1]}|${a[0]}`);
+    return out;
+  };
   for (let s = 0; s < maxSec; s++) {
     const on = [tl[0][s] ?? [], tl[1][s] ?? []];
+    if (on[0].length === 5 && on[1].length === 5) for (const k of muPairs(keysOf(on[1]), keysOf(on[0]))) (mu[k] ??= [0, 0, 0, 0, 0])[0]++;
     for (const sd of [0, 1]) {
       const mine = on[sd], th = on[1 - sd];
       if (!mine.length) continue;
@@ -145,10 +159,16 @@ async function processGame(g) {
     return out;
   };
   const ev = [], gl = {}, pen = [0, 0];
+  const ST = { wrist: 1, snap: 2, slap: 3, backhand: 4, "tip-in": 5, deflected: 6, "wrap-around": 7, poke: 8, bat: 8, "between-legs": 8, cradle: 8 };
+  let prev = null; const lastAtt = [-99, -99];
   for (const pl of pbp.plays) {
     const pd = pl.periodDescriptor ?? {};
     if (pd.periodType === "SO") continue;
     const det = pl.details ?? {};
+    const tNow = (pd.number - 1) * 1200 + mmss(pl.timeInPeriod);
+    const ownNow = det.eventOwnerTeamId === hId ? 1 : 0;
+    const prevPlay = prev; prev = { t: tNow, own: ownNow, z: det.zoneCode, k: pl.typeDescKey, p: pd.number };
+    if (pl.typeDescKey === "missed-shot") { lastAtt[ownNow] = tNow; continue; }
     if (pl.typeDescKey === "faceoff") {
       if (det.winningPlayerId) ens(det.winningPlayerId).fo++;
       if (det.losingPlayerId) ens(det.losingPlayerId).fo++;
@@ -173,25 +193,37 @@ async function processGame(g) {
     if (shooter) { ens(shooter).sog++; if (goal) P[shooter].g++; }
     const a1 = goal ? det.assist1PlayerId ?? 0 : 0, a2 = goal ? det.assist2PlayerId ?? 0 : 0;
     if (a1) ens(a1).a++; if (a2) ens(a2).a++;
-    ev.push([own, shooter ?? 0, x, y, goal ? 1 : 0, str, a1, a2]);
+    // flags: 1 rebound (own attempt <=3s before), 2 rush (prior event in neutral/own zone <=4s before)
+    let fl = 0;
+    if (t - lastAtt[own] <= 3 && t >= lastAtt[own]) fl |= 1;
+    if (prevPlay && prevPlay.p === pd.number && t >= prevPlay.t && t - prevPlay.t <= 4 && prevPlay.z) {
+      const z = prevPlay.own === own ? prevPlay.z : prevPlay.z === "O" ? "D" : prevPlay.z === "D" ? "O" : "N";
+      if (z === "N" || z === "D") fl |= 2;
+    }
+    lastAtt[own] = t;
+    ev.push([own, shooter ?? 0, x, y, goal ? 1 : 0, str, a1, a2, t, det.goalieInNetId ?? 0, ST[det.shotType] ?? 0, fl]);
     if (det.goalieInNetId) { const gg = (gl[det.goalieInNetId] ??= [1 - own, 0, 0]); gg[1]++; if (goal) gg[2]++; }
     if (str === "e") {
       for (const k of unitsAt(own, t)) if (unitStats[k]) { unitStats[k][3]++; if (goal) unitStats[k][1]++; }
       for (const k of unitsAt(1 - own, t)) if (unitStats[k]) { unitStats[k][4]++; if (goal) unitStats[k][2]++; }
+      const ku = (sd) => { const on = tl[sd][Math.max(0, t - 1)] ?? []; return on.length === 5 ? keysOf(on) : [null, null]; };
+      for (const k of muPairs(ku(1), ku(0))) if (mu[k]) { if (own) { mu[k][3]++; if (goal) mu[k][1]++; } else { mu[k][4]++; if (goal) mu[k][2]++; } }
     }
   }
   const u = Object.entries(unitStats).filter(([, v]) => v[0] >= 60)
     .map(([k, v]) => { const [sd, key] = k.split("|"); return [+sd, key, ...v]; });
+  const m = Object.entries(mu).filter(([, v]) => v[0] >= 30).map(([k, v]) => [...k.split("|"), ...v]);
   const p = {};
   for (const [pid, x] of Object.entries(P)) p[pid] = [x.s, x.pos, x.g, x.a, x.sog, x.toi, x.es, x.pp, x.slot, x.pu, x.fo];
   return {
-    d: g.d, s: g.s, a: A, h: H, p, ev, u, gl, pen, sc: [pbp.awayTeam.score ?? null, pbp.homeTeam.score ?? null],
+    d: g.d, s: g.s, a: A, h: H, p, ev, u, m, gl, pen, sc: [pbp.awayTeam.score ?? null, pbp.homeTeam.score ?? null],
     shifts: rows.length ? 1 : 0,
   };
 }
 
 let done = 0;
 const save = () => fs.writeFileSync(CACHE, JSON.stringify(cache));
+if (!todo.length) fs.writeFileSync(".season-new", "0");
 await pool(todo, 8, async (g) => {
   const rec = await processGame(g);
   if (rec) cache.games[g.id] = rec;
