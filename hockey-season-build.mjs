@@ -580,6 +580,71 @@ fs.writeFileSync("hockey-h2h.json", JSON.stringify({ builtAt: new Date().toISOSt
 fs.writeFileSync("hockey-goalies.json", JSON.stringify({ builtAt: new Date().toISOString(), grid: { x0: X0, size: CS, nx: NX, ny: NY }, zones: ZONES, league: goalieLeague, goalies: goaliesOut, teamAtk }));
 for (const f of ["hockey-matchups.json", "hockey-h2h.json", "hockey-goalies.json"]) console.log(f, (fs.statSync(f).size / 1024).toFixed(0), "KB");
 
+// ---------------------------------------------------------------- special teams (PP vs PK), last 40 team games
+const stTeams = {}, stPlayers = {}, stUnits = {};
+const onIceHas = (arr, pid) => Array.isArray(arr) && arr.includes(+pid);
+for (const t of TEAMS) {
+  const o = { gp: 0, ppSec: 0, ppGf: 0, ppSf: 0, ppOpp: 0, pkSec: 0, pkGa: 0, pkSa: 0, pkTimes: 0, shGf: 0 };
+  const units = {}; // PP unit key -> {games, sec, gf, sf, ids}
+  for (const gid of recentGids[t] ?? []) {
+    const g = cache.games[gid]; if (!g) continue;
+    const sd = g.h === t ? 1 : 0;
+    o.gp++;
+    let mySk = 0, oppSk = 0;
+    const pu = { 1: [], 2: [] };
+    for (const [pid, x] of Object.entries(g.p)) {
+      if (x[0] === sd) { mySk += x[7] ?? 0; if (x[9]) pu[x[9]]?.push(+pid); }
+      else oppSk += x[7] ?? 0;
+      const rec = (stPlayers[pid] ??= { team: roster[pid]?.team, gp: 0, ppSec: 0, ppG: 0, ppA: 0, ppSog: 0, ppOnGf: 0, ppOnSf: 0, pkSec: 0, pkOnGa: 0, pkOnSa: 0, pu1: 0, pu2: 0 });
+      if (x[0] === sd && roster[pid]?.team === t) { rec.gp++; rec.ppSec += x[7] ?? 0; rec.pkSec += x[11] ?? 0; if (x[9] === 1) rec.pu1++; if (x[9] === 2) rec.pu2++; }
+    }
+    o.ppSec += mySk / 5; o.pkSec += oppSk / 5;
+    o.ppOpp += g.pen?.[1 - sd] ?? 0; o.pkTimes += g.pen?.[sd] ?? 0;
+    const ukeys = [1, 2].map((u) => (pu[u].length >= 4 ? pu[u].sort((a, b) => a - b).join("-") : null));
+    ukeys.forEach((k, i) => { if (k) { const u = (units[k] ??= { u: i + 1, games: 0, gf: 0, sf: 0, ids: pu[i + 1] }); u.games++; } });
+    for (const e of g.ev) {
+      const [own, shooter, , , goal, str, a1, a2] = e;
+      const att = e[12], def = e[13];
+      if (str === "p" && own === sd) {
+        o.ppSf++; if (goal) o.ppGf++;
+        const mine = (pid) => roster[pid]?.team === t && stPlayers[pid];
+        if (mine(shooter)) { stPlayers[shooter].ppSog++; if (goal) stPlayers[shooter].ppG++; }
+        if (goal) for (const a of [a1, a2]) if (a && mine(a)) stPlayers[a].ppA++;
+        if (Array.isArray(att)) for (const pid of att) if (mine(pid)) { stPlayers[pid].ppOnSf++; if (goal) stPlayers[pid].ppOnGf++; }
+        for (const k of ukeys) if (k && Array.isArray(att)) { const ids = units[k].ids; if (ids.filter((p) => att.includes(p)).length >= 4) { units[k].sf++; if (goal) units[k].gf++; } }
+      } else if (str === "p" && own !== sd) {
+        o.pkSa++; if (goal) o.pkGa++;
+        if (Array.isArray(def)) for (const pid of def) if (roster[pid]?.team === t && stPlayers[pid]) { stPlayers[pid].pkOnSa++; if (goal) stPlayers[pid].pkOnGa++; }
+      } else if (str === "s" && own === sd && goal) o.shGf++;
+    }
+  }
+  const h = (sec) => Math.max(1, sec) / 3600;
+  stTeams[t] = {
+    gp: o.gp, ppMin: r2(o.ppSec / 60 / Math.max(1, o.gp)), ppOppPg: r2(o.ppOpp / Math.max(1, o.gp)), ppPct: o.ppOpp ? r3(o.ppGf / o.ppOpp) : null,
+    ppGf60: r2(o.ppGf / h(o.ppSec)), ppSf60: r2(o.ppSf / h(o.ppSec)),
+    pkMin: r2(o.pkSec / 60 / Math.max(1, o.gp)), pkTimesPg: r2(o.pkTimes / Math.max(1, o.gp)), pkPct: o.pkTimes ? r3(1 - o.pkGa / o.pkTimes) : null,
+    pkGa60: r2(o.pkGa / h(o.pkSec)), pkSa60: r2(o.pkSa / h(o.pkSec)), shGf: o.shGf,
+  };
+  stUnits[t] = Object.entries(units).filter(([, u]) => u.games >= 3 && u.ids.every((p) => roster[p]?.team === t))
+    .sort((a, b) => b[1].games - a[1].games).slice(0, 6)
+    .map(([, u]) => ({ u: u.u, ids: u.ids, games: u.games, gf: u.gf, sf: u.sf }));
+}
+const stP = {};
+for (const [pid, r] of Object.entries(stPlayers)) {
+  if (!roster[pid] || roster[pid].pos === "G" || r.gp < 5) continue;
+  if (r.ppSec < 300 && r.pkSec < 300) continue;
+  const h = (s) => Math.max(1, s) / 3600;
+  stP[pid] = {
+    gp: r.gp, ppMin: r2(r.ppSec / 60 / r.gp), ppPts: r.ppG + r.ppA, ppG: r.ppG, ppSog: r.ppSog,
+    ppP60: r.ppSec >= 300 ? r2((r.ppG + r.ppA) / h(r.ppSec)) : null, ppS60: r.ppSec >= 300 ? r2(r.ppSog / h(r.ppSec)) : null,
+    ppOnGf60: r.ppSec >= 300 ? r2(r.ppOnGf / h(r.ppSec)) : null, ppOnSf60: r.ppSec >= 300 ? r2(r.ppOnSf / h(r.ppSec)) : null,
+    pkMin: r2(r.pkSec / 60 / r.gp), pkGa60: r.pkSec >= 300 ? r2(r.pkOnGa / h(r.pkSec)) : null, pkSa60: r.pkSec >= 300 ? r2(r.pkOnSa / h(r.pkSec)) : null,
+    pu1: r.pu1, pu2: r.pu2,
+  };
+}
+fs.writeFileSync("hockey-special.json", JSON.stringify({ builtAt: new Date().toISOString(), window: "last 40 team games", teams: stTeams, units: stUnits, players: stP }));
+console.log("hockey-special.json", (fs.statSync("hockey-special.json").size / 1024).toFixed(0), "KB");
+
 // ---------------------------------------------------------------- live context (state after all games)
 const blendsNow = Object.fromEntries(TEAMS.map((t) => [t, teamBlend(t)]));
 const lgNow = leagueOf(blendsNow);
