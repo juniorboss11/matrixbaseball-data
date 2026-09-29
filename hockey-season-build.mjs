@@ -10,7 +10,7 @@ const WEB = "https://api-web.nhle.com/v1";
 const PREV = "20252026", CUR = "20262027";
 const r3 = (x) => (x == null || !isFinite(x) ? null : Math.round(x * 1000) / 1000);
 const r2 = (x) => (x == null || !isFinite(x) ? null : Math.round(x * 100) / 100);
-async function fetchJSON(url) { try { const r = await fetch(url); return r.ok ? await r.json() : null; } catch { return null; } }
+async function fetchJSON(url) { for (let i = 0; i < 4; i++) { try { const r = await fetch(url, { headers: { "User-Agent": "Mozilla/5.0 MatrixHockey" } }); if (r.ok) return await r.json(); } catch {} await new Promise((res) => setTimeout(res, 1000 * (i + 1))); } return null; }
 
 const cache = JSON.parse(fs.readFileSync("hockey-season-cache.json", "utf8"));
 const games = Object.entries(cache.games).map(([id, g]) => ({ id: +id, ...g })).sort((a, b) => (a.d < b.d ? -1 : a.d > b.d ? 1 : a.id - b.id));
@@ -26,6 +26,7 @@ await Promise.all(TEAMS.map(async (t) => {
     roster[p.id] = { name: `${p.firstName.default} ${p.lastName.default}`, team: t, pos: p.positionCode, shoots: p.shootsCatches };
 }));
 
+if (TEAMS.length < 30 || Object.keys(roster).length < 600) throw new Error(`roster/standings fetch incomplete: ${TEAMS.length} teams, ${Object.keys(roster).length} players`);
 // ---------------------------------------------------------------- roles (C/L/R/D)
 // Season-level lateral side from shot y (attacking +x: left side = +y).
 const ySum = {}, yN = {};
@@ -447,6 +448,8 @@ const unitSlot = (g, key) => {
 const tiersOut = {}; // T -> unitKey -> {L1:[sec,gf,ga,sf,sa],..., D1..}
 const h2hAcc = {};   // "A|B" (A<B) -> {games:Set, pairs:{kA|kB:[sec,gfA,gfB,sfA,sfB]}}
 const recentGids = {};
+const pTiers = {}; // pid -> slot -> [sec,gf,ga,sf,sa]
+const pH2h = {};   // "lo|hi" -> "pLo|pHi" -> [sec, gfLo, gfHi, sfLo, sfHi]
 for (const t of TEAMS) recentGids[t] = new Set([...(tg[t] ?? [])].sort((a, b) => (a.d < b.d ? 1 : -1)).slice(0, 40).map((r) => r.gid));
 for (const g of games) {
   if (!g.m) continue;
@@ -456,6 +459,15 @@ for (const g of games) {
   for (const [kH, kA, sec, hgf, agf, hsf, asf] of g.m) {
     // tiers (only recent 40 for each team)
     const sH = unitSlot(g, kA), sA = unitSlot(g, kH);
+    const addP = (key, team, slot, a) => { if (!slot) return; for (const pid of key.slice(1).split("-")) { if (roster[pid]?.team !== team) continue; const o = ((pTiers[pid] ??= {})[slot] ??= [0, 0, 0, 0, 0]); for (let i = 0; i < 5; i++) o[i] += a[i]; } };
+    if (recentGids[H]?.has(g.id)) addP(kH, H, sH, [sec, hgf, agf, hsf, asf]);
+    if (recentGids[A]?.has(g.id)) addP(kA, A, sA, [sec, agf, hgf, asf, hsf]);
+    // player-level head to head (both players on current rosters)
+    for (const ph of kH.slice(1).split("-")) for (const pa of kA.slice(1).split("-")) {
+      if (roster[ph]?.team !== H || roster[pa]?.team !== A) continue;
+      const [p1, p2, a] = lo === H ? [ph, pa, [sec, hgf, agf, hsf, asf]] : [pa, ph, [sec, agf, hgf, asf, hsf]];
+      const o = ((pH2h[hk] ??= {})[`${p1}|${p2}`] ??= [0, 0, 0, 0, 0]); for (let i = 0; i < 5; i++) o[i] += a[i];
+    }
     if (recentGids[H]?.has(g.id) && sH) { const o = ((tiersOut[H] ??= {})[kH] ??= {}); const v = (o[sH] ??= [0, 0, 0, 0, 0]); v[0] += sec; v[1] += hgf; v[2] += agf; v[3] += hsf; v[4] += asf; }
     if (recentGids[A]?.has(g.id) && sA) { const o = ((tiersOut[A] ??= {})[kA] ??= {}); const v = (o[sA] ??= [0, 0, 0, 0, 0]); v[0] += sec; v[1] += agf; v[2] += hgf; v[3] += asf; v[4] += hsf; }
     // head to head, oriented lo team first
@@ -561,9 +573,12 @@ const goalieLeague = {
   str: Object.fromEntries(Object.entries(lgG.str).map(([k, v]) => [k, svp(v)])), reb: [r3(lgG.reb[0] / lgN), svp(lgG.reb)], rush: [r3(lgG.rush[0] / lgN), svp(lgG.rush)],
   type: Object.fromEntries(Object.entries(lgG.type).map(([k, v]) => [k, [r3(v[0] / lgN), svp(v)]])),
 };
-fs.writeFileSync("hockey-matchups.json", JSON.stringify({ builtAt: new Date().toISOString(), tiers, h2h }));
+const pH2hOut = {};
+for (const [k, v] of Object.entries(pH2h)) { const e = Object.entries(v).filter(([, x]) => x[0] >= 150).map(([pk, x]) => [...pk.split("|").map(Number), ...x]); if (e.length) pH2hOut[k] = e; }
+fs.writeFileSync("hockey-matchups.json", JSON.stringify({ builtAt: new Date().toISOString(), tiers, players: pTiers }));
+fs.writeFileSync("hockey-h2h.json", JSON.stringify({ builtAt: new Date().toISOString(), pairs: pH2hOut }));
 fs.writeFileSync("hockey-goalies.json", JSON.stringify({ builtAt: new Date().toISOString(), grid: { x0: X0, size: CS, nx: NX, ny: NY }, zones: ZONES, league: goalieLeague, goalies: goaliesOut, teamAtk }));
-for (const f of ["hockey-matchups.json", "hockey-goalies.json"]) console.log(f, (fs.statSync(f).size / 1024).toFixed(0), "KB");
+for (const f of ["hockey-matchups.json", "hockey-h2h.json", "hockey-goalies.json"]) console.log(f, (fs.statSync(f).size / 1024).toFixed(0), "KB");
 
 // ---------------------------------------------------------------- live context (state after all games)
 const blendsNow = Object.fromEntries(TEAMS.map((t) => [t, teamBlend(t)]));
