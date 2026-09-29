@@ -17,6 +17,7 @@
 
 import fs from "node:fs";
 
+import { bucketsOf, multFor, baseLambdas, applyContext, probs as probsOf, FACTOR_KEYS } from "./hockey-factors.mjs";
 const PREV = "20252026";
 const CUR = "20262027";
 const STATS = "https://api.nhle.com/stats/rest/en";
@@ -437,6 +438,83 @@ await pool([...slateTeams], 4, async (team) => {
 });
 console.log("lines built", Object.keys(lines).length);
 
+// ---------------------------------------------------------------- 5b. Daily Faceoff projected lines + starting goalies
+const slugify = (x) => x.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\./g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+const normName = (x) => x.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z]/g, "");
+const abbrToSlug = {}, slugToAbbr = {};
+for (const t of standings.standings) { const sl = slugify(t.teamName.default); abbrToSlug[t.teamAbbrev.default] = sl; slugToAbbr[sl] = t.teamAbbrev.default; }
+async function fetchDFO(url) {
+  try {
+    const r = await fetch(url, { headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36" } });
+    if (!r.ok) return null;
+    const html = await r.text();
+    const m = html.match(/<script id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
+    return m ? JSON.parse(m[1])?.props?.pageProps ?? null : null;
+  } catch { return null; }
+}
+function matchPlayer(team, name) {
+  const n = normName(name);
+  const ids = Object.entries(roster).filter(([, r]) => r.team === team);
+  let hit = ids.find(([, r]) => normName(r.name) === n);
+  if (!hit) { const last = normName(name.split(" ").slice(-1)[0]); const c = ids.filter(([, r]) => normName(r.name.split(" ").slice(-1)[0]) === last); if (c.length === 1) hit = c[0]; }
+  return hit ? Number(hit[0]) : null;
+}
+const dfoInfo = {}; // team -> {updatedAt, source, pos:{pid:'L'|'C'|'R'|'LD'|'RD'}, injured:[{name,status}]}
+const POSMAP = { lw: "L", c: "C", rw: "R", ld: "LD", rd: "RD" };
+await pool([...slateTeams], 4, async (team) => {
+  const pp = await fetchDFO(`https://www.dailyfaceoff.com/teams/${abbrToSlug[team]}/line-combinations`);
+  const c = pp?.combinations;
+  if (!c?.players?.length) return;
+  const grp = {}; const posOf = {}; const injured = []; let unmatched = 0;
+  for (const x of c.players) {
+    if (x.categoryIdentifier === "oi" || x.groupIdentifier === "ir") { injured.push({ name: x.name, status: x.injuryStatus ?? "out" }); continue; }
+    const pid = matchPlayer(team, x.name);
+    if (!pid) { unmatched++; continue; }
+    (grp[x.groupIdentifier] ??= []).push({ pid, pos: x.positionIdentifier });
+    if (POSMAP[x.positionIdentifier]) posOf[pid] = POSMAP[x.positionIdentifier];
+  }
+  const ord = (arr, o) => [...(arr ?? [])].sort((a, b) => o.indexOf(a.pos) - o.indexOf(b.pos)).map((x) => x.pid);
+  const F = ["f1", "f2", "f3", "f4"].map((k) => ord(grp[k], ["lw", "c", "rw"])).filter((ids) => ids.length);
+  const D = ["d1", "d2", "d3"].map((k) => ord(grp[k], ["ld", "rd"])).filter((ids) => ids.length);
+  const PP = ["pp1", "pp2"].map((k) => (grp[k] ?? []).map((x) => x.pid)).filter((ids) => ids.length >= 4);
+  if (F.length < 3 || D.length < 2) return;
+  const sh = pairShared[team] ?? {};
+  const key = (ids) => [...ids].sort((a, b) => a - b).join("-");
+  const old = lines[team];
+  lines[team] = {
+    F: F.map((ids) => ({ ids, esSecPerGame: sh[key(ids)] ?? 0 })),
+    D: D.map((ids) => ({ ids, esSecPerGame: sh[key(ids)] ?? 0 })),
+    PP: PP.map((ids) => ({ ids, ppSecPerGame: null })),
+    source: old?.source ?? [], added: [], dfo: { updatedAt: c.updatedAt, source: c.sourceName, unmatched },
+  };
+  dressedByTeam[team] = new Set([...F.flat(), ...D.flat()]);
+  rosterAdds[team] = new Set();
+  const g1 = (grp.g ?? []).find((x) => x.pos === "g1");
+  dfoInfo[team] = { updatedAt: c.updatedAt, source: c.sourceName, pos: posOf, injured, g1: g1?.pid ?? null };
+});
+console.log("DFO lines", Object.keys(dfoInfo).length, "/", slateTeams.size);
+const goalieOverride = {}; // date -> team -> {id,name,status}
+for (const date of slateDates) {
+  const pp = await fetchDFO(`https://www.dailyfaceoff.com/starting-goalies/${date}`);
+  for (const g of pp?.data ?? []) {
+    for (const side of ["home", "away"]) {
+      const team = slugToAbbr[g[`${side}TeamSlug`]]; const name = g[`${side}GoalieName`];
+      if (!team || !name) continue;
+      const id = matchPlayer(team, name);
+      (goalieOverride[date] ??= {})[team] = { id, name, status: g[`${side}NewsStrengthName`] ?? "Unconfirmed" };
+    }
+  }
+}
+console.log("DFO goalies", JSON.stringify(Object.fromEntries(Object.entries(goalieOverride).map(([d, x]) => [d, Object.keys(x).length]))));
+
+// Season build products (rankings, live context, learned multipliers)
+const seasonTeams = readJSON("hockey-teams.json", null);
+const backtest = readJSON("hockey-backtest.json", null);
+const LIVE = seasonTeams?.live ?? null;
+const MULT = backtest?.mult ?? null, PLATT = backtest?.platt ?? null, STACK_LIFT = backtest?.stackLift ?? {};
+const logit = (p) => Math.log(p / (1 - p)), sigm = (z) => 1 / (1 + Math.exp(-z));
+const platt = (m, p) => (PLATT?.[m] ? sigm(PLATT[m][0] + PLATT[m][1] * logit(clamp(p, 0.002, 0.998))) : p);
+
 // ---------------------------------------------------------------- 6. NHL Edge (cached)
 const edgeCache = readJSON("hockey-edge-cache.json", {});
 async function edgeFor(pid) {
@@ -459,7 +537,16 @@ async function edgeFor(pid) {
 }
 
 // ---------------------------------------------------------------- 7. model
-function likelyGoalie(team) {
+function goalieSvOf(id) {
+  const all = (goalieLogs[id] ?? []).slice(0, 40);
+  const sa = all.reduce((a, x) => a + x.sa, 0), sv = all.reduce((a, x) => a + x.sv, 0);
+  return { svPct: sa ? r3(sv / sa) : null, gp: all.length };
+}
+function likelyGoalie(team, date) {
+  const o = goalieOverride[date]?.[team];
+  if (o?.id) return { id: o.id, name: roster[o.id]?.name ?? o.name, status: o.status, ...goalieSvOf(o.id) };
+  const dg = dfoInfo[team]?.g1;
+  if (dg) return { id: dg, name: roster[dg]?.name, status: "Projected", ...goalieSvOf(dg) };
   const ids = Object.keys(goalieLogs).filter((id) => roster[id]?.team === team);
   let best = null;
   for (const id of ids) {
@@ -468,44 +555,70 @@ function likelyGoalie(team) {
     const all = goalieLogs[id].slice(0, 40);
     const sa = all.reduce((a, x) => a + x.sa, 0), sv = all.reduce((a, x) => a + x.sv, 0);
     const score = starts * 10 + all.length;
-    if (!best || score > best.score) best = { id: Number(id), name: roster[id].name, score, svPct: sa ? r3(sv / sa) : null, gp: all.length };
+    if (!best || score > best.score) best = { id: Number(id), name: roster[id].name, score, svPct: sa ? r3(sv / sa) : null, gp: all.length, status: "Model guess" };
   }
   return best;
 }
-function playerModel(pid, oppTeam, home, lineInfo) {
+const addDaysY = (ymd, n) => addDays(ymd, n);
+function roleOf(pid, team) {
+  const r = dfoInfo[team]?.pos?.[pid] ?? seasonTeams?.roles?.[pid] ?? roster[pid]?.pos;
+  return r === "D" ? "D" : r;
+}
+const posGroup = (r) => (r === "LD" || r === "RD" ? "D" : r);
+function playedYesterday(team, date) {
+  const y = addDaysY(date, -1);
+  if (LIVE?.lastPlayed?.[team] === y) return true;
+  return (gamesByDate[y] ?? []).some((g) => g.away === team || g.home === team);
+}
+// Pass 1: context-adjusted base lambdas
+function baseModel(pid, team, oppTeam, home, date) {
   const rows = (logsByPlayer.get(pid) ?? []);
-  const pos = roster[pid]?.pos === "D" ? "D" : "F";
-  const pr = posPrior[pos];
-  const K = 8; // prior strength in games
-  const lamPts = decayedMean(rows, (r) => r.pts, pr.pts, K);
-  const lamG = decayedMean(rows, (r) => r.g, pr.g, K);
-  const muSog = decayedMean(rows, (r) => r.sog, pr.sog, K);
-  const toiDec = decayedMean(rows, (r) => r.toi, pos === "D" ? 1200 : 900, 4);
-  const toiL5 = rows.length ? rows.slice(0, 5).reduce((a, r) => a + r.toi, 0) / Math.min(5, rows.length) : toiDec;
-  const toiF = Math.pow(clamp(toiL5 / Math.max(1, toiDec), 0.8, 1.2), 0.7);
-  const o = teamCtx[oppTeam]?.blend ?? lg;
-  const og = likelyGoalie(oppTeam);
-  const svOpp = og?.svPct && og.gp >= 10 ? 0.6 * og.svPct + 0.4 * o.svPct : o.svPct;
-  const oppGA = Math.pow(o.gapg / lg.gapg, 0.85);
-  const oppSA = o.sapg / lg.sapg;
-  const oppSV = (1 - svOpp) / (1 - lg.svPct);
-  const homeF = home ? 1.03 : 0.97;
-  const ptsAdj = lamPts * oppGA * homeF * toiF;
-  const gAdj = lamG * Math.pow(oppSA, 0.4) * Math.pow(oppSV, 0.6) * homeF * toiF;
-  const sogAdj = muSog * Math.pow(oppSA, 0.7) * toiF;
-  const p1 = poisGE(ptsAdj, 1), p2 = poisGE(ptsAdj, 2), g1 = poisGE(gAdj, 1), s3 = poisGE(sogAdj, 3);
+  const isD = roster[pid]?.pos === "D";
+  const b = baseLambdas(rows, isD);
+  const L = LIVE?.league, o = LIVE?.teams?.[oppTeam], own = LIVE?.teams?.[team];
+  const oc = o ?? teamCtx[oppTeam]?.blend ?? lg, lgc = L ?? lg;
+  const og = likelyGoalie(oppTeam, date);
+  const svOpp = og?.svPct && og.gp >= 10 ? 0.6 * og.svPct + 0.4 * oc.svPct : oc.svPct;
+  const ctx = { oppGA: Math.pow(oc.gapg / lgc.gapg, 0.85), oppSA: oc.sapg / lgc.sapg, oppSV: (1 - svOpp) / (1 - lgc.svPct), home };
+  const lam = applyContext(b, ctx);
+  const role = posGroup(roleOf(pid, team));
+  const fx = {
+    oppGA: ctx.oppGA, oppPos: o?.posA?.[role] && L?.posA?.[role] ? o.posA[role] / L.posA[role] : null,
+    ppEnv: o?.ppgA != null && L?.ppgA ? o.ppgA / Math.max(0.05, L.ppgA) : null, goalie: ctx.oppSV,
+    b2b: playedYesterday(team, date), oppB2b: playedYesterday(oppTeam, date), home,
+    toiR: b.toiR, sogR: b.sogR, hotR: b.hotR, mates: null,
+    pace: own && o && L ? (own.gfpg + o.gapg) / (2 * L.gapg) : null,
+  };
+  return { b, ctx, lam, fx, og, svOpp, oc, role };
+}
+// Pass 2: add slot / PP / linemates -> learned multipliers -> calibrated probabilities
+function playerModel(base, lineInfo, matesLam) {
+  const { lam, ctx, fx, og, svOpp, oc } = base;
+  fx.slot = lineInfo?.unit === "F" && lineInfo.line ? `L${lineInfo.line}` : lineInfo?.unit === "D" && lineInfo.line ? `D${lineInfo.line}` : "";
+  fx.pu = lineInfo?.pp ?? 0;
+  fx.mates = matesLam;
+  const bk = bucketsOf(fx);
+  const mP = multFor(MULT, "pts", bk), mG = multFor(MULT, "g", bk), mS = multFor(MULT, "sog", bk);
+  const lamT = { pts: lam.pts * mP, g: lam.g * mG, sog: lam.sog * mS };
+  const pr = probsOf(lamT);
+  const p1 = platt("p1", pr.p1), p2 = platt("p2", pr.p2), g1 = platt("g1", pr.g1), s3 = platt("s3", pr.s3);
+  const val = { oppGA: fx.oppGA, oppPos: fx.oppPos, ppEnv: fx.pu ? fx.ppEnv : null, goalie: fx.goalie, toi: fx.toiR, mates: fx.mates, sogTrend: fx.sogR, hot: fx.hotR, pace: fx.pace };
+  const fxOut = FACTOR_KEYS.map((k) => [k, bk[k], r3(val[k] ?? null), MULT?.pts?.[k]?.[bk[k]] ?? 1, MULT?.g?.[k]?.[bk[k]] ?? 1]);
   const why = [];
   if (lineInfo?.pp === 1) why.push("PP1");
-  if (lineInfo?.line === 1) why.push("Top line");
-  if (oppGA > 1.07) why.push(`Opp allows ${r1(o.gapg)} GA/gm`);
-  if (oppSA > 1.05) why.push(`Opp allows ${r1(o.sapg)} SA/gm`);
-  if (oppSV > 1.08) why.push(`Opp SV% ${svOpp.toFixed(3)}`);
-  if (toiF > 1.05) why.push("TOI trending up");
-  if (toiF < 0.95) why.push("TOI trending down");
+  if (lineInfo?.line === 1) why.push(lineInfo.unit === "D" ? "Top pair" : "Top line");
+  if (ctx.oppGA > 1.07) why.push(`Opp allows ${r1(oc.gapg)} GA/gm`);
+  if (fx.oppPos != null && fx.oppPos > 1.08) why.push(`Opp soft vs ${base.role === "D" ? "D" : base.role}`);
+  if (ctx.oppSV > 1.08) why.push(`Opp SV% ${svOpp.toFixed(3)}`);
+  if (fx.oppB2b && !fx.b2b) why.push("Opp on B2B");
+  if (fx.b2b) why.push("On B2B");
+  if (fx.mates != null && fx.mates > 0.7) why.push("Elite linemates");
+  if (fx.hotR != null && fx.hotR < 0.6) why.push("Slump: due (backtest)");
   return {
-    lam: { pts: r3(ptsAdj), g: r3(gAdj), sog: r3(sogAdj) },
-    p1: r3(p1), p2: r3(p2), g1: r3(g1), s3: r3(s3),
-    factors: { oppGA: r3(oppGA), oppSA: r3(oppSA), oppSV: r3(oppSV), home: homeF, toi: r3(toiF) },
+    lam: { pts: r3(lamT.pts), g: r3(lamT.g), sog: r3(lamT.sog) }, base: { pts: r3(lam.pts), g: r3(lam.g), sog: r3(lam.sog) },
+    p1: r3(p1), p2: r3(p2), g1: r3(g1), s3: r3(s3), mult: { pts: r3(mP), g: r3(mG), sog: r3(mS) },
+    factors: { oppGA: r3(ctx.oppGA), oppSA: r3(ctx.oppSA), oppSV: r3(ctx.oppSV), home: ctx.home ? 1.03 : 0.97, toi: r3(base.b.toiF) },
+    fx: fxOut, goalie: og ? { id: og.id, name: og.name, sv: og.svPct, status: og.status } : null,
     why,
   };
 }
@@ -525,6 +638,14 @@ for (const [date, games] of Object.entries(gamesByDate)) {
       L.F.forEach((l, i) => l.ids.forEach((p) => (lineOf[p] = { ...lineOf[p], line: i + 1, unit: "F" })));
       L.D.forEach((l, i) => l.ids.forEach((p) => (lineOf[p] = { ...lineOf[p], line: i + 1, unit: "D" })));
       L.PP.forEach((u, i) => u.ids.forEach((p) => (lineOf[p] = { ...lineOf[p], pp: i + 1 })));
+      const bases = {};
+      for (const pid of dressed) if (!goalieIds.has(pid) && roster[pid]?.team === team) bases[pid] = baseModel(pid, team, opp, side === "home", date);
+      const matesOf = (pid) => {
+        const info = lineOf[pid]; if (!info?.line) return null;
+        const arr = (info.unit === "F" ? L.F : L.D)[info.line - 1]?.ids ?? [];
+        const v = arr.filter((q) => q !== pid && bases[q]).map((q) => bases[q].lam.pts);
+        return v.length ? v.reduce((a, b) => a + b, 0) / v.length : null;
+      };
       for (const pid of dressed) {
         if (goalieIds.has(pid) || roster[pid]?.team !== team) continue;
         const rows = logsByPlayer.get(pid) ?? [];
@@ -541,7 +662,8 @@ for (const [date, games] of Object.entries(gamesByDate)) {
             l20: windowAgg(rows.slice(0, 20)), l10: windowAgg(rows.slice(0, 10)), l5: windowAgg(rows.slice(0, 5)),
           },
           log: rows.slice(0, 10).map((r) => [r.d, r.opp, r.g, r.a, r.pts, r.sog, r1(r.toi / 60), r1(r.pptoi / 60)]),
-          m: playerModel(pid, opp, side === "home", info),
+          role: roleOf(pid, team),
+          m: playerModel(bases[pid], info, matesOf(pid)),
         };
         edgePids.push(pid);
       }
@@ -578,7 +700,9 @@ for (const [date, games] of Object.entries(gamesByDate)) {
           const l20 = common.slice(0, 20), l10 = common.slice(0, 10);
           const indepEmp = legs.reduce((a, _, i) => a * indivEmp(i), 1) || 1e-6;
           const Kp = 12;
-          const lift = clamp(((jointHits + Kp * indepEmp) / (n + Kp)) / indepEmp, 0.7, 2.2);
+          const kindKey = `${kind.replace(/^L\d/, "L1")} ${ids.length === 2 ? "pair" : "trio"}`;
+          const prior = STACK_LIFT[kindKey]?.lift ?? 1.2;
+          const lift = clamp(((jointHits + Kp * indepEmp * prior) / (n + Kp)) / indepEmp, 0.7, 2.6);
           const modelIndiv = P.map((x, i) => (legs[i] === 2 ? x.m.p2 : x.m.p1));
           const model = clamp(modelIndiv.reduce((a, b) => a * b, 1) * lift, 0, 0.95);
           const sk = ids.length === 3 ? [...ids].sort((a, b) => a - b).join("-") : pairKey(ids[0], ids[1]);
@@ -588,7 +712,7 @@ for (const [date, games] of Object.entries(gamesByDate)) {
             n, jointAll: n ? r3(jointHits / n) : null,
             joint20: l20.length ? r3(l20.filter(hit).length / l20.length) : null, n20: l20.length,
             joint10: l10.length ? r3(l10.filter(hit).length / l10.length) : null, n10: l10.length,
-            lift: r3(lift), model: r3(model), indep: r3(modelIndiv.reduce((a, b) => a * b, 1)),
+            lift: r3(lift), prior: r3(prior), model: r3(model), indep: r3(modelIndiv.reduce((a, b) => a * b, 1)),
             esShareSec: pairShared[team]?.[sk] ?? null,
           });
         }
@@ -648,7 +772,10 @@ fs.writeFileSync("hockey-picks.json", JSON.stringify(picks));
 
 // ---------------------------------------------------------------- 10. write hockey.json
 const teamOut = {};
-for (const t of slateTeams) teamOut[t] = { ...teamCtx[t], blend: undefined, goalie: likelyGoalie(t) };
+for (const t of slateTeams) {
+  const gd = Object.fromEntries(slateDates.map((d) => [d, likelyGoalie(t, d)]));
+  teamOut[t] = { ...teamCtx[t], blend: undefined, goalie: gd[today] ?? gd[slateDates[1]], goalieByDate: gd, dfo: dfoInfo[t] ? { updatedAt: dfoInfo[t].updatedAt, source: dfoInfo[t].source, injured: dfoInfo[t].injured } : null };
+}
 const out = {
   refreshedAt: new Date().toISOString(), today, dates: slateDates, seasons: { prev: PREV, cur: CUR },
   league: { gapg: r3(lg.gapg), sapg: r1(lg.sapg), svPct: r3(lg.svPct) },
