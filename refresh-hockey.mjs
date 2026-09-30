@@ -730,10 +730,37 @@ stacks.sort((a, b) => b.model - a.model);
 const perTeam = {};
 const stacksTop = stacks.filter((s) => { const k = `${s.date}:${s.team}`; perTeam[k] = (perTeam[k] ?? 0) + 1; return perTeam[k] <= 8; });
 
+// ---- edge flags stored with each snapshot (so the lookback grades what the board showed pre-game)
+function edgeFlagsFactory() {
+  const GF = readJSON("hockey-goalies.json", null);
+  const TT = seasonTeams?.teams ?? {};
+  const gps = Object.values(TT).map((x) => x.cur?.gp ?? 0);
+  const w = gps.length && Math.min(...gps) >= 10 ? "cur" : "prev";
+  const n = Object.keys(TT).length || 32;
+  const rk = {};
+  for (const rg of ["C", "L", "R", "D"]) {
+    const arr = Object.entries(TT).map(([t, x]) => [t, x[w]?.a?.role?.[rg]?.[0]]).filter(([, v]) => v != null && isFinite(v)).sort((a, b) => b[1] - a[1]);
+    arr.forEach(([t], i) => ((rk[t] ??= {})[rg] = i + 1));
+  }
+  const hotB = new Set(["high", "vhigh"]);
+  return (p, date) => {
+    const rg = p.role === "LD" || p.role === "RD" ? "D" : p.role ?? (p.unit === "D" ? "D" : p.pos);
+    const posRank = rk[p.opp]?.[rg] ?? null;
+    const posGreen = posRank != null && 1 - (posRank - 1) / Math.max(1, n - 1) >= 0.7 ? 1 : 0;
+    let gid = null; try { gid = likelyGoalie(p.opp, date)?.id ?? null; } catch {}
+    const g = gid && GF ? GF.goalies[gid] : null;
+    const svEdge = g && g.sv != null ? GF.league.sv - g.sv : 0;
+    const gGreen = g && (-g.gsax60 >= 0.15 || svEdge >= 0.012) ? 1 : 0;
+    const fx = p.m?.fx ?? [];
+    const heat = fx.some((f) => (f[0] === "hot" || f[0] === "sogTrend") && hotB.has(f[1])) ? 1 : 0;
+    return { role: p.role ?? null, posRank, gId: gid, gsax60: g ? g.gsax60 : null, posGreen, gGreen, heat, fx: fx.map((f) => [f[0], f[1]]) };
+  };
+}
 // ---------------------------------------------------------------- 9. picks snapshot + grading
 const picks = readJSON("hockey-picks.json", { version: 1, days: {} });
 const allGames = Object.values(gamesByDate).flat();
 const started = (g) => !["FUT", "PRE"].includes(g.state);
+const edgeFlags = edgeFlagsFactory();
 for (const g of allGames) {
   const day = (picks.days[g.date] ??= { games: {} });
   const gp = day.games[g.id];
@@ -743,7 +770,7 @@ for (const g of allGames) {
   const rows = Object.values(players).filter((p) => p.gid === g.id);
   day.games[g.id] = {
     away: g.away, home: g.home, startUTC: g.startUTC, snapAt: new Date().toISOString(), locked: false,
-    players: rows.map((p) => [p.pid, p.name, p.team, p.pos, p.line, p.pp, p.m.p1, p.m.p2, p.m.g1, p.m.s3]),
+    players: rows.map((p) => [p.pid, p.name, p.team, p.pos, p.line, p.pp, p.m.p1, p.m.p2, p.m.g1, p.m.s3, edgeFlags(p, g.date)]),
     stacks: stacksTop.filter((s) => s.gid === g.id).slice(0, 8)
       .map((s) => ({ kind: s.kind, team: s.team, legs: s.legs.map((l) => [l.pid, l.need]), model: s.model })),
   };
