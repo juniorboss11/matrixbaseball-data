@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-30T14:55:13.953Z",
+  "refreshedAt": "2026-09-30T19:53:26.992Z",
   "today": "2026-09-30",
   "dates": [
     "2026-09-29",
@@ -565,7 +565,7 @@
       {
         "id": "g849841",
         "gamePk": 849841,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "PHI",
         "homeTeam": "ATL",
         "awayTeamId": 143,
@@ -605,16 +605,16 @@
             "position": "RF"
           },
           {
-            "id": 681082,
-            "name": "Bryson Stott",
-            "order": 4,
-            "position": "2B"
-          },
-          {
             "id": 664761,
             "name": "Alec Bohm",
-            "order": 5,
+            "order": 4,
             "position": "1B"
+          },
+          {
+            "id": 681082,
+            "name": "Bryson Stott",
+            "order": 5,
+            "position": "2B"
           },
           {
             "id": 669016,
@@ -703,7 +703,7 @@
       {
         "id": "g849846",
         "gamePk": 849846,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "CWS",
         "homeTeam": "HOU",
         "awayTeamId": 145,
@@ -761,16 +761,16 @@
             "position": "CF"
           },
           {
-            "id": 695731,
-            "name": "Braden Montgomery",
-            "order": 7,
-            "position": "RF"
-          },
-          {
             "id": 805367,
             "name": "Chase Meidroth",
-            "order": 8,
+            "order": 7,
             "position": "2B"
+          },
+          {
+            "id": 695731,
+            "name": "Braden Montgomery",
+            "order": 8,
+            "position": "RF"
           },
           {
             "id": 695657,
@@ -835,13 +835,13 @@
             "position": "LF"
           }
         ],
-        "awayLineupSource": "projected (last 2026-09-29)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "projected (last 2026-09-29)"
       },
       {
         "id": "g849848",
         "gamePk": 849848,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "BOS",
         "homeTeam": "NYY",
         "awayTeamId": 111,
@@ -919,62 +919,62 @@
         ],
         "homeLineup": [
           {
-            "id": 502671,
-            "name": "Paul Goldschmidt",
-            "order": 1,
-            "position": "1B"
-          },
-          {
             "id": 700250,
             "name": "Ben Rice",
-            "order": 2,
+            "order": 1,
             "position": "DH"
-          },
-          {
-            "id": 671218,
-            "name": "Heliot Ramos",
-            "order": 3,
-            "position": "RF"
           },
           {
             "id": 641355,
             "name": "Cody Bellinger",
-            "order": 4,
+            "order": 2,
             "position": "LF"
           },
           {
-            "id": 806146,
-            "name": "George Lombard",
-            "order": 5,
-            "position": "SS"
-          },
-          {
-            "id": 642708,
-            "name": "Amed Rosario",
-            "order": 6,
-            "position": "3B"
-          },
-          {
-            "id": 683011,
-            "name": "Anthony Volpe",
-            "order": 7,
-            "position": "2B"
+            "id": 671277,
+            "name": "Luis García Jr.",
+            "order": 3,
+            "position": "1B"
           },
           {
             "id": 682987,
             "name": "Spencer Jones",
-            "order": 8,
+            "order": 4,
+            "position": "RF"
+          },
+          {
+            "id": 806146,
+            "name": "George Lombard Jr.",
+            "order": 5,
+            "position": "SS"
+          },
+          {
+            "id": 665862,
+            "name": "Jazz Chisholm Jr.",
+            "order": 6,
+            "position": "2B"
+          },
+          {
+            "id": 663757,
+            "name": "Trent Grisham",
+            "order": 7,
             "position": "CF"
           },
           {
             "id": 669224,
             "name": "Austin Wells",
-            "order": 9,
+            "order": 8,
             "position": "C"
+          },
+          {
+            "id": 641857,
+            "name": "Ryan McMahon",
+            "order": 9,
+            "position": "3B"
           }
         ],
         "awayLineupSource": "projected (last 2026-09-30)",
-        "homeLineupSource": "projected (last 2026-09-30)"
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g849842",
@@ -1153,16 +1153,16 @@
             "position": "RF"
           },
           {
-            "id": 681082,
-            "name": "Bryson Stott",
-            "order": 4,
-            "position": "2B"
-          },
-          {
             "id": 664761,
             "name": "Alec Bohm",
-            "order": 5,
+            "order": 4,
             "position": "1B"
+          },
+          {
+            "id": 681082,
+            "name": "Bryson Stott",
+            "order": 5,
+            "position": "2B"
           },
           {
             "id": 669016,
@@ -1303,16 +1303,16 @@
             "position": "CF"
           },
           {
-            "id": 695731,
-            "name": "Braden Montgomery",
-            "order": 7,
-            "position": "RF"
-          },
-          {
             "id": 805367,
             "name": "Chase Meidroth",
-            "order": 8,
+            "order": 7,
             "position": "2B"
+          },
+          {
+            "id": 695731,
+            "name": "Braden Montgomery",
+            "order": 8,
+            "position": "RF"
           },
           {
             "id": 695657,
@@ -1377,7 +1377,7 @@
             "position": "LF"
           }
         ],
-        "awayLineupSource": "projected (last 2026-09-29)",
+        "awayLineupSource": "projected (last 2026-09-30)",
         "homeLineupSource": "projected (last 2026-09-29)"
       },
       {
@@ -1461,62 +1461,62 @@
         ],
         "homeLineup": [
           {
-            "id": 502671,
-            "name": "Paul Goldschmidt",
-            "order": 1,
-            "position": "1B"
-          },
-          {
             "id": 700250,
             "name": "Ben Rice",
-            "order": 2,
+            "order": 1,
             "position": "DH"
-          },
-          {
-            "id": 671218,
-            "name": "Heliot Ramos",
-            "order": 3,
-            "position": "RF"
           },
           {
             "id": 641355,
             "name": "Cody Bellinger",
-            "order": 4,
+            "order": 2,
             "position": "LF"
           },
           {
-            "id": 806146,
-            "name": "George Lombard",
-            "order": 5,
-            "position": "SS"
-          },
-          {
-            "id": 642708,
-            "name": "Amed Rosario",
-            "order": 6,
-            "position": "3B"
-          },
-          {
-            "id": 683011,
-            "name": "Anthony Volpe",
-            "order": 7,
-            "position": "2B"
+            "id": 671277,
+            "name": "Luis García Jr.",
+            "order": 3,
+            "position": "1B"
           },
           {
             "id": 682987,
             "name": "Spencer Jones",
-            "order": 8,
+            "order": 4,
+            "position": "RF"
+          },
+          {
+            "id": 806146,
+            "name": "George Lombard Jr.",
+            "order": 5,
+            "position": "SS"
+          },
+          {
+            "id": 665862,
+            "name": "Jazz Chisholm Jr.",
+            "order": 6,
+            "position": "2B"
+          },
+          {
+            "id": 663757,
+            "name": "Trent Grisham",
+            "order": 7,
             "position": "CF"
           },
           {
             "id": 669224,
             "name": "Austin Wells",
-            "order": 9,
+            "order": 8,
             "position": "C"
+          },
+          {
+            "id": 641857,
+            "name": "Ryan McMahon",
+            "order": 9,
+            "position": "3B"
           }
         ],
         "awayLineupSource": "projected (last 2026-09-30)",
-        "homeLineupSource": "projected (last 2026-09-30)"
+        "homeLineupSource": "projected (last 2026-10-01)"
       },
       {
         "id": "g849840",
