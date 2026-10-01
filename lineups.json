@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-01T16:31:34.673Z",
+  "refreshedAt": "2026-10-01T21:15:41.684Z",
   "today": "2026-10-01",
   "dates": [
     "2026-09-30",
@@ -565,7 +565,7 @@
       {
         "id": "g849844",
         "gamePk": 849844,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "PHI",
         "homeTeam": "ATL",
         "awayTeamId": 143,
@@ -584,7 +584,7 @@
           "id": 678061,
           "name": "Ray Kerr"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 607208,
@@ -617,8 +617,8 @@
             "position": "2B"
           },
           {
-            "id": 669016,
-            "name": "Brandon Marsh",
+            "id": 650559,
+            "name": "Bryan De La Cruz",
             "order": 6,
             "position": "LF"
           },
@@ -629,76 +629,76 @@
             "position": "3B"
           },
           {
-            "id": 702222,
-            "name": "Justin Crawford",
-            "order": 8,
-            "position": "CF"
-          },
-          {
             "id": 592663,
             "name": "J.T. Realmuto",
-            "order": 9,
+            "order": 8,
             "position": "C"
+          },
+          {
+            "id": 702222,
+            "name": "Justin Crawford",
+            "order": 9,
+            "position": "CF"
           }
         ],
         "homeLineup": [
           {
-            "id": 660670,
-            "name": "Ronald Acuña",
-            "order": 1,
-            "position": "RF"
-          },
-          {
             "id": 686948,
             "name": "Drake Baldwin",
-            "order": 2,
-            "position": "DH"
+            "order": 1,
+            "position": "C"
           },
           {
-            "id": 645277,
-            "name": "Ozzie Albies",
-            "order": 3,
-            "position": "2B"
+            "id": 660670,
+            "name": "Ronald Acuña Jr.",
+            "order": 2,
+            "position": "RF"
           },
           {
             "id": 621566,
             "name": "Matt Olson",
-            "order": 4,
+            "order": 3,
             "position": "1B"
+          },
+          {
+            "id": 671739,
+            "name": "Michael Harris II",
+            "order": 4,
+            "position": "CF"
           },
           {
             "id": 643289,
             "name": "Mauricio Dubón",
             "order": 5,
+            "position": "SS"
+          },
+          {
+            "id": 573262,
+            "name": "Mike Yastrzemski",
+            "order": 6,
             "position": "LF"
           },
           {
             "id": 663586,
             "name": "Austin Riley",
-            "order": 6,
+            "order": 7,
             "position": "3B"
           },
           {
-            "id": 671739,
-            "name": "Michael Harris",
-            "order": 7,
-            "position": "CF"
-          },
-          {
-            "id": 669221,
-            "name": "Sean Murphy",
+            "id": 645277,
+            "name": "Ozzie Albies",
             "order": 8,
-            "position": "C"
+            "position": "2B"
           },
           {
-            "id": 673490,
-            "name": "Ha-Seong Kim",
+            "id": 642086,
+            "name": "Dominic Smith",
             "order": 9,
-            "position": "SS"
+            "position": "DH"
           }
         ],
-        "awayLineupSource": "projected (last 2026-09-30)",
-        "homeLineupSource": "projected (last 2026-09-30)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       }
     ],
     "2026-10-02": []
