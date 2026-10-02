@@ -3,7 +3,7 @@
 // Reads hockey-season-cache.json -> writes hockey-teams.json, hockey-shots.json, hockey-backtest.json
 import fs from "node:fs";
 import {
-  FACTOR_KEYS, bucketsOf, multFor, factorMeta, decayW, baseLambdas, applyContext, probs, clamp, poisGE,
+  FACTOR_KEYS, bucketsOf, multFor, factorMeta, decayW, seasonWeights, seasonShare, baseLambdas, applyContext, probs, clamp, poisGE,
 } from "./hockey-factors.mjs";
 
 const WEB = "https://api-web.nhle.com/v1";
@@ -140,6 +140,21 @@ for (const t of TEAMS) {
     prev: packWin(rows.filter((r) => r.s === PREV)), cur: packWin(rows.filter((r) => r.s === CUR)),
     l10: packWin(rows.slice(0, 10)), l20: packWin(rows.slice(0, 20)),
   };
+  teamsOut[t].blend = blendWin(teamsOut[t].prev, teamsOut[t].cur);
+}
+// Blend window: last season + this season, this season share = n / (n + 5) (n = games this season).
+function blendWin(prev, cur) {
+  if (!cur) return prev ? { ...prev, gp: 0, prevGp: prev.gp, share: 0 } : null;
+  if (!prev) return { ...cur, share: 1 };
+  const w = seasonShare(cur.gp, 5);
+  const mix = (a, b) => {
+    if (typeof a === "number" && typeof b === "number") return Math.round(((1 - w) * a + w * b) * 1000) / 1000;
+    if (Array.isArray(a) && Array.isArray(b)) return a.map((x, i) => mix(x, b[i]));
+    if (a && b && typeof a === "object") return Object.fromEntries(Object.keys(a).map((k) => [k, mix(a[k], b[k])]));
+    return b ?? a;
+  };
+  const out = mix(prev, cur);
+  return { ...out, gp: cur.gp, prevGp: prev.gp, share: Math.round(w * 100) / 100 };
 }
 
 // ---------------------------------------------------------------- line units (last 40 team games)
@@ -213,12 +228,14 @@ const thist = {}; // team -> newest-last [{ga,gf,sa,sf,pen,penDrawn,ppgA,roleA:{
 const ghist = {}; // goalie -> newest-last [sa, ga]
 const lastPlayed = {}; // team -> date
 const addDays = (ymd, n) => { const d = new Date(ymd + "T12:00:00Z"); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); };
-function teamBlend(t) {
+const CUR_START = "2026-09-01";
+function teamBlend(t, ramp = false) {
   const rows = (thist[t] ?? []).slice(-120).reverse();
   if (!rows.length) return null;
   let W = 0; const s = { ga: 0, gf: 0, sa: 0, sf: 0, pen: 0, ppgA: 0, C: 0, L: 0, R: 0, D: 0 };
+  const wts = ramp ? seasonWeights(rows, (i) => decayW(i * 0.6), (r) => r.d >= CUR_START, 5) : null;
   rows.forEach((r, i) => {
-    const w = decayW(i * 0.6); W += w;
+    const w = wts ? wts[i] : decayW(i * 0.6); W += w;
     s.ga += w * r.ga; s.gf += w * r.gf; s.sa += w * r.sa; s.sf += w * r.sf; s.pen += w * r.pen; s.ppgA += w * r.ppgA;
     for (const q of ROLES) s[q] += w * r.roleA[q];
   });
@@ -646,7 +663,7 @@ fs.writeFileSync("hockey-special.json", JSON.stringify({ builtAt: new Date().toI
 console.log("hockey-special.json", (fs.statSync("hockey-special.json").size / 1024).toFixed(0), "KB");
 
 // ---------------------------------------------------------------- live context (state after all games)
-const blendsNow = Object.fromEntries(TEAMS.map((t) => [t, teamBlend(t)]));
+const blendsNow = Object.fromEntries(TEAMS.map((t) => [t, teamBlend(t, true)]));
 const lgNow = leagueOf(blendsNow);
 const live = {
   league: { gapg: r3(lgNow.gapg), sapg: r2(lgNow.sapg), svPct: r3(lgNow.svPct), ppgA: r3(lgNow.ppgA), posA: Object.fromEntries(ROLES.map((q) => [q, r3(lgNow.posA[q])])) },

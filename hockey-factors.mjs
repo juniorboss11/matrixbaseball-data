@@ -48,10 +48,25 @@ export const factorMeta = () => Object.fromEntries(FACTOR_KEYS.map((k) => [k, { 
 // Shared model math
 export const HALF_LIFE = 25;
 export const decayW = (i) => Math.pow(0.5, i / HALF_LIFE);
-export function decayedMean(rowsNewestFirst, f, prior, k) {
+export function decayedMean(rowsNewestFirst, f, prior, k, wts = null) {
   let num = prior * k, den = k;
-  rowsNewestFirst.forEach((r, i) => { const w = decayW(i); num += w * f(r); den += w; });
+  rowsNewestFirst.forEach((r, i) => { const w = wts ? wts[i] : decayW(i); num += w * f(r); den += w; });
   return num / den;
+}
+// Season ramp: current-season games get a guaranteed share of the weight = n / (n + K),
+// where n = current-season games played. Last season (plus any prior) fills the rest.
+// K = 5 for teams and skaters: 17% current after 1 GP, 50% at 5, 67% at 10, 80% at 20, 91% at 50.
+export const seasonShare = (n, K) => (n > 0 ? n / (n + K) : 0);
+export function seasonWeights(rows, decay, isCur, K, priorK = 0) {
+  const w = rows.map((_, i) => decay(i));
+  const nC = rows.filter(isCur).length;
+  if (!nC || !K) return w;
+  let Wc = 0, Wp = priorK;
+  rows.forEach((r, i) => (isCur(r) ? (Wc += w[i]) : (Wp += w[i])));
+  if (Wp <= 0 || Wc <= 0) return w;
+  const share = seasonShare(nC, K);
+  const a = Math.max(1, (share / (1 - share)) * (Wp / Wc));
+  return rows.map((r, i) => (isCur(r) ? w[i] * a : w[i]));
 }
 export const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
 export const poisGE = (lam, k) => {
@@ -61,13 +76,14 @@ export const poisGE = (lam, k) => {
 };
 export const posPrior = { F: { pts: 0.45, g: 0.17, sog: 1.8 }, D: { pts: 0.3, g: 0.05, sog: 1.4 } };
 // Base player lambdas from his log (newest first). Returns base lambdas + trend ratios.
-export function baseLambdas(rows, isD) {
+export function baseLambdas(rows, isD, opts = {}) {
   const pr = posPrior[isD ? "D" : "F"];
   const K = 8;
-  const lamPts = decayedMean(rows, (r) => r.pts, pr.pts, K);
-  const lamG = decayedMean(rows, (r) => r.g, pr.g, K);
-  const muSog = decayedMean(rows, (r) => r.sog, pr.sog, K);
-  const toiDec = decayedMean(rows, (r) => r.toi, isD ? 1200 : 900, 4);
+  const wts = opts.isCur ? seasonWeights(rows, decayW, opts.isCur, opts.K ?? 5, K) : null;
+  const lamPts = decayedMean(rows, (r) => r.pts, pr.pts, K, wts);
+  const lamG = decayedMean(rows, (r) => r.g, pr.g, K, wts);
+  const muSog = decayedMean(rows, (r) => r.sog, pr.sog, K, wts);
+  const toiDec = decayedMean(rows, (r) => r.toi, isD ? 1200 : 900, 4, wts);
   const l5 = rows.slice(0, 5);
   const avg = (f) => (l5.length ? l5.reduce((a, r) => a + f(r), 0) / l5.length : null);
   const toiL5 = avg((r) => r.toi) ?? toiDec;

@@ -17,7 +17,7 @@
 
 import fs from "node:fs";
 
-import { bucketsOf, multFor, baseLambdas, applyContext, probs as probsOf, FACTOR_KEYS } from "./hockey-factors.mjs";
+import { bucketsOf, multFor, baseLambdas, applyContext, probs as probsOf, FACTOR_KEYS, seasonWeights } from "./hockey-factors.mjs";
 const PREV = "20252026";
 const CUR = "20262027";
 const STATS = "https://api.nhle.com/stats/rest/en";
@@ -191,7 +191,8 @@ function windowAgg(rows) {
 // League averages (per team-game) from last season + current.
 function teamBlend(team) {
   const rows = teamLogsByTeam[team] ?? [];
-  const w = rows.map((_, i) => decayW(i * 0.6)); // team context decays slower
+  // team context decays slower; current season ramps to a guaranteed share n/(n+3)
+  const w = seasonWeights(rows, (i) => decayW(i * 0.6), (r) => r.s === CUR, 5);
   const W = w.reduce((a, b) => a + b, 0) || 1;
   const m = (f) => rows.reduce((a, r, i) => a + w[i] * f(r), 0) / W;
   const ga = m((r) => r.ga), sa = m((r) => r.sa), gf = m((r) => r.gf), sf = m((r) => r.sf);
@@ -574,7 +575,7 @@ function playedYesterday(team, date) {
 function baseModel(pid, team, oppTeam, home, date) {
   const rows = (logsByPlayer.get(pid) ?? []);
   const isD = roster[pid]?.pos === "D";
-  const b = baseLambdas(rows, isD);
+  const b = baseLambdas(rows, isD, { isCur: (r) => r.s === CUR, K: 5 });
   const L = LIVE?.league, o = LIVE?.teams?.[oppTeam], own = LIVE?.teams?.[team];
   const oc = o ?? teamCtx[oppTeam]?.blend ?? lg, lgc = L ?? lg;
   const og = likelyGoalie(oppTeam, date);
@@ -735,7 +736,7 @@ function edgeFlagsFactory() {
   const GF = readJSON("hockey-goalies.json", null);
   const TT = seasonTeams?.teams ?? {};
   const gps = Object.values(TT).map((x) => x.cur?.gp ?? 0);
-  const w = gps.length && Math.min(...gps) >= 10 ? "cur" : "prev";
+  const w = Object.values(TT).some((x) => x.blend) ? "blend" : gps.length && Math.min(...gps) >= 10 ? "cur" : "prev";
   const n = Object.keys(TT).length || 32;
   const rk = {};
   for (const rg of ["C", "L", "R", "D"]) {
