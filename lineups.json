@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-02T00:53:09.950Z",
+  "refreshedAt": "2026-10-02T06:25:31.772Z",
   "today": "2026-10-02",
   "dates": [
     "2026-10-01",
@@ -11,7 +11,7 @@
       {
         "id": "g849844",
         "gamePk": 849844,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "PHI",
         "homeTeam": "ATL",
         "awayTeamId": 143,
@@ -288,11 +288,11 @@
         "id": "g849828",
         "gamePk": 849828,
         "status": "Scheduled",
-        "awayTeam": "???",
+        "awayTeam": "ATL",
         "homeTeam": "LAD",
-        "awayTeamId": 5532,
+        "awayTeamId": 144,
         "homeTeamId": 119,
-        "awayTeamName": "ATL/PHI",
+        "awayTeamName": "Atlanta Braves",
         "homeTeamName": "Los Angeles Dodgers",
         "park": "UNIQLO Field at Dodger Stadium",
         "parkHrFactor": 100,
@@ -301,7 +301,62 @@
         "awayPitcher": null,
         "homePitcher": null,
         "lineupsConfirmed": false,
-        "awayLineup": [],
+        "awayLineup": [
+          {
+            "id": 686948,
+            "name": "Drake Baldwin",
+            "order": 1,
+            "position": "C"
+          },
+          {
+            "id": 660670,
+            "name": "Ronald Acuña Jr.",
+            "order": 2,
+            "position": "RF"
+          },
+          {
+            "id": 621566,
+            "name": "Matt Olson",
+            "order": 3,
+            "position": "1B"
+          },
+          {
+            "id": 671739,
+            "name": "Michael Harris II",
+            "order": 4,
+            "position": "CF"
+          },
+          {
+            "id": 643289,
+            "name": "Mauricio Dubón",
+            "order": 5,
+            "position": "SS"
+          },
+          {
+            "id": 573262,
+            "name": "Mike Yastrzemski",
+            "order": 6,
+            "position": "LF"
+          },
+          {
+            "id": 663586,
+            "name": "Austin Riley",
+            "order": 7,
+            "position": "3B"
+          },
+          {
+            "id": 645277,
+            "name": "Ozzie Albies",
+            "order": 8,
+            "position": "2B"
+          },
+          {
+            "id": 642086,
+            "name": "Dominic Smith",
+            "order": 9,
+            "position": "DH"
+          }
+        ],
         "homeLineup": [
           {
             "id": 660271,
@@ -358,7 +413,7 @@
             "position": "2B"
           }
         ],
-        "awayLineupSource": "unavailable",
+        "awayLineupSource": "projected (last 2026-10-02)",
         "homeLineupSource": "projected (last 2026-09-27)"
       },
       {
