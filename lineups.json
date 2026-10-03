@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-03T12:00:42.614Z",
+  "refreshedAt": "2026-10-03T16:08:17.539Z",
   "today": "2026-10-03",
   "dates": [
     "2026-10-02",
@@ -12,7 +12,7 @@
       {
         "id": "g849829",
         "gamePk": 849829,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "CWS",
         "homeTeam": "CLE",
         "awayTeamId": 145,
@@ -31,19 +31,19 @@
           "id": 800048,
           "name": "Parker Messick"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
-            "id": 803011,
-            "name": "Sam Antonacci",
+            "id": 805367,
+            "name": "Chase Meidroth",
             "order": 1,
-            "position": "LF"
+            "position": "2B"
           },
           {
-            "id": 691019,
-            "name": "Kyle Teel",
+            "id": 545341,
+            "name": "Randal Grichuk",
             "order": 2,
-            "position": "C"
+            "position": "LF"
           },
           {
             "id": 678246,
@@ -58,22 +58,22 @@
             "position": "1B"
           },
           {
-            "id": 643217,
-            "name": "Andrew Benintendi",
+            "id": 502054,
+            "name": "Tommy Pham",
             "order": 5,
             "position": "DH"
           },
           {
-            "id": 671976,
-            "name": "Tristan Peters",
+            "id": 686668,
+            "name": "Brenton Doyle",
             "order": 6,
             "position": "CF"
           },
           {
-            "id": 805367,
-            "name": "Chase Meidroth",
+            "id": 691019,
+            "name": "Kyle Teel",
             "order": 7,
-            "position": "2B"
+            "position": "C"
           },
           {
             "id": 695731,
@@ -90,62 +90,62 @@
         ],
         "homeLineup": [
           {
-            "id": 682657,
-            "name": "Angel Martínez",
+            "id": 680757,
+            "name": "Steven Kwan",
             "order": 1,
-            "position": "LF"
+            "position": "CF"
           },
           {
-            "id": 683953,
-            "name": "Travis Bazzana",
+            "id": 608070,
+            "name": "José Ramírez",
             "order": 2,
-            "position": "2B"
+            "position": "3B"
           },
           {
-            "id": 666176,
-            "name": "Jo Adell",
+            "id": 800050,
+            "name": "Chase DeLauter",
             "order": 3,
             "position": "RF"
           },
           {
-            "id": 663993,
-            "name": "Nathaniel Lowe",
+            "id": 666176,
+            "name": "Jo Adell",
             "order": 4,
-            "position": "1B"
+            "position": "DH"
+          },
+          {
+            "id": 682657,
+            "name": "Angel Martínez",
+            "order": 5,
+            "position": "LF"
           },
           {
             "id": 681807,
             "name": "David Fry",
-            "order": 5,
-            "position": "C"
+            "order": 6,
+            "position": "1B"
           },
           {
-            "id": 694197,
-            "name": "Angel Genao",
-            "order": 6,
-            "position": "SS"
+            "id": 683953,
+            "name": "Travis Bazzana",
+            "order": 7,
+            "position": "2B"
           },
           {
             "id": 595978,
             "name": "Austin Hedges",
-            "order": 7,
-            "position": "DH"
-          },
-          {
-            "id": 682177,
-            "name": "Daniel Schneemann",
             "order": 8,
-            "position": "3B"
+            "position": "C"
           },
           {
-            "id": 690984,
-            "name": "Petey Halpin",
+            "id": 677587,
+            "name": "Brayan Rocchio",
             "order": 9,
-            "position": "CF"
+            "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-09-30)",
-        "homeLineupSource": "projected (last 2026-09-27)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g849828",
@@ -364,7 +364,7 @@
         "homeLineup": [
           {
             "id": 683748,
-            "name": "Victor Mesa Jr.",
+            "name": "Victor Mesa",
             "order": 1,
             "position": "LF"
           },
