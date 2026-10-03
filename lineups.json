@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-03T19:11:43.085Z",
+  "refreshedAt": "2026-10-03T22:07:28.891Z",
   "today": "2026-10-03",
   "dates": [
     "2026-10-02",
@@ -12,7 +12,7 @@
       {
         "id": "g849829",
         "gamePk": 849829,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "CWS",
         "homeTeam": "CLE",
         "awayTeamId": 145,
@@ -150,7 +150,7 @@
       {
         "id": "g849828",
         "gamePk": 849828,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "ATL",
         "homeTeam": "LAD",
         "awayTeamId": 144,
@@ -426,7 +426,7 @@
       {
         "id": "g849830",
         "gamePk": 849830,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "SD",
         "homeTeam": "MIL",
         "awayTeamId": 135,
@@ -445,11 +445,11 @@
           "id": 694819,
           "name": "Jacob Misiorowski"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 665487,
-            "name": "Fernando Tatis",
+            "name": "Fernando Tatis Jr.",
             "order": 1,
             "position": "RF"
           },
@@ -490,8 +490,8 @@
             "position": "C"
           },
           {
-            "id": 669720,
-            "name": "Austin Hays",
+            "id": 669134,
+            "name": "Luis Campusano",
             "order": 8,
             "position": "DH"
           },
@@ -504,62 +504,62 @@
         ],
         "homeLineup": [
           {
-            "id": 669003,
-            "name": "Garrett Mitchell",
-            "order": 1,
-            "position": "CF"
-          },
-          {
-            "id": 641343,
-            "name": "Jake Bauers",
-            "order": 2,
-            "position": "1B"
-          },
-          {
             "id": 694192,
             "name": "Jackson Chourio",
-            "order": 3,
+            "order": 1,
             "position": "LF"
           },
           {
             "id": 668930,
             "name": "Brice Turang",
-            "order": 4,
+            "order": 2,
             "position": "2B"
           },
           {
-            "id": 596142,
-            "name": "Gary Sánchez",
-            "order": 5,
+            "id": 661388,
+            "name": "William Contreras",
+            "order": 3,
             "position": "C"
+          },
+          {
+            "id": 641343,
+            "name": "Jake Bauers",
+            "order": 4,
+            "position": "1B"
           },
           {
             "id": 592885,
             "name": "Christian Yelich",
-            "order": 6,
+            "order": 5,
             "position": "DH"
           },
           {
             "id": 806198,
             "name": "Cooper Pratt",
-            "order": 7,
+            "order": 6,
             "position": "SS"
           },
           {
-            "id": 686217,
-            "name": "Sal Frelick",
-            "order": 8,
+            "id": 800325,
+            "name": "Luis Lara",
+            "order": 7,
             "position": "RF"
           },
           {
-            "id": 666152,
-            "name": "David Hamilton",
+            "id": 669003,
+            "name": "Garrett Mitchell",
+            "order": 8,
+            "position": "CF"
+          },
+          {
+            "id": 687401,
+            "name": "Joey Ortiz",
             "order": 9,
             "position": "3B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-10-01)",
-        "homeLineupSource": "projected (last 2026-09-27)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       }
     ],
     "2026-10-04": [
@@ -589,7 +589,7 @@
         "awayLineup": [
           {
             "id": 665487,
-            "name": "Fernando Tatis",
+            "name": "Fernando Tatis Jr.",
             "order": 1,
             "position": "RF"
           },
@@ -630,8 +630,8 @@
             "position": "C"
           },
           {
-            "id": 669720,
-            "name": "Austin Hays",
+            "id": 669134,
+            "name": "Luis Campusano",
             "order": 8,
             "position": "DH"
           },
@@ -644,62 +644,62 @@
         ],
         "homeLineup": [
           {
-            "id": 669003,
-            "name": "Garrett Mitchell",
-            "order": 1,
-            "position": "CF"
-          },
-          {
-            "id": 641343,
-            "name": "Jake Bauers",
-            "order": 2,
-            "position": "1B"
-          },
-          {
             "id": 694192,
             "name": "Jackson Chourio",
-            "order": 3,
+            "order": 1,
             "position": "LF"
           },
           {
             "id": 668930,
             "name": "Brice Turang",
-            "order": 4,
+            "order": 2,
             "position": "2B"
           },
           {
-            "id": 596142,
-            "name": "Gary Sánchez",
-            "order": 5,
+            "id": 661388,
+            "name": "William Contreras",
+            "order": 3,
             "position": "C"
+          },
+          {
+            "id": 641343,
+            "name": "Jake Bauers",
+            "order": 4,
+            "position": "1B"
           },
           {
             "id": 592885,
             "name": "Christian Yelich",
-            "order": 6,
+            "order": 5,
             "position": "DH"
           },
           {
             "id": 806198,
             "name": "Cooper Pratt",
-            "order": 7,
+            "order": 6,
             "position": "SS"
           },
           {
-            "id": 686217,
-            "name": "Sal Frelick",
-            "order": 8,
+            "id": 800325,
+            "name": "Luis Lara",
+            "order": 7,
             "position": "RF"
           },
           {
-            "id": 666152,
-            "name": "David Hamilton",
+            "id": 669003,
+            "name": "Garrett Mitchell",
+            "order": 8,
+            "position": "CF"
+          },
+          {
+            "id": 687401,
+            "name": "Joey Ortiz",
             "order": 9,
             "position": "3B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-10-01)",
-        "homeLineupSource": "projected (last 2026-09-27)"
+        "awayLineupSource": "projected (last 2026-10-04)",
+        "homeLineupSource": "projected (last 2026-10-04)"
       },
       {
         "id": "g849823",
