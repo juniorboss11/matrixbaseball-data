@@ -1,152 +1,12 @@
 {
-  "refreshedAt": "2026-10-02T22:21:47.394Z",
-  "today": "2026-10-02",
+  "refreshedAt": "2026-10-03T01:14:45.243Z",
+  "today": "2026-10-03",
   "dates": [
-    "2026-10-01",
     "2026-10-02",
-    "2026-10-03"
+    "2026-10-03",
+    "2026-10-04"
   ],
   "slates": {
-    "2026-10-01": [
-      {
-        "id": "g849844",
-        "gamePk": 849844,
-        "status": "Final",
-        "awayTeam": "PHI",
-        "homeTeam": "ATL",
-        "awayTeamId": 143,
-        "homeTeamId": 144,
-        "awayTeamName": "Philadelphia Phillies",
-        "homeTeamName": "Atlanta Braves",
-        "park": "Truist Park",
-        "parkHrFactor": 101,
-        "startUtc": "2026-10-02T00:00:00Z",
-        "startET": "8:00 PM",
-        "awayPitcher": {
-          "id": 605400,
-          "name": "Aaron Nola"
-        },
-        "homePitcher": {
-          "id": 678061,
-          "name": "Ray Kerr"
-        },
-        "lineupsConfirmed": true,
-        "awayLineup": [
-          {
-            "id": 607208,
-            "name": "Trea Turner",
-            "order": 1,
-            "position": "SS"
-          },
-          {
-            "id": 656941,
-            "name": "Kyle Schwarber",
-            "order": 2,
-            "position": "DH"
-          },
-          {
-            "id": 547180,
-            "name": "Bryce Harper",
-            "order": 3,
-            "position": "RF"
-          },
-          {
-            "id": 664761,
-            "name": "Alec Bohm",
-            "order": 4,
-            "position": "1B"
-          },
-          {
-            "id": 681082,
-            "name": "Bryson Stott",
-            "order": 5,
-            "position": "2B"
-          },
-          {
-            "id": 650559,
-            "name": "Bryan De La Cruz",
-            "order": 6,
-            "position": "LF"
-          },
-          {
-            "id": 624641,
-            "name": "Edmundo Sosa",
-            "order": 7,
-            "position": "3B"
-          },
-          {
-            "id": 592663,
-            "name": "J.T. Realmuto",
-            "order": 8,
-            "position": "C"
-          },
-          {
-            "id": 702222,
-            "name": "Justin Crawford",
-            "order": 9,
-            "position": "CF"
-          }
-        ],
-        "homeLineup": [
-          {
-            "id": 686948,
-            "name": "Drake Baldwin",
-            "order": 1,
-            "position": "C"
-          },
-          {
-            "id": 660670,
-            "name": "Ronald Acuña",
-            "order": 2,
-            "position": "RF"
-          },
-          {
-            "id": 621566,
-            "name": "Matt Olson",
-            "order": 3,
-            "position": "1B"
-          },
-          {
-            "id": 671739,
-            "name": "Michael Harris",
-            "order": 4,
-            "position": "CF"
-          },
-          {
-            "id": 643289,
-            "name": "Mauricio Dubón",
-            "order": 5,
-            "position": "SS"
-          },
-          {
-            "id": 573262,
-            "name": "Mike Yastrzemski",
-            "order": 6,
-            "position": "LF"
-          },
-          {
-            "id": 663586,
-            "name": "Austin Riley",
-            "order": 7,
-            "position": "3B"
-          },
-          {
-            "id": 645277,
-            "name": "Ozzie Albies",
-            "order": 8,
-            "position": "2B"
-          },
-          {
-            "id": 642086,
-            "name": "Dominic Smith",
-            "order": 9,
-            "position": "DH"
-          }
-        ],
-        "awayLineupSource": "confirmed",
-        "homeLineupSource": "confirmed"
-      }
-    ],
     "2026-10-02": [],
     "2026-10-03": [
       {
@@ -696,6 +556,278 @@
           }
         ],
         "awayLineupSource": "projected (last 2026-10-01)",
+        "homeLineupSource": "projected (last 2026-09-27)"
+      }
+    ],
+    "2026-10-04": [
+      {
+        "id": "g849825",
+        "gamePk": 849825,
+        "status": "Scheduled",
+        "awayTeam": "SD",
+        "homeTeam": "MIL",
+        "awayTeamId": 135,
+        "homeTeamId": 158,
+        "awayTeamName": "San Diego Padres",
+        "homeTeamName": "Milwaukee Brewers",
+        "park": "American Family Field",
+        "parkHrFactor": 104,
+        "startUtc": "2026-10-04T20:00:00Z",
+        "startET": "4:00 PM",
+        "awayPitcher": {
+          "id": 650633,
+          "name": "Michael King"
+        },
+        "homePitcher": {
+          "id": 701656,
+          "name": "Logan Henderson"
+        },
+        "lineupsConfirmed": false,
+        "awayLineup": [
+          {
+            "id": 665487,
+            "name": "Fernando Tatis",
+            "order": 1,
+            "position": "RF"
+          },
+          {
+            "id": 687957,
+            "name": "Dustin Harris",
+            "order": 2,
+            "position": "LF"
+          },
+          {
+            "id": 592518,
+            "name": "Manny Machado",
+            "order": 3,
+            "position": "3B"
+          },
+          {
+            "id": 664034,
+            "name": "Ty France",
+            "order": 4,
+            "position": "1B"
+          },
+          {
+            "id": 701538,
+            "name": "Jackson Merrill",
+            "order": 5,
+            "position": "CF"
+          },
+          {
+            "id": 593428,
+            "name": "Xander Bogaerts",
+            "order": 6,
+            "position": "SS"
+          },
+          {
+            "id": 806956,
+            "name": "Ethan Salas",
+            "order": 7,
+            "position": "C"
+          },
+          {
+            "id": 669720,
+            "name": "Austin Hays",
+            "order": 8,
+            "position": "DH"
+          },
+          {
+            "id": 630105,
+            "name": "Jake Cronenworth",
+            "order": 9,
+            "position": "2B"
+          }
+        ],
+        "homeLineup": [
+          {
+            "id": 669003,
+            "name": "Garrett Mitchell",
+            "order": 1,
+            "position": "CF"
+          },
+          {
+            "id": 641343,
+            "name": "Jake Bauers",
+            "order": 2,
+            "position": "1B"
+          },
+          {
+            "id": 694192,
+            "name": "Jackson Chourio",
+            "order": 3,
+            "position": "LF"
+          },
+          {
+            "id": 668930,
+            "name": "Brice Turang",
+            "order": 4,
+            "position": "2B"
+          },
+          {
+            "id": 596142,
+            "name": "Gary Sánchez",
+            "order": 5,
+            "position": "C"
+          },
+          {
+            "id": 592885,
+            "name": "Christian Yelich",
+            "order": 6,
+            "position": "DH"
+          },
+          {
+            "id": 806198,
+            "name": "Cooper Pratt",
+            "order": 7,
+            "position": "SS"
+          },
+          {
+            "id": 686217,
+            "name": "Sal Frelick",
+            "order": 8,
+            "position": "RF"
+          },
+          {
+            "id": 666152,
+            "name": "David Hamilton",
+            "order": 9,
+            "position": "3B"
+          }
+        ],
+        "awayLineupSource": "projected (last 2026-10-01)",
+        "homeLineupSource": "projected (last 2026-09-27)"
+      },
+      {
+        "id": "g849823",
+        "gamePk": 849823,
+        "status": "Scheduled",
+        "awayTeam": "ATL",
+        "homeTeam": "LAD",
+        "awayTeamId": 144,
+        "homeTeamId": 119,
+        "awayTeamName": "Atlanta Braves",
+        "homeTeamName": "Los Angeles Dodgers",
+        "park": "UNIQLO Field at Dodger Stadium",
+        "parkHrFactor": 100,
+        "startUtc": "2026-10-05T00:00:00Z",
+        "startET": "8:00 PM",
+        "awayPitcher": null,
+        "homePitcher": null,
+        "lineupsConfirmed": false,
+        "awayLineup": [
+          {
+            "id": 686948,
+            "name": "Drake Baldwin",
+            "order": 1,
+            "position": "C"
+          },
+          {
+            "id": 660670,
+            "name": "Ronald Acuña",
+            "order": 2,
+            "position": "RF"
+          },
+          {
+            "id": 621566,
+            "name": "Matt Olson",
+            "order": 3,
+            "position": "1B"
+          },
+          {
+            "id": 671739,
+            "name": "Michael Harris",
+            "order": 4,
+            "position": "CF"
+          },
+          {
+            "id": 643289,
+            "name": "Mauricio Dubón",
+            "order": 5,
+            "position": "SS"
+          },
+          {
+            "id": 573262,
+            "name": "Mike Yastrzemski",
+            "order": 6,
+            "position": "LF"
+          },
+          {
+            "id": 663586,
+            "name": "Austin Riley",
+            "order": 7,
+            "position": "3B"
+          },
+          {
+            "id": 645277,
+            "name": "Ozzie Albies",
+            "order": 8,
+            "position": "2B"
+          },
+          {
+            "id": 642086,
+            "name": "Dominic Smith",
+            "order": 9,
+            "position": "DH"
+          }
+        ],
+        "homeLineup": [
+          {
+            "id": 660271,
+            "name": "Shohei Ohtani",
+            "order": 1,
+            "position": "DH"
+          },
+          {
+            "id": 605141,
+            "name": "Mookie Betts",
+            "order": 2,
+            "position": "SS"
+          },
+          {
+            "id": 518692,
+            "name": "Freddie Freeman",
+            "order": 3,
+            "position": "1B"
+          },
+          {
+            "id": 663656,
+            "name": "Kyle Tucker",
+            "order": 4,
+            "position": "RF"
+          },
+          {
+            "id": 606192,
+            "name": "Teoscar Hernández",
+            "order": 5,
+            "position": "LF"
+          },
+          {
+            "id": 571970,
+            "name": "Max Muncy",
+            "order": 6,
+            "position": "3B"
+          },
+          {
+            "id": 681624,
+            "name": "Andy Pages",
+            "order": 7,
+            "position": "CF"
+          },
+          {
+            "id": 676439,
+            "name": "Hunter Feduccia",
+            "order": 8,
+            "position": "C"
+          },
+          {
+            "id": 669242,
+            "name": "Tommy Edman",
+            "order": 9,
+            "position": "2B"
+          }
+        ],
+        "awayLineupSource": "projected (last 2026-10-02)",
         "homeLineupSource": "projected (last 2026-09-27)"
       }
     ]
