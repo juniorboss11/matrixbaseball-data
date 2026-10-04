@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-04T17:01:08.620Z",
+  "refreshedAt": "2026-10-04T20:03:18.987Z",
   "today": "2026-10-04",
   "dates": [
     "2026-10-03",
@@ -178,7 +178,7 @@
           },
           {
             "id": 660670,
-            "name": "Ronald Acuña Jr.",
+            "name": "Ronald Acuña",
             "order": 2,
             "position": "RF"
           },
@@ -196,7 +196,7 @@
           },
           {
             "id": 671739,
-            "name": "Michael Harris II",
+            "name": "Michael Harris",
             "order": 5,
             "position": "CF"
           },
@@ -322,7 +322,7 @@
           },
           {
             "id": 671277,
-            "name": "Luis García Jr.",
+            "name": "Luis García",
             "order": 3,
             "position": "1B"
           },
@@ -334,13 +334,13 @@
           },
           {
             "id": 806146,
-            "name": "George Lombard Jr.",
+            "name": "George Lombard",
             "order": 5,
             "position": "SS"
           },
           {
             "id": 665862,
-            "name": "Jazz Chisholm Jr.",
+            "name": "Jazz Chisholm",
             "order": 6,
             "position": "2B"
           },
@@ -396,7 +396,7 @@
           },
           {
             "id": 683748,
-            "name": "Victor Mesa Jr.",
+            "name": "Victor Mesa",
             "order": 6,
             "position": "RF"
           },
@@ -448,7 +448,7 @@
         "awayLineup": [
           {
             "id": 665487,
-            "name": "Fernando Tatis Jr.",
+            "name": "Fernando Tatis",
             "order": 1,
             "position": "RF"
           },
@@ -565,7 +565,7 @@
       {
         "id": "g849825",
         "gamePk": 849825,
-        "status": "Pre-Game",
+        "status": "Warmup",
         "awayTeam": "SD",
         "homeTeam": "MIL",
         "awayTeamId": 135,
@@ -617,8 +617,8 @@
             "position": "CF"
           },
           {
-            "id": 806956,
-            "name": "Ethan Salas",
+            "id": 657757,
+            "name": "Gavin Sheets",
             "order": 6,
             "position": "DH"
           },
@@ -703,7 +703,7 @@
       {
         "id": "g849823",
         "gamePk": 849823,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "ATL",
         "homeTeam": "LAD",
         "awayTeamId": 144,
@@ -714,7 +714,10 @@
         "parkHrFactor": 100,
         "startUtc": "2026-10-05T00:00:00Z",
         "startET": "8:00 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 678061,
+          "name": "Ray Kerr"
+        },
         "homePitcher": {
           "id": 605483,
           "name": "Blake Snell"
@@ -729,7 +732,7 @@
           },
           {
             "id": 660670,
-            "name": "Ronald Acuña Jr.",
+            "name": "Ronald Acuña",
             "order": 2,
             "position": "RF"
           },
@@ -747,7 +750,7 @@
           },
           {
             "id": 671739,
-            "name": "Michael Harris II",
+            "name": "Michael Harris",
             "order": 5,
             "position": "CF"
           },
@@ -820,8 +823,8 @@
             "position": "CF"
           },
           {
-            "id": 571970,
-            "name": "Max Muncy",
+            "id": 500743,
+            "name": "Miguel Rojas",
             "order": 8,
             "position": "3B"
           },
@@ -833,7 +836,7 @@
           }
         ],
         "awayLineupSource": "projected (last 2026-10-03)",
-        "homeLineupSource": "projected (last 2026-10-03)"
+        "homeLineupSource": "confirmed"
       }
     ],
     "2026-10-05": [
@@ -851,7 +854,10 @@
         "parkHrFactor": 97,
         "startUtc": "2026-10-05T21:00:00Z",
         "startET": "5:00 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 641743,
+          "name": "Anthony Kay"
+        },
         "homePitcher": {
           "id": 668909,
           "name": "Gavin Williams"
@@ -1010,7 +1016,7 @@
           },
           {
             "id": 671277,
-            "name": "Luis García Jr.",
+            "name": "Luis García",
             "order": 3,
             "position": "1B"
           },
@@ -1022,13 +1028,13 @@
           },
           {
             "id": 806146,
-            "name": "George Lombard Jr.",
+            "name": "George Lombard",
             "order": 5,
             "position": "SS"
           },
           {
             "id": 665862,
-            "name": "Jazz Chisholm Jr.",
+            "name": "Jazz Chisholm",
             "order": 6,
             "position": "2B"
           },
@@ -1084,7 +1090,7 @@
           },
           {
             "id": 683748,
-            "name": "Victor Mesa Jr.",
+            "name": "Victor Mesa",
             "order": 6,
             "position": "RF"
           },
