@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-04T20:03:18.987Z",
+  "refreshedAt": "2026-10-04T23:04:46.098Z",
   "today": "2026-10-04",
   "dates": [
     "2026-10-03",
@@ -448,7 +448,7 @@
         "awayLineup": [
           {
             "id": 665487,
-            "name": "Fernando Tatis",
+            "name": "Fernando Tatis Jr.",
             "order": 1,
             "position": "RF"
           },
@@ -565,7 +565,7 @@
       {
         "id": "g849825",
         "gamePk": 849825,
-        "status": "Warmup",
+        "status": "In Progress",
         "awayTeam": "SD",
         "homeTeam": "MIL",
         "awayTeamId": 135,
@@ -722,35 +722,35 @@
           "id": 605483,
           "name": "Blake Snell"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 686948,
             "name": "Drake Baldwin",
             "order": 1,
-            "position": "DH"
+            "position": "C"
           },
           {
             "id": 660670,
-            "name": "Ronald Acuña",
+            "name": "Ronald Acuña Jr.",
             "order": 2,
             "position": "RF"
           },
           {
-            "id": 645277,
-            "name": "Ozzie Albies",
-            "order": 3,
-            "position": "2B"
-          },
-          {
             "id": 621566,
             "name": "Matt Olson",
-            "order": 4,
+            "order": 3,
             "position": "1B"
           },
           {
+            "id": 645277,
+            "name": "Ozzie Albies",
+            "order": 4,
+            "position": "2B"
+          },
+          {
             "id": 671739,
-            "name": "Michael Harris",
+            "name": "Michael Harris II",
             "order": 5,
             "position": "CF"
           },
@@ -758,25 +758,25 @@
             "id": 643289,
             "name": "Mauricio Dubón",
             "order": 6,
-            "position": "LF"
-          },
-          {
-            "id": 663586,
-            "name": "Austin Riley",
-            "order": 7,
-            "position": "3B"
+            "position": "SS"
           },
           {
             "id": 669221,
             "name": "Sean Murphy",
-            "order": 8,
-            "position": "C"
+            "order": 7,
+            "position": "DH"
           },
           {
-            "id": 673490,
-            "name": "Ha-Seong Kim",
+            "id": 663586,
+            "name": "Austin Riley",
+            "order": 8,
+            "position": "3B"
+          },
+          {
+            "id": 657041,
+            "name": "Lane Thomas",
             "order": 9,
-            "position": "SS"
+            "position": "LF"
           }
         ],
         "homeLineup": [
@@ -835,7 +835,7 @@
             "position": "2B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-10-03)",
+        "awayLineupSource": "confirmed",
         "homeLineupSource": "confirmed"
       }
     ],
