@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-06T16:48:32.255Z",
+  "refreshedAt": "2026-10-06T21:17:40.982Z",
   "today": "2026-10-06",
   "dates": [
     "2026-10-05",
@@ -289,7 +289,7 @@
       {
         "id": "g849819",
         "gamePk": 849819,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "LAD",
         "homeTeam": "ATL",
         "awayTeamId": 119,
@@ -308,7 +308,7 @@
           "id": 519242,
           "name": "Chris Sale"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 605141,
@@ -317,34 +317,34 @@
             "position": "SS"
           },
           {
-            "id": 660271,
-            "name": "Shohei Ohtani",
-            "order": 2,
-            "position": "DH"
-          },
-          {
-            "id": 669257,
-            "name": "Will Smith",
-            "order": 3,
-            "position": "C"
-          },
-          {
             "id": 518692,
             "name": "Freddie Freeman",
-            "order": 4,
+            "order": 2,
             "position": "1B"
           },
           {
             "id": 606192,
             "name": "Teoscar Hernández",
-            "order": 5,
+            "order": 3,
             "position": "LF"
           },
           {
-            "id": 663656,
-            "name": "Kyle Tucker",
+            "id": 669257,
+            "name": "Will Smith",
+            "order": 4,
+            "position": "C"
+          },
+          {
+            "id": 660271,
+            "name": "Shohei Ohtani",
+            "order": 5,
+            "position": "DH"
+          },
+          {
+            "id": 500743,
+            "name": "Miguel Rojas",
             "order": 6,
-            "position": "RF"
+            "position": "2B"
           },
           {
             "id": 681624,
@@ -353,16 +353,16 @@
             "position": "CF"
           },
           {
-            "id": 500743,
-            "name": "Miguel Rojas",
+            "id": 663656,
+            "name": "Kyle Tucker",
             "order": 8,
-            "position": "3B"
+            "position": "RF"
           },
           {
-            "id": 669242,
-            "name": "Tommy Edman",
+            "id": 571771,
+            "name": "Enrique Hernández",
             "order": 9,
-            "position": "2B"
+            "position": "3B"
           }
         ],
         "homeLineup": [
@@ -374,9 +374,9 @@
           },
           {
             "id": 660670,
-            "name": "Ronald Acuña",
+            "name": "Ronald Acuña Jr.",
             "order": 2,
-            "position": "RF"
+            "position": "DH"
           },
           {
             "id": 621566,
@@ -392,7 +392,7 @@
           },
           {
             "id": 671739,
-            "name": "Michael Harris",
+            "name": "Michael Harris II",
             "order": 5,
             "position": "CF"
           },
@@ -400,13 +400,13 @@
             "id": 643289,
             "name": "Mauricio Dubón",
             "order": 6,
-            "position": "SS"
+            "position": "LF"
           },
           {
-            "id": 669221,
-            "name": "Sean Murphy",
+            "id": 657041,
+            "name": "Lane Thomas",
             "order": 7,
-            "position": "DH"
+            "position": "RF"
           },
           {
             "id": 663586,
@@ -415,19 +415,19 @@
             "position": "3B"
           },
           {
-            "id": 657041,
-            "name": "Lane Thomas",
+            "id": 673490,
+            "name": "Ha-Seong Kim",
             "order": 9,
-            "position": "LF"
+            "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-10-05)",
-        "homeLineupSource": "projected (last 2026-10-05)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g849826",
         "gamePk": 849826,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "MIL",
         "homeTeam": "SD",
         "awayTeamId": 158,
@@ -506,15 +506,15 @@
         "homeLineup": [
           {
             "id": 665487,
-            "name": "Fernando Tatis",
+            "name": "Fernando Tatis Jr.",
             "order": 1,
             "position": "RF"
           },
           {
-            "id": 687957,
-            "name": "Dustin Harris",
+            "id": 701538,
+            "name": "Jackson Merrill",
             "order": 2,
-            "position": "LF"
+            "position": "CF"
           },
           {
             "id": 592518,
@@ -529,10 +529,10 @@
             "position": "1B"
           },
           {
-            "id": 701538,
-            "name": "Jackson Merrill",
+            "id": 806956,
+            "name": "Ethan Salas",
             "order": 5,
-            "position": "CF"
+            "position": "C"
           },
           {
             "id": 657757,
@@ -547,10 +547,10 @@
             "position": "SS"
           },
           {
-            "id": 669134,
-            "name": "Luis Campusano",
+            "id": 687957,
+            "name": "Dustin Harris",
             "order": 8,
-            "position": "C"
+            "position": "LF"
           },
           {
             "id": 630105,
@@ -560,7 +560,7 @@
           }
         ],
         "awayLineupSource": "projected (last 2026-10-04)",
-        "homeLineupSource": "projected (last 2026-10-04)"
+        "homeLineupSource": "confirmed"
       }
     ],
     "2026-10-07": [
@@ -578,8 +578,14 @@
         "parkHrFactor": 100,
         "startUtc": "2026-10-07T20:00:00Z",
         "startET": "4:00 PM",
-        "awayPitcher": null,
-        "homePitcher": null,
+        "awayPitcher": {
+          "id": 682982,
+          "name": "Daniel Espino"
+        },
+        "homePitcher": {
+          "id": 656794,
+          "name": "Sean Newcomb"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -710,8 +716,14 @@
         "parkHrFactor": 101,
         "startUtc": "2026-10-07T22:00:00Z",
         "startET": "6:00 PM",
-        "awayPitcher": null,
-        "homePitcher": null,
+        "awayPitcher": {
+          "id": 607192,
+          "name": "Tyler Glasnow"
+        },
+        "homePitcher": {
+          "id": 641816,
+          "name": "Tyler Mahle"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -721,34 +733,34 @@
             "position": "SS"
           },
           {
-            "id": 660271,
-            "name": "Shohei Ohtani",
-            "order": 2,
-            "position": "DH"
-          },
-          {
-            "id": 669257,
-            "name": "Will Smith",
-            "order": 3,
-            "position": "C"
-          },
-          {
             "id": 518692,
             "name": "Freddie Freeman",
-            "order": 4,
+            "order": 2,
             "position": "1B"
           },
           {
             "id": 606192,
             "name": "Teoscar Hernández",
-            "order": 5,
+            "order": 3,
             "position": "LF"
           },
           {
-            "id": 663656,
-            "name": "Kyle Tucker",
+            "id": 669257,
+            "name": "Will Smith",
+            "order": 4,
+            "position": "C"
+          },
+          {
+            "id": 660271,
+            "name": "Shohei Ohtani",
+            "order": 5,
+            "position": "DH"
+          },
+          {
+            "id": 500743,
+            "name": "Miguel Rojas",
             "order": 6,
-            "position": "RF"
+            "position": "2B"
           },
           {
             "id": 681624,
@@ -757,16 +769,16 @@
             "position": "CF"
           },
           {
-            "id": 500743,
-            "name": "Miguel Rojas",
+            "id": 663656,
+            "name": "Kyle Tucker",
             "order": 8,
-            "position": "3B"
+            "position": "RF"
           },
           {
-            "id": 669242,
-            "name": "Tommy Edman",
+            "id": 571771,
+            "name": "Enrique Hernández",
             "order": 9,
-            "position": "2B"
+            "position": "3B"
           }
         ],
         "homeLineup": [
@@ -778,9 +790,9 @@
           },
           {
             "id": 660670,
-            "name": "Ronald Acuña",
+            "name": "Ronald Acuña Jr.",
             "order": 2,
-            "position": "RF"
+            "position": "DH"
           },
           {
             "id": 621566,
@@ -796,7 +808,7 @@
           },
           {
             "id": 671739,
-            "name": "Michael Harris",
+            "name": "Michael Harris II",
             "order": 5,
             "position": "CF"
           },
@@ -804,13 +816,13 @@
             "id": 643289,
             "name": "Mauricio Dubón",
             "order": 6,
-            "position": "SS"
+            "position": "LF"
           },
           {
-            "id": 669221,
-            "name": "Sean Murphy",
+            "id": 657041,
+            "name": "Lane Thomas",
             "order": 7,
-            "position": "DH"
+            "position": "RF"
           },
           {
             "id": 663586,
@@ -819,14 +831,14 @@
             "position": "3B"
           },
           {
-            "id": 657041,
-            "name": "Lane Thomas",
+            "id": 673490,
+            "name": "Ha-Seong Kim",
             "order": 9,
-            "position": "LF"
+            "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-10-05)",
-        "homeLineupSource": "projected (last 2026-10-05)"
+        "awayLineupSource": "projected (last 2026-10-06)",
+        "homeLineupSource": "projected (last 2026-10-06)"
       },
       {
         "id": "g849838",
@@ -1042,15 +1054,15 @@
         "homeLineup": [
           {
             "id": 665487,
-            "name": "Fernando Tatis",
+            "name": "Fernando Tatis Jr.",
             "order": 1,
             "position": "RF"
           },
           {
-            "id": 687957,
-            "name": "Dustin Harris",
+            "id": 701538,
+            "name": "Jackson Merrill",
             "order": 2,
-            "position": "LF"
+            "position": "CF"
           },
           {
             "id": 592518,
@@ -1065,10 +1077,10 @@
             "position": "1B"
           },
           {
-            "id": 701538,
-            "name": "Jackson Merrill",
+            "id": 806956,
+            "name": "Ethan Salas",
             "order": 5,
-            "position": "CF"
+            "position": "C"
           },
           {
             "id": 657757,
@@ -1083,10 +1095,10 @@
             "position": "SS"
           },
           {
-            "id": 669134,
-            "name": "Luis Campusano",
+            "id": 687957,
+            "name": "Dustin Harris",
             "order": 8,
-            "position": "C"
+            "position": "LF"
           },
           {
             "id": 630105,
@@ -1096,7 +1108,7 @@
           }
         ],
         "awayLineupSource": "projected (last 2026-10-04)",
-        "homeLineupSource": "projected (last 2026-10-04)"
+        "homeLineupSource": "projected (last 2026-10-07)"
       }
     ]
   }
