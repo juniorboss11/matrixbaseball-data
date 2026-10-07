@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-07T13:54:07.328Z",
+  "refreshedAt": "2026-10-07T19:48:06.168Z",
   "today": "2026-10-07",
   "dates": [
     "2026-10-06",
@@ -289,7 +289,7 @@
       {
         "id": "g849833",
         "gamePk": 849833,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "CLE",
         "homeTeam": "CWS",
         "awayTeamId": 114,
@@ -308,7 +308,7 @@
           "id": 656794,
           "name": "Sean Newcomb"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 680757,
@@ -370,31 +370,31 @@
             "id": 803011,
             "name": "Sam Antonacci",
             "order": 1,
-            "position": "LF"
-          },
-          {
-            "id": 691019,
-            "name": "Kyle Teel",
-            "order": 2,
-            "position": "C"
+            "position": "DH"
           },
           {
             "id": 678246,
             "name": "Miguel Vargas",
-            "order": 3,
+            "order": 2,
             "position": "3B"
           },
           {
             "id": 808959,
             "name": "Munetaka Murakami",
-            "order": 4,
+            "order": 3,
             "position": "1B"
           },
           {
-            "id": 643217,
-            "name": "Andrew Benintendi",
+            "id": 691019,
+            "name": "Kyle Teel",
+            "order": 4,
+            "position": "C"
+          },
+          {
+            "id": 805367,
+            "name": "Chase Meidroth",
             "order": 5,
-            "position": "DH"
+            "position": "2B"
           },
           {
             "id": 671976,
@@ -409,10 +409,10 @@
             "position": "RF"
           },
           {
-            "id": 805367,
-            "name": "Chase Meidroth",
+            "id": 545341,
+            "name": "Randal Grichuk",
             "order": 8,
-            "position": "2B"
+            "position": "LF"
           },
           {
             "id": 695657,
@@ -421,13 +421,13 @@
             "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-10-05)",
-        "homeLineupSource": "projected (last 2026-10-05)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g849822",
         "gamePk": 849822,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "LAD",
         "homeTeam": "ATL",
         "awayTeamId": 119,
@@ -446,7 +446,7 @@
           "id": 641816,
           "name": "Tyler Mahle"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 605141,
@@ -461,34 +461,34 @@
             "position": "1B"
           },
           {
-            "id": 606192,
-            "name": "Teoscar Hernández",
-            "order": 3,
-            "position": "LF"
-          },
-          {
             "id": 669257,
             "name": "Will Smith",
-            "order": 4,
+            "order": 3,
             "position": "C"
           },
           {
             "id": 660271,
             "name": "Shohei Ohtani",
-            "order": 5,
+            "order": 4,
             "position": "DH"
           },
           {
-            "id": 500743,
-            "name": "Miguel Rojas",
-            "order": 6,
-            "position": "2B"
+            "id": 606192,
+            "name": "Teoscar Hernández",
+            "order": 5,
+            "position": "LF"
           },
           {
-            "id": 681624,
-            "name": "Andy Pages",
+            "id": 571970,
+            "name": "Max Muncy",
+            "order": 6,
+            "position": "3B"
+          },
+          {
+            "id": 571771,
+            "name": "Enrique Hernández",
             "order": 7,
-            "position": "CF"
+            "position": "2B"
           },
           {
             "id": 663656,
@@ -497,24 +497,24 @@
             "position": "RF"
           },
           {
-            "id": 571771,
-            "name": "Enrique Hernández",
+            "id": 681624,
+            "name": "Andy Pages",
             "order": 9,
-            "position": "3B"
+            "position": "CF"
           }
         ],
         "homeLineup": [
           {
-            "id": 686948,
-            "name": "Drake Baldwin",
+            "id": 671739,
+            "name": "Michael Harris II",
             "order": 1,
-            "position": "C"
+            "position": "CF"
           },
           {
             "id": 660670,
-            "name": "Ronald Acuña",
+            "name": "Ronald Acuña Jr.",
             "order": 2,
-            "position": "DH"
+            "position": "RF"
           },
           {
             "id": 621566,
@@ -529,22 +529,22 @@
             "position": "2B"
           },
           {
-            "id": 671739,
-            "name": "Michael Harris",
+            "id": 686948,
+            "name": "Drake Baldwin",
             "order": 5,
-            "position": "CF"
+            "position": "DH"
           },
           {
-            "id": 643289,
-            "name": "Mauricio Dubón",
+            "id": 573262,
+            "name": "Mike Yastrzemski",
             "order": 6,
             "position": "LF"
           },
           {
-            "id": 657041,
-            "name": "Lane Thomas",
+            "id": 643289,
+            "name": "Mauricio Dubón",
             "order": 7,
-            "position": "RF"
+            "position": "SS"
           },
           {
             "id": 663586,
@@ -553,14 +553,14 @@
             "position": "3B"
           },
           {
-            "id": 673490,
-            "name": "Ha-Seong Kim",
+            "id": 669221,
+            "name": "Sean Murphy",
             "order": 9,
-            "position": "SS"
+            "position": "C"
           }
         ],
-        "awayLineupSource": "projected (last 2026-10-06)",
-        "homeLineupSource": "projected (last 2026-10-06)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       },
       {
         "id": "g849838",
@@ -851,7 +851,10 @@
         "parkHrFactor": 100,
         "startUtc": "2026-10-08T21:00:00Z",
         "startET": "5:00 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 800048,
+          "name": "Parker Messick"
+        },
         "homePitcher": null,
         "lineupsConfirmed": false,
         "awayLineup": [
@@ -915,31 +918,31 @@
             "id": 803011,
             "name": "Sam Antonacci",
             "order": 1,
-            "position": "LF"
-          },
-          {
-            "id": 691019,
-            "name": "Kyle Teel",
-            "order": 2,
-            "position": "C"
+            "position": "DH"
           },
           {
             "id": 678246,
             "name": "Miguel Vargas",
-            "order": 3,
+            "order": 2,
             "position": "3B"
           },
           {
             "id": 808959,
             "name": "Munetaka Murakami",
-            "order": 4,
+            "order": 3,
             "position": "1B"
           },
           {
-            "id": 643217,
-            "name": "Andrew Benintendi",
+            "id": 691019,
+            "name": "Kyle Teel",
+            "order": 4,
+            "position": "C"
+          },
+          {
+            "id": 805367,
+            "name": "Chase Meidroth",
             "order": 5,
-            "position": "DH"
+            "position": "2B"
           },
           {
             "id": 671976,
@@ -954,10 +957,10 @@
             "position": "RF"
           },
           {
-            "id": 805367,
-            "name": "Chase Meidroth",
+            "id": 545341,
+            "name": "Randal Grichuk",
             "order": 8,
-            "position": "2B"
+            "position": "LF"
           },
           {
             "id": 695657,
@@ -966,8 +969,8 @@
             "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-10-05)",
-        "homeLineupSource": "projected (last 2026-10-05)"
+        "awayLineupSource": "projected (last 2026-10-07)",
+        "homeLineupSource": "projected (last 2026-10-07)"
       },
       {
         "id": "g849837",
