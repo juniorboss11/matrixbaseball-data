@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-08T03:26:20.761Z",
+  "refreshedAt": "2026-10-08T10:51:25.171Z",
   "today": "2026-10-08",
   "dates": [
     "2026-10-07",
@@ -228,13 +228,13 @@
         "homeLineup": [
           {
             "id": 671739,
-            "name": "Michael Harris II",
+            "name": "Michael Harris",
             "order": 1,
             "position": "CF"
           },
           {
             "id": 660670,
-            "name": "Ronald Acuña Jr.",
+            "name": "Ronald Acuña",
             "order": 2,
             "position": "RF"
           },
@@ -328,7 +328,7 @@
           },
           {
             "id": 683748,
-            "name": "Victor Mesa Jr.",
+            "name": "Victor Mesa",
             "order": 4,
             "position": "LF"
           },
@@ -378,7 +378,7 @@
           },
           {
             "id": 671277,
-            "name": "Luis García Jr.",
+            "name": "Luis García",
             "order": 3,
             "position": "1B"
           },
@@ -390,7 +390,7 @@
           },
           {
             "id": 806146,
-            "name": "George Lombard Jr.",
+            "name": "George Lombard",
             "order": 5,
             "position": "SS"
           },
@@ -425,7 +425,7 @@
       {
         "id": "g849827",
         "gamePk": 849827,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "MIL",
         "homeTeam": "SD",
         "awayTeamId": 158,
@@ -504,7 +504,7 @@
         "homeLineup": [
           {
             "id": 665487,
-            "name": "Fernando Tatis Jr.",
+            "name": "Fernando Tatis",
             "order": 1,
             "position": "RF"
           },
@@ -580,7 +580,10 @@
           "id": 800048,
           "name": "Parker Messick"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 696146,
+          "name": "Hagen Smith"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -698,142 +701,6 @@
         "homeLineupSource": "projected (last 2026-10-07)"
       }
     ],
-    "2026-10-09": [
-      {
-        "id": "g849824",
-        "gamePk": 849824,
-        "status": "Scheduled",
-        "awayTeam": "SD",
-        "homeTeam": "MIL",
-        "awayTeamId": 135,
-        "homeTeamId": 158,
-        "awayTeamName": "San Diego Padres",
-        "homeTeamName": "Milwaukee Brewers",
-        "park": "American Family Field",
-        "parkHrFactor": 104,
-        "startUtc": "2026-10-10T00:00:00Z",
-        "startET": "8:00 PM",
-        "awayPitcher": null,
-        "homePitcher": {
-          "id": 694819,
-          "name": "Jacob Misiorowski"
-        },
-        "lineupsConfirmed": false,
-        "awayLineup": [
-          {
-            "id": 665487,
-            "name": "Fernando Tatis Jr.",
-            "order": 1,
-            "position": "RF"
-          },
-          {
-            "id": 701538,
-            "name": "Jackson Merrill",
-            "order": 2,
-            "position": "CF"
-          },
-          {
-            "id": 592518,
-            "name": "Manny Machado",
-            "order": 3,
-            "position": "3B"
-          },
-          {
-            "id": 664034,
-            "name": "Ty France",
-            "order": 4,
-            "position": "1B"
-          },
-          {
-            "id": 669720,
-            "name": "Austin Hays",
-            "order": 5,
-            "position": "DH"
-          },
-          {
-            "id": 593428,
-            "name": "Xander Bogaerts",
-            "order": 6,
-            "position": "SS"
-          },
-          {
-            "id": 669134,
-            "name": "Luis Campusano",
-            "order": 7,
-            "position": "C"
-          },
-          {
-            "id": 630105,
-            "name": "Jake Cronenworth",
-            "order": 8,
-            "position": "2B"
-          },
-          {
-            "id": 669392,
-            "name": "Samad Taylor",
-            "order": 9,
-            "position": "LF"
-          }
-        ],
-        "homeLineup": [
-          {
-            "id": 694192,
-            "name": "Jackson Chourio",
-            "order": 1,
-            "position": "LF"
-          },
-          {
-            "id": 592885,
-            "name": "Christian Yelich",
-            "order": 2,
-            "position": "DH"
-          },
-          {
-            "id": 661388,
-            "name": "William Contreras",
-            "order": 3,
-            "position": "C"
-          },
-          {
-            "id": 668930,
-            "name": "Brice Turang",
-            "order": 4,
-            "position": "2B"
-          },
-          {
-            "id": 641343,
-            "name": "Jake Bauers",
-            "order": 5,
-            "position": "1B"
-          },
-          {
-            "id": 806198,
-            "name": "Cooper Pratt",
-            "order": 6,
-            "position": "SS"
-          },
-          {
-            "id": 686217,
-            "name": "Sal Frelick",
-            "order": 7,
-            "position": "RF"
-          },
-          {
-            "id": 669003,
-            "name": "Garrett Mitchell",
-            "order": 8,
-            "position": "CF"
-          },
-          {
-            "id": 687401,
-            "name": "Joey Ortiz",
-            "order": 9,
-            "position": "3B"
-          }
-        ],
-        "awayLineupSource": "projected (last 2026-10-08)",
-        "homeLineupSource": "projected (last 2026-10-08)"
-      }
-    ]
+    "2026-10-09": []
   }
 }
