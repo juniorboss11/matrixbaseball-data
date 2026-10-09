@@ -1,571 +1,17 @@
 {
-  "refreshedAt": "2026-10-08T22:26:40.319Z",
-  "today": "2026-10-08",
+  "refreshedAt": "2026-10-09T02:26:09.523Z",
+  "today": "2026-10-09",
   "dates": [
-    "2026-10-07",
     "2026-10-08",
-    "2026-10-09"
+    "2026-10-09",
+    "2026-10-10"
   ],
   "slates": {
-    "2026-10-07": [
-      {
-        "id": "g849833",
-        "gamePk": 849833,
-        "status": "Final",
-        "awayTeam": "CLE",
-        "homeTeam": "CWS",
-        "awayTeamId": 114,
-        "homeTeamId": 145,
-        "awayTeamName": "Cleveland Guardians",
-        "homeTeamName": "Chicago White Sox",
-        "park": "Rate Field",
-        "parkHrFactor": 100,
-        "startUtc": "2026-10-07T20:00:00Z",
-        "startET": "4:00 PM",
-        "awayPitcher": {
-          "id": 682982,
-          "name": "Daniel Espino"
-        },
-        "homePitcher": {
-          "id": 656794,
-          "name": "Sean Newcomb"
-        },
-        "lineupsConfirmed": true,
-        "awayLineup": [
-          {
-            "id": 680757,
-            "name": "Steven Kwan",
-            "order": 1,
-            "position": "CF"
-          },
-          {
-            "id": 608070,
-            "name": "José Ramírez",
-            "order": 2,
-            "position": "3B"
-          },
-          {
-            "id": 800050,
-            "name": "Chase DeLauter",
-            "order": 3,
-            "position": "RF"
-          },
-          {
-            "id": 666176,
-            "name": "Jo Adell",
-            "order": 4,
-            "position": "DH"
-          },
-          {
-            "id": 663993,
-            "name": "Nathaniel Lowe",
-            "order": 5,
-            "position": "1B"
-          },
-          {
-            "id": 682657,
-            "name": "Angel Martínez",
-            "order": 6,
-            "position": "LF"
-          },
-          {
-            "id": 683953,
-            "name": "Travis Bazzana",
-            "order": 7,
-            "position": "2B"
-          },
-          {
-            "id": 672275,
-            "name": "Patrick Bailey",
-            "order": 8,
-            "position": "C"
-          },
-          {
-            "id": 677587,
-            "name": "Brayan Rocchio",
-            "order": 9,
-            "position": "SS"
-          }
-        ],
-        "homeLineup": [
-          {
-            "id": 803011,
-            "name": "Sam Antonacci",
-            "order": 1,
-            "position": "DH"
-          },
-          {
-            "id": 678246,
-            "name": "Miguel Vargas",
-            "order": 2,
-            "position": "3B"
-          },
-          {
-            "id": 808959,
-            "name": "Munetaka Murakami",
-            "order": 3,
-            "position": "1B"
-          },
-          {
-            "id": 691019,
-            "name": "Kyle Teel",
-            "order": 4,
-            "position": "C"
-          },
-          {
-            "id": 805367,
-            "name": "Chase Meidroth",
-            "order": 5,
-            "position": "2B"
-          },
-          {
-            "id": 671976,
-            "name": "Tristan Peters",
-            "order": 6,
-            "position": "CF"
-          },
-          {
-            "id": 695731,
-            "name": "Braden Montgomery",
-            "order": 7,
-            "position": "RF"
-          },
-          {
-            "id": 545341,
-            "name": "Randal Grichuk",
-            "order": 8,
-            "position": "LF"
-          },
-          {
-            "id": 695657,
-            "name": "Colson Montgomery",
-            "order": 9,
-            "position": "SS"
-          }
-        ],
-        "awayLineupSource": "confirmed",
-        "homeLineupSource": "confirmed"
-      },
-      {
-        "id": "g849822",
-        "gamePk": 849822,
-        "status": "Final",
-        "awayTeam": "LAD",
-        "homeTeam": "ATL",
-        "awayTeamId": 119,
-        "homeTeamId": 144,
-        "awayTeamName": "Los Angeles Dodgers",
-        "homeTeamName": "Atlanta Braves",
-        "park": "Truist Park",
-        "parkHrFactor": 101,
-        "startUtc": "2026-10-07T22:00:00Z",
-        "startET": "6:00 PM",
-        "awayPitcher": {
-          "id": 607192,
-          "name": "Tyler Glasnow"
-        },
-        "homePitcher": {
-          "id": 641816,
-          "name": "Tyler Mahle"
-        },
-        "lineupsConfirmed": true,
-        "awayLineup": [
-          {
-            "id": 605141,
-            "name": "Mookie Betts",
-            "order": 1,
-            "position": "SS"
-          },
-          {
-            "id": 518692,
-            "name": "Freddie Freeman",
-            "order": 2,
-            "position": "1B"
-          },
-          {
-            "id": 669257,
-            "name": "Will Smith",
-            "order": 3,
-            "position": "C"
-          },
-          {
-            "id": 660271,
-            "name": "Shohei Ohtani",
-            "order": 4,
-            "position": "DH"
-          },
-          {
-            "id": 606192,
-            "name": "Teoscar Hernández",
-            "order": 5,
-            "position": "LF"
-          },
-          {
-            "id": 571970,
-            "name": "Max Muncy",
-            "order": 6,
-            "position": "3B"
-          },
-          {
-            "id": 571771,
-            "name": "Enrique Hernández",
-            "order": 7,
-            "position": "2B"
-          },
-          {
-            "id": 663656,
-            "name": "Kyle Tucker",
-            "order": 8,
-            "position": "RF"
-          },
-          {
-            "id": 681624,
-            "name": "Andy Pages",
-            "order": 9,
-            "position": "CF"
-          }
-        ],
-        "homeLineup": [
-          {
-            "id": 671739,
-            "name": "Michael Harris",
-            "order": 1,
-            "position": "CF"
-          },
-          {
-            "id": 660670,
-            "name": "Ronald Acuña",
-            "order": 2,
-            "position": "RF"
-          },
-          {
-            "id": 621566,
-            "name": "Matt Olson",
-            "order": 3,
-            "position": "1B"
-          },
-          {
-            "id": 645277,
-            "name": "Ozzie Albies",
-            "order": 4,
-            "position": "2B"
-          },
-          {
-            "id": 686948,
-            "name": "Drake Baldwin",
-            "order": 5,
-            "position": "DH"
-          },
-          {
-            "id": 573262,
-            "name": "Mike Yastrzemski",
-            "order": 6,
-            "position": "LF"
-          },
-          {
-            "id": 643289,
-            "name": "Mauricio Dubón",
-            "order": 7,
-            "position": "SS"
-          },
-          {
-            "id": 663586,
-            "name": "Austin Riley",
-            "order": 8,
-            "position": "3B"
-          },
-          {
-            "id": 669221,
-            "name": "Sean Murphy",
-            "order": 9,
-            "position": "C"
-          }
-        ],
-        "awayLineupSource": "confirmed",
-        "homeLineupSource": "confirmed"
-      },
-      {
-        "id": "g849838",
-        "gamePk": 849838,
-        "status": "Final",
-        "awayTeam": "TB",
-        "homeTeam": "NYY",
-        "awayTeamId": 139,
-        "homeTeamId": 147,
-        "awayTeamName": "Tampa Bay Rays",
-        "homeTeamName": "New York Yankees",
-        "park": "Yankee Stadium",
-        "parkHrFactor": 112,
-        "startUtc": "2026-10-08T00:00:00Z",
-        "startET": "8:00 PM",
-        "awayPitcher": {
-          "id": 607259,
-          "name": "Nick Martinez"
-        },
-        "homePitcher": {
-          "id": 608331,
-          "name": "Max Fried"
-        },
-        "lineupsConfirmed": true,
-        "awayLineup": [
-          {
-            "id": 650490,
-            "name": "Yandy Díaz",
-            "order": 1,
-            "position": "DH"
-          },
-          {
-            "id": 666018,
-            "name": "Jonathan Aranda",
-            "order": 2,
-            "position": "1B"
-          },
-          {
-            "id": 691406,
-            "name": "Junior Caminero",
-            "order": 3,
-            "position": "3B"
-          },
-          {
-            "id": 683748,
-            "name": "Victor Mesa",
-            "order": 4,
-            "position": "LF"
-          },
-          {
-            "id": 668723,
-            "name": "Ryan Vilade",
-            "order": 5,
-            "position": "RF"
-          },
-          {
-            "id": 689414,
-            "name": "Liam Hicks",
-            "order": 6,
-            "position": "C"
-          },
-          {
-            "id": 676356,
-            "name": "Jonny DeLuca",
-            "order": 7,
-            "position": "CF"
-          },
-          {
-            "id": 680700,
-            "name": "Richie Palacios",
-            "order": 8,
-            "position": "2B"
-          },
-          {
-            "id": 670764,
-            "name": "Taylor Walls",
-            "order": 9,
-            "position": "SS"
-          }
-        ],
-        "homeLineup": [
-          {
-            "id": 663757,
-            "name": "Trent Grisham",
-            "order": 1,
-            "position": "CF"
-          },
-          {
-            "id": 700250,
-            "name": "Ben Rice",
-            "order": 2,
-            "position": "DH"
-          },
-          {
-            "id": 671277,
-            "name": "Luis García",
-            "order": 3,
-            "position": "1B"
-          },
-          {
-            "id": 641355,
-            "name": "Cody Bellinger",
-            "order": 4,
-            "position": "LF"
-          },
-          {
-            "id": 806146,
-            "name": "George Lombard",
-            "order": 5,
-            "position": "SS"
-          },
-          {
-            "id": 669224,
-            "name": "Austin Wells",
-            "order": 6,
-            "position": "C"
-          },
-          {
-            "id": 683011,
-            "name": "Anthony Volpe",
-            "order": 7,
-            "position": "2B"
-          },
-          {
-            "id": 682987,
-            "name": "Spencer Jones",
-            "order": 8,
-            "position": "RF"
-          },
-          {
-            "id": 676609,
-            "name": "José Caballero",
-            "order": 9,
-            "position": "3B"
-          }
-        ],
-        "awayLineupSource": "confirmed",
-        "homeLineupSource": "confirmed"
-      },
-      {
-        "id": "g849827",
-        "gamePk": 849827,
-        "status": "Final",
-        "awayTeam": "MIL",
-        "homeTeam": "SD",
-        "awayTeamId": 158,
-        "homeTeamId": 135,
-        "awayTeamName": "Milwaukee Brewers",
-        "homeTeamName": "San Diego Padres",
-        "park": "Petco Park",
-        "parkHrFactor": 95,
-        "startUtc": "2026-10-08T02:00:00Z",
-        "startET": "10:00 PM",
-        "awayPitcher": {
-          "id": 688107,
-          "name": "Robert Gasser"
-        },
-        "homePitcher": {
-          "id": 621111,
-          "name": "Walker Buehler"
-        },
-        "lineupsConfirmed": true,
-        "awayLineup": [
-          {
-            "id": 694192,
-            "name": "Jackson Chourio",
-            "order": 1,
-            "position": "LF"
-          },
-          {
-            "id": 592885,
-            "name": "Christian Yelich",
-            "order": 2,
-            "position": "DH"
-          },
-          {
-            "id": 661388,
-            "name": "William Contreras",
-            "order": 3,
-            "position": "C"
-          },
-          {
-            "id": 668930,
-            "name": "Brice Turang",
-            "order": 4,
-            "position": "2B"
-          },
-          {
-            "id": 641343,
-            "name": "Jake Bauers",
-            "order": 5,
-            "position": "1B"
-          },
-          {
-            "id": 806198,
-            "name": "Cooper Pratt",
-            "order": 6,
-            "position": "SS"
-          },
-          {
-            "id": 686217,
-            "name": "Sal Frelick",
-            "order": 7,
-            "position": "RF"
-          },
-          {
-            "id": 669003,
-            "name": "Garrett Mitchell",
-            "order": 8,
-            "position": "CF"
-          },
-          {
-            "id": 687401,
-            "name": "Joey Ortiz",
-            "order": 9,
-            "position": "3B"
-          }
-        ],
-        "homeLineup": [
-          {
-            "id": 665487,
-            "name": "Fernando Tatis Jr.",
-            "order": 1,
-            "position": "RF"
-          },
-          {
-            "id": 701538,
-            "name": "Jackson Merrill",
-            "order": 2,
-            "position": "CF"
-          },
-          {
-            "id": 592518,
-            "name": "Manny Machado",
-            "order": 3,
-            "position": "3B"
-          },
-          {
-            "id": 664034,
-            "name": "Ty France",
-            "order": 4,
-            "position": "1B"
-          },
-          {
-            "id": 669720,
-            "name": "Austin Hays",
-            "order": 5,
-            "position": "DH"
-          },
-          {
-            "id": 593428,
-            "name": "Xander Bogaerts",
-            "order": 6,
-            "position": "SS"
-          },
-          {
-            "id": 669134,
-            "name": "Luis Campusano",
-            "order": 7,
-            "position": "C"
-          },
-          {
-            "id": 630105,
-            "name": "Jake Cronenworth",
-            "order": 8,
-            "position": "2B"
-          },
-          {
-            "id": 669392,
-            "name": "Samad Taylor",
-            "order": 9,
-            "position": "LF"
-          }
-        ],
-        "awayLineupSource": "confirmed",
-        "homeLineupSource": "confirmed"
-      }
-    ],
     "2026-10-08": [
       {
         "id": "g849832",
         "gamePk": 849832,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "CLE",
         "homeTeam": "CWS",
         "awayTeamId": 114,
@@ -701,6 +147,140 @@
         "homeLineupSource": "confirmed"
       }
     ],
-    "2026-10-09": []
+    "2026-10-09": [],
+    "2026-10-10": [
+      {
+        "id": "g849831",
+        "gamePk": 849831,
+        "status": "Scheduled",
+        "awayTeam": "CWS",
+        "homeTeam": "CLE",
+        "awayTeamId": 145,
+        "homeTeamId": 114,
+        "awayTeamName": "Chicago White Sox",
+        "homeTeamName": "Cleveland Guardians",
+        "park": "Progressive Field",
+        "parkHrFactor": 97,
+        "startUtc": "2026-10-11T00:00:00Z",
+        "startET": "8:00 PM",
+        "awayPitcher": null,
+        "homePitcher": null,
+        "lineupsConfirmed": false,
+        "awayLineup": [
+          {
+            "id": 805367,
+            "name": "Chase Meidroth",
+            "order": 1,
+            "position": "2B"
+          },
+          {
+            "id": 545341,
+            "name": "Randal Grichuk",
+            "order": 2,
+            "position": "LF"
+          },
+          {
+            "id": 678246,
+            "name": "Miguel Vargas",
+            "order": 3,
+            "position": "3B"
+          },
+          {
+            "id": 808959,
+            "name": "Munetaka Murakami",
+            "order": 4,
+            "position": "1B"
+          },
+          {
+            "id": 502054,
+            "name": "Tommy Pham",
+            "order": 5,
+            "position": "DH"
+          },
+          {
+            "id": 686668,
+            "name": "Brenton Doyle",
+            "order": 6,
+            "position": "CF"
+          },
+          {
+            "id": 691019,
+            "name": "Kyle Teel",
+            "order": 7,
+            "position": "C"
+          },
+          {
+            "id": 695731,
+            "name": "Braden Montgomery",
+            "order": 8,
+            "position": "RF"
+          },
+          {
+            "id": 695657,
+            "name": "Colson Montgomery",
+            "order": 9,
+            "position": "SS"
+          }
+        ],
+        "homeLineup": [
+          {
+            "id": 680757,
+            "name": "Steven Kwan",
+            "order": 1,
+            "position": "CF"
+          },
+          {
+            "id": 608070,
+            "name": "José Ramírez",
+            "order": 2,
+            "position": "3B"
+          },
+          {
+            "id": 800050,
+            "name": "Chase DeLauter",
+            "order": 3,
+            "position": "RF"
+          },
+          {
+            "id": 666176,
+            "name": "Jo Adell",
+            "order": 4,
+            "position": "DH"
+          },
+          {
+            "id": 663993,
+            "name": "Nathaniel Lowe",
+            "order": 5,
+            "position": "1B"
+          },
+          {
+            "id": 682657,
+            "name": "Angel Martínez",
+            "order": 6,
+            "position": "LF"
+          },
+          {
+            "id": 683953,
+            "name": "Travis Bazzana",
+            "order": 7,
+            "position": "2B"
+          },
+          {
+            "id": 595978,
+            "name": "Austin Hedges",
+            "order": 8,
+            "position": "C"
+          },
+          {
+            "id": 677587,
+            "name": "Brayan Rocchio",
+            "order": 9,
+            "position": "SS"
+          }
+        ],
+        "awayLineupSource": "projected (last 2026-10-09)",
+        "homeLineupSource": "projected (last 2026-10-09)"
+      }
+    ]
   }
 }
