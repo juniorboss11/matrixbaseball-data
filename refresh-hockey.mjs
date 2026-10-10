@@ -18,6 +18,7 @@
 import fs from "node:fs";
 
 import { bucketsOf, multFor, baseLambdas, applyContext, probs as probsOf, FACTOR_KEYS, seasonWeights } from "./hockey-factors.mjs";
+import { buildGradeCtx, gradePlayer } from "./hockey-grades-core.mjs";
 const PREV = "20252026";
 const CUR = "20262027";
 const STATS = "https://api.nhle.com/stats/rest/en";
@@ -762,6 +763,23 @@ const picks = readJSON("hockey-picks.json", { version: 1, days: {} });
 const allGames = Object.values(gamesByDate).flat();
 const started = (g) => !["FUT", "PRE"].includes(g.state);
 const edgeFlags = edgeFlagsFactory();
+// grades (same engine as the site): [OFF, MU, DEF, DMU, MU team-only, DMU team-only] scores 0-100
+const gradeOf = (() => {
+  try {
+    const T = seasonTeams, G = readJSON("hockey-goalies.json", null), ST = readJSON("hockey-special.json", null), M = readJSON("hockey-matchups.json", null);
+    if (!T) return () => null;
+    const teamsG = {};
+    for (const t of slateTeams) { const gd = Object.fromEntries(slateDates.map((d) => [d, likelyGoalie(t, d)])); teamsG[t] = { goalieByDate: gd, goalie: gd[today] ?? null }; }
+    const data = { teams: teamsG, lines, players: Object.values(players) };
+    const ctx = buildGradeCtx(T, G, ST, M), ctxT = { ...ctx, teamOnly: true };
+    return (p) => {
+      try {
+        const a = gradePlayer(p, data, ctx), b = gradePlayer(p, data, ctxT);
+        return [a.off?.score ?? null, a.mu?.score ?? null, a.def?.score ?? null, a.dmu?.score ?? null, b.mu?.score ?? null, b.dmu?.score ?? null];
+      } catch { return null; }
+    };
+  } catch (e) { console.log("grades unavailable", e.message); return () => null; }
+})();
 for (const g of allGames) {
   const day = (picks.days[g.date] ??= { games: {} });
   const gp = day.games[g.id];
@@ -771,7 +789,7 @@ for (const g of allGames) {
   const rows = Object.values(players).filter((p) => p.gid === g.id);
   day.games[g.id] = {
     away: g.away, home: g.home, startUTC: g.startUTC, snapAt: new Date().toISOString(), locked: false,
-    players: rows.map((p) => [p.pid, p.name, p.team, p.pos, p.line, p.pp, p.m.p1, p.m.p2, p.m.g1, p.m.s3, edgeFlags(p, g.date)]),
+    players: rows.map((p) => [p.pid, p.name, p.team, p.pos, p.line, p.pp, p.m.p1, p.m.p2, p.m.g1, p.m.s3, { ...edgeFlags(p, g.date), gr: gradeOf(p) }]),
     stacks: stacksTop.filter((s) => s.gid === g.id).slice(0, 8)
       .map((s) => ({ kind: s.kind, team: s.team, legs: s.legs.map((l) => [l.pid, l.need]), model: s.model })),
   };
