@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-10T17:41:45.376Z",
+  "refreshedAt": "2026-10-10T20:42:22.651Z",
   "today": "2026-10-10",
   "dates": [
     "2026-10-09",
@@ -12,7 +12,7 @@
       {
         "id": "g849831",
         "gamePk": 849831,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "CWS",
         "homeTeam": "CLE",
         "awayTeamId": 145,
@@ -31,19 +31,19 @@
           "id": 668909,
           "name": "Gavin Williams"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
-            "id": 805367,
-            "name": "Chase Meidroth",
+            "id": 803011,
+            "name": "Sam Antonacci",
             "order": 1,
-            "position": "2B"
+            "position": "LF"
           },
           {
-            "id": 545341,
-            "name": "Randal Grichuk",
+            "id": 691019,
+            "name": "Kyle Teel",
             "order": 2,
-            "position": "LF"
+            "position": "C"
           },
           {
             "id": 678246,
@@ -58,34 +58,34 @@
             "position": "1B"
           },
           {
-            "id": 502054,
-            "name": "Tommy Pham",
+            "id": 643217,
+            "name": "Andrew Benintendi",
             "order": 5,
             "position": "DH"
           },
           {
-            "id": 686668,
-            "name": "Brenton Doyle",
+            "id": 671976,
+            "name": "Tristan Peters",
             "order": 6,
-            "position": "CF"
-          },
-          {
-            "id": 691019,
-            "name": "Kyle Teel",
-            "order": 7,
-            "position": "C"
-          },
-          {
-            "id": 695731,
-            "name": "Braden Montgomery",
-            "order": 8,
             "position": "RF"
+          },
+          {
+            "id": 805367,
+            "name": "Chase Meidroth",
+            "order": 7,
+            "position": "2B"
           },
           {
             "id": 695657,
             "name": "Colson Montgomery",
-            "order": 9,
+            "order": 8,
             "position": "SS"
+          },
+          {
+            "id": 686668,
+            "name": "Brenton Doyle",
+            "order": 9,
+            "position": "CF"
           }
         ],
         "homeLineup": [
@@ -93,7 +93,7 @@
             "id": 680757,
             "name": "Steven Kwan",
             "order": 1,
-            "position": "CF"
+            "position": "LF"
           },
           {
             "id": 608070,
@@ -120,22 +120,22 @@
             "position": "1B"
           },
           {
-            "id": 682657,
-            "name": "Angel Martínez",
-            "order": 6,
-            "position": "LF"
-          },
-          {
             "id": 683953,
             "name": "Travis Bazzana",
-            "order": 7,
+            "order": 6,
             "position": "2B"
           },
           {
-            "id": 595978,
-            "name": "Austin Hedges",
-            "order": 8,
+            "id": 672275,
+            "name": "Patrick Bailey",
+            "order": 7,
             "position": "C"
+          },
+          {
+            "id": 690984,
+            "name": "Petey Halpin",
+            "order": 8,
+            "position": "CF"
           },
           {
             "id": 677587,
@@ -144,8 +144,8 @@
             "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-10-09)",
-        "homeLineupSource": "projected (last 2026-10-09)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       }
     ],
     "2026-10-11": [
@@ -167,7 +167,10 @@
           "id": 669373,
           "name": "Tarik Skubal"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 694819,
+          "name": "Jacob Misiorowski"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
