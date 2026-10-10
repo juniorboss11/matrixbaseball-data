@@ -730,7 +730,19 @@ const tlTeamsOut = Object.fromEntries(Object.entries(tlTeams).map(([t, ids]) => 
 const tlPairsOut = Object.fromEntries(Object.entries(tlPairs).map(([k, ids]) => [k, newestFirst(ids).slice(0, 7)]));
 const keep = new Set([...Object.values(tlTeamsOut).flat(), ...Object.values(tlPairsOut).flat()]);
 const tlGamesOut = Object.fromEntries(Object.entries(tlGames).filter(([id]) => keep.has(+id)));
-fs.writeFileSync("hockey-teamlog.json", JSON.stringify({ builtAt: new Date().toISOString(), seasons: { prev: PREV, cur: CUR }, slots: SLOTS, roles: ROLES, teams: tlTeamsOut, pairs: tlPairsOut, games: tlGamesOut }));
+// names for every pid referenced (skaters + goalies), including players no longer on an NHL roster
+const tlNames = {};
+const tlNeed = new Set();
+for (const g of Object.values(tlGamesOut)) for (const s of g.sd) { for (const t of s.top) tlNeed.add(t[0]); for (const x of s.gl) tlNeed.add(x[0]); }
+const nameCache = fs.existsSync("hockey-names-cache.json") ? JSON.parse(fs.readFileSync("hockey-names-cache.json", "utf8")) : {};
+const tlMissing = [...tlNeed].filter((id) => !roster[id] && !nameCache[id]);
+for (let i = 0; i < tlMissing.length; i += 8) await Promise.all(tlMissing.slice(i, i + 8).map(async (id) => {
+  const r = await fetchJSON(`${WEB}/player/${id}/landing`);
+  if (r?.firstName?.default) nameCache[id] = `${r.firstName.default} ${r.lastName.default}`;
+}));
+fs.writeFileSync("hockey-names-cache.json", JSON.stringify(nameCache));
+for (const id of tlNeed) tlNames[id] = roster[id]?.name ?? nameCache[id] ?? null;
+fs.writeFileSync("hockey-teamlog.json", JSON.stringify({ builtAt: new Date().toISOString(), seasons: { prev: PREV, cur: CUR }, slots: SLOTS, roles: ROLES, names: tlNames, teams: tlTeamsOut, pairs: tlPairsOut, games: tlGamesOut }));
 console.log("hockey-teamlog.json", (fs.statSync("hockey-teamlog.json").size / 1024).toFixed(0), "KB", Object.keys(tlGamesOut).length, "games");
 
 // ---------------------------------------------------------------- live context (state after all games)
