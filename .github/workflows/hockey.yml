@@ -27,14 +27,14 @@ jobs:
         run: node hockey-season-fetch.mjs
       - name: Season build (rankings, units, shots, backtest) when new games landed
         run: |
-          if [ "$(cat .season-new 2>/dev/null || echo 0)" != "0" ] || [ ! -f hockey-teams.json ] || [ ! -f hockey-goalies.json ] || [ ! -f hockey-special.json ]; then node hockey-season-build.mjs; else echo "no new games"; fi
+          if [ "$(cat .season-new 2>/dev/null || echo 0)" != "0" ] || [ ! -f hockey-teams.json ] || [ ! -f hockey-goalies.json ] || [ ! -f hockey-special.json ] || [ ! -f hockey-teamlog.json ]; then node hockey-season-build.mjs; else echo "no new games"; fi
       - name: Run hockey refresh
         run: node refresh-hockey.mjs
       - name: Commit + push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add hockey.json hockey-picks.json hockey-edge-cache.json hockey-season-cache.json hockey-teams.json hockey-shots.json hockey-backtest.json hockey-matchups.json hockey-h2h.json hockey-goalies.json hockey-special.json
+          git add hockey.json hockey-picks.json hockey-edge-cache.json hockey-season-cache.json hockey-teams.json hockey-shots.json hockey-backtest.json hockey-matchups.json hockey-h2h.json hockey-goalies.json hockey-special.json hockey-teamlog.json
           if git diff --cached --quiet; then echo "no changes"; exit 0; fi
           git commit -m "hockey refresh $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
           for i in 1 2 3 4 5; do

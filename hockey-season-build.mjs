@@ -662,6 +662,77 @@ for (const [pid, r] of Object.entries(stPlayers)) {
 fs.writeFileSync("hockey-special.json", JSON.stringify({ builtAt: new Date().toISOString(), window: "last 40 team games", teams: stTeams, units: stUnits, players: stP }));
 console.log("hockey-special.json", (fs.statSync("hockey-special.json").size / 1024).toFixed(0), "KB");
 
+
+// ---------------------------------------------------------------- team game log (matchup page): per game, per side
+// games[gid] = { d, s, a, h, sc, ot, sd: [awayRec, homeRec] }
+// rec = { gf, sf, ppg, ppa (opp PP chances = our penalties), en (empty-net goals for), slot, role, es, per, top, gl }
+//   slot/role: offense produced by our slot/role [pts, goals, sog]; es: 5v5 on-ice by our slot [sec, gf, ga, sf, sa]; per: goals by period [p1,p2,p3,ot]
+//   top: top scorers [pid, g, a, sog]; gl: [goalieId, sa, ga]
+const tlGames = {};
+const tlTeams = {};
+const tlPairs = {};
+for (const g of games) {
+  const sideRec = [null, null];
+  const role = g.role ?? gameRoles(g);
+  const off = [ { slot: Object.fromEntries(SLOTS.map((s) => [s, [0, 0, 0]])), role: Object.fromEntries(ROLES.map((r) => [r, [0, 0, 0]])), per: [0, 0, 0, 0], en: 0, ppg: 0, sf: 0, gf: 0 },
+                { slot: Object.fromEntries(SLOTS.map((s) => [s, [0, 0, 0]])), role: Object.fromEntries(ROLES.map((r) => [r, [0, 0, 0]])), per: [0, 0, 0, 0], en: 0, ppg: 0, sf: 0, gf: 0 } ];
+  for (const e of g.ev) {
+    const [own, shooter, , , goal, str, a1, a2, t] = e;
+    const S = off[own];
+    const bucket = (pid) => { const x = g.p[pid]; if (!x) return null; if (str === "p") return x[9] ? `PP${x[9]}` : null; if (str === "e" || str === "n") return x[8] || null; return null; };
+    const credit = (pid, gi) => {
+      const x = g.p[pid]; if (!x) return;
+      const rg = posGroup(role[pid] ?? x[1]);
+      if (S.role[rg]) { S.role[rg][0]++; if (gi) S.role[rg][1]++; }
+      const b = bucket(pid); if (b && S.slot[b]) { S.slot[b][0]++; if (gi) S.slot[b][1]++; }
+    };
+    if (shooter && g.p[shooter]) {
+      const rg = posGroup(role[shooter] ?? g.p[shooter][1]);
+      if (S.role[rg]) S.role[rg][2]++;
+      const b = bucket(shooter); if (b && S.slot[b]) S.slot[b][2]++;
+      S.sf++;
+    }
+    if (goal) {
+      S.gf++; if (str === "p") S.ppg++; if (str === "n") S.en++;
+      S.per[Math.min(3, Math.floor(t / 1200))]++;
+      if (shooter) credit(shooter, true);
+      for (const a of [a1, a2]) if (a) credit(a, false);
+    }
+  }
+  // 5v5 on-ice by our slot (F lines by L-slot, D pairs by D-slot) from unit stats
+  const es = [Object.fromEntries(SLOTS.slice(0, 7).map((s) => [s, [0, 0, 0, 0, 0]])), Object.fromEntries(SLOTS.slice(0, 7).map((s) => [s, [0, 0, 0, 0, 0]]))];
+  for (const [sd, key, sec, gf, ga, sf, sa] of g.u) {
+    const ids = key.slice(1).split("-").map(Number);
+    const cnt = {}; for (const id of ids) { const s = g.p[id]?.[8]; if (s) cnt[s] = (cnt[s] ?? 0) + 1; }
+    const best = Object.entries(cnt).sort((a, b) => b[1] - a[1])[0];
+    if (!best || best[1] < Math.ceil(ids.length / 2) || !es[sd][best[0]]) continue;
+    const r = es[sd][best[0]]; r[0] += sec; r[1] += gf; r[2] += ga; r[3] += sf; r[4] += sa;
+  }
+  const ot = g.ev.some((e) => e[8] > 3600) || (g.sc && Math.abs(g.sc[0] - g.sc[1]) === 1 && g.ev.some((e) => e[8] > 3550 && e[4] && e[5] !== "n") && false);
+  const maxT = Math.max(0, ...g.ev.map((e) => e[8] ?? 0));
+  for (const sd of [0, 1]) {
+    const S = off[sd];
+    const top = Object.entries(g.p).filter(([, x]) => x[0] === sd && x[1] !== "G" && (x[2] + x[3] > 0 || x[4] >= 4))
+      .map(([pid, x]) => [+pid, x[2], x[3], x[4]]).sort((a, b) => (b[1] + b[2]) - (a[1] + a[2]) || b[3] - a[3]).slice(0, 5);
+    const gl = Object.entries(g.gl ?? {}).filter(([, v]) => v[0] === sd).sort((a, b) => b[1][1] - a[1][1]).map(([id, v]) => [+id, v[1], v[2]]);
+    sideRec[sd] = {
+      gf: S.gf, sf: S.sf, ppg: S.ppg, en: S.en, pen: g.pen?.[sd] ?? 0,
+      slot: SLOTS.map((k) => S.slot[k]), role: ROLES.map((k) => S.role[k]), per: S.per, es: SLOTS.slice(0, 7).map((k) => es[sd][k]), top, gl,
+    };
+  }
+  tlGames[g.id] = { d: g.d, s: g.s, a: g.a, h: g.h, sc: g.sc, ot: maxT > 3600 ? 1 : 0, sd: sideRec };
+  for (const [t, o] of [[g.a, g.h], [g.h, g.a]]) (tlTeams[t] ??= []).push(g.id);
+  const [lo, hi] = g.a < g.h ? [g.a, g.h] : [g.h, g.a];
+  (tlPairs[`${lo}|${hi}`] ??= []).push(g.id);
+}
+const newestFirst = (ids) => [...ids].sort((a, b) => (tlGames[b].d < tlGames[a].d ? -1 : tlGames[b].d > tlGames[a].d ? 1 : b - a));
+const tlTeamsOut = Object.fromEntries(Object.entries(tlTeams).map(([t, ids]) => [t, newestFirst(ids).slice(0, 30)]));
+const tlPairsOut = Object.fromEntries(Object.entries(tlPairs).map(([k, ids]) => [k, newestFirst(ids).slice(0, 7)]));
+const keep = new Set([...Object.values(tlTeamsOut).flat(), ...Object.values(tlPairsOut).flat()]);
+const tlGamesOut = Object.fromEntries(Object.entries(tlGames).filter(([id]) => keep.has(+id)));
+fs.writeFileSync("hockey-teamlog.json", JSON.stringify({ builtAt: new Date().toISOString(), seasons: { prev: PREV, cur: CUR }, slots: SLOTS, roles: ROLES, teams: tlTeamsOut, pairs: tlPairsOut, games: tlGamesOut }));
+console.log("hockey-teamlog.json", (fs.statSync("hockey-teamlog.json").size / 1024).toFixed(0), "KB", Object.keys(tlGamesOut).length, "games");
+
 // ---------------------------------------------------------------- live context (state after all games)
 const blendsNow = Object.fromEntries(TEAMS.map((t) => [t, teamBlend(t, true)]));
 const lgNow = leagueOf(blendsNow);
