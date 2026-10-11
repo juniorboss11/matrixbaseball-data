@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-11T02:17:13.508Z",
+  "refreshedAt": "2026-10-11T09:02:25.918Z",
   "today": "2026-10-11",
   "dates": [
     "2026-10-10",
@@ -11,7 +11,7 @@
       {
         "id": "g849831",
         "gamePk": 849831,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "CWS",
         "homeTeam": "CLE",
         "awayTeamId": 145,
@@ -427,11 +427,11 @@
         "id": "g849820",
         "gamePk": 849820,
         "status": "Scheduled",
-        "awayTeam": "???",
+        "awayTeam": "CLE",
         "homeTeam": "TB",
-        "awayTeamId": 5521,
+        "awayTeamId": 114,
         "homeTeamId": 139,
-        "awayTeamName": "CLE/CWS",
+        "awayTeamName": "Cleveland Guardians",
         "homeTeamName": "Tampa Bay Rays",
         "park": "Tropicana Field",
         "parkHrFactor": 95,
@@ -440,7 +440,62 @@
         "awayPitcher": null,
         "homePitcher": null,
         "lineupsConfirmed": false,
-        "awayLineup": [],
+        "awayLineup": [
+          {
+            "id": 680757,
+            "name": "Steven Kwan",
+            "order": 1,
+            "position": "LF"
+          },
+          {
+            "id": 608070,
+            "name": "José Ramírez",
+            "order": 2,
+            "position": "3B"
+          },
+          {
+            "id": 800050,
+            "name": "Chase DeLauter",
+            "order": 3,
+            "position": "RF"
+          },
+          {
+            "id": 666176,
+            "name": "Jo Adell",
+            "order": 4,
+            "position": "DH"
+          },
+          {
+            "id": 663993,
+            "name": "Nathaniel Lowe",
+            "order": 5,
+            "position": "1B"
+          },
+          {
+            "id": 683953,
+            "name": "Travis Bazzana",
+            "order": 6,
+            "position": "2B"
+          },
+          {
+            "id": 672275,
+            "name": "Patrick Bailey",
+            "order": 7,
+            "position": "C"
+          },
+          {
+            "id": 690984,
+            "name": "Petey Halpin",
+            "order": 8,
+            "position": "CF"
+          },
+          {
+            "id": 677587,
+            "name": "Brayan Rocchio",
+            "order": 9,
+            "position": "SS"
+          }
+        ],
         "homeLineup": [
           {
             "id": 650490,
@@ -462,7 +517,7 @@
           },
           {
             "id": 683748,
-            "name": "Victor Mesa",
+            "name": "Victor Mesa Jr.",
             "order": 4,
             "position": "LF"
           },
@@ -497,7 +552,7 @@
             "position": "SS"
           }
         ],
-        "awayLineupSource": "unavailable",
+        "awayLineupSource": "projected (last 2026-10-11)",
         "homeLineupSource": "projected (last 2026-10-08)"
       }
     ]
