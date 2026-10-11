@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-11T19:42:22.523Z",
+  "refreshedAt": "2026-10-11T23:10:56.836Z",
   "today": "2026-10-11",
   "dates": [
     "2026-10-10",
@@ -151,7 +151,7 @@
       {
         "id": "g849809",
         "gamePk": 849809,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "LAD",
         "homeTeam": "MIL",
         "awayTeamId": 119,
@@ -170,7 +170,7 @@
           "id": 694819,
           "name": "Jacob Misiorowski"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 605141,
@@ -209,10 +209,10 @@
             "position": "3B"
           },
           {
-            "id": 571771,
-            "name": "Enrique Hernández",
+            "id": 681624,
+            "name": "Andy Pages",
             "order": 7,
-            "position": "2B"
+            "position": "CF"
           },
           {
             "id": 663656,
@@ -221,10 +221,10 @@
             "position": "RF"
           },
           {
-            "id": 681624,
-            "name": "Andy Pages",
+            "id": 571771,
+            "name": "Enrique Hernández",
             "order": 9,
-            "position": "CF"
+            "position": "2B"
           }
         ],
         "homeLineup": [
@@ -235,10 +235,10 @@
             "position": "LF"
           },
           {
-            "id": 592885,
-            "name": "Christian Yelich",
+            "id": 668930,
+            "name": "Brice Turang",
             "order": 2,
-            "position": "DH"
+            "position": "2B"
           },
           {
             "id": 661388,
@@ -247,34 +247,34 @@
             "position": "C"
           },
           {
-            "id": 668930,
-            "name": "Brice Turang",
-            "order": 4,
-            "position": "2B"
-          },
-          {
             "id": 641343,
             "name": "Jake Bauers",
-            "order": 5,
+            "order": 4,
             "position": "1B"
           },
           {
-            "id": 806198,
-            "name": "Cooper Pratt",
-            "order": 6,
-            "position": "SS"
-          },
-          {
-            "id": 686217,
-            "name": "Sal Frelick",
-            "order": 7,
-            "position": "RF"
+            "id": 683734,
+            "name": "Andrew Vaughn",
+            "order": 5,
+            "position": "DH"
           },
           {
             "id": 669003,
             "name": "Garrett Mitchell",
-            "order": 8,
+            "order": 6,
             "position": "CF"
+          },
+          {
+            "id": 806198,
+            "name": "Cooper Pratt",
+            "order": 7,
+            "position": "SS"
+          },
+          {
+            "id": 800325,
+            "name": "Luis Lara",
+            "order": 8,
+            "position": "RF"
           },
           {
             "id": 687401,
@@ -283,8 +283,8 @@
             "position": "3B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-10-07)",
-        "homeLineupSource": "projected (last 2026-10-08)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       }
     ],
     "2026-10-12": [
@@ -349,10 +349,10 @@
             "position": "3B"
           },
           {
-            "id": 571771,
-            "name": "Enrique Hernández",
+            "id": 681624,
+            "name": "Andy Pages",
             "order": 7,
-            "position": "2B"
+            "position": "CF"
           },
           {
             "id": 663656,
@@ -361,10 +361,10 @@
             "position": "RF"
           },
           {
-            "id": 681624,
-            "name": "Andy Pages",
+            "id": 571771,
+            "name": "Enrique Hernández",
             "order": 9,
-            "position": "CF"
+            "position": "2B"
           }
         ],
         "homeLineup": [
@@ -375,10 +375,10 @@
             "position": "LF"
           },
           {
-            "id": 592885,
-            "name": "Christian Yelich",
+            "id": 668930,
+            "name": "Brice Turang",
             "order": 2,
-            "position": "DH"
+            "position": "2B"
           },
           {
             "id": 661388,
@@ -387,34 +387,34 @@
             "position": "C"
           },
           {
-            "id": 668930,
-            "name": "Brice Turang",
-            "order": 4,
-            "position": "2B"
-          },
-          {
             "id": 641343,
             "name": "Jake Bauers",
-            "order": 5,
+            "order": 4,
             "position": "1B"
           },
           {
-            "id": 806198,
-            "name": "Cooper Pratt",
-            "order": 6,
-            "position": "SS"
-          },
-          {
-            "id": 686217,
-            "name": "Sal Frelick",
-            "order": 7,
-            "position": "RF"
+            "id": 683734,
+            "name": "Andrew Vaughn",
+            "order": 5,
+            "position": "DH"
           },
           {
             "id": 669003,
             "name": "Garrett Mitchell",
-            "order": 8,
+            "order": 6,
             "position": "CF"
+          },
+          {
+            "id": 806198,
+            "name": "Cooper Pratt",
+            "order": 7,
+            "position": "SS"
+          },
+          {
+            "id": 800325,
+            "name": "Luis Lara",
+            "order": 8,
+            "position": "RF"
           },
           {
             "id": 687401,
@@ -423,8 +423,8 @@
             "position": "3B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-10-07)",
-        "homeLineupSource": "projected (last 2026-10-08)"
+        "awayLineupSource": "projected (last 2026-10-12)",
+        "homeLineupSource": "projected (last 2026-10-12)"
       },
       {
         "id": "g849820",
@@ -440,7 +440,10 @@
         "parkHrFactor": 95,
         "startUtc": "2026-10-13T00:00:00Z",
         "startET": "8:00 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 656492,
+          "name": "Foster Griffin"
+        },
         "homePitcher": {
           "id": 656876,
           "name": "Drew Rasmussen"
