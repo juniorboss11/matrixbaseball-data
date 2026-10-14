@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-14T00:18:19.066Z",
+  "refreshedAt": "2026-10-14T05:02:50.252Z",
   "today": "2026-10-14",
   "dates": [
     "2026-10-13",
@@ -11,7 +11,7 @@
       {
         "id": "g849813",
         "gamePk": 849813,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "CLE",
         "homeTeam": "TB",
         "awayTeamId": 114,
@@ -302,7 +302,10 @@
         "parkHrFactor": 97,
         "startUtc": "2026-10-15T22:00:00Z",
         "startET": "6:00 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 643377,
+          "name": "Griffin Jax"
+        },
         "homePitcher": null,
         "lineupsConfirmed": false,
         "awayLineup": [
