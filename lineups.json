@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-14T19:19:51.388Z",
+  "refreshedAt": "2026-10-14T22:23:10.442Z",
   "today": "2026-10-14",
   "dates": [
     "2026-10-13",
@@ -151,7 +151,7 @@
       {
         "id": "g849811",
         "gamePk": 849811,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "MIL",
         "homeTeam": "LAD",
         "awayTeamId": 158,
@@ -170,7 +170,7 @@
           "id": 605483,
           "name": "Blake Snell"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 694192,
@@ -191,16 +191,16 @@
             "position": "C"
           },
           {
-            "id": 641343,
-            "name": "Jake Bauers",
+            "id": 683734,
+            "name": "Andrew Vaughn",
             "order": 4,
-            "position": "1B"
+            "position": "DH"
           },
           {
-            "id": 592885,
-            "name": "Christian Yelich",
+            "id": 641343,
+            "name": "Jake Bauers",
             "order": 5,
-            "position": "DH"
+            "position": "1B"
           },
           {
             "id": 669003,
@@ -215,14 +215,14 @@
             "position": "SS"
           },
           {
-            "id": 686217,
-            "name": "Sal Frelick",
+            "id": 800325,
+            "name": "Luis Lara",
             "order": 8,
             "position": "RF"
           },
           {
-            "id": 666152,
-            "name": "David Hamilton",
+            "id": 687401,
+            "name": "Joey Ortiz",
             "order": 9,
             "position": "3B"
           }
@@ -247,34 +247,34 @@
             "position": "LF"
           },
           {
+            "id": 663656,
+            "name": "Kyle Tucker",
+            "order": 4,
+            "position": "RF"
+          },
+          {
+            "id": 681624,
+            "name": "Andy Pages",
+            "order": 5,
+            "position": "CF"
+          },
+          {
             "id": 660271,
             "name": "Shohei Ohtani",
-            "order": 4,
+            "order": 6,
             "position": "DH"
           },
           {
             "id": 669257,
             "name": "Will Smith",
-            "order": 5,
+            "order": 7,
             "position": "C"
           },
           {
-            "id": 571970,
-            "name": "Max Muncy",
-            "order": 6,
-            "position": "3B"
-          },
-          {
-            "id": 681624,
-            "name": "Andy Pages",
-            "order": 7,
-            "position": "CF"
-          },
-          {
-            "id": 663656,
-            "name": "Kyle Tucker",
+            "id": 500743,
+            "name": "Miguel Rojas",
             "order": 8,
-            "position": "RF"
+            "position": "3B"
           },
           {
             "id": 669242,
@@ -283,8 +283,8 @@
             "position": "2B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-10-12)",
-        "homeLineupSource": "projected (last 2026-10-12)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       }
     ],
     "2026-10-15": [
@@ -306,7 +306,10 @@
           "id": 643377,
           "name": "Griffin Jax"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 668909,
+          "name": "Gavin Williams"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -463,16 +466,16 @@
             "position": "C"
           },
           {
-            "id": 641343,
-            "name": "Jake Bauers",
+            "id": 683734,
+            "name": "Andrew Vaughn",
             "order": 4,
-            "position": "1B"
+            "position": "DH"
           },
           {
-            "id": 592885,
-            "name": "Christian Yelich",
+            "id": 641343,
+            "name": "Jake Bauers",
             "order": 5,
-            "position": "DH"
+            "position": "1B"
           },
           {
             "id": 669003,
@@ -487,14 +490,14 @@
             "position": "SS"
           },
           {
-            "id": 686217,
-            "name": "Sal Frelick",
+            "id": 800325,
+            "name": "Luis Lara",
             "order": 8,
             "position": "RF"
           },
           {
-            "id": 666152,
-            "name": "David Hamilton",
+            "id": 687401,
+            "name": "Joey Ortiz",
             "order": 9,
             "position": "3B"
           }
@@ -519,34 +522,34 @@
             "position": "LF"
           },
           {
+            "id": 663656,
+            "name": "Kyle Tucker",
+            "order": 4,
+            "position": "RF"
+          },
+          {
+            "id": 681624,
+            "name": "Andy Pages",
+            "order": 5,
+            "position": "CF"
+          },
+          {
             "id": 660271,
             "name": "Shohei Ohtani",
-            "order": 4,
+            "order": 6,
             "position": "DH"
           },
           {
             "id": 669257,
             "name": "Will Smith",
-            "order": 5,
+            "order": 7,
             "position": "C"
           },
           {
-            "id": 571970,
-            "name": "Max Muncy",
-            "order": 6,
-            "position": "3B"
-          },
-          {
-            "id": 681624,
-            "name": "Andy Pages",
-            "order": 7,
-            "position": "CF"
-          },
-          {
-            "id": 663656,
-            "name": "Kyle Tucker",
+            "id": 500743,
+            "name": "Miguel Rojas",
             "order": 8,
-            "position": "RF"
+            "position": "3B"
           },
           {
             "id": 669242,
@@ -555,8 +558,8 @@
             "position": "2B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-10-12)",
-        "homeLineupSource": "projected (last 2026-10-12)"
+        "awayLineupSource": "projected (last 2026-10-15)",
+        "homeLineupSource": "projected (last 2026-10-15)"
       }
     ]
   }
