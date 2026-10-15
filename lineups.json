@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-15T18:33:45.505Z",
+  "refreshedAt": "2026-10-15T21:45:07.653Z",
   "today": "2026-10-15",
   "dates": [
     "2026-10-14",
@@ -151,7 +151,7 @@
       {
         "id": "g849818",
         "gamePk": 849818,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "TB",
         "homeTeam": "CLE",
         "awayTeamId": 139,
@@ -192,7 +192,7 @@
           },
           {
             "id": 683748,
-            "name": "Victor Mesa Jr.",
+            "name": "Victor Mesa",
             "order": 4,
             "position": "RF"
           },
@@ -289,7 +289,7 @@
       {
         "id": "g849810",
         "gamePk": 849810,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "MIL",
         "homeTeam": "LAD",
         "awayTeamId": 158,
@@ -308,7 +308,7 @@
           "id": 607192,
           "name": "Tyler Glasnow"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 694192,
@@ -329,16 +329,16 @@
             "position": "C"
           },
           {
-            "id": 683734,
-            "name": "Andrew Vaughn",
-            "order": 4,
-            "position": "DH"
-          },
-          {
             "id": 641343,
             "name": "Jake Bauers",
-            "order": 5,
+            "order": 4,
             "position": "1B"
+          },
+          {
+            "id": 592885,
+            "name": "Christian Yelich",
+            "order": 5,
+            "position": "DH"
           },
           {
             "id": 669003,
@@ -353,76 +353,76 @@
             "position": "SS"
           },
           {
-            "id": 800325,
-            "name": "Luis Lara",
+            "id": 686217,
+            "name": "Sal Frelick",
             "order": 8,
             "position": "RF"
           },
           {
-            "id": 687401,
-            "name": "Joey Ortiz",
+            "id": 666152,
+            "name": "David Hamilton",
             "order": 9,
             "position": "3B"
           }
         ],
         "homeLineup": [
           {
+            "id": 660271,
+            "name": "Shohei Ohtani",
+            "order": 1,
+            "position": "DH"
+          },
+          {
             "id": 605141,
             "name": "Mookie Betts",
-            "order": 1,
+            "order": 2,
             "position": "SS"
           },
           {
             "id": 518692,
             "name": "Freddie Freeman",
-            "order": 2,
-            "position": "1B"
-          },
-          {
-            "id": 606192,
-            "name": "Teoscar Hernández",
             "order": 3,
-            "position": "LF"
-          },
-          {
-            "id": 663656,
-            "name": "Kyle Tucker",
-            "order": 4,
-            "position": "RF"
-          },
-          {
-            "id": 681624,
-            "name": "Andy Pages",
-            "order": 5,
-            "position": "CF"
-          },
-          {
-            "id": 660271,
-            "name": "Shohei Ohtani",
-            "order": 6,
-            "position": "DH"
+            "position": "1B"
           },
           {
             "id": 669257,
             "name": "Will Smith",
-            "order": 7,
+            "order": 4,
             "position": "C"
+          },
+          {
+            "id": 663656,
+            "name": "Kyle Tucker",
+            "order": 5,
+            "position": "RF"
+          },
+          {
+            "id": 606192,
+            "name": "Teoscar Hernández",
+            "order": 6,
+            "position": "LF"
           },
           {
             "id": 500743,
             "name": "Miguel Rojas",
-            "order": 8,
-            "position": "3B"
+            "order": 7,
+            "position": "2B"
           },
           {
-            "id": 669242,
-            "name": "Tommy Edman",
+            "id": 681624,
+            "name": "Andy Pages",
+            "order": 8,
+            "position": "CF"
+          },
+          {
+            "id": 571771,
+            "name": "Enrique Hernández",
             "order": 9,
-            "position": "2B"
+            "position": "3B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-10-15)",
-        "homeLineupSource": "projected (last 2026-10-15)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       }
     ],
     "2026-10-16": [
@@ -440,7 +440,10 @@
         "parkHrFactor": 97,
         "startUtc": "2026-10-16T22:00:00Z",
         "startET": "6:00 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 607259,
+          "name": "Nick Martinez"
+        },
         "homePitcher": null,
         "lineupsConfirmed": false,
         "awayLineup": [
@@ -464,7 +467,7 @@
           },
           {
             "id": 683748,
-            "name": "Victor Mesa Jr.",
+            "name": "Victor Mesa",
             "order": 4,
             "position": "RF"
           },
@@ -595,16 +598,16 @@
             "position": "C"
           },
           {
-            "id": 683734,
-            "name": "Andrew Vaughn",
-            "order": 4,
-            "position": "DH"
-          },
-          {
             "id": 641343,
             "name": "Jake Bauers",
-            "order": 5,
+            "order": 4,
             "position": "1B"
+          },
+          {
+            "id": 592885,
+            "name": "Christian Yelich",
+            "order": 5,
+            "position": "DH"
           },
           {
             "id": 669003,
@@ -619,76 +622,76 @@
             "position": "SS"
           },
           {
-            "id": 800325,
-            "name": "Luis Lara",
+            "id": 686217,
+            "name": "Sal Frelick",
             "order": 8,
             "position": "RF"
           },
           {
-            "id": 687401,
-            "name": "Joey Ortiz",
+            "id": 666152,
+            "name": "David Hamilton",
             "order": 9,
             "position": "3B"
           }
         ],
         "homeLineup": [
           {
+            "id": 660271,
+            "name": "Shohei Ohtani",
+            "order": 1,
+            "position": "DH"
+          },
+          {
             "id": 605141,
             "name": "Mookie Betts",
-            "order": 1,
+            "order": 2,
             "position": "SS"
           },
           {
             "id": 518692,
             "name": "Freddie Freeman",
-            "order": 2,
-            "position": "1B"
-          },
-          {
-            "id": 606192,
-            "name": "Teoscar Hernández",
             "order": 3,
-            "position": "LF"
-          },
-          {
-            "id": 663656,
-            "name": "Kyle Tucker",
-            "order": 4,
-            "position": "RF"
-          },
-          {
-            "id": 681624,
-            "name": "Andy Pages",
-            "order": 5,
-            "position": "CF"
-          },
-          {
-            "id": 660271,
-            "name": "Shohei Ohtani",
-            "order": 6,
-            "position": "DH"
+            "position": "1B"
           },
           {
             "id": 669257,
             "name": "Will Smith",
-            "order": 7,
+            "order": 4,
             "position": "C"
+          },
+          {
+            "id": 663656,
+            "name": "Kyle Tucker",
+            "order": 5,
+            "position": "RF"
+          },
+          {
+            "id": 606192,
+            "name": "Teoscar Hernández",
+            "order": 6,
+            "position": "LF"
           },
           {
             "id": 500743,
             "name": "Miguel Rojas",
-            "order": 8,
-            "position": "3B"
+            "order": 7,
+            "position": "2B"
           },
           {
-            "id": 669242,
-            "name": "Tommy Edman",
+            "id": 681624,
+            "name": "Andy Pages",
+            "order": 8,
+            "position": "CF"
+          },
+          {
+            "id": 571771,
+            "name": "Enrique Hernández",
             "order": 9,
-            "position": "2B"
+            "position": "3B"
           }
         ],
-        "awayLineupSource": "projected (last 2026-10-15)",
-        "homeLineupSource": "projected (last 2026-10-15)"
+        "awayLineupSource": "projected (last 2026-10-16)",
+        "homeLineupSource": "projected (last 2026-10-16)"
       }
     ]
   }
