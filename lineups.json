@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-15T14:30:41.638Z",
+  "refreshedAt": "2026-10-15T18:33:45.505Z",
   "today": "2026-10-15",
   "dates": [
     "2026-10-14",
@@ -151,7 +151,7 @@
       {
         "id": "g849818",
         "gamePk": 849818,
-        "status": "Pre-Game",
+        "status": "In Progress",
         "awayTeam": "TB",
         "homeTeam": "CLE",
         "awayTeamId": 139,
@@ -300,7 +300,10 @@
         "parkHrFactor": 100,
         "startUtc": "2026-10-16T00:00:00Z",
         "startET": "8:00 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 675660,
+          "name": "Shane Drohan"
+        },
         "homePitcher": {
           "id": 607192,
           "name": "Tyler Glasnow"
