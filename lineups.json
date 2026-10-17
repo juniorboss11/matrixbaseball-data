@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-17T18:34:16.463Z",
+  "refreshedAt": "2026-10-17T20:56:54.498Z",
   "today": "2026-10-17",
   "dates": [
     "2026-10-16",
@@ -151,7 +151,7 @@
       {
         "id": "g849816",
         "gamePk": 849816,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "TB",
         "homeTeam": "CLE",
         "awayTeamId": 139,
@@ -170,7 +170,7 @@
           "id": 542888,
           "name": "Shawn Armstrong"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 650490,
@@ -185,28 +185,28 @@
             "position": "1B"
           },
           {
-            "id": 691406,
-            "name": "Junior Caminero",
-            "order": 3,
-            "position": "3B"
-          },
-          {
-            "id": 683748,
-            "name": "Victor Mesa",
-            "order": 4,
-            "position": "RF"
-          },
-          {
             "id": 802415,
             "name": "Chandler Simpson",
-            "order": 5,
+            "order": 3,
             "position": "LF"
+          },
+          {
+            "id": 691406,
+            "name": "Junior Caminero",
+            "order": 4,
+            "position": "3B"
           },
           {
             "id": 689414,
             "name": "Liam Hicks",
-            "order": 6,
+            "order": 5,
             "position": "C"
+          },
+          {
+            "id": 683748,
+            "name": "Victor Mesa Jr.",
+            "order": 6,
+            "position": "RF"
           },
           {
             "id": 676356,
@@ -283,8 +283,8 @@
             "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-10-15)",
-        "homeLineupSource": "projected (last 2026-10-15)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       }
     ],
     "2026-10-18": [
@@ -319,28 +319,28 @@
             "position": "1B"
           },
           {
-            "id": 691406,
-            "name": "Junior Caminero",
-            "order": 3,
-            "position": "3B"
-          },
-          {
-            "id": 683748,
-            "name": "Victor Mesa",
-            "order": 4,
-            "position": "RF"
-          },
-          {
             "id": 802415,
             "name": "Chandler Simpson",
-            "order": 5,
+            "order": 3,
             "position": "LF"
+          },
+          {
+            "id": 691406,
+            "name": "Junior Caminero",
+            "order": 4,
+            "position": "3B"
           },
           {
             "id": 689414,
             "name": "Liam Hicks",
-            "order": 6,
+            "order": 5,
             "position": "C"
+          },
+          {
+            "id": 683748,
+            "name": "Victor Mesa Jr.",
+            "order": 6,
+            "position": "RF"
           },
           {
             "id": 676356,
@@ -417,8 +417,8 @@
             "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-10-15)",
-        "homeLineupSource": "projected (last 2026-10-15)"
+        "awayLineupSource": "projected (last 2026-10-18)",
+        "homeLineupSource": "projected (last 2026-10-18)"
       }
     ]
   }
