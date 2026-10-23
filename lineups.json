@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-23T18:37:10.172Z",
+  "refreshedAt": "2026-10-23T21:39:19.842Z",
   "today": "2026-10-23",
   "dates": [
     "2026-10-22",
@@ -12,7 +12,7 @@
       {
         "id": "g849805",
         "gamePk": 849805,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "TB",
         "homeTeam": "MIL",
         "awayTeamId": 139,
@@ -31,7 +31,7 @@
           "id": 694819,
           "name": "Jacob Misiorowski"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 650490,
@@ -46,10 +46,10 @@
             "position": "1B"
           },
           {
-            "id": 689414,
-            "name": "Liam Hicks",
+            "id": 802415,
+            "name": "Chandler Simpson",
             "order": 3,
-            "position": "C"
+            "position": "LF"
           },
           {
             "id": 691406,
@@ -58,26 +58,26 @@
             "position": "3B"
           },
           {
-            "id": 802415,
-            "name": "Chandler Simpson",
+            "id": 689414,
+            "name": "Liam Hicks",
             "order": 5,
-            "position": "LF"
-          },
-          {
-            "id": 683748,
-            "name": "Victor Mesa Jr.",
-            "order": 6,
-            "position": "RF"
+            "position": "C"
           },
           {
             "id": 676356,
             "name": "Jonny DeLuca",
-            "order": 7,
+            "order": 6,
             "position": "CF"
           },
           {
-            "id": 680700,
-            "name": "Richie Palacios",
+            "id": 683748,
+            "name": "Victor Mesa",
+            "order": 7,
+            "position": "RF"
+          },
+          {
+            "id": 810938,
+            "name": "Ben Williamson",
             "order": 8,
             "position": "2B"
           },
@@ -88,9 +88,64 @@
             "position": "SS"
           }
         ],
-        "homeLineup": [],
-        "awayLineupSource": "projected (last 2026-10-20)",
-        "homeLineupSource": "unavailable"
+        "homeLineup": [
+          {
+            "id": 694192,
+            "name": "Jackson Chourio",
+            "order": 1,
+            "position": "LF"
+          },
+          {
+            "id": 641343,
+            "name": "Jake Bauers",
+            "order": 2,
+            "position": "1B"
+          },
+          {
+            "id": 592885,
+            "name": "Christian Yelich",
+            "order": 3,
+            "position": "DH"
+          },
+          {
+            "id": 661388,
+            "name": "William Contreras",
+            "order": 4,
+            "position": "C"
+          },
+          {
+            "id": 668930,
+            "name": "Brice Turang",
+            "order": 5,
+            "position": "2B"
+          },
+          {
+            "id": 669003,
+            "name": "Garrett Mitchell",
+            "order": 6,
+            "position": "CF"
+          },
+          {
+            "id": 806198,
+            "name": "Cooper Pratt",
+            "order": 7,
+            "position": "SS"
+          },
+          {
+            "id": 686217,
+            "name": "Sal Frelick",
+            "order": 8,
+            "position": "RF"
+          },
+          {
+            "id": 666152,
+            "name": "David Hamilton",
+            "order": 9,
+            "position": "3B"
+          }
+        ],
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       }
     ],
     "2026-10-24": [
@@ -131,10 +186,10 @@
             "position": "1B"
           },
           {
-            "id": 689414,
-            "name": "Liam Hicks",
+            "id": 802415,
+            "name": "Chandler Simpson",
             "order": 3,
-            "position": "C"
+            "position": "LF"
           },
           {
             "id": 691406,
@@ -143,26 +198,26 @@
             "position": "3B"
           },
           {
-            "id": 802415,
-            "name": "Chandler Simpson",
+            "id": 689414,
+            "name": "Liam Hicks",
             "order": 5,
-            "position": "LF"
-          },
-          {
-            "id": 683748,
-            "name": "Victor Mesa Jr.",
-            "order": 6,
-            "position": "RF"
+            "position": "C"
           },
           {
             "id": 676356,
             "name": "Jonny DeLuca",
-            "order": 7,
+            "order": 6,
             "position": "CF"
           },
           {
-            "id": 680700,
-            "name": "Richie Palacios",
+            "id": 683748,
+            "name": "Victor Mesa",
+            "order": 7,
+            "position": "RF"
+          },
+          {
+            "id": 810938,
+            "name": "Ben Williamson",
             "order": 8,
             "position": "2B"
           },
@@ -173,9 +228,64 @@
             "position": "SS"
           }
         ],
-        "homeLineup": [],
-        "awayLineupSource": "projected (last 2026-10-20)",
-        "homeLineupSource": "unavailable"
+        "homeLineup": [
+          {
+            "id": 694192,
+            "name": "Jackson Chourio",
+            "order": 1,
+            "position": "LF"
+          },
+          {
+            "id": 641343,
+            "name": "Jake Bauers",
+            "order": 2,
+            "position": "1B"
+          },
+          {
+            "id": 592885,
+            "name": "Christian Yelich",
+            "order": 3,
+            "position": "DH"
+          },
+          {
+            "id": 661388,
+            "name": "William Contreras",
+            "order": 4,
+            "position": "C"
+          },
+          {
+            "id": 668930,
+            "name": "Brice Turang",
+            "order": 5,
+            "position": "2B"
+          },
+          {
+            "id": 669003,
+            "name": "Garrett Mitchell",
+            "order": 6,
+            "position": "CF"
+          },
+          {
+            "id": 806198,
+            "name": "Cooper Pratt",
+            "order": 7,
+            "position": "SS"
+          },
+          {
+            "id": 686217,
+            "name": "Sal Frelick",
+            "order": 8,
+            "position": "RF"
+          },
+          {
+            "id": 666152,
+            "name": "David Hamilton",
+            "order": 9,
+            "position": "3B"
+          }
+        ],
+        "awayLineupSource": "projected (last 2026-10-24)",
+        "homeLineupSource": "projected (last 2026-10-24)"
       }
     ]
   }
