@@ -1,13 +1,12 @@
 {
-  "refreshedAt": "2026-10-22T21:19:43.508Z",
-  "today": "2026-10-22",
+  "refreshedAt": "2026-10-23T00:01:28.925Z",
+  "today": "2026-10-23",
   "dates": [
-    "2026-10-21",
     "2026-10-22",
-    "2026-10-23"
+    "2026-10-23",
+    "2026-10-24"
   ],
   "slates": {
-    "2026-10-21": [],
     "2026-10-22": [],
     "2026-10-23": [
       {
@@ -31,6 +30,91 @@
         "homePitcher": {
           "id": 694819,
           "name": "Jacob Misiorowski"
+        },
+        "lineupsConfirmed": false,
+        "awayLineup": [
+          {
+            "id": 650490,
+            "name": "Yandy Díaz",
+            "order": 1,
+            "position": "DH"
+          },
+          {
+            "id": 666018,
+            "name": "Jonathan Aranda",
+            "order": 2,
+            "position": "1B"
+          },
+          {
+            "id": 689414,
+            "name": "Liam Hicks",
+            "order": 3,
+            "position": "C"
+          },
+          {
+            "id": 691406,
+            "name": "Junior Caminero",
+            "order": 4,
+            "position": "3B"
+          },
+          {
+            "id": 802415,
+            "name": "Chandler Simpson",
+            "order": 5,
+            "position": "LF"
+          },
+          {
+            "id": 683748,
+            "name": "Victor Mesa",
+            "order": 6,
+            "position": "RF"
+          },
+          {
+            "id": 676356,
+            "name": "Jonny DeLuca",
+            "order": 7,
+            "position": "CF"
+          },
+          {
+            "id": 680700,
+            "name": "Richie Palacios",
+            "order": 8,
+            "position": "2B"
+          },
+          {
+            "id": 670764,
+            "name": "Taylor Walls",
+            "order": 9,
+            "position": "SS"
+          }
+        ],
+        "homeLineup": [],
+        "awayLineupSource": "projected (last 2026-10-20)",
+        "homeLineupSource": "unavailable"
+      }
+    ],
+    "2026-10-24": [
+      {
+        "id": "g849802",
+        "gamePk": 849802,
+        "status": "Scheduled",
+        "awayTeam": "TB",
+        "homeTeam": "MIL",
+        "awayTeamId": 139,
+        "homeTeamId": 158,
+        "awayTeamName": "Tampa Bay Rays",
+        "homeTeamName": "Milwaukee Brewers",
+        "park": "American Family Field",
+        "parkHrFactor": 104,
+        "startUtc": "2026-10-25T00:00:00Z",
+        "startET": "8:00 PM",
+        "awayPitcher": {
+          "id": 656876,
+          "name": "Drew Rasmussen"
+        },
+        "homePitcher": {
+          "id": 701656,
+          "name": "Logan Henderson"
         },
         "lineupsConfirmed": false,
         "awayLineup": [
