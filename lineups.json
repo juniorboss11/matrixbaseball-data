@@ -1,93 +1,38 @@
 {
-  "refreshedAt": "2026-10-25T23:31:54.189Z",
-  "today": "2026-10-25",
+  "refreshedAt": "2026-10-26T01:34:58.072Z",
+  "today": "2026-10-26",
   "dates": [
-    "2026-10-24",
     "2026-10-25",
-    "2026-10-26"
+    "2026-10-26",
+    "2026-10-27"
   ],
   "slates": {
-    "2026-10-24": [
+    "2026-10-25": [],
+    "2026-10-26": [
       {
-        "id": "g849802",
-        "gamePk": 849802,
-        "status": "Final",
-        "awayTeam": "TB",
-        "homeTeam": "MIL",
-        "awayTeamId": 139,
-        "homeTeamId": 158,
-        "awayTeamName": "Tampa Bay Rays",
-        "homeTeamName": "Milwaukee Brewers",
-        "park": "American Family Field",
-        "parkHrFactor": 104,
-        "startUtc": "2026-10-25T00:00:00Z",
+        "id": "g849804",
+        "gamePk": 849804,
+        "status": "Scheduled",
+        "awayTeam": "MIL",
+        "homeTeam": "TB",
+        "awayTeamId": 158,
+        "homeTeamId": 139,
+        "awayTeamName": "Milwaukee Brewers",
+        "homeTeamName": "Tampa Bay Rays",
+        "park": "Tropicana Field",
+        "parkHrFactor": 95,
+        "startUtc": "2026-10-27T00:00:00Z",
         "startET": "8:00 PM",
         "awayPitcher": {
-          "id": 656876,
-          "name": "Drew Rasmussen"
+          "id": 688107,
+          "name": "Robert Gasser"
         },
         "homePitcher": {
-          "id": 701656,
-          "name": "Logan Henderson"
+          "id": 642547,
+          "name": "Freddy Peralta"
         },
-        "lineupsConfirmed": true,
+        "lineupsConfirmed": false,
         "awayLineup": [
-          {
-            "id": 650490,
-            "name": "Yandy Díaz",
-            "order": 1,
-            "position": "DH"
-          },
-          {
-            "id": 666018,
-            "name": "Jonathan Aranda",
-            "order": 2,
-            "position": "1B"
-          },
-          {
-            "id": 802415,
-            "name": "Chandler Simpson",
-            "order": 3,
-            "position": "LF"
-          },
-          {
-            "id": 691406,
-            "name": "Junior Caminero",
-            "order": 4,
-            "position": "3B"
-          },
-          {
-            "id": 689414,
-            "name": "Liam Hicks",
-            "order": 5,
-            "position": "C"
-          },
-          {
-            "id": 680700,
-            "name": "Richie Palacios",
-            "order": 6,
-            "position": "2B"
-          },
-          {
-            "id": 676356,
-            "name": "Jonny DeLuca",
-            "order": 7,
-            "position": "CF"
-          },
-          {
-            "id": 683748,
-            "name": "Victor Mesa",
-            "order": 8,
-            "position": "RF"
-          },
-          {
-            "id": 670764,
-            "name": "Taylor Walls",
-            "order": 9,
-            "position": "SS"
-          }
-        ],
-        "homeLineup": [
           {
             "id": 694192,
             "name": "Jackson Chourio",
@@ -143,15 +88,70 @@
             "position": "3B"
           }
         ],
-        "awayLineupSource": "confirmed",
-        "homeLineupSource": "confirmed"
+        "homeLineup": [
+          {
+            "id": 650490,
+            "name": "Yandy Díaz",
+            "order": 1,
+            "position": "DH"
+          },
+          {
+            "id": 666018,
+            "name": "Jonathan Aranda",
+            "order": 2,
+            "position": "1B"
+          },
+          {
+            "id": 802415,
+            "name": "Chandler Simpson",
+            "order": 3,
+            "position": "LF"
+          },
+          {
+            "id": 691406,
+            "name": "Junior Caminero",
+            "order": 4,
+            "position": "3B"
+          },
+          {
+            "id": 689414,
+            "name": "Liam Hicks",
+            "order": 5,
+            "position": "C"
+          },
+          {
+            "id": 680700,
+            "name": "Richie Palacios",
+            "order": 6,
+            "position": "2B"
+          },
+          {
+            "id": 676356,
+            "name": "Jonny DeLuca",
+            "order": 7,
+            "position": "CF"
+          },
+          {
+            "id": 683748,
+            "name": "Victor Mesa",
+            "order": 8,
+            "position": "RF"
+          },
+          {
+            "id": 670764,
+            "name": "Taylor Walls",
+            "order": 9,
+            "position": "SS"
+          }
+        ],
+        "awayLineupSource": "projected (last 2026-10-25)",
+        "homeLineupSource": "projected (last 2026-10-25)"
       }
     ],
-    "2026-10-25": [],
-    "2026-10-26": [
+    "2026-10-27": [
       {
-        "id": "g849804",
-        "gamePk": 849804,
+        "id": "g849803",
+        "gamePk": 849803,
         "status": "Scheduled",
         "awayTeam": "MIL",
         "homeTeam": "TB",
@@ -161,16 +161,10 @@
         "homeTeamName": "Tampa Bay Rays",
         "park": "Tropicana Field",
         "parkHrFactor": 95,
-        "startUtc": "2026-10-27T00:00:00Z",
+        "startUtc": "2026-10-28T00:00:00Z",
         "startET": "8:00 PM",
-        "awayPitcher": {
-          "id": 688107,
-          "name": "Robert Gasser"
-        },
-        "homePitcher": {
-          "id": 642547,
-          "name": "Freddy Peralta"
-        },
+        "awayPitcher": null,
+        "homePitcher": null,
         "lineupsConfirmed": false,
         "awayLineup": [
           {
