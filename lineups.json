@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-27T19:29:20.654Z",
+  "refreshedAt": "2026-10-27T23:04:40.864Z",
   "today": "2026-10-27",
   "dates": [
     "2026-10-26",
@@ -151,7 +151,7 @@
       {
         "id": "g849803",
         "gamePk": 849803,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "MIL",
         "homeTeam": "TB",
         "awayTeamId": 158,
@@ -162,12 +162,15 @@
         "parkHrFactor": 95,
         "startUtc": "2026-10-28T00:00:00Z",
         "startET": "8:00 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 669160,
+          "name": "Dustin May"
+        },
         "homePitcher": {
           "id": 643377,
           "name": "Griffin Jax"
         },
-        "lineupsConfirmed": false,
+        "lineupsConfirmed": true,
         "awayLineup": [
           {
             "id": 694192,
@@ -200,10 +203,10 @@
             "position": "2B"
           },
           {
-            "id": 669003,
-            "name": "Garrett Mitchell",
+            "id": 686217,
+            "name": "Sal Frelick",
             "order": 6,
-            "position": "CF"
+            "position": "RF"
           },
           {
             "id": 806198,
@@ -212,10 +215,10 @@
             "position": "SS"
           },
           {
-            "id": 686217,
-            "name": "Sal Frelick",
+            "id": 669003,
+            "name": "Garrett Mitchell",
             "order": 8,
-            "position": "RF"
+            "position": "CF"
           },
           {
             "id": 666152,
@@ -232,46 +235,46 @@
             "position": "DH"
           },
           {
-            "id": 668723,
-            "name": "Ryan Vilade",
+            "id": 666018,
+            "name": "Jonathan Aranda",
             "order": 2,
             "position": "1B"
           },
           {
-            "id": 802415,
-            "name": "Chandler Simpson",
-            "order": 3,
-            "position": "LF"
-          },
-          {
             "id": 691406,
             "name": "Junior Caminero",
-            "order": 4,
+            "order": 3,
             "position": "3B"
           },
           {
-            "id": 810938,
-            "name": "Ben Williamson",
-            "order": 5,
-            "position": "2B"
+            "id": 689414,
+            "name": "Liam Hicks",
+            "order": 4,
+            "position": "C"
           },
           {
             "id": 676356,
             "name": "Jonny DeLuca",
-            "order": 6,
+            "order": 5,
             "position": "CF"
           },
           {
-            "id": 683748,
-            "name": "Victor Mesa Jr.",
+            "id": 802415,
+            "name": "Chandler Simpson",
+            "order": 6,
+            "position": "LF"
+          },
+          {
+            "id": 668723,
+            "name": "Ryan Vilade",
             "order": 7,
             "position": "RF"
           },
           {
-            "id": 663743,
-            "name": "Nick Fortes",
+            "id": 680700,
+            "name": "Richie Palacios",
             "order": 8,
-            "position": "C"
+            "position": "2B"
           },
           {
             "id": 670764,
@@ -280,8 +283,8 @@
             "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-10-27)",
-        "homeLineupSource": "projected (last 2026-10-27)"
+        "awayLineupSource": "confirmed",
+        "homeLineupSource": "confirmed"
       }
     ],
     "2026-10-28": [
@@ -334,10 +337,10 @@
             "position": "2B"
           },
           {
-            "id": 669003,
-            "name": "Garrett Mitchell",
+            "id": 686217,
+            "name": "Sal Frelick",
             "order": 6,
-            "position": "CF"
+            "position": "RF"
           },
           {
             "id": 806198,
@@ -346,10 +349,10 @@
             "position": "SS"
           },
           {
-            "id": 686217,
-            "name": "Sal Frelick",
+            "id": 669003,
+            "name": "Garrett Mitchell",
             "order": 8,
-            "position": "RF"
+            "position": "CF"
           },
           {
             "id": 666152,
@@ -366,46 +369,46 @@
             "position": "DH"
           },
           {
-            "id": 668723,
-            "name": "Ryan Vilade",
+            "id": 666018,
+            "name": "Jonathan Aranda",
             "order": 2,
             "position": "1B"
           },
           {
-            "id": 802415,
-            "name": "Chandler Simpson",
-            "order": 3,
-            "position": "LF"
-          },
-          {
             "id": 691406,
             "name": "Junior Caminero",
-            "order": 4,
+            "order": 3,
             "position": "3B"
           },
           {
-            "id": 810938,
-            "name": "Ben Williamson",
-            "order": 5,
-            "position": "2B"
+            "id": 689414,
+            "name": "Liam Hicks",
+            "order": 4,
+            "position": "C"
           },
           {
             "id": 676356,
             "name": "Jonny DeLuca",
-            "order": 6,
+            "order": 5,
             "position": "CF"
           },
           {
-            "id": 683748,
-            "name": "Victor Mesa Jr.",
+            "id": 802415,
+            "name": "Chandler Simpson",
+            "order": 6,
+            "position": "LF"
+          },
+          {
+            "id": 668723,
+            "name": "Ryan Vilade",
             "order": 7,
             "position": "RF"
           },
           {
-            "id": 663743,
-            "name": "Nick Fortes",
+            "id": 680700,
+            "name": "Richie Palacios",
             "order": 8,
-            "position": "C"
+            "position": "2B"
           },
           {
             "id": 670764,
@@ -414,8 +417,8 @@
             "position": "SS"
           }
         ],
-        "awayLineupSource": "projected (last 2026-10-27)",
-        "homeLineupSource": "projected (last 2026-10-27)"
+        "awayLineupSource": "projected (last 2026-10-28)",
+        "homeLineupSource": "projected (last 2026-10-28)"
       }
     ]
   }
