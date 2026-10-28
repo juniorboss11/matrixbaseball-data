@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-28T15:20:51.892Z",
+  "refreshedAt": "2026-10-28T20:23:03.329Z",
   "today": "2026-10-28",
   "dates": [
     "2026-10-27",
@@ -151,7 +151,7 @@
       {
         "id": "g849799",
         "gamePk": 849799,
-        "status": "Scheduled",
+        "status": "Pre-Game",
         "awayTeam": "MIL",
         "homeTeam": "TB",
         "awayTeamId": 158,
@@ -166,7 +166,10 @@
           "id": 694819,
           "name": "Jacob Misiorowski"
         },
-        "homePitcher": null,
+        "homePitcher": {
+          "id": 656876,
+          "name": "Drew Rasmussen"
+        },
         "lineupsConfirmed": false,
         "awayLineup": [
           {
@@ -262,16 +265,16 @@
             "position": "LF"
           },
           {
-            "id": 668723,
-            "name": "Ryan Vilade",
+            "id": 810938,
+            "name": "Ben Williamson",
             "order": 7,
-            "position": "RF"
+            "position": "2B"
           },
           {
-            "id": 680700,
-            "name": "Richie Palacios",
+            "id": 668723,
+            "name": "Ryan Vilade",
             "order": 8,
-            "position": "2B"
+            "position": "RF"
           },
           {
             "id": 670764,
@@ -281,7 +284,7 @@
           }
         ],
         "awayLineupSource": "projected (last 2026-10-28)",
-        "homeLineupSource": "projected (last 2026-10-28)"
+        "homeLineupSource": "confirmed"
       }
     ],
     "2026-10-29": []
