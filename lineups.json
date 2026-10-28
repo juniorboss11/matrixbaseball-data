@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-28T02:10:28.046Z",
+  "refreshedAt": "2026-10-28T08:26:55.547Z",
   "today": "2026-10-28",
   "dates": [
     "2026-10-27",
@@ -11,7 +11,7 @@
       {
         "id": "g849803",
         "gamePk": 849803,
-        "status": "In Progress",
+        "status": "Final",
         "awayTeam": "MIL",
         "homeTeam": "TB",
         "awayTeamId": 158,
@@ -162,7 +162,10 @@
         "parkHrFactor": 95,
         "startUtc": "2026-10-29T00:00:00Z",
         "startET": "8:00 PM",
-        "awayPitcher": null,
+        "awayPitcher": {
+          "id": 694819,
+          "name": "Jacob Misiorowski"
+        },
         "homePitcher": null,
         "lineupsConfirmed": false,
         "awayLineup": [
