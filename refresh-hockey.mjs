@@ -19,6 +19,7 @@ import fs from "node:fs";
 
 import { bucketsOf, multFor, baseLambdas, applyContext, probs as probsOf, FACTOR_KEYS, seasonWeights } from "./hockey-factors.mjs";
 import { buildGradeCtx, gradePlayer } from "./hockey-grades-core.mjs";
+import { buildFormCtx, formScore } from "./hockey-form-core.mjs";
 const PREV = "20252026";
 const CUR = "20262027";
 const STATS = "https://api.nhle.com/stats/rest/en";
@@ -663,7 +664,7 @@ for (const [date, games] of Object.entries(gamesByDate)) {
             cur: windowAgg(rows.filter((r) => r.s === CUR)),
             l20: windowAgg(rows.slice(0, 20)), l10: windowAgg(rows.slice(0, 10)), l5: windowAgg(rows.slice(0, 5)),
           },
-          log: rows.slice(0, 10).map((r) => [r.d, r.opp, r.g, r.a, r.pts, r.sog, r1(r.toi / 60), r1(r.pptoi / 60)]),
+          log: rows.slice(0, 14).map((r) => [r.d, r.opp, r.g, r.a, r.pts, r.sog, r1(r.toi / 60), r1(r.pptoi / 60)]),
           role: roleOf(pid, team),
           m: playerModel(bases[pid], info, matesOf(pid)),
         };
@@ -767,18 +768,24 @@ const edgeFlags = edgeFlagsFactory();
 const gradeOf = (() => {
   try {
     const T = seasonTeams, G = readJSON("hockey-goalies.json", null), ST = readJSON("hockey-special.json", null), M = readJSON("hockey-matchups.json", null);
-    if (!T) return () => null;
+    if (!T) return () => ({ gr: null, fm: null });
     const teamsG = {};
     for (const t of slateTeams) { const gd = Object.fromEntries(slateDates.map((d) => [d, likelyGoalie(t, d)])); teamsG[t] = { goalieByDate: gd, goalie: gd[today] ?? null }; }
     const data = { teams: teamsG, lines, players: Object.values(players) };
     const ctx = buildGradeCtx(T, G, ST, M), ctxT = { ...ctx, teamOnly: true };
+    const TL = readJSON("hockey-teamlog.json", null);
+    const F = TL ? buildFormCtx(TL) : null;
     return (p) => {
+      let gr = null, fm = null;
       try {
         const a = gradePlayer(p, data, ctx), b = gradePlayer(p, data, ctxT);
-        return [a.off?.score ?? null, a.mu?.score ?? null, a.def?.score ?? null, a.dmu?.score ?? null, b.mu?.score ?? null, b.dmu?.score ?? null];
-      } catch { return null; }
+        gr = [a.off?.score ?? null, a.mu?.score ?? null, a.def?.score ?? null, a.dmu?.score ?? null, b.mu?.score ?? null, b.dmu?.score ?? null];
+      } catch {}
+      // Form score (L7 + L14 vs season, -20..+20), separate from the grades; [score, player side, matchup side]
+      try { const f = F ? formScore(p, data, ctx, F) : null; fm = f ? [f.score, f.off, f.mu] : null; } catch {}
+      return { gr, fm };
     };
-  } catch (e) { console.log("grades unavailable", e.message); return () => null; }
+  } catch (e) { console.log("grades unavailable", e.message); return () => ({ gr: null, fm: null }); }
 })();
 for (const g of allGames) {
   const day = (picks.days[g.date] ??= { games: {} });
@@ -789,7 +796,7 @@ for (const g of allGames) {
   const rows = Object.values(players).filter((p) => p.gid === g.id);
   day.games[g.id] = {
     away: g.away, home: g.home, startUTC: g.startUTC, snapAt: new Date().toISOString(), locked: false,
-    players: rows.map((p) => [p.pid, p.name, p.team, p.pos, p.line, p.pp, p.m.p1, p.m.p2, p.m.g1, p.m.s3, { ...edgeFlags(p, g.date), gr: gradeOf(p) }]),
+    players: rows.map((p) => [p.pid, p.name, p.team, p.pos, p.line, p.pp, p.m.p1, p.m.p2, p.m.g1, p.m.s3, { ...edgeFlags(p, g.date), ...gradeOf(p) }]),
     stacks: stacksTop.filter((s) => s.gid === g.id).slice(0, 8)
       .map((s) => ({ kind: s.kind, team: s.team, legs: s.legs.map((l) => [l.pid, l.need]), model: s.model })),
   };
