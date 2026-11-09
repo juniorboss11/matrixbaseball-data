@@ -55,7 +55,7 @@ function buildFormCtx(TL) {
     const W = {};
     for (const t of teams) {
       const ids = TL.teams[t].slice(0, n);
-      const acc = { gp: 0, role: [0, 0, 0, 0], slot: SLOTS.map(() => 0), ga: 0, ppgA: 0, pen: 0 };
+      const acc = { gp: 0, role: [0, 0, 0, 0], slot: SLOTS.map(() => 0), ga: 0, ppgA: 0, pen: 0, gf: 0, sf: 0, sa: 0, l1F: 0, ppgF: 0, penDrawn: 0, esD: [0, 1, 2].map(() => [0, 0, 0, 0, 0]) };
       for (const id of ids) {
         const s = sides(TL, id, t);
         if (!s) continue;
@@ -65,6 +65,16 @@ function buildFormCtx(TL) {
         acc.ga += s.opp.gf;
         acc.ppgA += s.opp.ppg;
         acc.pen += s.own.pen;
+        acc.gf += s.own.gf;
+        acc.sf += s.own.sf;
+        acc.sa += s.opp.sf;
+        acc.l1F += s.own.slot[0]?.[0] ?? 0;
+        acc.ppgF += s.own.ppg;
+        acc.penDrawn += s.opp.pen;
+        for (let k = 0; k < 3; k++) {
+          const e = s.own.es[4 + k];
+          if (e) for (let j = 0; j < 5; j++) acc.esD[k][j] += e[j];
+        }
       }
       if (acc.gp) W[t] = acc;
     }
@@ -74,6 +84,11 @@ function buildFormCtx(TL) {
     ["C", "L", "R", "D"].forEach((rg) => R[`role${rg}`] = rankOf(per((w) => w.role[ROLE_IDX[rg]])));
     SLOTS.forEach((sl, i) => R[`slot${sl}`] = rankOf(per((w) => w.slot[i])));
     R.ga = rankOf(per((w) => w.ga));
+    R.gf = rankOf(per((w) => w.gf));
+    R.sf = rankOf(per((w) => w.sf));
+    R.l1F = rankOf(per((w) => w.l1F));
+    R.pp = rankOf(Object.fromEntries(Object.entries(W).filter(([, w]) => w.penDrawn > 0).map(([t, w]) => [t, w.ppgF / w.penDrawn])));
+    R.sa = rankOf(per((w) => w.sa));
     R.pk = rankOf(Object.fromEntries(Object.entries(W).filter(([, w]) => w.pen > 0).map(([t, w]) => [t, w.ppgA / w.pen])));
     rank[n] = R;
   }
@@ -184,31 +199,150 @@ function matchupRows(p, data, ctx, F) {
     cells: cellsFor((w) => w.ga / w.gp, "ga", sGa, (v) => ratioTilt(v, sGa, 2.5)),
     note: "/ gm"
   });
-  const t = data.teams[opp];
-  const s = t?.goalieByDate?.[p.date] ?? t?.goalie;
-  if (s) {
-    const starts = [];
-    for (const id of F.TL.teams[opp] ?? []) {
-      const sd = sides(F.TL, id, opp);
-      const x = sd?.own.gl.find((q) => q[0] === s.id);
-      if (x && x[1] >= 10) starts.push([x[1], x[2]]);
-    }
-    const sSv = ctx.G?.goalies[s.id]?.sv ?? s.svPct ?? null;
-    rows.push({
-      key: "gsv",
-      label: `${s.name.split(" ").slice(-1)[0]} save %`,
-      season: sSv,
-      fmt: "sv",
-      cells: FORM_WINS.map(({ n }) => {
-        const w = starts.slice(0, n);
-        if (!w.length) return { v: null, n: 0, tilt: null };
-        const sa = w.reduce((a, q) => a + q[0], 0), ga = w.reduce((a, q) => a + q[1], 0);
-        const v = sa ? 1 - ga / sa : null;
-        return { v, n: w.length, tilt: v == null || sSv == null ? null : clamp((sSv - v) / 0.03) };
-      }),
-      note: `${s.status ?? "projected"} starter, his starts`
-    });
+  const gr = goalieRow(opp, p.date, data, ctx, F, "opp");
+  if (gr) rows.push(gr);
+  return rows;
+}
+function goalieRow(team, date, data, ctx, F, side) {
+  const t = data.teams[team];
+  const s = t?.goalieByDate?.[date] ?? t?.goalie;
+  if (!s || !F.TL) return null;
+  const starts = [];
+  for (const id of F.TL.teams[team] ?? []) {
+    const sd = sides(F.TL, id, team);
+    const x = sd?.own.gl.find((q) => q[0] === s.id);
+    if (x && x[1] >= 10) starts.push([x[1], x[2]]);
   }
+  const sSv = ctx.G?.goalies[s.id]?.sv ?? s.svPct ?? null;
+  const sign = side === "opp" ? 1 : -1;
+  return {
+    key: "gsv",
+    label: `${s.name.split(" ").slice(-1)[0]} save %`,
+    season: sSv,
+    fmt: "sv",
+    cells: FORM_WINS.map(({ n }) => {
+      const w = starts.slice(0, n);
+      if (!w.length) return { v: null, n: 0, tilt: null };
+      const sa = w.reduce((a, q) => a + q[0], 0), ga = w.reduce((a, q) => a + q[1], 0);
+      const v = sa ? 1 - ga / sa : null;
+      return { v, n: w.length, tilt: v == null || sSv == null ? null : clamp(sign * (sSv - v) / 0.03) };
+    }),
+    note: `${s.status ?? "projected"} starter, his starts`
+  };
+}
+function defenseRows(p, ctx, F) {
+  if (!F.TL || p.unit !== "D") return [];
+  const team = p.team, k = Math.min(3, Math.max(1, p.line ?? 2)) - 1, slot = `D${k + 1}`;
+  const oi = (() => {
+    const t = ctx.M?.players[p.pid];
+    if (!t) return null;
+    const s = [0, 0, 0, 0, 0];
+    for (const v of Object.values(t)) for (let i = 0; i < 5; i++) s[i] += v[i];
+    return s[0] > 1800 ? s : null;
+  })();
+  const sGa60 = oi ? oi[2] / (oi[0] / 3600) : null, sSa60 = oi ? oi[4] / (oi[0] / 3600) : null, sShare = oi && oi[3] + oi[4] > 0 ? oi[3] / (oi[3] + oi[4]) : null;
+  const cell = (val, tilt, rankKey) => FORM_WINS.map(({ n }) => {
+    const w = F.win[n]?.[team];
+    if (!w) return { v: null, n: 0, tilt: null };
+    const v = val(w);
+    return { v, n: w.gp, rank: rankKey ? F.rank[n]?.[rankKey]?.[team] ?? null : void 0, tilt: tilt(v) };
+  });
+  const es = (w) => w.esD[k];
+  const per60 = (w, j) => {
+    const e = es(w);
+    return e[0] > 600 ? e[j] / (e[0] / 3600) : null;
+  };
+  const inv = (v, s, scale) => v == null || s == null ? null : clamp((s - v) / scale);
+  const live = ctx.T?.live.teams[team];
+  const sGa = live?.gapg ?? null;
+  const sPk = ctx.ST?.teams[team]?.pkPct ?? null;
+  const r = blendRates(p);
+  const log = p.log ?? [];
+  return [
+    {
+      key: "pga",
+      label: `${slot} pair 5v5 GA/60`,
+      season: sGa60,
+      fmt: "rate2",
+      note: "his pair slot on ice (whoever played " + slot + " that night); season = his own on-ice",
+      cells: cell((w) => per60(w, 2), (v) => inv(v, sGa60, 1.2))
+    },
+    {
+      key: "psa",
+      label: `${slot} pair 5v5 SA/60`,
+      season: sSa60,
+      fmt: "rate1",
+      note: "shots against on ice at 5v5",
+      cells: cell((w) => per60(w, 4), (v) => inv(v, sSa60, 8))
+    },
+    {
+      key: "psh",
+      label: `${slot} pair shot share`,
+      season: sShare,
+      fmt: "pct",
+      note: "share of 5v5 shots on ice",
+      cells: cell((w) => {
+        const e = es(w);
+        return e[3] + e[4] > 0 ? e[3] / (e[3] + e[4]) : null;
+      }, (v) => v == null || sShare == null ? null : clamp((v - sShare) / 0.08))
+    },
+    {
+      key: "tga",
+      label: `${team} goals against`,
+      season: sGa,
+      seasonRank: null,
+      fmt: "rate2",
+      note: "/ gm (#1 = allows most)",
+      cells: cell((w) => w.ga / w.gp, (v) => inv(v, sGa, 1.2), "ga")
+    },
+    {
+      key: "tsa",
+      label: `${team} shots against`,
+      season: live?.sapg ?? null,
+      fmt: "rate1",
+      note: "/ gm (#1 = allows most)",
+      cells: cell((w) => w.sa / w.gp, (v) => inv(v, live?.sapg ?? null, 5), "sa")
+    },
+    {
+      key: "tpk",
+      label: `${team} PK %`,
+      season: sPk,
+      fmt: "pct",
+      note: "1 - PP goals allowed per penalty taken (#1 = leakiest)",
+      cells: cell((w) => w.pen ? 1 - w.ppgA / w.pen : null, (v) => v == null || sPk == null ? null : clamp((v - sPk) / 0.1), "pk")
+    },
+    {
+      key: "toi",
+      label: "His ice time",
+      season: r.toi,
+      fmt: "min",
+      cells: FORM_WINS.map(({ n }) => {
+        const w = log.slice(0, n);
+        const v = w.length ? w.reduce((a, x) => a + x[6], 0) / w.length : null;
+        return { v, n: w.length, tilt: v == null || r.toi == null ? null : clamp((v - r.toi) / 3) };
+      })
+    }
+  ];
+}
+function defMatchupRows(p, data, ctx, F) {
+  if (!F.TL || p.unit !== "D") return [];
+  const opp = p.opp, o = ctx.offRank[opp];
+  const cell = (val, rankKey, tilt) => FORM_WINS.map(({ n }) => {
+    const w = F.win[n]?.[opp];
+    if (!w) return { v: null, n: 0, tilt: null };
+    const v = val(w);
+    return { v, n: w.gp, rank: F.rank[n]?.[rankKey]?.[opp] ?? null, tilt: tilt(v) };
+  });
+  const inv = (v, s, floor) => v == null || s == null ? null : clamp(-(v - s) / Math.max(s, floor) / 0.5);
+  const sPp = ctx.ST?.teams[opp]?.ppPct ?? null;
+  const rows = [
+    { key: "ogf", label: `${opp} goals / gm`, season: o?.gf?.v ?? null, seasonRank: o?.gf?.rank ?? null, fmt: "rate2", note: "#1 = scores most", cells: cell((w) => w.gf / w.gp, "gf", (v) => inv(v, o?.gf?.v ?? null, 2.5)) },
+    { key: "osf", label: `${opp} shots / gm`, season: o?.sf?.v ?? null, seasonRank: o?.sf?.rank ?? null, fmt: "rate1", note: "#1 = shoots most", cells: cell((w) => w.sf / w.gp, "sf", (v) => inv(v, o?.sf?.v ?? null, 25)) },
+    { key: "ol1", label: `${opp} L1 points / gm`, season: o?.l1?.v ?? null, seasonRank: o?.l1?.rank ?? null, fmt: "rate2", note: "points by their top line", cells: cell((w) => w.l1F / w.gp, "l1F", (v) => inv(v, o?.l1?.v ?? null, 1)) },
+    { key: "opp", label: `${opp} PP %`, season: sPp, fmt: "pct", note: "PP goals per penalty drawn (#1 = most dangerous)", cells: cell((w) => w.penDrawn ? w.ppgF / w.penDrawn : null, "pp", (v) => v == null || sPp == null ? null : clamp((sPp - v) / 0.1)) }
+  ];
+  const g = goalieRow(p.team, p.date, data, ctx, F, "own");
+  if (g) rows.push({ ...g, label: `${g.label} (his G)` });
   return rows;
 }
 function formScore(p, data, ctx, F, rows) {
@@ -236,6 +370,8 @@ var formLabel = (f) => f ? `${f.score > 0 ? "+" : ""}${f.score} ${f.tag}` : "\u2
 export {
   FORM_WINS,
   buildFormCtx,
+  defMatchupRows,
+  defenseRows,
   formChip,
   formLabel,
   formScore,
