@@ -510,6 +510,52 @@ for (const date of slateDates) {
 }
 console.log("DFO goalies", JSON.stringify(Object.fromEntries(Object.entries(goalieOverride).map(([d, x]) => [d, Object.keys(x).length]))));
 
+// 5c. Rotowire starting goalies (today's slate) as a cross-check on Daily Faceoff.
+// Rule: the source with the stronger status wins (Confirmed > Likely/Expected > Unconfirmed); ties keep Daily Faceoff.
+const G_RANK = (st) => /confirm/i.test(st ?? "") ? 3 : /likely|expected|probable/i.test(st ?? "") ? 2 : 1;
+const rwGoalies = {}; // team -> {id,name,status}
+try {
+  const r = await fetch("https://www.rotowire.com/hockey/nhl-lineups.php", { headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36" } });
+  const html = r.ok ? await r.text() : "";
+  const todayPairs = new Set((gamesByDate[today] ?? []).map((g) => `${g.away}@${g.home}`));
+  const RW_ABBR = { TB: "TBL", NJ: "NJD", SJ: "SJS", LA: "LAK", MON: "MTL", WAS: "WSH", CLS: "CBJ", NAS: "NSH", UTAH: "UTA", ANH: "ANA", CAL: "CGY", WPG: "WPG" };
+  const fix = (a) => RW_ABBR[a] ?? a;
+  for (const blk of html.split('lineup is-nhl"').slice(1)) {
+    const teams = [...blk.matchAll(/lineup__abbr">([A-Z]{2,4})</g)].slice(0, 2).map((m) => fix(m[1]));
+    if (teams.length < 2 || !todayPairs.has(`${teams[0]}@${teams[1]}`)) continue;
+    const gs = [...blk.matchAll(/lineup__player-highlight-name">\s*<a[^>]*>([^<]+)<\/a>\s*<\/div>\s*<div class="[^"]*"[^>]*>\s*<div[^>]*><\/div>\s*([^<]+?)\s*</g)];
+    gs.slice(0, 2).forEach((m, i) => {
+      const team = teams[i]; const id = matchPlayer(team, m[1].trim());
+      if (id) rwGoalies[team] = { id, name: m[1].trim(), status: m[2].trim() };
+    });
+  }
+} catch (e) { console.log("rotowire goalies failed", String(e).slice(0, 120)); }
+let gFlips = 0;
+for (const [team, rw] of Object.entries(rwGoalies)) {
+  const d = goalieOverride[today]?.[team];
+  const dr = d?.id ? G_RANK(d.status) : 0, rr = G_RANK(rw.status);
+  const cur = (goalieOverride[today] ??= {})[team];
+  if (!d?.id || rr > dr) {
+    goalieOverride[today][team] = { ...rw, src: "Rotowire", alt: d?.id && d.id !== rw.id ? { name: d.name, status: d.status, src: "Daily Faceoff" } : null };
+    if (d?.id && d.id !== rw.id) gFlips++;
+  } else {
+    goalieOverride[today][team] = { ...cur, src: "Daily Faceoff", alt: rw.id !== d.id ? { name: rw.name, status: rw.status, src: "Rotowire" } : null };
+  }
+}
+// 5d. Once a game has started, the NHL game sheet is the truth: the goalie who started.
+for (const g of gamesByDate[today] ?? []) {
+  if (!["LIVE", "CRIT", "OFF", "FINAL"].includes(g.state)) continue;
+  const box = await fetchJSON(`${WEB}/gamecenter/${g.id}/boxscore`);
+  for (const [side, team] of [["awayTeam", g.away], ["homeTeam", g.home]]) {
+    const gl = (box?.playerByGameStats?.[side]?.goalies ?? []).map((x) => ({ id: x.playerId, name: x.name?.default, starter: x.starter, sec: (x.toi ?? "0:00").split(":").reduce((a, v) => a * 60 + Number(v), 0) }));
+    const st = gl.find((x) => x.starter) ?? [...gl].filter((x) => x.sec > 0).sort((a, b) => b.sec - a.sec)[0];
+    if (!st) continue;
+    const prev = goalieOverride[today]?.[team];
+    (goalieOverride[today] ??= {})[team] = { id: st.id, name: roster[st.id]?.name ?? st.name, status: "Started", src: "NHL game sheet", alt: prev?.id && prev.id !== st.id ? { name: prev.name, status: prev.status, src: prev.src ?? "Daily Faceoff" } : null };
+  }
+}
+console.log("Rotowire goalies", Object.keys(rwGoalies).length, "flips", gFlips);
+
 // Season build products (rankings, live context, learned multipliers)
 const seasonTeams = readJSON("hockey-teams.json", null);
 const backtest = readJSON("hockey-backtest.json", null);
@@ -547,9 +593,9 @@ function goalieSvOf(id) {
 }
 function likelyGoalie(team, date) {
   const o = goalieOverride[date]?.[team];
-  if (o?.id) return { id: o.id, name: roster[o.id]?.name ?? o.name, status: o.status, ...goalieSvOf(o.id) };
+  if (o?.id) return { id: o.id, name: roster[o.id]?.name ?? o.name, status: o.status, src: o.src ?? "Daily Faceoff", alt: o.alt ?? null, ...goalieSvOf(o.id) };
   const dg = dfoInfo[team]?.g1;
-  if (dg) return { id: dg, name: roster[dg]?.name, status: "Projected", ...goalieSvOf(dg) };
+  if (dg) return { id: dg, name: roster[dg]?.name, status: "Projected", src: "Daily Faceoff lines", ...goalieSvOf(dg) };
   const ids = Object.keys(goalieLogs).filter((id) => roster[id]?.team === team);
   let best = null;
   for (const id of ids) {

@@ -1,10 +1,11 @@
 name: Refresh MatrixHockey
 
 on:
-  # Every 30 min, 14:00-05:59 UTC (10 AM - 2 AM ET). Off-peak minute slots.
+  # Each run loops every 15 min for ~5.5 h (see hockey-loop.sh). Several kicks a day because
+  # GitHub skips many scheduled runs; extra kicks just queue behind the running loop.
   schedule:
-    - cron: "7,37 14-23 * * *"
-    - cron: "7,37 0-5 * * *"
+    - cron: "3 14,16,19,21,23 * * *"
+    - cron: "3 1,3 * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -17,40 +18,11 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - name: Season cache (new finished games)
-        run: node hockey-season-fetch.mjs
-      - name: Season build (rankings, units, shots, backtest) when new games landed
-        run: |
-          if [ "$(cat .season-new 2>/dev/null || echo 0)" != "0" ] || [ ! -f hockey-teams.json ] || [ ! -f hockey-goalies.json ] || [ ! -f hockey-special.json ] || [ ! -f hockey-teamlog.json ]; then node hockey-season-build.mjs; else echo "no new games"; fi
-      - name: Box scores (last 10 per team + last 7 meetings)
-        run: node hockey-box-build.mjs || echo "box build failed"
-      - name: Run hockey refresh
-        run: node refresh-hockey.mjs
-      - name: Commit + push if changed
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add hockey.json hockey-picks.json hockey-edge-cache.json hockey-season-cache.json hockey-teams.json hockey-shots.json hockey-backtest.json hockey-matchups.json hockey-h2h.json hockey-goalies.json hockey-special.json hockey-teamlog.json hockey-box.json hockey-names-cache.json
-          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
-          git commit -m "hockey refresh $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
-          for i in 1 2 3 4 5; do
-            git pull --rebase -X theirs origin main && git push && break || { echo "retry $i"; sleep 5; }
-          done
-      - name: Update version.json
-        run: |
-          for i in 1 2 3 4 5; do
-            git pull --rebase origin main
-            SHA=$(git rev-parse HEAD); NOW=$(date -u +'%Y-%m-%dT%H:%M:%SZ')
-            printf '{\n  "latestSha": "%s",\n  "updatedAt": "%s",\n  "updatedBy": "refresh-hockey"\n}\n' "$SHA" "$NOW" > version.json
-            git add version.json
-            if git diff --cached --quiet; then exit 0; fi
-            git commit -m "version.json: pin ${SHA:0:7}"
-            git push && exit 0 || sleep 5
-          done
-          exit 1
+      - name: Refresh loop (every 15 min)
+        run: bash hockey-loop.sh
