@@ -1,8 +1,8 @@
 name: Refresh MatrixHockey
 
 on:
-  # Each run loops every 15 min for ~5.5 h (see hockey-loop.sh). Several kicks a day because
-  # GitHub skips many scheduled runs; extra kicks just queue behind the running loop.
+  # Each run loops every 15 min for ~5.5 h, then dispatches the next run (see hockey-loop.sh).
+  # Crons are only a backup in case the chain breaks; extra kicks just queue behind the running loop.
   schedule:
     - cron: "3 14,16,19,21,23 * * *"
     - cron: "3 1,3 * * *"
@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: hockey-refresh
@@ -25,4 +26,6 @@ jobs:
         with:
           node-version: "20"
       - name: Refresh loop (every 15 min)
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: bash hockey-loop.sh
