@@ -808,7 +808,7 @@ function edgeFlagsFactory() {
 // ---------------------------------------------------------------- 9. picks snapshot + grading
 const picks = readJSON("hockey-picks.json", { version: 1, days: {} });
 const allGames = Object.values(gamesByDate).flat();
-const started = (g) => !["FUT", "PRE"].includes(g.state);
+const started = (g) => !["FUT", "PRE"].includes(g.state) || (g.startUTC && Date.now() >= Date.parse(g.startUTC)); // also lock at scheduled start
 const edgeFlags = edgeFlagsFactory();
 // grades (same engine as the site): [OFF, MU, DEF, DMU, MU team-only, DMU team-only] scores 0-100
 const gradeOf = (() => {
